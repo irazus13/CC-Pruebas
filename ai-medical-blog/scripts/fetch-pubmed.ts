@@ -174,7 +174,7 @@ date: "${article.publicationDate}"
 category: "${category}"
 pubmedId: "${article.pmid}"
 author: "${article.authors.slice(0, 3).join(', ')}${article.authors.length > 3 ? ' et al.' : ''}"
-tags: [${article.keywords.slice(0, 5).map(k => `"${k}"`).join(', ')}]
+tags: [${(article.keywords || []).slice(0, 5).map(k => `"${k}"`).join(', ')}]
 ---`
 
   const content = `
