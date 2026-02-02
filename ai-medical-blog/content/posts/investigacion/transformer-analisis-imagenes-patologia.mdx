@@ -1,0 +1,79 @@
+---
+title: "Transformers revolucionan el análisis de imágenes en patología digital"
+description: "Una nueva arquitectura basada en Vision Transformers supera a las CNN tradicionales en la clasificación de tejidos cancerosos en biopsias digitalizadas."
+date: "2026-01-28"
+category: "investigacion"
+author: "Dr. Roberto Fernández et al."
+tags: ["transformers", "patología digital", "ViT", "biopsia", "histopatología"]
+---
+
+## Contexto
+
+La patología digital está transformando el diagnóstico histopatológico. La capacidad de analizar biopsias digitalizadas con IA promete aumentar la precisión y reducir los tiempos de diagnóstico.
+
+## El problema con las CNN
+
+Las redes neuronales convolucionales (CNN) han sido el estándar en análisis de imágenes médicas. Sin embargo, presentan limitaciones:
+
+- Dificultad para capturar relaciones a larga distancia
+- Procesamiento secuencial de características
+- Campo receptivo limitado
+
+## Vision Transformers (ViT)
+
+Los investigadores adaptaron la arquitectura Transformer, originalmente diseñada para procesamiento de lenguaje natural, al análisis de imágenes histopatológicas.
+
+### Cómo funciona
+
+1. **Patchificación:** La imagen se divide en patches de 16x16 píxeles
+2. **Embedding:** Cada patch se convierte en un vector de características
+3. **Atención:** Mecanismo de self-attention captura relaciones globales
+4. **Clasificación:** Predicción del tipo de tejido
+
+### Ventajas sobre CNN
+
+| Aspecto | CNN | ViT |
+|---------|-----|-----|
+| Campo receptivo | Local | Global |
+| Relaciones espaciales | Limitadas | Completas |
+| Interpretabilidad | Moderada | Alta (mapas de atención) |
+| Escalabilidad | Buena | Excelente |
+
+## Resultados del estudio
+
+### Dataset
+
+- 100,000 imágenes de biopsias
+- 10 tipos de tejido canceroso
+- 5 instituciones participantes
+
+### Métricas de rendimiento
+
+El modelo ViT-Path superó a ResNet-50 en todas las métricas:
+
+- **Precisión global:** 94.7% vs 91.2%
+- **F1-Score:** 0.93 vs 0.89
+- **AUC promedio:** 0.97 vs 0.94
+
+## Interpretabilidad
+
+Una ventaja clave de los Transformers es la interpretabilidad a través de los mapas de atención:
+
+> Los mapas de atención muestran exactamente qué regiones del tejido el modelo considera más relevantes para el diagnóstico, facilitando la validación por el patólogo.
+
+## Implicaciones futuras
+
+Esta investigación abre nuevas posibilidades:
+
+1. **Diagnóstico asistido** más preciso
+2. **Identificación de biomarcadores** visuales
+3. **Predicción de respuesta** a tratamientos
+4. **Educación médica** con explicaciones visuales
+
+## Conclusiones
+
+Los Vision Transformers representan un cambio de paradigma en el análisis de imágenes médicas, ofreciendo no solo mejor rendimiento sino también mayor interpretabilidad, un factor crucial para la adopción clínica.
+
+## Referencias
+
+Este es un artículo de ejemplo para demostrar el funcionamiento del blog.

@@ -1,0 +1,79 @@
+---
+title: "IA alcanza precisión de experto en detección de nódulos pulmonares en TC"
+description: "Un sistema de deep learning iguala la precisión de radiólogos experimentados en la detección y caracterización de nódulos pulmonares en tomografías computarizadas."
+date: "2026-01-25"
+category: "ia-radiologia"
+author: "Dra. Ana Rodríguez et al."
+tags: ["deep learning", "nódulos pulmonares", "tomografía", "screening", "cáncer de pulmón"]
+---
+
+## Introducción
+
+El cáncer de pulmón es la principal causa de muerte por cáncer a nivel mundial. La detección temprana mediante programas de screening con tomografía computarizada (TC) de baja dosis ha demostrado reducir la mortalidad en un 20%.
+
+## El desafío
+
+Sin embargo, la interpretación de TCs de screening presenta desafíos significativos:
+
+- **Alto volumen:** Miles de imágenes por estudio
+- **Fatiga visual:** Riesgo de pasar por alto lesiones pequeñas
+- **Variabilidad inter-observador:** Diferencias en la interpretación
+
+## Desarrollo del sistema
+
+Investigadores del Hospital Clínic de Barcelona han desarrollado un sistema de IA basado en redes neuronales 3D para:
+
+1. Detectar nódulos pulmonares
+2. Medir su tamaño con precisión
+3. Caracterizar su probabilidad de malignidad
+
+### Arquitectura del modelo
+
+```
+Entrada: TC de tórax (512x512x300 voxels)
+    ↓
+Red U-Net 3D (detección)
+    ↓
+ResNet-3D (caracterización)
+    ↓
+Salida: Localización + Probabilidad de malignidad
+```
+
+## Resultados del estudio
+
+### Detección de nódulos
+
+| Tamaño del nódulo | Sensibilidad IA | Sensibilidad Radiólogo |
+|-------------------|-----------------|------------------------|
+| < 4mm | 91.2% | 76.3% |
+| 4-6mm | 96.8% | 89.5% |
+| > 6mm | 99.1% | 97.2% |
+
+### Caracterización de malignidad
+
+El modelo logró un AUC de 0.94 para distinguir nódulos benignos de malignos, comparado con 0.90 de los radiólogos.
+
+## Flujo de trabajo propuesto
+
+El sistema se integra en el flujo de trabajo radiológico como herramienta de "segundo lector":
+
+1. El radiólogo realiza su lectura inicial
+2. La IA analiza el estudio en paralelo
+3. Se comparan resultados y discrepancias
+4. Informe final con hallazgos confirmados
+
+## Impacto clínico
+
+En el estudio piloto de 6 meses:
+
+- **+15%** de nódulos detectados
+- **-30%** de tiempo de lectura
+- **-40%** de falsos positivos en seguimiento
+
+## Conclusiones
+
+La IA en radiología torácica no solo iguala sino que puede superar el rendimiento humano en tareas específicas, especialmente para lesiones pequeñas donde la fatiga visual afecta el rendimiento.
+
+## Referencias
+
+Este es un artículo de ejemplo para demostrar el funcionamiento del blog.
