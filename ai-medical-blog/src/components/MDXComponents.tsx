@@ -87,7 +87,7 @@ export const mdxComponents = {
       {...props}
     />
   ),
-  img: ({ src, alt, ...props }: ComponentPropsWithoutRef<'img'>) => (
+  img: ({ src, alt }: ComponentPropsWithoutRef<'img'>) => (
     <span className="block my-6">
       <Image
         src={src || ''}
@@ -95,7 +95,6 @@ export const mdxComponents = {
         width={800}
         height={400}
         className="rounded-lg"
-        {...props}
       />
     </span>
   ),
