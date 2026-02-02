@@ -8,20 +8,32 @@ const postsDirectory = path.join(process.cwd(), 'content/posts')
 
 export function getPostSlugs(): string[] {
   const slugs: string[] = []
+
+  if (!fs.existsSync(postsDirectory)) {
+    console.error('Posts directory not found:', postsDirectory)
+    return slugs
+  }
+
   const categories = fs.readdirSync(postsDirectory)
 
   for (const category of categories) {
     const categoryPath = path.join(postsDirectory, category)
-    if (fs.statSync(categoryPath).isDirectory()) {
-      const files = fs.readdirSync(categoryPath)
-      for (const file of files) {
-        if (file.endsWith('.mdx')) {
-          slugs.push(`${category}/${file.replace(/\.mdx$/, '')}`)
+    try {
+      if (fs.statSync(categoryPath).isDirectory()) {
+        const files = fs.readdirSync(categoryPath)
+        for (const file of files) {
+          if (file.endsWith('.mdx')) {
+            slugs.push(`${category}/${file.replace(/\.mdx$/, '')}`)
+          }
         }
       }
+    } catch (err) {
+      console.error('Error reading category:', category, err)
     }
   }
 
+  console.log('Posts directory:', postsDirectory)
+  console.log('Found posts:', slugs)
   return slugs
 }
 
