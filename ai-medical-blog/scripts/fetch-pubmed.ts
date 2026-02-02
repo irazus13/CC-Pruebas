@@ -242,7 +242,7 @@ async function fetchAndSaveArticles(): Promise<void> {
       await delay(API_KEY ? 100 : 400)
     }
 
-    const uniquePmids = [...new Set(allPmids)].slice(0, 5)
+    const uniquePmids = Array.from(new Set(allPmids)).slice(0, 5)
 
     if (uniquePmids.length === 0) {
       console.log(`   ⏭️  No hay artículos nuevos`)
