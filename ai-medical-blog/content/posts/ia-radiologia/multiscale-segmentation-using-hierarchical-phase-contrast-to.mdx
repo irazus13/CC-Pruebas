@@ -1,0 +1,25 @@
+---
+title: "Multiscale segmentation using hierarchical phase-contrast tomography and deep learning."
+description: "Biomedical systems span multiple spatial scales, encompassing tiny functional units to entire organs. Interpreting these systems through image segmentation requires the effective propagation and integration of information across different scales. How..."
+date: "2026-02-02"
+category: "ia-radiologia"
+pubmedId: "41628266"
+author: "Yang Zhou, Shahab Aslani, Yousef Javanmardi et al."
+tags: []
+---
+
+## Resumen
+
+Biomedical systems span multiple spatial scales, encompassing tiny functional units to entire organs. Interpreting these systems through image segmentation requires the effective propagation and integration of information across different scales. However, most existing segmentation methods are optimised for single-scale imaging modalities, limiting their ability to capture and analyse small functional units throughout complete human organs. To facilitate multiscale biomedical image segmentation, we utilised Hierarchical Phase-Contrast Tomography (HiP-CT), an advanced imaging modality that can generate 3D multiscale datasets from high-resolution volumes of interest (VOIs) at ca. 1 [Formula: see text]/voxel to whole-organ scans at ca. 20 [Formula: see text]/voxel. Building on these hierarchical multiscale datasets, we developed a deep learning-based segmentation pipeline that is initially trained on manually annotated high-resolution HiP-CT data and then extended to lower-resolution whole-organ scans using pseudo-labels generated from high-resolution predictions and multiscale image registration. As a case study, we focused on glomeruli in human kidneys, benchmarking four 3D deep learning models for biomedical image segmentation on a manually annotated high-resolution dataset extracted from VOIs, at 2.58 to ca. 5 [Formula: see text]/voxel, of four human kidneys. Among them, nnUNet demonstrated the best performance, achieving an average test Dice score of 0.906, and was subsequently used as the baseline model for multiscale segmentation in the pipeline. Applying this pipeline to two low-resolution full-organ data at ca. 25 [Formula: see text]/voxel, the model identified 1,019,890 and 231,179 glomeruli in a 62-year-old donor without kidney diseases and a 94-year-old hypertensive donor, enabling comprehensive morphological analyses, including cortical spatial statistics and glomerular distributions, which aligned well with previous anatomical studies. Our results highlight the effectiveness of the proposed pipeline for segmenting small functional units in multiscale bioimaging datasets and suggest its broader applicability to other organ systems.
+
+## Información del artículo
+
+- **Revista:** PLoS computational biology
+- **Fecha de publicación:** 2026-02-02
+- **Autores:** Yang Zhou, Shahab Aslani, Yousef Javanmardi, Joseph Brunet, David Stansby
+- **DOI:** [10.1371/journal.pcbi.1013923](https://doi.org/10.1371/journal.pcbi.1013923)
+- **PubMed ID:** [41628266](https://pubmed.ncbi.nlm.nih.gov/41628266/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41628266/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
