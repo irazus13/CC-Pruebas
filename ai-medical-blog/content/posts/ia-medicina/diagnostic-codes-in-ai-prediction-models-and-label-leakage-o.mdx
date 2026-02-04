@@ -1,0 +1,25 @@
+---
+title: "Diagnostic Codes in AI Prediction Models and Label Leakage of Same-Admission Clinical Outcomes."
+description: "Artificial intelligence models that predict same-admission outcomes for hospitalized patients, such as inpatient mortality, often rely on International Classification of Diseases (ICD) diagnostic codes, even when these codes are not f..."
+date: "2025-12-01"
+category: "ia-medicina"
+pubmedId: "41632159"
+author: "Bashar Ramadan, Ming-Chieh Liu, Michael C Burkhart et al."
+tags: []
+---
+
+## Resumen
+
+**IMPORTANCE:** Artificial intelligence models that predict same-admission outcomes for hospitalized patients, such as inpatient mortality, often rely on International Classification of Diseases (ICD) diagnostic codes, even when these codes are not finalized until after discharge. **OBJECTIVE:** To investigate the extent to which the inclusion of ICD codes as features in predictive models are associated with inflated performance metrics via label leakage (eg, including the code for cardiac arrest into an inpatient mortality prediction model) and assess the prevalence and implications of this practice in existing literature. **DESIGN, SETTING, AND PARTICIPANTS:** This prognostic study examined publicly available, deidentified inpatient electronic health record data from the Medical Information Mart for Intensive Care IV (MIMIC-IV) database. Patients admitted to an intensive care unit or emergency department at Beth Israel Deaconess Medical Center between January 1, 2008, and December 31, 2019, were included. These data were analyzed between December 18, 2024, and January 14, 2025. A targeted literature review of same-admission prediction models using MIMIC with ICD codes as features was performed between November 20 and 27, 2024. **MAIN OUTCOME AND MEASURES:** Using a standard training-validation-test split procedure, prediction models were developed for inpatient mortality (logistic regression, random forest, and XGBoost) using only ICD codes as features. Performance in the test set was analyzed using areas under the receiver operating curve and variable importance. Frequencies of studies using same-admission prediction models using MIMIC with ICD codes were calculated from the targeted literature review. **RESULTS:** The study cohort consisted of 180&#x202f;640 patients (mean [SD] age at admission, 58.7 [19.2] years; 53.0% female), of whom 8573 (4.7%) died during the admission. The models using ICD codes predicted in-hospital mortality with high performance in the test dataset, with areas under the receiver operating curve of 0.976 (95% CI, 0.973-0.980) (logistic regression), 0.971 (95% CI, 0.967-0.974) (random forest), and 0.973 (95% CI, 0.968-0.977) (XGBoost). The most important ICD codes were subdural hemorrhage (OR, 389.99; 95% CI, 28.79-5283.59), cardiac arrest (OR, 219.58; 95% CI, 159.61-302.08), brain death (OR, 112.78; 95% CI, 13.42-947.70), and encounter for palliative care (OR, 98.04; 95% CI, 83.16-115.58). The literature review found that 37 of 92 studies (40.2%) using MIMIC to predict same-admission outcomes included ICD codes as features, even though both MIMIC publications and documentation clearly state that ICD codes are derived after discharge. **CONCLUSIONS AND RELEVANCE:** This prognostic study of the MIMIC-IV database suggests that using ICD codes as features in same-admission prediction models may be a severe methodological flaw associated with inflated performance metrics, rendering models incapable of clinically useful predictions. The literature review found that the practice is common. Addressing this challenge is essential for advancing trustworthy artificial intelligence in health care.
+
+## Información del artículo
+
+- **Revista:** JAMA network open
+- **Fecha de publicación:** 2025-12-01
+- **Autores:** Bashar Ramadan, Ming-Chieh Liu, Michael C Burkhart, William F Parker, Brett K Beaulieu-Jones
+- **DOI:** [10.1001/jamanetworkopen.2025.50454](https://doi.org/10.1001/jamanetworkopen.2025.50454)
+- **PubMed ID:** [41632159](https://pubmed.ncbi.nlm.nih.gov/41632159/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41632159/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
