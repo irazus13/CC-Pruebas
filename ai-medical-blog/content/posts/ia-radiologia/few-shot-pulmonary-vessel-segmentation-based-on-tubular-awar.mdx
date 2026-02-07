@@ -1,0 +1,25 @@
+---
+title: "Few-Shot Pulmonary Vessel Segmentation based on Tubular-Aware Prompt-Tuning."
+description: "Segmentation of the pulmonary vessel from computed tomography (CT) images plays a crucial role in the diagnosis and treatment of various lung diseases. Although deep learning-based approaches have shown remarkable progress in recent years, their perf..."
+date: "2026-02-06"
+category: "ia-radiologia"
+pubmedId: "41650434"
+author: "Zijian Gao, Lai Jiang, Yichen Guo et al."
+tags: []
+---
+
+## Resumen
+
+Segmentation of the pulmonary vessel from computed tomography (CT) images plays a crucial role in the diagnosis and treatment of various lung diseases. Although deep learning-based approaches have shown remarkable progress in recent years, their performance is often hindered by the lack of high-quality annotated datasets, in which the complex anatomy and morphology of pulmonary vessels make manual annotation challenging, time-consuming, and prone to errors. To address this, we propose PV25, the first dataset that features finely paired annotations of both pulmonary vessels and airways. Moreover, we propose TPNet, a novel tubular-aware prompt-tuning framework for pulmonary vessel segmentation under few-shot training with limited annotations. Specifically, based on an advanced and frozen segmentation backbone, TPNet proposes tunable encoding and decoding networks that learn tubular structures as transfer learning priors, bridging the gap between the source and target pulmonary vessel domains. Specifically, TPNet is built in an encoder-decoder manner, including the fixed segmentation backbone, tunable encoding and decoding networks. In encoding stage, the Morphology-Driven Region Growing (MDRG) module is developed to leverage the tubular connectivity of vessels to guide the network in capturing fine-grained features of pulmonary vessels. In decoding stage, the Cross-Correlation Guidance (CCG) module is introduced to integrate multi-scale correlations between airway and vessel structures in a coarse-to-fine manner. Extensive experiments conducted on multiple datasets demonstrate that TPNet achieves state-of-the-art performance in pulmonary vessel segmentation under limited training data. Besides, TPNet shows strong performance in related tasks such as airway segmentation and artery-vein classification, highlighting its robustness and versatility.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-02-06
+- **Autores:** Zijian Gao, Lai Jiang, Yichen Guo, Sukun Tian, Yuchun Sun
+- **DOI:** [10.1109/TMI.2026.3662001](https://doi.org/10.1109/TMI.2026.3662001)
+- **PubMed ID:** [41650434](https://pubmed.ncbi.nlm.nih.gov/41650434/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41650434/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
