@@ -1,0 +1,25 @@
+---
+title: "Development and evaluation of an attention-gated U-net model for binary segmentation of teeth versus background in panoramic radiographs for orthodontic applications."
+description: "Panoramic X-rays (OPGs) play a crucial role in both pre- and post-treatment orthodontic evaluation. Binary segmentation of tooth versus background regions in these images is fundamental for dental image analysis, enabling automated di..."
+date: "2025-12-16"
+category: "ia-odontologia"
+pubmedId: "41665051"
+author: "Miltiadis A Makrygiannakis, Apostolos Ntokos, Eleftherios G Kaklamanos"
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND:** Panoramic X-rays (OPGs) play a crucial role in both pre- and post-treatment orthodontic evaluation. Binary segmentation of tooth versus background regions in these images is fundamental for dental image analysis, enabling automated diagnosis and improving treatment planning in orthodontics and general dentistry. Although various deep learning approaches have been investigated, standardized performance benchmarks on publicly available datasets remain limited. This study aims to establish a benchmark for binary semantic segmentation of tooth versus background regions as a basis for orthodontic applications by applying an attention-gated U-Net (Att-U-Net) architecture to a large, publicly accessible dataset. **MATERIAL AND METHODS:** An Att-U-Net model was used to perform tooth versus background binary segmentation on the 'Teeth Segmentation on Dental X-ray Images' dataset, which includes 598 annotated OPGs. The dataset was divided into training (70%), validation (10%), and testing (20%) sets using stratified sampling to maintain a representative class distribution. The model was trained with a combined loss function that merges binary cross-entropy and dice loss to address class imbalance. Its performance was assessed using a comprehensive set of metrics, including the dice coefficient, mean IoU, precision, recall, and receiver operating characteristic AUC in the entire dataset, quintiles based on the tooth-to-background pixel ratio, and a subset of radiographs that can present challenges during artificial intelligence-based tooth segmentation. Finally, evaluations of the model's consistency and computational performance, as well as visual inspections, were conducted. **RESULTS:** The Att-U-Net model demonstrated strong and accurate performance. Training and validation curves indicated stable convergence, with the model reaching a final dice coefficient of 0.911, a mean IoU of 0.838, and a pixel accuracy of 0.974 on the held-out test set. The model's sensitivity increased, and its overall performance saw a slight improvement in challenging segmentation cases. The inference times indicated that the model was both fast and highly stable. Visual inspection confirmed the high quantitative scores. **CONCLUSION:** The Att-U-Net model demonstrated robust and reliable performance, with the training process being stable and consistent. The high quantitative performance was complemented by qualitative analysis, which showed that the model produces precise and visually accurate segmentation masks, even in cases that pose challenges. This can be useful for OPG quality reviews and lays the groundwork for tackling more complex segmentation tasks and enhancing automated diagnosis systems in orthodontics.
+
+## Información del artículo
+
+- **Revista:** European journal of orthodontics
+- **Fecha de publicación:** 2025-12-16
+- **Autores:** Miltiadis A Makrygiannakis, Apostolos Ntokos, Eleftherios G Kaklamanos
+- **DOI:** [10.1093/ejo/cjaf114](https://doi.org/10.1093/ejo/cjaf114)
+- **PubMed ID:** [41665051](https://pubmed.ncbi.nlm.nih.gov/41665051/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41665051/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
