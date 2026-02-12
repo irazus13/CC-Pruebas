@@ -1,0 +1,25 @@
+---
+title: "Bayesian RAG: uncertainty-aware retrieval for reliable financial question answering."
+description: "Large language models excel at generating plausible responses but often produce factually incorrect answers in high-stakes financial analysis, leading to regulatory violations and financial losses, a critical challenge for deploying AI systems in pro..."
+date: "2025-01-01"
+category: "ia-medicina"
+pubmedId: "41676168"
+author: "Lebede Ngartera, Saralees Nadarajah, Rodoumta Koina"
+tags: ["Bayesian retrieval-augmented generation", "Monte Carlo dropout", "epistemic uncertainty", "financial question answering", "machine learning"]
+---
+
+## Resumen
+
+Large language models excel at generating plausible responses but often produce factually incorrect answers in high-stakes financial analysis, leading to regulatory violations and financial losses, a critical challenge for deploying AI systems in production. Traditional Retrieval-Augmented Generation (RAG) systems rely on deterministic embeddings that cannot quantify retrieval uncertainty, resulting in overconfident but unreliable answers for complex financial queries. We introduce Bayesian RAG, a principled probabilistic framework that integrates epistemic uncertainty quantification directly into retrieval using Monte Carlo Dropout, bridging the gap between theoretical rigor and practical deployment. Our approach computes distributional embeddings for queries and documents, enabling a Bayesian scoring function S i = &#x3bc; i -&#x3bb;&#xb7;&#x3c3; i that balances semantic relevance against uncertainty. Comprehensive evaluation on Apple and Microsoft 2023 10-K reports demonstrates substantial improvements: 93.1% accuracy with significant gains in Precision@3 (+20.6%), MRR (+22.7%), and NDCG@10 (+25.4%) over BM25 baselines, plus 26.8% better uncertainty calibration. Critically, Bayesian RAG successfully extracts precise financial figures ($211.915B Microsoft, $383.285B Apple revenue) where traditional methods fail, reducing hallucination by 27.8%. Bayesian RAG advances uncertainty quantification in retrieval systems through principled Monte Carlo Dropout integration, establishing theoretical foundations for uncertainty-aware information retrieval. The modular design enables seamless integration with existing RAG pipelines, making it immediately deployable in production systems for risk-aware AI applications in finance, healthcare, and regulatory compliance.
+
+## Información del artículo
+
+- **Revista:** Frontiers in artificial intelligence
+- **Fecha de publicación:** 2025-01-01
+- **Autores:** Lebede Ngartera, Saralees Nadarajah, Rodoumta Koina
+- **DOI:** [10.3389/frai.2025.1668172](https://doi.org/10.3389/frai.2025.1668172)
+- **PubMed ID:** [41676168](https://pubmed.ncbi.nlm.nih.gov/41676168/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41676168/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
