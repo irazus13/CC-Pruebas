@@ -1,0 +1,25 @@
+---
+title: "A multi-level segmentation-guided diffusion model for streak artifact reduction in routine non-contrast chest CT."
+description: "Streak artifacts in non-contrast computed tomography (NCCT) can obscure anatomical details and even confuse radiologic signs. Existing methods for artifact reduction have limitations: specialized training data and high annotation costs hinder the per..."
+date: "2026-02-14"
+category: "ia-radiologia"
+pubmedId: "41689727"
+author: "Jingxin Liu, Xinran Zhu, Zhangzhen Shi et al."
+tags: ["Deep learning", "Diffusion models", "Guided diffusion", "Medical image segmentation", "Streak artifact reduction"]
+---
+
+## Resumen
+
+Streak artifacts in non-contrast computed tomography (NCCT) can obscure anatomical details and even confuse radiologic signs. Existing methods for artifact reduction have limitations: specialized training data and high annotation costs hinder the performance scalability, inadequate anatomical constraints struggle to preserve fine details, and limited generative stability along with suboptimal artifact reduction compromises diagnostic applicability. Leveraging 96,641 CT slices (763 series) from four different CT scanners (100-140 kilovolt peak (kVp), 55-167 tube current-time product (mAs), 0.5-10&#xa0;mm thickness), we proposed a novel guided diffusion method using multi-level anatomical segmentations to optimize streak artifact reduction in chest NCCT scans. During training, the model integrates artifact-free CT slices with segmentation maps and anatomical regions of interest (ROIs) via channel-wise concatenation at each diffusion step. During inference, artifact-affected samples are fed into the trained model to generate artifact-free outputs with structural integrity. Statistical analysis revealed a significant (p&#x2009;&lt;&#x2009;0.05) difference in Signal-to-Noise Ratio (SNR) and Contrast-to-Noise Ratio (CNR) when comparing 47,032 artifact-affected samples to 49,609 artifact-free counterparts. Quantitative assessments demonstrated high consistency between generated outputs and reference standard artifact-free samples, with lung field SNR values of (26.67, standard deviation (SD) 2.01) vs. (26.11, SD 1.89) and lung-trachea CNR of (3.76, SD 0.77) vs. (3.78, SD 0.56) (both p&#x2009;&gt;&#x2009;0.05). Compared to four novel studies, our method achieved superior overall Peak Signal-to-Noise Ratio (PSNR) (36.952, SD 0.671), Structural Similarity Index (SSIM) (0.863, SD 0.013), and Dice Similarity Coefficient (DSC) (0.959, SD 0.031), with all p&#x2009;&lt;&#x2009;0.05. Moreover, ablation studies indicated that an appropriate segmentation guidance (Level-2) optimally balances anatomical structure constraints and artifact reduction efficiency, demonstrating superior performance in distinct organ or tissue regions compared to coarser and finer-grained guidance strategies. The proposed method has the potential to improve clinical analysis for chest NCCT by optimizing streak artifact reduction while enhancing medical image quality.
+
+## Información del artículo
+
+- **Revista:** Medical &amp; biological engineering &amp; computing
+- **Fecha de publicación:** 2026-02-14
+- **Autores:** Jingxin Liu, Xinran Zhu, Zhangzhen Shi, Donghong An, Lihui Zu
+- **DOI:** [10.1007/s11517-026-03515-1](https://doi.org/10.1007/s11517-026-03515-1)
+- **PubMed ID:** [41689727](https://pubmed.ncbi.nlm.nih.gov/41689727/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41689727/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
