@@ -1,0 +1,25 @@
+---
+title: "Deep learning-based object detection of dental implant systems in panoramic and periapical radiographs."
+description: "The manual identification of dental implant systems on radiographs is time-consuming, operator-dependent, and prone to diagnostic inaccuracies, particularly for patients where clinical documentation is lacking. The increasin..."
+date: "2026-02-14"
+category: "ia-radiologia"
+pubmedId: "41692618"
+author: "Balaganesh Pachaiappan, Rahmath Shameem Shafiullah, Gajapathi Balaraman et al."
+tags: []
+---
+
+## Resumen
+
+**STATEMENT OF PROBLEM:** The manual identification of dental implant systems on radiographs is time-consuming, operator-dependent, and prone to diagnostic inaccuracies, particularly for patients where clinical documentation is lacking. The increasing variety of implant designs further complicates identification in prosthetic and surgical practice. **PURPOSE:** The purpose of this study was to develop and evaluate a deep learning-based model for the automated identification of 7 implant systems (Adin, Dentium, Dionavi, Make It Simple (MIS), Nobel, Noris, and Osstem) using panoramic radiographs and periapical radiographs in an effort to enhance diagnostic efficiency and support clinical decision-making in prosthodontic care. **MATERIAL AND METHODS:** A total of 4677 anonymized radiographic images with 8189 implants were curated and annotated using Roboflow with bounding boxes outlining fixture components. The preprocessing involved normalization, resizing to 640&#xd7;640 pixels, and geometric augmentation (rotation, cropping, and blurring) to handle class imbalances. You Only Look Once (YOLO) v10 architecture, implemented with PyTorch, using CSPDarknet and PANet for multiscale feature fusion, was used to optimize real-time detection. Transfer learning used pretrained weights, with training for over 500 epochs (batch size: 32) on NVIDIA T4 GPUs. Data partitioning involved an 80:10:10 ratio (training: validation: testing), with performance evaluated using precision, recall, F1-score, and mean average precision (mAP). **RESULTS:** The model achieved a mAP&#xa0;of 98.3%, with mean precision, recall, and F1-score values of 93%, 86%, and 89%, respectively. Osstem implants demonstrated maximum discriminability (99% precision, 95% recall). In contrast, Nobel implants exhibited low recall (72.7%), attributed to the sparsity of the dataset (564 samples for Nobel compared with 2320 for Osstem) and similar radiopacity patterns. **CONCLUSIONS:** The YOLOv10 model demonstrated good performance in identifying dental implants, showing clinical promise for minimizing prosthetic mismatches. Subject to ethics and regulatory approvals, additional improvements involving 3-dimensional imaging and heterogeneous datasets may add precision and validate artificial intelligence as an evidence-based advance in implant dentistry.
+
+## Información del artículo
+
+- **Revista:** The Journal of prosthetic dentistry
+- **Fecha de publicación:** 2026-02-14
+- **Autores:** Balaganesh Pachaiappan, Rahmath Shameem Shafiullah, Gajapathi Balaraman, Yogesh Poonamallee Bhuvaneshwar, Sharath Sadasivan
+- **DOI:** [10.1016/j.prosdent.2026.01.029](https://doi.org/10.1016/j.prosdent.2026.01.029)
+- **PubMed ID:** [41692618](https://pubmed.ncbi.nlm.nih.gov/41692618/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41692618/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
