@@ -1,0 +1,25 @@
+---
+title: "List-mode TOF-PET 3D image reconstruction using stochastic primal-dual network."
+description: "As an imaging modality in nuclear medicine characterized by its notable sensitivity, positron emission tomography (PET) facilitates the visualization of physiological activities occurring within biological tissues. However, convention..."
+date: "2026-02-01"
+category: "investigacion"
+pubmedId: "41691549"
+author: "Kun Tian, Rui Hu, Yiming Wan et al."
+tags: ["image reconstruction", "list&#x2010;mode data", "positron emission tomography (PET)"]
+---
+
+## Resumen
+
+**BACKGROUND:** As an imaging modality in nuclear medicine characterized by its notable sensitivity, positron emission tomography (PET) facilitates the visualization of physiological activities occurring within biological tissues. However, conventional PET images are frequently challenged by poor spatial resolution and a low signal-to-noise ratio (SNR) due to inherent detector physics and constraints on radiotracer dosage. The integration of time-of-flight (TOF) data into PET image reconstruction has, in recent years, led to enhanced image quality. This enhancement is achieved by using the timing information from detected pairs of annihilation photons, allowing for more accurate determination of the locations where positron annihilation occurs. However, significant challenges persist in TOF-PET reconstruction. The inclusion of TOF information drastically increases the size of sinogram data (often by tens of folds), severely escalating computational time and memory requirements for reconstruction. **PURPOSE:** To address these challenges, this work introduces a new deep learning approach that reconstructs PET images directly from list-mode data, which avoids the above problems while enhancing image quality. **METHODS:** Specifically, we propose LM-SPD-Net, a list-mode TOF-PET reconstruction framework based on a stochastic primal-dual network architecture. LM-SPD-Net comprises two main components as follows: a primal module, constructed using Convolutional Neural Networks (CNNs), to process information in the image domain; and a dual module, built with fully connected neural networks (FCNNs), to handle data-domain features. These modules are coupled via a projection model and are alternately updated over multiple iterations to obtain the final reconstructed image. By introducing the FCNN and projection model, LM-SPD-Net overcomes the conventional limitation of CNNs in processing list-mode data. Furthermore, the inclusion of a physics-informed projection process in the training pipeline enhances the interpretability and generalizability of the model. Moreover, to reduce memory usage during training and facilitate 3D PET image reconstruction, a subset partitioning strategy is employed. **RESULTS:** Quantitative and qualitative comparisons with list-mode ordered subset expectation maximization (LM-OSEM), list-mode stochastic primal-dual hybrid gradient (LM-SPDHG), and Fast-PET across both simulated and semi-real clinical data show that LM-SPD-Net outperforms these methods by 5%-20% improvements in PSNR and SSIM metrics, while also demonstrating visibly enhanced image quality. **CONCLUSIONS:** Comprehensive experiments in this study demonstrate that the proposed method effectively reconstructs the overall subject structure with high fidelity, while maintaining excellent performance in clinically relevant regions such as tumors and the thalamus, particularly under low-count&#xa0;conditions.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Kun Tian, Rui Hu, Yiming Wan, Zhenrong Zheng, Yunmei Chen
+- **DOI:** [10.1002/mp.70324](https://doi.org/10.1002/mp.70324)
+- **PubMed ID:** [41691549](https://pubmed.ncbi.nlm.nih.gov/41691549/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41691549/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
