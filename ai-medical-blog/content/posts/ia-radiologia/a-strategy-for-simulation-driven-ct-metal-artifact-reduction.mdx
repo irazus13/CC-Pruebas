@@ -1,0 +1,25 @@
+---
+title: "A strategy for simulation-driven CT metal artifact reduction toward improving network generalizability."
+description: "We address computed tomography (CT) metal artifacts reduction (MAR) using a generative deep-learning model in the imaging physics framework. Existing deep learning-based MAR methods, though promising, generally lack explicit physical ..."
+date: "2026-02-01"
+category: "ia-radiologia"
+pubmedId: "41699969"
+author: "Sungho Yun, Subong Hyun, Da-In Choi et al."
+tags: ["artifact simulation", "beam&#x2010;hardening correction", "computed tomography", "latent diffusion model", "metal artifact reduction"]
+---
+
+## Resumen
+
+**BACKGROUND:** We address computed tomography (CT) metal artifacts reduction (MAR) using a generative deep-learning model in the imaging physics framework. Existing deep learning-based MAR methods, though promising, generally lack explicit physical modeling of artifact formation and rely heavily on data-driven mappings. The absence of physics priors not only limits scalability, as they often require paired or task-specific datasets, but also makes such methods prone to hallucination, anatomical distortion, and unstable artifact suppression. **PURPOSE:** We propose a novel self-supervised framework for CT MAR, integrating a lightweight multi-layer perceptron (MLP)-based beam-hardening correction with a conditional latent diffusion model (LDM). By incorporating a physics-informed correction step and an artifact-reproducing simulation technique, the framework aims to enhance scalability across diverse scenarios, reduce hallucination effects, and improve structural fidelity in the reconstructed images. **METHODS:** The proposed MLP performs physics-driven polynomial correction, serving as a simplified but efficient alternative to existing approaches. Also, the proposed MLP implicitly incorporates sinogram consistency into its optimization objective, allowing case-specific adaptation and convergence toward the desired solution. Additionally, the learned MLP parameters are reused to simulate artifact-contaminated images from artifact-free scans, generating pseudo paired data for self-supervised training without requiring real paired datasets. A conditional LDM is trained on these synthetic pairs to remove residual artifacts. **RESULTS:** By operating in a low-dimensional latent space, the LDM significantly reduces inference time while maintaining high-quality reconstructions. The proposed method is evaluated on both the SynDeepLesion dataset and real clinical data, demonstrating superior artifact removal and structural preservation compared to the existing state-of-the-art MAR techniques. We particularly highlight the robustness, generalizability, and clinical applicability of the proposed framework. **CONCLUSION:** We proposed a self-supervised metal artifact reduction framework that combines MLP-based beam-hardening correction with a conditional latent diffusion model in the imaging physics framework. The MLP module provides physics motivated beam-hardening corrected CT images, while the residual artifact simulation strategy enables fully self-supervised training without the need for paired data. The proposed method demonstrated superior artifact suppression and structural preservation on both synthetic and clinical datasets, outperforming existing approaches.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Sungho Yun, Subong Hyun, Da-In Choi, Seungryong Cho
+- **DOI:** [10.1002/mp.70336](https://doi.org/10.1002/mp.70336)
+- **PubMed ID:** [41699969](https://pubmed.ncbi.nlm.nih.gov/41699969/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41699969/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
