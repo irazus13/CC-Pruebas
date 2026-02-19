@@ -1,0 +1,25 @@
+---
+title: "Dual-Modal Deep Learning with In-Domain Training and Attention for Infant Brain Myelination Prediction."
+description: "Myelin plays a critical role in the central nervous system, and its maturation is essential for understanding brain development. However, assessing myelin progression remains challenging due to variability across age groups. Radiologists typically re..."
+date: "2026-02-18"
+category: "ia-radiologia"
+pubmedId: "41706372"
+author: "Mamilla Sri Harshitha, Mythri G, Anju Thomas et al."
+tags: ["Attention", "Fine-tuning", "In-domain training", "Magnetic resonance imaging", "Myelin maturation"]
+---
+
+## Resumen
+
+Myelin plays a critical role in the central nervous system, and its maturation is essential for understanding brain development. However, assessing myelin progression remains challenging due to variability across age groups. Radiologists typically rely on developmental atlases and age-based milestones, but manual evaluation is time-consuming and prone to inter-observer variability. This paper presents a novel dual-input deep learning framework that leverages both [Formula: see text] and [Formula: see text]-weighted MRI modalities for automated myelin maturation assessment. Each modality is processed through an in-domain trained DenseNet121 feature extractor, followed by Channel and Multi-Head Attention Blocks to enhance feature prioritization and spatial contextualization. Cross-Attention enables effective inter-modality information exchange, while early fusion via concatenation integrates structural insights from both contrasts. The fused features are refined using Global Average Pooling and passed to a regression-optimized dense layer. Trained on 710 samples and tested on 123 from a publicly available dataset (833 total), the model achieved a Mean Absolute Error (MAE) of 1.18 months, a Pearson Correlation Coefficient (PCC) of 0.98, a Coefficient of Determination ([Formula: see text]) of 0.96, and a Concordance Correlation Coefficient (CCC) of 0.98. Visual interpretability through Grad-CAM revealed the model's focus on clinically meaningful brain regions, with abnormal cases showing heightened activation in peripheral and ventral areas. These findings confirm the model's ability to deliver accurate and interpretable predictions, supporting its potential for real-world diagnostic integration in pediatric neuroimaging.
+
+## Información del artículo
+
+- **Revista:** Neuroinformatics
+- **Fecha de publicación:** 2026-02-18
+- **Autores:** Mamilla Sri Harshitha, Mythri G, Anju Thomas, Bibin Francis, Varun P Gopi
+- **DOI:** [10.1007/s12021-025-09750-5](https://doi.org/10.1007/s12021-025-09750-5)
+- **PubMed ID:** [41706372](https://pubmed.ncbi.nlm.nih.gov/41706372/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41706372/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
