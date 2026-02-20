@@ -1,0 +1,25 @@
+---
+title: "Learning anatomy from unlabelled CT volumes: A self-supervised framework for improving prostate radiotherapy segmentation."
+description: "Accurate structure contouring on computed tomography (CT) is critical for prostate cancer radiotherapy, but it remains labour intensive and prone to interobserver variability, particularly for small, low-contrast organs such as the pr..."
+date: "2026-02-01"
+category: "ia-radiologia"
+pubmedId: "41712191"
+author: "Diyana Afrina Hizam, Ngie Min Ung, Marniza Saad et al."
+tags: ["deep learning segmentation", "pelvic", "prostate", "radiotherapy", "self&#x2010;supervised"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate structure contouring on computed tomography (CT) is critical for prostate cancer radiotherapy, but it remains labour intensive and prone to interobserver variability, particularly for small, low-contrast organs such as the prostate, seminal vesicles (SV) and penile bulb (PB). Deep-learning models can automate this task. However, they typically require large, fully labelled datasets that are often unavailable in clinical settings. **PURPOSE:** This study evaluated whether self-supervised (label-free) slice-prediction pretraining could enhance segmentation performance, especially in scenarios with limited annotated data. **METHODS:** We used 322 pelvic CT volumes (215 from UMMC, 107 from TCIA), split 80:20 into training and testing sets (258 training, 64 testing patients). A novel lightweight 2D U-Net encoder was first pretrained on unlabelled data using a slice-prediction task across axial, sagittal, and coronal planes. The pretrained model was then fine-tuned for multi-class segmentation using either the full dataset or a reduced subset of 60 labelled patients. Baselines trained from scratch with 1-channel or 3-channel input were included for comparison. Segmentation accuracy was assessed using mean distance agreement (MDA) and Dice similarity coefficient (DSC). Paired t-tests with Bonferroni correction were applied to assess statistical significance. **RESULTS:** Models with self-supervised pretraining achieved consistently lower MDA across all major pelvic structures. Notable improvements included reductions in bladder MDA from 0.600 mm to 0.547 mm, femoral heads from 1.370 mm to 0.994 mm, PB from 1.470 mm to 1.283 mm, rectum from 0.792 mm to 0.669 mm, prostate from 1.281 mm to 1.183 mm, and SV from 1.175 mm to 0.893 mm. **CONCLUSIONS:** Self-supervised pretraining via slice prediction enables anatomically informed feature learning and improves segmentation robustness under limited data conditions. This strategy enhances accuracy without reliance on manual labels during pretraining and is compatible with computationally lightweight architectures, making it well-suited in resource-constrained clinical environments.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Diyana Afrina Hizam, Ngie Min Ung, Marniza Saad, Firdaus Mohd Salleh, Asyraf Muaadz
+- **DOI:** [10.1002/mp.70357](https://doi.org/10.1002/mp.70357)
+- **PubMed ID:** [41712191](https://pubmed.ncbi.nlm.nih.gov/41712191/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41712191/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
