@@ -1,0 +1,25 @@
+---
+title: "Self-supervised out-of-distribution detection-Metal implants and other anomaly."
+description: "Despite the high precision of deep learning models on internal tests on CT, their effectiveness often drops on external validation due to artifacts caused by patient motion and implants like metal or silicone that were not accounted f..."
+date: "2026-02-01"
+category: "ia-radiologia"
+pubmedId: "41719005"
+author: "Gokul Ramasamy, Amara Tariq, Samuel J Fahrenholtz et al."
+tags: ["OOD detection", "implants", "unsupervised"]
+---
+
+## Resumen
+
+**BACKGROUND:** Despite the high precision of deep learning models on internal tests on CT, their effectiveness often drops on external validation due to artifacts caused by patient motion and implants like metal or silicone that were not accounted for in the carefully curated training data. Potential wide categories of "unknown" anomalies within a CT exam makes training a supervised model for out-of-distribution (OOD) identification impractical, especially when considering unseen external data. **PURPOSE:** To develop an artificial intelligence (AI) model to detect and identify anomalies/OOD data in abdominal-pelvis CT exams for the purpose of improving the performance of downstream applications. **METHODS:** Our proposed 2D and 3D generative architecture receives the third lumbar vertebra (L3) slice (slice-level model) or all the slices from the series (series-level model), generates a reconstruction and the secondary part of our architecture-anomaly score computation block, computes the anomalies pixels/voxels (slice-level/series-level) to identify anomalous L3-slices/volumes (slice-level/series-level). We trained on data from over 2850 abdominal-pelvis CT volumes from adults over age 50 years collected throughout multiple Mayo Clinic campuses (60% female; mean age: 66.9, 92.4% non-Hispanic White) and tested on a prospective test set of 544 CTs from July 2024 (47.3% female; mean age: 70.9, 94% non-Hispanic White) as well as an external test set. **RESULTS:** We found that while traditional methods show moderate success, our generative models-Vector Quantized Variational Autoencoder (VQVAE) and Vision Transformer-Masked Autoencoder (VIT-MAE)-deliver excellent results with negligible false positives (FPs) and are also superior in identifying varied types of OOD samples. Prospective analysis showed the model was able to handle the under-documentation of anomaly in radiology reports with 86.11% true positive (TP) rate. We also performed external validation using the publicly available AbdominalCT-1k dataset, which contains 1062 CT scans compiled from several existing benchmark datasets. The model achieved a 75.26% TP rate, while the 24.7% FP rate was primarily triggered by anomalies located outside the body. **CONCLUSIONS:** The proposed method can be leveraged to detect both intra- and interclass OOD data from abdominal CT images and can assess the quality of CT datasets to provide actionable insights. This workflow is particularly valuable for nonshareable healthcare collaborations, where it can be deployed as a service within local firewalls for automated dataset curation without prior knowledge about the OOD types. The implementation of the algorithm is available in the GitHub: https://github.com/gokul-ramasamy/implant_detection.git.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Gokul Ramasamy, Amara Tariq, Samuel J Fahrenholtz, William F Sensakovic, Bhavik N Patel
+- **DOI:** [10.1002/mp.70339](https://doi.org/10.1002/mp.70339)
+- **PubMed ID:** [41719005](https://pubmed.ncbi.nlm.nih.gov/41719005/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41719005/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
