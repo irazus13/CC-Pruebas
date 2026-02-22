@@ -1,0 +1,25 @@
+---
+title: "CMT-Unet: leveraging stage-wise hybrid framework for enhanced accuracy and efficiency in medical image segmentation."
+description: "Achieving high-precision pixel-level segmentation in medical imaging necessitates both the preservation of fine-grained local details and the modeling of long-range contextual dependencies; nevertheless, convolutional, Transformer, and naive hybrid a..."
+date: "2026-02-21"
+category: "ia-radiologia"
+pubmedId: "41723199"
+author: "Ru Wang, Hai Liu, Gang Wang"
+tags: ["Deep learning", "Hybrid model", "Medical image segmentation", "Vision Mamba"]
+---
+
+## Resumen
+
+Achieving high-precision pixel-level segmentation in medical imaging necessitates both the preservation of fine-grained local details and the modeling of long-range contextual dependencies; nevertheless, convolutional, Transformer, and naive hybrid architectures struggle to adaptively balance these two requirements. To alleviate this limitation, we propose CMT-Unet, which incorporates a Mamba-based state space model to enable adaptive adjustment between local and global feature modeling. In our model, a task-driven, hierarchically integrated architecture is proposed, where inverted residual convolutional units are integrated with Mamba and Transformer modules to effectively capture local and global feature representation, avoid excessive computational complexity, enhance early-stage local feature extraction, and prevent local blurring from prematurely large receptive fields. HiLo attention further complements texture and boundary cues by jointly modeling high and low frequency information often missed by standard Multi-Head Self Attention (MHSA). This staged integration leverages the inherent progression of the encoder from spatial to semantic abstraction, thereby enriching its representational capacity and enhancing efficiency. Experiments conducted on the Synapse and ACDC datasets suggest that CMT-Unet performs reasonably well in terms of efficiency and accuracy when compared to baseline Transformer-UNet and other hybrid approaches. These results demonstrate the feasibility and robustness of stage-specific hybrid designs for advanced medical image segmentation.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-02-21
+- **Autores:** Ru Wang, Hai Liu, Gang Wang
+- **DOI:** [10.1038/s41598-026-40572-w](https://doi.org/10.1038/s41598-026-40572-w)
+- **PubMed ID:** [41723199](https://pubmed.ncbi.nlm.nih.gov/41723199/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41723199/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

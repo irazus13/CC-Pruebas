@@ -1,0 +1,25 @@
+---
+title: "Comparative study of wavelet transform and Fourier domain filtering for medical image denoising."
+description: "Image denoising is a crucial preprocessing step in medical imaging. While deep learning methods offer state-of-the-art performance, their computational complexity and data requirements can be prohibitive. Traditional transform-domain methods, particu..."
+date: "2026-02-21"
+category: "ia-radiologia"
+pubmedId: "41723236"
+author: "M Ali Saif, Bassam M Mughalles, Ibrahim G H Loqman"
+tags: []
+---
+
+## Resumen
+
+Image denoising is a crucial preprocessing step in medical imaging. While deep learning methods offer state-of-the-art performance, their computational complexity and data requirements can be prohibitive. Traditional transform-domain methods, particularly wavelet transforms, remain widely used due to their efficiency and interpretability. However, a comprehensive comparison of wavelet families and thresholding techniques for diverse medical noise types is lacking, and the relative performance of wavelet versus localized Fourier methods is not well established. Here, we conduct a two-part investigation. First, we evaluate eight wavelet families combined with twelve thresholding functions and four threshold selection rules on a CT image corrupted with Gaussian, Uniform, Poisson, and Salt-and-Pepper noise. Second, we compare the best wavelet configurations against a block-based Discrete Fourier Cosine Transform (DFCT) approach using overlapping blocks. Among wavelet methods, Biorthogonal Spline and Daubechies wavelets with adaptive thresholding (Smooth Garrote, SURE) performed best. However, the block-based DFCT method consistently outperformed all global DWT configurations across all noise types. DFCT achieved PSNR dB-values of [Formula: see text] (Gaussian), [Formula: see text] (uniform), [Formula: see text] (Poisson), and [Formula: see text] (salt-and-pepper), representing improvements of 4.63, 4.57, 6.25, and 5.07 dB respectively over the best wavelet results. In contrast to the common assumption that wavelet transforms are superior due to multi-resolution analysis, our results demonstrate that a block-based DFCT approach provides significantly better denoising performance across diverse noise types. These findings emphasize the importance of algorithmic selection based on processing methodology rather than solely on transform properties.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-02-21
+- **Autores:** M Ali Saif, Bassam M Mughalles, Ibrahim G H Loqman
+- **DOI:** [10.1038/s41598-026-40594-4](https://doi.org/10.1038/s41598-026-40594-4)
+- **PubMed ID:** [41723236](https://pubmed.ncbi.nlm.nih.gov/41723236/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41723236/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
