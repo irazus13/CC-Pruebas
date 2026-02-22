@@ -1,0 +1,25 @@
+---
+title: "Foundation Model Based on Routine Magnetic Resonance Imaging for Brain Tumor Molecular Profiling and Progression Prediction."
+description: "To build a self-supervised magnetic resonance imaging (MRI) foundation model from routine clinical scans and to test whether it can support key glioma-related applications, including post-therapy imaging outcome characterization and mole..."
+date: "2026-02-01"
+category: "ia-radiologia"
+pubmedId: "41719510"
+author: "Junxian Li, Renhe Liu, Yuchen Xing et al."
+tags: []
+---
+
+## Resumen
+
+**PURPOSE:** To build a self-supervised magnetic resonance imaging (MRI) foundation model from routine clinical scans and to test whether it can support key glioma-related applications, including post-therapy imaging outcome characterization and molecular marker inference. **MATERIALS AND METHODS:** We created the Unified Multimodal Brain Imaging Foundation (UMBIF) model and pretrained it in a self-supervised manner using 51,029 routine brain MRI examinations collected across multiple institutions. Pretraining used a hybrid objective that couples masked-image reconstruction with contrastive representation learning to encourage anatomically and clinically informative embeddings. The pretrained UMBIF encoder was then adapted to downstream multicenter data sets to predict (1) post-treatment radiographic outcomes and (2) molecular biomarkers, including IDH mutation, MGMT promoter methylation, and 1p/19q codeletion. Performance was benchmarked against commonly used convolutional networks and traditional machine learning classifiers, using accuracy, sensitivity, specificity, and receiver operating characteristic-AUC as primary metrics. **RESULTS:** Relative to self-supervised initialization derived from natural-image corpora or from approaches emphasizing only large tumor-area crops (self-supervised learning [SSL]-ImageNet and SSL-Cerebral), the UMBIF encoder-decoder design captured richer, more task-relevant features and consistently improved downstream discrimination. The best pretrained model achieved an accuracy of 0.899 (AUC, 0.815) for post-treatment radiographic outcome characterization. For molecular profiling, it reached accuracies/AUCs of 0.898/0.916 for 1p/19q codeletion, 0.829/0.896 for IDH mutation status, and 0.905/0.859 for MGMT promoter methylation, indicating strong potential utility in clinical decision support. **CONCLUSION:** UMBIF showed robust transferability to both post-therapy imaging assessment and molecular status prediction in glioma. By leveraging large-scale self-supervised pretraining to boost performance while reducing dependence on manual annotations, the framework may facilitate more efficient and reliable diagnostic workflows.
+
+## Información del artículo
+
+- **Revista:** JCO precision oncology
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Junxian Li, Renhe Liu, Yuchen Xing, Ximin Gao, Qiang Yin
+- **DOI:** [10.1200/PO-25-00930](https://doi.org/10.1200/PO-25-00930)
+- **PubMed ID:** [41719510](https://pubmed.ncbi.nlm.nih.gov/41719510/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41719510/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
