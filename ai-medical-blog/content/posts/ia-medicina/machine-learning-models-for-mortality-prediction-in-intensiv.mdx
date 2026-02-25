@@ -1,0 +1,25 @@
+---
+title: "Machine Learning Models for Mortality Prediction in Intensive Care Unit Patients With Ischemic Stroke Associated With Intracranial Artery Stenosis: Retrospective Cohort Study."
+description: "Mortality prediction in intensive care unit (ICU) patients with ischemic stroke complicated by intracranial artery stenosis or occlusion remains difficult. Conventional scoring systems often lack discriminatory power and fail to provi..."
+date: "2026-02-24"
+category: "ia-medicina"
+pubmedId: "41734354"
+author: "Kun Zhang, Ruomeng Chen, Jingyi Yang et al."
+tags: ["ICU outcomes", "critical care", "explainable artificial intelligence", "intensive care unit", "intracranial arterial stenosis"]
+---
+
+## Resumen
+
+**BACKGROUND:** Mortality prediction in intensive care unit (ICU) patients with ischemic stroke complicated by intracranial artery stenosis or occlusion remains difficult. Conventional scoring systems often lack discriminatory power and fail to provide individualized risk estimates. Machine learning approaches have been increasingly explored to integrate diverse clinical features for prognostic modeling. **OBJECTIVE:** This study aims to develop and evaluate machine learning models for individualized mortality prediction in ICU patients with ischemic stroke associated with intracranial artery stenosis or occlusion. **METHODS:** Using the Medical Information Mart for Intensive Care IV (MIMIC-IV) database, we conducted a retrospective cohort study including 5280 adult ICU patients identified through International Classification of Diseases, Ninth and Tenth Revision (ICD-9/10) codes. Mortality status was determined based on the presence of a recorded date of death (dod) in the MIMIC-IV database. Patients with a documented dod were classified as deceased, whereas those without a recorded dod were classified as nondeceased. The primary outcome was all-cause mortality as recorded in the MIMIC-IV database, defined by the presence of a documented dod. Patients were randomly split into training (n=3696, 70%) and testing (n=1584, 30%) cohorts. Missing value imputation, correlation reduction, and multistep supervised feature selection (gradient boosting, BorutaShap, recursive feature elimination with cross-validation, LassoCV, and chi-square analysis) were performed exclusively within the training set and subsequently applied to the test set, resulting in 35 retained predictive features. Eight machine learning models-including light gradient boosting machine (LightGBM), Bagging (bootstrap aggregating), random forest, logistic regression, support vector machine, gradient boosting, adaptive boosting, and k-nearest neighbors-were trained with hyperparameter optimization using RandomizedSearchCV. Model performance was evaluated using area under the curve, accuracy, recall, precision, F1-score, and calibration curves. Shapley additive explanations were used for global and individual-level interpretability. **RESULTS:** LightGBM, Bagging, and logistic regression demonstrated comparable discrimination, achieving an area under the curve of approximately 0.82-0.83 and accuracy above 73% on the independent test set. LightGBM demonstrated balanced performance (recall 0.70; precision 0.72) and good calibration. Shapley additive explanations analysis identified acute physiology score III, suspected infection, Charlson comorbidity index, age, weight on admission, and red cell distribution width as the most influential predictors. Overall, higher physiological severity, greater comorbidity burden, and older age were consistently associated with increased observed mortality risk. **CONCLUSIONS:** Machine learning models-including LightGBM and Bagging-provide interpretable predictions of all-cause mortality in ICU patients with ischemic stroke and intracranial arterial disease. These models highlight key prognostic features and may support mortality risk stratification. External validation and evaluation of workflow integration are warranted before clinical implementation.
+
+## Información del artículo
+
+- **Revista:** JMIR cardio
+- **Fecha de publicación:** 2026-02-24
+- **Autores:** Kun Zhang, Ruomeng Chen, Jingyi Yang, Yan Yan, Lijuan Liu
+- **DOI:** [10.2196/82042](https://doi.org/10.2196/82042)
+- **PubMed ID:** [41734354](https://pubmed.ncbi.nlm.nih.gov/41734354/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41734354/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
