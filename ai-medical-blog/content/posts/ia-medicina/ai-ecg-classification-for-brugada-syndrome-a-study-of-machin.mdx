@@ -1,0 +1,25 @@
+---
+title: "AI-ECG classification for Brugada syndrome: A study of machine learning techniques to optimise for limited datasets."
+description: "Deep neural networks can classify ECGs with high accuracy when training data is abundant. Rare conditions like Brugada syndrome, an inherited arrhythmia syndrome predisposing to sudden death, pose challenges due to data scarcity hindering model train..."
+date: "2026-02-01"
+category: "ia-medicina"
+pubmedId: "41739842"
+author: "Keenan Saleh, Raaif Hadadi, Yixiu Liang et al."
+tags: []
+---
+
+## Resumen
+
+Deep neural networks can classify ECGs with high accuracy when training data is abundant. Rare conditions like Brugada syndrome, an inherited arrhythmia syndrome predisposing to sudden death, pose challenges due to data scarcity hindering model training. We evaluated multiple machine learning (ML) approaches to optimise a Brugada ECG classification model using limited training data. The baseline model was trained on a dataset comprising 176 Brugada, 176 right bundle branch block (RBBB) and 352 normal ECGs from Zhongshan Hospital (Zhongshan-baseline dataset), framed as a binary classification task to distinguish Brugada from non-Brugada ECGs. A 25%-75% train-test split was used to exacerbate data scarcity. To enhance training, we incorporated three additional datasets: (i) a different, labelled ECG dataset from Zhongshan Hospital including normal and RBBB ECGs (Zhongshan-pretrain), (ii) an unlabelled ECG dataset from Hammersmith Hospital including Brugada and non-Brugada ECGs (Imperial), (iii) an open-access labelled ECG dataset (PTB-XL). Three strategies were tested: (1) supervised pretraining, (2) self-supervised pretraining with data augmentation, and (3) oversampling using SMOTE (synthetic minority oversampling technique). Each model was evaluated on the unseen internal test set and an external Brugada mimic dataset. The models were re-trained using an 80%-20% train-test split as a secondary analysis. The baseline model achieved 92.2% accuracy, F1-score 0.837, and area under the Receiver Operating Characteristic curve (AUC) 0.962. Supervised pretraining significantly improved performance when training data was scarce, with the best model pretrained on the Zhongshan-pretrain dataset boosting accuracy (+3.2%), F1-score (+0.071) and AUC&#x2009;+&#x2009;0.019), with consistent cross-validation performance. Self-supervised pretraining produced smaller and more variable gains, although select models better mitigated against false positives on the Brugada mimic dataset. SMOTE oversampling showed inconsistent effects on performance. Incorporating pretraining and oversampling may facilitate the development of more accurate AI-ECG models for rare diseases when training data is limited but provides diminishing returns when adequate labelled data is available.
+
+## Información del artículo
+
+- **Revista:** PLOS digital health
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Keenan Saleh, Raaif Hadadi, Yixiu Liang, Hong Wong, Arunashis Sau
+- **DOI:** [10.1371/journal.pdig.0001222](https://doi.org/10.1371/journal.pdig.0001222)
+- **PubMed ID:** [41739842](https://pubmed.ncbi.nlm.nih.gov/41739842/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41739842/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
