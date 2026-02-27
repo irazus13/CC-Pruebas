@@ -1,0 +1,25 @@
+---
+title: "A Novel Hybrid Large Language Model Approach for Reporting Panoramic Radiographs and Performance Comparison with Current Large Language Models."
+description: "Large language models (LLMs) show potential in clinical reporting, yet current multimodal systems remain unreliable for interpreting panoramic radiographs due to limited visual diagnostic accuracy and high hallucination rates. This study introduces a..."
+date: "2026-02-25"
+category: "ia-odontologia"
+pubmedId: "41741852"
+author: "Yunus Balel, Kaan Sa&#x11f;ta&#x15f;, Fatih Teke et al."
+tags: ["Dental artificial intelligence", "Hybrid large language model", "Panoramic dental radiography", "Radiology report generation", "YOLOv12 segmentation"]
+---
+
+## Resumen
+
+Large language models (LLMs) show potential in clinical reporting, yet current multimodal systems remain unreliable for interpreting panoramic radiographs due to limited visual diagnostic accuracy and high hallucination rates. This study introduces a hybrid framework that integrates a deep learning-based image analysis model with LLM-driven reporting to enhance reliability in dental radiology. A YOLOv12 model was trained on 30,954 panoramic radiographs (70% training, 15% validation, 15% testing) for tooth detection and 14-category segmentation. Detection and segmentation outputs were converted into structured JSON data and processed by locally hosted LLMs (DeepSeek R1, Mistral, Llama 3.2, Gemma 3, Qwen3, SmolLM3). Performance metrics included structural validity, consistency, response latency, and token length. Reporting accuracy was evaluated on 50 unseen radiographs, with expert assessment serving as the gold standard. The tooth-numbering model achieved Precision&#x2009;=&#x2009;0.651, Recall&#x2009;=&#x2009;0.699, and F1&#x2009;=&#x2009;0.674. The segmentation model achieved overall Precision&#x2009;=&#x2009;0.816, Recall&#x2009;=&#x2009;0.626, and F1&#x2009;=&#x2009;0.708, with highest F1-scores for ectopic/supernumerary teeth (0.994), impacted teeth (0.990), and implants (0.984). All hybrid LLMs produced structurally valid JSON outputs (100%). DeepSeek R1 showed the highest reporting accuracy (466 True findings), followed by Mistral (462), Llama 3.2 (442), and Gemma 3 (436). Hallucination counts were lowest in DeepSeek R1 (30) and highest in Gemma 3 (60). Commercial LLMs (ChatGPT-5, Gemini 2.5 Pro, DeepSeek R1-cloud) exhibited hallucinations in 100% of reports. Integrating structured image-derived findings with LLM reasoning markedly improves reporting accuracy and minimizes hallucinations. The hybrid framework outperforms commercial LLMs and represents a promising, reliable solution for AI-assisted dental radiographic interpretation.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-02-25
+- **Autores:** Yunus Balel, Kaan Sa&#x11f;ta&#x15f;, Fatih Teke, Mehmet Ali Kurt
+- **DOI:** [10.1007/s10278-026-01880-9](https://doi.org/10.1007/s10278-026-01880-9)
+- **PubMed ID:** [41741852](https://pubmed.ncbi.nlm.nih.gov/41741852/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41741852/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
