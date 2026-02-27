@@ -1,0 +1,25 @@
+---
+title: "Transformer Enabled Half Z&#x2011;spectrum Sampling B0 Inhomogeneity Correction for GluCEST and NOE MRI."
+description: "Purpose. Chemical Exchange Saturation Transfer (CEST) MRI relies on multiple saturation offsets to correct B0 inhomogeneity-induced quantification errors at the cost of a prolonged scan time. We previously developed a deep learning-based method for B..."
+date: "2026-02-23"
+category: "ia-radiologia"
+pubmedId: "41756776"
+author: "Yiran Li, Paul S Jacobs, Dushyant Kumar et al."
+tags: ["CEST", "Deep Learning", "Glutamate", "NOE", "Transformer"]
+---
+
+## Resumen
+
+Purpose. Chemical Exchange Saturation Transfer (CEST) MRI relies on multiple saturation offsets to correct B0 inhomogeneity-induced quantification errors at the cost of a prolonged scan time. We previously developed a deep learning-based method for B0 inhomogeneity correction in Glutamate-weighted CEST (GluCEST) using a parsimonious number of Z-spectrum offset images, which can significantly reduce scan time and provide better correction quality. In this study, we propose a Transformer-based model that achieves B0 correction using only downfield Z-spectrum offset images, further reducing scan time by about 50%. Methods. B0 correction was performed separately for the positive and negative sides of the Z-spectrum using reduced saturation offset acquisitions. We constructed distinct Swin transformer networks for each side, training them to learn the nonlinear mapping from a limited number of GluCEST images at various frequencies on the positive side to the specific 3 ppm points where GluCEST peaks. A similar methodology was applied to NOE CEST imaging, optimizing each network to effectively handle the unique characteristics of each spectrum side. Results. The Transformer-based models significantly outperformed the previous deep learning methods both visually and quantitatively. By limiting inputs to only the positive Z-spectrum offsets, we achieved a 50% reduction in data acquisition time compared with previous deep learning approaches while maintaining B0 inhomogeneity correction accuracy. Conclusion. Efficient B0 inhomogeneity correction in GluCEST and NOE MRI can be achieved by using a select number of offset images from the downfield Z-spectrum, reducing the acquisition time by over 80%. The proposed transformer-based model demonstrates superior performance over traditional convolutional neural networks, offering a robust and efficient solution for performing CEST MRI in clinical practice.
+
+## Información del artículo
+
+- **Revista:** Chemical &amp; biomedical imaging
+- **Fecha de publicación:** 2026-02-23
+- **Autores:** Yiran Li, Paul S Jacobs, Dushyant Kumar, Anshuman Swain, Neil Wilson
+- **DOI:** [10.1021/cbmi.5c00071](https://doi.org/10.1021/cbmi.5c00071)
+- **PubMed ID:** [41756776](https://pubmed.ncbi.nlm.nih.gov/41756776/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41756776/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
