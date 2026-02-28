@@ -1,0 +1,25 @@
+---
+title: "Image quality restoration in 15-s breath-hold PET using a diffusion-based neural network."
+description: "Breath-hold PET imaging helps reduce respiratory motion artifacts in thoracoabdominal scans. However, its clinical application is limited by the short acquisition time, which results in significant image noise and poor lesion detectab..."
+date: "2026-03-01"
+category: "ia-radiologia"
+pubmedId: "41761600"
+author: "Jingxi Hu, Lianghua Li, Qiyang Zhang et al."
+tags: ["PET image enhancement", "Positron Emission Tomography", "breath&#x2010;hold PET", "deep learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Breath-hold PET imaging helps reduce respiratory motion artifacts in thoracoabdominal scans. However, its clinical application is limited by the short acquisition time, which results in significant image noise and poor lesion detectability. Enhancing image quality under such conditions remains a technical challenge. **PURPOSE:** To improve the image quality of 15-s breath-hold PET scans, we investigated a deep learning-based framework using a diffusion probabilistic model. The goal was to suppress noise and enhance lesion visibility while maintaining quantitative accuracy under severely limited acquisition durations. **METHODS:** We propose TAM-DiffPET, a denoising diffusion probabilistic model (DDPM) augmented with Temporal Attention Modulation (TAM) to refine intermediate feature representations by injecting diffusion time-step embeddings and temporal contextual cues. The model was trained on paired PET datasets comprising 15-s breath-hold scans and 5-min free-breathing scans from 230 patients at Ren Ji Hospital; 180 cases were used for training and 50 for quantitative and qualitative evaluation. Performance was assessed using PSNR, SSIM, and voxel-wise SUV distributions within lesion ROIs. Visual and statistical comparisons were conducted against U-Net, CycleGAN, and a vanilla DDPM. **RESULTS:** The proposed method demonstrated superior performance compared to existing deep learning-based approaches. Quantitatively, it achieved the highest PSNR (40.2&#xa0;&#xa0;&#xb1;&#xa0;&#xa0;1.2&#xa0;dB) and SSIM (0.995&#xa0;&#xa0;&#xb1;&#xa0;&#xa0;0.004), significantly outperforming previous deep learning based methods such as U-Net, CycleGAN, and DDPM. Voxel-wise SUV error distributions showed lower standard deviation and mean absolute error within lesion ROIs. Visual assessments revealed enhanced lesion contrast, sharper anatomical boundaries, and reduced background noise. Difference maps confirmed minimal deviation from the 5-min reference scans. Furthermore, SUV distribution analysis across representative patients confirmed that the proposed method preserves tracer uptake consistency, offering improved fidelity in clinical lesion quantification. **CONCLUSION:** Our diffusion-based framework effectively denoises breath-hold PET images acquired under ultrashort durations, offering improved visual clarity and quantitative fidelity. These results support its clinical utility in motion-prone scenarios, such as thoracic or abdominal imaging, and suggest its potential for enhancing diagnostic accuracy while reducing scan time and radiation burden on patients.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-03-01
+- **Autores:** Jingxi Hu, Lianghua Li, Qiyang Zhang, Weijun Wei, Gang Huang
+- **DOI:** [10.1002/mp.70361](https://doi.org/10.1002/mp.70361)
+- **PubMed ID:** [41761600](https://pubmed.ncbi.nlm.nih.gov/41761600/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41761600/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
