@@ -1,0 +1,25 @@
+---
+title: "From Detection to Mitigation: Addressing Bias in Deep Learning Models for Chest X-Ray Diagnosis."
+description: "Deep learning models have shown promise in improving diagnostic accuracy from chest X-rays, but they also risk perpetuating healthcare disparities when performance varies across demographic groups. In this work, we present a comprehensive bias detect..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "41758167"
+author: "Clemence Mottez, Louisa Fay, Maya Varma et al."
+tags: []
+---
+
+## Resumen
+
+Deep learning models have shown promise in improving diagnostic accuracy from chest X-rays, but they also risk perpetuating healthcare disparities when performance varies across demographic groups. In this work, we present a comprehensive bias detection and mitigation framework targeting sex, age, and race-based disparities when performing diagnostic tasks with chest X-rays. We extend a recent CNN-XGBoost pipeline to support multi-label classification and evaluate its performance across four medical conditions. We show that replacing the final layer of CNN with an eXtreme Gradient Boosting classifier improves the fairness of the subgroup while maintaining or improving the overall predictive performance. To validate its generalizability, we apply the method to different backbones, namely DenseNet-121 and ResNet-50, and achieve similarly strong performance and fairness outcomes, confirming its model-agnostic design. We further compare this lightweight adapter training method with traditional full-model training bias mitigation techniques, including adversarial training, reweighting, data augmentation, and active learning, and find that our approach offers competitive or superior bias reduction at a fraction of the computational cost. Finally, we show that combining eXtreme Gradient Boosting retraining with active learning yields the largest reduction in bias across all demographic subgroups, both in and out of distribution on the CheXpert and MIMIC datasets, establishing a practical and effective path toward equitable deep learning deployment in clinical radiology.
+
+## Información del artículo
+
+- **Revista:** Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Clemence Mottez, Louisa Fay, Maya Varma, Sophie Ostmeier, Curtis Langlotz
+- **DOI:** [10.1142/9789819824755_0039](https://doi.org/10.1142/9789819824755_0039)
+- **PubMed ID:** [41758167](https://pubmed.ncbi.nlm.nih.gov/41758167/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41758167/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
