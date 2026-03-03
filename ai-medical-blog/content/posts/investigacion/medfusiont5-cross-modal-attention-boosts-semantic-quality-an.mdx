@@ -1,0 +1,25 @@
+---
+title: "MedFusionT5: Cross-Modal Attention Boosts Semantic Quality and Reduces Hallucinations in Dental AI."
+description: "Automated dental report generation faces significant challenges in multimodal fusion, often resulting in suboptimal semantic quality and risks of hallucination, where AI generates clinically unsupported content. Current app..."
+date: "2026-03-01"
+category: "investigacion"
+pubmedId: "41771189"
+author: "Hamida Abdaoui, Sabri Barbaria, Ismail Dergaa et al."
+tags: ["Dental AI", "Hallucination control", "Medical report generation", "Multimodal alignment"]
+---
+
+## Resumen
+
+**INTRODUCTION AND AIMS:** Automated dental report generation faces significant challenges in multimodal fusion, often resulting in suboptimal semantic quality and risks of hallucination, where AI generates clinically unsupported content. Current approaches that rely on simple feature concatenation or bidirectional attention mechanisms fail to effectively capture visual-textual relationships in medical imaging. This study aims to develop MedFusionT5, a unidirectional cross-modal alignment framework that (1) achieves superior clinical report quality through focused attention between visual patches and clinical text representations, and (2) ensures exceptional factual consistency by minimising hallucination rates. **METHODS:** We implemented a novel architecture that integrates vision transformer (ViT) for patch-based visual feature extraction with Bio_ClinicalBERT for clinical text encoding. The core innovation is a unidirectional multihead attention alignment module that selectively maps textual embeddings to relevant visual patches before multimodal fusion. A T5-base decoder then generates diagnostic reports from the aligned representations. We evaluated performance on 700 dental panoramic radiographs using comprehensive metrics, including BLEU, ROUGE, CIDEr, clinical precision/recall, and specialised hallucination analysis, comparing against both concatenation and coattention baselines. **RESULTS:** MedFusionT5 demonstrated superior performance across all evaluated metrics. Compared to the coattention baseline, CIDEr increased by 122% (5.65 vs 2.54) and by 320% over simple concatenation. BLEU-4 reached 0.865, outperforming both baselines, while maintaining the lowest hallucination rate at 2.42% (39% reduction vs coattention, 46% vs concatenation). The model achieved an optimal balance between precision (0.982) and recall (0.923), with 90% of reports exhibiting near-zero hallucination. Notably, MedFusionT5 showed consistent quality independent of report length (r = -0.022), unlike coattention's length-dependent performance (r = +0.795). **CONCLUSION:** MedFusionT5 establishes a new state-of-the-art in automated dental report generation, demonstrating that unidirectional cross-modal alignment achieves superior semantic quality and clinical precision while minimising hallucinations. This work identifies unidirectional attention as the optimal alignment strategy for medical AI, providing a foundation for trustworthy clinical deployment where both accuracy and reliability are paramount.
+
+## Información del artículo
+
+- **Revista:** International dental journal
+- **Fecha de publicación:** 2026-03-01
+- **Autores:** Hamida Abdaoui, Sabri Barbaria, Ismail Dergaa, Halil &#x130;brahim Ceylan, Nicola Luigi Bragazzi
+- **DOI:** [10.1016/j.identj.2025.109404](https://doi.org/10.1016/j.identj.2025.109404)
+- **PubMed ID:** [41771189](https://pubmed.ncbi.nlm.nih.gov/41771189/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41771189/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
