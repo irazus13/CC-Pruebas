@@ -1,0 +1,25 @@
+---
+title: "AI-based prostate volume estimation from multi-planar MRI under variable acquisition protocols."
+description: "Prostate MRI protocols vary across institutions, with abbreviated protocols increasingly limited to axial plane acquisitions. Conventional deep learning (DL) models for prostate volume (PV) estimation typically require complete availa..."
+date: "2026-06-01"
+category: "ia-radiologia"
+pubmedId: "41783490"
+author: "Yao Lu, Tim Nikolaas Lindeijer, Tord Martin Ytredal et al."
+tags: ["Abbreviated protocols", "Magnetic resonance imaging, deep learning", "knowledge-based", "multi-planar"]
+---
+
+## Resumen
+
+**BACKGROUND:** Prostate MRI protocols vary across institutions, with abbreviated protocols increasingly limited to axial plane acquisitions. Conventional deep learning (DL) models for prostate volume (PV) estimation typically require complete availability of annotated full imaging protocols during training and inference, limiting their adaptability in real-world clinical workflows. This study aimed to develop and evaluate a knowledge-based (KB) DL segmentation model that adapts to variable MRI acquisition protocols, including axial-only abbreviated protocols. **METHODS:** This retrospective study included 629 multiparametric 3-Tesla prostate MRI exams (66.60&#x202f;&#xb1;&#x202f;7.50 years) from biopsy-confirmed patients. Manual segmentations by expert radiologists and ellipsoid-derived volumes per PI-RADS 2.1 ( PV ref ) served as reference standards. A 2D nnU-Net-based DL model with a KB contrastive loss was trained using only axial segmentations while incorporating unannotated orthogonal views ( PV KB ). Performance was compared to a fully supervised nnU-Net-based DL model trained with full multi-planar annotations and data ( PV DL ) . Evaluation metrics included Dice Score Coefficient (DSC), Relative Volume Difference (RVD), Bland-Altman analysis, and intraclass correlation coefficient (ICC). Experiments simulated both full and abbreviated protocols (axial-only). Wilcoxon signed-rank tests were used to evaluate statistical differences in performance across configurations. Statistical significance was set at p&#x2009;&lt;&#x2009;0.05. **RESULTS:** With full multi-planar input, the KB model achieved a DSC of 0.91&#x2009;&#xb1;&#x2009;0.03 and RVD of 2.1&#x2009;&#xb1;&#x2009;6.4%, comparable to the fully supervised PV DL model. Under axial-only conditions, the KB model maintained high performance (DSC:0.88&#x2009;&#xb1;&#x2009;0.04,RVD:3.4&#x2009;&#xb1;&#x2009;7.1%). PV agreement with PV ref remained excellent across conditions (ICC&gt;0.90). **CONCLUSIONS:** The proposed KB DL model enables accurate and flexible PV assessment under variable MRI protocols without requiring segmentation masks beyond the axial plane.
+
+## Información del artículo
+
+- **Revista:** European journal of radiology open
+- **Fecha de publicación:** 2026-06-01
+- **Autores:** Yao Lu, Tim Nikolaas Lindeijer, Tord Martin Ytredal, Andreas Bremset Alvestad, Alvaro Fernandez-Quilez
+- **DOI:** [10.1016/j.ejro.2026.100738](https://doi.org/10.1016/j.ejro.2026.100738)
+- **PubMed ID:** [41783490](https://pubmed.ncbi.nlm.nih.gov/41783490/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41783490/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
