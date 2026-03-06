@@ -1,0 +1,25 @@
+---
+title: "Unsupervised segmentation of dynamic pulmonary MRI using cross-modality adaptation with annotated CT images."
+description: "Accurate segmentation of lung parenchyma in dynamic pulmonary magnetic resonance imaging (MRI) is required for clinical diagnosis and treatment planning. However, supervised deep learning algorithms rely on annotated datasets, which are ..."
+date: "2026-03-05"
+category: "ia-radiologia"
+pubmedId: "41784882"
+author: "Zijun Wu, Ziwei Zhang, Zhijun Wang et al."
+tags: ["Cross-modality adaptation", "Medical image segmentation", "Pulmonary MRI", "Unsupervised learning"]
+---
+
+## Resumen
+
+**PURPOSE:** Accurate segmentation of lung parenchyma in dynamic pulmonary magnetic resonance imaging (MRI) is required for clinical diagnosis and treatment planning. However, supervised deep learning algorithms rely on annotated datasets, which are scarce for pulmonary MRI. This study aims to leverage existing annotated computed tomography (CT) data to enable unsupervised segmentation of pulmonary MRI. **METHODS:** A new framework was proposed for unsupervised segmentation of pulmonary MRI. First, a masked autoencoder is pretrained to learn modality-invariant features. Next, an initial segmenter is trained using labeled CT images, combined with a temporal consistency loss on 4D MR images. The initial segmenter generates predictions for MR images, which are further processed through a select-and-refine pipeline to produce high-quality pseudolabels.&#xa0;Finally, a final segmenter is trained using the pseudolabeled MRI, combined with the temporal consistency constraint. **RESULTS:** The model was trained using 31 unlabeled 4D MR images and 30 labeled CT images, and evaluated on 20 and 12 4D MR images acquired from two different centers. The proposed method achieves accurate and robust segmentation of lung parenchyma and outperforms state-of-the-art cross-modality methods, with Dice scores of 97.75&#x2009;&#xb1;&#x2009;0.57% and 97.72&#x2009;&#xb1;&#x2009;0.55%, and average surface distances of 1.80&#x2009;&#xb1;&#x2009;1.40&#xa0;mm and 1.34&#x2009;&#xb1;&#x2009;0.69&#xa0;mm across the two test sets. **CONCLUSION:** The proposed method effectively transfers segmentation knowledge from CT to MRI, enabling accurate segmentation of lung parenchyma. By eliminating the dependency on MRI annotations, our technique offers a practical and promising solution for segmentation of dynamic pulmonary MRI.
+
+## Información del artículo
+
+- **Revista:** International journal of computer assisted radiology and surgery
+- **Fecha de publicación:** 2026-03-05
+- **Autores:** Zijun Wu, Ziwei Zhang, Zhijun Wang, Zekang Ding, Li Fan
+- **DOI:** [10.1007/s11548-026-03584-5](https://doi.org/10.1007/s11548-026-03584-5)
+- **PubMed ID:** [41784882](https://pubmed.ncbi.nlm.nih.gov/41784882/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41784882/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
