@@ -1,0 +1,25 @@
+---
+title: "RoentMod: a synthetic chest X-ray modification model to identify and correct image interpretation model shortcuts."
+description: "Chest radiographs (CXRs) are among the most common tests in medicine; automated interpretation may reduce radiologists' workload and expand access. Deep learning multi-task and foundation models have shown strong CXR interpretation performance but ar..."
+date: "2026-03-06"
+category: "ia-radiologia"
+pubmedId: "41792409"
+author: "Lauren H Cooke, Matthias Jung, Jan M Brendel et al."
+tags: []
+---
+
+## Resumen
+
+Chest radiographs (CXRs) are among the most common tests in medicine; automated interpretation may reduce radiologists' workload and expand access. Deep learning multi-task and foundation models have shown strong CXR interpretation performance but are vulnerable to shortcut learning, where spurious correlations drive decision-making. We introduce RoentMod, a counterfactual image editing framework that generates realistic CXRs with user-specified and synthetic pathology while maintaining the original anatomical features. RoentMod combines an open-source medical image generator (RoentGen) with an image-to-image modification model without retraining. In reader studies of RoentMod-produced images, 93% appeared realistic, 89-99% correctly incorporated the specified finding, and all preserved native anatomy comparable to real follow-up CXRs. Using RoentMod, we demonstrate that state-of-the-art multi-task and foundation models frequently exploit off-target pathology as shortcuts, limiting their specificity. Incorporating RoentMod-generated counterfactual images during training mitigated this vulnerability, improving model discrimination across multiple pathologies by 3-19% AUC in internal validation and by 1-11% for 5 out of 6 tested pathologies in external testing. These findings establish RoentMod as a tool to probe and correct shortcut learning in medical AI. By enabling controlled counterfactual interventions, RoentMod enhances the robustness and interpretability of CXR interpretation models and provides a strategy to improve medical imaging models.
+
+## Información del artículo
+
+- **Revista:** NPJ digital medicine
+- **Fecha de publicación:** 2026-03-06
+- **Autores:** Lauren H Cooke, Matthias Jung, Jan M Brendel, Nora M Kerkovits, Borek Foldyna
+- **DOI:** [10.1038/s41746-026-02497-6](https://doi.org/10.1038/s41746-026-02497-6)
+- **PubMed ID:** [41792409](https://pubmed.ncbi.nlm.nih.gov/41792409/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41792409/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
