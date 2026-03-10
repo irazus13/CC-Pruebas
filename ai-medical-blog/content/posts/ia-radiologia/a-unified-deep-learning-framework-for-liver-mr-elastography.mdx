@@ -1,0 +1,25 @@
+---
+title: "A Unified Deep Learning Framework for Liver MR Elastography Postprocessing: Proof-of-Concept Study."
+description: "Magnetic resonance elastography (MRE) enables non-invasive quantification of liver stiffness and plays a pivotal role in the assessment of hepatic fibrosis. However, clinical implementation remains limited by the need for manual delineation of region..."
+date: "2026-04-01"
+category: "ia-radiologia"
+pubmedId: "41800652"
+author: "Vitaliy Atamaniuk, Andrii Pozaruk, Micha&#x142; Madera et al."
+tags: ["automated segmentation", "convolutional neural network", "deep learning", "liver stiffness", "magnetic resonance Elastography"]
+---
+
+## Resumen
+
+Magnetic resonance elastography (MRE) enables non-invasive quantification of liver stiffness and plays a pivotal role in the assessment of hepatic fibrosis. However, clinical implementation remains limited by the need for manual delineation of regions of interest (ROIs), which is time-consuming, requires expert input, and is prone to interobserver variability. This study assesses the feasibility of a single deep learning (DL) pipeline to fully automate this process-from acquired MRE data to liver-stiffness quantification-within a controlled proof-of-concept setting. To investigate this, we developed and validated a convolutional neural network-based framework capable of reconstructing stiffness maps and generating liver segmentation masks directly from magnitude and phase images. The models were trained using MRE data from 83 adult volunteers (56 women, 27 men; median age 21&#x2009;years), primarily representing healthy individuals or those with early-stage disease. This homogeneous cohort was deliberately selected to facilitate proof-of-concept development and reduce confounding sources of biological variability during model optimization. Across several neural network architectures (U-Net, ResNet, and CycleGAN hybrids), the pipeline produced liver-stiffness estimates with less than 11% deviation from the reference values in all cases, and less than 3% in the best performing configurations. Agreement between automated and manual measurements was comparable to interreader agreement, with intraclass correlation coefficients-ICC(A,1), calculated using a two-way random effects model for absolute agreement-of 0.86 (95% CI: 0.71-0.95) and 0.89 (95% CI: 0.74-0.97), respectively. Total inference time per examination was 23.7&#x2009;&#xb1;&#x2009;4.4&#x2009;s. These findings demonstrate the technical feasibility of a fully automated, AI-driven postprocessing pipeline for liver MRE within a controlled proof-of-concept setting using data from healthy volunteers. Although the approach shows promise for reducing analysis time and operator dependence, further validation in diverse clinical populations is required before broader generalization. This work represents an initial step toward more accessible, scalable, and standardized liver-stiffness assessment in research and, potentially, future clinical applications.
+
+## Información del artículo
+
+- **Revista:** NMR in biomedicine
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Vitaliy Atamaniuk, Andrii Pozaruk, Micha&#x142; Madera, Miko&#x142;aj Wcis&#x142;o, Bogdan Obrzut
+- **DOI:** [10.1002/nbm.70258](https://doi.org/10.1002/nbm.70258)
+- **PubMed ID:** [41800652](https://pubmed.ncbi.nlm.nih.gov/41800652/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41800652/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
