@@ -1,0 +1,25 @@
+---
+title: "Average Calibration Losses for Reliable Uncertainty in Medical Image Segmentation."
+description: "Deep neural networks for medical image segmentation are often overconfident, compromising both reliability and clinical utility. In this work, we propose differentiable formulations of marginal L1 Average Calibration Error (mL1-ACE) as an auxiliary l..."
+date: "2026-03-11"
+category: "ia-radiologia"
+pubmedId: "41811722"
+author: "Theodore Barfoot, Luis C Garcia-Peraza-Herrera, Samet Akcay et al."
+tags: []
+---
+
+## Resumen
+
+Deep neural networks for medical image segmentation are often overconfident, compromising both reliability and clinical utility. In this work, we propose differentiable formulations of marginal L1 Average Calibration Error (mL1-ACE) as an auxiliary loss that can be computed on a per-image basis. We compare both hard-and soft-binning approaches to directly improve pixel-wise calibration. Our experiments on four datasets (ACDC, AMOS, KiTS, BraTS) demonstrate that incorporating mL1-ACE significantly reduces calibration errors, particularly Average Calibration Error (ACE) and Maximum Calibration Error (MCE), while largely maintaining high Dice Similarity Coefficients (DSCs). We find that the soft-binned variant yields the greatest improvements in calibration, over the DSC plus cross-entropy loss baseline, but often compromises segmentation performance, with hard-binned mL1-ACE maintaining segmentation performance, albeit with weaker calibration improvement. To gain further insight into calibration performance and its variability across an imaging dataset, we introduce dataset reliability histograms, an aggregation of per-image reliability diagrams. The resulting analysis highlights improved alignment between predicted confidences and true accuracies. Overall, our approach provides practitioners with explicit control over the calibration-accuracy trade-off, enabling more reliable integration of deep learning methods into clinical workflows. We share our code here: https://github.com/ cai4cai/Average-Calibration-Losses.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-03-11
+- **Autores:** Theodore Barfoot, Luis C Garcia-Peraza-Herrera, Samet Akcay, Ben Glocker, Tom Vercauteren
+- **DOI:** [10.1109/TMI.2026.3673118](https://doi.org/10.1109/TMI.2026.3673118)
+- **PubMed ID:** [41811722](https://pubmed.ncbi.nlm.nih.gov/41811722/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41811722/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

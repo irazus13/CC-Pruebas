@@ -1,0 +1,25 @@
+---
+title: "Mitigating Algorithmic Bias in Cancer Site Classification Models."
+description: "Integrating artificial intelligence in cancer diagnostics has improved tumor classification beyond rule-based systems. Despite these advancements, these models may still encode demographic biases. We conducted a large-scale, applied bias..."
+date: "2026-03-01"
+category: "investigacion"
+pubmedId: "41812100"
+author: "Abhishek Shivanna, Adam Spannaus, Jordan Tschida et al."
+tags: []
+---
+
+## Resumen
+
+**PURPOSE:** Integrating artificial intelligence in cancer diagnostics has improved tumor classification beyond rule-based systems. Despite these advancements, these models may still encode demographic biases. We conducted a large-scale, applied bias-probing study of a deep learning-based cancer site classifier to quantify race information encoded in document embeddings. We then evaluated how performance changes when race-correlated embedding dimensions are removed in a post-training sensitivity analysis. **METHODS:** The cancer site classifier was trained using 3.5 million electronic cancer pathology reports from six of the National Cancer Institute's SEER registries. We trained a hierarchical self-attention network to generate 400-dimensional document embeddings. These embeddings were used to train two downstream, gradient-boosted decision tree classifiers: one to classify the cancer sites and another to predict racial categories. We identified overlapping features by intersecting the top 50 feature-importance rankings from the site and race models and computed their cumulative feature importance in each model. As a post hoc sensitivity analysis, we progressively pruned these overlapping dimensions, retrained the site model, and compared overall macro-F1 and accuracy, race-stratified macro-F1, and group fairness metrics on the basis of demographic parity and equalized odds before and after pruning. **RESULTS:** The analysis revealed minimal feature overlap between the cancer site and race prediction models, and the cumulative importance scores indicated a negligible influence of racial information on clinical predictions. Post-training pruning of overlapping features did not compromise the models' diagnostic accuracy, with a 0.07% loss in accuracy. **CONCLUSION:** Our findings demonstrate that HiSAN-generated embeddings from SEER data can be used effectively in cancer site classification without significant demographic bias influencing the outcomes. Post-training pruning therefore functions as a practical audit and sensitivity check.
+
+## Información del artículo
+
+- **Revista:** JCO clinical cancer informatics
+- **Fecha de publicación:** 2026-03-01
+- **Autores:** Abhishek Shivanna, Adam Spannaus, Jordan Tschida, John Gounley, Patrycja Krawczuk
+- **DOI:** [10.1200/CCI-25-00250](https://doi.org/10.1200/CCI-25-00250)
+- **PubMed ID:** [41812100](https://pubmed.ncbi.nlm.nih.gov/41812100/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41812100/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
