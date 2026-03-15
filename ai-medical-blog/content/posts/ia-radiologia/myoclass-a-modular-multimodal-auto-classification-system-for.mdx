@@ -1,0 +1,25 @@
+---
+title: "MyoClass: A modular multimodal auto-classification system for myocardial tissue characterization."
+description: "Differentiating myocarditis from myocardial infarction (MI) using Cardiac Magnetic Resonance (CMR) imaging remains a significant clinical challenge due to overlapping imaging and clinical presentations. We propose MyoClass, a deep learning (DL)-based..."
+date: "2026-03-14"
+category: "ia-radiologia"
+pubmedId: "41831142"
+author: "Mariem Dali, Rostom Kachouri, Narjes Benameur et al."
+tags: ["Cardiac Magnetic Resonance", "Classification", "Deep Learning", "Myocardial Infarction", "Myocarditis"]
+---
+
+## Resumen
+
+Differentiating myocarditis from myocardial infarction (MI) using Cardiac Magnetic Resonance (CMR) imaging remains a significant clinical challenge due to overlapping imaging and clinical presentations. We propose MyoClass, a deep learning (DL)-based framework that integrates multimodal CMR sequences (CINE, Late Gadolinium Enhancement (LGE), Modified Look-Locker Inversion Recovery (MOLLI)), Left Ventricular (LV) morphological descriptors, T1 quantitative mapping, and patient metadata for automated myocardial tissue classification. MyoClass comprises three computational modules that extract and integrate diverse features: global image representations, localized analytical metrics, intensity-based descriptors, quantitative T1 values, and demographic information. These features are concatenated into a unified descriptor vector, which serves as input to a multi-layer perceptron (MLP) classifier. The model categorizes each case into one of three classes: healthy myocardium, myocarditis, and MI. The framework was trained and validated on a dataset comprising 150 patients (50 per class), using an 80/20 train-validation split. MyoClass achieved a classification accuracy of 0.98 on the internal test set and 0.92 on an independent external validation cohort, demonstrating strong generalization performance. It markedly outperformed both the baseline CMR-NET model (accuracy: 0.60) and a comparator model utilizing only handcrafted analytical features (accuracy: 0.91). Notably, MyoClass maintained consistent performance across all diagnostic categories, indicating robust discriminative capability for healthy, inflamed, and infarcted myocardial tissues. Leveraging multimodal CMR imaging, quantitative tissue characterization, and patient-level metadata, MyoClass enables accurate, automated classification of myocardial pathology without manual segmentation at inference time or subjective image interpretation. This externally validated, end-to-end framework offers a comprehensive and reliable solution for tri-class tissue differentiation, representing a significant advancement in AI-assisted CMR diagnostics.
+
+## Información del artículo
+
+- **Revista:** The international journal of cardiovascular imaging
+- **Fecha de publicación:** 2026-03-14
+- **Autores:** Mariem Dali, Rostom Kachouri, Narjes Benameur, Seif Boukriba, Younes Arous
+- **DOI:** [10.1007/s10554-026-03684-y](https://doi.org/10.1007/s10554-026-03684-y)
+- **PubMed ID:** [41831142](https://pubmed.ncbi.nlm.nih.gov/41831142/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41831142/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
