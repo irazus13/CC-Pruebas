@@ -1,0 +1,25 @@
+---
+title: "Comparison of Deep Learning Architectures for Cardiac Contour Segmentation in Catheterization Radiographs."
+description: "Introduction Accurate cardiac image segmentation is essential for quantitative assessment of cardiac anatomy and function. Manual segmentation, while considered the reference standard, is time-consuming and subject to inter- and intra-observer variab..."
+date: "2026-02-01"
+category: "ia-radiologia"
+pubmedId: "41835693"
+author: "Kian A Huang, Bharath Subramanian, Haris K Choudhary et al."
+tags: ["ai", "computer vision", "deep learning", "image segmentation", "unet"]
+---
+
+## Resumen
+
+Introduction Accurate cardiac image segmentation is essential for quantitative assessment of cardiac anatomy and function. Manual segmentation, while considered the reference standard, is time-consuming and subject to inter- and intra-observer variability. Deep learning (DL) models, particularly convolutional neural networks (CNNs), have shown promise for automating this process. Among these, U-Net and DeepLabV3 are widely used architectures; however, direct comparisons between them for cardiac silhouette segmentation on cardiac catheterization radiographs are limited. Methods A supervised DL study was conducted using 1717 anonymized chest radiographs during&#xa0;cardiac catheterization with corresponding binary segmentation masks of the cardiac silhouette. Images were resized to 256 &#xd7; 256 pixels, normalized, and divided into training (70%), validation (20%), and test (10%) sets. Two segmentation models were implemented: (1) a modified U-Net with batch normalization and dropout regularization, and (2) a DeepLabV3 network with a MobileNetV2 backbone pretrained on ImageNet. Both models were trained using the Adam optimizer and binary cross-entropy loss with early stopping based on validation performance. Segmentation performance was evaluated on the test set using the Dice similarity coefficient, Intersection over Union (IoU), and pixel accuracy. Statistical comparisons were performed using the Wilcoxon signed-rank test, and effect sizes were calculated using the rank-biserial correlation (RBC). Results U-Net consistently outperformed DeepLabV3 across all evaluation metrics. U-Net achieved a mean Dice of 0.9454, IoU of 0.8980, and pixel accuracy of 0.9844, compared to DeepLabV3 (Dice = 0.9321, IoU = 0.8742, pixel accuracy = 0.9806). These differences were statistically significant (Dice: W = 2849.0, p &lt; 1 &#xd7; 10&#x207b;&#xb9;&#xb2;, RBC = 0.617; IoU: W = 2810.0, p &lt; 1 &#xd7; 10&#x207b;&#xb9;&#xb2;, RBC = 0.622; pixel accuracy: W = 2768.5, p &lt; 1 &#xd7; 10&#x207b;&#xb9;&#xb2;, RBC = 0.628), indicating large effect sizes favoring U-Net. Conclusions U-Net achieved significantly higher segmentation accuracy than DeepLabV3 for cardiac silhouette segmentation on catheterization radiographs. Its encoder-decoder architecture with skip connections enabled superior boundary delineation, reaffirming U-Net as a strong baseline for medical image segmentation. Automated cardiac silhouette segmentation may enhance the efficiency and reproducibility of cardiothoracic ratio estimation, cardiomegaly detection, and longitudinal cardiac monitoring. Future studies should focus on multi-institutional validation, chamber-level segmentation, and benchmarking against transformer-based architectures to advance clinical integration.
+
+## Información del artículo
+
+- **Revista:** Cureus
+- **Fecha de publicación:** 2026-02-01
+- **Autores:** Kian A Huang, Bharath Subramanian, Haris K Choudhary, Aziz U Rehman, Neelesh S Prakash
+- **DOI:** [10.7759/cureus.103341](https://doi.org/10.7759/cureus.103341)
+- **PubMed ID:** [41835693](https://pubmed.ncbi.nlm.nih.gov/41835693/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41835693/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
