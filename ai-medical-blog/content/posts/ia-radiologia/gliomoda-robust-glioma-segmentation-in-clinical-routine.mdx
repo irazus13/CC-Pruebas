@@ -1,0 +1,25 @@
+---
+title: "GlioMODA: Robust glioma segmentation in clinical routine."
+description: "Precise glioma segmentation in magnetic resonance imaging (MRI) is essential for accurate diagnosis, optimal treatment planning, and advancing clinical research. However, most deep learning approaches require complete, standardized MR..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "41841144"
+author: "Julian Canisius, Josef Buchner, Marcel Rosier et al."
+tags: ["MRI segmentation", "RANO 2.0", "deep learning", "glioblastoma", "volumetric assessment"]
+---
+
+## Resumen
+
+**BACKGROUND:** Precise glioma segmentation in magnetic resonance imaging (MRI) is essential for accurate diagnosis, optimal treatment planning, and advancing clinical research. However, most deep learning approaches require complete, standardized MRI protocols that are frequently unavailable in routine clinical practice. This study presents and evaluates GlioMODA, a robust deep learning framework designed for automated glioma segmentation that delivers consistent high performance across varied and incomplete MRI protocols. **METHODS:** GlioMODA was trained and validated on the BraTS 2021 dataset (1251 training, 219 testing cases), systematically assessing performance across 11 clinically relevant MRI protocol combinations. Segmentation accuracy was evaluated using Dice similarity coefficients (DSC) and panoptic quality metrics. Volumetric accuracy was benchmarked against manual ground truth, and statistical significance was established via Wilcoxon signed&#x2011;rank tests with Benjamini-Yekutieli correction. **RESULTS:** GlioMODA demonstrated state-of-the-art segmentation accuracy across tumor subregions, maintaining robust performance with incomplete or heterogeneous MRI protocols. Protocols including both T1-weighted contrast-enhanced and T2-FLAIR sequences yielded volumetric differences vs manual ground truth that were not statistically significant for enhancing tumor (median difference 55 mm&#xb3;, P&#x2009;=&#x2009;.157) and whole tumor (median difference -7 mm&#xb3;, P&#x2009;=&#x2009;1.0), and exhibited median DSC differences close to zero relative to the 4&#x2011;sequence reference protocol. Omitting either sequence led to substantial and significant volumetric errors. **CONCLUSIONS:** GlioMODA facilitates reliable, automated glioma segmentation using a streamlined 2&#x2011;sequence protocol (T1&#x2011;contrast + T2&#x2011;FLAIR), supporting clinical workflow optimization and broader implementation of quantitative volumetry compatible with RANO 2.0 criteria. GlioMODA is published as an open-source, easy-to-use Python package at https://github.com/BrainLesion/GlioMODA/.
+
+## Información del artículo
+
+- **Revista:** Neuro-oncology advances
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Julian Canisius, Josef Buchner, Marcel Rosier, Michael Griessmair, Jan C Peeken
+- **DOI:** [10.1093/noajnl/vdag034](https://doi.org/10.1093/noajnl/vdag034)
+- **PubMed ID:** [41841144](https://pubmed.ncbi.nlm.nih.gov/41841144/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41841144/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
