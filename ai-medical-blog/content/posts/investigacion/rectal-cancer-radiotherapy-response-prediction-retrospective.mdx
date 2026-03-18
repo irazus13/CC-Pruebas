@@ -1,0 +1,25 @@
+---
+title: "Rectal Cancer Radiotherapy Response Prediction: Retrospective Study of Development of a Deep Learning-Based Radiomics Model."
+description: "Background: Radiotherapy (RT) is a cornerstone of multimodal treatment for rectal cancer (RC); yet, substantial interindividual variability in treatment response persists. Deep learning (DL)-based radiomics offers potential for pre-RT response predic..."
+date: "2026-03-17"
+category: "investigacion"
+pubmedId: "41843889"
+author: "Yiqun Li, Hengchang Liu, Qiang Wei et al."
+tags: ["Transformer model", "deep learning", "radiomics", "radiotherapy", "rectal cancer"]
+---
+
+## Resumen
+
+Background: Radiotherapy (RT) is a cornerstone of multimodal treatment for rectal cancer (RC); yet, substantial interindividual variability in treatment response persists. Deep learning (DL)-based radiomics offers potential for pre-RT response prediction to support personalized decision-making., Objective: This study aimed to develop and compare multiple DL radiomics models for predicting RT response in RC, with emphasis on the performance and clinical utility of Transformer architectures., Methods: In this single-center retrospective study, 2000 pathologically confirmed patients with RC who received standard RT were included. Pretreatment computed tomographic and dynamic contrast-enhanced magnetic resonance images and clinical variables were collected. Treatment response was categorized according to RECIST (Response Evaluation Criteria in Solid Tumors) version 1.1 as good (complete or partial response) or poor (stable or progressive disease). The primary analysis used magnetic resonance imaging (MRI)-only input; computed tomography (CT) was used for registration and quality control and evaluated in a late-fusion CT + MRI sensitivity analysis. Data were randomly split into training, validation, and test sets (8:1:1), with 5-fold cross-validation within the training set. Test set tumor masks were manually delineated, whereas a U-Net assisted segmentation was performed only within training to prevent data leakage. Convolutional neural network, graph convolutional network, and Transformer classifiers were compared. Class imbalance (approximately 65% vs 35%) was addressed using class weighting. Performance was evaluated using area under the receiver operating characteristic curve (AUROC) and accuracy with 95% CIs obtained by bootstrapping. AUROC differences were assessed using the DeLong test. Clinical usefulness was evaluated using decision curve analysis. Segmentation performance was quantified by Dice coefficient and intersection over union. Model interpretability was assessed using Gradient-Weighted Class Activation Mapping., Results: In the MRI-only primary analysis, the Transformer achieved the best performance on the independent test set, with accuracy of 87.0% (95% CI 84.2%-89.5%) and AUROC of 0.921 (95% CI 0.901-0.945), significantly outperforming the convolutional neural network (AUROC 0.881; P=.02) and graph convolutional network (AUROC 0.894; P=.041). Sensitivity and specificity were 89.2% and 82.9%, respectively. Decision curve analysis demonstrated higher net benefit across threshold probabilities of 0.3-0.7. U-Net segmentation achieved a mean Dice coefficient of 0.892 and intersection over union of 0.814. In sensitivity analysis, CT + MRI late fusion yielded a comparable AUROC to MRI only (0.926 vs 0.921; P=.36), with modest incremental net benefit at higher thresholds., Conclusions: In this large pre-RT imaging cohort, an MRI-driven Transformer-based DL radiomics model outperformed conventional architectures in predicting RT response in RC and demonstrated superior clinical net benefit. Late fusion of CT and MRI did not significantly improve overall discrimination but may provide incremental benefit in specific decision contexts. Multicenter external validation is warranted.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-03-17
+- **Autores:** Yiqun Li, Hengchang Liu, Qiang Wei, Zhenqi Wang, Zhen Hu
+- **DOI:** [10.2196/77313](https://doi.org/10.2196/77313)
+- **PubMed ID:** [41843889](https://pubmed.ncbi.nlm.nih.gov/41843889/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41843889/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

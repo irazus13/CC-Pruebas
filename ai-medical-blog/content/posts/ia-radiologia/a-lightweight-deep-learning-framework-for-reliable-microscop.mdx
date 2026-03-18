@@ -1,0 +1,25 @@
+---
+title: "A lightweight deep learning framework for reliable microscopy-based diagnosis of cutaneous leishmaniasis."
+description: "Cutaneous leishmaniasis (CL) is a neglected tropical and zoonotic disease affecting both human and animal health, for which microscopic examination of Giemsa-stained slides remains the diagnostic reference standard despite being time-consuming and op..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "41843631"
+author: "Nisreen Osman E Ahmed, Samuel Mwalili, Murtada K Elbashir"
+tags: []
+---
+
+## Resumen
+
+Cutaneous leishmaniasis (CL) is a neglected tropical and zoonotic disease affecting both human and animal health, for which microscopic examination of Giemsa-stained slides remains the diagnostic reference standard despite being time-consuming and operator-dependent. In this study, we developed a lightweight, calibration-aware deep learning framework for automated amastigote detection and slide-level diagnostic probability estimation from microscopy images. A U-Net architecture with a MobileNetV2 encoder was employed for pixel-level parasite segmentation using a weakly supervised pseudo-labeling strategy on a single-center dataset comprising 292 field-of-view images. Slide-level diagnostic probabilities were derived via probability pooling and subsequently refined using post-hoc calibration techniques, including isotonic regression, Platt scaling, and temperature scaling. Model performance was evaluated on an independent test set using segmentation metrics (Dice coefficient and Intersection-over-Union) and diagnostic reliability metrics (AUROC, Brier score, and Expected Calibration Error). The proposed framework achieved a Dice coefficient of 0.901 and an IoU of 0.820 for segmentation against pseudo-label references, with strong discriminative performance at the slide level (AUROC&#x2009;=&#x2009;0.978). Isotonic regression markedly improved probability reliability, reducing the Brier score from 0.089 to 0.030 and the Expected Calibration Error from 0.120 to 0.023 without significantly affecting discrimination. Statistical analyses confirmed the robustness of the calibration improvements. Overall, the results demonstrate that isotonic calibration enhances the interpretability and reliability of deep-learning-based CL diagnostics. The proposed lightweight framework provides a robust foundation for microscopy-based screening and supports future validation across broader datasets and One Health-oriented diagnostic applications.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Nisreen Osman E Ahmed, Samuel Mwalili, Murtada K Elbashir
+- **DOI:** [10.1371/journal.pone.0344561](https://doi.org/10.1371/journal.pone.0344561)
+- **PubMed ID:** [41843631](https://pubmed.ncbi.nlm.nih.gov/41843631/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41843631/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
