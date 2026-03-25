@@ -1,0 +1,25 @@
+---
+title: "HCLmNet: A unified hybrid continual learning strategy multimodal network for lung cancer survival prediction."
+description: "Lung cancer survival prediction remains one of the most challenging tasks in modern healthcare, as accurate and adaptive prediction models are essential for improving patient outcomes. However, the continuous inflow of new patient data in hospital en..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "41875207"
+author: "Md Ilias Bappi, David J Richter, Shivani Sanjay Kolekar et al."
+tags: []
+---
+
+## Resumen
+
+Lung cancer survival prediction remains one of the most challenging tasks in modern healthcare, as accurate and adaptive prediction models are essential for improving patient outcomes. However, the continuous inflow of new patient data in hospital environments demands models that can update incrementally without losing prior knowledge a challenge known as catastrophic forgetting. This problem is compounded by the complexity of multimodal data integration, which combines heterogeneous sources such as CT and PET imaging, genomic (DNA) sequences, and clinical records. Traditional deep learning (DL) models, especially CNN-based systems, often fail to capture subtle patterns such as ground-glass opacities or multi-lesion tumors and cannot effectively adapt to new data streams. To overcome these challenges, this study proposes HCLmNet, a Hybrid Continual Learning (CL) Multimodal Network that integrates Elastic Weight Consolidation (EWC) with three complementary replay-based modules: Experience Replay (ER), Instance-Level Correlation Replay (EICR), and Class-Level Correlation Replay (ECCR). ER stabilizes learning through selective sample replay; EICR preserves fine-grained inter-instance relationships across modalities; and ECCR employs triplet-based contrastive learning to maintain class-level correlations. The architecture incorporates a Swin Transformer (SwinT) for extracting critical imaging features, XLNet for modeling DNA patterns, and a Fully Connected Network (FCN) for processing temporal clinical data. A cross-attention fusion layer integrates these modalities, while an FCN and Cox Proportional Hazards (CoxPH) model produce final 5-year survival predictions. Experimental results on multimodal lung cancer datasets show that traditional models such as CoxPH and DeepSurv achieved Concordance Index (C-index) scores of 0.65 and 0.70, respectively. The base multimodal model without CL achieves a C-index of 0.76 and a Mean Absolute Error (MAE) of 189 days. In contrast, the proposed HCLmNet, equipped with CL mechanisms, reaches a C-index of 0.84, representing a 7.7% improvement over the best baseline. Furthermore, the model reduces the MAE from 252 and 189 days to 140 days and minimizes catastrophic forgetting to 0.08. These improvements stem from the synergistic integration of the ER, EICR, and ECCR CL modules, which enable the model to retain prior knowledge while effectively adapting to new data. Overall, HCLmNet demonstrates superior stability, adaptability, and interpretability for lung cancer survival prediction in dynamic clinical environments.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Md Ilias Bappi, David J Richter, Shivani Sanjay Kolekar, Kyungbaek Kim
+- **DOI:** [10.1371/journal.pone.0316509](https://doi.org/10.1371/journal.pone.0316509)
+- **PubMed ID:** [41875207](https://pubmed.ncbi.nlm.nih.gov/41875207/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41875207/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
