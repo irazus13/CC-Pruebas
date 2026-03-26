@@ -1,0 +1,25 @@
+---
+title: "Deep learning for temporal super-resolution 4D Flow MRI."
+description: "4D Flow Magnetic Resonance Imaging (4D Flow MRI) is a non-invasive technique for volumetric, time-resolved blood flow quantification. However, apparent trade-offs between acquisition time, image noise, and resolution limit clinical applicability. In ..."
+date: "2026-03-25"
+category: "ia-radiologia"
+pubmedId: "41880246"
+author: "Pia Callmer, Mia Bonini, Edward Ferdian et al."
+tags: []
+---
+
+## Resumen
+
+4D Flow Magnetic Resonance Imaging (4D Flow MRI) is a non-invasive technique for volumetric, time-resolved blood flow quantification. However, apparent trade-offs between acquisition time, image noise, and resolution limit clinical applicability. In particular, in regions of highly transient flow, coarse temporal resolution can hinder accurate capture of physiologically relevant flow variations. Deep learning-based post-processing techniques have shown promise in overcoming these issues using so-called super-resolution networks. However, while existing super-resolution research has primarily focused on spatial upsampling, temporal super-resolution remains largely unexplored. The aim of this study was therefore to implement and evaluate a residual data-driven network for temporal super-resolution 4D Flow MRI. To achieve this, an existing spatial network (4DFlowNet) was re-designed for temporal upsampling, adapting input dimensions, and optimizing internal layer structures. The model was trained and tested on synthetic 4D Flow MRI data derived from patient-specific in-silico models, followed by additional evaluation on clinically acquired in-vivo datasets. Overall, excellent performance was achieved with input velocities effectively denoised and temporally upsampled, with a mean absolute error (MAE) of 1.0 cm/s in an unseen in-silico setting, outperforming deterministic alternatives (linear interpolation MAE = 2.3 cm/s, sinc interpolation MAE = 2.6 cm/s). Further, the network synthesized high-resolution temporal information from unseen low-resolution in-vivo data, with strong correlation observed at peak flow frames. As such, our results highlight the potential of utilizing data-driven neural networks for temporal super-resolution 4D Flow MRI, enabling high-frame-rate flow quantification without extending acquisition times beyond clinically acceptable limits.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-03-25
+- **Autores:** Pia Callmer, Mia Bonini, Edward Ferdian, David Nordsletten, Daniel Giese
+- **DOI:** [10.1109/TMI.2026.3676987](https://doi.org/10.1109/TMI.2026.3676987)
+- **PubMed ID:** [41880246](https://pubmed.ncbi.nlm.nih.gov/41880246/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41880246/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

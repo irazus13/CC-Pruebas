@@ -1,0 +1,25 @@
+---
+title: "Improving Retrieval Augmented Generation for Health Care by Fine-Tuning Clinical Embedding Models: Development and Evaluation Study."
+description: "Embedding models are critical components of Retrieval Augmented Generation (RAG) systems for retrieving and searching unstructured medical data. However, existing models are predominantly trained on publicly available English datasets..."
+date: "2026-03-25"
+category: "ia-medicina"
+pubmedId: "41880603"
+author: "Kamyar Arzideh, Henning Sch&#xe4;fer, Ahmad Idrissi-Yaghir et al."
+tags: ["LLM", "NLP", "RAG", "Retrieval Augmented Generation", "information retrieval"]
+---
+
+## Resumen
+
+**BACKGROUND:** Embedding models are critical components of Retrieval Augmented Generation (RAG) systems for retrieving and searching unstructured medical data. However, existing models are predominantly trained on publicly available English datasets, limiting their effectiveness in non-English health care settings. More importantly, these models lack training on real-world clinical documents, leading to inaccurate context retrieval when integrated into RAG systems for health care applications. This gap is particularly pronounced in specialized medical documentation containing domain-specific terminology, abbreviations, and nuanced clinical language. **OBJECTIVE:** This retrospective study aimed to develop and validate embedding models specifically trained on real-world clinical documents from multiple medical specialties to improve medical information retrieval (IR) and RAG system performance in both German and English language contexts. **METHODS:** We fine-tuned embedding models, so-called sentence transformers, using the multilingual-e5-large architecture as a foundation. Training data consisted of approximately 11 million question-answer pairs synthetically generated from 400,000 diverse clinical documents from a large German tertiary hospital, spanning 163,840 patients and 282,728 clinical cases between 2018 and 2023. The SauerkrautLM-SOLAR-Instruct large language model generated medically relevant questions and corresponding answers for each document. The dataset was additionally pseudonymized and translated into English to aim for broader applicability. Models were evaluated in 2 distinct scenarios: IR using questions with multiple relevant passages, and RAG system performance in both cross-patient and patient-centered contexts. **RESULTS:** In the IR evaluation, the fine-tuned miracle model achieved a mAP@100 of 0.27, outperforming the multilingual-e5-large baseline (0.14) and state-of-the-art models such as bge-m3 (0.11). In the RAG evaluation, the model demonstrated robust performance comparable with the baseline in the constrained patient-centered scenario (BERTScore F1 0.781 vs 0.778) and showed moderate improvements in the unconstrained cross-patient setting (BLEURT 0.56 vs 0.53). Notably, the model trained on pseudonymized data achieved comparable retrieval performance (mAP@100 0.25) and the highest scores for patient-centered contextual precision (0.93). Performance gains were robust in the German dataset, while the translated English model demonstrated promising results as a proof of concept for cross-lingual transfer. **CONCLUSIONS:** By leveraging a comprehensive real-world dataset spanning multiple medical specialties and using large language models for synthetic question generation, we successfully created and validated domain-specific embedding models. These models can improve medical IR in large-scale search spaces and perform competitively in constrained RAG applications. By publishing the models trained on pseudonymized data, other health care institutions can integrate or adapt these embedding models to their needs. This work establishes a reproducible framework for developing domain-specific clinical embedding models, with the potential to improve data retrieval in medical settings.
+
+## Información del artículo
+
+- **Revista:** Journal of medical Internet research
+- **Fecha de publicación:** 2026-03-25
+- **Autores:** Kamyar Arzideh, Henning Sch&#xe4;fer, Ahmad Idrissi-Yaghir, Cynthia Sabrina Schmidt, Bahadir Eryilmaz
+- **DOI:** [10.2196/82997](https://doi.org/10.2196/82997)
+- **PubMed ID:** [41880603](https://pubmed.ncbi.nlm.nih.gov/41880603/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41880603/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
