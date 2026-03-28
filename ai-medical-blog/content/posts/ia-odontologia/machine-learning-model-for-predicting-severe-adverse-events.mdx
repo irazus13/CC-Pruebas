@@ -1,0 +1,25 @@
+---
+title: "Machine Learning Model for Predicting Severe Adverse Events in Oncology Patients Using the US Food and Drug Administration Adverse Event Reporting System."
+description: "Predicting severe adverse events (SAEs) in oncology is challenging because of complex therapies and patient heterogeneity. Traditional pharmacovigilance methods often fail to capture multifactorial risk patterns. Machine learning (ML) of..."
+date: "2026-03-01"
+category: "ia-odontologia"
+pubmedId: "41894651"
+author: "Luke Xiyu Zhao, Catherine Wang, Jonathan Zou et al."
+tags: []
+---
+
+## Resumen
+
+**PURPOSE:** Predicting severe adverse events (SAEs) in oncology is challenging because of complex therapies and patient heterogeneity. Traditional pharmacovigilance methods often fail to capture multifactorial risk patterns. Machine learning (ML) offers potential to identify subtle predictors of SAEs within large real-world data sets such as the US Food and Drug Administration Adverse Event Reporting System (FAERS). This study developed and validated an ML model to predict severe oncology-related adverse events and identify key risk factors using FAERS data. **METHODS:** We analyzed 3,789,273 unique oncology-related FAERS cases (2012Q4-2024Q3) after extensive preprocessing, including natural language processing-based indication filtering, deduplication, and variable standardization. Severe events were defined by outcomes of death, hospitalization, disability, congenital anomaly, or life-threatening condition. A LightGBM model was trained using Optuna-based hyperparameter optimization and benchmarked against logistic regression. Model performance was evaluated using AUROC, AUPRC, precision, recall, and F1-score. Shapley Additive Explanations (SHAP) analysis assessed the feature influence and interpretability. **RESULTS:** LightGBM outperformed logistic regression (AUROC, 0.806 [95% CI, 0.804 to 0.807] v 0.708 [0.706 to 0.709]; AUPRC, 0.615 [0.611 to 0.617] v 0.454 [0.449 to 0.455]; F1 78.1% v 71.6%). Key predictors of severity included advanced age, higher weight, extensive polypharmacy (median 15 drugs; IQR, 9-27), longer therapy duration (median 6.3 days), and greater numbers of reported reactions (mean 5 per case). SHAP analysis revealed that age, polypharmacy, and therapy duration synergistically increased SAE risk. **CONCLUSION:** Our gradient boosting model substantially improved prediction and interpretability of severe oncology adverse events compared with logistic regression. SHAP analysis identified clinically meaningful predictors, enabling precision pharmacovigilance and targeted risk mitigation. These findings support ML integration into regulatory and clinical pharmacovigilance workflows to enhance postmarket safety surveillance.
+
+## Información del artículo
+
+- **Revista:** JCO clinical cancer informatics
+- **Fecha de publicación:** 2026-03-01
+- **Autores:** Luke Xiyu Zhao, Catherine Wang, Jonathan Zou, Padmini Ranasinghe
+- **DOI:** [10.1200/CCI-25-00081](https://doi.org/10.1200/CCI-25-00081)
+- **PubMed ID:** [41894651](https://pubmed.ncbi.nlm.nih.gov/41894651/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41894651/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
