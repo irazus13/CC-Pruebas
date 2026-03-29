@@ -1,0 +1,25 @@
+---
+title: "Semi-Supervised Vertebra Segmentation and Identification in CT Images."
+description: "Background/Objectives: Automatic segmentation and identification of vertebrae in spinal CT are essential for assisting diagnosis of spinal disorders and for preoperative planning. The task is challenging due to the high structural similarity between ..."
+date: "2026-03-03"
+category: "ia-radiologia"
+pubmedId: "41893829"
+author: "You Fu, Jiasen Feng, Hanlin Cheng"
+tags: ["CT", "deep learning", "semi-supervised learning", "vertebra identification", "vertebra segmentation"]
+---
+
+## Resumen
+
+Background/Objectives: Automatic segmentation and identification of vertebrae in spinal CT are essential for assisting diagnosis of spinal disorders and for preoperative planning. The task is challenging due to the high structural similarity between adjacent vertebrae and the morphological variability of vertebrae. Most existing methods rely on fully supervised deep learning and, constrained by limited annotations, struggle to remain robust in complex scenarios. Methods: We propose a semi-supervised approach built on a dual-branch 3D U-Net. Mamba modules are inserted between the encoder and decoder to model long-range dependencies along the cranio-caudal axis. The identification branch employs a 3D convolutional block attention module (3D-CBAM) to enhance class discriminability. A unified semi-supervised objective is formulated via teacher-student consistency: for each unlabeled sample, weakly and strongly augmented views are generated, and cross-branch consistency is enforced, together with confidence-based filtering and class-frequency reweighting. In addition, a connected-component analysis is used to enforce anatomically plausible sequential continuity of vertebral indices in the outputs. Results: Experiments on VerSe 2019 and 2020 show that, on the public VerSe 2019 test set (with VerSe 2020 scans used as unlabeled training data), the supervised baseline achieved a Dice score of 89.8% and an identification accuracy of 92.3%. Incorporating unlabeled data improved performance to 91.6% Dice and 97.5% identification accuracy (relative gains of +1.8 and +5.2 percentage points). Compared with competing methods, the proposed semi-supervised model attains higher or comparable segmentation accuracy and the highest identification accuracy. Conclusions: Without additional annotation cost, the proposed method markedly improves the overall performance of vertebra segmentation and identification, offering more robust automated support for clinical workflows.
+
+## Información del artículo
+
+- **Revista:** Tomography (Ann Arbor, Mich.)
+- **Fecha de publicación:** 2026-03-03
+- **Autores:** You Fu, Jiasen Feng, Hanlin Cheng
+- **DOI:** [10.3390/tomography12030033](https://doi.org/10.3390/tomography12030033)
+- **PubMed ID:** [41893829](https://pubmed.ncbi.nlm.nih.gov/41893829/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41893829/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
