@@ -1,0 +1,25 @@
+---
+title: "Denoising autoencoder framework for reconstructing missing periodontal clinical records."
+description: "Missing clinical data pose a significant challenge for retrospective analyses and predictive modelling in periodontal research. Traditional imputation methods often overlook the complex correlations among variables and produce impla..."
+date: "2026-01-01"
+category: "ia-odontologia"
+pubmedId: "41918802"
+author: "Asok Mathew, Pradeep Kumar Yadalam"
+tags: ["artificial intelligence", "clinical data", "missing values", "periodontitis", "synthetic data"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Missing clinical data pose a significant challenge for retrospective analyses and predictive modelling in periodontal research. Traditional imputation methods often overlook the complex correlations among variables and produce implausible values. This study examines the application of generative models to reconstruct missing periodontal clinical records and outlines a comprehensive workflow that spans from data generation to evaluation. **METHODS:** A synthetic periodontal dataset of 200 virtual patients was constructed, capturing realistic distributions of demographic factors (age, gender, smoking, and diabetes) and tooth-level measurements (probing depth, attachment loss, furcation involvement, and bleeding on probing) across eight sites. Missingness was introduced at random to 15% of the clinical variables. A denoising autoencoder with a single hidden layer of 18 neurons was trained to reconstruct the original data from corrupted inputs over 100 epochs. The model learned latent representations of the data and was then used to impute missing entries. **RESULTS:** Performance was assessed by comparing reconstructed values to the original data using mean absolute error (MAE) and root mean squared error (RMSE) across individual variables and categories. Overall, MAE and RMSE were 0.61 and 0.74, respectively, with attachment loss and bleeding on probing exhibiting lower errors than probing depth and furcation involvement. **CONCLUSION:** Distribution comparisons showed that imputed values closely matched original distributions. The approach offers a practical framework for handling missing periodontal data and highlights the potential of generative models to improve data completeness without introducing unrealistic values. Limitations include the simplicity of the network architecture. Future work should explore advanced models, integrate multimodal data, and evaluate on real datasets. The workflow-from synthetic data creation and masking to training, imputation, and evaluation-serves as a template for researchers tackling missing clinical data.
+
+## Información del artículo
+
+- **Revista:** Frontiers in dental medicine
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Asok Mathew, Pradeep Kumar Yadalam
+- **DOI:** [10.3389/fdmed.2026.1710316](https://doi.org/10.3389/fdmed.2026.1710316)
+- **PubMed ID:** [41918802](https://pubmed.ncbi.nlm.nih.gov/41918802/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41918802/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
