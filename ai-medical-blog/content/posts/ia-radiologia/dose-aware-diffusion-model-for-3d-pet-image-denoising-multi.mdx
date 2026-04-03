@@ -1,0 +1,25 @@
+---
+title: "Dose-aware diffusion model for 3D PET image denoising: Multi-institutional validation with reader study and real low-dose data."
+description: "Reducing scan times, radiation dose, and enhancing image quality, especially for lower-performance scanners, are critical in low-count/low-dose PET imaging. Deep learning (DL) techniques have been investigated for PET image denoising. However, existi..."
+date: "2026-03-17"
+category: "ia-radiologia"
+pubmedId: "41930496"
+author: "Huidong Xie, Weijie Gan, Reimund Bayerlein et al."
+tags: ["Diffusion models", "Low-dose imaging", "PET denoising"]
+---
+
+## Resumen
+
+Reducing scan times, radiation dose, and enhancing image quality, especially for lower-performance scanners, are critical in low-count/low-dose PET imaging. Deep learning (DL) techniques have been investigated for PET image denoising. However, existing models have often resulted in compromised image quality when achieving low-count/low-dose PET and have limited generalizability to different image noise levels, acquisition protocols, and patient populations. Recently, diffusion models have emerged as a state-of-the-art generative model to generate high-quality samples and have demonstrated strong potential for medical imaging tasks. However, for low-dose PET imaging, existing diffusion models fail to generate consistent 3D reconstructions (i.e., adjacent slices exhibit noticeable discontinuities or "flickering" along the z-axis), struggle to generalize across varying noise levels, and often produce visually appealing but distorted details and biased tracer uptake. Here, we develop DDPET-3D, a dose-aware diffusion model for 3D low-dose PET imaging to address these challenges. In this work, "3D" denotes 3D-consistent reconstruction achieved via a 2.5D conditioning backbone, rather than a fully 3D diffusion network. Collected from 4 medical centers globally with different scanners and clinical protocols, we extensively evaluated the proposed model using a total of 9783 18F-FDG studies (1,596 patients) with low-dose/low-count levels ranging from 1% to 50%. With a cross-center, cross-scanner validation, the proposed DDPET-3D demonstrated its potential to generalize to different low-dose levels, different scanners, and different clinical protocols. As confirmed by reader studies conducted by board-certified nuclear medicine physicians, the readers rated the denoised images as comparable to or better than the full-dose images and prior DL baselines based on qualitative visual assessment. We also evaluated the lesion-level quantitative accuracy using a Monte Carlo simulation study and a lesion segmentation network. The presented results show the potential to achieve low-dose PET while maintaining image quality. Lastly, a group of real low-dose scans was also included for evaluation to demonstrate the clinical potential of DDPET-3D. Code and trained models are publicly available at https://github.com/HuidongXie/DDPET-3D.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-03-17
+- **Autores:** Huidong Xie, Weijie Gan, Reimund Bayerlein, Bo Zhou, Ming-Kai Chen
+- **DOI:** [10.1016/j.media.2026.104039](https://doi.org/10.1016/j.media.2026.104039)
+- **PubMed ID:** [41930496](https://pubmed.ncbi.nlm.nih.gov/41930496/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41930496/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
