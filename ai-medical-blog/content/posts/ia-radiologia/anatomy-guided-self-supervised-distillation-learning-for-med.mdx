@@ -1,0 +1,25 @@
+---
+title: "Anatomy-Guided Self-Supervised Distillation Learning for Medical Image Analysis."
+description: "3D medical imaging modalities, including CT and MRI, provide high-resolution views essential for precision medicine. However, the increasing volume and complexity of 3D medical images challenge manual analysis, particularly in classification and segm..."
+date: "2026-04-06"
+category: "ia-radiologia"
+pubmedId: "41941824"
+author: "Huihui Yu, Qun Dai"
+tags: []
+---
+
+## Resumen
+
+3D medical imaging modalities, including CT and MRI, provide high-resolution views essential for precision medicine. However, the increasing volume and complexity of 3D medical images challenge manual analysis, particularly in classification and segmentation tasks. Although deep learning has shown considerable promise, it struggles to characterize small-scale, low-contrast anatomical structures, generalize across imaging domains, and mitigate annotation scarcity. Self-supervised learning (SSL) has emerged as an effective and annotation-efficient solution, yet existing methods, largely adapted from natural images, often fail to capture the anatomical heterogeneity and complex semantic dependencies inherent in 3D medical data. To address these limitations, we propose AG-SSD (Anatomy-Guided Self-Supervised Distillation), a framework that explicitly incorporates anatomical priors into SSL. AG-SSD comprises three complementary modules: (i) Cross-View Anatomical Consistency (CVAC), which generates multi-scale, anatomically consistent positive pairs via overlap-aware cropping; (ii) Edge-Aware Adaptive Masking (EAAM), which prioritizes anatomy-sensitive, high-edge regions to enhance local feature learning and robust global representation; and (iii) Cross-View Attention Alignment (CVAA), which leverages attention-based fusion to achieve semantic compensation and alignment across views, mitigating semantic drift to stabilize distillation. These modules are optimized using a unified objective that combines intraview patch distillation, inter-view [CLS] token distillation, and masked patch reconstruction. Extensive experiments on CT and MRI datasets demonstrate that AG-SSD consistently outperforms state-of-the-art SSL methods in both classification and segmentation under annotation-scarce scenarios, highlighting its potential as a scalable, label-efficient paradigm for 3D medical image analysis and clinical applications.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-04-06
+- **Autores:** Huihui Yu, Qun Dai
+- **DOI:** [10.1109/TMI.2026.3680920](https://doi.org/10.1109/TMI.2026.3680920)
+- **PubMed ID:** [41941824](https://pubmed.ncbi.nlm.nih.gov/41941824/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41941824/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
