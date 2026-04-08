@@ -1,0 +1,25 @@
+---
+title: "Comparative Performance Evaluation of GCN, GAT, and GraphSAGE Architectures for Drug-Gene Interaction Prediction in Ameloblastoma via MEK-Pathway Targeting."
+description: "A key element of computational drug discovery is the precise prediction of drug-gene interactions, particularly when working with intricate biological systems where relational dependencies are essential. Because biological networks ..."
+date: "2026-04-01"
+category: "ia-odontologia"
+pubmedId: "41945943"
+author: "Nausathkhan Ubayathulla, M R Muthusekar, Pradeep Kumar Yadalam"
+tags: ["Ameloblastoma", "drugs", "genes", "graph attention networks"]
+---
+
+## Resumen
+
+**INTRODUCTION:** A key element of computational drug discovery is the precise prediction of drug-gene interactions, particularly when working with intricate biological systems where relational dependencies are essential. Because biological networks are graph-structured, traditional machine learning techniques frequently fall short. Graph Neural Networks (GNNs) have emerged as a viable approach for learning meaningful representations from this data type in response to this challenge. In this study, three state-of-the-art GNN architectures Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and GraphSAGE are comprehensively compared using a bipartite graph constructed from drug-target biochemical activity data. **METHODS:** Using the Probes and Drugs website, drugs associated with MEK signalling were downloaded. The data, with drugs and genes as nodes, targets as edges, and activity biochemical as edge weights, along with other node-level features, were preprocessed for further analysis. A bipartite graph comprising 321 nodes consisting of gene names and target types and 1,028 edges weighted by levels of biochemical activity was constructed. To differentiate genes from targets, node features were encoded using a two-dimensional one-hot vector. Each GNN model was trained using a standardized three-layer architecture for 100 epochs with identical hyperparameters: Mean Squared Error (MSE) as the loss function, a learning rate of 0.01, and a dropout rate of 0.2. To ensure a fair performance comparison across models, the training-validation split was maintained at 80/20. **RESULTS:** The GCN model exhibited steady convergence, with a train-to-validation loss ratio of 1.0433, a final validation loss of 0.9807, and a minimum validation loss of 0.8923. Although it showed slightly greater overfitting tendencies with a train-to-validation ratio of 1.0553, GAT outperformed the other models in terms of generalization, achieving the lowest final validation loss (0.9551) and the lowest minimum validation loss (0.8653). In contrast, GraphSAGE demonstrated the most balanced performance, with a train-to-validation loss ratio of 0.9949 and a final validation loss of 1.0052, indicating exceptional generalization and stability qualities that make it particularly suitable for inductive learning scenarios. **CONCLUSION:** The findings indicate that each architecture exhibits distinct advantages: GraphSAGE demonstrates superior generalization in dynamic graph environments; GAT enables more nuanced modeling through attention mechanisms; and GCN remains computationally stable and efficient. These results provide biomedical informatics researchers with valuable insights to guide the selection of GNN architectures for biological graph learning tasks. To enhance the translational potential of GNN-based drug discovery pipelines, future research should focus on integrating dynamic graph structures, richer node features, and supervised learning approaches aligned with empirical biological outcomes.
+
+## Información del artículo
+
+- **Revista:** Asian Pacific journal of cancer prevention : APJCP
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Nausathkhan Ubayathulla, M R Muthusekar, Pradeep Kumar Yadalam
+- **DOI:** [10.31557/APJCP.2026.27.4.1257](https://doi.org/10.31557/APJCP.2026.27.4.1257)
+- **PubMed ID:** [41945943](https://pubmed.ncbi.nlm.nih.gov/41945943/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41945943/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
