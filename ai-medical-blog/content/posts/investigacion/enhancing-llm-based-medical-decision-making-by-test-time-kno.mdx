@@ -1,0 +1,25 @@
+---
+title: "Enhancing LLM-based medical decision-making by test-time knowledge acquisition."
+description: "Medical decision-making (MDM) is a complex clinical reasoning process that requires the systematic integration of multidisciplinary knowledge and evidence. Current approaches based on large language models (LLMs) are constrained by their..."
+date: "2026-12-01"
+category: "investigacion"
+pubmedId: "41953846"
+author: "Shipeng Li, Liuxin Bao, Shikun Li et al."
+tags: ["Dynamic knowledge acquisition", "Large language model", "Medical decision-making", "Test-time compute"]
+---
+
+## Resumen
+
+**PURPOSE:** Medical decision-making (MDM) is a complex clinical reasoning process that requires the systematic integration of multidisciplinary knowledge and evidence. Current approaches based on large language models (LLMs) are constrained by their reliance on static training corpora and often exhibit limited domain-specific adaptation, which can compromise diagnostic accuracy and reliability. This study aims to overcome these limitations by developing a framework that enables LLMs to dynamically acquire and refine knowledge during test time, thereby enhancing the robustness and precision of MDM systems. **METHODS:** We propose a test-time optimization framework that refines a frozen LLM's diagnostic reasoning through test-time knowledge acquisition and integration. For each medical query, the model generates multiple trajectories that are synthesized into a pseudo reference answer, whose self-consistency score separates confident from unconfident cases. Confident cases enable reward-guided reflection to extract reliable diagnostic heuristics, while unconfident cases undergo unsupervised reflection to reveal reasoning gaps and uncertainty patterns. The extracted knowledge is continually incorporated into an evolving, capacity-controlled knowledge base through operations that add, modify, or merge knowledge. This updated knowledge base then guides subsequent inference, allowing the model to adapt its reasoning strategy during test time without updating any parameters. **RESULTS:** Experimental evaluations on three public medical decision-making benchmarks-MedQA, NEJMQA, and MMLU-Pro-Health-show that the proposed framework consistently improves the performance of the state-of-the-art LLM, DeepSeekv3.2 Exp 671B. For example, on the MMLU-Pro-Health dataset, our method achieved an average accuracy of 79.22%, surpassing DeepSeekv3.2 Exp 671B by 1.84 percentage points, thus demonstrating the effectiveness of the framework in enhancing diagnostic decision-making. **CONCLUSION:** By leveraging inference-time self-evaluation and experience accumulation, this work introduces a new paradigm for building reliable, adaptive, and context-aware medical AI systems. It underscores the critical role of continual knowledge evolution in advancing trustworthy artificial intelligence for clinical decision support and lays the foundation for future developments in dynamic and responsive medical reasoning tools.
+
+## Información del artículo
+
+- **Revista:** Health information science and systems
+- **Fecha de publicación:** 2026-12-01
+- **Autores:** Shipeng Li, Liuxin Bao, Shikun Li, Bo Wan
+- **DOI:** [10.1007/s13755-026-00449-8](https://doi.org/10.1007/s13755-026-00449-8)
+- **PubMed ID:** [41953846](https://pubmed.ncbi.nlm.nih.gov/41953846/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41953846/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
