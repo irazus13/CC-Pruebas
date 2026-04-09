@@ -1,0 +1,25 @@
+---
+title: "Segment anything small for ultrasound: Enhancing segmentation with non-generative augmentation."
+description: "Accurate segmentation of anatomical structures in ultrasound (US) images, particularly small ones, is challenging due to noise and variability in imaging conditions (e.g., probe position, patient anatomy, tissue characteristics and pathology). To add..."
+date: "2026-04-01"
+category: "ia-radiologia"
+pubmedId: "41950249"
+author: "Danielle L Ferreira, Ahana Gangopadhyay, Hsi-Ming Chang et al."
+tags: []
+---
+
+## Resumen
+
+Accurate segmentation of anatomical structures in ultrasound (US) images, particularly small ones, is challenging due to noise and variability in imaging conditions (e.g., probe position, patient anatomy, tissue characteristics and pathology). To address this, we introduce Segment Anything Small (SAS), a simple yet effective scale- and texture-aware data augmentation technique designed to enhance the performance of deep learning models for segmenting small anatomical structures in ultrasound images. SAS employs a dual transformation strategy: (1) simulating diverse organ scales by resizing and embedding organ thumbnails into a black background, and (2) injecting noise into regions of interest to simulate varying tissue textures. These transformations generate realistic and diverse training data without introducing hallucinations or artifacts, improving the model's robustness to noise and variability. We fine-tuned a promptable foundation model on a controlled organ-specific medical imaging dataset and evaluated its performance on one internal and five external datasets. Experimental results demonstrate significant improvements in segmentation performance, with Dice score gains of up to 0.35 and an average improvement of 0.16 [95% CI: 0.132,0.188]. Additionally, our iterative point prompts provide precise control and adaptive refinement, achieving performance comparable to bounding box prompts with just two points. SAS enhances model robustness and generalizability across diverse anatomical structures and imaging conditions, particularly for small structures, without compromising the accuracy of larger ones. By offering a computationally efficient solution that eliminates the need for extensive human labeling efforts, SAS enables performance improvements in medical image analysis, particularly in resource-constrained settings.
+
+## Información del artículo
+
+- **Revista:** PLOS digital health
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Danielle L Ferreira, Ahana Gangopadhyay, Hsi-Ming Chang, Ravi Soni, Gopal Avinash
+- **DOI:** [10.1371/journal.pdig.0001309](https://doi.org/10.1371/journal.pdig.0001309)
+- **PubMed ID:** [41950249](https://pubmed.ncbi.nlm.nih.gov/41950249/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41950249/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
