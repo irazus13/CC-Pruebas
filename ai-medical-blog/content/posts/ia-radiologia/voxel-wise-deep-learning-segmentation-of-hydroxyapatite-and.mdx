@@ -1,0 +1,25 @@
+---
+title: "Voxel-wise deep learning segmentation of hydroxyapatite and iodine in spectral photon-counting CT: A quantitative phantom study."
+description: "Accurate non-invasive identification of hydroxyapatite (HA) deposits is important for diagnosing calcific musculoskeletal disease and quantifying vascular calcification, but conventional and dual-energy CT often struggle to distinguish HA from iodina..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "41955258"
+author: "Nadine Francis, Mohamed L Seghier, Nabil Maalej et al."
+tags: []
+---
+
+## Resumen
+
+Accurate non-invasive identification of hydroxyapatite (HA) deposits is important for diagnosing calcific musculoskeletal disease and quantifying vascular calcification, but conventional and dual-energy CT often struggle to distinguish HA from iodinated contrast because of overlapping attenuation, noise, and beam-hardening artifacts. Spectral photon-counting CT (SPCCT) offers improved energy resolution and spatial fidelity, yet most deep-learning approaches in spectral CT focus on continuous density regression or anatomical segmentation rather than direct voxel-wise material labeling. We developed SPFF-UNet, a spectral-preserving 3D segmentation model for direct classification of HA and iodine concentrations from five-bin SPCCT volumes without material-decomposition preprocessing. A cylindrical phantom containing twelve materials was scanned at 0.1&#xa0;mm isotropic resolution, including five HA concentrations, three iodine concentrations, three soft-tissue equivalents, and water. SPFF-UNet integrates spectral squeeze-excitation, EnergyFiLM, and FourierGate to preserve and exploit multi-energy information throughout the network. The model was trained for thirteen-class voxel-wise segmentation and compared with five established 3D architectures under matched training conditions. SPFF-UNet achieved the best macro-averaged performance on a held-out phantom scan (Dice 0.72 &#xb1; 0.01, IoU 0.59 &#xb1; 0.01, sensitivity 0.73 &#xb1; 0.01, precision 0.71 &#xb1; 0.01), outperforming the strongest comparator, ResUNet++ (Dice 0.66 &#xb1; 0.02, IoU 0.46 &#xb1; 0.02, sensitivity 0.67 &#xb1; 0.02, precision 0.61 &#xb1; 0.03). Performance gains were concentrated in mid/low-contrast HA and low-concentration iodine, with reduced slice-wise variability and fewer HA-iodine misclassifications. These results suggest that preserving spectral information and applying targeted spectral modulation can improve concentration-aware voxel classification from SPCCT. This phantom-based proof-of-concept provides a basis for future in vivo validation.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Nadine Francis, Mohamed L Seghier, Nabil Maalej, Aamir Raja
+- **DOI:** [10.1371/journal.pone.0346825](https://doi.org/10.1371/journal.pone.0346825)
+- **PubMed ID:** [41955258](https://pubmed.ncbi.nlm.nih.gov/41955258/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41955258/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
