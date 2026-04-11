@@ -1,0 +1,25 @@
+---
+title: "Code-Based Versus AutoML Methods for Pill Recognition in Clinical Settings: Comparative Performance Study."
+description: "Visual identification and verification of medications during dispensing and administration are prone to human error, particularly in high-pressure and high-volume clinical settings. Misidentification can lead to medication errors, pos..."
+date: "2026-04-10"
+category: "ia-odontologia"
+pubmedId: "41961529"
+author: "Amir Reza Ashraf, Rich&#xe1;rd R&#xe1;dli, Zsolt V&#xf6;r&#xf6;sh&#xe1;zi et al."
+tags: ["AutoML", "YOLO11", "You Only Look Once", "automated machine learning", "clinical decision support"]
+---
+
+## Resumen
+
+**BACKGROUND:** Visual identification and verification of medications during dispensing and administration are prone to human error, particularly in high-pressure and high-volume clinical settings. Misidentification can lead to medication errors, posing risks to patient safety and placing a burden on health care systems. Recent advances in computer vision and object detection offer promising solutions for automated solid oral dosage form (pill) recognition. However, comprehensive studies comparing code-based and no-code (automated machine learning [AutoML]) approaches for pill recognition are lacking. **OBJECTIVE:** This study aimed to evaluate and compare the performance, cost, usability, and deployment feasibility of pill recognition models developed with Ultralytics YOLO11 and 3 cloud-based AutoML platforms (Amazon Rekognition Custom Labels, Google Vertex artificial intelligence [AI] AutoML Vision, and Microsoft Azure Custom Vision) using multiple datasets, including real-world clinical images. **METHODS:** Five training subsets of increasing size (1230, 3450, 7380, 14,400, and 26,880 images) from 30 commonly dispensed medications were used to train models on YOLO11 and 3 AutoML platforms. Models were evaluated on 6 datasets from different environments: clinical images from 3 hospitals, a verification dataset, a laboratory dataset, and an exhaustive testing set. Performance metrics, including accuracy, precision, recall, and mean average precision, were calculated. We evaluated the impact of training data size on performance and benchmarked training time, platform costs, and limitations. **RESULTS:** No single platform dominated across all test environments. On the verification dataset (optimal conditions), accuracy ranged from 80.83% (YOLO11) to 91.60% (Google Vertex AI) when trained with the full training dataset. YOLO11 showed consistent performance improvement with increasing training data (accuracy: 63.06%-80.83%) and achieved near-perfect precision and mean average precision scores (0.95-1.00). Google Vertex AI reached above 90% accuracy on 3 training subsets but showed unpredictable declines. Amazon Rekognition maintained near-perfect precision (0.92-1.00) but had the highest false negative rates (up to 0.74), missing many pills. Custom Vision demonstrated steady performance improvements (77.08%-85.62% accuracy) but lagged behind other AutoML platforms, probably due to its older YOLOv2-based architecture. On clinical datasets, accuracy fluctuated (20.62%-90%) depending on the dataset and platform. Training costs and time varied: YOLO11 (open-source), Microsoft Azure (US $9.50-US $28.60, allowed user-predefined training duration), Google Vertex AI (US $69.30 with consistent 2.5-3-hour training times), and Amazon Rekognition (US $5.43-US $43.89 with size-dependent training time scaling, reaching nearly 40 hours on the full 26,880-image dataset). **CONCLUSIONS:** Each platform offers distinct advantages and trade-offs: YOLO11 provides the highest flexibility and lowest platform costs but requires technical expertise, while AutoML platforms can offer high performance at a higher cost but with limited user control, introducing unpredictability. The performance variations demonstrate that successful clinical deployment requires careful platform selection based on specific performance requirements, budget constraints, and available technical resources, followed by rigorous validation using real-world, representative data to ensure patient safety in clinical workflows.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-04-10
+- **Autores:** Amir Reza Ashraf, Rich&#xe1;rd R&#xe1;dli, Zsolt V&#xf6;r&#xf6;sh&#xe1;zi, Andr&#xe1;s Fittler
+- **DOI:** [10.2196/79160](https://doi.org/10.2196/79160)
+- **PubMed ID:** [41961529](https://pubmed.ncbi.nlm.nih.gov/41961529/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41961529/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
