@@ -1,0 +1,25 @@
+---
+title: "Incorporating modality-specific intensity prior as text prompt for multimodal myocardial pathology segmentation."
+description: "Accurate myocardial pathology segmentation from multimodal CMR is crucial for myocardial infarction risk assessment and treatment planning. Unlike traditional methods that rely on morphological and geometrical prior for assistance, we propose a novel..."
+date: "2026-04-11"
+category: "ia-medicina"
+pubmedId: "41967142"
+author: "Donggen Fang, Yuliang Gu, Lingyi Yu et al."
+tags: ["Intensity prior", "Multimodal image segmentation", "Myocardial pathology", "Vision language model"]
+---
+
+## Resumen
+
+Accurate myocardial pathology segmentation from multimodal CMR is crucial for myocardial infarction risk assessment and treatment planning. Unlike traditional methods that rely on morphological and geometrical prior for assistance, we propose a novel intensity-guided multimodal image segmentation (I-MMSeg) method for myocardial pathology segmentation in this paper. Specifically, we leverage multimodal large language models (e.g., GPT-4o) to generate modality-specific intensity prior. Such prior capture both the relative intensity orders across different regions and the intrinsic intensity characteristic around the boundary of each pathology, serving as high-level guidance for the segmentation process. To this end, we adopt a CLIP-based model to encode the intensity prior of different modalities, and design two dedicated modules to incorporate them into the segmentation architecture: the intensity-prior-guided cross-modal feature enhancement module and class feature modulation module. The former promotes adaptive recalibration of visual feature and cross-modal feature interaction, while the latter modulates the textual class feature of each modality under the guidance of the intensity prior. Together, they enhance the discriminability of visual feature. Extensive experiments demonstrate that our proposed I-MMSeg method outperforms state-of-the-art myocardial pathology segmentation approaches. The source code and the self-collected MyoPS380 dataset are available at: https://github.com/zzzzzzl24/I_MMSeg.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-04-11
+- **Autores:** Donggen Fang, Yuliang Gu, Lingyi Yu, Bo Du, Yongchao Xu
+- **DOI:** [10.1016/j.media.2026.104072](https://doi.org/10.1016/j.media.2026.104072)
+- **PubMed ID:** [41967142](https://pubmed.ncbi.nlm.nih.gov/41967142/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41967142/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
