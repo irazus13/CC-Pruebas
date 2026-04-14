@@ -1,0 +1,25 @@
+---
+title: "Enhancing Model Generalizability in Medical Artificial Intelligence: Systematic Comparison of Categorical Encoding and Sampling Techniques for Imbalanced Data."
+description: "Despite the increasing use of machine learning (ML) in clinical research, the early stages of data preparation, especially for structured clinical data, often receive limited methodological scrutiny. These datasets typically contain m..."
+date: "2026-04-13"
+category: "ia-medicina"
+pubmedId: "41973872"
+author: "Chien-Wei Chuang, Chung-Kuan Wu, Chao-Hsin Wu et al."
+tags: ["clinical prediction models", "data preprocessing", "feature engineering", "machine learning", "medical informatics"]
+---
+
+## Resumen
+
+**BACKGROUND:** Despite the increasing use of machine learning (ML) in clinical research, the early stages of data preparation, especially for structured clinical data, often receive limited methodological scrutiny. These datasets typically contain missing values, complex categorical variables, and imbalanced class distributions, all of which complicate downstream model development and interpretation. **OBJECTIVE:** This study introduces a structured preprocessing framework designed to address common challenges in medical tabular data and to assess how preprocessing choices affect the stability and portability of predictive models across settings. **METHODS:** We constructed a modular workflow comprising 3 components. First, preprocessing strategies included imputation for missing data, 3 types of categorical encoding (one-hot, frequency, and target), and resampling approaches for class imbalance (Synthetic Minority Over-sampling Technique [SMOTE] and Random Over Sampling Example [ROSE]). Second, 6 classification algorithms were used to evaluate performance patterns, including logistic regression (LGR), decision tree (DT), random forest, XGBoost (XGB), CatBoost (CAT), and light gradient-boosting machine (LightGBM). Third, we assessed cross-dataset portability using 2 datasets with distinct data-generating mechanisms: a registry for patients with end-stage renal disease (ESRD; n=412) and the population-based Behavioral Risk Factor Surveillance System (BRFSS) 2015 survey. For each dataset, we independently cleaned, standardized, encoded, tuned, and evaluated models using the same predefined hyperparameter search space, without cross-dataset feature matching or pooling the area under the ROC curve (AUC) calculations; the complete pipeline was then rerun on BRFSS as an external replication. **RESULTS:** One-hot encoding in combination with ROSE yielded the most consistent performance improvements in terms of AUC (0.940) and accuracy (0.932), particularly for classifiers sensitive to class distribution. Notably, ROSE enhanced sensitivity without substantially distorting the original data structure. Feature importance rankings also contributed to model interpretability, and performance trends were largely reproducible in cross-context application. **CONCLUSIONS:** Our findings suggest that preprocessing decisions often treated as ancillary play a central role in shaping model outcomes, especially in high-variance clinical datasets. The proposed framework offers a reproducible and adaptable tool for aligning data preparation with the unique demands of health care prediction tasks and may serve as a foundation for future efforts to standardize preprocessing in clinical ML workflows.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-04-13
+- **Autores:** Chien-Wei Chuang, Chung-Kuan Wu, Chao-Hsin Wu, Ben-Chang Shia, Mingchih Chen
+- **DOI:** [10.2196/75655](https://doi.org/10.2196/75655)
+- **PubMed ID:** [41973872](https://pubmed.ncbi.nlm.nih.gov/41973872/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41973872/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
