@@ -1,0 +1,25 @@
+---
+title: "Refining feature representation for accurate fundus lesion segmentation."
+description: "Accurate segmentation of retinal lesions is essential for early detection of age-related macular degeneration (AMD), particularly its key indicators, choroidal neovascularization (CNV) and choroidal non-perfusion (CNP). However, the h..."
+date: "2026-04-01"
+category: "ia-radiologia"
+pubmedId: "41988735"
+author: "Hao Sun, Enting Gao, Yongcheng Li et al."
+tags: ["fundus fluorescein angiography", "optical coherence tomography", "retinal lesion segmentation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate segmentation of retinal lesions is essential for early detection of age-related macular degeneration (AMD), particularly its key indicators, choroidal neovascularization (CNV) and choroidal non-perfusion (CNP). However, the highly variable shapes and appearances of lesions pose substantial challenges for automated&#xa0;segmentation. **PURPOSE:** To tackle these challenges, we propose a deep-learning model, the Retinal Feature Enhancement Network (RFENet), designed to improve the accuracy and robustness of retinal lesion segmentation under challenging imaging&#xa0;conditions. **METHODS:** RFENet builds upon the UNeXt backbone and introduces two modules tailored for retinal lesion segmentation: an Adaptive Feature Refinement Unit (AFRU), which selectively emphasizes informative features, and an Optimized Channel-Wise Convolution Unit (OCCU), which captures fine structural details in irregular lesions. Two expert-annotated datasets were used: 1070 OCT B-scans from 83 CNV patients and 184 FFA images from 107 CNP patients. Images were split at the patient level into training (70%), validation (10%), and test (20%) sets. Performance was compared against state-of-the-art segmentation models, including UNet++, Swin-UNet, SelfReg-UNet, DAEFormer, and Mamba-UNet. Evaluation metrics included Dice coefficient and Intersection over Union (IoU). Statistical significance was assessed using paired two-tailed t-tests ( &#x3b1; = 0.05 $\alpha = 0.05$ ), and effect sizes were reported with Cohen's d $d$ . **RESULTS:** On the CNV dataset, RFENet achieved a Dice of 82.50% and an IoU of 71.66%, with clear improvements over competing models. On the CNP dataset, RFENet achieved a Dice of 74.43% and an IoU of 60.80%, slightly surpassing the best benchmark. Most pairwise comparisons were statistically significant, including CNV compared with Swin-UNet and SelfReg-UNet (p &lt; $&lt;$ 0.001) and CNP compared with DAEFormer (p = $=$ 0.035). Statistical analyses, including effect size evaluation, further confirmed the robustness of these improvements, with the most notable gains observed in the CNV&#xa0;dataset. **CONCLUSIONS:** RFENet demonstrated consistent improvements over strong benchmarks on both CNV and CNP tasks, with statistical evidence supporting the reliability of these gains. These results indicate that RFENet provides a reliable technical advance for automated segmentation of CNV and CNP lesions associated with AMD. To facilitate reproducibility and further research, the source code is publicly available at https://github.com/HaoSun223/RFENet.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Hao Sun, Enting Gao, Yongcheng Li, Dehui Xiang, Fan Lu
+- **DOI:** [10.1002/mp.70441](https://doi.org/10.1002/mp.70441)
+- **PubMed ID:** [41988735](https://pubmed.ncbi.nlm.nih.gov/41988735/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41988735/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
