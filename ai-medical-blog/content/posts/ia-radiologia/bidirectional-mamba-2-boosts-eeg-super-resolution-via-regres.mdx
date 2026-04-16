@@ -1,0 +1,25 @@
+---
+title: "Bidirectional Mamba-2 Boosts EEG Super-Resolution via Regression and Diffusion."
+description: "Electroencephalography (EEG) is a non-invasive method that records brain electrical activity from scalp electrodes, offering millisecond temporal resolution but limited spatial detail due to sparse sensor layouts. We pre..."
+date: "2026-04-15"
+category: "ia-radiologia"
+pubmedId: "41984820"
+author: "Ugo Lomoio, Pietro Li&#xf3;, Pietro Hiram Guzzi et al."
+tags: ["Bidirectional Mamba", "Deep Learning", "EEG", "Super Resolution"]
+---
+
+## Resumen
+
+**MOTIVATIONS:** Electroencephalography (EEG) is a non-invasive method that records brain electrical activity from scalp electrodes, offering millisecond temporal resolution but limited spatial detail due to sparse sensor layouts. **RESULTS:** We present DiBiMa-EEGSR, a bidirectional Mamba-2 diffusion framework for spatio-temporal EEG super-resolution that reconstructs high-resolution signals from standard low-density recordings without additional hardware. The method formulates super-resolution as conditional generative inference and integrates a diffusion process with a bidirectional state-space backbone to model long-range temporal dependencies with linear complexity. Conditioning on low-resolution inputs, electrode positions and task labels enables anatomically coherent and context-aware reconstruction. A one-step sampling strategy substantially reduces inference time while preserving fidelity. Across two public benchmarks, the approach improves reconstruction accuracy, spatial coherence and spectral preservation over convolutional, transformer-based and prior diffusion models in both spatial and temporal upsampling tasks, providing a scalable pathway toward high-resolution electrophysiological imaging. **AVAILABILITY AND IMPLEMENTATION:** Code to reproduce ablation experiments, training and evaluation of the proposed BiMa and DiBiMa EEGSR models are available at https://github.com/UgoLomoio/DiBiMa-EEGSR.git. Model weights are available at https://huggingface.co/Ugo96/DiBiMa-EEGSR while an interactive demo for EEG spatial super-resolution using our models can be found at https://huggingface.co/spaces/Ugo96/DiBiMa-EEGSR-Demo.
+
+## Información del artículo
+
+- **Revista:** Bioinformatics (Oxford, England)
+- **Fecha de publicación:** 2026-04-15
+- **Autores:** Ugo Lomoio, Pietro Li&#xf3;, Pietro Hiram Guzzi, Pierangelo Veltri
+- **DOI:** [10.1093/bioinformatics/btag169](https://doi.org/10.1093/bioinformatics/btag169)
+- **PubMed ID:** [41984820](https://pubmed.ncbi.nlm.nih.gov/41984820/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41984820/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
