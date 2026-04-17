@@ -1,0 +1,25 @@
+---
+title: "Actinic keratosis staging in multimodal image data."
+description: "Actinic Keratosis (AK) is a common skin condition, usually appearing on sun-exposed areas, whose progression is associated with characteristic dermatoscopic and structural changes. Early detection of AK is crucial, as ca..."
+date: "2026-04-12"
+category: "ia-medicina"
+pubmedId: "41990405"
+author: "Anna Slian, Katarzyna Korecka, Adriana Pola&#x144;ska et al."
+tags: ["Actinic keratosis", "Dermatoscopy", "HFUS", "Multimodal machine learning", "Skin lesion classification"]
+---
+
+## Resumen
+
+**BACKGROUND AND OBJECTIVE:** Actinic Keratosis (AK) is a common skin condition, usually appearing on sun-exposed areas, whose progression is associated with characteristic dermatoscopic and structural changes. Early detection of AK is crucial, as cancer progression may occur in changed skin. This study aimed to develop a multimodal, machine-learning-based framework combining dermatoscopic and high-frequency ultrasound (HFUS) data to automatically stage AK and identify early lesions. **METHODS:** A dataset containing 222 pairs of dermatoscopic and HFUS images was clinically evaluated using the 3-point Zalaudek scale. Dermatoscopic images underwent ROI selection, hair removal, and extensive feature extraction (color, erythema, pigmentation, vessels, scales, pixel intensities, GLCM/LBP texture). HFUS images were divided into entry echo, sub-epidermal low-echoic band (SLEB), and dermis using a deep neural network, and then features describing the morphology and structure of the skin for each layer were extracted. A pre-trained EfficientNet network was used for feature extraction. Logistic Regression, k-Nearest Neighbors, Random Forests, Support Vector Machines and Multilayer Perceptrons with Sequential Feature Selection using 5-fold patient-wise cross-validation were used for feature-based classification. Additionally, multimodal TwinCNN was evaluated, with various pre-trained models as feature extractors. **RESULTS:** Combining dermatoscopic and HFUS features consistently outperformed single-modality models. Depending on the defined task, the models achieved over 80% accuracy (healthy, AK1-AK3), 78% (AK1-AK3), and almost 90% in the case of early AK detection vs. healthy and advanced AK on multimodal features. The TwinCNN model performed worse than classical machine-learning approaches, likely due to the limited size of the dataset and class imbalance. **CONCLUSIONS:** A multimodal framework integrating dermatoscopic and HFUS imaging enables accurate AK classification, surpassing single-modality approaches. Future work should expand multicenter datasets, improve automation of pre-processing steps, and explore enhanced neural multimodal fusion architectures.
+
+## Información del artículo
+
+- **Revista:** Computer methods and programs in biomedicine
+- **Fecha de publicación:** 2026-04-12
+- **Autores:** Anna Slian, Katarzyna Korecka, Adriana Pola&#x144;ska, Joanna Czajkowska
+- **DOI:** [10.1016/j.cmpb.2026.109364](https://doi.org/10.1016/j.cmpb.2026.109364)
+- **PubMed ID:** [41990405](https://pubmed.ncbi.nlm.nih.gov/41990405/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41990405/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
