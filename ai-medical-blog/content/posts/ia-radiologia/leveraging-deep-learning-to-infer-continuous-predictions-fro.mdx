@@ -1,0 +1,25 @@
+---
+title: "Leveraging deep learning to infer continuous predictions from ordinal labels in medical imaging."
+description: "In clinical medicine, variables like disease severity are often categorized into discrete ordinal labels such as normal/mild/moderate/severe. However, these labels, commonly used to train and evaluate disease severity prediction models, simplify an u..."
+date: "2026-04-01"
+category: "ia-radiologia"
+pubmedId: "41996486"
+author: "Katharina V Hoebel, Andr&#xe9;anne Lemay, John Peter Campbell et al."
+tags: []
+---
+
+## Resumen
+
+In clinical medicine, variables like disease severity are often categorized into discrete ordinal labels such as normal/mild/moderate/severe. However, these labels, commonly used to train and evaluate disease severity prediction models, simplify an underlying continuous severity spectrum. Using continuous scores can aid in detecting small severity changes more sensitively over time. We introduce a deep learning based approach that predicts continuously valued variables from medical images using only discrete ordinal labels during model development. We evaluated this approach using three medical imaging datasets: disease severity prediction for retinopathy of prematurity and knee osteoarthritis, and breast density prediction from mammograms. Deep learning models were trained with discrete labels, and model outputs were transformed into continuous scores. These were then compared against detailed expert severity assessments, which exceeded the granularity of training labels. Our study explored conventional and Monte Carlo dropout multi-class classification, ordinal classification, regression, and twin models. We found that models incorporating the ordinal nature of training labels significantly outperformed conventional multi-class classification. Notably, continuous scores from ordinal classification and regression models demonstrated a higher correlation with expert severity rankings and lower mean squared errors than multi-class models. The application of Monte Carlo dropout further enhanced the prediction accuracy of continuously valued scores, aligning closely with the continuous target variable. Our findings confirm that accurate continuous scores can be learned from discrete ordinal labels using deep learning, offering a robust method that effectively bridges the gap between discrete and continuous data across various image analysis tasks.
+
+## Información del artículo
+
+- **Revista:** PLOS digital health
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Katharina V Hoebel, Andr&#xe9;anne Lemay, John Peter Campbell, Susan Ostmo, Michael F Chiang
+- **DOI:** [10.1371/journal.pdig.0001248](https://doi.org/10.1371/journal.pdig.0001248)
+- **PubMed ID:** [41996486](https://pubmed.ncbi.nlm.nih.gov/41996486/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41996486/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

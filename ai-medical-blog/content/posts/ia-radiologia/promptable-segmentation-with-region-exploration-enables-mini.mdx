@@ -1,0 +1,25 @@
+---
+title: "Promptable segmentation with region exploration enables minimal-effort expert-level prostate cancer delineation."
+description: "Accurate segmentation of prostate cancer on magnetic resonance (MR) images is crucial for planning image-guided interventions such as targeted biopsies, cryoablation, and radiotherapy. However, subtle and variable tumour appearances, dif..."
+date: "2026-04-17"
+category: "ia-radiologia"
+pubmedId: "41996003"
+author: "Junqing Yang, Natasha Thorley, Ahmed Nadeem Abbasi et al."
+tags: ["Deep learning", "Promptable segmentation", "Prostate cancer", "Reinforcement learning"]
+---
+
+## Resumen
+
+**PURPOSE:** Accurate segmentation of prostate cancer on magnetic resonance (MR) images is crucial for planning image-guided interventions such as targeted biopsies, cryoablation, and radiotherapy. However, subtle and variable tumour appearances, differences in imaging protocols, and limited expert availability make consistent interpretation difficult. While automated methods aim to address this, they rely on large expertly annotated datasets that are often inconsistent, whereas manual delineation remains labour-intensive. This work aims to bridge the gap between automated and manual segmentation through a framework driven by user-provided point prompts, enabling accurate segmentation with minimal annotation effort. **METHODS:** The framework combines reinforcement learning (RL) with a region-growing segmentation process guided by user prompts. Starting from an initial point prompt, region-growing generates a preliminary segmentation, which is iteratively refined through RL. At each step, the RL agent observes the image and current segmentation to predict a new point, from which region growing updates the mask. A reward, balancing segmentation accuracy and voxel-wise uncertainty, encourages exploration of ambiguous regions, allowing the agent to escape local optima and perform sample-specific optimisation. Despite requiring fully supervised training, the framework bridges manual and fully automated segmentation at inference by substantially reducing user effort while outperforming current fully automated methods. **RESULTS:** The framework was evaluated on two public prostate MR datasets (PROMIS and PICAI, with 566 and 1090 cases). It outperformed the previous best automated methods by 9.9% and 8.9%, respectively, with performance comparable to manual radiologist segmentation, reducing annotation time tenfold. **CONCLUSION:** By combining prompting with RL-driven exploration, the framework achieves radiologist-level prostate cancer segmentation with a fraction of the annotation effort, highlighting the potential of RL to enable adaptive and efficient cancer delineation. Code: URL: github.com/JQ-Sakura/prostate-rl-segmentation.
+
+## Información del artículo
+
+- **Revista:** International journal of computer assisted radiology and surgery
+- **Fecha de publicación:** 2026-04-17
+- **Autores:** Junqing Yang, Natasha Thorley, Ahmed Nadeem Abbasi, Shonit Punwani, Zion Tse
+- **DOI:** [10.1007/s11548-026-03628-w](https://doi.org/10.1007/s11548-026-03628-w)
+- **PubMed ID:** [41996003](https://pubmed.ncbi.nlm.nih.gov/41996003/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/41996003/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
