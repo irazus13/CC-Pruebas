@@ -1,0 +1,25 @@
+---
+title: "Bilevel Optimized Implicit Neural Representation for Scan-Specific Accelerated MRI Reconstruction."
+description: "Deep learning (DL) methods can reconstruct highly accelerated magnetic resonance imaging (MRI) scans, but they rely on application-specific large training datasets and often generalize poorly to out-of-distribution data. Self-supervised deep learning..."
+date: "2026-04-22"
+category: "ia-radiologia"
+pubmedId: "42019070"
+author: "Hongze Yu, Jeffrey A Fessler, Yun Jiang"
+tags: []
+---
+
+## Resumen
+
+Deep learning (DL) methods can reconstruct highly accelerated magnetic resonance imaging (MRI) scans, but they rely on application-specific large training datasets and often generalize poorly to out-of-distribution data. Self-supervised deep learning algorithms perform scan-specific reconstructions, but still require complicated hyperparameter tuning based on the acquisition and often offer limited acceleration. This work develops a bilevel-optimized implicit neural representation (INR) approach for scan-specific MRI reconstruction. The method explicitly formulates the undersampled MRI reconstruction problem as a bilevel optimization problem and automatically optimizes the multidimensional hyperparameters of the reconstruction method for a given acquisition protocol, enabling a tailored reconstruction without training data. The proposed algorithm uses Gaussian process regression to optimize INR hyperparameters, accommodating various acquisitions. The INR includes a trainable positional encoder for high-dimensional feature embedding and a small multilayer perceptron for decoding. The bilevel optimization is computationally efficient, requiring only a few minutes per typical 2D Cartesian scan. On the scanner hardware, the subsequent scan-specific reconstruction-using offline-optimized hyperparameters-is completed within seconds, while achieving comparable or improved image quality compared to previous model-based and self-supervised learning methods.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-04-22
+- **Autores:** Hongze Yu, Jeffrey A Fessler, Yun Jiang
+- **DOI:** [10.1109/TMI.2026.3686724](https://doi.org/10.1109/TMI.2026.3686724)
+- **PubMed ID:** [42019070](https://pubmed.ncbi.nlm.nih.gov/42019070/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42019070/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
