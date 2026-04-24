@@ -1,0 +1,25 @@
+---
+title: "An explainable hybrid deep-learning and machine learning framework for automatic coeliac disease detection from duodenal endoscopy images."
+description: "Coeliac disease (CD) remains underdiagnosed because current diagnostic procedures rely on invasive biopsy, expert-dependent interpretation, and visually subtle endoscopic signs. This study aims to develop an explainable and data-efficien..."
+date: "2026-12-01"
+category: "ia-radiologia"
+pubmedId: "42028448"
+author: "Souaad Hamza-Cherif, Adil Gaouar, Zineb Aziza El Aouaber et al."
+tags: ["Celiac disease diagnosis", "Clinical decision support systems", "Gastrointestinal endoscopy", "Hybrid deep learning framework", "Interpretable artificial intelligence"]
+---
+
+## Resumen
+
+**PURPOSE:** Coeliac disease (CD) remains underdiagnosed because current diagnostic procedures rely on invasive biopsy, expert-dependent interpretation, and visually subtle endoscopic signs. This study aims to develop an explainable and data-efficient artificial intelligence framework for automatic CD detection from standard duodenal endoscopy images. **METHODS:** We curated an expert-annotated dataset of 188 duodenal endoscopic images, from which 164 images (89 normal, 75 coeliac) were retained after exclusion of 24 doubtful cases. Two complementary pipelines were evaluated across six deep backbones (ViT-B16, EfficientNet-B0, MobileNetV2, ResNet-18, ConvNeXt-Tiny, and Swin-Tiny): (i) end-to-end fine-tuning and (ii) a hybrid framework combining frozen deep feature extraction, latent-space MixUp augmentation, and classical machine learning classifiers. Otsu-based segmentation was used as a preprocessing step. Model assessment relied on repeated stratified 5&#xa0;&#xd7;&#xa0;3-fold cross-validation, non-parametric statistical tests, ablation experiments, runtime benchmarking, and visual interpretability using LIME and Grad-CAM. **RESULTS:** The best performance was achieved by the hybrid ConvNeXt-Tiny + RBF SVM model, reaching 87.39% accuracy, 87.87% precision, 87.39% recall, and 87.28% F1-score, outperforming the best end-to-end model (ResNet-18, 85.19% accuracy). The performance gap was statistically significant (Wilcoxon test, p = 0.0084 ; Cliff's delta = 0.573). Ablation analysis showed that segmentation mainly improved performance stability, whereas latent-space MixUp provided a modest regularization benefit. Inference time ranged from 37.89&#xa0;ms for the end-to-end model to 147.04&#xa0;ms for the hybrid pipeline on CPU. LIME and Grad-CAM highlighted clinically relevant mucosal patterns associated with villous atrophy and mucosal scalloping. **CONCLUSION:** The proposed explainable hybrid framework provides robust and interpretable CD detection under small-data conditions. Its modular design and low computational cost make it a promising candidate for computer-assisted support in gastroenterology workflows.
+
+## Información del artículo
+
+- **Revista:** Health information science and systems
+- **Fecha de publicación:** 2026-12-01
+- **Autores:** Souaad Hamza-Cherif, Adil Gaouar, Zineb Aziza El Aouaber, Nesma Settouti
+- **DOI:** [10.1007/s13755-026-00457-8](https://doi.org/10.1007/s13755-026-00457-8)
+- **PubMed ID:** [42028448](https://pubmed.ncbi.nlm.nih.gov/42028448/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42028448/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
