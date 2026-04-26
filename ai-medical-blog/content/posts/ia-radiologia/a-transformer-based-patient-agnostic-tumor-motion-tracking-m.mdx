@@ -1,0 +1,25 @@
+---
+title: "A transformer-based patient-agnostic tumor motion tracking model (TransTracking): A feasibility study in radiotherapy for lung cancer."
+description: "Accurate and real-time localization of thoracic tumor targets is essential for effective radiation therapy. Recently, Transformer architectures have demonstrated strong global reasoning capabilities across multiple frames by leveragin..."
+date: "2026-05-01"
+category: "ia-radiologia"
+pubmedId: "42027140"
+author: "Maidina Abuduxiku, Ningning Chai, Xiaoyan An et al."
+tags: ["deep learning", "marker&#x2010;less tracking", "motion monitoring", "radiotherapy", "surface tracking"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate and real-time localization of thoracic tumor targets is essential for effective radiation therapy. Recently, Transformer architectures have demonstrated strong global reasoning capabilities across multiple frames by leveraging both self-attention and cross-attention mechanisms. Transformers have therefore been applied to object tracking with great success. By combining Image Guided Radiation Therapy (IGRT) technologies and deep learning-based object tracking architecture, it is possible to deliver radiation doses to the target area with high accuracy. **PURPOSE:** This study develops a transformer-based patient-agnostic tracking model (TransTracking) for surface and markerless internal target tracking in thoracic tumor radiotherapy. **METHODS:** We trained the TransTracking model using the training splits of publicly available object tracking datasets. Subsequently, for internal target tracking, the model is fine-tuned using 10,000 digitally reconstructed radiograph (DRR) images generated from the actual 4DCT datasets of 25 patients. The DRR images are annotated with bounding boxes of the moving tumor. Our method learns to directly predict the target classification and bounding-box regression weights through end-to-end training, enabling accurate target localization in each frame for both surface and internal target tracking sequences. The tracking performance of the trained model was evaluated in 20 volunteers for surface tracking and using DRR images generated from 20 4DCT datasets for internal tumor tracking. To address the limited availability of medical images for training, we conducted the data augmentation procedure to 4DCT datasets and expanded the data scale 40-fold in total. **RESULTS:** For the surface marker tracking, the mean absolute deviation (MAD)&#xa0;&#xb1;&#xa0;standard deviation (SD) between the model-predicted and the actual positions for 20 volunteers was 0.07&#xa0;&#xb1;&#xa0;0.06&#xa0;mm, 0.12&#xa0;&#xb1;&#xa0;0.13&#xa0;mm, and 0.29&#xa0;&#xb1;&#xa0;0.20&#xa0;mm in left-right, superior-inferior, and anterior-posterior directions, respectively. In each directional axis, over 85% of frames exhibited a model-predicted target position within 0.5&#xa0;mm of the corresponding ground-truth position. For the internal tumor tracking, the MAD&#xa0;&#xb1;&#xa0;SD between the predicted and annotated center positions of the tumor bounding boxes is 1.49&#xa0;&#xb1;&#xa0;1.39&#xa0;mm, with a mean Intersection over Union (IoU) value of 0.83 and an area under curve (AUC) score of 82% for 20 patients. Additionally, our transformer-based model can extract the target position in 81&#xa0;ms after an image is acquired. **CONCLUSIONS:** This study proposed a novel Transformer-based deep learning method aimed at training a patient-agnostic tumor motion tracking model in radiotherapy. The model enables real-time, high-precision tracking of surface markers using vision cameras, offering a cost-effective and compact solution. Additionally, we demonstrated that our method can accurately locate tumor target areas in DRR images with high precision, without the need for individualized training or the implantation of fiducial markers. This feasibility study demonstrates the strong potential of our strategy as a clinically viable solution for moving tumor IGRT.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-05-01
+- **Autores:** Maidina Abuduxiku, Ningning Chai, Xiaoyan An, Yazhou Li, Jian Wang
+- **DOI:** [10.1002/mp.70449](https://doi.org/10.1002/mp.70449)
+- **PubMed ID:** [42027140](https://pubmed.ncbi.nlm.nih.gov/42027140/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42027140/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
