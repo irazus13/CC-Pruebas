@@ -1,0 +1,25 @@
+---
+title: "[Physiological age estimation model on pediatric panoramic radiographs based on machine learning and deep learning]."
+description: "Objective: To automatically estimate children's physiological age from pediatric panoramic radiographs, employing a two-stage approach which involves permanent teeth staging assessment followed by physiological age conversion, as well as an end-to-en..."
+date: "2026-04-30"
+category: "ia-odontologia"
+pubmedId: "42056038"
+author: "X Q Zeng, B Xia, Z Q Cao et al."
+tags: []
+---
+
+## Resumen
+
+Objective: To automatically estimate children's physiological age from pediatric panoramic radiographs, employing a two-stage approach which involves permanent teeth staging assessment followed by physiological age conversion, as well as an end-to-end approach. Methods: From 3 367 radiographs of children aged 4 to 11 years, collected at Pediatric Dentistry, Peking University School and Hospital of Stomatology, between November 2012 and August 2020, 640 images were randomly assigned into training set-1 (392 images), validation set-1 (118 images), and test set-1 (130 images) using Python (version 3.9) scripts. Using manual annotations of Demirjian's stages for 8 left mandibular teeth as gold standard, a YOLOv5-based deep learning model (staging-judgment-model) was trained and validated, whose performance was assessed using metrics including accuracy and weighted Kappa. Using chronological age as ground truth, random forest models (age-machine-models) were developed based on automatic staging of teeth 31-37 or 31-38. The full dataset (3 367 images) was randomly allocated into training set-2 (2 031 images), validation set-2 (673 images), and test set-2 (663 images) to train a ResNet-50-based deep learning model (age-deep-model). An external test set (907 images) from the Clinical Division Peking University School and Hospital of Stomatology from June 2022 to December 2022 was collected. Performance was assessed using mean absolute error (MAE), root mean square error (RMSE), and coefficient of determination (R&#xb2;). Class activation maps were used to reveal the areas of concern for the age-deep-model. Images with an absolute difference between inferred and actual ages exceeding 3 standard deviations from the mean difference were selected for manual reviews. Results: The staging-judgment-model achieved an overall accuracy of 75.95%, with a linear-weighted Kappa of 0.87 and quadratic-weighted Kappa of 0.95. In the test set-1, the MAE, RMSE and R&#xb2; of the age-machine-models based on automatic staging of teeth 31-37 were 0.592 years, 0.757 years and 0.879, while ones of the age-machine-models based on automatic staging of teeth 31-38 were 0.594 years, 0.754 years and 0.879. In the test set-2, the MAE, RMSE and R&#xb2; of the age-deep-model were 0.621 years, 0.800 years and 0.918 respectively. The gradient class activation map revealed that the areas of concern for age-deep-model gradually shifted from the crown of the posterior deciduous teeth to the apical area of the posterior permanent teeth with increasing age. The staging-judgment-model might mistake later teeth development stages for earlier ones, resulting in an underestimated assessment of physiological age by age-machine-models. Similarly, orthodontic appliance images might lead the age-deep-model to generate an underestimated age estimation. Conclusions: This study enabled fully automated physiological age inference via two complementary approaches, demonstrating potential for preliminary screening of children with dental developmental abnormalities. Further optimization is required prior to clinical implementation.
+
+## Información del artículo
+
+- **Revista:** Zhonghua kou qiang yi xue za zhi = Zhonghua kouqiang yixue zazhi = Chinese journal of stomatology
+- **Fecha de publicación:** 2026-04-30
+- **Autores:** X Q Zeng, B Xia, Z Q Cao, T Y Ma, Z N Xu
+- **DOI:** [10.3760/cma.j.cn112144-20250709-00257](https://doi.org/10.3760/cma.j.cn112144-20250709-00257)
+- **PubMed ID:** [42056038](https://pubmed.ncbi.nlm.nih.gov/42056038/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42056038/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
