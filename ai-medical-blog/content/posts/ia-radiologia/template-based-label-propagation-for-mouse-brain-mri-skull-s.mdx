@@ -1,0 +1,25 @@
+---
+title: "Template-Based Label Propagation for Mouse Brain MRI Skull Stripping."
+description: "Accurate skull stripping is an essential preprocessing step in mouse brain magnetic resonance imaging, particularly for reliable atlas registration and large scale population studies. Existing approaches are often labor intensive, sensitive to inter ..."
+date: "2026-05-01"
+category: "ia-radiologia"
+pubmedId: "42065835"
+author: "Rui Gong, Andrii Gegliuk, Daria Sharapova et al."
+tags: ["Deep learning segmentation", "Label propagation", "Mouse brain MRI", "Skull stripping"]
+---
+
+## Resumen
+
+Accurate skull stripping is an essential preprocessing step in mouse brain magnetic resonance imaging, particularly for reliable atlas registration and large scale population studies. Existing approaches are often labor intensive, sensitive to inter subject variability, and typically require manual brain masks for many individual subjects. We present a high throughput skull stripping pipeline that utilize template-based label propagation to efficiently generate training data for automated segmentation. A population average ex vivo T2-weighted mouse brain MRI template including the skull was constructed, and a single brain mask was manually annotated in template space. This mask was propagated to individual subjects using inverse transformations and used to train an attention-based 3D U-Net segmentation model. Compared with conventional pipelines requiring manual masks from multiple subjects, the proposed approach achieves competitive segmentation performance while substantially reducing manual annotation effort. Additional experiments comparing training with propagated labels, manual labels, and their combination showed that training on propagated labels alone provided robust performance, suggesting that label consistency may be as important as label quality. To evaluate generalizability, we conducted experiments on an independent in vivo mouse MRI dataset. Direct application of the trained model using ex vivo data to in vivo data resulted in reduced performance, indicating a domain shift between imaging conditions. However, applying the full pipeline to the in vivo dataset, including template construction and label propagation, yielded strong segmentation performance. These results indicate that, while trained models are domain specific, the proposed framework is adaptable across imaging conditions and provides a practical strategy for generating large, anatomically consistent training datasets for biomedical image segmentation.
+
+## Información del artículo
+
+- **Revista:** Neuroinformatics
+- **Fecha de publicación:** 2026-05-01
+- **Autores:** Rui Gong, Andrii Gegliuk, Daria Sharapova, Bhanu Sharma, Yoshifumi Abe
+- **DOI:** [10.1007/s12021-026-09785-2](https://doi.org/10.1007/s12021-026-09785-2)
+- **PubMed ID:** [42065835](https://pubmed.ncbi.nlm.nih.gov/42065835/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42065835/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
