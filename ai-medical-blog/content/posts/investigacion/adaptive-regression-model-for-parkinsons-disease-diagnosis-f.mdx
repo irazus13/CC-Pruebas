@@ -1,0 +1,25 @@
+---
+title: "Adaptive regression model for Parkinson's disease diagnosis from speech signals using Box-Cox-based clustering and extremely randomization."
+description: "Parkinson's Disease (PD) is a progressive neurodegenerative disorder that causes motor and cognitive impairments, affecting approximately 1% of individuals over 60 years of age. Speech impairments are among the earliest and most accessible biomarkers..."
+date: "2026-05-02"
+category: "investigacion"
+pubmedId: "42069874"
+author: "Mahmoud Essam, Mazen Balat, Ahmed B Zaky et al."
+tags: ["AdaBoost regressor", "Autoencoders", "Clustering-based feature selection", "Extra trees regressor", "Machine learning"]
+---
+
+## Resumen
+
+Parkinson's Disease (PD) is a progressive neurodegenerative disorder that causes motor and cognitive impairments, affecting approximately 1% of individuals over 60 years of age. Speech impairments are among the earliest and most accessible biomarkers, making voice-based assessment a promising avenue for remote PD monitoring. However, existing speech-based PD prediction methods suffer from feature redundancy that degrades model performance, non-Gaussian data distributions that violate model assumptions, and limited systematic feature grouping strategies. This study introduces an adaptive approach to improve PD diagnostic precision by predicting the Motor Unified PD Rating Scale (UPDRS) and Total-UPDRS scores from biomedical voice measurements. The proposed framework addresses these challenges through three integrated components: (1) Box-Cox transformation to stabilize variance, reduce skewness, and normalize features; (2) a clustering-based feature selection method that groups correlated features via K-Means and selects the most informative representative per cluster using mutual information, thereby eliminating redundancy without losing discriminative power; and (3) an Extra Trees Regressor (ETR) whose extreme randomization in node splitting provides computational efficiency and reduced variance. To ensure rigorous evaluation, a subject-independent data splitting strategy is adopted to prevent data leakage, and k-fold cross-validation is employed to assess model stability. The proposed method is compared against multiple feature selection techniques-mutual information, recursive feature elimination, Lasso regression, and autoencoders-paired with nine regression models including Ridge, Lasso, Linear, Decision Tree, k-Nearest Neighbors, Random Forest, Gradient Boosting, AdaBoost, and Extra Trees Regressors. The clustering-based feature selection combined with ETR yielded the best performance, achieving [Formula: see text] scores of 0.999 for Motor-UPDRS and 0.997 for Total-UPDRS on the test set. These results are further supported by cross-validation analysis and feature importance evaluation, demonstrating the effectiveness and robustness of the proposed framework for speech-based PD telemonitoring.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-05-02
+- **Autores:** Mahmoud Essam, Mazen Balat, Ahmed B Zaky, Mervat Samy, Ahmed M Anter
+- **DOI:** [10.1038/s41598-026-49065-2](https://doi.org/10.1038/s41598-026-49065-2)
+- **PubMed ID:** [42069874](https://pubmed.ncbi.nlm.nih.gov/42069874/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42069874/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

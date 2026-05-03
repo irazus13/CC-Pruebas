@@ -1,0 +1,25 @@
+---
+title: "A compact and interpretable multi-source framework for heterogeneous medical image classification."
+description: "Deep learning models for medical image analysis often rely on large-scale parameterization, which may limit their practical use in resource-constrained settings. This study aims to design a structurally compact multi-source framework capable of deliv..."
+date: "2026-05-02"
+category: "ia-radiologia"
+pubmedId: "42069855"
+author: "Williams Ayivi, Xiaoling Zhang, Wisdom Xornam Ativi et al."
+tags: ["Brain tumor MRI", "Chest X-ray", "HDPA", "Lightweight convolutional neural networks", "Lung nodule CT"]
+---
+
+## Resumen
+
+Deep learning models for medical image analysis often rely on large-scale parameterization, which may limit their practical use in resource-constrained settings. This study aims to design a structurally compact multi-source framework capable of delivering competitive diagnostic performance with reduced computational overhead. We propose ML-ConvNet, a lightweight architecture comprising approximately 4.2&#xa0;K parameters and 924&#xa0;M FLOPs at 512&#xd7;512 input resolution. The network incorporates Multi-Branch Re-parameterized Convolutions for scale-aware feature extraction, Hierarchical Dual-Path Attention for feature localization, Feature Self- Transformation for cross-feature interaction, and a Local Variance Weighted optimization strategy to address class imbalance. The framework is evaluated independently on three publicly available benchmark datasets representing heterogeneous imaging modalities: brain MRI, lung CT, and chest X-ray. Ablation studies, precision-recall analysis, cross-modality validation, and computational benchmarking are conducted to assess performance, stability, and efficiency under controlled experimental conditions. Within the evaluated settings, results indicate competitive diagnostic accuracy relative to established lightweight baselines, including EfficientNet and MobileNet variants, while substantially reducing parameter count. Class-wise F1-scores and PR-AUC values suggest relatively stable minority-class performance under repeated cross-validation sampling. Attention visualizations show activations concentrated over regions broadly associated with pathological findings, though these observations are qualitative in nature. Inference latency measurements on CPU and mobile hardware suggest feasibility for low-latency deployment under the tested single-image batch configurations, though real-world throughput may differ depending on hardware and operational conditions. These findings suggest that careful architectural design and domain-informed inductive biases may support competitive medical image classification on public benchmark datasets without extensive parameter scaling. The framework was evaluated exclusively under controlled conditions on publicly available data, and multi-institutional external validation is required before conclusions regarding generalizability or clinical applicability can be drawn.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-05-02
+- **Autores:** Williams Ayivi, Xiaoling Zhang, Wisdom Xornam Ativi, Francis Sam, Amil Aligayev
+- **DOI:** [10.1038/s41598-026-51120-x](https://doi.org/10.1038/s41598-026-51120-x)
+- **PubMed ID:** [42069855](https://pubmed.ncbi.nlm.nih.gov/42069855/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42069855/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
