@@ -1,0 +1,25 @@
+---
+title: "Large Language Model Automated Extraction of Clinical Signs and Symptoms From Emergency Department Reports for Machine Learning Prediction Models: Development and Validation Study."
+description: "Most clinically relevant information in emergency department (ED) visits is documented in free text, limiting reuse for research and clinical decision support. Despite growing interest in large language model (LLM)-based feature extra..."
+date: "2026-04-30"
+category: "ia-radiologia"
+pubmedId: "42076868"
+author: "Anoeska Schipper, Peter Belgers, Rory David O'Connor et al."
+tags: ["electronic health records", "emergency medicine", "health informatics", "large language models", "machine learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Most clinically relevant information in emergency department (ED) visits is documented in free text, limiting reuse for research and clinical decision support. Despite growing interest in large language model (LLM)-based feature extraction, very few studies have examined it directly on ED reports. Existing work has mainly addressed binary tasks and rarely evaluated their impact on downstream prediction models. Furthermore, evidence for small multilingual LLMs remains limited, especially for underrepresented languages such as Dutch. Locally deployable LLMs could enable automated feature extraction for decision support systems without increasing physician workload. **OBJECTIVE:** We aim to evaluate whether a small open-source LLM (Qwen 2.5:14B) can automatically extract 16 clinical signs and symptoms from ED reports and use these as input for an appendicitis prediction model. LLM performance under minimal and optimized 0-shot prompts was assessed against researcher annotations (reference standard) and physician annotations. **METHODS:** This retrospective study used 336 ED reports from patients presenting with acute abdominal pain to a Dutch teaching hospital (2016-2023). One hundred reports were randomly selected to develop a minimal and an optimized 0-shot prompt strategy. The remaining 236 reports, reserved for evaluation, were annotated by 2 ED physicians and processed by the LLM to extract 16 signs and symptoms, covering binary, multiclass, and multilabel classification tasks. These features were used as input to the HIVE (History, Intake, Vitals, Examination) appendicitis prediction model. LLM extraction accuracy, sensitivity, and specificity were measured against the researcher's (reference standard) and physician annotations. The HIVE model's area under the receiver operating characteristic curve was evaluated using LLM-extracted vs physician-annotated features. **RESULTS:** Among 336 ED reports from patients with acute abdominal pain (median age 41, IQR 22-62 years, 205/336, 61% female), 50% (167/336) had appendicitis. The LLM achieved weighted average accuracies of 0.910 (95% CI (0.018) with minimal prompts and 0.929 (95% CI &#xb1;0.016) with optimized prompts, vs 0.961 (95% CI &#xb1;0.012) and 0.951 (95% CI &#xb1;0.015) for physicians. Corresponding HIVE model area under the receiver operating characteristic curves were 0.871 (95% CI &#xb1;0.019) and 0.911 (95% CI &#xb1;0.014) with LLM inputs under the minimal and optimized prompts, compared to 0.917 (95% CI &#xb1;0.015) and 0.924 (95% CI &#xb1;0.018) for physician inputs. **CONCLUSIONS:** A small locally deployable multilingual LLM can approach physician-level accuracy in extracting structured binary, multiclass, and multilabel clinical data from free-text Dutch ED reports, while preserving patient privacy, interpretability, and statistical transparency for downstream diagnostic modeling.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-04-30
+- **Autores:** Anoeska Schipper, Peter Belgers, Rory David O'Connor, Lieke van de Wouw, Luc Builtjes
+- **DOI:** [10.2196/81500](https://doi.org/10.2196/81500)
+- **PubMed ID:** [42076868](https://pubmed.ncbi.nlm.nih.gov/42076868/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42076868/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
