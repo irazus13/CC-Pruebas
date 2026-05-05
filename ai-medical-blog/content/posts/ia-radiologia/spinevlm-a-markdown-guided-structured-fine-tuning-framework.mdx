@@ -1,0 +1,25 @@
+---
+title: "SpineVLM: A Markdown-Guided Structured Fine-Tuning Framework for Spine X-ray Report Generation."
+description: "Automated medical report generation in specialized fields like spine radiography is constrained by data scarcity and high annotation costs. Consequently, existing multimodal large language models (MLLMs) struggle in these settings, often missing minu..."
+date: "2026-05-04"
+category: "ia-radiologia"
+pubmedId: "42081407"
+author: "Dong Liu, Wenhui Li, Ning Xu et al."
+tags: []
+---
+
+## Resumen
+
+Automated medical report generation in specialized fields like spine radiography is constrained by data scarcity and high annotation costs. Consequently, existing multimodal large language models (MLLMs) struggle in these settings, often missing minute, scattered spinal abnormalities. We introduce SpineVLM, a data-efficient framework for structured spine X-ray report generation. The framework is built upon the newly constructed SXRG dataset, comprising 10,468 image-report pairs developed via a hierarchical AI-assisted annotation pipeline. To optimize learning under limited data, we propose Markdown-Guided Structured Learning (MGSL), which reformulates unconstrained free-text synthesis into a structured completion task, acting as a strong regularizer. Furthermore, an unsupervised Region-Focused Inference (RFI) module powered by foundation models (DINOv2) isolates the vertebral column to enhance the perception of subtle lesions without requiring manual spatial annotations. Evaluated on a 7B-parameter vision-language backbone, SpineVLM achieves strong performance against ten baseline multimodal models across standard linguistic metrics. In a double-blind reader study, the system achieved a diagnostic F1-score of 0.866, comparable to specialist performance, while reducing clinical reporting time by over 41%. By open-sourcing the dataset and codebase, we provide, to our knowledge, the first quantitative benchmark for automated spine radiography report generation, together with a structured framework for this data-limited setting. All data and code will be publicly released at https://github.com/LiuDongDaniel/SpineVLM.
+
+## Información del artículo
+
+- **Revista:** IEEE journal of biomedical and health informatics
+- **Fecha de publicación:** 2026-05-04
+- **Autores:** Dong Liu, Wenhui Li, Ning Xu, Guoge Han, Rui Hao
+- **DOI:** [10.1109/JBHI.2026.3689568](https://doi.org/10.1109/JBHI.2026.3689568)
+- **PubMed ID:** [42081407](https://pubmed.ncbi.nlm.nih.gov/42081407/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42081407/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
