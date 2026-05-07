@@ -1,0 +1,25 @@
+---
+title: "CIM-VTP: Correlation-Guided Image Modeling with Visual-Textual Task Prompt for Universal Medical Image Registration."
+description: "Universal medical image registration through a single model handling various registration tasks has attracted increasing interest. However, existing deep learning-based methods face two major challenges in adapting to universal registration tasks: 1)..."
+date: "2026-05-06"
+category: "ia-radiologia"
+pubmedId: "42090536"
+author: "Housheng Xie, Xiaoru Gao, Guoyan Zheng"
+tags: []
+---
+
+## Resumen
+
+Universal medical image registration through a single model handling various registration tasks has attracted increasing interest. However, existing deep learning-based methods face two major challenges in adapting to universal registration tasks: 1) they lack generalizable feature representation capabilities for cross-task registration; 2) they rely solely on model architectures with fixed parameters, which limits their flexibility to dynamically adapt to different registration tasks and inherently compromises their generalization capability for zero-shot performance on unseen tasks. To address these limitations, we propose CIM-VTP, a novel two-stage universal registration framework. In the first stage, our proposed Correlation-guided Image Modeling (CIM)-based pretraining strategy leverages cross-image correlation to guide the masked modeling process, which facilitates spatial correspondence capturing that is essential for registration and provides universal representation capabilities as a foundation for registration learning. In the second stage, we introduce a registration task classifier to identify the type of a given input task, which explicitly quantifies the similarity between current inputs and previously seen tasks. The obtained task similarity scores are then fed as prior information into our carefully designed multi-resolution Visual-Textual Task Prompt (VTP) modules, which integrate task-relevant knowledge through prompt learning to adaptively adjust decoder parameters for different input domains. Extensive experiments across six different registration tasks demonstrate that the proposed CIM-VTP exhibits superior universal image registration performance. The code will be released at https://github.com/xiehousheng/CIM-VTP.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-05-06
+- **Autores:** Housheng Xie, Xiaoru Gao, Guoyan Zheng
+- **DOI:** [10.1109/TMI.2026.3690772](https://doi.org/10.1109/TMI.2026.3690772)
+- **PubMed ID:** [42090536](https://pubmed.ncbi.nlm.nih.gov/42090536/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42090536/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
