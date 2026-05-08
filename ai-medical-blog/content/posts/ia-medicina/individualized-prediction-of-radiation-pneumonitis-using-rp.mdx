@@ -1,0 +1,25 @@
+---
+title: "Individualized Prediction of Radiation Pneumonitis Using RP-GAN: Leveraging Global Lung Features and Explainable Artificial Intelligence."
+description: "IntroductionThis study aims to develop an individualized risk prediction model for radiation pneumonitis (RP) based on unsupervised image feature learning. A deep convolutional generative adversarial network (DCGAN) was utilized to automatically extr..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "42100835"
+author: "Yang-Wei Hsieh, Pei-Ju Chao, Yi-Lun Liao et al."
+tags: ["deep convolutional generative adversarial network (DCGAN)", "explainable artificial intelligence (XAI)", "radiation pneumonitis (RP)", "risk prediction model", "stacking ensemble learning"]
+---
+
+## Resumen
+
+IntroductionThis study aims to develop an individualized risk prediction model for radiation pneumonitis (RP) based on unsupervised image feature learning. A deep convolutional generative adversarial network (DCGAN) was utilized to automatically extract features from computed tomography (CT) images.MethodsA retrospective analysis was conducted on 180 lung cancer patients treated with volumetric modulated arc therapy (VMAT) at Kaohsiung Veterans General Hospital between 2015 and 2022. To mitigate clinical sample size limitations, rotation-based augmentation was employed to expand the training dataset. The pretreatment CT images were processed into three input configurations: whole-lung, V5Gy dose regions, and V20Gy dose regions. An unsupervised feature extraction model, designated RP-GAN, was constructed to capture latent representations associated with RP risk. High-dimensional features were refined via least absolute shrinkage and selection operator (LASSO) and integrated into a stacking ensemble learning framework (including RF, SVM, KNN, XGBoost, and LR). Model stability and generalization were validated through 10-fold cross-validation alongside an independent test set, while clinical interpretability was ensured using Grad-CAM and LIME.ResultsThe whole-lung input model demonstrated superior performance, achieving an AUC of 0.856 and an accuracy of 0.861, with a recall of 0.778. In contrast, models restricted to V20Gy dose regions showed a significant decline in sensitivity, with the recall decreasing to 0.273. XAI visualization confirmed that the model focused not only on the tumor bed but also on the peritumoral parenchyma and contralateral lung.ConclusionThe proposed RP-GAN architecture effectively captures subtle textural changes across the whole lung microenvironment without requiring manual annotations. This framework provides a robust tool for individualized RP risk assessment, facilitating the optimization of radiation therapy plans.
+
+## Información del artículo
+
+- **Revista:** Technology in cancer research &amp; treatment
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yang-Wei Hsieh, Pei-Ju Chao, Yi-Lun Liao, Wen-Ping Yun, Ling-Chuan Chang-Chien
+- **DOI:** [10.1177/15330338261450065](https://doi.org/10.1177/15330338261450065)
+- **PubMed ID:** [42100835](https://pubmed.ncbi.nlm.nih.gov/42100835/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42100835/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
