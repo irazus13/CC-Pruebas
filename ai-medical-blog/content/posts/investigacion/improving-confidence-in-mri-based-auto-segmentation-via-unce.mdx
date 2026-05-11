@@ -1,0 +1,25 @@
+---
+title: "Improving confidence in MRI-based auto-segmentation via uncertainty assessment."
+description: "Accurate delineation of organs of interest (OOIs, also commonly referred to as organs at risk, OARs) is crucial for safe radiotherapy. While deep learning-based segmentation using convolutional neural networks has achieved..."
+date: "2026-05-11"
+category: "investigacion"
+pubmedId: "42109077"
+author: "Jesper Folsted Kallehauge, Jintao Ren, Yasmin Lassen-Ramshad"
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND AND PURPOSE:** Accurate delineation of organs of interest (OOIs, also commonly referred to as organs at risk, OARs) is crucial for safe radiotherapy. While deep learning-based segmentation using convolutional neural networks has achieved high geometric accuracy, clinical translation is hindered by overconfident, uncalibrated predictions in anatomically ambiguous regions. Uncertainty quantification and model calibration are prerequisites for safe clinical workflows. This study compared the standard nnU-Netv2 against its residual-encoding variant (ResEncM), hypothesizing that ResEncM would demonstrate superior reliability and calibration while maintaining comparable geometric accuracy. Patient/material and methods: T1-weighted contrast-enhanced MRI scans from 70 brain cancer patients were used (55 training/validation, 15 testing). Ground-truth contours for brainstem, hippocampi, chiasm, optic nerves, optic tracts, and pituitary were delineated per Danish Neuro Oncology Group guidelines. Both architectures were trained using five-fold cross-validation with identical preprocessing. Epistemic uncertainty was quantified using mutual information, and Expected Calibration Error (ECE) was computed within a 10-mm isotropic margin around reference contours. **RESULTS:** Both models achieved high geometric accuracy (brainstem dice similarity coefficient [DSC] &gt; 0.93, hippocampi DSC &gt; 0.81). No significant geometric differences were found for large structures. ResEncM showed significantly lower DSC for the pituitary (p = 0.003) and chiasm (p = 0.018). However, ResEncM demonstrated significantly lower epistemic uncertainty and ensemble variance across all structures (p &lt; 0.05), and significantly reduced ECE for the optic chiasm, optic tracts, and pituitary. **INTERPRETATION:** Integrating a deep residual encoder into the standard U-Net framework significantly improves reliability and calibration of automated brain OOI contours while maintaining strong geometric performance. The ResEncM architecture provides a more trustworthy tool for clinical radiotherapy by reliably flagging high-uncertainty voxels, supporting confidence-aware clinical workflows.
+
+## Información del artículo
+
+- **Revista:** Acta oncologica (Stockholm, Sweden)
+- **Fecha de publicación:** 2026-05-11
+- **Autores:** Jesper Folsted Kallehauge, Jintao Ren, Yasmin Lassen-Ramshad
+- **DOI:** [10.2340/1651-226X.2026.45685](https://doi.org/10.2340/1651-226X.2026.45685)
+- **PubMed ID:** [42109077](https://pubmed.ncbi.nlm.nih.gov/42109077/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42109077/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
