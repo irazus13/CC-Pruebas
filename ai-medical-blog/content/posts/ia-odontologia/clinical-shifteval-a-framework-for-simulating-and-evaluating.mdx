@@ -1,0 +1,25 @@
+---
+title: "Clinical-ShiftEval: a framework for simulating and evaluating model adaptation in dynamic clinical NLP tasks."
+description: "Clinical natural language processing (NLP) models are widely used to extract information from electronic health records (EHR) and support healthcare decision-making. However, most existing models are evaluated under the assumption of ..."
+date: "2026-05-11"
+category: "ia-odontologia"
+pubmedId: "42116134"
+author: "Fabi&#xe1;n Villena, Felipe Bravo-Marquez, Jocelyn Dunstan"
+tags: ["Artificial intelligence", "Concept drift", "Concept evolution", "Natural language processing"]
+---
+
+## Resumen
+
+**BACKGROUND:** Clinical natural language processing (NLP) models are widely used to extract information from electronic health records (EHR) and support healthcare decision-making. However, most existing models are evaluated under the assumption of static data distributions and fixed task definitions, overlooking the dynamic and evolving nature of real clinical environments. Distributional changes arising from updated guidelines, emerging diseases, or institutional restructuring can lead to substantial model degradation in practice. **METHODS:** We introduce Clinical-ShiftEval, a framework designed to simulate and evaluate model adaptation in dynamic clinical NLP tasks using real-world clinical text data. Our framework parameterizes two prevalent types of evolution observed in healthcare: (1) label-set incompatibility (LSI), where the set of prediction targets changes over time, and (2) task definition evolution (TDE), where the clinical meaning or labeling rule is revised. These changes are operationalized through controlled transitions between two periods in real datasets. As a case study, we applied Clinical-ShiftEval to the Chilean Waiting List Corpus, using referral specialty classification to model LSI and disease prioritization to model TDE, and systematically compared continual training, in-context learning with large language models, and a hybrid approach. **RESULTS:** We validated that Clinical-ShiftEval reliably simulates realistic levels of clinical change and produces controlled, interpretable performance drops. This confirms its utility as a framework to generate reproducible scenarios for benchmarking model robustness. As a case study, we compared multiple model adaptation strategies under LSI and TDE. Conventional supervised models showed severe degradation under these shifts (up to a drop of 82% F1 in LSI and 43% in TDE). In contrast, in-context learning reduced the drop to 35% in LSI and 10% in TDE, while a hybrid method further improved robustness, limiting the drop to approximately 8% in both settings. Continual adaptation with incremental retraining gradually restored performance, but only surpassed in-context and hybrid approaches after incorporating at least 30% of data from the second period. **CONCLUSIONS:** Clinical-ShiftEval enables robust benchmarking of model adaptation in realistic, dynamic settings using authentic EHR text. Both in-context learning and hybrid approaches substantially mitigate the impact of evolving clinical data, achieving strong performance even without access to new labeled data. For optimal recovery of baseline accuracy, continual training with a moderate amount of new data is most effective, eventually surpassing the other methods as more new data become available. These findings provide practical guidance for the deployment of resilient NLP models in dynamic healthcare settings.
+
+## Información del artículo
+
+- **Revista:** BMC medical informatics and decision making
+- **Fecha de publicación:** 2026-05-11
+- **Autores:** Fabi&#xe1;n Villena, Felipe Bravo-Marquez, Jocelyn Dunstan
+- **DOI:** [10.1186/s12911-026-03538-6](https://doi.org/10.1186/s12911-026-03538-6)
+- **PubMed ID:** [42116134](https://pubmed.ncbi.nlm.nih.gov/42116134/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42116134/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

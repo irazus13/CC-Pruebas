@@ -1,0 +1,25 @@
+---
+title: "Dissecting self-supervised learning strategies for transfer learning in MRI prostate cancer diagnosis."
+description: "Deep learning (DL) has driven major progress in medical imaging diagnosis. However, its effectiveness is often limited by the scarcity of large annotated datasets and the poor generalization of models to small, out-of-distribution (OOD) data. Self-su..."
+date: "2026-05-11"
+category: "ia-radiologia"
+pubmedId: "42115652"
+author: "Jorge Facuse, Diego Campanini, Denis Parra et al."
+tags: []
+---
+
+## Resumen
+
+Deep learning (DL) has driven major progress in medical imaging diagnosis. However, its effectiveness is often limited by the scarcity of large annotated datasets and the poor generalization of models to small, out-of-distribution (OOD) data. Self-supervised learning (SSL) and transfer learning offer promising solutions: SSL enables representation learning from unlabeled data via pretext tasks, while transfer learning helps adapt models to new domains with limited labeled data. In this study, we evaluate SSL-based strategies for detecting and segmenting clinically significant prostate cancer (csPCa) in MRI. We investigate the impact of key design decisions-including model architectures, pretext tasks, contrastive learning methods, and downstream tasks-using one medium-sized pre-training dataset (PI-CAI) and two small OOD target datasets: Prostate158 and ChiPCa. We propose a three-stage training pipeline that includes SSL, supervised pre-training, and a final fine-tuning on the target small labeled dataset.&#xa0;Results show that our proposed full three-stage training pipeline achieves the most consistent performance in both detection and segmentation on Prostate158, whose csPCa area distribution is closer to the pre-training dataset. In contrast, for ChiPCa, whose csPCa distribution differs from the pre-training dataset, the full strategy is the best for detection but suboptimal for segmentation, where partial training stages can provide better results. In general, either UNETR or UNet can serve well for detection, but UNet architecture reports consistently better results for segmentation. These findings provide practical guidance on when multi-stage SSL pipelines are most beneficial and how dataset similarity and architectural choice influence prostate segmentation performance.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-05-11
+- **Autores:** Jorge Facuse, Diego Campanini, Denis Parra, Cecilia Besa, Rodrigo Salas
+- **DOI:** [10.1038/s41598-026-50355-y](https://doi.org/10.1038/s41598-026-50355-y)
+- **PubMed ID:** [42115652](https://pubmed.ncbi.nlm.nih.gov/42115652/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42115652/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
