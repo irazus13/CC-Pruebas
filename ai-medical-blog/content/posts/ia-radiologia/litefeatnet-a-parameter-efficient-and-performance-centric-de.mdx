@@ -1,0 +1,25 @@
+---
+title: "LiteFeatNet: A parameter-efficient and performance-centric deep learning model for multi-ocular disease identification using intermediate feature reduction from fundus images."
+description: "Convolutional Neural Networks (CNNs) require a larger amount of input samples and computing resources to learn discriminative features for accurate identification of multiple retinal conditions, making the development and deployment of such models ch..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42113782"
+author: "Usman Rafi, Qamar Nawaz, Muhammad Ahsan Latif et al."
+tags: []
+---
+
+## Resumen
+
+Convolutional Neural Networks (CNNs) require a larger amount of input samples and computing resources to learn discriminative features for accurate identification of multiple retinal conditions, making the development and deployment of such models challenging on limited computing resources. This study presents a robust CNN (called LiteFeatNet) that requires fewer trainable parameters, computational resources, and processing time for accurate prediction. To enhance robustness and reduce computational time, a pre-trained NASNetMobile backbone is employed, and a method for time-efficient discriminative feature extraction from deep intermediate layers is proposed. The extracted features are refined using a spatially-aware feature map reduction module and classified using a custom classification module with fewer number of trainable parameters, reduced computational resource requirements, and computational time. Experiments are conducted using 1824 images from three distinct class labels in the Retinal Fundus Multi-Disease Image Dataset (RFMiD), with a 60:20:20 train-validation-test split. The LiteFeatNet architecture has a compact size (19.87 MB) and was trained using a standard pre-processing pipeline and training configurations. It outperformed twelve state-of-the-art models, achieving the highest testing accuracy of 90.33%, precision of 90.69%, recall of 90.33%, and F1-score of 90.27%, with a fast, impressive inference time of 4 milliseconds per image. Further, a generalizability study was also conducted using an external dataset, RFMiD 2.0, and the LiteFeatNet achieved competitive performance with quicker testing time compared to other architectures. To evaluate the scalability and adaptability of our proposed integrated framework for larger multi-class problems, we assessed the scalability by increasing class label complexity using two additional disease categories. Results validated the effectiveness and computational efficiency of this integrated framework compared with 9 baseline architectures. An ablation study was also conducted using the LiteFeatNet and two top-performing transfer learning architectures to validate that the synergistic combination of deep feature extraction and feature map refinement is the primary design decision behind the success of the LiteFeatNet architecture. The evaluation metrics, thus obtained, strongly suggest that the proposed LiteFeatNet is lightweight, fast, and robust, rendering it suitable for deployment in low-resource clinical settings.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Usman Rafi, Qamar Nawaz, Muhammad Ahsan Latif, Aisha Khatoon
+- **DOI:** [10.1371/journal.pone.0347867](https://doi.org/10.1371/journal.pone.0347867)
+- **PubMed ID:** [42113782](https://pubmed.ncbi.nlm.nih.gov/42113782/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42113782/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

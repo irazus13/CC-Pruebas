@@ -1,0 +1,25 @@
+---
+title: "Glass-box agentic-style workflow for multiclass cine cardiac magnetic resonance imaging classification with a large language model."
+description: "To develop and evaluate a glass-box, agentic-style radiology pipeline that separates perception from reasoning for auditable multiclass diagnosis on cine cardiac magnetic resonance imaging (MRI), and to quantify accuracy, robustness acro..."
+date: "2026-05-11"
+category: "ia-radiologia"
+pubmedId: "42112697"
+author: "Ismail Mese, Burak Kocak"
+tags: ["Cardiac magnetic resonance imaging", "explainable artificial intelligence", "large language model", "quantitative biomarkers"]
+---
+
+## Resumen
+
+**PURPOSE:** To develop and evaluate a glass-box, agentic-style radiology pipeline that separates perception from reasoning for auditable multiclass diagnosis on cine cardiac magnetic resonance imaging (MRI), and to quantify accuracy, robustness across decoding temperatures, and fidelity/safety of generated narrative explanations. **METHODS:** Using the labeled Automated Cardiac Diagnosis Challenge training cohort (n = 100; five diagnostic classes), cine bSSFP images were segmented at end-diastole (ED) and end-systole (ES) with a pretrained nnU-Net, and 17 clinically interpretable biomarkers were extracted. A large language model (LLM) (GPT-OSS-120B) queried prompts under three different prompt strategies (V1-V3) with majority-vote self-consistency after a stratified split into prompt development (n = 20) and independent evaluation (n = 80). Temperatures (T = 0.1, 1.0, and 2.0) were tested for stability. A decoupled narrative module generated radiologist-style reports. Narratives underwent radiologist audit for numeric fidelity and clinical safety. Machine learning algorithms [Random Forest, Support Vector Machine (SVM), Logistic Regression, Decision Tree] were trained on the same biomarker set for benchmarking. **RESULTS:** Automated segmentation showed high agreement with reference masks [Dice at ED: right ventricle [RV] cavity 0.984 &#xb1; 0.004, left ventricle (LV)] myocardium 0.965 &#xb1; 0.009, LV cavity 0.989 &#xb1; 0.003; ES: RV cavity 0.979 &#xb1; 0.013, LV myocardium 0.975 &#xb1; 0.009, LV cavity 0.985 &#xb1; 0.005). The hierarchical veto-logic strategy (V3) achieved an accuracy of 0.925 (95% confidence interval: 0.863-0.975) and a macro-F1 of 0.924, remaining stable across temperatures, outperforming V2 (accuracy 0.787-0.800) and V1 (0.562-0.600). Reproducibility was highest for V3 at T = 0.1 (Fleiss' kappa: 0.969) with a low failure rate (0.83%). Narrative generation produced 97.5% valid reports with 100% numeric fidelity and audited safety &#x2265; 97.5%. Performance was comparable to supervised models (Random Forest accuracy 0.938; SVM/Logistic Regression accuracy 0.925). **CONCLUSION:** In this single-dataset internal evaluation, a glass-box workflow combining automated segmentation-derived biomarkers with an LLM enables robust multiclass cardiac MRI diagnosis while producing numerically faithful, safety-audited narratives, supporting auditability and governance for radiology artificial intelligence (AI). External multicenter validation is needed to confirm generalizability. **CLINICAL SIGNIFICANCE:** A glass-box, biomarker-driven agentic-style workflow enables auditable cine cardiac MRI classification with numerically grounded explanations, addressing interpretability and stability barriers that limit translation of radiology AI into routine practice.
+
+## Información del artículo
+
+- **Revista:** Diagnostic and interventional radiology (Ankara, Turkey)
+- **Fecha de publicación:** 2026-05-11
+- **Autores:** Ismail Mese, Burak Kocak
+- **DOI:** [10.4274/dir.2026.264016](https://doi.org/10.4274/dir.2026.264016)
+- **PubMed ID:** [42112697](https://pubmed.ncbi.nlm.nih.gov/42112697/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42112697/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
