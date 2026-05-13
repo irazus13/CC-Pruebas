@@ -1,0 +1,25 @@
+---
+title: "Individualized Treatment Effect Inference of Head and Neck Cancer with Multimodal Data."
+description: "Estimating individualized treatment effects (ITE) is critical for personalized medicine, yet it remains a challenge due to retrospective observational data, which suffer from selection bias in clinical practice, and the complexity of multimodal data ..."
+date: "2026-12-14"
+category: "ia-radiologia"
+pubmedId: "42125301"
+author: "Yawen Wei, Zhen Li, Jonghye Woo et al."
+tags: ["Causal Inference", "Deep Learning", "Head and Neck Cancer", "Individualized Treatment Effect", "Medical Imaging"]
+---
+
+## Resumen
+
+Estimating individualized treatment effects (ITE) is critical for personalized medicine, yet it remains a challenge due to retrospective observational data, which suffer from selection bias in clinical practice, and the complexity of multimodal data used for patient status depiction. In this work, we develop an end-to-end deep learning (DL) framework that incorporates multimodal patient data and multiple treatments for accurate ITE inference in a retrospective head and neck cancer (HNC) study. A possible solution is concatenating the factors and adapt adversarial training, which has shown great promise on tabular data, to disentangle patient characteristics from patient status features to mitigate treatment selection bias. However, this approach suffers from instability when applied to complex multimodal patient data and multiple treatment options. For flexible and efficient, treatment-conditioned information fusion, we propose a bi-stage adaptive instance normalization (Bi-AdaIN) to inject relevant factors into corresponding layers, an approach that is also robust to missing values. Furthermore, we propose to disentangle status features from the multi-treatment variable using mutual information (MI) regularization, enabling more accurate predictions of patient-specific outcomes for both factual and counterfactual data. We evaluated our model on the RADCURE dataset, comprising 3,346 HNC cases with CT scans and multiple clinical variables who received radiotherapy or additional chemotherapy and EGFRI. The Bias-Adjusted Treatment Effect (BATE) is substantially reduced compared to the conventional direct ITE method (which does not consider treatment bias) and to adversarial training, indicating a more robust estimation of causal effects. This work is one of the first DL-based studies to address ITE estimation using multimodal medical imaging, offering a promising approach to counterfactual reasoning in clinical oncology for decision support.
+
+## Información del artículo
+
+- **Revista:** APSIPA Transactions on Signal and Information Processing
+- **Fecha de publicación:** 2026-12-14
+- **Autores:** Yawen Wei, Zhen Li, Jonghye Woo, Jinsong Ouyang, Georges El Fakhri
+- **DOI:** [10.1108/atsip-06-2025-0051](https://doi.org/10.1108/atsip-06-2025-0051)
+- **PubMed ID:** [42125301](https://pubmed.ncbi.nlm.nih.gov/42125301/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42125301/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
