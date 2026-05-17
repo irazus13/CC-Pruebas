@@ -1,0 +1,25 @@
+---
+title: "A mathematical and computational framework to predict the time to and recovery from osteoporosis via serial DEXA scans: a proof-of-concept model for digital decision support."
+description: "Dual-energy X-ray absorptiometry (DEXA) is the diagnostic standard for osteoporosis, yet its serial data remains underutilised in predictive analytics. To our knowledge, no published model provides explicit age-based predictions of os..."
+date: "2026-05-16"
+category: "investigacion"
+pubmedId: "42143329"
+author: "P Scully, Azrin Muslim, T Sheehy et al."
+tags: ["Bone mineral density", "Clinical informatics", "DEXA", "Decision support", "Explainable AI"]
+---
+
+## Resumen
+
+**BACKGROUND:** Dual-energy X-ray absorptiometry (DEXA) is the diagnostic standard for osteoporosis, yet its serial data remains underutilised in predictive analytics. To our knowledge, no published model provides explicit age-based predictions of osteoporosis onset or recovery using serial DEXA T-score trajectories. This proof-of-concept study describes a deterministic mathematical framework for predicting time to osteoporosis (TTO) and time to exit osteoporosis (TEO), defined as the age at which a patient's T-score trajectory reaches or exits the threshold of -&#x2009;2.5. **METHODS:** We developed two deterministic algorithms converting serial hip DEXA T-scores into age-based predictions: a two-point slope algorithm (TTOc) and a multipoint least-squares regression (TTOt). The algorithms were evaluated on 200 patients drawn from an institutional DEXA database using a pre-specified stratified random-sampling rule (50 patients each with 2, 3, 4, and &#x2265;&#x2009;5 scans; seed 42). Three validation analyses were performed: (i) onset-age prediction against observed age of first osteoporotic reading using mean absolute error (MAE) and Bland-Altman analysis; (ii) prospective T-score prediction using scans 1 to N&#x2009;-&#x2009;1 to predict scan N; and (iii) stability analysis examining how prediction intervals narrowed with increasing scan count. 95% prediction intervals were computed for TTOt by inverse prediction. **RESULTS:** Of 200 patients, 19 experienced observable crossing into osteoporosis and 4 experienced recovery during follow-up. For the 8 patients with sufficient pre-crossing data, TTOc predicted observed onset age with MAE 5.67 years (mean bias&#x2009;+&#x2009;1.42; 95% limits of agreement&#x2009;-&#x2009;16.0 to +&#x2009;18.8). TTOt gave MAE 7.33 years (bias&#x2009;+&#x2009;4.73; LoA&#x2009;-&#x2009;14.2 to +&#x2009;23.7). For prospective T-score prediction across 300 prediction points in 150 patients, TTOt produced lower MAE than TTOc on prospective T-score prediction (0.385 vs. 0.533 T-score units). Stability analysis demonstrated marked narrowing of TTOt prediction intervals with increasing scan count (mean PI width: 654 years at 3 scans, 202 years at 4 scans, 69.5 years at 5 scans). The two algorithms showed complementary behaviour: TTOc produced lower onset-age error in the validation subset (n&#x2009;=&#x2009;8), while TTOt produced lower error for next-scan T-score extrapolation. **DISCUSSION:** The framework translates static DEXA outputs into patient-specific age-based predictions using mathematics that any reader can inspect on one page. TTOc and TTOt showed distinctly complementary behaviour. The two-point method produced lower onset-age error, while regression produced lower error for next-scan T-score prediction. The stability analysis further establishes a minimum data requirement for reliable interval estimation, with prediction intervals narrowing sharply between three and five scans. External validation, confounder adjustment, and evaluation against clinical endpoints are the necessary next steps before the framework could inform deployed decision support tools. **CONCLUSIONS:** Serial DEXA T-scores can be converted into interpretable, age-based threshold predictions using simple deterministic algorithms, with regression-based prediction error within an order of magnitude of the intrinsic measurement noise of DEXA itself. The framework is transparent by construction, providing a concrete methodological foundation on which future clinical decision support tools for bone health can be built and benchmarked.
+
+## Información del artículo
+
+- **Revista:** BMC medical informatics and decision making
+- **Fecha de publicación:** 2026-05-16
+- **Autores:** P Scully, Azrin Muslim, T Sheehy, A Costelloe, N Asri
+- **DOI:** [10.1186/s12911-026-03565-3](https://doi.org/10.1186/s12911-026-03565-3)
+- **PubMed ID:** [42143329](https://pubmed.ncbi.nlm.nih.gov/42143329/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42143329/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
