@@ -1,0 +1,25 @@
+---
+title: "Cone beam computed tomography reconstruction from truncated projections using prior information and transfer learning."
+description: "Cone beam computed tomography (CBCT) is widely used in clinical practice and small animal research for image guidance. The reconstruction quality will be compromised by severe truncation-related artifacts when the scanned object is no..."
+date: "2026-05-01"
+category: "ia-radiologia"
+pubmedId: "42145070"
+author: "Yiqun Han, Chengyijue Fang, Yunwen Huang et al."
+tags: ["cone beam computed tomography", "deep learning", "transfer learning", "truncated projection"]
+---
+
+## Resumen
+
+**BACKGROUND:** Cone beam computed tomography (CBCT) is widely used in clinical practice and small animal research for image guidance. The reconstruction quality will be compromised by severe truncation-related artifacts when the scanned object is not fully covered by the field of view (FOV). **PURPOSE:** This work aims to develop a Dual-Domain Deep learning-based method for CBCT Reconstruction from Truncated projections (D3CRT) through the guidance of non-truncated prior information. **METHODS:** The D3CRT comprised sequential procedures in both projection and image domains. First, in projection domain, a Sinogram Generation Network (SG-Net) based on the denoising diffusion probabilistic model (DDPM) was employed to predict the missing projection data outside the FOV. The SG-Net was fine-tuned via transfer learning using non-truncated prior data to achieve object-specific adaptation. FDK reconstruction was subsequently performed using the predicted projections. Second, in image domain, an Image Enhancement Network (IE-Net) was applied to refine the FDK reconstructed images. Compressed sensing (CS) reconstruction was then carried out to enforce data fidelity by incorporating the original projections, followed by a secondary IE-Net for final image quality enhancement. In-vivo small animal experiments were conducted on a micro-CBCT system to validate the D3CRT method, with non-truncated prior data obtained from large-FOV low-resolution scans. Dice similarity coefficient (DSC), structural similarity index measure (SSIM), root mean square error (RMSE) were used for quantitative evaluation. **RESULTS:** The proposed D3CRT effectively improves the image reconstruction quality under truncated projection conditions. For whole-body and lung regions, D3CRT achieved DSCs of 97.1% and 96.0%, outperforming the low-resolution prior images (DSCs of 96.8% and 89.9%) when compared with the reference region segmentations. Quantitative evaluations within the FOV yielded an average RMSE of 2.95 &#xd7; 1 0 - 3 m m - 1 $ \times 1{{{\mathrm{0}}}^{{\mathrm{ - 3}}}}{\mathrm{m}}{{{\mathrm{m}}}^{{\mathrm{ - 1}}}}$ and an SSIM of 98.1% for D3CRT, demonstrating better performance than the Low Resolution Image Constrained Reconstruction (LRICR) method which directly takes low-resolution prior images as the initial inputs for CS reconstruction (RMSE 3.83 &#xd7; 10 - 3 m m - 1 $ \times 10^{- 3}{\mathrm{m}}{\mathrm{m}}^{-1}$ , SSIM 97.4%). **CONCLUSION:** By leveraging non-truncated prior information and projection-domain transfer learning, the proposed D3CRT effectively improved the overall quality of CBCT reconstruction from truncated projections.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-05-01
+- **Autores:** Yiqun Han, Chengyijue Fang, Yunwen Huang, Qiwei Wu, Cheng Zheng
+- **DOI:** [10.1002/mp.70488](https://doi.org/10.1002/mp.70488)
+- **PubMed ID:** [42145070](https://pubmed.ncbi.nlm.nih.gov/42145070/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42145070/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
