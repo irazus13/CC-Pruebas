@@ -1,0 +1,25 @@
+---
+title: "IV-learner: learning conditional average treatment effects using instrumental variables."
+description: "A live clinical question is: which patients benefit from intensive care unit (ICU) transfer? Motivated by this question we address the problem of estimating conditional average treatment effects (CATE) in the presence of unmeasured confounding, by le..."
+date: "2026-01-20"
+category: "investigacion"
+pubmedId: "42153341"
+author: "Stijn Vansteelandt, Stephen O'Neill, Richard Grieve et al."
+tags: ["conditional average treatment effect", "debiasing", "targeted learning", "treatment effect heterogeneity", "unmeasured confounding"]
+---
+
+## Resumen
+
+A live clinical question is: which patients benefit from intensive care unit (ICU) transfer? Motivated by this question we address the problem of estimating conditional average treatment effects (CATE) in the presence of unmeasured confounding, by leveraging instrumental variables (IVs). CATE-learners (eg R-learner) developed for settings without unmeasured confounding can readily incorporate IVs by substituting the observed exposure with first-stage predictions from a regression of treatment on IVs and covariates. Such predictions may be obtained via flexible data-adaptive methods (eg statistical or machine learning procedures) to alleviate concerns about model misspecification. However, the large regularization bias typical of data-adaptive predictions may propagate into the CATE estimates, resulting in poor accuracy. Neyman-orthogonal learners have therefore been developed, which prevent this by "insulating" the resulting CATE estimates against bias and estimation errors in these predictions. However, synthetic data simulations reveal that previously proposed Neyman-orthogonal learners for IV regression perform poorly. We remedy this problem using infinite-dimensional targeted learning, which strategically tailors first-stage predictions to perform well in their ultimate task: delivering accurate, precise CATE estimates. The resulting targeted Neyman-orthogonal learner is easy to construct based on arbitrary, off-the-shelf learners. It can handle continuous or discrete exposures, and arbitrary types and numbers of IVs and covariates. Simulation studies and a re-analysis of the benefits of ICU transfer show substantial enhancements in performance, underscoring the importance of the proposed IV-learner.
+
+## Información del artículo
+
+- **Revista:** Biostatistics (Oxford, England)
+- **Fecha de publicación:** 2026-01-20
+- **Autores:** Stijn Vansteelandt, Stephen O'Neill, Richard Grieve, Karla Diaz-Ordaz
+- **DOI:** [10.1093/biostatistics/kxag009](https://doi.org/10.1093/biostatistics/kxag009)
+- **PubMed ID:** [42153341](https://pubmed.ncbi.nlm.nih.gov/42153341/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42153341/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
