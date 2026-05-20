@@ -1,0 +1,25 @@
+---
+title: "A lightweight region of interest-level adjudication framework with hard-negative mining and confidence-aware fusion for pediatric fracture detection."
+description: "Accurate detection of pediatric fractures in radiographs remains challenging due to subtle visual cues and the high prevalence of false-positive detections produced by automated systems. To address this limitation, we propose a lightweight region-of-..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42158604"
+author: "C V Aravinda, Noushath Shaffi, Vimbi Viswan et al."
+tags: ["confidence calibration", "deep learning", "explainable AI", "fracture detection", "hard-negative mining"]
+---
+
+## Resumen
+
+Accurate detection of pediatric fractures in radiographs remains challenging due to subtle visual cues and the high prevalence of false-positive detections produced by automated systems. To address this limitation, we propose a lightweight region-of-interest (Region of Interest) adjudication framework that operates as a second-stage verification module to refine detector-generated candidates. The proposed framework integrates iterative hard-negative mining with confidence-aware score fusion to suppress anatomically confounding regions such as growth plates and overlapping structures. Unlike end-to-end detection approaches, the method is designed to function as a modular post-detection refinement stage, enabling improved decision reliability without modifying the underlying detector architecture. Each candidate Region of Interest is evaluated using a compact adjudication network conditioned on detector confidence, and final predictions are obtained through a calibrated fusion strategy. The framework is evaluated on the publicly available GRAZPEDWRI-DX pediatric radiograph dataset using patient-level disjoint training, validation, and held-out test splits to ensure unbiased performance estimation. Experimental results demonstrate that the proposed approach reduces false-positive detections while maintaining high sensitivity. At the selected operating point, the method achieves an F1-score of 0.88 and mAP@0.5 of 0.887, outperforming the detector-only baseline under identical evaluation conditions. In addition, gradient-based activation mapping (Grad-CAM) is employed to provide Region of Interest-level visual explanations, supporting interpretability of adjudication decisions. The proposed framework maintains low computational overhead, making it suitable for integration into real-world clinical workflows as a decision-support component.
+
+## Información del artículo
+
+- **Revista:** Frontiers in artificial intelligence
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** C V Aravinda, Noushath Shaffi, Vimbi Viswan, Adham Al-Rahbi, Choy Ker Woon
+- **DOI:** [10.3389/frai.2026.1807189](https://doi.org/10.3389/frai.2026.1807189)
+- **PubMed ID:** [42158604](https://pubmed.ncbi.nlm.nih.gov/42158604/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42158604/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
