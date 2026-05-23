@@ -1,0 +1,25 @@
+---
+title: "Prediction of 30-Day All-Cause Hospital Readmissions Using Limited Structured Electronic Health Record Data: Retrospective Comparative Study."
+description: "Unplanned hospital readmissions represent a critical operational and financial challenge for health care systems in the United States, with 3.8 million 30-day all-cause readmissions in 2018 at an average cost of US $15,200 each, total..."
+date: "2026-05-22"
+category: "investigacion"
+pubmedId: "42172660"
+author: "Ritam Ghosh, Dariush Khezrimotlagh, Sara Imanpour et al."
+tags: ["30-day readmission", "clinical decision support systems", "current procedural terminology", "digital health", "early prediction"]
+---
+
+## Resumen
+
+**BACKGROUND:** Unplanned hospital readmissions represent a critical operational and financial challenge for health care systems in the United States, with 3.8 million 30-day all-cause readmissions in 2018 at an average cost of US $15,200 each, totaling US $58 billion in costs. Many published prediction models rely on comprehensive information (eg, full billing abstractions, discharge summaries, laboratory tests, and vitals) that becomes available only late in the encounter, limiting usefulness for real-time, in-hospital intervention. This creates a timeliness-accuracy trade-off: models that are most accurate retrospectively may arrive too late to act upon. **OBJECTIVE:** This study tests whether a clinically meaningful predictive signal for 30-day all-cause readmission is present within a limited set of structured clinical codes recorded during the patient's hospital stay. This approach evaluates whether predictive signals are retained when using a restricted set of structured clinical codes. **METHODS:** We conducted a retrospective comparative modeling study using a large, deidentified electronic health record dataset of 50,000 inpatient encounters from the 2019 New York State Emergency Department Database. Two feature sets were constructed: (1) a limited set consisting of the first 5 ICD-10 (International Classification of Diseases, 10th Revision) diagnosis codes, the first 5 Current Procedural Terminology (CPT) codes, and Charlson Comorbidity Index (CCI; 11 input features); and (2) a rich set using all available ICD-10 and CPT codes plus CCI (up to 135 input features). We trained 4 models: random forest, CatBoost, multilayer perceptron, and DistilBERT (a distilled Bidirectional Encoder Representations from Transformers [BERT] model; structured codes mapped to text and tokenized with DistilBERT-base-uncased). Evaluation used an untouched hold-out set of 10,000 encounters, preserving the natural 21.1% readmission prevalence. Primary metrics were area under the receiver operating characteristic curve (AUROC), F1-score, and accuracy. To address class imbalance, the training split only was balanced via undersampling of the majority class and bootstrap oversampling of the minority class; validation/test distributions were left unchanged. **RESULTS:** Models trained on the limited feature set achieved AUROC values ranging from 0.5369 to 0.5596 and F1-scores from 0.2555 to 0.3434. Across 3 of 4 architectures, models trained on the limited feature set matched or exceeded the discrimination of their rich counterparts. The best model (random forest, limited) achieved an area under the curve AUROC 0.5596 (95% CI 0.5440-0.5739) compared to the best performing rich model (DistilBERT) at 0.5703 (95% CI 0.5565-0.5842), an absolute difference of 0.0107. The highest F1-score (0.3434) was achieved by DistilBERT on the limited feature set. Differences across architectures were small in absolute terms, with threshold-dependent metrics (eg, F1-score) being comparable. **CONCLUSIONS:** The findings suggest that models using a limited set of structured clinical codes can achieve performance comparable to those using more comprehensive coding information.
+
+## Información del artículo
+
+- **Revista:** JMIR formative research
+- **Fecha de publicación:** 2026-05-22
+- **Autores:** Ritam Ghosh, Dariush Khezrimotlagh, Sara Imanpour, Ilya Shvartsman
+- **DOI:** [10.2196/83918](https://doi.org/10.2196/83918)
+- **PubMed ID:** [42172660](https://pubmed.ncbi.nlm.nih.gov/42172660/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42172660/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
