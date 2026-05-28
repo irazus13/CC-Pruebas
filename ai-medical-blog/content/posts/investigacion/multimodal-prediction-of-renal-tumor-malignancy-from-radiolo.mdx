@@ -1,0 +1,25 @@
+---
+title: "Multimodal Prediction of Renal Tumor Malignancy From Radiology Reports and Structured Electronic Health Records: Retrospective Cohort Study."
+description: "Accurate preoperative prediction of renal tumor malignancy is critical for guiding decisions and reducing overtreatment, as a substantial proportion of renal masses prove benign. Although radiology assessments and structured electroni..."
+date: "2026-05-27"
+category: "investigacion"
+pubmedId: "42202288"
+author: "Zhengkang Fan, Renjie Liang, Chengkun Sun et al."
+tags: ["EHR", "LLM", "ML", "electronic health records", "large language models"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate preoperative prediction of renal tumor malignancy is critical for guiding decisions and reducing overtreatment, as a substantial proportion of renal masses prove benign. Although radiology assessments and structured electronic health record (EHR) data are routinely used, many tumor-specific descriptors remain embedded in free-text radiology reports and are underused due to extraction challenges. **OBJECTIVE:** This study aimed to develop and evaluate a multimodal pipeline that integrates structured EHR variables with natural language processing features from computed tomography (CT) radiology reports, including large language model (LLM)-extracted abnormality characteristics and transformer-based report embeddings, to improve malignancy prediction. **METHODS:** We conducted a retrospective cohort study using University of Florida Health Integrated Data Repository Observational Medical Outcomes Partnership-mapped EHR data from December 2011 to August 2024. Adults with renal tumors were included if they had longitudinal diagnostic documentation consistent with a renal mass and at least 1 preoperative renal CT report; final benign or malignant status served as the outcome. Structured features included demographics, comorbidities, medications, vital signs, and laboratory measurements. From the recent preindex CT report, an on-premises LLM isolated kidney-specific findings and extracted abnormality characteristics. Four locally deployed LLMs were evaluated against manual annotations of 500 reports. Kidney-specific text was encoded using pretrained biomedical transformer models, including radiology Bidirectional Encoder Representations from Transformers (BERT) variants. We evaluated unimodal baselines and multimodal early, middle, and late fusion strategies. Model development used 5-fold cross-validation within the 80% training partition; each fold-specific model was evaluated on the same independent 20% held-out test set, with performance reported as mean and SD across the 5 held-out test evaluations. The primary metric was area under the receiver operating characteristic curve (AUC). **RESULTS:** The final cohort included 967 patients (n=712, 73.6% malignant). In extraction evaluation, Qwen2.5-32B achieved 88.3% overall accuracy with a 100% extraction success rate and was selected for downstream feature generation. Among unimodal models, the structured clinical variable model achieved an AUC of 0.758 (SD 0.012), kidney-specific text with radiology BERT achieved an AUC of 0.746 (SD 0.058), and abnormality characteristics alone achieved an AUC of 0.716 (SD 0.015). Multimodal fusion models achieved higher descriptive performance than unimodal models. Early fusion achieved the highest AUC (mean 0.813, SD 0.008), and F1-score (mean 0.809, SD 0.030), while late fusion achieved an AUC of 0.805 (SD 0.016). Ablation and interpretability analyses suggested complementary predictive information from structured clinical variables and kidney-specific text embeddings. **CONCLUSIONS:** Integrating unstructured radiology report text with structured EHR variables achieved higher mean predictive performance than unimodal approaches in descriptive comparisons. Multimodal fusion, particularly early fusion incorporating radiology BERT-derived kidney-specific text embeddings, achieved the strongest discrimination, suggesting potential value of natural language processing-enabled multimodal EHR pipelines for informing preoperative risk stratification.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-05-27
+- **Autores:** Zhengkang Fan, Renjie Liang, Chengkun Sun, Jinqian Pan, Russell Terry
+- **DOI:** [10.2196/84396](https://doi.org/10.2196/84396)
+- **PubMed ID:** [42202288](https://pubmed.ncbi.nlm.nih.gov/42202288/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42202288/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
