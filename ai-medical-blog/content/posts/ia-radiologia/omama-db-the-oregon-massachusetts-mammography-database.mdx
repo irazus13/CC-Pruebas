@@ -1,0 +1,25 @@
+---
+title: "OMAMA-DB: the Oregon-Massachusetts Mammography Database."
+description: "Public datasets for training artificial intelligence (AI) models in breast cancer screening are limited in size and quality, making it difficult to develop reliable systems. We introduce OMAMA-DB, an extensive publicly available collecti..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "42205157"
+author: "Avanith Kanamarlapudi, Ryan Zurrin, Edward Gaibor et al."
+tags: ["DeepSight", "MedGemma", "OMAMA-DB", "breast cancer detection", "dataset curation"]
+---
+
+## Resumen
+
+**PURPOSE:** Public datasets for training artificial intelligence (AI) models in breast cancer screening are limited in size and quality, making it difficult to develop reliable systems. We introduce OMAMA-DB, an extensive publicly available collection of two-dimensional (2D) mammograms and three-dimensional (3D) tomosynthesis volumes. **APPROACH:** Starting from 967,991 images, we created a curated set of 231,080 images using a multi-stage filtering process that removes missing labels, uncommon dimensions, rare scanner types, duplicate studies, and invalid DICOM files. All 2D images then undergo additional outlier detection using histogram filtering and a variational autoencoder to remove low-quality outliers. OMAMA-DB includes pathology-based cancer labels and automated lesion annotations generated using DeepSight. We also provide a web-based annotation tool for expert validation. To demonstrate usability, we fine-tuned MedGemma on a balanced subset of OMAMA-DB. We conducted a preliminary user study comparing human and automated classification of real and synthetic mammograms. **RESULTS:** OMAMA-DB contains 231,080 images, including 7351 2D and 374 3D cancer cases. Fine-tuned MedGemma achieved 0.989 accuracy, 0.997 sensitivity, and an F 1 score of 0.989 on a balanced validation set of 2942 images. In real-versus-synthetic classification, humans achieved 0.485 accuracy, and logistic regression and convolutional neural network achieved 0.972 and 0.997, respectively. **CONCLUSIONS:** OMAMA-DB provides a large mammography dataset with pathology-based labels and automated lesion annotations to support medical imaging research. Fine-tuned foundation models demonstrate strong cancer classification performance, and the gap between human and automated detection of synthetic images highlights the importance of real clinical data. All data, models, and parameters are openly available for research use.
+
+## Información del artículo
+
+- **Revista:** Journal of medical imaging (Bellingham, Wash.)
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Avanith Kanamarlapudi, Ryan Zurrin, Edward Gaibor, Benjamin Bendiksen Gutierrez, Neha Goyal
+- **DOI:** [10.1117/1.JMI.13.6.062205](https://doi.org/10.1117/1.JMI.13.6.062205)
+- **PubMed ID:** [42205157](https://pubmed.ncbi.nlm.nih.gov/42205157/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42205157/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

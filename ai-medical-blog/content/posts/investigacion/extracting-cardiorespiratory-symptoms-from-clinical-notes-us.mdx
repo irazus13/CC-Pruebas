@@ -1,0 +1,25 @@
+---
+title: "Extracting Cardiorespiratory Symptoms From Clinical Notes Using Open-Weight Large Language Models: Method Development and Validation Study."
+description: "Accurate identification of clinical symptoms and signs (S&amp;S) is essential for the early detection of high-burden cardiorespiratory conditions, including lung cancer, chronic obstructive pulmonary disease, and heart failure. Althou..."
+date: "2026-05-22"
+category: "investigacion"
+pubmedId: "42206405"
+author: "Yunbing Bai, Wanting Cui, Joseph Finkelstein"
+tags: ["NLP", "clinical coding", "electronic health records", "large language models", "named entity recognition"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate identification of clinical symptoms and signs (S&amp;S) is essential for the early detection of high-burden cardiorespiratory conditions, including lung cancer, chronic obstructive pulmonary disease, and heart failure. Although symptom data play a central role in diagnostic reasoning and predictive modeling, most S&amp;S information remains embedded in unstructured electronic health record notes, limiting their use in automated phenotyping, surveillance, and clinical decision support. Traditional natural language processing systems struggle with domain variability and contextual nuance in clinical text. Recent advances in large language models (LLMs) offer a promising alternative, yet challenges remain in hallucinations, overinference, and safe deployment. This study evaluated whether locally deployed open-source models could reliably extract cardiorespiratory S&amp;S and map them to ICD-10-CM (International Classification of Diseases, Tenth Revision, Clinical Modification) codes using optimized prompting strategies. **OBJECTIVE:** This study aims to assess the accuracy of open-source LLMs in extracting explicitly stated cardiorespiratory S&amp;S from clinical notes and mapping them to ICD-10-CM codes (R00-R09) and to compare performance across 4 prompt-engineering strategies, including a multimodule LLM framework. **METHODS:** A total of 593 clinical notes from the MTSamples database were manually reviewed, with 93 notes used for prompt development and comparison using Llama 3.3-70B, and 500 notes used as testing data for the final best prompt setting using both Llama 3.3-70B and gpt-oss-120B. Four prompting conditions were evaluated: (1) instruction-only, (2) ICD-10-CM definition-based prompts, (3) assumption-free prompts, and (4) a multimodule LLM framework with postprocessing. Performance was measured using precision, recall, and F1-score for both S&amp;S extraction and ICD-10-CM code generation. **RESULTS:** Across all prompt strategies, model performance improved as more structure and constraints were added. Instruction-only prompting demonstrated high recall but poor precision. Incorporating ICD-10-CM definitions improved coding accuracy, and assumption-free prompting further balanced precision and recall. The multimodule approach with postprocessing achieved the highest performance during prompt development. On the independent test corpus, entity-level microaveraged evaluation showed that gpt-oss-120B outperformed Llama 3.3-70B in both tasks. For S&amp;S extraction, Llama 3.3-70B achieved a precision of 0.63, a recall of 0.86, and an F1-score of 0.73, whereas gpt-oss-120B achieved a precision of 0.89, a recall of 0.87, and an F1-score of 0.88. For ICD-10-CM code mapping, Llama 3.3-70B achieved a precision of 0.59, a recall of 0.83, and an F1-score of 0.69, whereas gpt-oss-120B achieved a precision of 0.90, a recall of 0.84, and an F1-score of 0.87. **CONCLUSIONS:** Locally deployed LLMs, when paired with optimized prompting and multimodule orchestration, can accurately extract cardiorespiratory S&amp;S and generate ICD-10-CM codes from unstructured clinical notes. This approach increases the level of data safety by enabling on-premises processing without external data transmission and demonstrates strong potential for scalable, domain-adaptive symptom extraction pipelines in biomedical informatics. Future work should expand datasets and evaluate generalizability across clinical domains.
+
+## Información del artículo
+
+- **Revista:** JMIR cardio
+- **Fecha de publicación:** 2026-05-22
+- **Autores:** Yunbing Bai, Wanting Cui, Joseph Finkelstein
+- **DOI:** [10.2196/89480](https://doi.org/10.2196/89480)
+- **PubMed ID:** [42206405](https://pubmed.ncbi.nlm.nih.gov/42206405/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42206405/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
