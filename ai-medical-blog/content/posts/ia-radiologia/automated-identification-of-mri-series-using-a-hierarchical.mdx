@@ -1,0 +1,25 @@
+---
+title: "Automated identification of MRI series using a hierarchical modular machine-learning pipeline."
+description: "The volume and diversity of large MR imaging datasets require efficient automated labelling tools for cataloguing MR series, as manual annotation is impractical and costly. However, relying on DICOM header fields alone is unreliable be..."
+date: "2026-05-28"
+category: "ia-radiologia"
+pubmedId: "42207236"
+author: "Mariusz J Kujawa, Mat&#xed;as Fern&#xe1;ndez-Pat&#xf3;n, Leonor Cerd&#xe1; Alberich et al."
+tags: ["Artificial intelligence", "DICOM", "Magnetic resonance imaging", "Multicentre study", "Series classification"]
+---
+
+## Resumen
+
+**OBJECTIVE:** The volume and diversity of large MR imaging datasets require efficient automated labelling tools for cataloguing MR series, as manual annotation is impractical and costly. However, relying on DICOM header fields alone is unreliable because sequence descriptors are heterogeneous and locally defined, frequently missing or incorrect, and may be altered or removed during anonymisation. **MATERIALS AND METHODS:** We developed an AI-based modular model to classify MR series. The pipeline comprises five sequential classifiers (Family, Weighting, Fat Suppression, Contrast, and Others) and was trained and tested on 18,181 MRI series from the multicentre PRIMAGE repository. The dataset was split by patient into 80% training/validation and 20% testing; within the training/validation subset, five-fold cross-validation was used. With the exception of contrast classification, all modules used DICOM tag-based machine learning models (CatBoost/Random Forest), while the Contrast classifier incorporated image analysis using a pretrained single-slice ResNet-50. Ethical approval for the study was obtained. **RESULTS:** Accuracy was 0.994 for Weighting, 0.984 for Family, 0.959 for Fat suppression and 0.958 for Others; the Contrast classifier recorded 0.841. Overall, the end-to-end classification yielded a weighted F1 of 0.849 (CI: 0.837-0.861) and an accuracy of 0.853 (CI: 0.841-0.865). **CONCLUSION:** The proposed approach provides a reliable and scalable solution for labelling large, heterogeneous MRI datasets across multiple anatomical regions. The pipeline achieved excellent performance for Weighting and Family classification, solid performance for Fat Suppression and 'Others'. However, Contrast classification remains the main limitation and warrants further refinement and/or additional modules. **RELEVANCE STATEMENT:** Reliable, automated MRI sequence labelling enables faster, reproducible cohort selection and protocol harmonisation in large archives, supporting downstream clinical research and AI tools while reducing manual curation effort and error. **KEY POINTS:** Multicentre PRIMAGE cohort (18,181 MR series) enabling evaluation in a heterogeneous setting. Machine learning model combining DICOM metadata and image features. High accuracy in series classification: up to 0.994 on key tasks. A scalable pipeline reduces manual annotation workload for radiologists.
+
+## Información del artículo
+
+- **Revista:** European radiology experimental
+- **Fecha de publicación:** 2026-05-28
+- **Autores:** Mariusz J Kujawa, Mat&#xed;as Fern&#xe1;ndez-Pat&#xf3;n, Leonor Cerd&#xe1; Alberich, Diana Veiga-Canuto, Luis Mart&#xed;-Bonmat&#xed;
+- **DOI:** [10.1186/s41747-026-00740-z](https://doi.org/10.1186/s41747-026-00740-z)
+- **PubMed ID:** [42207236](https://pubmed.ncbi.nlm.nih.gov/42207236/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42207236/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
