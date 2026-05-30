@@ -1,0 +1,25 @@
+---
+title: "MSTM-Net: a two-stage prostate cancer segmentation network based on swin-transformer-mamba architecture."
+description: "Magnetic resonance imaging (MRI) has become a core imaging modality for prostate cancer screening and diagnosis. Accurate and automatic segmentation of lesion regions is critical for subsequent staging assessment and treatment plannin..."
+date: "2026-05-29"
+category: "ia-radiologia"
+pubmedId: "42215932"
+author: "Jiatao Chen, Xiang Liu, Shuohong Wang et al."
+tags: ["Deep learning", "MSTM-Net", "Prostate cancer", "Segmentation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Magnetic resonance imaging (MRI) has become a core imaging modality for prostate cancer screening and diagnosis. Accurate and automatic segmentation of lesion regions is critical for subsequent staging assessment and treatment planning. **METHODS:** To this end, this research proposes a two-stage segmentation framework for multimodal MRI. In the first stage, the prostate gland is segmented to extract the region of interest (ROI), thereby removing complex pelvic background structures. In the second stage, fine-grained prostate cancer lesion segmentation is performed within the ROI, enabling the model to focus on anatomically plausible lesion regions.A segmentation network, termed MSTM-Net, is developed based on this framework. The network adopts a Swin Transformer-based decoder architecture. At the input stage, T2-weighted images and apparent diffusion coefficient (ADC) maps are spatially aligned and concatenated along the channel dimension. During decoding, a Mamba module based on state-space modeling is introduced to jointly capture local structural information and long-range dependencies. Multi-head attention fusion and multi-scale feature fusion are further integrated into the skip connections to enhance the consistency between shallow spatial details and deep semantic representations. **RESULTS:** Experiments conducted on the cleaned PROSTATEx dataset demonstrate that the proposed method achieves a Dice score of 95.38% for prostate gland segmentation and 63.89% for lesion segmentation, outperforming the best comparative network by approximately 4% points, with an mIoU of 61.32%. Furthermore, cross-dataset validation on the PI-CAI dataset yields a Dice score of 63.14%, indicating good generalization ability and clinical feasibility for automated prostate cancer segmentation. **CONCLUSION:** The proposed MSTM-Net demonstrates effective performance for prostate cancer segmentation in multimodal MRI, achieving improved accuracy and feature representation compared with existing methods. The results indicate that the two-stage framework combined with multi-modal fusion and state-space modeling is a promising approach, although further validation on larger and more diverse datasets is required to enhance robustness and generalization.
+
+## Información del artículo
+
+- **Revista:** BMC medical imaging
+- **Fecha de publicación:** 2026-05-29
+- **Autores:** Jiatao Chen, Xiang Liu, Shuohong Wang, Wenbin Ji
+- **DOI:** [10.1186/s12880-026-02445-6](https://doi.org/10.1186/s12880-026-02445-6)
+- **PubMed ID:** [42215932](https://pubmed.ncbi.nlm.nih.gov/42215932/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42215932/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
