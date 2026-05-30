@@ -1,0 +1,25 @@
+---
+title: "Beyond Correlation: Causal Intervention for Multi-Label Medical Image Diagnosis."
+description: "This paper addresses the challenge of multi-disease diagnosis by integrating causal reasoning into the diagnostic framework. In clinical practice, multiple conditions often co-occur, making multi-disease diagnosis more relevant than isolated single-d..."
+date: "2026-05-29"
+category: "ia-radiologia"
+pubmedId: "42213561"
+author: "Jianyang Xie, Yitian Zhao, Xiuju Chen et al."
+tags: []
+---
+
+## Resumen
+
+This paper addresses the challenge of multi-disease diagnosis by integrating causal reasoning into the diagnostic framework. In clinical practice, multiple conditions often co-occur, making multi-disease diagnosis more relevant than isolated single-disease cases. However, most deep learning methods focus on single-disease detection and fail to capture the complexity of diagnosing concurrent conditions. Even in multi-label settings, existing approaches mainly rely on correlation-based inference, capturing statistical associations rather than true causal relationships. This can lead to spurious feature-disease associations, where features linked to one disease are mistakenly attributed to another due to frequent co-occurrence, ultimately undermines diagnostic accuracy and interpretability. To address this challenge, we propose a novel framework that incorporates causal intervention into multi-label medical image diagnosis, enabling the model to identify true causal signals rather than misleading correlations arising from co-occurring diseases. Specifically, we model latent disease-related confounders and apply backdoor adjustment to disentangle genuine causal effects from spurious associations. This is achieved by implicitly learning shared feature representations that serve as confounding variables, which are then used to refine image-derived features during prediction. The resulting causal adjustment allows the model to focus on disease-specific cues, improving accuracy and interpretability. Extensive experiments on four diverse medical imaging datasets: ODIR (color fundus photography), LID-FFA (fundus fluorescein angiography), Endo (colonoscopy), and Chestpert (X-ray) demonstrate that our method consistently outperforms existing approaches. Furthermore, our model also effectively separates the diagnosis of co-occurring diseases, high-lighting the potential of causal reasoning to enhance the reliability and clinical applicability of AI-assisted diagnosis. The source code is publicly available at https://github.com/davelailai/BankCausal.git.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-05-29
+- **Autores:** Jianyang Xie, Yitian Zhao, Xiuju Chen, Yanda Meng, He Zhao
+- **DOI:** [10.1109/TMI.2026.3698052](https://doi.org/10.1109/TMI.2026.3698052)
+- **PubMed ID:** [42213561](https://pubmed.ncbi.nlm.nih.gov/42213561/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42213561/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
