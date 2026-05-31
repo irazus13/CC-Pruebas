@@ -1,0 +1,25 @@
+---
+title: "Integrating handcrafted and deep learning MRI signatures: an interpretable framework for predicting chemotherapy benefit in glioma."
+description: "The molecular and spatial heterogeneity of gliomas severely limits accurate prediction of postoperative adjuvant chemotherapy efficacy, representing a critical bottleneck in achieving personalized treatment decisions. Conventional imaging assessments..."
+date: "2026-05-30"
+category: "ia-radiologia"
+pubmedId: "42218260"
+author: "Shenao Zhang, Jinfeng Bao, Yinjiao Wang et al."
+tags: []
+---
+
+## Resumen
+
+The molecular and spatial heterogeneity of gliomas severely limits accurate prediction of postoperative adjuvant chemotherapy efficacy, representing a critical bottleneck in achieving personalized treatment decisions. Conventional imaging assessments and single-modality AI models struggle to comprehensively characterize the complex tumor phenotype. Based on preoperative multimodal MRI data from the TCGA-LGG cohort integrated with clinical and survival information from the Genomic Data Commons (GDC), this study extracted 726 radiomics features. Postoperative chemotherapy benefit was operationalized using overall survival (&#x2265;24 months vs. &lt;24 months), a pragmatic surrogate endpoint validated in prior low-grade glioma radiomics studies. Two types of deep learning embedding features were generated using segmentation-guided 3D bounding-box and patch-based sampling strategies, combined with a lightweight 3D CNN and a pretrained 3D ResNet-18 (MedicalNet) model. Prediction models were constructed using radiomics alone, deep learning alone, and their fusion, and were evaluated through stratified cross-validation on both a real-world dataset (Dataset 1) and a dataset augmented via PCA-GMM (Dataset 2). Model interpretability was assessed using SHAP attribution analysis, variance analysis, and Grad-CAM visualization. Radiomics and deep learning features exhibited significant information complementarity: the former focused on describing overall tumor volume, morphology, and macro-texture, while the latter excelled at capturing local heterogeneity and subtle spatial infiltration patterns. The fusion model demonstrated optimal performance in predicting postoperative chemotherapy benefit, achieving an AUC of 0.75 on the constrained real-world dataset (Dataset 1) and improving to 0.99 on the more feature-diverse Dataset 2. SHAP analysis revealed key radiomics features driving model predictions, whereas Grad-CAM heatmaps localized model attention to tumor core regions and infiltrative margins-areas highly consistent with the pathological microenvironment associated with drug efficacy. The dual-dataset comparison further confirmed that data quality and feature diversity are core drivers for unleashing model predictive potential and enabling precise drug response phenotyping. This study establishes a transparent and interpretable multimodal AI framework that integrates handcrafted and deep learning MRI features, significantly enhancing the prediction of postoperative chemotherapy benefit in gliomas.
+
+## Información del artículo
+
+- **Revista:** NPJ precision oncology
+- **Fecha de publicación:** 2026-05-30
+- **Autores:** Shenao Zhang, Jinfeng Bao, Yinjiao Wang, Lang Chen, Yu Guo
+- **DOI:** [10.1038/s41698-026-01538-3](https://doi.org/10.1038/s41698-026-01538-3)
+- **PubMed ID:** [42218260](https://pubmed.ncbi.nlm.nih.gov/42218260/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42218260/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
