@@ -1,0 +1,25 @@
+---
+title: "MRI-based deep learning radiomics model for automated classification of disc degeneration in the lumbar spine."
+description: "Disc degeneration in the lumbar spine is a major cause of low back pain (LBP). The accurate grading of disc degeneration on magnetic resonance imaging (MRI) is critical for clinical management and patient selection for spine surgery. This study aims ..."
+date: "2026-05-30"
+category: "ia-radiologia"
+pubmedId: "42218311"
+author: "Shiv Patil, Om H Gandhi, Mert Karabacak et al."
+tags: ["Deep learning", "Disc degeneration", "Lumbar spine", "Machine learning", "Magnetic resonance imaging"]
+---
+
+## Resumen
+
+Disc degeneration in the lumbar spine is a major cause of low back pain (LBP). The accurate grading of disc degeneration on magnetic resonance imaging (MRI) is critical for clinical management and patient selection for spine surgery. This study aims to develop and evaluate machine learning (ML) models that combine features from deep learning (DL) and radiomics for the automated prediction of Pfirrmann grade (PG), a measure of disc degeneration, using multi-parametric lumbar spine MRI. Sagittal T1, T2, and T2 SPACE MRIs of 218 patients with LBP were acquired from the SPIDER dataset. For each intervertebral disc and available sequence, 1218 3D radiomic features were extracted with PyRadiomics, and 2048 deep-learning features were obtained from a disc-centered midsagittal-slice region of interest using a frozen, ImageNet-pretrained ResNet50, yielding a fused per-disc vector of up to 9798 features. LASSO regression fit on the training set reduced this to 680 candidate features. Data were split at the patient level (60%/20%/20% train/validation/test), with no patient appearing in more than one split. Three ML models (TabPFN, LightGBM, and Random Forest) were trained, isotonically calibrated on the validation set, and evaluated on the held-out test set. Twelve supplementary analyses were additionally performed, including feature-family ablations, ordinal regression, class-weighted and logistic-regression baselines, calibration-method and calibration-depth analyses, shape-feature confounding, leave-one-scanner-out generalization, LASSO penalty sensitivity, decision curve analysis, a within-radiomics feature-category ablation, and operating-point sensitivity. Confidence intervals were computed by 500-iteration patient-level bootstrap. For multi-class (PG 1-5) prediction the three models achieved comparable performance: TabPFN reached a macro-averaged AUROC of 0.867 (95% CI: 0.822-0.904), AUPRC of 0.667 (95% CI: 0.586-0.735), F1 score of 0.621 (95% CI: 0.546-0.677), accuracy of 0.603 (95% CI: 0.538-0.676), MCC of 0.500 (95% CI: 0.410-0.587), and Brier score of 0.107 (95% CI: 0.092-0.123); LightGBM and Random Forest yielded essentially equivalent metrics (macro-AUROC 0.873 and 0.872, respectively). On the binary low- vs. high-grade task (PG 1-3 vs. 4-5) all three models reached AUROC&#x2009;&#x2265;&#x2009;0.93 and accuracy of approximately 0.86, with the three models occupying different precision-recall operating points (TabPFN and Random Forest favoring precision; LightGBM balanced). 3D radiomic feature extraction combined with tabular ML classifiers supports automated classification of disc degeneration on multi-parametric lumbar spine MRI. Ablation analyses show that radiomic features carry essentially the entire signal, with frozen, ImageNet-pretrained ResNet50 features adding no measurable discriminative value. Performance is strongest at the extremes of the Pfirrmann scale and on the binary low- vs. high-grade distinction. Intermediate-grade discrimination remains challenging and warrants ordinal modeling and external validation. Radiomics also yields interpretable shape and intensity features that may serve as imaging biomarkers of disease.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-05-30
+- **Autores:** Shiv Patil, Om H Gandhi, Mert Karabacak, Matthew T Carr, Konstantinos Margetis
+- **DOI:** [10.1038/s41598-026-56056-w](https://doi.org/10.1038/s41598-026-56056-w)
+- **PubMed ID:** [42218311](https://pubmed.ncbi.nlm.nih.gov/42218311/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42218311/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
