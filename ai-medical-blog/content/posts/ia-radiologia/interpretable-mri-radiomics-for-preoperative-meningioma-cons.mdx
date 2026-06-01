@@ -1,0 +1,25 @@
+---
+title: "Interpretable MRI Radiomics for Preoperative Meningioma Consistency Prediction."
+description: "Radiomic models for meningioma consistency prediction typically optimise discrimination while remaining opaque: They rarely clarify which features drive predictions, where discriminative patterns arise, or what they correspond to on MRI, limiting cli..."
+date: "2026-06-01"
+category: "ia-radiologia"
+pubmedId: "42223873"
+author: "Ilies Djebbara, Ancuta Ioana Friismose, Bo Halle et al."
+tags: ["Magnetic resonance imaging", "Meningioma", "Model interpretability", "Radiomics", "Tumour consistency"]
+---
+
+## Resumen
+
+Radiomic models for meningioma consistency prediction typically optimise discrimination while remaining opaque: They rarely clarify which features drive predictions, where discriminative patterns arise, or what they correspond to on MRI, limiting clinical interpretability and hindering clinical adoption. We developed an interpretable radiomic framework from preoperative T1-Gd MRI in 42 resected meningiomas (soft n&#x2009;=&#x2009;16, intermediate n&#x2009;=&#x2009;13, firm n&#x2009;=&#x2009;13). Tumours were segmented using a semi-automated workflow, validated against independent neuroradiologist segmentations in 19 cases (Dice 0.84&#x2009;&#xb1;&#x2009;0.12). From 1409 radiomic features, ICC-stable features (ICC&#x2009;&#x2265;&#x2009;0.75) were retained and redundancy removed (|r|&gt;&#x2009;0.95). Patient-level cross-validation with LASSO-based feature selection and CatBoost was applied. Interpretability was addressed through three components: stable-feature identification (WHICH), SHAP attribution, and voxel-wise local radiomic mapping using an 11&#x2009;&#xd7;&#x2009;11&#x2009;&#xd7;&#x2009;11 sliding window (WHERE), supplemented by a radiomics-to-radiology feature dictionary (WHAT). Three features formed a compact signature: Textural Entropy (wavelet-LLH_glrlm_RunEntropy), Calcification Index (exponential_gldm_LargeDependenceHighGrayLevelEmphasis), and Local Homogeneity (wavelet-LHH_glcm_InverseVariance). CatBoost achieved macro-averaged one-vs-rest AUC 0.87 and accuracy 66.7%; errors were mainly between adjacent classes (fold-averaged off-by-one accuracy 90.3%; aggregate 38/42, 90.5%). Local maps showed spatially heterogeneous texture and focal high-grey-level dependence hotspots in firm tumours, although group-level Calcification Index differences did not survive Bonferroni correction. We present a proof-of-concept interpretable radiomic framework that integrates established explainability techniques-LASSO-based feature stability analysis, SHAP attribution, voxel-wise spatial mapping, and a radiomics-to-radiology dictionary-to link stable radiomic signatures to spatial tumour patterns and recognisable MRI characteristics, offering a potentially extensible approach for other imaging tasks where tissue composition influences clinical decision-making.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-06-01
+- **Autores:** Ilies Djebbara, Ancuta Ioana Friismose, Bo Halle, Mads Hjortdal Gr&#xf8;nh&#xf8;j, Ivar Yannick Christensen
+- **DOI:** [10.1007/s10278-026-02017-8](https://doi.org/10.1007/s10278-026-02017-8)
+- **PubMed ID:** [42223873](https://pubmed.ncbi.nlm.nih.gov/42223873/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42223873/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
