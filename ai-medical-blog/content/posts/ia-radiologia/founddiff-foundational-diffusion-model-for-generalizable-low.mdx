@@ -1,0 +1,25 @@
+---
+title: "FoundDiff: Foundational Diffusion Model for Generalizable Low-Dose CT Denoising."
+description: "Low-dose computed tomography (CT) denoising is crucial for reduced radiation exposure while ensuring diagnostically acceptable image quality. Despite significant advancements driven by deep learning (DL) in recent years, existing DL-based methods, ty..."
+date: "2026-06-01"
+category: "ia-radiologia"
+pubmedId: "42224335"
+author: "Zhihao Chen, Qi Gao, Zilong Li et al."
+tags: []
+---
+
+## Resumen
+
+Low-dose computed tomography (CT) denoising is crucial for reduced radiation exposure while ensuring diagnostically acceptable image quality. Despite significant advancements driven by deep learning (DL) in recent years, existing DL-based methods, typically trained on a specific dose level and anatomical region, struggle to handle diverse noise characteristics and anatomical heterogeneity during varied scanning conditions, limiting their generalizability and robustness in clinical scenarios. In this paper, we propose FoundDiff, a foundational diffusion model for unified and generalizable LDCT denoising across various dose levels and anatomical regions. FoundDiff employs a two-stage strategy: (i) dose-anatomy perception and (ii) adaptive denoising. First, we develop a dose- and anatomy-aware contrastive language-image pre-training model (DA-CLIP) to achieve robust dose and anatomy perception by leveraging specialized contrastive learning strategies to learn continuous representations that quantify ordinal dose variations and identify salient anatomical regions. Second, we design a dose-and anatomy-aware diffusion model (DA-Diff) to perform adaptive and generalizable denoising by synergistically integrating the learned dose and anatomy embeddings from DA-CLIP into diffusion process via a novel dose and anatomy conditional block (DACB) based on Mamba. Extensive experiments on a large simulated multi-dose CT dataset spanning three anatomical regions, together with cross-dataset evaluations on Mayo-2016, CQ500, and piglet datasets, demonstrate superior denoising performance and strong generalization to unseen dose levels and anatomical regions. The codes and models are available at https: //github.com/hao1635/FoundDiff.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-06-01
+- **Autores:** Zhihao Chen, Qi Gao, Zilong Li, Junping Zhang, Yi Zhang
+- **DOI:** [10.1109/TMI.2026.3698474](https://doi.org/10.1109/TMI.2026.3698474)
+- **PubMed ID:** [42224335](https://pubmed.ncbi.nlm.nih.gov/42224335/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42224335/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
