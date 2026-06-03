@@ -1,0 +1,25 @@
+---
+title: "Improving models to predict care utilization using machine learning: a retrospective observational study."
+description: "Use of artificial intelligence (AI) and machine learning (ML) tools is now common in the advancement of healthcare services and clinical risk estimation. Legacy systems make use of highly informative feature sets, developed from years..."
+date: "2026-05-28"
+category: "ia-medicina"
+pubmedId: "42228151"
+author: "Christopher Kitchen, Talan Zhang, Klaus Lemke et al."
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND:** Use of artificial intelligence (AI) and machine learning (ML) tools is now common in the advancement of healthcare services and clinical risk estimation. Legacy systems make use of highly informative feature sets, developed from years of clinical expertise and research to estimate different outcomes but only recently have been tested against novel statistical approaches. One such system, the Johns Hopkins Adjusted Clinical Groups (ACG) system, is a longstanding and widely used approach to categorizing clinical risk factors and amenable to ML techniques. **OBJECTIVE:** This study aims to test the ACG system using a contrasted AUROC and F1 classification optimization strategy and compare performance against traditional logistic regression methods. Assuming selected ML algorithms can be tuned to enhance overall measures of performance, it would enhance arguments for incorporating them into ACG-related workflows. **METHODS:** Using a retrospective observational design, prospective year estimates of all cause hospitalization and elevated total cost were modeled using a cross-validation framework. Patients with elevated costs were identified as falling above the 95th percentiles of total amounts billed, including pharmacy costs. Hyperparameter settings for XGBoost, random forest and elastic net were discovered using average cross validated performances for F1 and area under receiver operating characteristic (AUROC) in a grid search for maximizing either statistic. Additional iterated cross validation was used to compare point estimated average AUROC and F1 scores between models and further decomposed by sensitivity, positive predictive value and F-beta statistics. **RESULTS:** There were 350,463 patients selected in 2019 from the Johns Hopkins Healthcare System. Model features identified by the ACG system in predicting prospective year hospitalization and total cost were included in these analyses. Findings suggest small but statistically significant improvement to cross-validated AUROC and F1 over logistic regression, using either optimization strategy and XGBoost. Logistic models achieved an average ROC of 0.886 and 0.841 for cost and hospitalization, respectively, while XGBoost achieved 0.891 and 0.849. F1 optimization yielded a similar finding with logistic models achieving 0.367 and 0.341 on average for hospitalization and cost, but XGBoost exceeded values for cost and not hospitalization (0.411 and 0.328, respectively). **CONCLUSIONS:** The clinical implications of these findings and effect of class imbalance on model calibration are explored with limitations of these data and approach. Our core finding is that logistic regression remains very well suited to these tasks, especially in situations where efficiency or interpretability of models is critical. In conditions of imbalance, regressions tended to yield high precision estimates for the outnumbered class. Nevertheless, the findings also underscore a diversity of suitable models depending on clinical use cases, each having their own tradeoffs for evaluating performance. As such, health systems must clearly identify needs and expectations of a model before calibrating one for use.
+
+## Información del artículo
+
+- **Revista:** JMIR formative research
+- **Fecha de publicación:** 2026-05-28
+- **Autores:** Christopher Kitchen, Talan Zhang, Klaus Lemke, Chintan Pandya, Hadi Kharrazi
+- **DOI:** [10.2196/92820](https://doi.org/10.2196/92820)
+- **PubMed ID:** [42228151](https://pubmed.ncbi.nlm.nih.gov/42228151/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42228151/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
