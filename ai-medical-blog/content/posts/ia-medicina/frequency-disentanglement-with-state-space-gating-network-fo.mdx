@@ -1,0 +1,25 @@
+---
+title: "Frequency disentanglement with State space gating network for medical image segmentation."
+description: "Precise automated segmentation of anatomical structures is a prerequisite for computer-aided diagnosis, radiotherapy planning, and quantitative medical analysis. However, existing models, whether based on convolutional neural networks (CNN) or transf..."
+date: "2026-06-03"
+category: "ia-medicina"
+pubmedId: "42234304"
+author: "Zuo Huang, Xiang Li, Jinyu Cong et al."
+tags: ["Frequency disentanglement", "Multi-organ segmentation"]
+---
+
+## Resumen
+
+Precise automated segmentation of anatomical structures is a prerequisite for computer-aided diagnosis, radiotherapy planning, and quantitative medical analysis. However, existing models, whether based on convolutional neural networks (CNN) or transformer architectures, are primarily centered on the extraction and processing of spatial features. These approaches lead to spectral feature entanglement, where low-frequency global structures, mid-frequency contours, and high-frequency textures are indiscriminately mixed, degrading segmentation accuracy, particularly at object boundaries critical for clinical delineation. To address this, we introduce the FD-SSGNet, a framework that performs frequency disentanglement with State-Space gating. Our model first employs the Fast Fourier Transform (FFT) to explicitly decompose feature maps into low-, mid-, and high-frequency components. It then leverages the Shift Bidirectional Selective Gate Mamba (SBSGM), with parallel, heterogeneously configured pathways to effectively model long-range dependencies specific to each frequency band. Finally, a dynamic fusion module adaptively reintegrates the processed multi-band features to produce a refined segmentation map. Extensive experiments on the challenging BTCV multi-organ and ACDC cardiac segmentation datasets demonstrate that FD-SSGNet achieves new state-of-the-art performance, validating the significant benefits of explicit frequency domain modeling for robust and accurate medical image analysis in clinical workflows. Our implementation is available at https://github.com/singinghz/FD-SSGNet .
+
+## Información del artículo
+
+- **Revista:** Medical &amp; biological engineering &amp; computing
+- **Fecha de publicación:** 2026-06-03
+- **Autores:** Zuo Huang, Xiang Li, Jinyu Cong, Zhenpeng Chen, Pingping Wang
+- **DOI:** [10.1007/s11517-026-03603-2](https://doi.org/10.1007/s11517-026-03603-2)
+- **PubMed ID:** [42234304](https://pubmed.ncbi.nlm.nih.gov/42234304/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42234304/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
