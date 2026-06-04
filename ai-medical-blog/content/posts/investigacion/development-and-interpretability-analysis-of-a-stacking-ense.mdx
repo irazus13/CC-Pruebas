@@ -1,0 +1,25 @@
+---
+title: "Development and Interpretability Analysis of a Stacking Ensemble Model for Early Prediction of Nutritional Risk in Intensive Care Unit Patients: Retrospective Cohort Study."
+description: "Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting t..."
+date: "2026-06-03"
+category: "investigacion"
+pubmedId: "42234843"
+author: "Xu Zhang, An Fang, Pei Lou et al."
+tags: ["intensive care units", "machine learning", "malnutrition", "model interpretability", "stacking ensemble"]
+---
+
+## Resumen
+
+**BACKGROUND:** Malnutrition in critically ill patients is associated with increased morbidity and mortality, yet traditional screening tools such as the modified NUTRIC (mNUTRIC) score often rely on subjective assessments or delayed data, limiting their utility for early intervention in the dynamic intensive care unit (ICU) environment. Real-time, data-driven approaches using electronic health records offer a promising solution for automated and objective risk stratification. **OBJECTIVE:** This study aimed to develop and validate a machine learning model, the E-NUTRIC (Ensemble-NUTRIC), for the early prediction of malnutrition risk within the first 24 hours of ICU admission. By integrating multiple algorithms through stacking ensemble learning, we sought to improve predictive performance over traditional scoring systems and individual machine learning models while maintaining clinical interpretability. **METHODS:** We conducted a retrospective cohort study using data from the Medical Information Mart for Intensive Care (MIMIC-IV, version 3.1). Adult ICU stays exceeding 24 hours were included, and the primary outcome was malnutrition diagnosis. Variables from the first 24 hours (demographics, vitals, and laboratory tests) were extracted and harmonized. Missingness was addressed with k-nearest neighbors imputation, features were standardized, and class imbalance was mitigated via random undersampling. The proposed E-NUTRIC model used a stacking ensemble with 4 base learners-Logistic Regression, Random Forest, Extreme Gradient Boosting (XGBoost), and Light Gradient Boosting Machine-and a logistic metalearner. Performance was assessed on a stratified 80/20 holdout test set using area under the receiver operating characteristic curve (AUROC), area under the precision-recall curve, and calibration curves. The mNUTRIC score served as the clinical benchmark. Model interpretability was derived by applying Shapley Additive Explanations (SHAP) specifically to the highly predictive XGBoost component, while clinical utility was assessed using Platt scaling recalibration. **RESULTS:** The final cohort comprised 51,483 patients, of whom 4384 (8.5%) were classified as being at malnutrition risk. The E-NUTRIC model showed superior discrimination with an AUROC of 0.875 (95% CI 0.864-0.885), outperforming the mNUTRIC score (AUROC=0.635, P&lt;.001). Relative to individual base learners, E-NUTRIC achieved the best overall performance, exceeding those of the best-performing individual models XGBoost (AUROC=0.871) and Light Gradient Boosting Machine (AUROC=0.866). The area under the precision-recall curve of E-NUTRIC was 0.424, representing approximately a 3.4-fold increase over mNUTRIC (0.126). SHAP analysis highlighted minimum serum albumin, admission weight, early hypokalemia, and specific ICU admission types as key nonlinear predictors of malnutrition risk. Unlike the traditional mNUTRIC score, which compressed predictions into a low-risk tier, the recalibrated E-NUTRIC model effectively spanned the full probability spectrum, thereby isolating high-risk phenotypes. **CONCLUSIONS:** The E-NUTRIC stacking ensemble provides an interpretable approach for nutritional risk screening in the ICU using routinely available electronic health records data. In this retrospective cohort study, it demonstrated superior discrimination to the mNUTRIC score and offered clinically consistent feature attributions.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-06-03
+- **Autores:** Xu Zhang, An Fang, Pei Lou, Kuanda Yao, Tianci Huang
+- **DOI:** [10.2196/77872](https://doi.org/10.2196/77872)
+- **PubMed ID:** [42234843](https://pubmed.ncbi.nlm.nih.gov/42234843/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42234843/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

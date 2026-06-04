@@ -1,0 +1,25 @@
+---
+title: "3D craniofacial generative model for surgical planning in mandibular reconstruction."
+description: "Mandibular reconstruction following segmental resection for oral tumors is a complex procedure necessitating precise restoration of both masticatory function and facial aesthetics. Current Computer-Assisted Surgery (CAS) workflows remain fragmented, ..."
+date: "2026-05-25"
+category: "ia-odontologia"
+pubmedId: "42235113"
+author: "Chenfan Xu, Zhentao Liu, Jiamin Wu et al."
+tags: ["Automated planning", "Diffusion model", "Mandibular reconstruction", "Surgical planning"]
+---
+
+## Resumen
+
+Mandibular reconstruction following segmental resection for oral tumors is a complex procedure necessitating precise restoration of both masticatory function and facial aesthetics. Current Computer-Assisted Surgery (CAS) workflows remain fragmented, relying on subjective manual mirroring for shape completion and labor-intensive, non-standardized CAD operations for fibula osteotomy planning. Furthermore, existing deep learning approaches predominantly address mandibular shape completion in isolation, failing to integrate surgical feasibility or predict postoperative soft-tissue outcomes. In this paper, we propose a unified craniofacial generative framework that orchestrates mandibular completion, automated surgical planning, and postoperative facial prediction within a single pipeline. We employ a 3D latent diffusion model with patch-wise encoding strategy, pre-trained on a large-scale cohort of tumor-free subjects, to learn a robust anatomical shape prior. This prior is adapted via a specialized encoder to perform high-fidelity completion of defective mandibles. Subsequently, we introduce a geometric optimization algorithm based on dynamic programming to automatically generate fibula osteotomy and splicing plans that strictly adhere to the reconstructed mandibular contour. Finally, the framework predicts the postoperative facial morphology conditioned on the reconstructed bone, facilitating aesthetic outcome assessment. Validation on simulated and clinical datasets demonstrates that our framework achieves high anatomical fidelity in mandibular completion (Dice 85.61%, CD 1.43 mm) and precise postoperative facial prediction (Dice 97.67%, CD 1.57 mm). For surgical planning, the proposed algorithm improves reconstruction precision, achieving a volume ratio of 28.28%, a contour error of 2.24 mm, and a maximum projection of 3.55 mm compared with prior automated methods. Furthermore, the framework reduces the total planning time from over 34 min to under one minute, corresponding to a 60&#xd7; speedup, thereby supporting a practical and efficient paradigm for aesthetically aware surgical planning focused on the reconstructive phase. Our code is available at https://github.com/ShanghaiTech-IMPACT/3D-Craniofacial-Generative-Model-for-Surgical-Planning-in-Mandibular-Reconstruction.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-05-25
+- **Autores:** Chenfan Xu, Zhentao Liu, Jiamin Wu, Haoshen Wang, Jiepeng Wang
+- **DOI:** [10.1016/j.media.2026.104136](https://doi.org/10.1016/j.media.2026.104136)
+- **PubMed ID:** [42235113](https://pubmed.ncbi.nlm.nih.gov/42235113/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42235113/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
