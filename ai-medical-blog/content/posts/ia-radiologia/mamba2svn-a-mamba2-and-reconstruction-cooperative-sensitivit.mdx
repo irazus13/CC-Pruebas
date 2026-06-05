@@ -1,0 +1,25 @@
+---
+title: "Mamba2SVN: a Mamba2 and reconstruction-cooperative sensitivity refinement-based variational network for parallel MRI reconstruction."
+description: "Magnetic resonance imaging (MRI) is widely used for its excellent soft-tissue contrast and non-ionizing nature, but its long acquisition time remains a major bottleneck. In this work, we propose Mamba2SVN, a variational n..."
+date: "2026-06-04"
+category: "ia-radiologia"
+pubmedId: "42246132"
+author: "Haiyuan Li, Jizhong Duan, Haibo Tao et al."
+tags: ["Deep MRI Reconstruction", "Feature Fusion", "Magnetic resonance imaging (MRI)", "State space models", "Variational Network"]
+---
+
+## Resumen
+
+**OBJECTIVE:** Magnetic resonance imaging (MRI) is widely used for its excellent soft-tissue contrast and non-ionizing nature, but its long acquisition time remains a major bottleneck. **APPROACH:** In this work, we propose Mamba2SVN, a variational network that couples a Mamba2-based reconstruction branch with reconstruction-cooperative sensitivity refinement. First, we design a Mamba2-based Cross-iteration Feature Reconstruction (MCFR) module, where MCFRNet integrates Mamba2 blocks into a U-shaped backbone and incorporates a cross-iteration feature fusion (CIFF) mechanism. A preprocessing gated fusion (PPGF) unit adaptively fuses current bottleneck features with prior CIFF features, and wavelet-based preprocessing and postprocessing units (PRU/POU) balance reconstruction accuracy and computational efficiency. Second, we introduce a reconstruction-cooperative sensitivity refinement (RCSR) module that iteratively refines latent sensitivity variables by leveraging both previously reconstructed multi-coil k-space data and prior estimates of these variables, thereby reducing dependence on autocalibration signal (ACS) size. Third, we impose a dual data-consistency (DDC) mechanism that employs two complementary data-consistency operators at each iteration to alleviate error accumulation. **RESULTS:** Extensive experiments on multi-coil knee, brain, and cardiac datasets with various undersampling patterns demonstrate that Mamba2SVN consistently outperforms state-of-the-art deep learning-based methods. **SIGNIFICANCE:** Mamba2SVN also remains robust when the ACS region is very small, suggesting its potential for highly accelerated clinical MRI protocols.
+
+## Información del artículo
+
+- **Revista:** Physics in medicine and biology
+- **Fecha de publicación:** 2026-06-04
+- **Autores:** Haiyuan Li, Jizhong Duan, Haibo Tao, Zhenyu Huang, Peng Ding
+- **DOI:** [10.1088/1361-6560/ae788b](https://doi.org/10.1088/1361-6560/ae788b)
+- **PubMed ID:** [42246132](https://pubmed.ncbi.nlm.nih.gov/42246132/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42246132/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
