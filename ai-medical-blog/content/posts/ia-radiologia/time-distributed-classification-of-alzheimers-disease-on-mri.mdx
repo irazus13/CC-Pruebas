@@ -1,0 +1,25 @@
+---
+title: "Time Distributed Classification of Alzheimer's Disease on MRI Scans."
+description: "The diagnosis of Alzheimer's disease (AD) has progressively depended on sophisticated neuroimaging methods alongside cognitive assessments. This study combines volumetric feature analysis with computational modeling techniques, focusing on spatial an..."
+date: "2026-07-01"
+category: "ia-radiologia"
+pubmedId: "42240570"
+author: "Mehmet Sait Dundar, Bulent Yilmaz"
+tags: ["3D CNN", "Alzheimers disease", "LSTM", "MRI", "machine learning"]
+---
+
+## Resumen
+
+The diagnosis of Alzheimer's disease (AD) has progressively depended on sophisticated neuroimaging methods alongside cognitive assessments. This study combines volumetric feature analysis with computational modeling techniques, focusing on spatial and temporal analysis, to categorize individuals as cognitively normal (CN), mild cognitive impairment (MCI), or AD using magnetic resonance imaging (MRI) data. In the initial phase, volumetric changes, comprising cortical thickness, white matter, grey matter, cerebrospinal fluid, and total intracranial volume, were derived from the Alzheimer's Disease Neuroimaging Initiative (ADNI) dataset utilizing the CAT12 toolbox in statistical parametric mapping (SPM). Linear regression was utilized on these variables over time to create slopes that reflect volumetric change rates, which then served as inputs for machine learning classifiers. The slopes of cortical thickness exhibited the greatest classification accuracy, reaching 82.5% with a random forest model for differentiating AD from CN individuals. During the second phase, a deep learning methodology was utilized, relying solely on the MRI scans and excluding the outcomes from the first phase. A pre-trained 3D ResNet-101 convolutional neural network (CNN) model extracted spatial characteristics from MRI volumes, whereas long short-term memory (LSTM) networks recorded temporal dynamics across subsequent annual scans. This hybrid CNN-LSTM design markedly improved classification performance, attaining 96.7% accuracy for AD against CN and enhancing the distinction of MCI cases. Nonetheless, discrepancies in MCI categorization were chiefly ascribed to the restricted access to annual MRI data and the model's pre-training on CN and AD cohorts. These findings highlight the potential of integrating volumetric statistical analysis with deep learning for automated AD categorization. This work enhances neuroimaging diagnostic methods by utilizing both spatial and temporal MRI data, enabling early diagnosis and better evaluation of disease development.
+
+## Información del artículo
+
+- **Revista:** NMR in biomedicine
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Mehmet Sait Dundar, Bulent Yilmaz
+- **DOI:** [10.1002/nbm.70322](https://doi.org/10.1002/nbm.70322)
+- **PubMed ID:** [42240570](https://pubmed.ncbi.nlm.nih.gov/42240570/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42240570/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
