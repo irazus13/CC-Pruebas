@@ -1,0 +1,25 @@
+---
+title: "Predicting 5-Year Mortality in Non-Small-Cell Lung Cancer Using the Korean Central Cancer Registry: Model Development and Validation Study."
+description: "Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis..."
+date: "2026-06-08"
+category: "investigacion"
+pubmedId: "42258797"
+author: "Jong Hyuk Lee, Ho Cheol Kim, Kyu-Won Jung et al."
+tags: ["KCCR", "Korean Central Cancer Registry", "deep learning", "machine learning", "non&#x2013;small-cell lung cancer"]
+---
+
+## Resumen
+
+**BACKGROUND:** Non-small-cell lung cancer (NSCLC) is one of the most common cancers and a leading cause of cancer-related mortality, making prognostic prediction clinically essential. Machine learning models are increasingly used to assess prognosis; however, developing systems that combine high discrimination with clear, clinically interpretable reasoning remains challenging. **OBJECTIVE:** This study aimed to develop deep learning models that predict 5-year mortality in NSCLC using data from the Korea Central Cancer Registry and quantify feature importance through permutation testing. **METHODS:** We identified 3144 patients diagnosed between 2014 and 2017 who had complete clinical data, pulmonary function test results, histological information, genomic data, and staging details. After preprocessing, the cohort was divided into stratified training, validation, and test sets in a 70%-15%-15% ratio. Five models were tuned using Hyperband across 10 predefined feature groups. The primary evaluation metric was the area under the receiver operating characteristic curve (AUC); additional metrics included accuracy, F1-score, precision, and recall. Groupwise permutation importance was calculated for each model, and the concordance of importance rankings was assessed using the Friedman test. **RESULTS:** All 5 models yielded comparable discrimination values on the test set (AUC=0.875-0.879). Model A was selected as the primary model and achieved an AUC of 0.879, an accuracy of 0.806, an F1-score of 0.824, and a Brier score of 0.142. Permuting the stage resulted in the largest decrease in AUC (0.217), followed by the pulmonary function test (0.016). Gene mutation had a modest overall impact but became more influential within the adenocarcinoma subset. The Friedman test showed no statistically significant differences in importance rankings across the models (P=.93). **CONCLUSIONS:** A grouped-input deep learning framework achieved discrimination comparable to a conventional Cox proportional hazards model using the same routine clinical variables for 5-year mortality prediction in NSCLC. Group-level permutation importance provided stable and reproducible insights into the clinical factors influencing risk, which may guide future model refinement and clinical decision-making.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-06-08
+- **Autores:** Jong Hyuk Lee, Ho Cheol Kim, Kyu-Won Jung, Chang Min Choi
+- **DOI:** [10.2196/80574](https://doi.org/10.2196/80574)
+- **PubMed ID:** [42258797](https://pubmed.ncbi.nlm.nih.gov/42258797/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42258797/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
