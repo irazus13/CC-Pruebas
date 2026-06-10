@@ -1,0 +1,25 @@
+---
+title: "From Slice to Sequence: Autoregressive Tracking Transformer for Consistent 3D Lymph Node Detection in CT Scans."
+description: "Lymph node (LN) assessment is an essential task in the routine radiology workflow, providing valuable insights for cancer staging and treatment planning. Identifying scatteredly-distributed and low-contrast LNs in 3D CT scans is highly challenging, e..."
+date: "2026-06-09"
+category: "ia-radiologia"
+pubmedId: "42262938"
+author: "Qinji Yu, Yirui Wang, Ke Yan et al."
+tags: []
+---
+
+## Resumen
+
+Lymph node (LN) assessment is an essential task in the routine radiology workflow, providing valuable insights for cancer staging and treatment planning. Identifying scatteredly-distributed and low-contrast LNs in 3D CT scans is highly challenging, even for experienced clinicians. Previous lesion and LN detection methods demonstrate the effectiveness of 2.5D approaches (i.e., using 2D backbone with multi-slice inputs), leveraging pretrained 2D model weights and showing improved accuracy as compared to separate 2D or 3D detectors. However, slice-based 2.5D detectors do not explicitly model inter-slice consistency for LN as a 3D object, requiring heuristic post-merging steps to generate final 3D LN instances, which can involve tuning a set of parameters for each dataset. In this work, we formulate 3D LN detection as a slice-by-slice tracking task along the z-axis and propose LN-Tracker, a novel LN tracking transformer, for joint end-to-end detection and 3D instance association. Built upon a DETR-based detector, LN-Tracker decouples transformer queries into distinct track and detection groups with independent matching, enabling comprehensive LN detection while maintaining trajectory consistency. A masked attention mechanism further separates learning between these query groups, and a similarity loss promotes robust interslice LN association, particularly in low-contrast scenarios. Extensive evaluation on four LN datasets shows LN-Tracker's superior performance, with at least 2.49% gain in average sensitivity when compared to top 3D/2.5D/tracking detectors. Further validation on public lung nodule and prostate tumor detection tasks confirms the generaliz-ability of LN-Tracker as it achieves top performance on both tasks. Code is available at https://github.com/alibaba-damo-academy/LN-Tracker.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-06-09
+- **Autores:** Qinji Yu, Yirui Wang, Ke Yan, Dandan Zheng, Dashan Ai
+- **DOI:** [10.1109/TMI.2026.3701886](https://doi.org/10.1109/TMI.2026.3701886)
+- **PubMed ID:** [42262938](https://pubmed.ncbi.nlm.nih.gov/42262938/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42262938/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
