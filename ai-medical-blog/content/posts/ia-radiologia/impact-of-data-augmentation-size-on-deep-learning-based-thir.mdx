@@ -1,0 +1,25 @@
+---
+title: "Impact of data augmentation size on deep learning-based third lumbar vertebra computed tomography skeletal muscle segmentation performance."
+description: "Various deep learning (DL) models have been proposed for skeletal muscle segmentation at the level of the third lumbar vertebra (L3) on computed tomography (CT) images, typically incorporating data augmentation to improve model robust..."
+date: "2026-06-01"
+category: "ia-radiologia"
+pubmedId: "42273159"
+author: "Xuzhi Zhao, Yi Du, Xianggao Zhu et al."
+tags: ["Deep learning (DL)", "computed tomography images (CT images)", "data augmentation size", "skeletal muscle segmentation", "third lumbar vertebra (L3)"]
+---
+
+## Resumen
+
+**BACKGROUND:** Various deep learning (DL) models have been proposed for skeletal muscle segmentation at the level of the third lumbar vertebra (L3) on computed tomography (CT) images, typically incorporating data augmentation to improve model robustness and mitigate overfitting. However, the impact of augmentation size on model performance remains unclear. This study aims to quantitatively evaluate this impact and provide evidence-based guidance for selecting appropriate augmentation sizes. **METHODS:** A total of 400 patients diagnosed with rectal or cervical cancer were included, each with a pelvic CT series acquired using a clinical CT scanner. For each patient, skeletal muscle regions were manually annotated on three consecutive axial CT images at the L3 level to serve as ground truth. The dataset was divided into training, validation, and test sets comprising 280, 60, and 60 patients, respectively. Ten experimental groups (Labs 1-10) were established by varying the number of augmented images included in the training set to represent different augmentation sizes. Lab 1 contained only the original images. To create Labs 2-10, each original training image was augmented up to nine times using random combinations of horizontal flipping, translation, scaling, and Gaussian noise addition. Specifically, Labs 2-9 incorporated 1-8 randomly selected augmented images per original image, while Lab 10 included all nine augmented images. To enhance experimental reliability, the dataset creation process for Labs 2-10 was repeated ten times. Three representative DL models-U-Net, attention U-Net, and attention V-Net-were trained on each group and evaluated on the same test set using five quantitative metrics: dice similarity coefficient (DSC), precision, recall, 95th percentile Hausdorff distance (HD95), and average surface distance (ASD). **RESULTS:** Model performance generally improved with increasing augmentation size, accompanied by enhanced robustness in skeletal muscle morphology and boundary delineation. All three models achieved their best performance within Labs 7-10. The U-Net achieved the best averaged DSC, precision, recall, HD95, ASD values of 97.481%, 97.299%, 98.040%, 1.782 mm, and 0.268 mm, respectively. The attention U-Net achieved corresponding best values of 97.455%, 97.208%, 98.013%, 1.822 mm, and 0.270 mm, while the attention V-Net achieved 97.627%, 97.436%, 97.939%, 1.781 mm, and 0.250 mm, respectively. **CONCLUSIONS:** Data augmentation effectively improves DL model performance for L3 CT skeletal muscle segmentation. Based on systematic evaluation across ten augmentation sizes, an augmentation size of 6&#xd7; or greater per L3 CT image is recommended to ensure high segmentation accuracy and robust generalization.
+
+## Información del artículo
+
+- **Revista:** Quantitative imaging in medicine and surgery
+- **Fecha de publicación:** 2026-06-01
+- **Autores:** Xuzhi Zhao, Yi Du, Xianggao Zhu, Yufei Liu, Yanhui Xiao
+- **DOI:** [10.21037/qims-2026-1-0017](https://doi.org/10.21037/qims-2026-1-0017)
+- **PubMed ID:** [42273159](https://pubmed.ncbi.nlm.nih.gov/42273159/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42273159/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
