@@ -1,0 +1,25 @@
+---
+title: "Structure-based prediction of muscarinic M1/M3 receptor antagonist activity: Curated dataset and scaffold-aware evaluation."
+description: "Aspiration pneumonia and delirium are clinically relevant adverse outcomes that can be influenced by anticholinergic drug effects, but existing burden scales do not explicitly capture receptor-subtype differences or provide continuous compound-level ..."
+date: "2026-05-27"
+category: "ia-medicina"
+pubmedId: "42308581"
+author: "Tomoyuki Enokiya, Takamasa Yamaguchi"
+tags: ["Antagonist activity", "Graph neural network", "Muscarinic receptor", "Pharmacological interpretation", "Scaffold-aware evaluation"]
+---
+
+## Resumen
+
+Aspiration pneumonia and delirium are clinically relevant adverse outcomes that can be influenced by anticholinergic drug effects, but existing burden scales do not explicitly capture receptor-subtype differences or provide continuous compound-level estimates from chemical structure. We developed structure-based models to predict muscarinic M1/M3 receptor antagonist activity using curated data from the ChEMBL bioactivity database. Activity records for human cholinergic receptor muscarinic subtypes 1-5 (CHRM1-CHRM5) were retrieved, assay-level curation was performed, and a functional antagonist core dataset was constructed for CHRM1 and CHRM3. After removal of compounds without observed M1 or M3 labels, the resulting dataset comprised 553 compounds and was divided by Bemis-Murcko scaffolds into training, validation, and test sets (442, 56, and 55). Candidate models included extended-connectivity fingerprint with radius 2 and 2048 bits-based machine learning models, single-task graph isomorphism networks, auxiliary pretraining using CHRM1/CHRM3 binding data, and late-fusion models combining extended-connectivity fingerprint with radius 2 and 2048 bits with graph neural network embeddings. Within the fixed scaffold-split exploratory model-comparison analysis, candidate models were compared by considering the overall pattern of validation-set performance together with consistency of fixed scaffold-split test-set behavior. In the fixed scaffold-split exploratory model-comparison analysis, different retained model configurations were identified for M1 and M3 within the common set of evaluated candidate model families. For M1, the retained late-fusion LightGBM model, a gradient boosting machine (GBM) implementation, showed a fixed scaffold-split test area under the receiver operating characteristic curve of 0.809, area under the precision-recall curve of 0.910, Matthews correlation coefficient of 0.426, and balanced accuracy of 0.708. For M3, the retained extended-connectivity fingerprint with radius 2 and 2048 bits + LightGBM model showed a fixed scaffold-split test area under the receiver operating characteristic curve of 0.944, area under the precision-recall curve of 0.976, Matthews correlation coefficient of 0.766, and balanced accuracy of 0.833. These findings indicate that structure-based models can capture subtype-dependent prediction patterns for curated in vitro M1/M3 antagonist labels under scaffold-aware internal evaluation. The representative compound analyses should be interpreted as illustrative demonstrations of model behavior rather than external validation. Further validation using independent functional antagonist datasets will be required to establish generalizability to broader chemical space or translational applicability. SIGNIFICANCE STATEMENT: Using a curated CHRM1/CHRM3 functional antagonist dataset and scaffold-aware internal evaluation, this study modeled binary in vitro muscarinic M1/M3 antagonist labels from chemical structure. Within this exploratory framework, different retained model configurations were identified for M1 and M3. The representative compound analyses provide illustrative, hypothesis-generating subtype-level profiling, but external validation will be required before generalizability or translational applicability can be established.
+
+## Información del artículo
+
+- **Revista:** The Journal of pharmacology and experimental therapeutics
+- **Fecha de publicación:** 2026-05-27
+- **Autores:** Tomoyuki Enokiya, Takamasa Yamaguchi
+- **DOI:** [10.1016/j.jpet.2026.104953](https://doi.org/10.1016/j.jpet.2026.104953)
+- **PubMed ID:** [42308581](https://pubmed.ncbi.nlm.nih.gov/42308581/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42308581/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
