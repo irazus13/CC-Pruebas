@@ -1,0 +1,25 @@
+---
+title: "Differentiating Ischemic From Nonischemic T-Wave Inversion Using a Multimodal Vision-Language Model With Reinforcement Learning (ECG-R1): Development and Validation Study."
+description: "The differentiation of primary ischemic from secondary nonischemic T-wave inversion (TWI) on electrocardiograms (ECGs) presents a critical and pervasive diagnostic challenge in emergency cardiology. Historical clinical literature repo..."
+date: "2026-06-19"
+category: "investigacion"
+pubmedId: "42319812"
+author: "Yunzhang Cheng, Zhongkai Wang, Wen Zhang et al."
+tags: ["artificial intelligence", "AI", "ECG", "T-wave inversion", "computer-aided diagnosis"]
+---
+
+## Resumen
+
+**BACKGROUND:** The differentiation of primary ischemic from secondary nonischemic T-wave inversion (TWI) on electrocardiograms (ECGs) presents a critical and pervasive diagnostic challenge in emergency cardiology. Historical clinical literature reports that clinician-led visual interpretation of isolated TWI yields a positive predictive value of only approximately 50% due to profound morphological ambiguity. This high degree of uncertainty frequently leads to high false-positive rates, resulting in unnecessary, costly, and potentially risky invasive angiographic procedures for patients. Furthermore, although existing deep learning models have attempted to address this clinical bottleneck, they are frequently limited to single-modality, "black box" architectures. Their inability to process complex multimodal data or provide transparent reasoning traces fundamentally limits clinical trust and real-world adoption. **OBJECTIVE:** The objective of this study was to develop a novel diagnostic framework designed to address the critical clinical challenge of accurately differentiating ischemic from nonischemic TWI. By using a multimodal vision-language model trained with a reinforcement learning (RL) paradigm, this study aimed to improve diagnostic accuracy and provide interpretable reasoning. **METHODS:** We developed ECG-R1, a multimodal framework using the Qwen2-VL-2B vision-language model, to analyze ECG waveform images and associated clinical text. Instead of supervised fine-tuning (SFT), the model was trained using an RL paradigm with the group relative policy optimization algorithm. The model was trained to generate a structured output containing an explicit reasoning trace and a final "yes" or "no" answer. A 2-component, rule-based reward function was designed to assess format adherence and diagnostic accuracy. Performance was compared against strong SFT baselines. **RESULTS:** Evaluated on a large-scale multimodal dataset of 12,917 TWI cases, our ECG-R1 model achieved a state-of-the-art in-domain accuracy of 75.21%, a sensitivity of 82.55%, and an area under the receiver operating characteristic curve of 84.18%. The model demonstrated robust cross-hospital generalization, maintaining a 72.93% out-of-domain accuracy and an 81.56% area under the receiver operating characteristic curve. When controlling for model scale, the RL paradigm yielded substantial absolute improvements of 6.69% in in-domain performance and a substantial 11.48% improvement in out-of-domain performance over the capacity-matched Qwen2-VL-2B full-FT baseline. These results suggested that the RL approach was superior for learning invariant physiological features rather than overfitting to source-domain artifacts. **CONCLUSIONS:** The RL-based ECG-R1 framework significantly outperformed capacity-matched SFT baselines in both diagnostic accuracy and cross-domain robustness. By explicitly modeling interpretable clinical reasoning and using probabilistic diagnostic language to prevent premature cognitive closure, ECG-R1 may serve as a highly transparent clinical decision support system. It was structurally designed to safely assist cardiologists within a strict human-in-the-loop paradigm, establishing a robust foundation for prospective clinical trials.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-06-19
+- **Autores:** Yunzhang Cheng, Zhongkai Wang, Wen Zhang, Qin Zhang, Mingwei Zhang
+- **DOI:** [10.2196/87227](https://doi.org/10.2196/87227)
+- **PubMed ID:** [42319812](https://pubmed.ncbi.nlm.nih.gov/42319812/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42319812/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
