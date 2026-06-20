@@ -1,0 +1,25 @@
+---
+title: "FD-MSP: feature decoupling network with multi-scale prototypes for domain-adaptive polyp segmentation."
+description: "Polyp segmentation in colonoscopy images plays a critical role in the early detection and treatment of colorectal cancer. Although deep learning-based segmentation models have achieved remarkable success, their performance is often limited by variabl..."
+date: "2026-06-19"
+category: "ia-radiologia"
+pubmedId: "42321673"
+author: "Wenqi Zhong, Xu Yang, Shengyuan Liu et al."
+tags: ["Decoupled networks", "Domain adaptation", "Polyp segmentation", "Prototype learning."]
+---
+
+## Resumen
+
+Polyp segmentation in colonoscopy images plays a critical role in the early detection and treatment of colorectal cancer. Although deep learning-based segmentation models have achieved remarkable success, their performance is often limited by variable imaging protocols or unseen datasets from different endoscopic devices. To address this challenge, unsupervised domain adaptation (UDA) methods have emerged as a promising solution, leveraging labeled source data and unlabeled target data to bridge the domain gap. However, existing UDA models suffer from two key limitations. First, they entangle domain-invariant and domain-specific features, making it difficult to identify which representations should transfer across domains. Second, they rely on single-scale features that fail to capture the extreme size variations observed in polyps, which range from tiny flat lesions to large protruding masses. As such, we propose FD-MSP, a feature decoupling network with multi-scale prototypes for cross-domain polyp segmentation. The core contribution is a structural redesign of the UDA pipeline that explicitly decouples feature distribution alignment from multi-scale semantic prototype learning, rather than entangling them in a single objective. This redesign is realized through four tightly-coupled components: (i) a dual-stream shallow-encoder decoupling module that separates domain-invariant polyp signatures from equipment-dependent variations through the joint effect of adversarial alignment on both low-level features and output predictions and a pixel-wise orthogonality regularizer between source-fed and target-fed shallow features; (ii) an online pseudo-fusion adapter that blends offline soft labels with current full-image predictions under class-wise confidence gating; (iii) a multi-scale grouped prototype layer (three groups of seven prototypes) that captures polyp patterns at multiple granularities through dilated convolutions with progressively expanding receptive fields; and (iv) a dual-branch gated head that adaptively fuses convolutional and prototype predictions at inference. Experimental results on three public colonoscopy datasets showed that FD-MSP offers consistent improvements over existing UDA methods for polyp segmentation performance in the target domain.
+
+## Información del artículo
+
+- **Revista:** BMC medical imaging
+- **Fecha de publicación:** 2026-06-19
+- **Autores:** Wenqi Zhong, Xu Yang, Shengyuan Liu, Yapeng Wang, Sio-Kei Im
+- **DOI:** [10.1186/s12880-026-02446-5](https://doi.org/10.1186/s12880-026-02446-5)
+- **PubMed ID:** [42321673](https://pubmed.ncbi.nlm.nih.gov/42321673/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42321673/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
