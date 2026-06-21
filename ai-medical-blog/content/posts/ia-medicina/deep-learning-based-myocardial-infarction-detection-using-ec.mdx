@@ -1,0 +1,25 @@
+---
+title: "Deep learning-based myocardial infarction detection using echocardiography."
+description: "Myocardial infarction (MI) is a life-threatening condition caused by reduced oxygen supply to the heart muscle due to blockage of the coronary arteries. Delayed or missed diagnosis increases the risk of mortality and heart failure, making early detec..."
+date: "2026-06-19"
+category: "ia-medicina"
+pubmedId: "42321627"
+author: "Shamal Bulbule, Shridevi Soma"
+tags: ["Echocardiography", "EfficientNet", "EfficientNet-B3-attn-2", "Fuzzy Local Information C-Means Clustering", "Myocardial Infarction"]
+---
+
+## Resumen
+
+Myocardial infarction (MI) is a life-threatening condition caused by reduced oxygen supply to the heart muscle due to blockage of the coronary arteries. Delayed or missed diagnosis increases the risk of mortality and heart failure, making early detection critical. Echocardiography is a non-invasive imaging technique that uses real-time ultrasound to examine the heart's structure and function, including the evaluation of coronary artery disease and detection of regional wall motion abnormalities linked to MI. However, current approaches encounter limitations such as susceptibility to noise, restricted motion analysis capabilities, and significant computational demands. Hence, this work proposes EfficientNet_SpinalNet (Efficient_SpinalNet) for MI detection using echocardiography video. The proposed model utilizes the Hamad Medical Corporation Heart Hospital &amp; Qatar University (HMC-QC) dataset and the Cardiac Acquisitions for Multi-structure Ultrasound Segmentation (CAMUS) dataset. The process begins by retrieving a video sample from the dataset, which is then decomposed into individual image frames. A hybrid filtering approach, integrating both median and Gaussian techniques, is first applied to the frames to suppress noise and enhance image quality. Following this preprocessing step, the Left Ventricle (LV) wall is fully extracted using the Fuzzy Local Information C-Means Clustering (FLICM) method, which further enables precise identification of the endocardial border. Following segmentation, displacement metrics and area variation curves are computed and passed into the feature extraction module. The extracted features, along with the displacement and area data, are then utilized for MI detection using the Efficient_SpinalNet architecture, which synergistically merges EfficientNet-B3-attn-2 with SpinalNet for enhanced diagnostic accuracy. Moreover, the experimental result reveals that the Efficient_SpinalNet functioned efficiently, attaining accuracy, sensitivity, and specificity values of 91.19%, 92.01%, and 92.435%. These results indicate that Efficient_SpinalNet is a reliable and efficient approach for real-time MI detection, offering potential improvements in clinical decision-making and patient outcomes.
+
+## Información del artículo
+
+- **Revista:** BMC cardiovascular disorders
+- **Fecha de publicación:** 2026-06-19
+- **Autores:** Shamal Bulbule, Shridevi Soma
+- **DOI:** [10.1186/s12872-026-06033-y](https://doi.org/10.1186/s12872-026-06033-y)
+- **PubMed ID:** [42321627](https://pubmed.ncbi.nlm.nih.gov/42321627/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42321627/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
