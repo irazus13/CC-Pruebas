@@ -1,0 +1,25 @@
+---
+title: "MTA-Swin: A Multi-Token Attention Swin Transformer for Brain Tumor Classification with Leakage-Free MRI Benchmarking."
+description: "Brain tumors represent a major global health challenge, and accurate classification of brain tumors is essential for effective diagnosis and treatment. Magnetic resonance imaging (MRI) is the most commonly used and reliable modality in early brain tu..."
+date: "2026-06-22"
+category: "ia-radiologia"
+pubmedId: "42324433"
+author: "Dong Lu, Yu Zhang, Divya Chaudhary"
+tags: ["Brain tumor classification", "Computer vision", "Data leakage", "Deep learning", "Medical imaging"]
+---
+
+## Resumen
+
+Brain tumors represent a major global health challenge, and accurate classification of brain tumors is essential for effective diagnosis and treatment. Magnetic resonance imaging (MRI) is the most commonly used and reliable modality in early brain tumor detection, and numerous studies have leveraged MRI datasets to train deep learning models for classification. However, many widely adopted brain tumor MRI datasets suffer from duplicate-induced data leakage, which can lead to artificially inflated performance metrics and unreliable model evaluation. In this study, we systematically analyze this issue and develop an automated data cleaning pipeline capable of identifying and removing duplicate scans. By applying this pipeline to a widely used public dataset, we obtain a leakage-free benchmark dataset containing 3,522 unique MRI scans, which is used for all comparative experiments. Additionally, we propose MTA-Swin, an enhanced Swin Transformer that incorporates Multi-Token Attention by re-designing the attention computation within Swin blocks. The design refines attention logits to enrich local context and enables explicit cross-head information exchange in deeper layers, while preserving Swin's hierarchical stages and windowing scheme. MTA-Swin is first pre-trained on ImageNet-1K, and then fine-tuned on our leakage-free dataset. Experimental results show that MTA-Swin reaches an overall accuracy of 98.57% over three random seeds, outperforming thirteen representative baselines. Additional stratified cross-validation and Grad-CAM analyses further support the robustness and interpretability of the proposed model. These results indicate that MTA-Swin can serve as a practical computer-aided diagnostic support model for brain tumor MRI classification.
+
+## Información del artículo
+
+- **Revista:** Journal of medical systems
+- **Fecha de publicación:** 2026-06-22
+- **Autores:** Dong Lu, Yu Zhang, Divya Chaudhary
+- **DOI:** [10.1007/s10916-026-02418-w](https://doi.org/10.1007/s10916-026-02418-w)
+- **PubMed ID:** [42324433](https://pubmed.ncbi.nlm.nih.gov/42324433/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42324433/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
