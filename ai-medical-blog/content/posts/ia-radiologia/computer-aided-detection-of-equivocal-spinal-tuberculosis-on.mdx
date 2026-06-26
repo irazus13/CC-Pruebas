@@ -1,0 +1,25 @@
+---
+title: "Computer-aided detection of equivocal spinal tuberculosis on X-ray using a YOLOv11-based deep learning model."
+description: "Spinal tuberculosis (STB), also known as Pott's disease or tuberculous spondylitis, remains a substantial clinical burden in some remote and resource-limited regions, where X-ray imaging is often the primary modality available for ini..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42359154"
+author: "Yan Yuan, Juan Ma, Haiting Ma et al."
+tags: ["Pott's disease", "X-ray imaging", "deep learning", "object detection", "referral support"]
+---
+
+## Resumen
+
+**BACKGROUND:** Spinal tuberculosis (STB), also known as Pott's disease or tuberculous spondylitis, remains a substantial clinical burden in some remote and resource-limited regions, where X-ray imaging is often the primary modality available for initial assessment. However, early- and mid-stage STB frequently presents with subtle, equivocal, or atypical structural changes on X-ray images, which may lead to delayed recognition and referral in primary-care settings. Investigating suspicious-region localization in cases with clinical suspicion of STB but equivocal X-ray findings may provide supportive information for further imaging evaluation and referral decisions in primary-care settings. **METHODS:** This retrospective study included 307 patients from three tertiary hospitals, all of whom had equivocal X-ray findings and CT-confirmed STB. CT-referenced suspicious-region annotations were established on X-ray images according to the CT-confirmed involved spinal levels and their anatomical correspondence on radiographs. A single-class suspicious-region localization model was developed based on the YOLOv11 object detection framework, and the dataset was split at the patient level into training and test sets. Model performance was evaluated using mAP@0.5, mAP@0.5:0.95, precision, recall, F1-confidence curves, precision-recall curves, and confidence-related curves. Patient-level detection rate and missed-case rate were further introduced to evaluate case-level alerting performance. To assess the spatial correspondence between CT-referenced annotations and suspicious regions visible on X-ray images, an agreement analysis between X-ray-only blinded annotations and CT-referenced annotations was additionally performed. **RESULTS:** On the test set, the YOLOv11 model achieved an mAP@0.5 of 0.7664, an mAP@0.5:0.95 of 0.4520, a precision of 0.8358, and a recall of 0.6215. Threshold-related curves showed a trade-off between precision and recall across different confidence thresholds. At the provisional working threshold of 0.25, the patient-level detection rate was 0.8073, with a missed-case rate of 0.1927, indicating that the model could provide at least one suspicious-region prompt in most CT-confirmed positive test cases. The agreement analysis showed that all 40 randomly selected test cases could be annotated with at least one suspicious region based on X-ray images alone. The mean maximum IoU between X-ray-only blinded annotations and CT-referenced annotations was 0.7542; 34/40 cases reached a maxIoU &#x2265;0.5, and 38/40 cases reached a maxIoU &#x2265;0.3. **CONCLUSION:** This study shows that, using X-ray images alone as input, a deep learning model can provide suspicious-region localization prompts for CT-confirmed STB cases with equivocal X-ray findings. The proposed approach provides a feasible proof-of-concept framework for early risk prompting and referral support for STB in resource-limited settings. Further studies incorporating normal cases and non-tuberculous spinal disease controls, as well as external validation and prospective evaluation, are required to assess its applicability in real-world primary-care settings.
+
+## Información del artículo
+
+- **Revista:** Frontiers in public health
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yan Yuan, Juan Ma, Haiting Ma, Mei Zhang, Xinyue Qiu
+- **DOI:** [10.3389/fpubh.2026.1780946](https://doi.org/10.3389/fpubh.2026.1780946)
+- **PubMed ID:** [42359154](https://pubmed.ncbi.nlm.nih.gov/42359154/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42359154/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
