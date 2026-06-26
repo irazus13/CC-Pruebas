@@ -1,0 +1,25 @@
+---
+title: "Automated L3 Skeletal Muscle Segmentation for the Evaluation of Sarcopenia: Development and Independent Validation of an Ensemble-Based 2D nnU-Net Pipeline in a Complex Liver Disease Cohort."
+description: "To develop a fully automated 2D nnU-Net pipeline for multi-class skeletal muscle segmentation (psoas, paraspinal, and abdominal wall) at the third lumbar (L3) vertebral level, and to quantitatively evaluate its diagnostic performance and..."
+date: "2026-06-03"
+category: "ia-radiologia"
+pubmedId: "42347481"
+author: "Hyeon Yu, Kevin Wang"
+tags: ["computed tomography", "deep learning", "liver cirrhosis", "sarcopenia", "skeletal muscle segmentation"]
+---
+
+## Resumen
+
+**PURPOSE:** To develop a fully automated 2D nnU-Net pipeline for multi-class skeletal muscle segmentation (psoas, paraspinal, and abdominal wall) at the third lumbar (L3) vertebral level, and to quantitatively evaluate its diagnostic performance and reliability compared to manual segmentation. **MATERIALS AND METHODS:** A 2D nnU-Net was trained on 164 axial L3 CT slices from the multi-institutional AMOS22 dataset, spanning diverse abdominal pathologies and multivendor imaging. To assess generalizability under severe anatomical distortion, independent external validation was performed in 50 consecutive patients with advanced liver disease from a single institution (January-December 2025; mean age, 63 &#xb1; 15 years; 32 women, 18 men), of whom 88% had moderate-to-severe ascites. Model stability was examined by comparing a five-fold ensemble with the best-performing single-fold model. Intra-observer reliability of the manual reference standard was evaluated in a random subset of 30 cases. Inter-observer agreement was additionally assessed using an independent second reader. Performance metrics included the Dice Similarity Coefficient (DSC), Pearson correlation coefficient (r), and Bland-Altman analysis for cross-sectional areas and mean attenuation. The inference workflow was deployed via a custom Streamlit-based graphical user interface (GUI). **RESULTS:** In this anatomically complex external validation cohort, the 5-fold ensemble 2D nnU-Net achieved an overall mean DSC of 0.937 &#xb1; 0.043 (95% CI, 0.925-0.950), with 80% of cases achieving a mean DSC &#x2265; 0.90. While the mean DSC was statistically comparable to the best single-fold model (0.937, [95% CI, 0.921-0.952], p = 0.736), the ensemble strategy increased the minimum observed DSC (worst-case performance) from 0.720 to 0.822. Class-specific external validation performance for the 5-fold ensemble was highest for the paraspinal muscles (DSC: 0.960; 95% CI, 0.952-0.967), followed by the psoas muscles (DSC: 0.941; 95% CI, 0.927-0.956), and lowest for the anatomically complex abdominal wall muscles (DSC: 0.911; 95% CI, 0.893-0.929). Comparison between the ensemble model and manual segmentation yielded a Pearson correlation of r = 0.955 (p &lt; 0.001) for total skeletal muscle area, with a mean bias of +7.17 cm2. Intra- and inter-observer agreements for the manual reference standard demonstrated correlation coefficients of r = 0.995 and 0.090 for total areas, respectively. The automated pipeline required 3-5 s per case for inference and quantitative reporting, compared to 3-5 min for manual segmentation. **CONCLUSIONS:** In patients with advanced liver disease and substantial anatomical distortion from ascites, an ensemble-based 2D nnU-Net provides high quantitative agreement with manual L3 skeletal muscle segmentation, while mitigating lower-bound (worst-case) errors relative to single-fold models. Integration with a dedicated GUI enables substantial time savings and supports scalable quantitative body composition measurement.
+
+## Información del artículo
+
+- **Revista:** Muscles (Basel, Switzerland)
+- **Fecha de publicación:** 2026-06-03
+- **Autores:** Hyeon Yu, Kevin Wang
+- **DOI:** [10.3390/muscles5020040](https://doi.org/10.3390/muscles5020040)
+- **PubMed ID:** [42347481](https://pubmed.ncbi.nlm.nih.gov/42347481/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42347481/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
