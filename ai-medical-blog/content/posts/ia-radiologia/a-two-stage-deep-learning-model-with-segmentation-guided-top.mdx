@@ -1,0 +1,25 @@
+---
+title: "A two-stage deep learning model with segmentation-guided top-K slice selection for patient-level PAS prediction on MRI."
+description: "Placenta accreta spectrum (PAS) can cause severe obstetric complications, and accurate preoperative assessment is critical. However, heterogeneous MRI manifestations and the high cost of fine placental annotations limit deep learning a..."
+date: "2026-06-26"
+category: "ia-radiologia"
+pubmedId: "42363169"
+author: "Chengzhi Song, Shuiyan Chen, Wei Ye et al."
+tags: ["Deep learning", "External validation", "Magnetic resonance imaging", "Patient-level prediction", "Placenta accreta spectrum"]
+---
+
+## Resumen
+
+**OBJECTIVE:** Placenta accreta spectrum (PAS) can cause severe obstetric complications, and accurate preoperative assessment is critical. However, heterogeneous MRI manifestations and the high cost of fine placental annotations limit deep learning applications. This study developed and validated a two-stage segmentation-guided MRI framework for automated placental localization, ROI selection, and patient-level PAS prediction. **METHODS:** A total of 170 third-trimester placental MRI cases were included in the internal cohort, comprising 87 PAS and 83 non-PAS cases. Data were split at the patient level into training, internal validation, and internal test sets. An external validation cohort of 54 patients, including 36 PAS and 18 non-PAS cases, was additionally used. A 2D U-Net-based segmentation model first generated placental probability maps for ROI extraction. Selected ROIs were then classified using a ResNet-18 model, and slice-level probabilities were aggregated into patient-level predictions. The operating threshold was determined using the Youden index on the internal validation set. **RESULTS:** For patient-level PAS classification, the internal validation set achieved an AUC of 0.85 (95% CI: 0.68-0.97), and the Youden-derived operating threshold was 0.61. In the held-out internal test set, the model achieved an AUC of 0.75 (95% CI: 0.53-0.92). In the external validation cohort of 54 patients, including 36 PAS and 18 non-PAS cases, the model achieved an AUC of 0.72 (95% CI: 0.54-0.87), sensitivity of 0.78 (95% CI: 0.62-0.88), specificity of 0.56 (95% CI: 0.34-0.75), and accuracy of 0.70 (95% CI: 0.57-0.81). **CONCLUSION:** This two-stage segmentation-guided MRI framework achieved reliable placental segmentation and moderate external performance for patient-level PAS prediction. The model may serve as an auxiliary screening and risk stratification tool, but further prospective multicenter validation and optimization are required before clinical implementation.
+
+## Información del artículo
+
+- **Revista:** BMC medical imaging
+- **Fecha de publicación:** 2026-06-26
+- **Autores:** Chengzhi Song, Shuiyan Chen, Wei Ye, Yan Guo, Yuting Li
+- **DOI:** [10.1186/s12880-026-02536-4](https://doi.org/10.1186/s12880-026-02536-4)
+- **PubMed ID:** [42363169](https://pubmed.ncbi.nlm.nih.gov/42363169/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42363169/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
