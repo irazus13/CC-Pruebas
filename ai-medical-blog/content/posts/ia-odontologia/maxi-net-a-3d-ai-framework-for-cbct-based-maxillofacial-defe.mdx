@@ -1,0 +1,25 @@
+---
+title: "MaxI-Net: A 3D AI Framework for CBCT-Based Maxillofacial Defect Reconstruction and Patient-Specific Implant Generation with Biomechanical Validation."
+description: "Maxillofacial defects impair facial aesthetics and oral function, arising from trauma, tumor resection, or congenital anomalies; however, reconstruction using Computer-Aided Design (CAD) and autologous grafts remains complex and time-intensive, and i..."
+date: "2026-05-26"
+category: "ia-odontologia"
+pubmedId: "42351864"
+author: "Mamta Juneja, Maanya Kharbanda, Nitin Pandey et al."
+tags: ["3D reconstruction", "CBCT", "PEEK implants", "artificial intelligence", "biomechanical validation"]
+---
+
+## Resumen
+
+Maxillofacial defects impair facial aesthetics and oral function, arising from trauma, tumor resection, or congenital anomalies; however, reconstruction using Computer-Aided Design (CAD) and autologous grafts remains complex and time-intensive, and is associated with donor-site morbidity. Although deep learning (DL) has advanced automated reconstruction, existing models often address isolated tasks, lack integrated multi-scale feature learning, and rely on small datasets. This study proposes the Maxillofacial Implant-generation Network (MaxI-Net), a fast, resource-efficient three-dimensional DL framework for end-to-end maxillofacial defect reconstruction and patient-specific implant generation, with a completion step of cavity filling within the assembly. The model employs a 3D encoder-bottleneck-decoder architecture integrating hybrid dilated convolutions, residual connections, squeeze-and-excitation (SE) blocks, and 3D Convolutional Block Attention Modules (CBAM) with multi-scale feature fusion. It was trained on 921 Cone Beam-Computed Tomography (CBCT) scans, augmented to 11,973 maxillary defect pairs, using Dice loss and Adam optimisation with Automatic Mixed Precision, and benchmarked against UNet, UNETR, SegResNet, and SwinUNETR. MaxI-Net achieved the following: superior Dice Similarity Coefficient (DSC) = 0.778; 95th percentile Hausdorff Distance (HD95) = 3.453 mm; DSC Standard Deviation (SD) = 0.094; 95% confidence interval (CI) for mean DSC: 0.775-0.782). It was statistically validated against all competing architectures via pairwise Wilcoxon signed-rank tests, with significant DSC improvements confirmed across all comparators (p &lt; 0.001) and rank-biserial effect sizes ranging from r = 0.250 against the closest competitor SegResNet* with high efficiency (0.06 s/volume; 9.6 min/epoch). Internal cavity filling of the generated implants was performed as a brief manual post-processing step in Autodesk Fusion 360 prior to biomechanical validation. Biomechanical validation using a finite element analysis (FEA) of polyether-ether-ketone (PEEK) implants (~26.53 g) showed 41% stress reduction under physiological loads (100-400 N), predicting a ~9.2-year lifespan.
+
+## Información del artículo
+
+- **Revista:** Bioengineering (Basel, Switzerland)
+- **Fecha de publicación:** 2026-05-26
+- **Autores:** Mamta Juneja, Maanya Kharbanda, Nitin Pandey, Agrima Sudhir, Aditya Poddar
+- **DOI:** [10.3390/bioengineering13060619](https://doi.org/10.3390/bioengineering13060619)
+- **PubMed ID:** [42351864](https://pubmed.ncbi.nlm.nih.gov/42351864/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42351864/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
