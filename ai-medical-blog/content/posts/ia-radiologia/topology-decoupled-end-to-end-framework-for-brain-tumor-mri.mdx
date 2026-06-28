@@ -1,0 +1,25 @@
+---
+title: "Topology-decoupled end-to-end framework for brain tumor MRI detection: boundary-preserving feature flow and inter-channel correlation distillation."
+description: "Early and accurate detection of brain tumors is clinically valuable for improving prognosis and guiding treatment. Existing deep-learning methods for magnetic resonance imaging (MRI) brain tumor detection face three difficulties: weak texture at lesi..."
+date: "2026-06-27"
+category: "ia-radiologia"
+pubmedId: "42365106"
+author: "Yanxia Wang, Xinghua Ren, Xiaohui Li"
+tags: ["Brain tumor detection", "Computer-aided detection", "End-to-end object detection", "Inter-channel correlation distillation", "Knowledge distillation"]
+---
+
+## Resumen
+
+Early and accurate detection of brain tumors is clinically valuable for improving prognosis and guiding treatment. Existing deep-learning methods for magnetic resonance imaging (MRI) brain tumor detection face three difficulties: weak texture at lesion boundaries impairs localization; heterogeneous lesion scales degrade multi-scale detection; and non-maximum suppression (NMS) post-processing limits end-to-end inference. We propose a topology-decoupled end-to-end detection framework based on boundary-preserving feature flow and inter-channel correlation (ICC) distillation. A high-capacity teacher combines a multi-gradient-flow backbone with a gather-and-distribute global fusion mechanism, capturing both pathological boundary textures and anatomical context; a lightweight student is then derived by removing the global-fusion neck while retaining the isomorphic backbone. After comparing five feature distillation methods, we adopt ICC distillation, which aligns Gram matrices of intermediate features and mitigates the background-dominated bias common in medical imaging. Across three random seeds, the ICC-distilled student reaches mAP@0.5 = [Formula: see text], surpassing the plain student ([Formula: see text]) and matching or exceeding the teacher ([Formula: see text]). On the BraTS small-lesion stratum it attains 98.7% lesion recall with a false-positive-per-image rate of 0.014. The student achieves this at low cost (6.09M parameters, 11.7 GFLOPs, 168 FPS), suiting resource-constrained clinical deployment.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-06-27
+- **Autores:** Yanxia Wang, Xinghua Ren, Xiaohui Li
+- **DOI:** [10.1038/s41598-026-59296-y](https://doi.org/10.1038/s41598-026-59296-y)
+- **PubMed ID:** [42365106](https://pubmed.ncbi.nlm.nih.gov/42365106/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42365106/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
