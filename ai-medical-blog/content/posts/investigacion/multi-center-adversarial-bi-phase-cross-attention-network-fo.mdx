@@ -1,0 +1,25 @@
+---
+title: "Multi-Center Adversarial Bi-Phase Cross-Attention Network for Right Ventricular Segmentation and Functional Classification in Echocardiography."
+description: "Automated right ventricular (RV) analysis in 2D echocardiography is limited by the morphological complexity of RV segmentation and the domain fragility of single-center deep learning models across ultrasound vendors. No prior framewor..."
+date: "2026-07-01"
+category: "investigacion"
+pubmedId: "42365531"
+author: "Bozhi Zhang, Weijuan Bai"
+tags: ["adversarial training", "deep learning", "domain adaptation", "echocardiography", "functional classification"]
+---
+
+## Resumen
+
+**BACKGROUND:** Automated right ventricular (RV) analysis in 2D echocardiography is limited by the morphological complexity of RV segmentation and the domain fragility of single-center deep learning models across ultrasound vendors. No prior framework has jointly addressed both challenges for RV-specific segmentation. **OBJECTIVES:** To develop and prospectively validate TACA-Net (Bi-Phase Adversarial Cross-Attention Network), a unified multi-center framework for simultaneous RV endocardial segmentation and three-class functional severity classification (normal, mildly reduced, significantly reduced) in 2D apical four-chamber echocardiography. **METHODS:** Data were prospectively collected from three clinical sites within a single tertiary hospital network, each equipped with a different ultrasound vendor. Centers A and B (n = 1,240 patients) were used for training and 5-fold cross-validation; Center C (n = 320 patients) served as the fully held-out external test set. TACA-Net integrates a gradient reversal layer-based domain discriminator for vendor-agnostic feature learning, a bidirectional bi-phase cross-attention module encoding the complementary information between end-diastolic and end-systolic representations, and a dual-head decoder jointly optimizing segmentation and classification with an auxiliary bi-phase consistency loss. Performance was benchmarked against six segmentation baselines (U-Net, Attention U-Net, TransUNet, Swin-UNETR, nnU-Net, MACS) and five classification baselines (ResNet-50, EfficientNet-B4, ViT-B/16, segmentation-then-classify pipeline, MACS + head). Primary segmentation endpoints were Dice Similarity Coefficient (DSC) and Hausdorff Distance 95th percentile (HD95); primary classification endpoint was macro-averaged area under the receiver operating characteristic curve (AUC). **RESULTS:** On the external test set, TACA-Net achieved a DSC of 0.903 &#xb1; 0.013 and an HD95 of 7.1 &#xb1; 1.0&#xa0;mm for RV segmentation, and a macro-averaged AUC of 0.911 (95% CI: 0.885-0.937) for functional classification, statistically significantly superior to all six segmentation and five classification baselines (all p &lt; 0.01). Ablation analyses demonstrated independent contributions of domain alignment (&#x394;DSC = -0.038 when removed), bi-phase cross-attention (&#x394;AUC = -0.032), and multi-task joint training (&#x394;DSC = -0.014). No significant differential performance was detected across diagnosis subgroups, sex, or image quality strata. GradientSHAP attribution maps revealed highest feature importance in the RV lateral free wall, consistent with established RV pathophysiology. Expected calibration error for TACA-Net was 0.041 on the external test set, the lowest among all classification models evaluated. **CONCLUSIONS:** TACA-Net achieves vendor-agnostic RV segmentation and functional classification from routinely acquired 2D echocardiography, with robust multi-vendor generalization demonstrated under rigorous prospective external validation. The framework provides a clinically interpretable and methodologically transparent foundation for AI-assisted right heart assessment at scale.
+
+## Información del artículo
+
+- **Revista:** Echocardiography (Mount Kisco, N.Y.)
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Bozhi Zhang, Weijuan Bai
+- **DOI:** [10.1111/echo.70527](https://doi.org/10.1111/echo.70527)
+- **PubMed ID:** [42365531](https://pubmed.ncbi.nlm.nih.gov/42365531/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42365531/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
