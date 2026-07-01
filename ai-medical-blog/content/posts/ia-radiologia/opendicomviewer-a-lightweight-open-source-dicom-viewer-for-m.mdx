@@ -1,0 +1,25 @@
+---
+title: "OpenDicomViewer: A Lightweight Open-Source DICOM Viewer for macOS Built with Swift."
+description: "Digital Imaging and Communications in Medicine (DICOM) viewers are essential tools in clinical practice, yet established open-source macOS viewers such as Horos rely on legacy Objective-C and C++&#x2009;source trees. In the public Horos repository, t..."
+date: "2026-06-30"
+category: "ia-radiologia"
+pubmedId: "42377646"
+author: "JoonNyung Heo, Daeseong Kim, Kunhee Kim et al."
+tags: ["DICOM viewer", "MacOS", "Medical imaging", "Memory efficiency", "Open-source software"]
+---
+
+## Resumen
+
+Digital Imaging and Communications in Medicine (DICOM) viewers are essential tools in clinical practice, yet established open-source macOS viewers such as Horos rely on legacy Objective-C and C++&#x2009;source trees. In the public Horos repository, the main application directory contained 310,033 source lines and the full public source tree contained 900,763 source lines. This study aimed to develop and evaluate OpenDicomViewer (ODV), a lightweight, open-source DICOM viewer for macOS built entirely in Swift and SwiftUI, designed as a modern native foundation for local DICOM viewing rather than a full picture archiving and communication system (PACS) workstation. ODV was developed as a native macOS application comprising 12,952 lines of Swift code, supporting multiple DICOM transfer syntaxes, multi-panel layouts with spatial synchronization, multiplanar reconstruction, and maximum intensity projection with hardware-accelerated raycasting. Memory performance was compared against Horos (version 4.0.1) and OsiriX MD (version 14.2.2) using the Cancer Imaging Archive Pancreas-CT dataset (19,022 DICOM files, 9.3&#xa0;GB) on a Mac Studio with 36&#xa0;GB of unified memory over three trials per viewer. Peak memory footprint was 9.6&#x2009;&#xb1;&#x2009;0.0&#xa0;GB for ODV, 30.0&#x2009;&#xb1;&#x2009;0.5&#xa0;GB for Horos, and 23.6&#x2009;&#xb1;&#x2009;1.8&#xa0;GB for OsiriX MD (mean&#x2009;&#xb1;&#x2009;standard deviation). ODV consumed 32% of Horos's memory footprint without system memory pressure events. The main Horos application directory contained 23.9 times as many source lines as ODV, and the full public Horos source tree contained 69.5 times as many source lines. In this local-file large-series benchmark, ODV demonstrated that a lightweight, Swift-native DICOM viewer can achieve core local image-viewing functionality with lower memory consumption than the tested versions of Horos and OsiriX MD while maintaining a compact codebase that may facilitate human inspection and extension, including artificial intelligence (AI)-assisted development after appropriate validation.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-06-30
+- **Autores:** JoonNyung Heo, Daeseong Kim, Kunhee Kim, Juahn Oh, Hyungwoo Lee
+- **DOI:** [10.1007/s10278-026-02085-w](https://doi.org/10.1007/s10278-026-02085-w)
+- **PubMed ID:** [42377646](https://pubmed.ncbi.nlm.nih.gov/42377646/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42377646/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
