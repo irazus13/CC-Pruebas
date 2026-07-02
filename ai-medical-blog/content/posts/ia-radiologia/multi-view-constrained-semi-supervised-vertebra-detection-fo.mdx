@@ -1,0 +1,25 @@
+---
+title: "Multi-view constrained semi-supervised vertebra detection for 3D ultrasound spine volume."
+description: "Scoliosis is a spinal disorder characterized by a three-dimensional (3D) deformity of the vertebral column. 3D ultrasound imaging has been used for scoliosis assessment, and automatic vertebra detection is important for objective eval..."
+date: "2026-07-01"
+category: "ia-radiologia"
+pubmedId: "42384571"
+author: "Yuchong Gao, Jianhao Zhao, Yi Mao et al."
+tags: ["and ultrasound spine imaging", "deep learning", "multi&#x2010;view analysis", "semi&#x2010;supervised learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Scoliosis is a spinal disorder characterized by a three-dimensional (3D) deformity of the vertebral column. 3D ultrasound imaging has been used for scoliosis assessment, and automatic vertebra detection is important for objective evaluation of spinal deformity. However, existing automatic assessment methods are mainly based on two-dimensional (2D) projection images and require large amounts of labeled data, leading to incomplete use of volumetric ultrasound information and substantial annotation&#xa0;effort. **PURPOSE:** To develop a multi-view constrained semi-supervised learning (SSL) method for vertebra detection that reduces annotation requirements and facilitates fully automatic 3D spinal deformity&#xa0;assessment. **METHODS:** The proposed framework integrated maximum intensity projection (MIP) images in the coronal view with ultrasound slices in the transverse view to exploit complementary multi-view information from 3D ultrasound volumes. A semi-supervised training strategy was adopted, in which coronal bounding boxes were incorporated into pseudo-label generation for the transverse lamina detector. The resulting 3D lamina positions were used for spinal curve fitting, curvature estimation, and 3D visualization. The training set comprised 83 593 unlabeled transverse ultrasound slices from 180 subjects and 856 labeled slices from 10 subjects, whereas the testing set included 2163 slices from 163 patients. To evaluate label efficiency, not all labeled slices were used for training; instead, subsets of different sizes were sampled from the labeled training set to analyze the effect of labeled training set size on detection performance. The proposed method was compared with supervised learning and several SSL benchmarks, including Pseudo-Labeling, FixMatch, MeanTeacher, Uncertainty-Aware Mean Teacher (UA-MT), and Vertmatch. Detection performance was evaluated using accuracy, precision, recall, and F1 score, whereas scoliosis angle estimation in 30 ultrasound subjects was assessed against the radiographic Cobb angle and manually labeled ultrasound spine curvature using mean absolute difference (MAD) and standard deviation (STD). Statistical analysis was performed using the Wilcoxon signed-rank test at a significance level of p &lt; 0.05 $p &lt; 0.05$ , with Bonferroni correction for multiplicity, Cohen's d effect-size analysis, and 95% confidence intervals estimated from 1000 bootstrap&#xa0;resamples. **RESULTS:** On the vertebra detection task, the proposed method achieved an accuracy of 91.19%, a precision of 93.02%, a recall of 97.89%, and an F1 score of 95.39% using a subset of 400 labeled training slices. Compared to all SSL methods, the proposed method improved accuracy by 0.22% to 10.34% and precision by 1.71% - 9.03%. These comparisons were statistically significant ( p &lt; 0.05 $p &lt; 0.05$ ), and effect-size analysis showed large effects for most metrics, except for Recall versus FixMatch (Cohen's d = 0.26). Ablation experiments showed that the multi-view constraint increased accuracy from 83.87% to 91.19%. On the clinical dataset, both manual and automatic ultrasound-based measurements showed good agreement with the radiographic measurements (automatic MAD: 1 . 99 &#x2218; $1.99^\circ$ , SD: 1 . 88 &#x2218; $1.88^\circ$ ; manual MAD: 2 . 57 &#x2218; $2.57^\circ$ , SD: 2 . 03 &#x2218; $2.03^\circ$ ). The difference was not statistically significant ( p = 0.13 $p = 0.13$ ). **CONCLUSIONS:** The proposed method reduces annotation workload and improves vertebra detection performance, providing a promising non-radiative approach for scoliosis&#xa0;assessment.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Yuchong Gao, Jianhao Zhao, Yi Mao, Xiaowei Song, Mingbo Zhang
+- **DOI:** [10.1002/mp.70557](https://doi.org/10.1002/mp.70557)
+- **PubMed ID:** [42384571](https://pubmed.ncbi.nlm.nih.gov/42384571/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42384571/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
