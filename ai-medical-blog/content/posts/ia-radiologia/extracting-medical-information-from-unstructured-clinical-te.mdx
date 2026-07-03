@@ -1,0 +1,25 @@
+---
+title: "Extracting Medical Information From Unstructured Clinical Text Using Large Language Models to Enhance Health Care Interoperability: Proof-of-Concept Study."
+description: "Unstructured clinical text remains a major barrier to interoperable data reuse and large-scale secondary analysis in health care. Large language models (LLMs) have the potential to automate the extraction of structured clinical inform..."
+date: "2026-07-02"
+category: "ia-radiologia"
+pubmedId: "42390385"
+author: "Bahad&#x131;r Ery&#x131;lmaz, Kamyar Arzideh, Mikel Bahn et al."
+tags: ["AI in health care", "FHIR", "Fast Healthcare Interoperability Resources", "artificial intelligence", "entity extraction"]
+---
+
+## Resumen
+
+**BACKGROUND:** Unstructured clinical text remains a major barrier to interoperable data reuse and large-scale secondary analysis in health care. Large language models (LLMs) have the potential to automate the extraction of structured clinical information; however, their application is limited by the scarcity of high-quality annotated training data. **OBJECTIVE:** To address these limitations, this study aims to develop and validate a scalable, privacy-preserving framework that uses synthetic data generated from structured Fast Healthcare Interoperability Resources (FHIR) to fine-tune open-source LLMs for the effective extraction of interoperable clinical information from unstructured text. **METHODS:** We evaluated an LLM-based framework for extracting structured clinical information from cancer-related discharge letters and mapping it to representations compatible with FHIR. To enable large-scale supervised training, we developed a random sample generator that creates synthetic discharge letters using Qwen3-235B by randomly sampling and aggregating structured FHIR data from 41,175 patients with cancer. The resulting synthetic discharge letters (n=75,000) were paired with their originating structured data, forming a large-scale dataset for fine-tuning MedGemma 27B, a 27-billion-parameter medical language model. Evaluation was conducted on the synthetic test dataset (n=7500), real-world discharge letters (n=30), which were evaluated by physicians and a medical student, and a comparative one-shot approach using open-source models (Qwen3, LLaMA, and GPT-OSS). **RESULTS:** The fine-tuned model achieved high extraction performance across multiple clinical entities on the synthetic test set, with F1-scores of 0.84 for full International Classification of Diseases diagnosis codes, 0.99 for tumor-related information, 0.99 for laboratory values, 0.99 for medication names and dosages, and 0.94 for Anatomical Therapeutic Chemical medication codes. The extraction of procedure-related information was more challenging, with F1-scores of 0.63 for OPS codes and 0.90 for procedure descriptions. The fine-tuned model consistently outperformed general-purpose LLMs in a one-shot comparison across nearly all extraction categories. When evaluated by physicians on real-world discharge letters, the model achieved case-level correctness rates of 78.9% for International Classification of Diseases diagnoses, 86.1% for tumor-related information, 93.0% for medications, and 61.3% for procedures. **CONCLUSIONS:** These results demonstrate that synthetic text generation from structured clinical data enables the effective and scalable training of LLMs for extracting interoperable, multientity clinical information from unstructured documentation.
+
+## Información del artículo
+
+- **Revista:** Journal of medical Internet research
+- **Fecha de publicación:** 2026-07-02
+- **Autores:** Bahad&#x131;r Ery&#x131;lmaz, Kamyar Arzideh, Mikel Bahn, Hendrik Damm, Sina Warmer
+- **DOI:** [10.2196/92413](https://doi.org/10.2196/92413)
+- **PubMed ID:** [42390385](https://pubmed.ncbi.nlm.nih.gov/42390385/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42390385/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

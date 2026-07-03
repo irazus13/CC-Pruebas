@@ -1,0 +1,25 @@
+---
+title: "BlockFedMed: A blockchain-federated learning framework for privacy-preserving mortality prediction across heterogeneous intensive care units."
+description: "Electronic health records are distributed across different hospitals that work on powerful AI models but cannot be shared due to HIPAA and GDPR regulations. Federated learning (FL) avoids raw data sharing, yet lacks tamper-evident con..."
+date: "2026-06-27"
+category: "investigacion"
+pubmedId: "42391667"
+author: "Abhay Kumar Yadav, Maroti Deshmukh"
+tags: ["Blockchain", "Clinical decision support", "Differential privacy", "Electronic health records", "Federated learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Electronic health records are distributed across different hospitals that work on powerful AI models but cannot be shared due to HIPAA and GDPR regulations. Federated learning (FL) avoids raw data sharing, yet lacks tamper-evident consent governance, adversarial robustness, and verifiable differential privacy (DP) accounting leaving regulatory compliance undemonstrated. **OBJECTIVE:** To develop and externally validate BlockFedMed, a blockchain-orchestrated FL framework providing cryptographically verifiable consent, model-update integrity, and on-chain DP audits for multi-site ICU mortality prediction, and to quantify its operational clinical impact beyond algorithmic performance. **METHODS:** BlockFedMed integrates Hyperledger Fabric v2.5 with a federated bidirectional LSTM and Gaussian DP (&#x3b5;=3.2, &#x3b4;=10-5). Three smart contracts govern consent (CMC), integrity (Mic), and incentive (Idc). The Byzantine fault-tolerant aggregator FedMed-Bft accepts only Mic-verified updates. Design-phase training used MIMIC-IV (n=52,167 ICU admissions). External validation used the entirely independent eICU Collaborative Research Database (n=200,859; 208 hospitals), unseen during model development. **RESULTS:** On external eICU validation, BlockFedMed achieved an AUROC of 0.841 (95% CI: 0.828-0.854) for in-hospital mortality, which was 7.4 points above Local-Only (p&lt;0.001) and within 3.1% of the regulatory-prohibited centralised upper bound. Simulated consent-management latency fell 71% (from 28.3 min to 8.2 min per cohort) under controlled workflow conditions; prospective clinical measurement remains as future work. The Fabric network sustained 1240 TPS at 1.83 s latency. FedMed-Bft maintained AUROC &#x2265;0.836 under six simultaneous Byzantine participants, all correctly flagged on-chain. **CONCLUSIONS:** BlockFedMed delivers externally validated ICU mortality prediction with cryptographically auditable privacy and consent governance, demonstrating that blockchain-FL provides strong promise for meeting both clinical performance and regulatory compliance requirements simultaneously, pending prospective multi-centre deployment validation.
+
+## Información del artículo
+
+- **Revista:** International journal of medical informatics
+- **Fecha de publicación:** 2026-06-27
+- **Autores:** Abhay Kumar Yadav, Maroti Deshmukh
+- **DOI:** [10.1016/j.ijmedinf.2026.106574](https://doi.org/10.1016/j.ijmedinf.2026.106574)
+- **PubMed ID:** [42391667](https://pubmed.ncbi.nlm.nih.gov/42391667/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42391667/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
