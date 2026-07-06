@@ -1,0 +1,25 @@
+---
+title: "Enhancing brain tumor detection through deep learning and explainable AI techniques."
+description: "Brain tumors are a leading cause of cancer-related mortality, and manual MRI screening remains time-consuming and observer-dependent. Deep learning (DL) offers automated detection, but clinical translation requires rigorous validation and interpretab..."
+date: "2026-07-04"
+category: "ia-radiologia"
+pubmedId: "42401645"
+author: "Shaymaa A Hassan, Anfal Hathah, Omar E Elnokity et al."
+tags: ["Brain tumor", "Deep learning", "Explainable AI (XAI)", "External validation", "MRI"]
+---
+
+## Resumen
+
+Brain tumors are a leading cause of cancer-related mortality, and manual MRI screening remains time-consuming and observer-dependent. Deep learning (DL) offers automated detection, but clinical translation requires rigorous validation and interpretability. This study introduces a DL framework for brain tumor detection that addresses two major challenges in medical AI: limited dataset availability and lack of interpretability. Preliminary experiments identified InceptionV3 optimized with Nadam as the optimal architecture. To ensure robust validation, this model was retrained using patient-wise stratified fivefold cross-validation on 90% of the data incorporating augmentation and minority oversampling to prevent data leakage. This achieved an overall accuracy of 98.3&#x2009;&#xb1;&#x2009;0.9%. The final model was then trained on the entire development set using the optimal configuration, thereby leveraging all available labeled data to maximize learning capacity and enhance generalization. Performance evaluation was conducted on three levels: (i) a held out internal test set (10% of the data) for internal assessment, (ii) an external dataset of 3000 unseen images for independent validation, and (iii) quantitative explainable AI (XAI) analyses performed on both internal and external test datasets. The proposed model achieved perfect classification metrics on the internal test set, with 100% accuracy and minimal loss (0.01), and demonstrated strong generalizability on the external dataset with 96% accuracy and minimal loss (0.11). Quantitative XAI analysis demonstrated high faithfulness (Grad-CAM vs. occlusion sensitivity correlation exceeded 0.8), causal importance (top-10% occlusion drop 44% vs. 9% for random occlusion), and specificity to learned weights (Spearman correlation &#x2248;&#x2009;-&#x2009;0.01). The proposed pipeline establishes a rigorous, transparent framework for data-limited medical imaging, demonstrating high diagnostic performance with clinically aligned explanations and providing a reliable foundation for trustworthy AI in brain tumor detection.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-07-04
+- **Autores:** Shaymaa A Hassan, Anfal Hathah, Omar E Elnokity, Ali Morfeq, Waleed Abdelfattah
+- **DOI:** [10.1038/s41598-026-60334-y](https://doi.org/10.1038/s41598-026-60334-y)
+- **PubMed ID:** [42401645](https://pubmed.ncbi.nlm.nih.gov/42401645/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42401645/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
