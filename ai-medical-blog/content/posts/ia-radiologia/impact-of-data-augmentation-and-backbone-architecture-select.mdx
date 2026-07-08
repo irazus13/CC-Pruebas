@@ -1,0 +1,25 @@
+---
+title: "Impact of data augmentation and backbone architecture selection on dental caries segmentation in panoramic radiographs: a comparative deep learning study using pre-trained U-Net models."
+description: "This study evaluates the impact of data augmentation and preprocessing on U-Net model performance for dental caries segmentation in panoramic X-ray images, comparing different pre-trained backbone architectures. A combined dataset of 500 panoramic de..."
+date: "2026-07-07"
+category: "ia-radiologia"
+pubmedId: "42412290"
+author: "Elaheh Asghari, Rabehe Ostadhassan, Alireza Asghari et al."
+tags: ["Deep learning", "Dental caries", "Image segmentation", "Panoramic X-ray", "ResNet50"]
+---
+
+## Resumen
+
+This study evaluates the impact of data augmentation and preprocessing on U-Net model performance for dental caries segmentation in panoramic X-ray images, comparing different pre-trained backbone architectures. A combined dataset of 500 panoramic dental X-ray images was analyzed: 400 from Tabriz University of Medical Sciences (1024&#x2009;&#xd7;&#x2009;2048 pixels) and 100 publicly available images (1536&#x2009;&#xd7;&#x2009;768 pixels), all with manually annotated, expert-validated segmentation masks. A preprocessing pipeline including resizing, bilateral filtering, CLAHE contrast enhancement, unsharp masking, and normalization was applied, and data augmentation (rotation, shifting, shearing, zooming, horizontal flipping) expanded the dataset to 1,000 images. Four U-Net architectures (standard, VGG16, ResNet50, and Xception) were evaluated across four scenarios (with/without augmentation and preprocessing), using Dice coefficient, IoU, accuracy, precision, recall, F1-score, and AUC-ROC through five-fold cross-validation. The Xception-based U-Net, with both augmentation and preprocessing, achieved the highest performance (Dice: 0.9517&#x2009;&#xb1;&#x2009;0.0029, IoU: 0.9079&#x2009;&#xb1;&#x2009;0.0053), while the standard U-Net achieved Dice: 0.7380&#x2009;&#xb1;&#x2009;0.2099 and IoU: 0.6203&#x2009;&#xb1;&#x2009;0.2193 under the same configuration. Models lacking augmentation or preprocessing performed substantially worse, with ResNet50 without augmentation showing severe degradation (Dice: 0.0068&#x2009;&#xb1;&#x2009;0.0002). The combined configuration also yielded the lowest validation loss (0.0154) and improved stability across folds. This study demonstrates that combining pre-trained backbones, data augmentation, and systematic preprocessing significantly enhances dental caries segmentation accuracy, with the Xception-based model achieving near-optimal results while models without augmentation failed dramatically. These findings highlight the essential role of comprehensive data preparation and provide a foundation for robust computer-aided diagnostic systems, potentially enabling automated caries detection and improved clinical decision-making in dental radiography.
+
+## Información del artículo
+
+- **Revista:** The Saudi dental journal
+- **Fecha de publicación:** 2026-07-07
+- **Autores:** Elaheh Asghari, Rabehe Ostadhassan, Alireza Asghari, Zahra Raeisi, Nasim Razavi
+- **DOI:** [10.1007/s44445-026-00211-6](https://doi.org/10.1007/s44445-026-00211-6)
+- **PubMed ID:** [42412290](https://pubmed.ncbi.nlm.nih.gov/42412290/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42412290/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

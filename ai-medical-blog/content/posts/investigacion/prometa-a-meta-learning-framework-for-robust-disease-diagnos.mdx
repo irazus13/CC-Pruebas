@@ -1,0 +1,25 @@
+---
+title: "ProMeta: a meta-learning framework for robust disease diagnosis and prediction from plasma proteomics."
+description: "The plasma proteome offers a dynamic window of human health, capturing the real-time intersections between genetics and physiology. However, the application of deep learning to proteomics is currently hindered by a reliance on large-s..."
+date: "2026-07-01"
+category: "investigacion"
+pubmedId: "42412846"
+author: "Han Li, Haoteng Gu, Lei Hu et al."
+tags: []
+---
+
+## Resumen
+
+**MOTIVATION:** The plasma proteome offers a dynamic window of human health, capturing the real-time intersections between genetics and physiology. However, the application of deep learning to proteomics is currently hindered by a reliance on large-scale labeled datasets, rendering standard models ineffective for rare or novel diseases where patient samples are inherently scarce. **RESULTS:** Here, we present ProMeta, a meta-learning framework designed to enable robust disease modeling under extreme data restrictions. By integrating knowledge-guided pathway encoding with bi-level meta-optimization, ProMeta projects unstructured proteomic profiles into biologically interpretable functional tokens. This architecture allows the model to learn a global initialization containing transferable biological priors from biobank-scale data, facilitating rapid adaptation to novel tasks. Through comprehensive benchmark experiments, ProMeta consistently outperformed transfer learning and traditional machine learning baselines in both disease diagnosis and prediction tasks. In the most challenging 4-shot scenarios (utilizing only 2 cases and 2 controls), the model achieved robust generalization with an average AUROC of &#x223c;0.69, representing a 24.6% relative improvement over the best-performing baseline methods. Mechanistic investigation revealed that ProMeta disentangles cases from controls in the latent space prior to task-specific adaptation, confirming the acquisition of universal biological rules rather than rote memorization. Furthermore, gradient-based interpretation identified disease-specific protein biomarkers and functional pathways consistent with known pathophysiology. Collectively, ProMeta overcomes the data-scarcity bottleneck in precision medicine, providing a scalable, interpretable framework for characterizing the full spectrum of human diseases, particularly for rare conditions lacking extensive clinical cohorts. **AVAILABILITY AND IMPLEMENTATION:** The source code of ProMeta is available at GitHub (https://github.com/lihan97/ProMeta).
+
+## Información del artículo
+
+- **Revista:** Bioinformatics (Oxford, England)
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Han Li, Haoteng Gu, Lei Hu, Zimo Zhang, Yongji Lv
+- **DOI:** [10.1093/bioinformatics/btag267](https://doi.org/10.1093/bioinformatics/btag267)
+- **PubMed ID:** [42412846](https://pubmed.ncbi.nlm.nih.gov/42412846/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42412846/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
