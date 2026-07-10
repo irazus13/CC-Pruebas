@@ -1,0 +1,25 @@
+---
+title: "Automated scoliosis X-ray cobb angle classification: a deep learning approach with RadImageNet."
+description: "Retrospective Cohort Study OBJECTIVE: Biplanar full-body X-ray imaging is a low-dose, high-resolution technology crucial for assessing scoliosis and guiding treatment. Accurate coronal curvature measurement is essential for quantify..."
+date: "2026-07-09"
+category: "ia-radiologia"
+pubmedId: "42423737"
+author: "Jennifer Yu, Yash Lahoti, Hamza Ahmed et al."
+tags: ["AI", "Artificial Intelligence", "Cobb Angle", "EOS", "RadImageNet"]
+---
+
+## Resumen
+
+**STUDY DESIGN:** Retrospective Cohort Study OBJECTIVE: Biplanar full-body X-ray imaging is a low-dose, high-resolution technology crucial for assessing scoliosis and guiding treatment. Accurate coronal curvature measurement is essential for quantifying severity and planning surgery. Traditional methods are manual, time-consuming, and prone to interobserver variability. Deep learning offers potential for standardization and rapid analysis. RadImageNet, a pretrained model trained on annotated medical images, provides a strong foundation for developing AI-driven radiology tools. This study specifically evaluates whether RadImageNet transfer learning can support adult scoliosis severity classification on standardized AP biplanar full-body radiographs, a task distinct from prior work focused on direct Cobb-angle measurement or adolescent screening. **METHODS:** A total of 816 standardized anteroposterior (AP) full-body radiographs from adult patients with degenerative or idiopathic scoliosis and scoliosis-negative cases were used, with an 80/20 split for training/validation and testing, respectively. No external validation cohort was available. Scoliosis severity was classified into three categories based on the highest Cobb angle from the proximal thoracic, main thoracic, and thoracolumbar curves: no scoliosis (0&#xb0;-10&#xb0;), mild scoliosis (10&#xb0;-30&#xb0;), and severe scoliosis (&gt;&#x2009;30&#xb0;). Cobb-angle labels were derived from resident-generated vertebral-column segmentations and reviewed before final severity assignment; formal interobserver reliability for the final categories was not assessed. A convolutional neural network classifier was developed using a pretrained ResNet-50 backbone from RadImageNet, predicting three output classes. To enhance generalizability, data augmentation techniques - including horizontal flipping, random brightness and contrast adjustments, and resizing to 224&#x2009;&#xd7;&#x2009;224 pixels - were applied for 100 epochs. Model performance was evaluated on the test set using metrics such as accuracy, precision, recall, F1-score, Cohen's Kappa, Matthews Correlation Coefficient, and area under the curve receiver operating characteristic (AUROC). Approximate 95% confidence intervals were calculated for key test-set metrics. Smooth Grad-CAM&#x2009;+&#x2009;+&#x2009;was employed to generate class activation maps for visual interpretability. **RESULTS:** The fine-tuned RadImageNet model achieved an overall accuracy of 76.2% (95% CI, 69.2%-82.1%) and AUROC scores of 0.853 (95% CI, 0.767-0.939) for no scoliosis, 0.766 (95% CI, 0.693-0.839) for mild scoliosis, and 0.843 (95% CI, 0.723-0.962) for severe scoliosis, indicating acceptable but variable class discrimination. The model demonstrated its highest performance for mild scoliosis with a precision of 0.79 (95% CI, 0.72-0.85), recall of 0.90 (95% CI, 0.84-0.95), and an F1 score of 0.85 (95% CI, 0.79-0.89). Misclassifications predominantly occurred between adjacent severity levels. Additionally, class activation maps confirmed that the thoracic and lumbar regions were key contributors to the model's predictions. **CONCLUSIONS:** Fine-tuning a pretrained medical image CNN, specifically a RadImageNet-based ResNet-50 model, for scoliosis grading may support adjunctive scoliosis severity categorization; however, it does not directly measure Cobb angle, progression, sagittal balance, or surgical-planning parameters and requires external validation before clinical screening use.
+
+## Información del artículo
+
+- **Revista:** European spine journal : official publication of the European Spine Society, the European Spinal Deformity Society, and the European Section of the Cervical Spine Research Society
+- **Fecha de publicación:** 2026-07-09
+- **Autores:** Jennifer Yu, Yash Lahoti, Hamza Ahmed, Mark Kurapatti, Jamie Frost
+- **DOI:** [10.1007/s00586-026-10181-2](https://doi.org/10.1007/s00586-026-10181-2)
+- **PubMed ID:** [42423737](https://pubmed.ncbi.nlm.nih.gov/42423737/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42423737/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
