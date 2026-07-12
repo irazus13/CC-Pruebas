@@ -1,0 +1,25 @@
+---
+title: "LMOD+: A Comprehensive Multimodal Dataset and Benchmark for Developing and Evaluating Multimodal Large Language Models in Ophthalmology."
+description: "The rising prevalence of vision-threatening eye diseases poses a major global health and economic burden, yet timely diagnosis remains limited by workforce shortages, diagnostic delays, and restricted access to specialized care. Artificial intelligen..."
+date: "2026-07-01"
+category: "ia-medicina"
+pubmedId: "42434330"
+author: "Zhenyue Qin, Yang Liu, Y U Yin et al."
+tags: ["Multimodal large language models", "benchmark dataset", "healthcare computing", "medical AI", "ophthalmology"]
+---
+
+## Resumen
+
+The rising prevalence of vision-threatening eye diseases poses a major global health and economic burden, yet timely diagnosis remains limited by workforce shortages, diagnostic delays, and restricted access to specialized care. Artificial intelligence (AI) offers potential solutions. In particular, recent progress in foundation models and large language models-especially multimodal large language models (MLLMs)-has shown promise in medical image interpretation and automated clinical documentation. However, advancing MLLMs for ophthalmology is hindered by the lack of unified, comprehensive benchmark datasets for development and evaluation. Most existing benchmarks were designed for earlier models, which focused on narrow tasks or specific disease conditions. These benchmarks typically provide outputs in the form of disease labels rather than free-text responses. As a result, they are less suitable for assessing emerging generative models. In this work, we present LMOD+, a large-scale multimodal ophthalmology benchmark dataset comprising 32,633 instances with multi-granular annotations across 12 common ophthalmic conditions and 5 imaging modalities. The dataset integrates imaging, anatomical structures, demographics, and free-text annotations. It supports primary ophthalmic applications such as anatomical structure recognition, disease screening, disease staging, and demographic prediction for potential performance bias evaluation. Alongside the dataset, we introduce a systematic and unified data curation pipeline that repurposes existing or new datasets for MLLM development. LMOD+ extends our preliminary LMOD benchmark-the first multimodal ophthalmology benchmark for MLLMs-with three major enhancements. First, we expanded the dataset by nearly 50% (from 21,933 to 32,633 instances). The color fundus photography (CFP) modality, the most accessible imaging modality in ophthalmology, was significantly enlarged to cover a broader range of pathological conditions. Second, we broadened task coverage to include (a) 12 binary disease diagnosis tasks for prevalent conditions such as diabetic retinopathy, age-related macular degeneration, and retinal vein occlusion; (b) multi-class ophthalmic disease diagnosis; (c) disease severity classification, including a diabetic retinopathy staging task, which uses two internationally adopted grading standards: the international clinical diabetic retinopathy classification and the Scottish diabetic retinopathy grading scheme classification; and (d) demographic prediction (age and sex) to assess potential model bias. Third, we systematically evaluated 24 state-of-the-art MLLMs, including recent models from the InternVL, Qwen, and DeepSeek families. Our evaluations highlight both the promise and limitations of current MLLMs in ophthalmology. For example, Qwen-7B and InternVL achieved accuracies of 58.26% and 57.83% in disease screening under a zero-shot setting with a single model-a considerably more challenging paradigm than traditional fine-tuning, where separate models are trained for each specific task. InternVL also demonstrated potential in anatomical recognition. Nonetheless, overall performance remained suboptimal and often close to random baselines for challenging tasks such as disease staging, underscoring the substantial gap between general-domain MLLMs and the specialized requirements of ophthalmology. We publicly release the dataset, curation pipeline, and leaderboard to encourage community-wide development and evaluation of MLLMs, with the goal of advancing ophthalmic applications and ultimately reducing the global burden of vision-threatening diseases through AI. The dataset website, benchmark leaderboard, and download link are available at https://kfzyqin.github.io/lmod_plus.
+
+## Información del artículo
+
+- **Revista:** ACM transactions on computing for healthcare
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Zhenyue Qin, Yang Liu, Y U Yin, Jinyu Ding, Haoran Zhang
+- **DOI:** [10.1145/3801746](https://doi.org/10.1145/3801746)
+- **PubMed ID:** [42434330](https://pubmed.ncbi.nlm.nih.gov/42434330/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42434330/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
