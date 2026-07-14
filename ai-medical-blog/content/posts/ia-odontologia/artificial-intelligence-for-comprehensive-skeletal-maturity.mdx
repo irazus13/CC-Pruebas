@@ -1,0 +1,25 @@
+---
+title: "Artificial intelligence for comprehensive skeletal maturity assessment: a unified CBCT-based deep learning framework."
+description: "Skeletal maturity assessment is crucial, and the cervical vertebral maturity (CVM), spheno-occipital synchondrosis (SOS), and mid-palatal suture (MPS) are biological markers found in CBCT scans. However, manual staging is inherently subjective, and e..."
+date: "2026-07-13"
+category: "ia-odontologia"
+pubmedId: "42443242"
+author: "Amanda Nikho, Lauren Mills, Omid Halimi Milani et al."
+tags: ["Cone beam computed tomography", "Deep learning", "Knowledge distillation", "Mid-palatal suture (MPS)", "Segmentation"]
+---
+
+## Resumen
+
+Skeletal maturity assessment is crucial, and the cervical vertebral maturity (CVM), spheno-occipital synchondrosis (SOS), and mid-palatal suture (MPS) are biological markers found in CBCT scans. However, manual staging is inherently subjective, and existing automated methods are site-specific, providing only partial evaluations and failing when regions are missing. Instead, a unified approach would permit assessment of patients comprehensively and across a wide range of acquisition conditions. This study integrates CVM, SOS, and MPS assessment within a unified deep learning frame-work for skeletal maturity evaluation. The dataset initially included 1200 CBCT scans. After excluding ambiguous or diagnostically unclear ROIs, the final dataset consisted of 364 CVM, 723 SOS, and 618 MPS slices. Maturation stages were assigned by two orthodontists and subsequently reviewed by a maxillofacial radiologist. Two framework configurations were developed: (i) a single-phase classifier that directly predicted maturation stages without explicit ROI identification, and (ii) a hierarchical two-phase classifier that first identified the ROI type and then routed the image to an ROI-specific expert staging model. The i configuration (single-phase), achieved an accuracy rate of 64.17% with pre-trained architecture ResNet34. Meanwhile, the ii configuration (two-phase), which applied three ROI-specific expert models, achieved an accuracy rate of 77.94%. Additionally, when the confidence-aware routing was incorporated into the ii configuration, accuracy improved further to 78.13%. This work is the first unified approach for automated skeletal maturity assessment across three biological markers (CVM, SOS, and MPS). Between the 2 configurations, the ii design had in-creased performance with distinct ROI-type identification. Moreover, this proposed approach provides a comprehensive skeletal overview, unlike existing systems that stage in isolation. Finally, while automation is valuable, this tool is not intended to be used in lieu of human expertise but rather as an adjunct.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-07-13
+- **Autores:** Amanda Nikho, Lauren Mills, Omid Halimi Milani, Marouane Tliba, Veerasathpurush Allareddy
+- **DOI:** [10.1038/s41598-026-57709-6](https://doi.org/10.1038/s41598-026-57709-6)
+- **PubMed ID:** [42443242](https://pubmed.ncbi.nlm.nih.gov/42443242/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42443242/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

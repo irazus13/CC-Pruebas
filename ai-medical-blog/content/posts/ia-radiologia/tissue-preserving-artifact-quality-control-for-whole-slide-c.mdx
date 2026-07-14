@@ -1,0 +1,25 @@
+---
+title: "Tissue-Preserving Artifact Quality Control for Whole-Slide Computational Pathology."
+description: "Reliable whole-slide imaging (WSI) analysis depends on diagnostic models, but it also depends on image-quality control that can be assessed before those models are applied. High-sensitivity artifact masks may remove relevant tissue, especially in den..."
+date: "2026-07-13"
+category: "ia-radiologia"
+pubmedId: "42443653"
+author: "Lin Wei, Yue Lu, Yucheng Shi et al."
+tags: ["Artifact detection", "Digital pathology", "Imaging informatics", "Quality control", "Tissue preservation"]
+---
+
+## Resumen
+
+Reliable whole-slide imaging (WSI) analysis depends on diagnostic models, but it also depends on image-quality control that can be assessed before those models are applied. High-sensitivity artifact masks may remove relevant tissue, especially in densely nucleated regions where benign histology resembles dust, folds, or preparation debris. GuardQC is a conservative preprocessing pipeline for artifact control and tissue preservation in computational pathology. The method uses a coarse-to-fine strategy: a high-recall proposal network identifies suspicious regions, and a dual-stream ResNet-18 verification model combines 64 &#xd7; 64 local texture with 512 &#xd7; 512 tissue context after dynamic multi-resolution alignment to 1.5&#xa0; &#x3bc; m/pixel. Iterative hard negative mining is used to improve specificity under noisy quality-control labels. Localized Otsu re-segmentation then contracts confirmed artifact regions, and deterministic PDE-based inpainting neutralizes artifacts without synthesizing new tissue content. On an expert-curated subset, GuardQC achieved 98.99% accuracy and 100% specificity (0/101 false positives; 95% CI, 96.4%-100.0%). In the evaluated scanner-stratified WSI cohort, the masked tissue percentage was 0.32%, compared with 0.94% for a deep learning baseline. Feature ablations showed recovery of representation consistency by more than 87% for CNN and contrastive models and by 64.10% for a self-supervised foundation model. These results support GuardQC as a quality-control layer for evaluated WSI preprocessing settings that require artifact control, scanner-aware analysis, tissue preservation, and inspectable processing.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-07-13
+- **Autores:** Lin Wei, Yue Lu, Yucheng Shi, Yameng Zhang, Yufei Gao
+- **DOI:** [10.1007/s10278-026-02116-6](https://doi.org/10.1007/s10278-026-02116-6)
+- **PubMed ID:** [42443653](https://pubmed.ncbi.nlm.nih.gov/42443653/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42443653/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

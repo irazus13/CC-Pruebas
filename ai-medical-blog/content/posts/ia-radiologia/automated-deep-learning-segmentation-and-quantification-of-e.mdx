@@ -1,0 +1,25 @@
+---
+title: "Automated Deep Learning Segmentation and Quantification of Epicardial Adipose Tissue from Coronary Computed Tomography Angiography: Validation and Clinical Implications."
+description: "Epicardial adipose tissue (EAT) sits directly on the heart and, in excess, has been linked to coronary artery disease and adverse cardiac events. Measuring its volume on cardiac CT could help with risk assessment, but doing it by hand is slow, demand..."
+date: "2026-07-13"
+category: "ia-radiologia"
+pubmedId: "42443652"
+author: "Sepehr Nayebirad, Shayan Forghani, Soroush Nematollahi et al."
+tags: ["Coronary computed tomography angiography (CCTA)", "Deep learning", "Epicardial adipose tissue", "Residual U-Net", "Segmentation"]
+---
+
+## Resumen
+
+Epicardial adipose tissue (EAT) sits directly on the heart and, in excess, has been linked to coronary artery disease and adverse cardiac events. Measuring its volume on cardiac CT could help with risk assessment, but doing it by hand is slow, demands expertise, and varies from one reader to the next. We set out to build a deep learning model that automatically segments EAT from coronary CT angiography (CCTA), estimates epicardial fat volume (EFV), and assesses whether that volume predicts major adverse cardiovascular events (MACE). This study analyzed 286 coronary computed tomography angiography (CCTA) images of patients aged 40 to 90. Sixty images were used for model training, while the validation and test sets each included 20 subjects. A 3D Residual U-Net model was utilized for segmentation. The model was trained using PyTorch and MONAI, and optimized with a Dice loss. Performance was assessed using the Dice similarity coefficient and Lin's concordance correlation coefficient (CCC), while the Spearman correlation and Bland-Altman plots were employed to evaluate the agreement with manual measurements. We then evaluated the association of model-derived EFV and a combinatorial radiomic phenotype with MACE over 2&#xa0;years of follow-up, using multivariable Cox proportional hazards regression. On unseen test scans, the model accurately segmented EAT, achieving a Dice score of 0.85. Automated and manual EFV agreed closely (Spearman r&#x2009;=&#x2009;0.932, p&#x2009;&lt;&#x2009;0.0001; CCC&#x2009;=&#x2009;0.943, 95% CI 0.864-0.977). To rule out volume compensation errors, an overlapping volume CCC was calculated and remained robust at 0.819.&#xa0;There was only a small bias on the Bland-Altman analysis. After accounting for established cardiovascular risk factors, isolated EFV was not significantly associated with MACE; however, a high-risk radiomic phenotype, characterized by concurrent low volume and high spatial heterogeneity, emerged as a strong, independent predictor of MACE (adjusted HR 1.82, 95% CI 1.04-3.17, p&#x2009;=&#x2009;0.035). A 3D Residual U-Net can segment epicardial fat from CCTA quickly and accurately, producing volumes that closely match expert manual measurements and cutting analysis time from minutes to seconds. While epicardial fat volume alone did not predict adverse cardiac events, a radiomic phenotype representing a small, highly heterogeneous fat depot independently predicted MACE, highlighting the prognostic importance of EAT composition over sheer volume.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-07-13
+- **Autores:** Sepehr Nayebirad, Shayan Forghani, Soroush Nematollahi, Fatemeh Mahdavi Sabet, Amir Mohammad Vahdani
+- **DOI:** [10.1007/s10278-026-02106-8](https://doi.org/10.1007/s10278-026-02106-8)
+- **PubMed ID:** [42443652](https://pubmed.ncbi.nlm.nih.gov/42443652/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42443652/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
