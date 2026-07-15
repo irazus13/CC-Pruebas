@@ -1,0 +1,25 @@
+---
+title: "A paradigm of hybrid-supervision for annotation-scarce periapical film analysis."
+description: "Accurate segmentation of anatomical and pathological structures in periapical radiographs is essential for&#xa0;digital dentistry, yet obtaining sufficient manual annotations remains a major challenge. This study aims to develop a hyb..."
+date: "2026-07-14"
+category: "ia-odontologia"
+pubmedId: "42449335"
+author: "Qianli Zhang, Meiyu Hu, Mu Yuan et al."
+tags: ["Artificial intelligence", "Deep learning", "Dental Imaging", "Periapical Films", "Self-Supervised Learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate segmentation of anatomical and pathological structures in periapical radiographs is essential for&#xa0;digital dentistry, yet obtaining sufficient manual annotations remains a major challenge. This study aims to develop a hybrid self-supervised and semi-supervised learning framework to address the data annotation bottleneck in multi-class structure segmentation of dental periapical films. **METHOD:** We propose a two-stage approach combining self-supervised learning with semi-supervised fine-tuning. First, we employ an Intensity-Gradient-Local Contrast based Masked Autoencoder (IGLC-MAE) for self-supervised learning on 74,292 unlabeled periapical films, utilizing structured adaptive masking specifically designed for dental radiography characteristics.&#xa0;The pre-trained model then generates pseudo-labels for 6,259 unlabeled images, which are combined with 229 manual annotations for semi-supervised fine-tuning using Mask2Former. To optimize this process, we systematically evaluated loss weight configurations and introduced an adaptive weighting mechanism, which together improved the quality of pseudo-labels and further enhanced segmentation performance. **RESULTS:** Compared to traditional supervised learning methods, our self-supervised learning approach achieved significant improvements in oral structure segmentation, with a Dice score of 73.17%, surpassing the best supervised learning configuration by 10.52%. Subsequently, the semi-supervised learning strategy with pseudo-labels further enhanced performance, reaching the highest Dice score of 74.12% at an optimal weight ratio of 0.85:0.15 for the manual-to-pseudo-label loss. The adaptive semi-supervised strategy delivered an additional 1.23% improvement in Dice score by effectively suppressing low-confidence pseudo-label noise. **CONCLUSION:** The proposed hybrid self-supervised and semi-supervised framework. effectively addresses the challenge of annotation data scarcity and provides a new technical approach for dental image analysis. Our method achieves superior segmentation performance in periapical films while minimizing dependency on manual annotations, offering a clinically viable solution for medical imaging.
+
+## Información del artículo
+
+- **Revista:** BMC oral health
+- **Fecha de publicación:** 2026-07-14
+- **Autores:** Qianli Zhang, Meiyu Hu, Mu Yuan, Pingyi Jia, Huajie Yu
+- **DOI:** [10.1186/s12903-026-09157-x](https://doi.org/10.1186/s12903-026-09157-x)
+- **PubMed ID:** [42449335](https://pubmed.ncbi.nlm.nih.gov/42449335/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42449335/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
