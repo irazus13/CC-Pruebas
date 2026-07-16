@@ -1,0 +1,25 @@
+---
+title: "ViT-MultiRAGNet: A scalable and reliable retrieval-augmented Vision Transformer framework for memory-guided feature fusion multi-modal mammogram classification."
+description: "Diagnosing breast cancer with mammography continues to be an incidentally challenging process because of the numerous different ways of acquiring the images, the vast difference in appearance between lesions, and the minimal use of hi..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42455867"
+author: "N Thirupathi Rao, Ch V V Ramana, Faten Khalid Karim et al."
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND:** Diagnosing breast cancer with mammography continues to be an incidentally challenging process because of the numerous different ways of acquiring the images, the vast difference in appearance between lesions, and the minimal use of historical information regarding patients being considered when making a diagnosis. In addition, many current deep learning algorithms use static weight values based on the most recent image taken only, often failing to relate a current case to similar historical examples and to incorporate retrieval-based contextual evidence during inference. **INTRODUCTION:** ViT-MultiRAGNet is a retrieval-augmented Vision Transformer framework designed to integrate multi-view 2D mammographic features with memory-bank-based contextual evidence from historically similar cases. The proposed approach enhances diagnostic accuracy by combining global 2D mammographic features, semantic lesion representations, and historical case evidence retrieved from a fold-wise memory bank during inference. **METHODS:** Multi-view 2D mammograms were processed using a Vision Transformer encoder to extract global contextual features, while a retrieval-augmented memory bank was used to identify diagnostically similar historical cases for evidence-guided feature enrichment. A Retrieval-Augmented Generation (RAG) module retrieves the top-k most similar feature embeddings from a fold-wise training memory bank and combines them with the current query representation using multi-head cross-attention. The evaluation of the models included utilizing accuracy, area under the receiver operating curve (AUC-ROC), Dice Coefficient, and F1 score metrics at a 95% bootstrapped confidence interval using five-fold stratified cross-validation, with findings assessed using Wilcoxon signed-rank statistical tests. **RESULTS:** The accuracy of ViT-MultiRAGNet is calculated as a value of 0.978&#x2009;&#xb1;&#x2009;0.009 and AUC-ROC 0.998&#x2009;&#xb1;&#x2009;0.009 (Wilcoxon p&#x2009;&lt;&#x2009;0.01), which is significantly higher than unimodal benchmarks and fusion techniques on the RTM dataset. The calculations for the CBIS-DDSM evaluation were 0.961&#x2009;&#xb1;&#x2009;0.011 for accuracy and 0.989&#x2009;&#xb1;&#x2009;0.010 for AUC-ROC. The calculations for segmentation evaluation were 0.882 (RTM) and 0.795 (CBIS-DDSM), however both have a higher degree of alignment at the edge. The RAG mechanism improved retrieval-guided fusion compared with simple feature concatenation while maintaining efficient inference performance of 0.31 seconds per image. **CONCLUSION:** The combination of ViT-based global 2D mammographic representation, retrieval-augmented fusion, and memory-guided contextual evidence improves diagnostic performance, robustness, and clinical interpretability. This Framework appears to be a good candidate for an Evidence-based Decision Support System which will provide a transparent method of helping clinicians make decisions regarding screening and diagnosis of breast cancer.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** N Thirupathi Rao, Ch V V Ramana, Faten Khalid Karim, Ayman Aljarbouh, Samih M Mostafa
+- **DOI:** [10.1371/journal.pone.0349865](https://doi.org/10.1371/journal.pone.0349865)
+- **PubMed ID:** [42455867](https://pubmed.ncbi.nlm.nih.gov/42455867/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42455867/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
