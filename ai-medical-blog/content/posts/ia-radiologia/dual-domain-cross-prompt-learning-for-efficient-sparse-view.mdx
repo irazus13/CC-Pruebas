@@ -1,0 +1,25 @@
+---
+title: "Dual-Domain Cross-Prompt Learning for Efficient Sparse-View CT."
+description: "Sparse-view computed tomography (CT) effectively reduces radiation exposure, yet it degrades image signal-to-noise ratio (SNR) and compromises the reliability of clinical diagnosis. Deep unrolling networks, which integrate the merits of optimization-..."
+date: "2026-07-16"
+category: "ia-radiologia"
+pubmedId: "42461733"
+author: "Wenchao Du, Qiao Mu, Huanhuan Cui et al."
+tags: []
+---
+
+## Resumen
+
+Sparse-view computed tomography (CT) effectively reduces radiation exposure, yet it degrades image signal-to-noise ratio (SNR) and compromises the reliability of clinical diagnosis. Deep unrolling networks, which integrate the merits of optimization-based and data-driven paradigms, have achieved promising performance for sparse-view CT reconstruction. However, existing learned data consistency (DC) and prompt-based reconstruction methods only capture simplistic image priors and rely on elaborately designed regularizers as well as excessive unrolled iterations, leading to heavy computational overhead and over-smoothed results. In this work, we integrate prompt learning into unrolled gradient descent networks and propose a Dual-domain Cross-Prompt Learning (DCPL) framework to address these limitations. Specifically, we first design an implicit pixel-wise learnable step size to adapt to the spatial gradient heterogeneity of CT images. We then integrate learnable prompts separately into the data-fidelity and regularization terms during unrolled iterations, enabling the model to adaptively capture intrinsic CT anatomical and noise priors. Furthermore, a cross-prompt guiding mechanism is developed to enable inter-domain prompt interaction, which facilitates efficient prompt generation and enhances the convergence stability of the model. Extensive experiments on multiple clinical benchmarks under both in-domain and cross-domain settings demonstrate that our DCPL achieves consistent improvements in artifact suppression and fine structural preservation, even under extremely sparse-view sampling. Notably, our method delivers robust reconstruction quality with significantly fewer parameters, higher inference efficiency, and with only a few unrolled iterations.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-07-16
+- **Autores:** Wenchao Du, Qiao Mu, Huanhuan Cui, Hu Chen, Yi Zhang
+- **DOI:** [10.1109/TMI.2026.3713777](https://doi.org/10.1109/TMI.2026.3713777)
+- **PubMed ID:** [42461733](https://pubmed.ncbi.nlm.nih.gov/42461733/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42461733/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
