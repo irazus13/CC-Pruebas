@@ -1,0 +1,25 @@
+---
+title: "Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study."
+description: "OpenNotes allows patients to access their electronic health record (EHR) notes through online patient portals. However, EHR notes contain abundant medical jargon, which can be difficult for patients to comprehend. One way to improve c..."
+date: "2026-07-17"
+category: "ia-medicina"
+pubmedId: "42467970"
+author: "Won Seok Jang, Sharmin Sultana, Zonghai Yao et al."
+tags: ["EHR", "LLMs", "comprehension", "data augmentation", "electronic health record"]
+---
+
+## Resumen
+
+**BACKGROUND:** OpenNotes allows patients to access their electronic health record (EHR) notes through online patient portals. However, EHR notes contain abundant medical jargon, which can be difficult for patients to comprehend. One way to improve comprehension is by reducing information overload and helping patients focus on the medical terms that matter most to them. **OBJECTIVE:** This study aimed to evaluate both closed-source and open-source large language models (LLMs) for extracting and prioritizing medical jargon from EHR notes relevant to individual patients, leveraging prompting techniques, fine-tuning, and data augmentation. **METHODS:** We evaluated the performance of closed-source and open-source LLMs on a dataset of 90 expert-annotated EHR notes. We tested various combinations of settings, including (1) general and structured prompts, (2) zero-shot and few-shot prompting, (3) fine-tuning, and (4) data augmentation. To enhance the extraction and prioritization capabilities of open-source models in low-resource settings, we applied data augmentation using GPT-4o and integrated a ranking technique to refine the training process. Additionally, to measure the impact of dataset size, we fine-tuned the models by incrementally increasing the size of the augmented dataset from 10 to 9995 and tested their performance. The effectiveness of the models was assessed using 10-fold cross-validation, providing a comprehensive evaluation across various settings. We report the F1-score and mean reciprocal rank for performance evaluation using two different string matching algorithms (relaxed string matching and Jaccard Index). We also conducted an error analysis classifying the erroneous outputs from the models. **RESULTS:** Our results show that open-source models achieved the highest performance, particularly when using fine-tuning with a gold-standard dataset. Under Jaccard Index-based string matching, DeepSeek 8B set the benchmarks with an F1-score of 0.431 (SD 0.046); similarly, BioMistral 7B showed a mean reciprocal rank of 0.577 (SD 0.109). However, under relaxed string matching, open-source models were unable to match the performance of closed-source models, even with data augmentation or fine-tuning. We analyzed our experiment from several perspectives. First, few-shot prompting did not show an advantage over zero-shot prompting in vanilla models. Second, when comparing general and structured prompts, we found that model performance could deviate largely based on prompting styles. Third, fine-tuning with a small gold-standard dataset improved performance. Finally, data augmentation yielded performance comparable to or even surpassing the fine-tuning strategy. However, it also underscored the importance of the quality of the augmented dataset. **CONCLUSIONS:** The evaluation of both closed-source and open-source LLMs highlighted the effectiveness of prompting strategies, fine-tuning, and data augmentation in enhancing model performance in low-resource scenarios.
+
+## Información del artículo
+
+- **Revista:** JMIR AI
+- **Fecha de publicación:** 2026-07-17
+- **Autores:** Won Seok Jang, Sharmin Sultana, Zonghai Yao, Hieu Tran, Zhichao Yang
+- **DOI:** [10.2196/75561](https://doi.org/10.2196/75561)
+- **PubMed ID:** [42467970](https://pubmed.ncbi.nlm.nih.gov/42467970/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42467970/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

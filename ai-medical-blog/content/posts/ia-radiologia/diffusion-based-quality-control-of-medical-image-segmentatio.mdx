@@ -1,0 +1,25 @@
+---
+title: "Diffusion-Based Quality Control of Medical Image Segmentations across Organs."
+description: "Medical image segmentation using deep learning (DL) has enabled the development of automated analysis pipelines for large-scale population studies. However, state-of-the-art DL methods are prone to hallucinations, which can result in anatomically imp..."
+date: "2026-07-17"
+category: "ia-radiologia"
+pubmedId: "42467579"
+author: "Vincenzo Marciano, Hava Chaptoukaev, Virginia Fernandez et al."
+tags: []
+---
+
+## Resumen
+
+Medical image segmentation using deep learning (DL) has enabled the development of automated analysis pipelines for large-scale population studies. However, state-of-the-art DL methods are prone to hallucinations, which can result in anatomically implausible segmentations. With manual correction impractical at scale, automated quality control (QC) techniques have to address the challenge. While promising, existing QC methods are organ-specific, limiting their generalizability and usability beyond their original intended task. To overcome this limitation, we propose no-new Quality Control (nnQC), a robust QC framework based on a diffusion-generative paradigm that self-adapts to any input organ dataset. Central to nnQC is a novel Team of Experts (ToE) architecture, where two specialized experts independently encode 3D spatial awareness, represented by the relative spatial position of an axial slice, and anatomical information derived from visual features from the original image. A weighted conditional module dynamically combines the pair of independent embeddings, or opinions to condition the sampling mechanism within a diffusion process, enabling the generation of a spatially aware pseudo-ground truth for predicting QC scores. Within its framework, nnQC integrates fingerprint adaptation to ensure adaptability across organs, datasets, and imaging modalities. We evaluated nnQC on seven organs using fifteen publicly available datasets. Our results demonstrate that nnQC consistently outperforms state-of-the-art methods across all experiments, including cases where segmentation masks are highly degraded or completely missing, confirming its versatility and effectiveness across different organs.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-07-17
+- **Autores:** Vincenzo Marciano, Hava Chaptoukaev, Virginia Fernandez, M Jorge Cardoso, Michela Antonelli
+- **DOI:** [10.1109/TMI.2026.3714697](https://doi.org/10.1109/TMI.2026.3714697)
+- **PubMed ID:** [42467579](https://pubmed.ncbi.nlm.nih.gov/42467579/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42467579/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
