@@ -1,0 +1,25 @@
+---
+title: "Benchmarking Fast Healthcare Interoperability Resources-Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines."
+description: "Electronic health records offer vast clinical data for health care research, but interoperability challenges often hinder comprehensive analysis. The Health Level Seven Fast Healthcare Interoperability Resources (FHIR) standard addres..."
+date: "2026-07-17"
+category: "ia-medicina"
+pubmedId: "42470189"
+author: "Christian Gulden, Marvin Kampf, Detlef Kraska et al."
+tags: ["FHIR", "Fast Healthcare Interoperability Resources", "benchmark", "big data", "performance"]
+---
+
+## Resumen
+
+**BACKGROUND:** Electronic health records offer vast clinical data for health care research, but interoperability challenges often hinder comprehensive analysis. The Health Level Seven Fast Healthcare Interoperability Resources (FHIR) standard addresses these challenges, although its nested and interconnected resource format can be complex for analytics. Several tools have emerged to facilitate analytical access, either by querying FHIR servers via representational state transfer (REST) APIs or encoding resources in relational formats. However, the performance implications of these methods remain largely unexplored. **OBJECTIVE:** This study aimed to benchmark the performance characteristics of different FHIR-based analytical approaches comparing REST API queries against SQL- and Spark-based big data frameworks operating on FHIR-encoded data. **METHODS:** We benchmarked the FHIR-PYrate library, which interfaces with a FHIR server's REST API, against Pathling, a library built for analytics based on Apache Spark, and Trino, a general-purpose SQL query engine. We defined and implemented multiple queries in each engine using 3 common analytics scenarios-data aggregation, counting, and extraction. Execution times were measured across Synthea-generated datasets of increasing size. **RESULTS:** On the largest dataset, containing 71,285,064 FHIR resources, Trino completed the aggregate query more than 12,000 times faster, and Pathling did so approximately 500 times faster than FHIR-PYrate. On average across all queries, Trino outperformed FHIR-PYrate, executing extraction queries 33 times faster and count queries 1.8 times faster. Pathling achieved a 2.6-time speedup for extraction queries, but FHIR-PYrate was approximately 13 times faster for count queries. **CONCLUSIONS:** While the REST-based FHIR search API is useful for standard queries and retrieving specific patient records and can outperform alternatives for some count queries, it generally lacks the performance and expressiveness needed for complex analytics. In contrast, alternative engines such as Trino and Pathling demonstrated substantial performance advantages for these scenarios.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-07-17
+- **Autores:** Christian Gulden, Marvin Kampf, Detlef Kraska, John Grimes, Thomas Ganslandt
+- **DOI:** [10.2196/82924](https://doi.org/10.2196/82924)
+- **PubMed ID:** [42470189](https://pubmed.ncbi.nlm.nih.gov/42470189/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42470189/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
