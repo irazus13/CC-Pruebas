@@ -1,0 +1,25 @@
+---
+title: "Comparative evaluation of CNN architectures for detection of dental pulp calcifications on CBCT slices."
+description: "BackgroundDental pulp calcifications (DPCs) can complicate endodontic procedures by obstructing root canals and increasing the risk of procedural errors. This preliminary comparative study evaluated fifteen pretrained convolutional neural network arc..."
+date: "2026-01-01"
+category: "ia-odontologia"
+pubmedId: "42473981"
+author: "Arham M Alkherbash, Basheer H Al-Shameri, Mohammed Alsabri et al."
+tags: ["EfficientNet", "ResNet", "artificial intelligence", "cone-beam computed tomography", "convolutional neural networks"]
+---
+
+## Resumen
+
+BackgroundDental pulp calcifications (DPCs) can complicate endodontic procedures by obstructing root canals and increasing the risk of procedural errors. This preliminary comparative study evaluated fifteen pretrained convolutional neural network architectures for binary detection of DPCs on two-dimensional cone-beam computed tomography slices and examined how the data-partitioning and augmentation workflow influenced apparent model performance.MethodsThe dataset comprised 58 original grayscale CBCT slices, including 30 slices with pulp calcification and 28 without calcification. Two analytical approaches were evaluated. In the primary leakage-controlled approach, the original slices were partitioned before augmentation into 46 training, six validation, and six test slices; augmentation was then restricted to the training subset, producing 278 training image instances. In a secondary exploratory analysis reproducing the original workflow, the 58 slices were augmented to 290 image instances before an 80:10:10 training, validation, and test split. Fifteen pretrained CNN architectures were fine-tuned using transfer learning for up to 40 epochs with early stopping. Performance was assessed using accuracy, precision, recall, F1-score, confusion matrices, and empirical ROC-AUC. Exact binomial 95% confidence intervals were calculated for accuracy in the primary approach, and Grad-CAM was used for qualitative interpretation of EfficientNet-B3 predictions.ResultsIn the primary leakage-controlled analysis, test accuracy ranged from 50.00% to 100.00%, and F1-scores ranged from 0.0000 to 1.0000. DenseNet169, ConvNeXt-Tiny, ResNet18, and CoAtNet-0 correctly classified all six test slices; however, the exact 95% confidence interval for an observed accuracy of 100% was 54.1%-100.0%, reflecting substantial uncertainty. Empirical AUC values ranged from 0.444 to 1.000 and were interpreted descriptively. In the secondary exploratory workflow, EfficientNet-B3, EfficientNet-B5, and EfficientNetV2-S achieved test accuracies of 93.10% and F1-scores of 0.9333-0.9375. Because augmentation preceded partitioning in this workflow, these estimates may be optimistic. Model rankings differed substantially between the two approaches.ConclusionThe apparent performance and ranking of CNN architectures were sensitive to the data-partitioning and augmentation strategy. Although several architectures showed promising classification performance, the small number of original slices and the very limited independent test set preclude definitive claims of model superiority or clinical applicability. These preliminary findings require confirmation using larger patient- or scan-level datasets, volumetric analysis, repeated validation, and independent external testing.
+
+## Información del artículo
+
+- **Revista:** Science progress
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Arham M Alkherbash, Basheer H Al-Shameri, Mohammed Alsabri, Ayman Alsabry, Raghda Alnozaily
+- **DOI:** [10.1177/00368504261471047](https://doi.org/10.1177/00368504261471047)
+- **PubMed ID:** [42473981](https://pubmed.ncbi.nlm.nih.gov/42473981/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42473981/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
