@@ -1,0 +1,25 @@
+---
+title: "Explainable AI for chest radiographs: sex-stratified fairness auditing in CNN-based pneumonia detection."
+description: "Artificial intelligence (AI) systems for chest X-ray (CXR) interpretation can achieve high standalone diagnostic accuracy, yet limited transparency raises concerns about subgroup disparities. We audited sex-stratified performance and attention patter..."
+date: "2026-07-20"
+category: "ia-radiologia"
+pubmedId: "42477414"
+author: "Matteo Haupt, Elena Jolkver, Anne Schwerk"
+tags: ["Algorithmic fairness", "Artificial intelligence", "Chest radiography", "Deep learning", "Explainability (XAI)"]
+---
+
+## Resumen
+
+Artificial intelligence (AI) systems for chest X-ray (CXR) interpretation can achieve high standalone diagnostic accuracy, yet limited transparency raises concerns about subgroup disparities. We audited sex-stratified performance and attention patterns in CNN-based pneumonia detection using the RSNA Pneumonia Detection Challenge dataset (26,684 frontal adult CXRs). ImageNet-pretrained InceptionV3 models were trained across five prespecified random seeds and combined as a seed-ensemble. Analyses used a prespecified, fixed, patient-level sex- and label-balanced test set (n&#x2009;=&#x2009;1,000; 250 pneumonia-positive and 250 pneumonia-negative per sex) and a single validation-derived operating point held constant across sex. Baseline performance was robust (AUROC 0.859 [0.836, 0.881], Brier 0.155 [0.141, 0.169]). Males showed higher discrimination than females (AUROC 0.882 vs 0.837, gap&#x2009;+&#x2009;0.045 [+&#x2009;0.002,&#x2009;+&#x2009;0.091]) and a lower false-positive rate (FPR gap&#x2009;-&#x2009;0.073 [-&#x2009;0.145,&#x2009;-&#x2009;0.006]). To contextualize disparities, we quantified Grad-CAM attention relative to lung segmentation masks; in-lung activation was lower in females (60.8% vs 64.7%, M&#x2009;-&#x2009;F&#x2009;+&#x2009;3.9&#xa0;pp [+&#x2009;1.6,&#x2009;+&#x2009;6.4]). A combined mitigation (group-balanced sampling&#x2009;+&#x2009;adversarial debiasing) preserved performance (AUROC 0.864 [0.843, 0.885]) while reducing AUROC/specificity gaps and attenuating the false-positive disparity. Quantitative explainability can complement fairness auditing and mitigation in medical imaging.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-07-20
+- **Autores:** Matteo Haupt, Elena Jolkver, Anne Schwerk
+- **DOI:** [10.1038/s41598-026-62761-3](https://doi.org/10.1038/s41598-026-62761-3)
+- **PubMed ID:** [42477414](https://pubmed.ncbi.nlm.nih.gov/42477414/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42477414/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
