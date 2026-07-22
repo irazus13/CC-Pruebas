@@ -1,0 +1,25 @@
+---
+title: "A Locally Executable AI System for Improving Preoperative Patient Communication: Multidomain Clinical Evaluation."
+description: "Patients undergoing invasive procedures frequently experience anxiety and often have unanswered questions regarding the procedure. Although large language models show considerable promise for supporting patient communication in many c..."
+date: "2026-07-21"
+category: "ia-odontologia"
+pubmedId: "42478927"
+author: "Motoki Sato, Sou Nagata, Mizuho Ohnuma et al."
+tags: ["AI", "artificial intelligence", "doctor-patient communication", "energy metabolism", "implementation science"]
+---
+
+## Resumen
+
+**BACKGROUND:** Patients undergoing invasive procedures frequently experience anxiety and often have unanswered questions regarding the procedure. Although large language models show considerable promise for supporting patient communication in many cases, their deployment in health care is limited by the risk of hallucinations, data-privacy constraints, and high energy costs-factors that impede equitable access in resource-limited settings. **OBJECTIVE:** This study aims to develop and evaluate LENOHA (Low Energy, No Hallucination, Leave No One Behind Architecture), a locally executable dialog system for safe, equitable, and sustainable preprocedural communication. **METHODS:** We built expert-curated FAQ (frequently asked question) databases and independent test sets for 2 domains (tooth extraction and gastroscopy; 200 utterances per domain: 100 clinical questions and 100 casual). A sentence-transformer classifier routed inputs: clinical questions were answered verbatim from the vetted FAQs (nongenerative path), while casual conversation was handled by a locally hosted 8-billion-parameter small language model (Swallow-8B). We evaluated 4 sentence-transformer models (including E5-large-instruct) against cloud large language models (ChatGPT [GPT-4o] and Gemini Advanced) using accuracy, F1-score, and area under the receiver operating characteristic curve, and measured the on-device inference energy on a consumer graphics processing unit (RTX 3080). **RESULTS:** Across both domains (N=400), E5-large-instruct achieved an accuracy of 98.3% (393/400; 95% CI 96.4%-99.1%) and an area under the curve of 0.996, with only 7 out of 400 (1.8%) misclassifications. This performance was not statistically different from that of ChatGPT (GPT-4o), which had 6 out of 400 (1.5%) errors (McNemar test with Holm adjustment; P&gt;.99). Sustainability measurements showed approximately 2.23 mWh per request (latency&#x2248;0.10 s; video RAM&#x2248;2.2 GiB average, &#x2248;2.5 GiB peak) for the nongenerative clinical path vs approximately 168.27 mWh (latency&#x2248;8.51 s; video RAM&#x2248;13.3 GiB average, &#x2248;14.0 GiB peak) for small language model small talk-approximately a 75-fold higher energy footprint per reply for the generative path. **CONCLUSIONS:** High-precision, nongenerative clinical support is feasible using local, low-cost hardware without cloud dependence. By decoupling clinical information retrieval from generative chitchat, LENOHA enhances safety, preserves privacy, and markedly reduces energy use, offering a practical blueprint for sustainable and equitable medical AI deployment across diverse care settings.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-07-21
+- **Autores:** Motoki Sato, Sou Nagata, Mizuho Ohnuma, Hidekazu Takahashi, Tomoaki Kakazu
+- **DOI:** [10.2196/89173](https://doi.org/10.2196/89173)
+- **PubMed ID:** [42478927](https://pubmed.ncbi.nlm.nih.gov/42478927/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42478927/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
