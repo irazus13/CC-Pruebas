@@ -1,0 +1,25 @@
+---
+title: "Deep learning model for predicting fracture redisplacement in conservatively treated distal radius fractures using radiographs: a retrospective cohort study."
+description: "Accurate assessment of redisplacement risk in distal radius fractures during initial treatment is crucial for selecting the optimal management plan. Traditional clinical decision rules have limited predictive performance. Deep learning models have de..."
+date: "2026-07-20"
+category: "ia-radiologia"
+pubmedId: "42477062"
+author: "Pornpanit Dissaneewate, Phatklao Thanavirun, Yanin Tangjaroenpaisan et al."
+tags: ["Clinical decision-making", "Deep learning", "Machine learning", "Wrist fractures"]
+---
+
+## Resumen
+
+Accurate assessment of redisplacement risk in distal radius fractures during initial treatment is crucial for selecting the optimal management plan. Traditional clinical decision rules have limited predictive performance. Deep learning models have demonstrated promise for fracture detection/classification tasks, indicating potential applicability in prognostic prediction. Herein, we developed and validated a deep learning model to predict fracture redisplacement risk at follow-up radiographs obtained four weeks or more after conservative treatment of distal radius fractures, using initial and post-reduction radiographs. This retrospective study enrolled 966 distal radius fractures in adult patients conservatively managed at a super-tertiary university hospital between December 2003 and December 2022. The dataset was chronologically divided into training (earliest 80%, 772 fractures) and validation (latest 20%, 194 fractures) cohorts. An XGBoost model was first trained using demographic data and radiographic parameters as a tabular baseline model. Its predicted probabilities were calibrated using Platt scaling and subsequently used as soft targets to train deep learning models based on CoAtNet or EfficientNetV2 backbones. The deep learning models incorporated four radiographic views (initial and post-reduction posteroanterior and lateral) with/without metadata (age and sex). Model performance was evaluated on the temporal validation set using area under the receiver operating characteristic curve (AUROC), calibration curve, and decision curve analysis. Model interpretability was analyzed using SHAP and LayerCAM visualization for the XGBoost and deep learning models, respectively. The tabular baseline XGBoost model achieved an AUROC of 0.853 (95% CI, 0.797-0.903) on the temporal validation set. The best image-based model, CoAtNet without metadata, achieved an AUROC of 0.815 (95% CI, 0.752-0.869) while demonstrating good calibration, providing measurement-free risk estimation directly from initial and post-reduction wrist radiographs. Training with calibrated soft targets from the XGBoost model improved discrimination and calibration compared with binary-target training. Decision curve analysis demonstrated positive net benefit across a broad range of clinically relevant threshold probabilities, supporting the potential utility of the model for risk-based decision-making. LayerCAM visualizations revealed activation over clinically relevant regions, including the distal radioulnar joint area in the posteroanterior view, corresponding to SHAP findings indicating reliance on initial and post-reduction radial shortening. In the lateral view, activation was noted along the volar and dorsal cortices and articular surface, consistent with dorsal tilt identified in SHAP analysis. Deep learning has potential for prognostic prediction of fracture redisplacement of distal radius fractures using routine wrist radiographs. Although the tabular baseline XGBoost model achieved the highest discrimination, the proposed image-based deep learning model provides interpretable, well-calibrated, measurement-free risk predictions directly from radiographs. By reducing reliance on user-dependent radiographic measurements and expert-defined features, this approach may support more objective and reproducible risk stratification, particularly in busy or resource-limited clinical settings where specialist assessment may not be immediately available.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-07-20
+- **Autores:** Pornpanit Dissaneewate, Phatklao Thanavirun, Yanin Tangjaroenpaisan, Wich Orapiriyakul, Chulin Chewakidakarn
+- **DOI:** [10.1038/s41598-026-63335-z](https://doi.org/10.1038/s41598-026-63335-z)
+- **PubMed ID:** [42477062](https://pubmed.ncbi.nlm.nih.gov/42477062/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42477062/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
