@@ -1,0 +1,25 @@
+---
+title: "Predicting ventricular arrhythmia in myocardial ischemia using deep learning."
+description: "Myocardial ischemia can trigger ventricular arrhythmias with life-threatening consequences. Current monitoring is largely reactive, limiting opportunities for preventive intervention. This study aimed to determine wheth..."
+date: "2026-07-01"
+category: "ia-radiologia"
+pubmedId: "42488144"
+author: "Anna Busatto, Jake A Bergquist, Tolga Tasdizen et al."
+tags: ["Arrhythmia prediction", "Epicardial electrograms", "LSTM", "Myocardial ischemia", "Time-to-event modeling"]
+---
+
+## Resumen
+
+**BACKGROUND:** Myocardial ischemia can trigger ventricular arrhythmias with life-threatening consequences. Current monitoring is largely reactive, limiting opportunities for preventive intervention. **OBJECTIVE:** This study aimed to determine whether high-resolution epicardial electrograms contain predictive signatures that enable forecasting the timing of premature ventricular contractions (PVCs) during acute ischemia, and to quantify subject-specific data requirements for effective personalization. **METHODS:** We analyzed epicardial sock electrograms (247 electrodes, 1 kHz) from 21 porcine acute ischemia experiments comprising 2252 spontaneous PVCs. Signals were segmented into overlapping sequences of 3, 5, or 7 consecutive non-PVC beats with a continuous target of time-to-next PVC. A 6-layer long short-term memory network (hidden size 128) with temporal attention was trained using mean absolute error (MAE). Performance was evaluated in (A) pooled 80/10/10 cross-validation and (B) leave-1-experiment-out testing with subject-specific fine-tuning using 10% or 15% of held-out data. **RESULTS:** In Paradigm A, MAE decreased with longer context (6.50 seconds for 3 beats, 5.97 seconds for 5 beats, and 4.73 seconds for 7 beats) with excellent calibration (R 2 &gt; 0.996). In Paradigm B, increasing fine-tuning from 10% to 15% reduced mean MAE by 9.6-14.6 seconds and flattened error growth with prediction horizon, improving the fraction of predictions within 30-60 seconds windows. **CONCLUSION:** Epicardial electrograms support accurate PVC time-to-event forecasting during acute ischemia, and modest subject-specific adaptation substantially improves generalization, motivating development of real-time predictive monitoring tools.
+
+## Información del artículo
+
+- **Revista:** Heart rhythm O2
+- **Fecha de publicación:** 2026-07-01
+- **Autores:** Anna Busatto, Jake A Bergquist, Tolga Tasdizen, Benjamin A Steinberg, Ravi Ranjan
+- **DOI:** [10.1016/j.hroo.2026.02.009](https://doi.org/10.1016/j.hroo.2026.02.009)
+- **PubMed ID:** [42488144](https://pubmed.ncbi.nlm.nih.gov/42488144/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42488144/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
