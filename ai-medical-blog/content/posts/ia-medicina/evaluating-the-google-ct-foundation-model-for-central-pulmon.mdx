@@ -1,0 +1,25 @@
+---
+title: "Evaluating the Google CT Foundation model for central pulmonary embolism detection on computed tomography pulmonary angiograms."
+description: "Early detection of pulmonary embolism (PE) is critical for clinical outcomes, yet existing deep-learning models often fail to generalize across institutions. The recently released Google CT Foundation model, pre-trained on a large, diverse CT corpus,..."
+date: "2026-07-20"
+category: "ia-medicina"
+pubmedId: "42492117"
+author: "Sara Hosseinirad, Mobina Mobaraki, Dhanav Handa et al."
+tags: ["Artificial intelligence in medical imaging", "Foundation model", "Pulmonary embolism detection"]
+---
+
+## Resumen
+
+Early detection of pulmonary embolism (PE) is critical for clinical outcomes, yet existing deep-learning models often fail to generalize across institutions. The recently released Google CT Foundation model, pre-trained on a large, diverse CT corpus, produces compact volumetric embeddings that may transfer to downstream tasks without fine-tuning. We evaluate a classification pipeline that pairs these frozen embeddings with three lightweight heads - Multi-Layer Perceptron (MLP), Random Forest (RF), and a stacking ensemble - for central PE detection, training on the public RSNA CTPA dataset and externally validating on the Stanford INSPECT cohort. The pipeline first reproduces the published data-size scaling behavior of the foundation model on other medical pathologies. The highest point-estimate test AUC of 0.79 was obtained by the RF trained on a balanced training set of 408 CT studies and evaluated on the held-out RSNA test set of 144 studies; paired DeLong tests showed that this advantage over the MLP and stacking heads was not statistically significant. Direct comparison to specialized state-of-the-art PE pipelines is task-mismatched - those target any-PE rather than central PE - so the result anchors a non-fine-tuned baseline rather than a deficit. In a low-data regime, hard vascular segmentation did not improve performance. On the external INSPECT cohort, AUC dropped by 0.17 and specificity at the transferred operating point collapsed, so simple global threshold recalibration does not restore deployability-frozen generalist embeddings alone do not guarantee cross-institutional reliability.
+
+## Información del artículo
+
+- **Revista:** European journal of radiology
+- **Fecha de publicación:** 2026-07-20
+- **Autores:** Sara Hosseinirad, Mobina Mobaraki, Dhanav Handa, Ryan Arman, Philip Edgcumbe
+- **DOI:** [10.1016/j.ejrad.2026.113092](https://doi.org/10.1016/j.ejrad.2026.113092)
+- **PubMed ID:** [42492117](https://pubmed.ncbi.nlm.nih.gov/42492117/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42492117/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

@@ -1,0 +1,25 @@
+---
+title: "Potential of Image2Image translation in reducing AI bias attributed to differences in CT reconstruction methods: proof-of-concept study on a paired dataset."
+description: "The choice of image reconstruction approach, such as Iterative Model Reconstruction (IMR) and iDose 4 , is critical in computed tomography (CT) as distribution shifts between them can introduce systematic bias in clinical AI models, p..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42490963"
+author: "Feifei Li, Liliana Lourenco Caldeira, Astha Jaiswal et al."
+tags: ["CT reconstruction", "Image2Image translation", "bias", "generative AI", "machine learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** The choice of image reconstruction approach, such as Iterative Model Reconstruction (IMR) and iDose 4 , is critical in computed tomography (CT) as distribution shifts between them can introduce systematic bias in clinical AI models, posing a barrier to efficient, scalable AI deployment in radiology. While Image-to-Image (I2I) translation offers a path toward harmonization, efficient and translation-feasible AI in radiology demands that such approaches be validated not only on image quality metrics but also on downstream clinical task performance. **METHODS:** We compared three harmonization strategies: CycleGAN, Denoising Diffusion Models, and a conventional Gaussian filter, using a paired CT dataset. Performance was evaluated using task-agnostic metrics, including Structural Similarity Index Measure (SSIM), Peak Signal-to-Noise Ratio (PSNR), Frechet Inception Distance (FID), and Sliced Wasserstein Distance (SWD). Crucially, we assessed clinical utility by measuring the downstream impact on multi-organ segmentation using Mean Relative Volume Error (RVE), focusing on consistency across reconstructed modes. **RESULTS:** Our findings reveal a significant discrepancy between visual fidelity and clinical utility. While Diffusion and CycleGAN models achieve competitive feature-level similarity, they introduce catastrophic systematic biases in downstream segmentation, particularly in adipose tissues (Body Composition Analysis, BCA), where volume errors can reach - 100%, indicating a failure to preserve critical anatomical fat structures. In contrast, the computationally efficient Gaussian filter served as the most robust baseline, maintaining minimal RVE and the highest consistency between IMR and iDose 4 modes. **CONCLUSIONS:** The results suggest that in the context of efficient AI for radiology imaging, where efficiency encompasses not only computational cost but also reliability of clinical outputs, task-agnostic image quality metrics are insufficient proxies for downstream clinical performance. High-parameter generative models may introduce structural losses that remain invisible to such metrics yet critically affect clinical utility. The underperformance of generative approaches observed here is likely attributable to 3D slice inconsistencies during volumetric reconstruction and suboptimal model adaptation, rather than to an inherent limitation of I2I methods, which retain significant potential for mitigating reconstruction-related bias in radiology AI. Future work developing harmonization pipelines must therefore prioritize task-specific, clinically grounded validation as the primary benchmark-and carefully consider whether computationally simpler approaches, such as conventional filtering, may already provide comparably stable harmonization for specific use cases, before resorting to high-parameter generative solutions.
+
+## Información del artículo
+
+- **Revista:** Frontiers in radiology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Feifei Li, Liliana Lourenco Caldeira, Astha Jaiswal, Nils Gro&#xdf;e Hokamp, Oya Beyan
+- **DOI:** [10.3389/fradi.2026.1875867](https://doi.org/10.3389/fradi.2026.1875867)
+- **PubMed ID:** [42490963](https://pubmed.ncbi.nlm.nih.gov/42490963/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42490963/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
