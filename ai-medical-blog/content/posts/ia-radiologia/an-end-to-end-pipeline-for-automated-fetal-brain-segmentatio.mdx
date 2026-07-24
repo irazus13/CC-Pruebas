@@ -1,0 +1,25 @@
+---
+title: "An end-to-end pipeline for automated fetal brain segmentation and biometry from 3D SSFP MRI."
+description: "Fetal magnetic resonance imaging (MRI) plays an essential role for the evaluation of fetal abnormalities, offering improved visualization of developing brain structures and superior soft tissue contrast in comparison to other imaging modalities. Accu..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42495270"
+author: "Yasmin Modarai, Adam Lim, Justin Lo et al."
+tags: ["MRI", "SSFP MRI", "deep learning", "fetal", "fetal brain"]
+---
+
+## Resumen
+
+Fetal magnetic resonance imaging (MRI) plays an essential role for the evaluation of fetal abnormalities, offering improved visualization of developing brain structures and superior soft tissue contrast in comparison to other imaging modalities. Accurate and reproducible assessment of fetal brain biometry is critical for diagnosing neurodevelopmental abnormalities. However, these measurements typically rely on manual segmentation, which is time-consuming, labor-intensive, prone to error and dependent on the interpreting radiologist's expertise and experience. Recent advancements have enabled automated analysis primarily on Half-Fourier Acquisition Single-shot Turbo spin-Echo (HASTE) sequences, yet these acquisitions are susceptible to inter-slice misalignment and often require time-consuming super-resolution reconstruction. In contrast, 3D Steady-State Free Precession (SSFP) imaging offers smaller slice thickness, improving through-plane resolution, along with reduced motion sensitivity and whole-body coverage in a single scan. In this study, we present an end-to-end deep learning pipeline for automated segmentation and biometry of the fetal brain from whole-body SSFP MRI. The dataset includes manual annotations of the fetal head, brain parenchyma and extraaxial cerebrospinal fluid (CSF). The framework employs nnU-Net for robust head localization and multi-structure segmentation, along with principal component analysis (PCA)-based reorientation and head circumference estimation. A Tri-Attention U-Net architecture was evaluated as a standalone model and within the nnU-Net framework. The final pipeline consists of a Tri-Attention nnU-Net for head localization and nnU-Net for multi-structure segmentation. The pipeline achieved mean Dice similarity coefficients (DSC) of 94.48, 93.58 and 82.75% for the head, brain parenchyma and extraaxial CSF, respectively. These findings demonstrate the feasibility of accurate, fully automated fetal brain biometry from SSFP MRI with potential to reduce inter-observer variability, streamline clinical workflows and enhance clinical decision-making through fast and reproducible quantitative assessment.
+
+## Información del artículo
+
+- **Revista:** Frontiers in neuroscience
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yasmin Modarai, Adam Lim, Justin Lo, Matthias W Wagner, Elka Miller
+- **DOI:** [10.3389/fnins.2026.1870124](https://doi.org/10.3389/fnins.2026.1870124)
+- **PubMed ID:** [42495270](https://pubmed.ncbi.nlm.nih.gov/42495270/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42495270/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
