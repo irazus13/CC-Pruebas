@@ -1,0 +1,25 @@
+---
+title: "Multimodal deep learning fusion for automatic pain detection in cancer patients."
+description: "Since pain is a multidimensional and subjective experience, pain assessment remains challenging. With advances in artificial intelligence (AI), automatic pain assessment (APA) systems offer a valuable opportunity for objective pain ..."
+date: "2026-01-01"
+category: "ia-odontologia"
+pubmedId: "42496586"
+author: "Marco Cascella, Fabio Mariani, Daniela Barberio et al."
+tags: ["artificial intelligence", "automatic pain assessment", "cancer pain", "deep learning", "pain"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Since pain is a multidimensional and subjective experience, pain assessment remains challenging. With advances in artificial intelligence (AI), automatic pain assessment (APA) systems offer a valuable opportunity for objective pain evaluation. However, most approaches focus on a single modality. In this proof-of-concept study, exploring multimodal fusion strategies in a controlled experimental setting, we present a deep learning framework for multimodal fusion that combines facial, acoustic, and textual information to improve APA in cancer patients. **METHODS:** A multimodal dataset was created from video-recorded interviews with oncologic patients. In Phase I, audio, video, and transcripts were segmented at the sentence level and temporally aligned using the Eudico Linguistic Annotator (ELAN) to ensure frame-level correspondence across modalities. In Phase II, modality-specific features were extracted: Facial Action Units from OpenFace, acoustic descriptors (MFCCs, chroma, spectral contrast, and Mel-spectrogram) from a dedicated speech-processing pipeline, and sentence-level textual embeddings from ITA-BERT. During training, the most effective analytical strategy was chosen through knowledge transfer approaches. The ELAN-assisted annotation pipeline streamlined expert labeling. Two architectures were implemented and compared: bimodal autoencoder fusion models and a transformer-based model with pairwise cross-modal attention. These models were trained and evaluated using subject-independent and stratified 5-fold cross-validation. To address the lack of independence between segments, a strictly subject-independent cross-validation strategy was adopted. **RESULTS:** Knowledge transfer using pretrained large-scale models outperformed traditional feature-based approaches and was applied to multimodal pain detection. Multimodal models achieved performance comparable to the strongest unimodal modality (text), while showing improved balance across modalities, suggesting potential complementary effects. Both multimodal architectures demonstrated high accuracy in distinguishing between pain and non-pain classes. The bimodal autoencoder achieved stable results across folds, with a mean accuracy of about 80&#x202f;% and balanced error distribution. The pairwise transformer with cross-modal attention achieved similar performance, with smooth training and validation loss curves. No evident divergence between training and validation loss curves was observed across folds, suggesting stable behavior within the cross-validation setting. However, subject-level overfitting cannot be excluded given the limited sample&#xa0;size. **CONCLUSION:** Multimodal fusion enhances system robustness by integrating complementary signals. Despite limitations and the need for improvement, multimodal deep learning strategies can support the detection of observable pain-related expressions.
+
+## Información del artículo
+
+- **Revista:** Scandinavian journal of pain
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Marco Cascella, Fabio Mariani, Daniela Barberio, Anna Crispo, Alessandro Ottaiano
+- **DOI:** [10.1515/sjpain-2026-0015](https://doi.org/10.1515/sjpain-2026-0015)
+- **PubMed ID:** [42496586](https://pubmed.ncbi.nlm.nih.gov/42496586/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42496586/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
