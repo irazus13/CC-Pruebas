@@ -1,0 +1,25 @@
+---
+title: "From Raw Hospital Records to an AI-Ready Surveillance Dataset: A FAIR-Compliant Data Pipeline for Healthcare-Associated Infection Research in a Chinese District Hospital."
+description: "The proliferation of hospital surveillance data in China has not been matched by publicly available, machine-readable datasets suitable for artificial intelligence (AI) research. We describe the design, implementation, and validation of a reproducibl..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "42516939"
+author: "Dan Han, Xin Shu, Yang Hu et al."
+tags: []
+---
+
+## Resumen
+
+The proliferation of hospital surveillance data in China has not been matched by publicly available, machine-readable datasets suitable for artificial intelligence (AI) research. We describe the design, implementation, and validation of a reproducible Python pipeline that transforms 39 months of raw, Chinese-language healthcare-associated infection (HAI) surveillance records from a 1,100-bed district general hospital into a de-identified, FAIR-compliant, AI-ready benchmark dataset. The pipeline addresses 5 real-world data-engineering challenges: heterogeneous Excel schemas with month-to-month format drift, mixed Chinese free-text fields requiring domain-specific bilingual translation, composite risk-factor strings requiring decomposition into 19 binary flags, incomplete temporal denominators, and privacy-preserving de-identification with k-anonymity enforcement. The resulting dataset (1,240 HAI episodes, 604 culture-positive, 57 variables, 115-entry codebook) is deposited in Zenodo (DOI: 10.5281/zenodo.20725167) under CC-BY 4.0 with full provenance metadata, representing, to the best of our knowledge, the first publicly available, FAIR-compliant HAI surveillance dataset from a Chinese district-level hospital. Data completeness was high (&gt;95% for 54 of 57 variables), bilingual translation achieved 100% coverage of 156 categorical values with 98.7% semantic-equivalence verification of the complete dictionary, and automated risk-factor decomposition demonstrated sensitivity 0.92 to 1.00 and specificity &gt;0.97 against human expert annotations. The pipeline code is released under the MIT license to enable replication at other Chinese hospitals facing similar data-harmonization challenges. As a proof-of-concept demonstration of dataset utility for downstream AI research, we benchmark 3 machine-learning classifiers on antimicrobial resistance phenotype prediction, achieving area under the receiver operating characteristic curve (AUROC) of 0.74 to 0.82 across the 3 standard classifiers (best: random forest 0.82, 95% CI 0.74 to 0.89), demonstrating that the dataset contains learnable signal using standard off-the-shelf methods despite a modest sample size. The publicly accessible dataset, codebook, and pipeline enable (a) development of AI models for HAI prediction without requiring access to restricted hospital data, (b) benchmarking of new algorithms against a transparent baseline, and (c) replication of the pipeline methodology at other Chinese healthcare institutions.
+
+## Información del artículo
+
+- **Revista:** Computational and structural biotechnology journal
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Dan Han, Xin Shu, Yang Hu, Hao Zou, Chong Wang
+- **DOI:** [10.34133/csbj.0185](https://doi.org/10.34133/csbj.0185)
+- **PubMed ID:** [42516939](https://pubmed.ncbi.nlm.nih.gov/42516939/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42516939/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
