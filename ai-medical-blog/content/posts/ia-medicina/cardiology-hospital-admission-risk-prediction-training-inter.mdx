@@ -1,0 +1,25 @@
+---
+title: "Cardiology hospital admission risk prediction: training, internal validation and technical implementation in the electronic health record."
+description: "Rising healthcare demand is increasingly outpacing available outpatient capacity in cardiology, where follow-up is often scheduled at fixed intervals despite substantial variation in individual patient risk. This uniform follow-up approach ..."
+date: "2026-08-01"
+category: "ia-medicina"
+pubmedId: "42529755"
+author: "Jasper L Selder, Olivier V Witteman, Oscar M van der Meer et al."
+tags: ["Artificial intelligence (AI)", "Cardiology outpatients", "Clinical decision support", "Electronic health record", "Hospital admission risk prediction"]
+---
+
+## Resumen
+
+**AIMS:** Rising healthcare demand is increasingly outpacing available outpatient capacity in cardiology, where follow-up is often scheduled at fixed intervals despite substantial variation in individual patient risk. This uniform follow-up approach contributes to high outpatient workload and inefficient use of clinical resources. Accurate risk estimation using routinely collected electronic health record (EHR) data may support more individualized follow-up planning by identifying patients at very low risk of mortality or unplanned hospitalization, in whom follow-up intervals could be safely extended. **METHODS AND RESULTS:** We developed and validated a machine-learning model as part of the Cardiology Hospital Admission Risk Prediction (CHARP) program. The retrospective baseline cohort comprised 307 792 outpatient visits from 52 989 unique patients at Amsterdam UMC. The primary endpoint was a composite of unplanned cardiac hospitalization or all-cause death within 2 years; the 1-year composite endpoint served as a secondary outcome. Model development and validation were performed in a filtered, leakage-safe prediction cohort using gradient-boosted decision trees (XGBoost) with strict patient-level GroupKFold cross-validation. All predictions and performance metrics were retrospectively evaluated at the outpatient visit (trigger) level. Retrospective model performance was assessed using AUROC, AUPRC, Brier score, calibration curves, and SHAP-based explainability. The final model was technically deployed within the electronic health record to allow automated, visit-level risk estimation in a prospective silent-running environment. In the filtered prediction cohort (199 961 visits), the 2-year composite endpoint prevalence was 16.8%. Across five cross-validation folds, the CHARP model achieved a mean AUROC of 0.77 &#xb1; 0.00 and AUPRC of 0.42 &#xb1; 0.01, with a Brier score of 0.12, indicating strong overall discrimination and good calibration. Key predictors included NT-proBNP, renal function indices, prior hospitalizations, and cardiac function measures. The deployed CHARP pipeline successfully generated daily risk predictions for all scheduled cardiology outpatients in the EHR environment throughout the silent-running period. **CONCLUSION:** This study shows that machine-learning applied to routine EHR data can deliver clinically meaningful, visit-level risk stratification for cardiology outpatients. The successful EHR integration of CHARP enables prospective evaluation of data-driven follow-up strategies aimed at reducing outpatient clinic burden through safe de-intensification of follow-up for low-risk patients.
+
+## Información del artículo
+
+- **Revista:** European heart journal. Digital health
+- **Fecha de publicación:** 2026-08-01
+- **Autores:** Jasper L Selder, Olivier V Witteman, Oscar M van der Meer, Machteld J Boonstra, Stephan van der Zwaard
+- **DOI:** [10.1093/ehjdh/ztag109](https://doi.org/10.1093/ehjdh/ztag109)
+- **PubMed ID:** [42529755](https://pubmed.ncbi.nlm.nih.gov/42529755/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42529755/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
