@@ -1,0 +1,25 @@
+---
+title: "Multi-Round Meta-Learning for Label Purification without Trusted Labels."
+description: "Label noise remains a fundamental challenge in supervised deep learning, particularly as modern neural networks rely on large-scale datasets that frequently suffer from annotation errors due to cost and scalability constraints. While prior approaches..."
+date: "2026-07-30"
+category: "ia-radiologia"
+pubmedId: "42531113"
+author: "Mitsuyoshi Otsu, Jun Zhou, Bo Han et al."
+tags: []
+---
+
+## Resumen
+
+Label noise remains a fundamental challenge in supervised deep learning, particularly as modern neural networks rely on large-scale datasets that frequently suffer from annotation errors due to cost and scalability constraints. While prior approaches address this issue through collaborative training on fully noisy data or meta-learning with access to a small clean subset, the paradigm of clean-label-free label purification remains insufficiently explored, which is particularly critical in expert-annotated domains such as remote sensing and medical imaging, where annotation inconsistencies persist even among trained experts. In this work, we propose a clean-label-free meta-learning framework for label purification. Our approach introduces a multi-round purification strategy that iteratively refines label quality by alternating between base-model training and meta-purification in a decoupled manner, thereby preserving training stability. We further analyze the multi-round purification process under a stochastic contraction perspective and introduce a KL-divergence-based stopping criterion to adaptively select the purification depth. As a result, our framework enables flexible downstream training without reliance on complex noisy-label learning pipelines. Moreover, it captures uncertainty through accumulated label distributions across rounds, improving the reliability of mislabeled instance detection and correction. Extensive experiments on benchmark datasets, including CIFAR and mini Clothing-1M, show that our method consistently outperforms state-of-the-art techniques. Notably, it achieves up to a 62.61% label accuracy improvement on expert-annotated remote sensing datasets (UC Merced and AID), demonstrating its robustness in real-world, noise-prone environments. The source code is available at https://github.com/mitsuyoshiohtsu/MRMP.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on pattern analysis and machine intelligence
+- **Fecha de publicación:** 2026-07-30
+- **Autores:** Mitsuyoshi Otsu, Jun Zhou, Bo Han, Shirui Pan
+- **DOI:** [10.1109/TPAMI.2026.3718926](https://doi.org/10.1109/TPAMI.2026.3718926)
+- **PubMed ID:** [42531113](https://pubmed.ncbi.nlm.nih.gov/42531113/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42531113/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
