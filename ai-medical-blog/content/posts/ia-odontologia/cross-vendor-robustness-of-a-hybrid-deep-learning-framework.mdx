@@ -1,0 +1,25 @@
+---
+title: "Cross-Vendor Robustness of a Hybrid Deep Learning Framework for Four-Stage Periodontitis Classification on Panoramic Radiographs."
+description: "Although deep learning for periodontitis diagnosis on panoramic radiographs has advanced rapidly, most studies use single-vendor data and cross-vendor generalization is rarely evaluated. Therefore, we evaluate the cross-vendor robustn..."
+date: "2026-07-31"
+category: "ia-odontologia"
+pubmedId: "42536424"
+author: "Sang-Jeong Lee, Su Yang, Ji Yong Han et al."
+tags: ["computer-aided diagnosis", "cross-vendor generalisation", "deep learning", "domain shift", "panoramic radiograph"]
+---
+
+## Resumen
+
+**OBJECTIVES:** Although deep learning for periodontitis diagnosis on panoramic radiographs has advanced rapidly, most studies use single-vendor data and cross-vendor generalization is rarely evaluated. Therefore, we evaluate the cross-vendor robustness of a hybrid CNN-CAD framework for automated four-stage periodontitis classification. **METHODS:** Five hundred panoramic radiographs were retrospectively collected from three vendors (Instrumentarium, n=400; Vatech, n=50; PointNix, n=50). The framework extends a previously published hybrid pipeline by adding a YOLO-based CNN for missing-teeth quantification, enabling four-stage classification according to the 2017 World Workshop criteria. Three dataset configurations were evaluated: pooled multi-vendor training and two leave-one-device-out (LODO) splits. We compared segmentation backbones (U-Net, Dense U-Net, SegNet, Mask R-CNN) and YOLO detector variants. Agreement with three oral and maxillofacial radiologists (3, 5 and 10 years of experience) was assessed using mean absolute difference (MAD), Pearson and intraclass correlation, Bland-Altman, and Passing-Bablok analyses. **RESULTS:** Under pooled multi-vendor training, Mask R-CNN achieved Dice coefficients of 0.96, 0.92 and 0.94 for periodontal bone level, cemento-enamel junction level and teeth/implants respectively; CNNv4-tiny reached a mean AP of 0.86 for missing teeth. The MAD between automated and expert staging was 0.31, overall image-level ICC was 0.93 (95% CI 0.86-0.97; p&lt;0.01), and Bland-Altman bias against the most experienced radiologist was 0.007. Under LODO, Dice coefficient dropped to 0.75-0.86 (all p&lt;0.001 versus pooled), quantifying substantial vendor-induced domain shift. **CONCLUSIONS:** The hybrid framework achieves expert-level agreement under pooled multi-vendor training but degrades in held-out vendors, providing a quantitative reference for vendor-induced domain shift in panoramic radiograph AI and motivating vendor-aware training or domain adaptation in future clinical deployments. **ADVANCES IN KNOWLEDGE:** This work provides, to our knowledge, the first cross-vendor benchmark for deep-learning-based periodontitis staging on panoramic radiographs and quantifies vendor-induced domain shift directly addressing the external-validation gap recently identified in this journal.
+
+## Información del artículo
+
+- **Revista:** Dento maxillo facial radiology
+- **Fecha de publicación:** 2026-07-31
+- **Autores:** Sang-Jeong Lee, Su Yang, Ji Yong Han, Kyung-Hoe Huh, Min-Suk Heo
+- **DOI:** [10.1093/dmfr/twag055](https://doi.org/10.1093/dmfr/twag055)
+- **PubMed ID:** [42536424](https://pubmed.ncbi.nlm.nih.gov/42536424/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42536424/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
