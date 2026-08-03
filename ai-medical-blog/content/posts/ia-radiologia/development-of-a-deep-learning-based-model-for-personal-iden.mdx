@@ -1,0 +1,25 @@
+---
+title: "Development of a deep learning-based model for personal identification using postmortem CT and antemortem chest x-rays."
+description: "To facilitate personal identification for mass disaster victims, we aimed to develop and evaluate a deep learning method for matching postmortem computed tomography (PMCT)-derived RaySum images with antemortem chest X-rays (CXRs). **METH..."
+date: "2026-07-30"
+category: "ia-radiologia"
+pubmedId: "42543040"
+author: "Ryusei Inamori, Tomoya Kobayashi, Takaya Kawasumi et al."
+tags: ["Artificial intelligence", "Chest X-ray", "Deep learning", "Disaster medicine", "Forensic imaging"]
+---
+
+## Resumen
+
+**PURPOSE:** To facilitate personal identification for mass disaster victims, we aimed to develop and evaluate a deep learning method for matching postmortem computed tomography (PMCT)-derived RaySum images with antemortem chest X-rays (CXRs). **METHODS:** This retrospective study included PMCT images and antemortem CXRs of 1385 deceased individuals. RaySum images were generated from archived PMCT data after extracting the body trunk segment between the seventh cervical and third lumbar vertebrae. An EfficientNet-B3 model with AdaCos metric learning was pretrained on ChestX-ray14 of NIH and applied without task-specific fine-tuning. Each RaySum image was used as a query to the CXR galleries with three timing categories: the "oldest-date examination", the "nearest-date examination", and "all examinations". The galleries also included 78,999 non-matching CXRs. Performance was evaluated based on our top-k correct identification rates, and the "oldest" and "nearest-date" categories were compared using the exact McNemar test. **RESULTS:** The "all examinations" category achieved identification rates of 83.0% at top-1, 90.6% at top-5, 93.2% at top-10, and 95.2% at top-20. The "nearest-date" examination significantly outperformed the "oldest-date" examination in all evaluated thresholds, including top-1 rates of 78.9% versus 54.2% (p&#x202f;&lt;&#x202f;0.001). The "all examinations" category showed numerically higher performance than the "nearest-date" category, although the "all examinations" included a larger and variable number of true-match images. **CONCLUSION:** PMCT-derived RaySum images are considered to provide high retrieval performance in a one-to-many CXR gallery. This approach may help narrow down candidates from image galleries and prioritize potential matches, assisting the following detail forensic examinations.
+
+## Información del artículo
+
+- **Revista:** Forensic science international
+- **Fecha de publicación:** 2026-07-30
+- **Autores:** Ryusei Inamori, Tomoya Kobayashi, Takaya Kawasumi, Hidekazu Kanayama, Yeji Kim
+- **DOI:** [10.1016/j.forsciint.2026.113087](https://doi.org/10.1016/j.forsciint.2026.113087)
+- **PubMed ID:** [42543040](https://pubmed.ncbi.nlm.nih.gov/42543040/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42543040/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
