@@ -1,0 +1,25 @@
+---
+title: "Deep learning-based estimation of sagittal spinal alignment from coronal radiographs."
+description: "Patient-specific sagittal alignment parameters are essential for accurate biomechanical modeling of the spine. These parameters are typically derived from biplanar radiographs, which, despite low-dose advancements, still involve cum..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42548775"
+author: "Tito Bassani, Riccardo Cecchinato, Marco Brayda-Bruno et al."
+tags: ["artificial intelligence", "deep learning", "radiography", "sagittal alignment", "spine"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Patient-specific sagittal alignment parameters are essential for accurate biomechanical modeling of the spine. These parameters are typically derived from biplanar radiographs, which, despite low-dose advancements, still involve cumulative radiation exposure. Deep learning has shown promise in automating radiographic analysis; however, prior approaches for cross-plane prediction-such as generating sagittal images from coronal views using generative adversarial networks (GANs)-have not achieved clinically acceptable accuracy. This study investigates an alternative strategy based on multiple-output regression (MOR) to directly predict sagittal parameters from coronal radiographs and evaluates its performance against GAN-based approach. **METHODS:** A dataset of 449 adult subjects with EOS biplanar radiographs was used to train (313 subjects, 70% of dataset), validate and test (68 subjects, 15%, each) a MOR model based on convolutional neural networks. Six sagittal parameters (TK, LL, SS, PI, PT, SVA) were predicted from preprocessed coronal images. Model performance was assessed using absolute error metrics, regression analysis, Bland-Altman plots, and Lin's concordance correlation coefficient (CCC). External inference was evaluated on an independent dataset of 69 adolescents with idiopathic scoliosis (AIS), enabling comparison between MOR predictions and parameters derived from GAN-generated sagittal images. **RESULTS:** In the adult test set, median absolute errors ranged from 4&#xb0; to 8&#xb0; for angular parameters and 1.6&#xa0;cm for SVA, with maximum errors up to 40&#xb0; and 8.8&#xa0;cm. CCC values varied from 0.20 (PI) to 0.69 (PT), indicating moderate agreement for some parameters and weak agreement for others. Regression and Bland-Altman analyses revealed both proportional and fixed biases. In the AIS dataset, MOR and GAN-based approaches showed comparable performance (median errors &#x223c;7&#xb0;), although GAN performed better for SVA (1&#xa0;cm vs. 2&#xa0;cm; p-value &lt;0.001). Both methods exhibited reduced accuracy and lower CCC values compared with the adult dataset. **DISCUSSION:** Direct prediction of sagittal alignment parameters from coronal radiographs using MOR yields limited accuracy and is affected by systematic biases. Comparable performance with GAN-based methods suggests that the primary limitation lies in the insufficient sagittal information contained in coronal projections. Current deep learning approaches are therefore inadequate to replace biplanar imaging for reliable sagittal assessment.
+
+## Información del artículo
+
+- **Revista:** Frontiers in bioengineering and biotechnology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Tito Bassani, Riccardo Cecchinato, Marco Brayda-Bruno, Luca Maria Sconfienza
+- **DOI:** [10.3389/fbioe.2026.1843705](https://doi.org/10.3389/fbioe.2026.1843705)
+- **PubMed ID:** [42548775](https://pubmed.ncbi.nlm.nih.gov/42548775/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42548775/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
