@@ -1,0 +1,25 @@
+---
+title: "Predicting Helicobacter pylori Antibiotic Resistance from Routine Hematoxylin and Eosin Histopathology Using a Vision-Language Model-Guided Foundation Model Framework."
+description: "Helicobacter pylori (H. pylori) eradication is increasingly compromised by antibiotic resistance, particularly to clarithromycin (CLA) and fluoroquinolones (FQs). Culture-based and molecular susceptibility testing remain resource-inte..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42553869"
+author: "Siping Xiong, Shuguang Liu, Wei Zhang et al."
+tags: ["Helicobacter pylori", "antibiotic resistance", "computational pathology", "deep learning", "hematoxylin and eosin staining"]
+---
+
+## Resumen
+
+**BACKGROUND:** Helicobacter pylori (H. pylori) eradication is increasingly compromised by antibiotic resistance, particularly to clarithromycin (CLA) and fluoroquinolones (FQs). Culture-based and molecular susceptibility testing remain resource-intensive and inaccessible in many settings. Whether routine hematoxylin and eosin (H&amp;E) histopathology encodes indirect signatures of resistance has not been explored. **MATERIALS AND METHODS:** We developed a weakly supervised deep learning framework to predict phenotypic H. pylori resistance directly from gastric biopsy whole-slide images (WSIs). Patches were filtered using vision-language models (VLMs; Qwen3-VL and MedGemma) performing two zero-shot classification tasks-grading patch image quality and identifying gastric surface or gland-neck epithelium-based solely on visible histo-morphological features. Retained patches were encoded with VIRCHOW2, a histopathology-specific vision foundation model (ViT-H/14, pretrained on 3.1 million WSIs), and aggregated via cross-attention for slide-level prediction. Polymerase chain reaction (PCR)-confirmed resistance phenotypes served as ground truth in a multicenter cohort of 755 patients. **RESULTS:** In the independent test set (n = 151), the framework achieved an area under the receiver operating characteristic curve (AUC) of 0.903 for CLA resistance and 0.959 for FQs resistance. At the default threshold (0.5), sensitivity was 85.2% for CLA and 98.1% for FQs, supporting use as a screening tool. Threshold optimization by the Youden index improved specificity to 95.9% for CLA and 93.9% for FQs, enabling rule-in risk stratification. Decision curve analysis confirmed net clinical benefit across a broad range of threshold probabilities. **CONCLUSION:** Routine H&amp;E-stained gastric biopsies contain probabilistic morphological correlates of H. pylori resistance phenotypes that deep learning can exploit. This approach provides complementary decision support for resistance risk stratification, particularly in resource-limited settings, pending prospective validation.
+
+## Información del artículo
+
+- **Revista:** Infection and drug resistance
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Siping Xiong, Shuguang Liu, Wei Zhang, Degui Liao, Tian Tang
+- **DOI:** [10.2147/IDR.S624553](https://doi.org/10.2147/IDR.S624553)
+- **PubMed ID:** [42553869](https://pubmed.ncbi.nlm.nih.gov/42553869/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42553869/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
