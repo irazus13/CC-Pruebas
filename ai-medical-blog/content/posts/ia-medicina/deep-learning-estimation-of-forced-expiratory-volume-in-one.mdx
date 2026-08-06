@@ -1,0 +1,25 @@
+---
+title: "Deep Learning Estimation of Forced Expiratory Volume in One Second/Forced Vital Capacity and Obstructive Lung Disease Classification From Chest Radiographs With Subgroup Performance Analysis in a North American Cohort: Retrospective Cohort Study."
+description: "Spirometry is the standard physiological test defining airflow obstruction, the key criterion for diagnosing chronic obstructive pulmonary disease. It is underused in high-income settings and often unavailable in low- and middle-incom..."
+date: "2026-08-05"
+category: "ia-medicina"
+pubmedId: "42555927"
+author: "Eptehal Nashnoush, Helen D'Couto, Benjamin Fine et al."
+tags: ["FEV1/FVC ratio", "chest radiography", "deep learning", "forced expiratory volume in one second/forced vital capacity ratio", "obstructive lung disease"]
+---
+
+## Resumen
+
+**BACKGROUND:** Spirometry is the standard physiological test defining airflow obstruction, the key criterion for diagnosing chronic obstructive pulmonary disease. It is underused in high-income settings and often unavailable in low- and middle-income countries, causing underdetection. Deep learning analysis of chest radiographs, which are widely available where spirometry is not, may complement spirometric screening, but its use in North American cohorts and across demographic strata has not been examined. **OBJECTIVE:** This study aimed to train a deep learning model to estimate the forced expiratory volume in 1 second (FEV&#x2081;)/forced vital capacity (FVC) ratio from chest radiographs and classify airflow obstruction (FEV&#x2081;/FVC &lt;0.70), evaluate it on a held-out test set, and audit subgroup performance across age, sex, and surname-inferred ethnicity. **METHODS:** We conducted a retrospective cohort study of 3537 adults who underwent prebronchodilator spirometry and chest radiography within 30 days at a large hospital network in Ontario, Canada, between October 2020 and May 2023. A ConvNeXt-Base architecture pretrained on ImageNet was trained to predict FEV&#x2081;/FVC, with predictions classified using a 0.70 cutoff for binary airflow limitation. At the patient level, the cohort was divided into training (n=2263), validation (n=566), and held-out test (n=708 patients; 3273 examinations) sets. Performance was assessed using regression (mean absolute error [MAE], root mean squared error [RMSE], and Pearson r), classification (sensitivity, specificity, positive and negative predictive value [PPV and NPV], and likelihood ratios [LR+ and LR-]), calibration, and decision curve metrics, with 95% CIs from patient-level cluster bootstrap (1000 resamples). Subgroup analyses used Holm correction and two 1-sided tests. **RESULTS:** In the held-out test cohort, MAE was 0.08 (95% CI 0.07-0.09) and RMSE was 0.10 (95% CI 0.10-0.11). For binary obstruction, sensitivity was 0.70 (95% CI 0.65-0.74), specificity 0.72 (95% CI 0.67-0.76), PPV 0.71 (95% CI 0.65-0.76), NPV 0.71 (95% CI 0.66-0.76), LR+ 2.46 (95% CI 2.11-2.88), and LR- 0.42 (95% CI 0.36-0.49). Patient-level estimates were similar (sensitivity 0.69, 95% CI 0.66-0.72; specificity 0.74, 95% CI 0.71-0.78). Calibration was excellent for regression (slope=0.97; intercept=0.015) and mildly miscalibrated for the binary task (slope=1.41; intercept=0.04; Brier=0.195). Decision curve analysis showed net benefit at threshold probabilities of approximately 0.27 to 0.86. Sensitivity was meaningfully reduced in Asian patients (0.43, 95% CI 0.29-0.56) compared with White patients (0.75, 95% CI 0.70-0.79; absolute difference -0.32; Holm P&lt;.001), with accompanying differences in specificity, PPV, and LR-, and was lower in younger age groups, peaking at 65-74 years. **CONCLUSIONS:** A deep learning model trained on routine chest radiographs estimated FEV&#x2081;/FVC and identified airflow limitation in a North American cohort, with moderate discrimination, well-calibrated regression predictions, and positive net benefit. Performance was not uniform across demographic strata, with reduced sensitivity in Asian patients and younger age groups. Multisite external validation and subgroup-specific verification are important next steps.
+
+## Información del artículo
+
+- **Revista:** JMIR AI
+- **Fecha de publicación:** 2026-08-05
+- **Autores:** Eptehal Nashnoush, Helen D'Couto, Benjamin Fine, Leo Anthony Celi, Mohamed Abdalla
+- **DOI:** [10.2196/87770](https://doi.org/10.2196/87770)
+- **PubMed ID:** [42555927](https://pubmed.ncbi.nlm.nih.gov/42555927/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42555927/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

@@ -1,0 +1,25 @@
+---
+title: "TokenUNet: A new case for transformers integration in efficient and interpretable 3D UNets for brain imaging segmentation."
+description: "We present TokenUNet, adopting the TokenLearner and TokenFuser modules to encase Transformers into UNets. While Transformers enable expressive global interactions among input elements in medical imaging, computational challenges hinder their deployme..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42555631"
+author: "Louis Fabrice Tshimanga, Andrea Zanola, Federico Del Pup et al."
+tags: []
+---
+
+## Resumen
+
+We present TokenUNet, adopting the TokenLearner and TokenFuser modules to encase Transformers into UNets. While Transformers enable expressive global interactions among input elements in medical imaging, computational challenges hinder their deployment on common hardware. Models like (Swin)UNETR exemplify the integration of (Swin)Transformer encoders into UNets, tokenizing inputs into small subvolumes (83 voxels). The Transformer attention mechanism scales quadratically with the number of tokens, which is tied to the cubic scaling of 3D input resolution. This work reconsiders the role of convolution and attention, introducing TokenUNets, a family of 3D segmentation models better suited to constrained computational environments and time frames. To mitigate computational demands, our approach maintains the convolutional encoder of UNet-like models, and applies TokenLearner to 3D feature maps. This module pools a preset number of tokens from local and global structures, decoupling token number and input size. Our results on the BraTS challenge dataset for glioma segmentation show this tokenization effectively encodes task-relevant information, yielding naturally interpretable attention maps. The memory footprint, computation times at inference, and parameter counts of our heaviest model are reduced to 38%, 10%, and 17% of the SwinUNETR values, with statistically equivalent Dice score performance, for nnunetv2 5-fold cross-validation. This work opens the way to more efficient training in computationally restrained contexts, such as 3D medical imaging. Easing model optimization, fine-tuning, and transfer-learning in limited hardware settings can accelerate and diversify the development of approaches, for the benefit of the research community.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Louis Fabrice Tshimanga, Andrea Zanola, Federico Del Pup, Manfredo Atzori
+- **DOI:** [10.1371/journal.pone.0354511](https://doi.org/10.1371/journal.pone.0354511)
+- **PubMed ID:** [42555631](https://pubmed.ncbi.nlm.nih.gov/42555631/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42555631/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
