@@ -1,0 +1,25 @@
+---
+title: "Teeth-GS: Gaussian Splatting Diffusion with enamel reflectance prior for single-image tooth crown reconstruction."
+description: "High-fidelity 3D reconstruction of tooth crown surfaces is foundational to modern digital dentistry. Compared with intra-oral scanning (IOS) systems that require specialized hardware and may still miss fine occlusal structures under clinical lighting..."
+date: "2026-08-03"
+category: "ia-odontologia"
+pubmedId: "42561828"
+author: "Yanxing Liang, Yinghui Wang, Wei Li et al."
+tags: ["3D tooth crown reconstruction", "Diffusion network", "Gaussian Splatting", "Micro-geometry structures"]
+---
+
+## Resumen
+
+High-fidelity 3D reconstruction of tooth crown surfaces is foundational to modern digital dentistry. Compared with intra-oral scanning (IOS) systems that require specialized hardware and may still miss fine occlusal structures under clinical lighting limitations, single RGB image-based reconstruction offers a cost-effective and more accessible alternative. However, existing methods decouple surface normal estimation from the fundamental physics governing light-enamel interactions, which consequently hinders the recovery of fine-scale surface topographies, especially occlusal fissures and pits. To address this limitation, we propose Teeth-GS, a Gaussian Splatting Diffusion framework for high-precision tooth crown reconstruction from a single RGB image. Unlike purely data-driven methods, our method explicitly incorporates an anisotropic reflectance prior inspired by the Huygens-Fresnel principle into a Gaussian Markov Random Field (GMRF) guided diffusion network, allowing the denoising trajectory to be governed by physically consistent enamel scattering properties. This design enables robust surface normal estimation under strong specularities and textureless regions. Based on the recovered geometric cues, we further introduce a reflectance-guided 3D Gaussian Splatting module that converts predicted normals into explicit Gaussian primitives with hybrid illumination mapping, yielding a compact and anatomically consistent surface representation that decouples geometry from appearance. The entire framework is trained via a joint optimization strategy that synergizes geometric constraints with photometric consistency, ensuring that the reconstructed micro-geometry structures are both anatomically plausible and visually faithful. Extensive experiments on high-precision intra-oral scan datasets and clinically acquired RGB datasets demonstrate that our method significantly outperforms state-of-the-art implicit and explicit reconstruction methods on geometric and photometric benchmarks. Teeth-GS provides a viable solution for remote dental screening and digital monitoring applications.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-08-03
+- **Autores:** Yanxing Liang, Yinghui Wang, Wei Li, Jinlong Yang, Tao Yan
+- **DOI:** [10.1016/j.media.2026.104239](https://doi.org/10.1016/j.media.2026.104239)
+- **PubMed ID:** [42561828](https://pubmed.ncbi.nlm.nih.gov/42561828/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42561828/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
