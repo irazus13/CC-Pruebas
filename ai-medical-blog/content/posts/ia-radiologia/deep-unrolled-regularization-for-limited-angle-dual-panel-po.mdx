@@ -1,0 +1,25 @@
+---
+title: "Deep unrolled regularization for limited-angle dual-panel positron emission mammography."
+description: "A dual-panel Positron Emission Mammography (PEM) scanner is a breast-dedicated device with better spatial resolution and sensitivity than conventional Positron Emission Tomography (PET). However, the main limitation of dual-panel PEM is the limited-a..."
+date: "2026-08-06"
+category: "ia-radiologia"
+pubmedId: "42560453"
+author: "Fernando Moncada-Guti&#xe9;rrez, H&#xe9;ctor Alva-S&#xe1;nchez, Mercedes Rodr&#xed;guez-Villafuerte et al."
+tags: ["Deep unrolled regularization", "Dual-panel PEM", "Image reconstruction", "Limited-angle tomography", "Positron emission mammography"]
+---
+
+## Resumen
+
+A dual-panel Positron Emission Mammography (PEM) scanner is a breast-dedicated device with better spatial resolution and sensitivity than conventional Positron Emission Tomography (PET). However, the main limitation of dual-panel PEM is the limited-angle artifacts in the cross-plane slices of the reconstructed images, arising from the acquisition geometry. This work proposes incorporating deep unrolled regularization into the image reconstruction algorithm to mitigate these artifacts. A U-Net was trained to identify and correct the artifacts in cross-plane slices. Dual-panel PEM and ring-shaped dedicated breast PET Monte Carlo (MC)-generated images served as the input and ground truth, respectively; the latter was selected because it provides an artifact-free reference due to its full-angle geometry. Data augmentation was employed to expand the training dataset to 3840 image pairs, thereby improving the model's generalization performance. The trained deep learning model was incorporated into the Forward-Backward Splitting Expectation-Maximization algorithm to regularize reconstruction and ensure agreement between the reconstructed images and the measured data. Images reconstructed with the proposed image reconstruction framework exhibited effective mitigation of limited-angle artifacts using MC-generated and experimentally measured data from a dual-panel PEM. Additionally, this framework outperformed OSEM and MAPEM as measured by metrics quantifying noise, contrast, peak-to-valley ratio, recovery coefficients, spillover ratios, and intensity profiles. To the best of our knowledge, this is the first study to address limited-angle artifacts in a dual-panel PEM incorporating deep learning-based regularization. At this stage, the present work constitutes a proof-of-concept; for clinical implementation, a model trained on anthropomorphic phantoms and further validation are required.
+
+## Información del artículo
+
+- **Revista:** Physical and engineering sciences in medicine
+- **Fecha de publicación:** 2026-08-06
+- **Autores:** Fernando Moncada-Guti&#xe9;rrez, H&#xe9;ctor Alva-S&#xe1;nchez, Mercedes Rodr&#xed;guez-Villafuerte, Arnulfo Mart&#xed;nez-D&#xe1;valos
+- **DOI:** [10.1007/s13246-026-01769-5](https://doi.org/10.1007/s13246-026-01769-5)
+- **PubMed ID:** [42560453](https://pubmed.ncbi.nlm.nih.gov/42560453/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42560453/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
