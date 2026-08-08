@@ -1,0 +1,25 @@
+---
+title: "Beyond the pelvic ring: benchmarking multi-bone segmentation for ROI-Guided fracture detection."
+description: "Pelvic fractures are critical injuries associated with high mortality rates, yet accurate diagnosis using conventional radiography remains challenging due to complex anatomical overlaps. This study evaluates the impact of segmentation-guided preproce..."
+date: "2026-08-07"
+category: "ia-radiologia"
+pubmedId: "42567857"
+author: "Siam Tahsin Bhuiyan, Rashedur Rahman, Sefatul Wasi et al."
+tags: ["AMERI PXR", "Deep learning", "Medical image analysis", "Multi-bone segmentation", "PXR150"]
+---
+
+## Resumen
+
+Pelvic fractures are critical injuries associated with high mortality rates, yet accurate diagnosis using conventional radiography remains challenging due to complex anatomical overlaps. This study evaluates the impact of segmentation-guided preprocessing on fracture detection from pelvic X-rays by introducing a Multi-Bone Segmentation Method. Unlike traditional approaches that restrict analysis to the pelvic ring or treat the pelvis as a single region, our framework utilizes a transformer-enhanced U-Net to distinctly isolate nine individual pelvic bones, creating an anatomically precise input for downstream classification. For segmentation, the model was trained on PXR150 and evaluated on both PXR150 and externally on AMERI PXR, while classification models were trained and evaluated separately for each dataset. We benchmarked this approach against three methods: a Conventional (raw X-ray input) baseline, a Conventional ROI-Guided Method (binary segmentation), and a Reference Segmentation (manual annotation) to establish a performance upper bound. Using the public PXR150 and private AMERI PXR datasets, we demonstrated that segmentation-guided analysis consistently enhances diagnostic precision. The Proposed Multi-Bone Method outperformed the Conventional ROI-Guided Method, achieving higher Accuracy (81.30%, 95% CI: 79.70-82.90 and 83.20%, 95% CI: 78.74-87.66) and AUROC (0.822, 95% CI: 0.794-0.851 and 0.838, 95% CI: 0.792-0.884) across both datasets. By effectively filtering non-anatomical artifacts, the multi-bone strategy achieved performance metrics close to the manually annotated reference standard. GradCAM visualizations further confirmed that multi-bone segmentation aligns model activation with clinically relevant fracture sites, enhancing interpretability. These findings underscore that anatomical completeness in segmentation is a decisive factor in improving the reliability and explainability of automated fracture detection systems.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-08-07
+- **Autores:** Siam Tahsin Bhuiyan, Rashedur Rahman, Sefatul Wasi, Halima Khatun, Manosh Sur Chowdhury
+- **DOI:** [10.1038/s41598-026-47663-8](https://doi.org/10.1038/s41598-026-47663-8)
+- **PubMed ID:** [42567857](https://pubmed.ncbi.nlm.nih.gov/42567857/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42567857/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
