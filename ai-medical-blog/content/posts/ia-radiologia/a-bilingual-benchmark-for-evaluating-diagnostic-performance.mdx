@@ -1,0 +1,25 @@
+---
+title: "A Bilingual Benchmark for Evaluating Diagnostic Performance of Multimodal Large Language Models in Radiology (RadM-Bench): Evaluation Development and Validation."
+description: "Multimodal large language models are increasingly used in radiological diagnosis, but their performance has not been systematically evaluated across volumetric (3D) imaging, real-world clinical versus public teaching cases, and biling..."
+date: "2026-08-07"
+category: "ia-radiologia"
+pubmedId: "42566748"
+author: "Qingxia Wu, Qingxia Wu, Peipei Zhang et al."
+tags: ["benchmark", "diagnosis", "large language model", "multimodal", "radiology"]
+---
+
+## Resumen
+
+**BACKGROUND:** Multimodal large language models are increasingly used in radiological diagnosis, but their performance has not been systematically evaluated across volumetric (3D) imaging, real-world clinical versus public teaching cases, and bilingual contexts. **OBJECTIVE:** The aim of the study is to develop a bilingual radiology benchmark and characterize the diagnostic performance of state-of-the-art multimodal large language models across input modality, clinical setting (public teaching vs routine clinical), disease rarity, and clinical-history language and to disentangle linguistic from clinical-content effects through a cross-linguistic control experiment. **METHODS:** We constructed RadM-Bench, comprising 720 cases evenly distributed across 9 radiological subspecialties: 360 English public teaching cases enriched in rare diseases (RadEdu) and 360 Chinese routine clinical cases (RealClin). In total, 4 proprietary models (GPT-4o, O3, Gemini-2-Flash, and Gemini-2.5-Flash-Thinking) and 6 open-source models (Qwen2.5-VL-72B/7B, InternVL3-78B/8B, Llama-4-Scout-17B-16E, and MedGemma-4B) were evaluated under 4 input conditions: clinical history alone, history with radiologist-selected 2D key images, and history with volumetric data sampled at 2 and 10 frames per second (fps). Each response was scored on a 4-tier 0-3 diagnostic-quality rubric by 2 board-certified radiologists blinded to model identity. Mean scores with bias-corrected and accelerated bootstrap 95% CIs are reported. To disentangle language from clinical content, all 360 RealClin histories were translated into English and re-evaluated, with paired comparisons by Wilcoxon signed-rank tests and Benjamini-Hochberg false-discovery-rate correction. **RESULTS:** Mean performance remained below 1.5 on the 0-3 scale for all 10 models on both datasets. Adding radiologist-selected 2D key images to clinical history improved performance in all 10 models (+19.8% to +139.2%). In RealClin at fps=10, all 8 evaluable models scored lower with volumetric input than with the 2D-image baseline (-5.3% to -31.4%); MedGemma-4B and Llama-4-Scout-17B-16E could only be evaluated at fps=2 due to context-window and graphics processing unit-memory constraints. At fps=2, a total of 8 out of 10 models declined (-6.8% to -28.6%), while Qwen2.5-VL-7B and InternVL3-8B showed marginal improvements (+2.4% and +2.1%). Cross-dataset transfer diverged by model category: proprietary models declined from RadEdu to RealClin (eg, O3 with images: 1.14 to 0.79), whereas Chinese-centric open-source models improved (eg, InternVL3-78B: 0.48 to 0.75). The rare-disease premium observed in 9 out of 10 models in RadEdu reversed in RealClin, where common-disease scores exceeded rare-disease scores in 7 out of 10 models under history-only input. Translating RealClin histories into English produced a numerical decrease in mean score for all 10 models, which were statistically significant in 9 out of 10 models after false discovery rate correction, excluding a Chinese-language penalty. **CONCLUSIONS:** Within the scope of this benchmark, multimodal inputs improved performance over clinical history alone, but performance gaps remain in volumetric data processing and cross-context generalization, with mean diagnostic performance across the 10 evaluated models remaining below clinically actionable levels on both datasets.
+
+## Información del artículo
+
+- **Revista:** Journal of medical Internet research
+- **Fecha de publicación:** 2026-08-07
+- **Autores:** Qingxia Wu, Qingxia Wu, Peipei Zhang, Zhifeng Yi, Yu Shen
+- **DOI:** [10.2196/92183](https://doi.org/10.2196/92183)
+- **PubMed ID:** [42566748](https://pubmed.ncbi.nlm.nih.gov/42566748/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42566748/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
