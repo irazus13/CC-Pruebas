@@ -1,0 +1,25 @@
+---
+title: "Development of a deep learning model for detecting and measuring gallstones on computed tomography images."
+description: "To develop a deep learning model for the automated detection and measurement of gallstones on non-contrast CT images. A total of 3,231 CT scans were retrospectively enrolled as an internal cohort, while 753 CT scans from the..."
+date: "2026-08-11"
+category: "ia-radiologia"
+pubmedId: "42579008"
+author: "Yue Gao, Yaofeng Zhang, Xiaodong Zhang et al."
+tags: ["Computed tomography", "Deep learning", "Gallstones", "Segmentation"]
+---
+
+## Resumen
+
+**PURPOSE:** To develop a deep learning model for the automated detection and measurement of gallstones on non-contrast CT images. **METHODS:** A total of 3,231 CT scans were retrospectively enrolled as an internal cohort, while 753 CT scans from the public AMOS (Abdominal Multi-Organ Segmentation) dataset were employed as an independent external test set. Paired MR imaging served as the reference standard for the internal cohort (including development and hold-out datasets). A three-stage 3D V-Net convolutional neural network was developed for automated gallstone detection. The first stage performed coarse localization of the gallbladder, followed by refined 3D segmentation in the second stage to generate precise anatomical masks. In the final stage, gallstones were detected within the segmented gallbladder volume. Gallstone detection was categorized based on the spatial overlap (Dice similarity coefficient, DSC&#x2009;&gt;&#x2009;0) between reference labels and predictions. **RESULTS:** For gallbladder segmentation, the DSCs were 0.992, 0.989, and 0.990 across training, validation, and internal test sets. Gallstone detection achieved mean DSCs of 0.794, 0.742, and 0.759 across the subgroups. For gallstone detection and segmentation, the model achieved overall sensitivities of 97.2%, 97.5%, 95.2%, 89.2%, and 98.2% across the training, validation, internal test, hold-out, and AMOS datasets, respectively. Subgroup analysis showed median DSCs of 0.835-0.897 for high-density stones and 0.792-0.854 for large stones. **CONCLUSION:** The developed model achieves high sensitivity and precise automated gallstone segmentation on CT images.
+
+## Información del artículo
+
+- **Revista:** Abdominal radiology (New York)
+- **Fecha de publicación:** 2026-08-11
+- **Autores:** Yue Gao, Yaofeng Zhang, Xiaodong Zhang, Xiaoying Wang
+- **DOI:** [10.1007/s00261-026-05724-6](https://doi.org/10.1007/s00261-026-05724-6)
+- **PubMed ID:** [42579008](https://pubmed.ncbi.nlm.nih.gov/42579008/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42579008/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
