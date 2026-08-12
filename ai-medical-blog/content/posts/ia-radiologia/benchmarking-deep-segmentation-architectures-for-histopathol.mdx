@@ -1,0 +1,25 @@
+---
+title: "Benchmarking Deep Segmentation Architectures for Histopathological Nuclei Segmentation: A Controlled Study of Transfer Learning, Robustness, and Efficiency Across CNN, Transformer, and Hybrid Models."
+description: "Accurate nuclei segmentation is essential for quantitative histopathological analysis and downstream clinical applications such as cancer grading, biomarker assessment, and prognostic modeling. Although deep learning has substantially advanced biomed..."
+date: "2026-08-11"
+category: "ia-radiologia"
+pubmedId: "42581240"
+author: "Abdulkadir Gulsen"
+tags: ["Convolutional neural networks", "Digital pathology", "Histopathology image", "Medical image segmentation", "Nuclei segmentation"]
+---
+
+## Resumen
+
+Accurate nuclei segmentation is essential for quantitative histopathological analysis and downstream clinical applications such as cancer grading, biomarker assessment, and prognostic modeling. Although deep learning has substantially advanced biomedical image segmentation, comparative evidence regarding the relative strengths of CNN, Transformer, and hybrid CNN-Transformer-based architectures under harmonized conditions remains limited. This study presents a controlled and reproducible benchmark of eight representative architectures for histopathological nuclei segmentation, evaluated on the MoNuSeg and CoNSeP datasets. The benchmark encompasses four widely used CNN models (U-Net, U-Net++, PSPNet, DeepLabV3+), two Transformer-based models (SegFormer-B2, UPerNet), and two hybrid CNN-Transformer models (TransUNet, Swin-UNet). To isolate architectural differences, all models are trained and evaluated using identical preprocessing, tiling, augmentation, optimization, loss formulation, and evaluation metrics. Each architecture is trained both from scratch and with ImageNet-1k pretrained encoders to systematically assess the effect of transfer learning. Segmentation performance is quantified using complementary region- and boundary-based metrics (Dice, IoU, BF1, HD95), complemented by five-fold image-level cross-validation, and paired non-parametric statistical testing for robustness analysis, and further contextualized by computational efficiency measures (trainable parameters, GFLOPs, GPU memory consumption, and inference latency). Across both datasets, pretrained Transformer-based models (SegFormer-B2, UPerNet) achieve the highest Dice, IoU, and BF1 scores, while strong CNN baselines (U-Net, U-Net++) remain competitive at substantially lower computational cost. The benefits of ImageNet pretraining are most pronounced for Transformer-based and hybrid architectures, with smaller but consistent gains for CNNs. These findings highlight that no single architectural paradigm is uniformly superior: model selection in computational pathology should jointly consider overlap accuracy, boundary quality, robustness, and efficiency.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-08-11
+- **Autores:** Abdulkadir Gulsen
+- **DOI:** [10.1007/s10278-026-02186-6](https://doi.org/10.1007/s10278-026-02186-6)
+- **PubMed ID:** [42581240](https://pubmed.ncbi.nlm.nih.gov/42581240/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42581240/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
