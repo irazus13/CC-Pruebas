@@ -1,0 +1,25 @@
+---
+title: "Deep learning segmentation with uncertainty quantification for spinal tuberculosis on fat-suppressed T2-weighted MRI."
+description: "Spinal tuberculosis is the most common extrapulmonary manifestation of tuberculosis. Magnetic resonance imaging (MRI), particularly fat-suppressed T2-weighted imaging (FS-T2WI), is the modality of choice for preoperative evaluation; y..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42591080"
+author: "Xingyu Duan, Jiaxing Wang, Linan Wang et al."
+tags: ["deep learning segmentation", "fat-suppressed T2-weighted MRI", "physician validation", "spinal tuberculosis", "uncertainty quantification"]
+---
+
+## Resumen
+
+**BACKGROUND:** Spinal tuberculosis is the most common extrapulmonary manifestation of tuberculosis. Magnetic resonance imaging (MRI), particularly fat-suppressed T2-weighted imaging (FS-T2WI), is the modality of choice for preoperative evaluation; yet indistinct lesion boundaries render manual delineation subjective and poorly reproducible. Although deep learning segmentation has advanced considerably, its "black-box" nature and limited interpretability remain critical obstacles. This study aimed to develop an uncertainty-guided deep learning segmentation framework and evaluate its accuracy and clinical utility. **METHODS:** We retrospectively enrolled 210 patients with spinal tuberculosis from an initial cohort of 300 screened at three centers, and acquired preoperative FS-T2WI scans. Data from Center 1 (n&#xa0;=&#xa0;160) were used for five-fold cross-validation, while the remaining 50 cases served as an external test set. We built an improved model on nnU-Net by integrating boundary-aware loss with Monte Carlo Dropout, and compared it against U-Net, Attention U-Net, and TransUNet. The uncertainty threshold was determined through internal cross-validation, and clinical validation followed a within-subject crossover design involving nine physicians. **RESULTS:** On the external test set, the improved model achieved a Dice similarity coefficient of 0.858 and an AUC of 0.912, outperforming all comparative models. Uncertainty correlated strongly and positively with pixel-level error rates (Spearman &#x3c1;&#xa0;=&#xa0;0.74). At a threshold of 0.52, sensitivity for identifying unreliable segmentation was 84.3% and negative predictive value was 89.5%. In the physician validation, overlaying uncertainty maps significantly increased trust scores (3.8 &#xb1; 0.7 vs. 3.2 &#xb1; 0.8; P&#xa0;&lt;&#xa0;0.001, Cohen's d&#xa0;=&#xa0;0.80) and reduced review time (P&#xa0;=&#xa0;0.018), with the greatest benefit observed among resident physicians. In cases of obvious AI failure, uncertainty alerts accurately flagged erroneous regions in 80.0% of instances. **CONCLUSION:** The proposed uncertainty-guided framework improved spinal tuberculosis lesion segmentation accuracy. Pixel-level uncertainty maps reliably identified unreliable predictions and enhanced clinician trust, offering a robust AI decision-support tool for precise surgical planning.
+
+## Información del artículo
+
+- **Revista:** Frontiers in physiology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Xingyu Duan, Jiaxing Wang, Linan Wang, Yichao Fan, Jiong Wang
+- **DOI:** [10.3389/fphys.2026.1885886](https://doi.org/10.3389/fphys.2026.1885886)
+- **PubMed ID:** [42591080](https://pubmed.ncbi.nlm.nih.gov/42591080/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42591080/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
