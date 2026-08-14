@@ -1,0 +1,25 @@
+---
+title: "Machine learning models for predicting neonatal bacterial infections: a retrospective cohort study."
+description: "Bacterial infections represent a critical threat to neonatal health, accounting for approximately 25% of neonatal mortality globally. Timely and precise diagnosis in infants aged 1 to 90&#xa0;days is essential to facilitate rapid intervention and pre..."
+date: "2026-08-14"
+category: "investigacion"
+pubmedId: "42595840"
+author: "Azita Yazdani, Seyed Hadi Hoseyni Jahan Abadi, Parisa Eslami et al."
+tags: ["Bacterial infections", "Explainable artificial intelligence (XAI)", "Machine learning", "Neonatal", "Nested cross-validation"]
+---
+
+## Resumen
+
+Bacterial infections represent a critical threat to neonatal health, accounting for approximately 25% of neonatal mortality globally. Timely and precise diagnosis in infants aged 1 to 90&#xa0;days is essential to facilitate rapid intervention and prevent severe complications. This study aimed to develop and evaluate machine learning (ML) models for the early, non-invasive prediction of bacterial infections using routine clinical data, maximizing clinical interpretability for point-of-care triage. Data from 306 infants aged 1 to 90&#xa0;days hospitalized between January 2014 and December 2022 at a Social Security Organization hospital in Khorasan Razavi, Iran, were retrospectively analyzed. The target variable was strictly labeled using cerebrospinal fluid (CSF) culture via lumbar puncture (LP) as the definitive gold standard (n&#x2009;=&#x2009;158 infectious, 51.6%; n&#x2009;=&#x2009;148 non-infectious, 48.4%). Predictors were limited to routine, non-invasive paraclinical markers extracted from the electronic health record and normalized using a QuantileTransformer pipeline. Nine ML classifiers were rigorously evaluated via a leakage-safe nested cross-validation (NCV) framework (5-folds&#x2009;&#xd7;&#x2009;2 repeats outer, threefold inner). Algorithmic behavior was decoded globally and locally using SHapley Additive exPlanations (SHAP) values, and overfitting was monitored via comprehensive training-to-validation generalization audits. Top-tier models clustered within an outer-CV AUROC range of 0.74-0.76. While non-linear gradient boosting (HistGBM) achieved the highest raw discrimination (AUROC&#x2009;=&#x2009;0.786, 95% CI: 0.757-0.812), a generalization audit revealed a severe training optimism gap (0.214). Conversely, L2-regularized logistic regression (LR) demonstrated equivalent discriminative stability with a minimal generalization gap (0.083) and robust probability calibration (Brier score&#x2009;=&#x2009;0.208), leading to its selection as the final model. SHAP analysis confirmed that the predictive signal was genuinely distributed across routine urinary markers, patient age, and metabolic indicators rather than a single dominant analyte. Operational threshold adjustments proved that achieving a high sensitivity screening benchmark (&#x2265;&#x2009;95%) forced a steep parallel decline in specificity. Conclusion:&#xa0;ML models trained on routine, non-invasive paraclinical markers can effectively serve as objective risk-stratification aids in infant care. However, due to severe threshold-dependent specificity trade-offs, the optimized pipeline should function as a clinical decision support tool for risk tiering rather than a standalone rule-out tool to safely eliminate the need for lumbar punctures.
+
+## Información del artículo
+
+- **Revista:** European journal of pediatrics
+- **Fecha de publicación:** 2026-08-14
+- **Autores:** Azita Yazdani, Seyed Hadi Hoseyni Jahan Abadi, Parisa Eslami, Ali Tadayon Chahar Soughi, Fatemeh Gholami
+- **DOI:** [10.1007/s00431-026-07315-5](https://doi.org/10.1007/s00431-026-07315-5)
+- **PubMed ID:** [42595840](https://pubmed.ncbi.nlm.nih.gov/42595840/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42595840/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
