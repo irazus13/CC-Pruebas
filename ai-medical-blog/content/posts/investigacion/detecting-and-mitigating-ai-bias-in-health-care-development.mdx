@@ -1,0 +1,25 @@
+---
+title: "Detecting and Mitigating AI Bias in Health Care: Development and Validation of a Unified Multistage Framework."
+description: "AI-driven clinical systems can improve diagnosis, prognosis, and resource allocation, but they may reproduce disparities encoded in historical health care data. Existing mitigation methods typically target a single source of bias, whi..."
+date: "2026-08-14"
+category: "investigacion"
+pubmedId: "42600144"
+author: "Ruj Mateedulsatit, Chetneti Srisa-An"
+tags: ["AI fairness", "algorithmic bias", "bias mitigation", "demographic parity", "health care AI"]
+---
+
+## Resumen
+
+**BACKGROUND:** AI-driven clinical systems can improve diagnosis, prognosis, and resource allocation, but they may reproduce disparities encoded in historical health care data. Existing mitigation methods typically target a single source of bias, while clinical datasets often contain interacting representation, proxy, integrity, and temporal biases. **OBJECTIVE:** This study aims to develop and systematically evaluate a prespecified multistage workflow for detecting representation, missingness, proxy, integrity, and temporal biases and model performance limitations in structured health care datasets; apply prespecified mitigation actions when audit criteria are met; and determine whether these actions improve predictive discrimination and demographic fairness compared with a conventional random forest baseline. **METHODS:** We performed a fresh, deterministic reconstruction from the raw public data, using a patient-level 80/20 split for Diabetes 130-US Hospitals. M2 was a conventional random forest with median or mode imputation and training-only categorical encoding. M3 added explicit missingness features and poststratification weights clipped at the 95th percentile. Race was excluded from prediction and used for auditing and weighting. CMS SynPUF was modeled separately for a compatible claims-based readmission task; the National Health and Nutrition Examination Survey was limited to stage-level representation, proxy, missingness, and bounded-laboratory audits. Five hundred stratified bootstrap replicates were used for overall metrics, and 300 were used for subgroup metrics. **RESULTS:** The Diabetes test set contained 20,203 encounters from 14,304 patients, including 2254 (11.16%) positive outcomes. M3 improved the macro F1 from 0.514 to 0.546, reduced the Brier score from 0.231 to 0.213, and reduced the demographic parity difference from 0.206 to 0.124, but the area under the receiver operating characteristic curve (AUC) decreased from 0.648 to 0.640, and the equalized odds ratio decreased from 0.444 to 0.291. In CMS SynPUF (12,801 test episodes; 1232 positives), the AUC was similar (0.798 vs 0.796) and the Brier score improved slightly (0.187 vs 0.183), whereas the demographic parity difference increased from 0.693 to 0.730. The exploratory rule-gated mixture of experts did not improve fairness, the Brier score, or the macro F1 relative to M3. Detailed subgroup performance, calibration, missingness analyses, and bootstrap CIs were comprehensively evaluated in this study. **CONCLUSIONS:** In this reproducible retrospective reconstruction, missingness-aware weighting improved the macro F1, Brier score, and demographic parity on the primary test set but did not improve the AUC or equalized odds ratio. Centers for Medicare and Medicaid Services results did not reproduce a fairness improvement, and the exploratory mixture of experts did not outperform the M3 quality expert on most outcomes. The findings demonstrate a fairness-calibration-discrimination trade-off rather than uniform improvement and do not establish clinical deployment readiness.
+
+## Información del artículo
+
+- **Revista:** JMIR AI
+- **Fecha de publicación:** 2026-08-14
+- **Autores:** Ruj Mateedulsatit, Chetneti Srisa-An
+- **DOI:** [10.2196/102146](https://doi.org/10.2196/102146)
+- **PubMed ID:** [42600144](https://pubmed.ncbi.nlm.nih.gov/42600144/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42600144/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

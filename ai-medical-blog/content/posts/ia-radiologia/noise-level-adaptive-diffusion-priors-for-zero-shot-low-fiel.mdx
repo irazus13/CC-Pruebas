@@ -1,0 +1,25 @@
+---
+title: "Noise-Level Adaptive Diffusion Priors for Zero-Shot Low-Field MRI Quality Enhancement."
+description: "Low-field MRI (LF-MRI) improves imaging accessibility, but its practical utility is often limited by reduced signal-to-noise ratio, weaker tissue contrast, and variable image quality. These challenges are further compounded by the limited availabilit..."
+date: "2026-09-01"
+category: "ia-radiologia"
+pubmedId: "42599222"
+author: "Jiacai Cai, Shoujin Huang, Zihao Wang et al."
+tags: ["diffusion model", "electromagnetic interference", "image restoration", "low&#x2010;field MRI", "magnitude&#x2010;only DICOM"]
+---
+
+## Resumen
+
+Low-field MRI (LF-MRI) improves imaging accessibility, but its practical utility is often limited by reduced signal-to-noise ratio, weaker tissue contrast, and variable image quality. These challenges are further compounded by the limited availability of low-field training data across scanners and the fact that raw k-space data are not always accessible in research and clinical workflows. In this study, we adapted a high-field-trained diffusion model for LF-MRI quality enhancement without low-field retraining or fine-tuning. During inference, the pretrained diffusion prior was combined with noise-level adaptive measurement guidance to suppress low-field noise while maintaining consistency with measurement-supported anatomical structures. With phase augmentation, this framework was further extended to magnitude-only DICOM-exported inputs when measured phase information was unavailable. The method was evaluated on 10 locally recruited healthy volunteers scanned at 0.05, 0.3, and 3&#x2009;T, a public 0.064-T healthy-subject dataset with 10 paired cases, and patient cases acquired at 0.05 and 0.35&#x2009;T. Compared with raw LF input and representative baselines including BM3D, MiDiffusion, and NAFNet, the proposed method (Nila) improved visual image quality, noise suppression, and tissue contrast, while preserving lesion-region appearance in patient cases. On the 0.3 and 0.064&#x2009;T datasets with coregistered 3-T references, Nila achieved the best LPIPS and the highest or tied-highest NMI across contrasts, indicating improved similarity to the high-field reference. Multisample posterior inference further produced uncertainty maps that provide an explainable-AI view of spatial output variability, with elevated variance mainly localized to tissue boundaries and ambiguous regions. These results suggest that high-field diffusion priors can serve as practical and reusable tools for LF-MRI enhancement across heterogeneous systems.
+
+## Información del artículo
+
+- **Revista:** NMR in biomedicine
+- **Fecha de publicación:** 2026-09-01
+- **Autores:** Jiacai Cai, Shoujin Huang, Zihao Wang, Shaojun Liu, Huaishui Yang
+- **DOI:** [10.1002/nbm.70373](https://doi.org/10.1002/nbm.70373)
+- **PubMed ID:** [42599222](https://pubmed.ncbi.nlm.nih.gov/42599222/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42599222/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
