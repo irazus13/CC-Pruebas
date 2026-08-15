@@ -1,0 +1,25 @@
+---
+title: "BrainFusionNet: an attention-augmented deep convolutional framework with hybrid loss optimisation and test-time augmentation for multi-class brain tumour detection in magnetic resonance images."
+description: "Accurate and timely identification of brain tumours from Magnetic Resonance Imaging (MRI) scans remains one of the most clinically consequential problems in medical image analysis, because the four principal tumour categories - glioma, meningioma, pi..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42601923"
+author: "Sankari Chidambaram, Jamuna Venugopal"
+tags: ["CBAM attention", "EfficientNet-B4", "Grad-CAM", "MRI", "brain tumour classification"]
+---
+
+## Resumen
+
+Accurate and timely identification of brain tumours from Magnetic Resonance Imaging (MRI) scans remains one of the most clinically consequential problems in medical image analysis, because the four principal tumour categories - glioma, meningioma, pituitary adenoma, and the tumour-free condition - share overlapping intensity profiles and highly variable morphological presentations. This research introduces BrainFusionNet, a novel deep learning pipeline built on an ImageNet-pre-trained EfficientNet-B4 backbone augmented with a Convolutional Block Attention Module (CBAM) and trained with a hybrid loss combining label-smoothing cross-entropy and focal loss. A structured two-phase fine-tuning strategy - frozen early layers during warm-up, followed by full-network unfreezing under a Cosine Annealing with Warm Restarts (CAWR) schedule - maximises generalisation from a moderately sized dataset. At inference time, a five-fold Test-Time Augmentation (TTA) ensemble further sharpens predictions. Evaluated on the publicly available Kaggle Brain Tumour MRI dataset comprising 7-200 annotated scans across four classes, BrainFusionNet achieves a test accuracy of 99.81%, a macro-averaged F1-score of 99.78%, and a mean AUC of 0.9994 - surpassing every compared baseline, including ResNet-50, DenseNet-201, EfficientNet-B4 (standalone), and ViT-B/16, with statistical superiority confirmed by McNemar tests (p&lt; 0.0001 for all comparisons). Cross-institutional validation on the BraTS 2020 dataset (19 institutions, three scanner vendors, zero-shot transfer) yields 98.25% accuracy and AUC&#xa0;=&#xa0;0.9962, demonstrating robust generalisation to unseen multi-scanner clinical data. Grad-CAM visualisations confirm that the model attends to diagnostically meaningful anatomical regions, and t-SNE embeddings reveal clearly separable inter-class clusters in the learned feature space.
+
+## Información del artículo
+
+- **Revista:** Frontiers in oncology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Sankari Chidambaram, Jamuna Venugopal
+- **DOI:** [10.3389/fonc.2026.1834400](https://doi.org/10.3389/fonc.2026.1834400)
+- **PubMed ID:** [42601923](https://pubmed.ncbi.nlm.nih.gov/42601923/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42601923/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
