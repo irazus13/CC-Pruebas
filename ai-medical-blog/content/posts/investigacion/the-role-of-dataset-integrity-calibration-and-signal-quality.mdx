@@ -1,0 +1,25 @@
+---
+title: "The role of dataset integrity, calibration and signal quality in neural network-based blood pressure estimation."
+description: "Cuffless blood pressure (BP) estimation via photoplethysmography (PPG) and machine learning has been widely studied, yet reported accuracy remains below clinically acceptable levels, limiting adoption in sport, ambient living, and telemedicine. This ..."
+date: "2026-08-15"
+category: "investigacion"
+pubmedId: "42603817"
+author: "Christian Fritzsche, Veit Senner"
+tags: ["Blood pressure prediction", "Cuffless", "Neural network", "Photoplethysmography"]
+---
+
+## Resumen
+
+Cuffless blood pressure (BP) estimation via photoplethysmography (PPG) and machine learning has been widely studied, yet reported accuracy remains below clinically acceptable levels, limiting adoption in sport, ambient living, and telemedicine. This study systematically examines potential error sources underlying these performance gaps, with emphasis on: dataset selection, signal synchronization, subject-specific calibration, and data leakage. Three neural networks-a multilayer perceptron (MLP_BP), residual network (Res_BP), and temporal convolutional network (TCN_BP)-were evaluated on two curated public datasets derived from MIMIC III and VitalDB, differing primarily in signal synchronization. MLP_BP uses scalar features from ECG and PPG signals, including pulse arrival time, heart rate, and variability; Res_BP and TCN_BP additionally process PPG signals. Subject-wise splits prevent data leakage, and calibration is applied using three to nine initial reference measurements per subject. Models trained on VitalDB consistently outperform those trained on MIMIC III, particularly for systolic BP, underscoring the importance of synchronized signals. Subject-specific calibration improves performance, with diminishing returns beyond three measurements. Calibrated models reach clinically acceptable accuracy for diastolic BP, while systolic BP remains challenging using PPG alone. These findings suggest that dataset integrity and proper calibration may matter more than model architecture in cuffless BP estimation.
+
+## Información del artículo
+
+- **Revista:** Scientific reports
+- **Fecha de publicación:** 2026-08-15
+- **Autores:** Christian Fritzsche, Veit Senner
+- **DOI:** [10.1038/s41598-026-66882-7](https://doi.org/10.1038/s41598-026-66882-7)
+- **PubMed ID:** [42603817](https://pubmed.ncbi.nlm.nih.gov/42603817/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42603817/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
