@@ -1,0 +1,25 @@
+---
+title: "Data-centric strategies enable cross-center generalization of convolutional neural networks for CT brain extraction."
+description: "To determine if a small number of annotated scans can enable clinically meaningful adaptation of a pre-trained convolutional neural network across different centers. Using non-contrast head CT brain extraction as the test case, we als..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42609258"
+author: "Zheng Sun, Lifang Ye, Yao Xu et al."
+tags: ["CT brain tissue extraction", "U-Net", "cross-center generalization", "deep learning", "incremental fine-tuning"]
+---
+
+## Resumen
+
+**BACKGROUND:** To determine if a small number of annotated scans can enable clinically meaningful adaptation of a pre-trained convolutional neural network across different centers. Using non-contrast head CT brain extraction as the test case, we also sought to identify the factors contributing to performance drops when applying models to new sites. **MATERIALS AND METHODS:** Non-contrast head CT scans were used in this study, from two separate institutions (Center A: 595 scans; Center B: 486 scans). A public pre-trained U-Net model for brain tissue extraction was first evaluated on Center A dataset as a baseline. The model was then fine-tuned incrementally using stratified subsets of annotated scans (5, 15, 25, and 75). The pre-trained model was subsequently transferred to Center B dataset and adapted through the same incremental fine-tuning strategy. The primary metric of interest was the three-dimensional Dice similarity coefficient (DSC), with a pre-defined minimal important difference (MID) set at 0.01. To identify predictors of baseline DSC and fine-tuning gain driving cross-center performance degradation, variance inflation factor (VIF) screening and logit Gaussian linear models (GLMs) were applied, with SHapley Additive exPlanations (SHAP) analysis providing qualitative feature importance rankings. **RESULTS:** At center A, the pre-trained model achieved a DSC of 0.9634&#x202f;&#xb1;&#x202f;0.0151. Fine-tuning with five annotated scans raised DSC to 0.9784&#x202f;&#xb1;&#x202f;0.0070 (p&#x202f;&lt;&#x202f;0.0001), exceeding the MID by 1.5-fold and reducing clinically unacceptable segmentations from 8.7 to 0.8%. A comparable gain was observed at Center B (p&#x202f;&lt;&#x202f;0.0001). Further increases to 15, 25, and 75 samples offered only marginal improvement below the MID threshold. Regression and SHAP analyses identified slice thickness as the dominant driver of both baseline performance degradation and fine-tuning improvement, accounting for 80-90% of predictive weight at both centers. **CONCLUSION:** For NCCT brain extraction assessed across two centers, fine-tuning a publicly pre-trained CNN using five local annotated scans can generate clinically valuable cross-center segmentation gains; slice thickness heterogeneity appears to be the dominant source of inter-center domain shift.
+
+## Información del artículo
+
+- **Revista:** Frontiers in neurology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Zheng Sun, Lifang Ye, Yao Xu, Yuehua Li
+- **DOI:** [10.3389/fneur.2026.1895626](https://doi.org/10.3389/fneur.2026.1895626)
+- **PubMed ID:** [42609258](https://pubmed.ncbi.nlm.nih.gov/42609258/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42609258/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

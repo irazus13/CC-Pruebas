@@ -1,0 +1,25 @@
+---
+title: "ORDER-DR: external validation of severity grading and referable-risk stratification from fundus images."
+description: "Diabetic retinopathy (DR) is a common microvascular complication of diabetes, and fundus-image deep learning may support scalable screening and risk stratification. However, models trained on a single public dataset can show threshold shift when exte..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42609287"
+author: "Quanwei Sheng, Qiyu Dong, Shuang Wu et al."
+tags: ["calibration", "deep learning", "diabetic retinopathy", "external validation", "fundus image"]
+---
+
+## Resumen
+
+Diabetic retinopathy (DR) is a common microvascular complication of diabetes, and fundus-image deep learning may support scalable screening and risk stratification. However, models trained on a single public dataset can show threshold shift when externally evaluated, limiting direct translation from internal accuracy to clinically interpretable risk. We developed ORDER-DR, a validation-calibrated dual-branch ordinal-risk framework for five-class DR severity grading and referable DR prediction from color fundus photographs. The final prespecified operating model used a high-resolution EfficientNet-B0 branch and a complementary lesion-order-sensitive risk (LORS) EfficientNet-B0 branch; checkpoints and decision thresholds were selected only from APTOS validation predictions. External validation was performed on 1,744 gradable Messidor-2 images. On held-out APTOS test splits, ORDER-DR achieved quadratic weighted kappa (QWK) 0.8960 &#xb1; 0.0049, macro-F1 0.6832 &#xb1; 0.0279, and accuracy 0.8352 &#xb1; 0.0118. On Messidor-2 with validation-calibrated thresholds, ORDER-DR achieved the strongest external ordinal agreement among the evaluated candidate models, with QWK 0.6423&#xa0;&#xb1;&#xa0;0.0364 and macro-F1 0.4578&#xa0;&#xb1;&#xa0;0.0332. The LORS branch retained higher external area under the receiver operating characteristic curve (AUROC) and area under the precision-recall curve (AUPRC), indicating a tradeoff between ordinal grade agreement and referable-risk ranking. Reliability analysis showed a higher referable-risk expected calibration error on Messidor-2 than on APTOS test (0.160&#xa0;&#xb1;&#xa0;0.008 vs. 0.049&#xa0;&#xb1;&#xa0;0.001). These findings indicate robust external ordinal consistency for ORDER-DR across datasets and show that operational threshold performance, threshold-independent risk ranking, and probability calibration should be evaluated as complementary dimensions. The primary contribution is a locked and reproducible empirical evaluation framework for DR ordinal grading and referable-risk stratification, integrating high-resolution class-balanced discrimination, ordinal-risk modeling, validation-derived threshold calibration, and external error analysis. At the validation-selected referable-risk threshold, Messidor-2 performance showed a high-specificity operating profile; high-sensitivity screening use can be adapted through operating-point selection and calibration for the target clinical setting.
+
+## Información del artículo
+
+- **Revista:** Frontiers in endocrinology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Quanwei Sheng, Qiyu Dong, Shuang Wu, Weijun Liang
+- **DOI:** [10.3389/fendo.2026.1923216](https://doi.org/10.3389/fendo.2026.1923216)
+- **PubMed ID:** [42609287](https://pubmed.ncbi.nlm.nih.gov/42609287/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42609287/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
