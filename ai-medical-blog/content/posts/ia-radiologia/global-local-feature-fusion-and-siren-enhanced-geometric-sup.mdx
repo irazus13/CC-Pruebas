@@ -1,0 +1,25 @@
+---
+title: "Global-Local Feature Fusion and SIREN-enhanced geometric supervision for coronary artery segmentation in CCTA."
+description: "Accurate segmentation of coronary arteries from Coronary Computed Tomography Angiography (CCTA) is essential for automated cardiovascular disease diagnosis and risk stratification. However, this task presents a fundamental global-local dilemma: model..."
+date: "2026-08-17"
+category: "ia-radiologia"
+pubmedId: "42612329"
+author: "Chen Zhou, Wenjing Han, Yueming Wu et al."
+tags: ["CCTA", "Coronary artery segmentation", "Cross-attention", "Deep learning", "Global&#x2013;local fusion"]
+---
+
+## Resumen
+
+Accurate segmentation of coronary arteries from Coronary Computed Tomography Angiography (CCTA) is essential for automated cardiovascular disease diagnosis and risk stratification. However, this task presents a fundamental global-local dilemma: modeling the topology and continuity of the extensive vascular tree requires wide-field contextual reasoning, while delineating thin, elongated distal branches demands high-resolution local processing. In this work, we propose a novel two-stage segmentation framework that explicitly addresses this dilemma through two key innovations. First, we introduce a Global-Local Feature Fusion (GL-Fusion) module. Unlike conventional cascaded approaches that transfer only coarse spatial priors, GL-Fusion treats global features as an associative memory, enabling the local refinement stage to selectively query and integrate semantic context via dual cross-attention mechanisms in both spatial and channel domains. Second, we incorporate an auxiliary SIREN-based Truncated Signed Distance Function (TSDF) regression task to provide geometry-aware supervision for thin vessels. By using sinusoidal activations, the TSDF head is better suited to representing high-spatial-frequency geometric variations than conventional ReLU-based heads, improving vessel overlap and centerline consistency while yielding favorable boundary-distance trends. Evaluated on the public ImageCAS benchmark and a comprehensively annotated in-house FineACA dataset, our method compares favorably with strong baselines, ranking first on all six metrics on ImageCAS and five of six metrics on FineACA. Qualitatively, it yields more complete vessel trees, reduced fragmentation, and Straightened Curved Planar Reformation (SCPR) visualizations with fewer lumen artifacts. Moreover, our framework provides a favorable trade-off between segmentation accuracy and inference efficiency, supporting its potential for practical clinical deployment.
+
+## Información del artículo
+
+- **Revista:** Computerized medical imaging and graphics : the official journal of the Computerized Medical Imaging Society
+- **Fecha de publicación:** 2026-08-17
+- **Autores:** Chen Zhou, Wenjing Han, Yueming Wu, Siyu Yin, Lingjing Hu
+- **DOI:** [10.1016/j.compmedimag.2026.102809](https://doi.org/10.1016/j.compmedimag.2026.102809)
+- **PubMed ID:** [42612329](https://pubmed.ncbi.nlm.nih.gov/42612329/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42612329/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
