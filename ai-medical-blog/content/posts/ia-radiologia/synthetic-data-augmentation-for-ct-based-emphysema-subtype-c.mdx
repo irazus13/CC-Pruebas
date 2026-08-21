@@ -1,0 +1,25 @@
+---
+title: "Synthetic data augmentation for CT-based emphysema subtype classification: A comparative evaluation of generative and classical approaches."
+description: "Data scarcity is a persistent challenge in medical image analysis. Synthetic data generation using deep generative models has been proposed as a potential approach to address this limitation, yet its performance in small-data settings remains poorly ..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42623403"
+author: "Nicholas Dietrich, David McShannon"
+tags: []
+---
+
+## Resumen
+
+Data scarcity is a persistent challenge in medical image analysis. Synthetic data generation using deep generative models has been proposed as a potential approach to address this limitation, yet its performance in small-data settings remains poorly characterized. This study compared three class-conditional generative approaches, a conditional variational autoencoder (cVAE), a conditional shallow-decoder VAE variant (cSD-VAE), and a conditional Wasserstein GAN with gradient penalty (cWGAN-GP), against classical geometric augmentation for emphysema subtype classification on 168 CT patches (three classes: normal tissue, centrilobular emphysema, and paraseptal emphysema). Each method was evaluated at three synthetic-to-real ratios (0.5x, 1.0x, 2.0x) using patient-level 70/30 splits across 10 random seeds, with an ImageNet-pretrained ResNet18 as the downstream classifier. No individual augmentation strategy produced a statistically significant improvement in balanced accuracy over the unaugmented baseline (0.522&#x2009;&#xb1;&#x2009;0.067). The conditional WGAN-GP at 1.0x achieved the highest individual balanced accuracy (0.548&#x2009;&#xb1;&#x2009;0.068, Cohen's d&#x2009;=&#x2009;0.47 versus baseline), but did not reach statistical significance (p&#x2009;=&#x2009;0.084). A pre-specified ensemble combining all four augmentation methods at the 1.0x multiplier did not significantly improve balanced accuracy over baseline (0.541&#x2009;&#xb1;&#x2009;0.088 versus 0.522&#x2009;&#xb1;&#x2009;0.067; Cohen's d&#x2009;=&#x2009;0.32, Wilcoxon p&#x2009;=&#x2009;0.275). Neither pixel-space nor feature-space distributional fidelity was associated with downstream classification performance. Overall, no benefit was detected from class-conditional generative augmentation in this small-data, texture-driven setting. Future work should focus on improving generative modeling under small-data conditions, including task-aware objectives and pathology-constrained synthesis.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Nicholas Dietrich, David McShannon
+- **DOI:** [10.1371/journal.pone.0355850](https://doi.org/10.1371/journal.pone.0355850)
+- **PubMed ID:** [42623403](https://pubmed.ncbi.nlm.nih.gov/42623403/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42623403/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

@@ -1,0 +1,25 @@
+---
+title: "Clinical Laboratory Terminology Standardization for Semantic Interoperability Using a Large Language Model-Based Agent: Methodological Study."
+description: "Semantic interoperability, the ability of disparate health information systems to exchange and consistently interpret clinical data, is a cornerstone of modern digital health, underpinning cross-institutional research, real-world evid..."
+date: "2026-08-20"
+category: "ia-medicina"
+pubmedId: "42623484"
+author: "Lijuan Wu, Jinxin Huang, Hongnian Wang et al."
+tags: ["LOINC mapping", "Logical Observation Identifiers Names and Codes", "agent-based systems", "laboratory test standardization", "large language models"]
+---
+
+## Resumen
+
+**BACKGROUND:** Semantic interoperability, the ability of disparate health information systems to exchange and consistently interpret clinical data, is a cornerstone of modern digital health, underpinning cross-institutional research, real-world evidence generation, and global health surveillance. Laboratory tests constitute one of the richest clinical data sources, yet multilingual variation and institution-specific naming conventions severely impede their standardized integration across systems. **OBJECTIVE:** We propose LabBridge, a large language model (LLM)-based agentic framework designed to standardize laboratory tests to the Logical Observation Identifiers Names and Codes (LOINC) standard, enabling cross-lingual semantic interoperability while minimizing reliance on language-specific rules and manual curation. **METHODS:** LabBridge integrates linguistic normalization, hybrid retrieval (combining domain-adapted embeddings with the LOINC ontology structure), and constrained LLM reasoning within an agentic workflow that enforces terminological consistency and traceability. We evaluated the framework on 2 real-world laboratory datasets from emergency department patients, one in Chinese and one in English, representing cross-lingual and cross-institutional heterogeneity. Performance was assessed across 5 LLMs and compared with vector-based baseline (BGE-M3, Beijing Academy of Artificial Intelligence) and retrieval-augmented generation (RAG) approaches, using mapping accuracy against a curated reference set of clinically relevant LOINC core codes as the primary metric. **RESULTS:** At full coverage (Top@100%), LabBridge achieved 81% to 90% LOINC mapping accuracy across 5 LLMs on both Chinese and English datasets, outperforming all baseline methods (P&lt;.01). On the Chinese dataset, it improved over BGE-M3 by 66 percentage points (90% vs 24%) and over the best RAG method by 41 percentage points (90% vs 49%). On the English dataset, gains ranged from +4 to +19 percentage points over RAG baselines. The framework maintained robust performance across frequency strata, including the relatively lower-frequency stratum within the selected evaluation datasets. Notably, on the Guangdong Provincial People's Hospital (GDPH) dataset, LabBridge achieved 85% accuracy on high-frequency terms (Top@30%) compared to 93% on low-frequency terms (Bottom@30%). The highest accuracy, 90% in both the languages, was achieved using DeepSeek-V3 (Hangzhou DeepSeek Artificial Intelligence Co, Ltd), with GPT-4o (OpenAI; 88%-89%) and GPT-4o-mini (OpenAI; 87%-90%) showing comparable results. **CONCLUSIONS:** LabBridge demonstrates that embedding LLMs with an ontology-aware, agent-coordinated architecture enables effective standardization of laboratory data. By unifying semantic retrieval, linguistic normalization, and constrained reasoning, the framework accelerates the terminology standardization process by transforming expert effort from manual code lookup to candidate verification. These findings offer a practical pathway toward scalable, auditable semantic interoperability in health care ecosystems.
+
+## Información del artículo
+
+- **Revista:** Journal of medical Internet research
+- **Fecha de publicación:** 2026-08-20
+- **Autores:** Lijuan Wu, Jinxin Huang, Hongnian Wang, Liyi Mai, Xueyun Zhan
+- **DOI:** [10.2196/92499](https://doi.org/10.2196/92499)
+- **PubMed ID:** [42623484](https://pubmed.ncbi.nlm.nih.gov/42623484/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42623484/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
