@@ -1,0 +1,25 @@
+---
+title: "Automating Diagnosis of Skin Neglected Tropical Diseases via Patient Metadata through Machine Learning Model with Adaptive Balancing and Dual Cross-Validation: Retrospective Diagnostic Accuracy Study."
+description: "Skin neglected tropical diseases (NTDs) are the most prevalent diseases worldwide, affecting people living in resource-limited areas with low health care services and trained professionals. While machine learning (ML)-based diagnostic..."
+date: "2026-08-21"
+category: "investigacion"
+pubmedId: "42628011"
+author: "Yohannes Minyilu, Mohammed Abebe Yimer, Million Meshesha"
+tags: ["ML models", "class weighting", "dual cross-validation", "feature importance", "machine learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Skin neglected tropical diseases (NTDs) are the most prevalent diseases worldwide, affecting people living in resource-limited areas with low health care services and trained professionals. While machine learning (ML)-based diagnostic tools can be used for initial clinical assessment and patient screening, especially in resource-limited areas (including in Ethiopia), little effort has been made in this area. **OBJECTIVE:** This pilot study develops a foundational ML model for the diagnosis of skin NTDs using patient metadata to analyze the feasibility of ML-based models for skin NTDs by identifying and experimentally evaluating 8 ML models. **METHODS:** For this study, we acquired a tabular skin NTD diagnostic dataset collected from a specific affected district in the southwest of Ethiopia. We used the data in 3 different structures, which include using the initial dataset (IDS) that contains huge null values, using a final dataset (FDS) created through preliminary preprocessing, and a third dataset created by applying feature engineering (FEFDS). Selecting 8 ML models, we trained the models in 4 major experimental settings: baseline training, handling structural missing values, handling severe class imbalance through conditional class weighting, and a hybrid approach based on robust dual cross-validation (CV) consisting of an outer repeated stratified k-fold and nested CV methods. We used the macro and class-specific metrics (such as precision, recall, and F1-score), including balanced accuracy, due to the severe class imbalance. Feature importance scores are also used for evaluating overall model performance. **RESULTS:** After the final training applying the hybrid approach, 4 models scored a perfect test score (1.0) across all the metrics and all experiments except na&#xef;ve Bayes and multilayer perceptron (MLP), similarly scoring 0.997 balanced accuracy, 0.97 recall, and 0.985 F1-score. In the same experiment, the nested CV loop revealed a slight performance drop for light gradient boosting machine (LightGBM) and extreme gradient boosting (XGBoost), though both models similarly maintained higher mean scores of balanced accuracy and macro recall of 0.993 (SD 0.013), including the mean macro F1-score of 0.996 (SD 0.007), scoring declining performance with a mean score of 0.993 (SD 0.013) in balanced accuracy, macro recall, and F1-score, showing predictive biases. In terms of feature utilization, only CatBoost showed optimal feature ranking, while 4 models showed over-feature utilization (selection bias), with 3 models using small subsets of features (showing feature parsimony). **CONCLUSIONS:** Overall, this study has been highly challenged by data scarcity, class imbalances, limited disease representation, specific geographic representation, and lack of more data modalities. Hence, further studies are suggested to confirm the results on larger datasets having a representative distribution of disease classes and geographic locations.
+
+## Información del artículo
+
+- **Revista:** Online journal of public health informatics
+- **Fecha de publicación:** 2026-08-21
+- **Autores:** Yohannes Minyilu, Mohammed Abebe Yimer, Million Meshesha
+- **DOI:** [10.2196/84966](https://doi.org/10.2196/84966)
+- **PubMed ID:** [42628011](https://pubmed.ncbi.nlm.nih.gov/42628011/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42628011/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

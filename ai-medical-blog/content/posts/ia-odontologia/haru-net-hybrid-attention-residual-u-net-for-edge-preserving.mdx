@@ -1,0 +1,25 @@
+---
+title: "HARU-Net: Hybrid Attention Residual U-Net for Edge-Preserving Denoising in Cone-Beam Computed Tomography."
+description: "Cone-beam computed tomography (CBCT) is widely used in dental and maxillofacial imaging, but low-dose acquisition introduces strong, spatially varying noise that degrades soft-tissue visibility and obscures fine anatomical structures...."
+date: "2026-08-20"
+category: "ia-odontologia"
+pubmedId: "42624131"
+author: "Khuram Naveed, Ruben Pauwels"
+tags: ["Cone-beam Computed Tomography", "Dental radiography", "Image Denoising", "Low-dose Imaging and Noise", "deep learning"]
+---
+
+## Resumen
+
+**OBJECTIVES:** Cone-beam computed tomography (CBCT) is widely used in dental and maxillofacial imaging, but low-dose acquisition introduces strong, spatially varying noise that degrades soft-tissue visibility and obscures fine anatomical structures. Classical denoising methods struggle to suppress noise in CBCT while preserving edges. Although deep learning-based approaches offer high-fidelity restoration, their use in CBCT denoising is limited by the scarcity of high-resolution CBCT data for supervised training. This study aims to develop an efficient deep learning framework for high-quality CBCT denoising that effectively suppresses noise while preserving fine anatomical structures and maintaining computational efficiency for practical clinical deployment. **APPROACH:** To achieve this objective, we propose a novel Hybrid Attention Residual U-Net (HARU-Net) for high-quality denoising of CBCT data, trained on a cadaver dataset of human hemimandibles acquired using a high-resolution protocol of the 3D Accuitomo 170 (J. Morita, Kyoto, Japan) CBCT system. The novel contribution of this approach is the integration of three complementary architectural components: (i) a hybrid attention transformer block (HAB) embedded within each skip connection to selectively emphasize salient anatomical features, (ii) a residual hybrid attention transformer group (RHAG) at the bottleneck to strengthen global contextual modeling and long-range feature interactions, and (iii) residual learning convolutional blocks to facilitate deeper, more stable feature extraction throughout the network. **RESULTS:** HARU-Net\footnote{https://github.com/DrKay87/HARU-Net--Hybrid-Attention-Residual-U-Net-for-Denoising-in-Cone-Beam-Computed-Tomography} consistently outperforms state-of-the-art (SOTA) methods achieving the highest PSNR (37.52 dB), the second-highest SSIM (0.9557), and the lowest GMSD (0.1084). Compared with transformer-based methods, the proposed network achieves superior denoising performance while maintaining substantially lower computational complexity. **CONCLUSION:** The proposed HARU-Net provides an effective balance between noise suppression, anatomical structure preservation, and computational efficiency. These characteristics make it a promising and practical solution for improving image quality and supporting reliable diagnosis in low-dose CBCT imaging.
+
+## Información del artículo
+
+- **Revista:** Biomedical physics &amp; engineering express
+- **Fecha de publicación:** 2026-08-20
+- **Autores:** Khuram Naveed, Ruben Pauwels
+- **DOI:** [10.1088/2057-1976/ae9c46](https://doi.org/10.1088/2057-1976/ae9c46)
+- **PubMed ID:** [42624131](https://pubmed.ncbi.nlm.nih.gov/42624131/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42624131/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
