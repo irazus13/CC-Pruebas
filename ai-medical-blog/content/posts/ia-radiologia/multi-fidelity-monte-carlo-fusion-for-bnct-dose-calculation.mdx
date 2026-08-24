@@ -1,0 +1,25 @@
+---
+title: "Multi-fidelity Monte Carlo fusion for BNCT dose calculation using a dual-branch network."
+description: "Boron neutron capture therapy (BNCT) is a binary radiotherapy that selectively kills tumor cells. Its clinical implementation relies on Monte Carlo (MC)-based treatment planning systems, which are time-consuming and limit clinical wor..."
+date: "2026-09-01"
+category: "ia-radiologia"
+pubmedId: "42634850"
+author: "Leiming Li, Xin Hong, Yongquan Wang et al."
+tags: ["Monte Carlo simulation", "boron neutron capture therapy", "deep learning", "dose calculation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Boron neutron capture therapy (BNCT) is a binary radiotherapy that selectively kills tumor cells. Its clinical implementation relies on Monte Carlo (MC)-based treatment planning systems, which are time-consuming and limit clinical workflow efficiency. **PURPOSE:** To address this limitation, we propose a Multi-Fidelity MC-based Dual-Branch Network (MFMC-DBN) that leverages complementary information from low- and high-fidelity MC simulations through dual-branch feature fusion, enabling accurate and efficient BNCT dose calculation. **METHODS:** The model was trained, validated, and tested using clinical data from 112 glioblastoma patients. Low-statistics coarse and fine mesh MC dose distributions (6.5&#xd7;106 particle histories) and patient CT information were used to predict three-dimensional dose distributions. Performance was compared with an MC denoising method and a conventional neural network (NN) approach. **RESULTS:** MFMC-DBN outperformed both the NN and MC denoising methods across evaluated metrics. It achieved a mean absolute percentage error (MAPE) of 1.98% in the gross tumor volume (GTV). Organ-specific MAPEs ranged from 1.1% to 3.9%, with a maximum mean absolute error (MAE) of0.28&#xa0;Gy (RBE). Gamma analysis further showed high spatial agreement, with passing rates of 99.8% within the patient contour and 99.3% in the GTV under the 3%/3&#xa0;mm criterion. The proposed method maintained high dosimetric accuracy while substantially accelerating BNCT dose calculation. **CONCLUSIONS:** MFMC-DBN effectively integrates multi-fidelity MC information through a dual-branch attention mechanism, enabling rapid and accurate 3D BNCT dose prediction. By significantly reducing computation time compared with full MC simulations while preserving dosimetric fidelity, these results support the feasibility of the proposed framework for accelerated BNCT dose calculation under a fixed beam configuration.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-09-01
+- **Autores:** Leiming Li, Xin Hong, Yongquan Wang, Gan Huang, Zhiqiang Wu
+- **DOI:** [10.1002/mp.70646](https://doi.org/10.1002/mp.70646)
+- **PubMed ID:** [42634850](https://pubmed.ncbi.nlm.nih.gov/42634850/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42634850/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
