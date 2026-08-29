@@ -1,0 +1,25 @@
+---
+title: "Eliminating Registration Bias in Synthetic CT Generation using a physics-based simulation framework for pelvic anatomy."
+description: "Supervised synthetic computed tomography (sCT) generation from cone-beam CT (CBCT) requires spatially registered training pairs, yet perfect registration between separately acquired scans is unattainable. This registration bias propagates into traine..."
+date: "2026-08-28"
+category: "ia-radiologia"
+pubmedId: "42665000"
+author: "Lukas Zimmermann, Michael Rauter, Martin Buschmann et al."
+tags: ["Adaptive radiotherapy", "Cone-beam CT", "Deep learning", "Physics-based simulation", "Registration bias"]
+---
+
+## Resumen
+
+Supervised synthetic computed tomography (sCT) generation from cone-beam CT (CBCT) requires spatially registered training pairs, yet perfect registration between separately acquired scans is unattainable. This registration bias propagates into trained models and corrupts intensity-based evaluation, so higher benchmark scores may reward reproduction of registration artifacts over anatomical fidelity. We propose physics-based CBCT simulation for geometrically aligned training pairs by construction, with bias-robust geometric metrics.&amp;#xD;&amp;#xD;Approach:A framework simulated pelvic CBCT from fan-beam CT, modeling respiratory motion, X-ray scatter, and noise to yield aligned simulated-CBCT/CT pairs. On a clinical gynecological dataset (deformable registration) and the SynthRAD2023 pelvic dataset (rigid registration), sCT models trained on simulated data were compared against models trained on real pairs, a finetuned variant, and CycleGAN and RegGAN baselines. Evaluation combined intensity metrics (MAE, PSNR, SSIM) with geometric alignment metrics (normalized mutual information, NMI; correlation coefficient, CC) against input CBCT. Downstream segmentation of bladder, rectum and bowel bag was assessed in two modes: an sCT cascade applying a CT-trained model to sCT outputs, and direct segmentation by a model trained on simulated CBCT, plus a physics ablation and five-observer quality assessment.&amp;#xD;&amp;#xD;Main results:Simulation-trained models achieved higher geometric alignment than real-trained models (cross-dataset NMI 0.31 vs 0.22) despite lower intensity scores. Intensity metrics correlated inversely with observer ratings under deformable registration, whereas NMI consistently predicted clinical preference (clinical &#x3c1; = 0.29, SynthRAD &#x3c1; = 0.31). Observers preferred simulation-trained outputs in 87% of cases. In the sCT cascade, simulation-trained models improved segmentation (DSC 0.91/0.86/0.54 vs 0.84/0.77/0.04), while direct simulation-trained CBCT segmentation reached 0.92/0.87/0.83, exceeding a phantom-based baseline on the bowel bag.&amp;#xD;&amp;#xD;Significance:Physics-based simulation eliminates registration bias at its source, and downstream segmentation provides a task-based measure of sCT conversion quality that intensity metrics miss. Geometric fidelity, not intensity agreement with biased ground truth, aligns with the spatial-accuracy requirements of adaptive radiotherapy.
+
+## Información del artículo
+
+- **Revista:** Physics in medicine and biology
+- **Fecha de publicación:** 2026-08-28
+- **Autores:** Lukas Zimmermann, Michael Rauter, Martin Buschmann, Tatevik Mrva-Ghukasyan, Iustin-Mihai Pirsan
+- **DOI:** [10.1088/1361-6560/aea04b](https://doi.org/10.1088/1361-6560/aea04b)
+- **PubMed ID:** [42665000](https://pubmed.ncbi.nlm.nih.gov/42665000/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42665000/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
