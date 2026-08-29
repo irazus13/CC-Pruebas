@@ -1,0 +1,25 @@
+---
+title: "unsurv: clustering individualized survival curves."
+description: "Biomedical phenotyping workflows often cluster high-dimensional molecular or clinical covariates and then test survival differences post hoc. This can miss structure that is expressed primarily through the timing of risk, because two ..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42667032"
+author: "Imad El Badisy"
+tags: []
+---
+
+## Resumen
+
+**MOTIVATION:** Biomedical phenotyping workflows often cluster high-dimensional molecular or clinical covariates and then test survival differences post hoc. This can miss structure that is expressed primarily through the timing of risk, because two patients may have similar scalar risk at one horizon but different predicted survival trajectories. Many survival learners can output patient-specific curves { S ^ i ( t ) } i = 1 n on a common time scale. Clustering these curves gives a survival-native post-prediction representation for exploratory phenotyping. Existing work on survival-curve clustering mainly targets predefined Kaplan-Meier curves or general functional data, whereas a practical tool for individual-level predicted survival curves remains less developed. **RESULTS:** We introduce unsurv, an R package that clusters individualized survival curves on a common time grid using validity-preserving preprocessing, time-weighted integral distances, and partitioning around medoids (PAM). The output includes observed medoid prototype curves, a nearest-medoid rule for assigning new patients, model-selection summaries, resampling-based stability using the Adjusted Rand Index (ARI), and a new unsurv_compare() function for comparing partitions against baselines. The package is model-agnostic and can be paired with any survival learner that returns S ^ i ( t ) . We illustrate the workflow on a synthetic example and on the METABRIC breast cancer cohort using survdnn-predicted survival curves, including baseline comparisons and an out-of-sample validation check showing that the curve-based cluster ordering generalizes to held-out patients. **AVAILABILITY AND IMPLEMENTATION:** The unsurv package is available on CRAN and its full source code and documentation are provided at https://github.com/ielbadisy/unsurv under the MIT License.
+
+## Información del artículo
+
+- **Revista:** Bioinformatics advances
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Imad El Badisy
+- **DOI:** [10.1093/bioadv/vbag218](https://doi.org/10.1093/bioadv/vbag218)
+- **PubMed ID:** [42667032](https://pubmed.ncbi.nlm.nih.gov/42667032/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42667032/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

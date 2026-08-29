@@ -1,0 +1,25 @@
+---
+title: "Improving respiratory and heart rate variation estimation from resting-state BOLD fMRI across the lifespan using a functionally informed, tissue-aware deep learning framework."
+description: "Accurate measurement of physiological signals such as respiration and cardiac activity is essential for modeling physiological confounds in BOLD-fMRI data. However, external monitoring devices such as respiratory belts and photoplethysmographs often ..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42666759"
+author: "Abdoljalil Addeh, Karen Ardila, Pattarawut Charatpangoon et al."
+tags: ["dynamic functional connectivity", "fMRI", "head motion parameters", "heart rate variation", "respiratory variation"]
+---
+
+## Resumen
+
+Accurate measurement of physiological signals such as respiration and cardiac activity is essential for modeling physiological confounds in BOLD-fMRI data. However, external monitoring devices such as respiratory belts and photoplethysmographs often suffer from signal loss, noise, or incomplete recordings, and many fMRI datasets lack physiological measurements altogether due to practical constraints. In this work, we propose a data-driven framework to reconstruct respiratory variation (RV) and heart rate variation (HRV) directly from resting-state fMRI data using a hybrid machine learning architecture that combines one-dimensional convolutional neural networks (1D-CNN) with gated recurrent units (GRUs). The model processes BOLD signals from 630 regions of interest (ROIs), spanning cortical and subcortical gray matter, white matter, and cerebrospinal fluid. For RV estimation, six head motion parameters were included as additional inputs to capture motion-related physiological information. The proposed method was trained and evaluated on three cohorts across the lifespan from the Human Connectome Project (HCP), including HCP in Development (HCP-D, ages 5-21 years), HCP in Young Adults (HCP-YA, ages 22-35 years), and HCP in Aging (HCP-A, ages 36-100 years). Age-specific architectural tuning was applied to accommodate developmental, neurovascular, and physiological variability across these populations. When compared against established CNN- and RNN-based baselines under matched preprocessing and native temporal resolution, the proposed architecture achieved consistent performance gains across all evaluation metrics. The largest relative improvements were observed for error-based and temporal alignment metrics, with MAE, MSE, and DTW reduced by approximately 7-10%, indicating lower absolute reconstruction error and improved temporal fidelity, while correlation-based improvements were more modest (approximately 5-7%). These results demonstrate the feasibility and effectiveness of reconstructing RV and HRV directly from fMRI time series using spatially and temporally enriched neural architectures. Building on earlier efforts in this domain, the proposed framework extends prior work through evaluation across multiple cohorts, broader anatomical coverage, and enhanced modeling capacity, offering a robust alternative for physiological modeling in the absence of external recordings.
+
+## Información del artículo
+
+- **Revista:** Imaging neuroscience (Cambridge, Mass.)
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Abdoljalil Addeh, Karen Ardila, Pattarawut Charatpangoon, Ethan Church, Rebecca J Williams
+- **DOI:** [10.1162/IMAG.a.1346](https://doi.org/10.1162/IMAG.a.1346)
+- **PubMed ID:** [42666759](https://pubmed.ncbi.nlm.nih.gov/42666759/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42666759/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
