@@ -1,0 +1,25 @@
+---
+title: "Balancing privacy and performance: the impact of facial defacing on AI in medical imaging."
+description: "Recent NIH Data Management and Sharing (DMS) policy updates and NIH controlled-access data security requirements have increased attention to facial anonymization and controlled-access handling of shared head imaging data. This is part..."
+date: "2026-08-29"
+category: "ia-medicina"
+pubmedId: "42667924"
+author: "Yuli Wang, Yuwei Dai, Haoyue Guan et al."
+tags: ["Brain segmentation", "Defacing algorithms", "Facial anonymization", "Medical imaging", "Vision-language models"]
+---
+
+## Resumen
+
+**BACKGROUND:** Recent NIH Data Management and Sharing (DMS) policy updates and NIH controlled-access data security requirements have increased attention to facial anonymization and controlled-access handling of shared head imaging data. This is particularly relevant for datasets submitted to or hosted by the Cancer Imaging Archive (TCIA), where NCI Cancer Imaging Program/TCIA implementation practices address imaging data containing potentially reconstructable facial anatomy. While intended to protect patient privacy and strengthen public trust, defacing can distort craniofacial geometry and alter image statistics, potentially compromising the fidelity and reproducibility of artificial intelligence (AI) models trained on such data. Existing studies primarily validate visual anonymization quality, but few have quantified its downstream impact on deep learning-based medical imaging tasks. Understanding this privacy-utility trade-off is crucial for responsible data sharing and compliant AI development. **METHODS:** We systematically evaluated three representative defacing algorithms, two invasive (QuickShear and Py-Deface) and one less destructive, facial replacement (mri_reface), across MRI and CT datasets from 600 subjects spanning three institutions. Model performance was assessed on three clinically relevant applications: (1) brain segmentation and Evans ratio biomarker quantification in normal pressure hydrocephalus (NPH) MRI using SLANT and FreeSurfer; (2) representative-slice selection and diagnostic reasoning for brain tumour MRI using vision-language models (VLMs); and (3) automated emergency head CT report generation using a fine-tuned Otter-based vision-language model. Each method's impact was quantified using Dice similarity, correlation metrics, reasoning accuracy, and natural-language generation scores (BLEU, METEOR, ROUGE, CIDEr). **FINDINGS:** Invasive algorithms caused significant degradation across all tasks. QuickShear reduced mean Dice scores by up to 9% and introduced 14-19% failure rates during quality control, while PyDeface induced smaller but measurable performance losses. mri_reface maintained 100% success without any failures and achieved segmentation, diagnostic, and report-generation accuracy within 3-5% of the original data. Evans ratio distributions remained statistically consistent between mri_reface and original images (p &gt; 0.05), whereas invasive methods introduced broader variance. Across all VLM tasks, mri_reface preserved high correlation with radiologist-selected slices (r = 0.979) and stable report-generation quality (BLEU-4 = 0.11 &#xb1; 0.06 vs. 0.12 &#xb1; 0.07 for original). **INTERPRETATION:** Facial anonymization introduces a measurable privacy-utility trade-off that must be explicitly considered in the design of AI-ready medical imaging datasets. Invasive defacing compromises geometric and statistical integrity, reducing downstream model accuracy even outside facial regions. Facial replacement anonymization methods, such as mri_reface, effectively reconcile patient privacy with reproducibility, offering a practical path to NIH-compliant open data. Future regulatory and institutional policies should integrate quantitative privacy-utility assessment and mandate transparent reporting of anonymization pipelines to ensure that shared imaging data remain both ethically safe and scientifically valid under emerging digital health frameworks. **FUNDING:** This work was partially supported by the American Heart Association (Award No. 25IPA1454088), the National Institutes of Health (Award No. 1R03CA286693-01A1 and Award No. 1R01CA291826-01A1), the U.S. Department of Defense (Award No. HT94252510807), and the National Science Foundation (Award No. 2545071).
+
+## Información del artículo
+
+- **Revista:** EBioMedicine
+- **Fecha de publicación:** 2026-08-29
+- **Autores:** Yuli Wang, Yuwei Dai, Haoyue Guan, Cheng-Yi Li, Maulik Vora
+- **DOI:** [10.1016/j.ebiom.2026.106457](https://doi.org/10.1016/j.ebiom.2026.106457)
+- **PubMed ID:** [42667924](https://pubmed.ncbi.nlm.nih.gov/42667924/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42667924/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
