@@ -1,0 +1,25 @@
+---
+title: "Pooled two-cohort MRI body composition phenotyping with open-source deep learning."
+description: "Body mass index fails to capture variation in fat and muscle distribution that determines metabolic health and disease risk. MRI enables radiation-free quantification of regional body composition, yet scalable open-source tools applie..."
+date: "2026-08-29"
+category: "ia-medicina"
+pubmedId: "42668286"
+author: "Christian J Mertens, Hartmut H&#xe4;ntze, Sebastian Ziegelmayer et al."
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND:** Body mass index fails to capture variation in fat and muscle distribution that determines metabolic health and disease risk. MRI enables radiation-free quantification of regional body composition, yet scalable open-source tools applied in pooled cohorts with differing acquisition protocols have been lacking. **METHODS:** MRSegmentator, an open-source nnU-Net-based pipeline, was applied to quantify visceral adipose tissue (VAT), abdominal subcutaneous adipose tissue (ASAT), gluteofemoral adipose tissue (GFAT), trunk musculature, and the liver mask used for liver fat-fraction estimation in 45,851 adults from the German National Cohort (n&#x2009;=&#x2009;26,877, 3&#x2009;T multi-centre Siemens) and UK Biobank (n&#x2009;=&#x2009;18,974, 1.5&#x2009;T Siemens). Population-scale compartment volumes were segmented from stitched in-phase gradient-echo (GRE) images in both cohorts; liver fat fraction was calculated from fat-only and water-only images. The annotated development data comprised NAKO T2-HASTE and UKB Dixon reconstructions. A single pooled model was applied without site-specific adaptation. A separate two-reader agreement study used 50 scans from these annotated development-sequence domains. Associations between BMI-adjusted body composition and cardiometabolic conditions were estimated using generalized linear mixed-effects models. Incremental discrimination beyond age, BMI, and waist-to-hip ratio was assessed. **RESULTS:** Five-fold participant-stratified internal cross-validation against curated human-in-the-loop development references comprising UKB Dixon and NAKO T2-HASTE yielded a mean Dice of 0.91. In a separate 50-scan reader study on these annotated development-sequence images, overall reader-reader Dice was 0.937 and overall algorithm-reader Dice was 0.908. The trained pipeline was then used to segment compartment volumes from stitched in-phase GRE inputs in both cohorts, while liver fat fraction was calculated from fat-only and water-only images; direct sequence-matched validation on NAKO GRE was not performed. VAT showed the strongest positive associations with cardiometabolic conditions, while GFAT showed inverse associations, most prominently for type 2 diabetes (OR 0.69, 95% CI 0.66 to 0.72). Disease-specific body-composition phenotypes were identified, with type 2 diabetes characterized by elevated VAT, reduced GFAT, and increased liver fat. MRI-derived compartments modestly improved discrimination for type 2 diabetes and hyperlipidemia beyond anthropometric measures. **CONCLUSIONS:** A single open-source deep-learning pipeline enabled pooled body-composition phenotyping in two cohorts and captured distributional variation in fat and muscle beyond BMI. High agreement in internal cross-validation (mean Dice 0.91) and the separate two-reader study support the annotated development-sequence analysis, while the population-scale application identified distinct disease-associated phenotypes and modest incremental discrimination beyond conventional anthropometry.
+
+## Información del artículo
+
+- **Revista:** Communications medicine
+- **Fecha de publicación:** 2026-08-29
+- **Autores:** Christian J Mertens, Hartmut H&#xe4;ntze, Sebastian Ziegelmayer, Jakob Nikolas Kather, Daniel Truhn
+- **DOI:** [10.1038/s43856-026-01888-w](https://doi.org/10.1038/s43856-026-01888-w)
+- **PubMed ID:** [42668286](https://pubmed.ncbi.nlm.nih.gov/42668286/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42668286/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
