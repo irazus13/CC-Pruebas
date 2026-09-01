@@ -1,0 +1,25 @@
+---
+title: "Comparative Analysis of Graph Attention and Graph Convolutional Networks for Predicting Candidate SNP-miRNA-DrugInteractions in Integrated Regulatory Datasets."
+description: "Complex genetic and epigenetic factors, such as single-nucleotide polymorphisms (SNPs) that influence the function of microRNAs (miRNAs), are involved in periodontal inflammation and tissue regeneration. However, computational approac..."
+date: "2026-06-30"
+category: "ia-odontologia"
+pubmedId: "42678111"
+author: "Varun Batra, Pradeep K Yadalam, Carlos M Ardila"
+tags: ["machine learning", "microRNAs", "periodontitis", "polymorphism", "single nucleotide"]
+---
+
+## Resumen
+
+**UNLABELLED:** Complex genetic and epigenetic factors, such as single-nucleotide polymorphisms (SNPs) that influence the function of microRNAs (miRNAs), are involved in periodontal inflammation and tissue regeneration. However, computational approaches for predicting potential SNP-miRNA interactions that may influence inflammatory signaling and drug responses remain limited in precision periodontology. **AIM:** To implement and compare two graph neural network-based machine learning models-Graph Attention Network (GAT) and Graph Convolutional Network (GCN)- for predicting potential SNP-miRNA-drug interactions that may be relevant to inflammatory and regenerative pathways associated with periodontal disease. **MATERIALS AND METHOD:** SNPs found in miRNA precursor and target regions associated with immune and drug-response genes were included in three selected miRNA SNP v3.0 database datasets. After preprocessing, composite vectors were created by early fusion of heterogeneous features. Principal component analysis (PCA) was then used to normalize and reduce the composite vectors. Using matched hyperparameters, the GAT and GCN models were built in PyTorch Geometric and trained with cross-entropy loss. Regression metrics (RMSE, MAE, R2) and classification metrics (accuracy, precision, recall, F1-score, ROC-AUC, PR-AUC) were used to evaluate performance. **RESULTS:** With a perfect recall (1.0), F1-score of 0.666, and PR-AUC of 0.750, GAT performed better in classification than GCN, demonstrating higher sensitivity for identifying candidate interactions within the integrated dataset. Although R2 values were close to zero, indicating limited variance explanation, regression performance was comparable for both models (RMSE &#x2248; 0.524). Visual diagnostics showed that GAT maintained more prediction variability, while GCN predictions collapsed around mean values. **CONCLUSIONS:** Because of its attention-based architecture, GAT showed improved performance in classification metrics compared with GCN, suggesting potential advantages for prioritizing candidate SNP-miRNA-drug interactions within integrated regulatory datasets. However, the limited predictive performance observed indicates that these findings should be interpreted primarily as a comparative computational evaluation rather than as direct biological evidence. Future studies incorporating periodontalspecific molecular datasets and experimentally validated interactions will be necessary to improve biological interpretability and translational relevance.
+
+## Información del artículo
+
+- **Revista:** Acta odontologica latinoamericana : AOL
+- **Fecha de publicación:** 2026-06-30
+- **Autores:** Varun Batra, Pradeep K Yadalam, Carlos M Ardila
+- **DOI:** [10.54589/aol.39/1/43](https://doi.org/10.54589/aol.39/1/43)
+- **PubMed ID:** [42678111](https://pubmed.ncbi.nlm.nih.gov/42678111/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42678111/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

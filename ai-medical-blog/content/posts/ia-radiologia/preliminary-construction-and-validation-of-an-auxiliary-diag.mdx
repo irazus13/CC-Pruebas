@@ -1,0 +1,25 @@
+---
+title: "[Preliminary construction and validation of an auxiliary diagnosis model for cervical instability based on multimodal deep learning]."
+description: "To preliminarily construct and validate a diagnostic model for Cervical Spine Instability (CSI) based on multimodal deep learning, and to develop an open-access, web-based prototype platform tailored for clinical scenarios. **METHODS:*..."
+date: "2026-08-25"
+category: "ia-radiologia"
+pubmedId: "42677739"
+author: "Guangyi Yang, Changxiao Han, Minshan Feng et al."
+tags: ["Cervical spine instability", "Deep learning", "Diagnosis, computer-assisted", "Multimodal learning", "Neural networks, computer"]
+---
+
+## Resumen
+
+**OBJECTIVE:** To preliminarily construct and validate a diagnostic model for Cervical Spine Instability (CSI) based on multimodal deep learning, and to develop an open-access, web-based prototype platform tailored for clinical scenarios. **METHODS:** Clinical data from 122 subjects were included, integrating three-position X-ray images and nine structured clinical variables. The model architecture featured an imaging branch built on ResNeXt50 and a clinical branch based on a Fully Connected Neural Network(FCNN), with cross-modal fusion performed at the feature level(ResNeXt50-FCNN). Modality ablation studies were conducted using two control groups:"Imaging-only"(ResNeXt50) and "Clinical-only"(FCNN). Evaluation metrics included Area Under the Receiver Operating Characteristic Curve(AUC), Average Precision(AP), Accuracy, Precision, Recall, F1-score, and Specificity. Grad-CAM was employed for attention visualization of the imaging branch, while SHAP(SHapley Additive exPlanations) was used to interpretglobal and individual feature contributions of the clinical branch. Finally, the optimal model was deployed via the Streamlit framework to create an interactive, clinically usable platform. **RESULTS:** The multimodal model achieved superior comprehensive performance on the validation set compared to the control groups, yielding an AUC of 0.964, AP of 0.973, Accuracy of 0.919, Precision of 0.875, F1-score of 0.933, and Specificity of 0.813. Ablation studies demonstrated that the fusion strategy significantly compensated for the insufficient sensitivity of the "Imaging-only" model and the low specificity of the "Clinical-only" model. Grad-CAM visualizations revealed that the model consistently focused on suspected abnormal structures across all three positions, effectively suppressing background interference. SHAP analysis identified age, limitation of flexion-extension, tenderness, gender, and headache as the primary contributing variables. The developed AI platform(https://cervical-instability-classifier.streamlit.app/) provides real-time outputs of diagnostic probabilities and visualizations of feature contributions. **CONCLUSION:** This study successfully constructed and preliminarily validated a CSI discrimination model based on multimodal deep learning, demonstrating promising diagnostic performance, interpretability, and potential for clinical application. However, given the limited sample size of this study, further external validation is required to confirm the model's generalizability and ultimate clinical utility.
+
+## Información del artículo
+
+- **Revista:** Zhongguo gu shang = China journal of orthopaedics and traumatology
+- **Fecha de publicación:** 2026-08-25
+- **Autores:** Guangyi Yang, Changxiao Han, Minshan Feng, Haibao Wen, Jing Li
+- **DOI:** [10.12200/j.issn.1003-0034.20251185](https://doi.org/10.12200/j.issn.1003-0034.20251185)
+- **PubMed ID:** [42677739](https://pubmed.ncbi.nlm.nih.gov/42677739/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42677739/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
