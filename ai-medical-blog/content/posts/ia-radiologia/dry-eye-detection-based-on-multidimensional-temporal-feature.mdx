@@ -1,0 +1,25 @@
+---
+title: "Dry eye detection based on multidimensional temporal features of fluorescein tear film videos."
+description: "Dry eye disease (DED) is a common chronic eye disease with a high prevalence, and the imbalance of the tear film is a core characteristic of its pathogenesis. The time that is required for the tear film to break and form a dry spot af..."
+date: "2026-09-01"
+category: "ia-radiologia"
+pubmedId: "42701606"
+author: "Gengyuan Wang, Peng Xiao, Yuancong Huang et al."
+tags: ["Dry eye detection", "fluorescein tear film", "multidimensional temporal features"]
+---
+
+## Resumen
+
+**BACKGROUND:** Dry eye disease (DED) is a common chronic eye disease with a high prevalence, and the imbalance of the tear film is a core characteristic of its pathogenesis. The time that is required for the tear film to break and form a dry spot after eye opening is known as the fluorescein breakup time (FBUT). FBUT is a standard clinical test for DED diagnosis. Currently, most DED diagnoses rely on FBUT test image acquisition devices and manual timing judgments, which are subjective, complex, and difficult. Additionally, computer-aided detection techniques face challenges in feature recognition, accuracy (ACC), and real-time, fully automated detection. Therefore, the automated recognition of dry eye based on deep learning analysis of fluorescein tear film breakup videos has become an important research direction. The objective of this study was to develop a system using a deep learning model to automatically detect DED from fluorescein tear film breakup videos. **METHODS:** We constructed a fluorescein tear film video dataset with 148 DED cases and 100 non-DED cases based on clinical evaluations, and a segment dataset included 2,543 video frames with annotated tear film regions. Based on this, we proposed a fully automated method for DED detection with multidimensional temporal features of tear film as input. First, we used the multi-attention segmentation network (MASN) to segment the tear film region. Then, the tear film percentage curve in the video was used to calculate the fully open eye threshold, which determines the consecutive frames for further analysis. Subsequently, we constructed an efficient network to compress the morphological features in the tear film region and used PyRadiomics to extract the texture features from the tear film region. Finally, the cross-attention transformer classification network (CATCN) was used to detect the DED, which fused the temporal and spatial features from two different perspectives. **RESULTS:** The segmentation results of the tear film region achieved an ACC of 0.97, a sensitivity (SE) of 0.82, and an area under the curve (AUC) of 0.98. The DED detection method was then tested on our datasets, achieving an ACC of 0.92, an SE of 0.86, and an AUC of 0.96. **CONCLUSIONS:** The fully automated dry eye detection system achieves excellent detection performance through precise tear film segmentation and multi-view tear film feature fusion recognition. It offers a convenient new method for large-scale screening of DED.
+
+## Información del artículo
+
+- **Revista:** Quantitative imaging in medicine and surgery
+- **Fecha de publicación:** 2026-09-01
+- **Autores:** Gengyuan Wang, Peng Xiao, Yuancong Huang, Jin Yuan
+- **DOI:** [10.21037/qims-2026-0950](https://doi.org/10.21037/qims-2026-0950)
+- **PubMed ID:** [42701606](https://pubmed.ncbi.nlm.nih.gov/42701606/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42701606/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
