@@ -1,0 +1,25 @@
+---
+title: "Dual-branch MRI denoising and motion artifact suppression with uncertainty estimation and segmentation-based evaluation."
+description: "Magnetic resonance (MR) images are essential for clinical diagnosis, yet their quality is often compromised by noise and motion artifacts, potentially obscuring anatomical details and reducing diagnostic accuracy. Existing deep learni..."
+date: "2026-09-01"
+category: "ia-radiologia"
+pubmedId: "42703740"
+author: "Mingfu Jiang, Chi Kin Lam, Zhuoneng Zhang et al."
+tags: ["adaptive", "simultaneous denoising and motion artifact suppression", "uncertainty estimation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Magnetic resonance (MR) images are essential for clinical diagnosis, yet their quality is often compromised by noise and motion artifacts, potentially obscuring anatomical details and reducing diagnostic accuracy. Existing deep learning approaches frequently address denoising and motion artifact suppression as separate tasks, overlook pixel correlations and varying noise levels, require manual parameter tuning, and lack uncertainty evaluation, thus limiting their practical utility in clinical&#xa0;settings. **PURPOSE:** This study aims to develop a Dual-branch MRI Denoising and Motion Artifact Suppression with Uncertainty Estimation and Segmentation-based Evaluation (DbUSNet). The model is designed to adaptively handle varying noise and motion artifact levels, preserve complex structural details, and provide uncertainty estimates for the processed outputs. This may offer insights into downstream clinical tasks such as image&#xa0;segmentation. **METHODS:** The DbUSNet integrates two specialized branches: A Heterogeneous Window Transformer Network (HWTNet) for adaptive denoising using both local and global feature modeling, and an improved U-Net based Motion Artifact Suppression Network (ASNet). Each branch is coupled with an estimation subnetwork-Noise Estimation Subnetwork (NES) and Artifact Estimation Subnetwork (AES)-to dynamically assess and adapt to input specific degradation levels. The outputs of both branches are fused via an attention-based fusion module. Uncertainty is quantified during inference using Monte Carlo (MC) dropout. The model was trained and tested on brain MR scans from Brats2021 dataset (2000 samples), OpenNeuro dataset (22 samples), and MR-ART dataset (148 samples), incorporating synthetic Rician noise and motion artifacts. Downstream segmentation performance was evaluated on the Medical Segmentation Decathlon (MSD) brain dataset (1666 samples) and a prostate MR dataset (203 samples). **RESULTS:** On the Brats2021, OpenNeuro, and MR-ART testsets, DbUSNet achieved PSNR of 28.23 dB, 27.13 dB, and 27.83 dB, SSIM of 0.93, 0.91, and 0.92, NMSE of 0.08, 0.08, and 0.08, respectively. For the downstream segmentation task, the denoised and motion artifact suppressed outputs led to average Dice score improvements of 3.10%, 3.59%, 2.46%, and 2.15% for T1, T1ce, FLAIR, and T2 modalities in the MSD brain dataset, and 2.16% and 2.24% for T2 and ADC sequences in the prostate&#xa0;dataset. **CONCLUSION:** The DbUSNet framework jointly performs adaptive denoising and motion artifact suppression within a unified pipeline and enables pixel-wise uncertainty quantification. Evaluations on controlled brain MRI datasets show consistent image quality gains and improved downstream segmentation performance, though the limited size and healthy-only composition of real motion test cohorts restrict wide clinical extrapolation. This work delivers a feasible technical prototype for MR image enhancement; larger, diverse clinical patient datasets will be required to further validate its clinical&#xa0;utility.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-09-01
+- **Autores:** Mingfu Jiang, Chi Kin Lam, Zhuoneng Zhang, Poorya MohammadiNasab, Hing-Chiu Chang
+- **DOI:** [10.1002/mp.70662](https://doi.org/10.1002/mp.70662)
+- **PubMed ID:** [42703740](https://pubmed.ncbi.nlm.nih.gov/42703740/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42703740/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
