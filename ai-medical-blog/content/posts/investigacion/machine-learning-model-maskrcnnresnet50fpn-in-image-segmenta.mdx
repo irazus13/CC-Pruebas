@@ -1,0 +1,25 @@
+---
+title: "Machine learning model MASKRCNN_RESNET50_FPN in image segmentation for the detection of the long head of biceps in arthroscopy images."
+description: "ObjectiveSurgical decision-making during arthroscopic procedures often relies on the subjective visual assessment of tissue morphology, particularly the redness of the long head of the biceps tendon (LHB), which serves as an indicator for potential s..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42704781"
+author: "Norman Schumann, Matthias K&#xf6;nigshausen, Ole Somberg et al."
+tags: ["arthroscopy", "convolutional neural network", "deep learning", "image segmentation", "long head of biceps tendon"]
+---
+
+## Resumen
+
+ObjectiveSurgical decision-making during arthroscopic procedures often relies on the subjective visual assessment of tissue morphology, particularly the redness of the long head of the biceps tendon (LHB), which serves as an indicator for potential surgical intervention. This subjectivity introduces variability across clinicians, underscoring the need for objective, data-driven methods. The present study aimed to evaluate the feasibility of applying the MASKRCNN_RESNET50_FPN deep learning model for automated segmentation of the LHB in arthroscopic images, thereby converting subjective visual assessments into quantifiable, reproducible measurements.MethodsThis original research article is a retrospective cohort analysis of arthroscopic images obtained from 124 participants (84 male, 40 female) who underwent arthroscopic procedures between March 2015 and May 2019 at a single institution. From a comprehensive database of 130,000 arthroscopic images, 15,000 images featuring the LHB were identified, and 200 were selected for manual annotation by an experienced physician. The MASKRCNN_RESNET50_FPN model, combining a ResNet50 backbone with a Feature Pyramid Network and a mask prediction branch, was trained for 10,000 iterations using the AdamW optimizer (learning rate 1&#xd7;10-5) with transfer learning from COCO-pretrained weights. Model performance was assessed through expert evaluation on 400 randomly selected validation images and through automated pixel-level evaluation computing Precision, Recall, F1-score (Dice coefficient), and Intersection over Union (IoU). A baseline comparison with a U-Net (ResNet34 encoder) and three classical segmentation methods was performed. The reporting of this study conforms to the STROBE guidelines.ResultsExpert evaluation of 400 validation images yielded a precision of 0.88. The automated pixel-level evaluation on the same 400 images yielded a mean precision of 0.83, recall of 0.86, F1-score of 0.83, and IoU of 0.76 (median IoU: 0.90). The model demonstrated consistent performance across varying tendon orientations and background conditions, and effectively assigned low relevance scores (0.1-0.3) to imaging artifacts. In the baseline comparison, a U-Net achieved a higher mean IoU of 0.91 (Wilcoxon p &lt; 0.001). The combined training loss converged to 0.0809 after 10,000 iterations.ConclusionsThe MASKRCNN_RESNET50_FPN model may serve as a tool for objective and reproducible segmentation of the LHB in arthroscopic images, with performance corroborated by both expert assessment and automated pixel-level evaluation. These findings suggest that deep learning-based image segmentation has the potential to reduce subjectivity in surgical decision-making. Limitations include the single-center design, limited demographic diversity, and the relatively small training dataset. Multi-center validation with a more diverse patient cohort is recommended.
+
+## Información del artículo
+
+- **Revista:** Science progress
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Norman Schumann, Matthias K&#xf6;nigshausen, Ole Somberg, Thomas Rosteius, Thomas A Schildhauer
+- **DOI:** [10.1177/00368504261459906](https://doi.org/10.1177/00368504261459906)
+- **PubMed ID:** [42704781](https://pubmed.ncbi.nlm.nih.gov/42704781/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42704781/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
