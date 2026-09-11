@@ -1,0 +1,25 @@
+---
+title: "Deep Learning with Attention Mechanism for Pediatric Appendicitis Detection on Plain Abdominal Radiographs."
+description: "Diagnosing acute appendicitis in children is difficult due to clinical uncertainties. Ultrasonography is operator-dependent, whereas computed tomography carries radiation risks in the pediatric population. Although plain abdominal radiography is inex..."
+date: "2026-09-10"
+category: "ia-radiologia"
+pubmedId: "42720887"
+author: "&#x15e;eyma &#x15e;im&#x15f;irgil Kara, Yavuz &#xdc;nal, G&#xfc;l&#xfc;zar &#xd6;zbolat"
+tags: ["Abdominal radiograph", "Acute appendicitis", "Attention mechanism", "Computer-aided diagnosis", "Deep learning"]
+---
+
+## Resumen
+
+Diagnosing acute appendicitis in children is difficult due to clinical uncertainties. Ultrasonography is operator-dependent, whereas computed tomography carries radiation risks in the pediatric population. Although plain abdominal radiography is inexpensive, fast, and widely available, its sensitivity in diagnosing appendicitis is considered low. This study investigated the feasibility of detecting pediatric appendicitis from plain abdominal radiography using deep learning with preprocessing optimization and attention mechanism analysis. Plain abdominal radiographs of 162 pediatric patients who underwent surgery for appendicitis and 206 control subjects were retrospectively collected. Manual cropping and unsharp masking preprocessing were applied to the images. Five different deep learning architectures (EfficientNet-B0, ResNet50, DenseNet121, Swin-Tiny, ConvNeXt-Tiny), pre-trained on ImageNet, were fine-tuned and evaluated with fivefold stratified cross-validation using early stopping to prevent overfitting. Four attention mechanisms, namely Squeeze-and-Excitation (SE), Convolutional Block Attention Module (CBAM), Coordinate Attention (CA), and Parallel Coordinate-Channel Attention (PCCA), were then integrated into the best-performing architecture and systematically compared. EfficientNet-B0 demonstrated the highest baseline performance with an aggregated AUC of 0.804 (95% CI 0.760-0.846). Preprocessing ablation showed that manual cropping provided the largest gain, increasing AUC from 0.700 to 0.822, while unsharp masking provided a marginal additional contribution, reaching 0.824. The addition of SE attention achieved the highest aggregated AUC of 0.824 (95% CI 0.781-0.863), outperforming CA (0.814), CBAM (0.791), and PCCA (0.792). A branch-level ablation of PCCA showed that its ECA branch alone reached 0.819 with five learnable parameters, above both the full module and its coordinate branch, so combining the two brought no benefit at this data scale. Gradient-weighted Class Activation Mapping (Grad-CAM) analysis showed that the model focused on the right lower quadrant and pelvic region in a substantial proportion of appendicitis cases. The results suggest that plain abdominal radiography, combined with deep learning and attention-based optimization, could serve as a potential screening tool for pediatric appendicitis in the emergency department.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-09-10
+- **Autores:** &#x15e;eyma &#x15e;im&#x15f;irgil Kara, Yavuz &#xdc;nal, G&#xfc;l&#xfc;zar &#xd6;zbolat
+- **DOI:** [10.1007/s10278-026-02262-x](https://doi.org/10.1007/s10278-026-02262-x)
+- **PubMed ID:** [42720887](https://pubmed.ncbi.nlm.nih.gov/42720887/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42720887/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
