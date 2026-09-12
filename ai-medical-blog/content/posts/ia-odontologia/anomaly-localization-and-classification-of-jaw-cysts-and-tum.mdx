@@ -1,0 +1,25 @@
+---
+title: "Anomaly Localization and Classification of Jaw Cysts and Tumours Using Anatomy-Conditioned Diffusion on Panoramic Radiographs."
+description: "Accurate localization and classification of jaw cysts and tumours on panoramic radiographs are important for timely referral and treatment planning but remain challenging due to overlapping anatomy, heterogeneous lesion appearances, a..."
+date: "2026-09-10"
+category: "ia-odontologia"
+pubmedId: "42721696"
+author: "Sujeong Kim, Taehyung Kim, Dahee Kim et al."
+tags: ["Anomaly detection", "Automatic diagnosis", "Classification", "Diffusion models", "Panoramic radiographs"]
+---
+
+## Resumen
+
+**OBJECTIVES:** Accurate localization and classification of jaw cysts and tumours on panoramic radiographs are important for timely referral and treatment planning but remain challenging due to overlapping anatomy, heterogeneous lesion appearances, and dental restorations. This study aimed to develop a 2-stage diagnostic pipeline consisting of DentalDiff+, an anatomy-conditioned diffusion module for normal-only anomaly localization, and a separate heat map-based supervised classifier for multi-class classification of jaw cysts and tumours. **METHODS:** The diffusion backbone and Anatomy-preserving Condition Network (ACN) within DentalDiff+ were trained using only normal panoramic radiographs (n = 300) to learn lesion-free anatomical priors. During inference, the model reconstructed the input radiograph and generated anomaly heat maps from reconstruction-based deviations. An ACN was introduced to preserve patient-specific normal structures and reduce artifact-driven false activations. The generated heat maps were then concatenated with the original radiographs and used in a separate supervised classifier for normal cases and 4 lesion categories: dentigerous cysts, periapical cysts, odontogenic keratocysts, and ameloblastomas. **RESULTS:** DentalDiff+ achieved the best overall performance among the evaluated baselines, with a detection IoU of 0.65 &#xb1; 0.06 and AP of 0.70 &#xb1; 0.13. It also showed improved reconstruction fidelity, with a PSNR of 23.05 &#xb1; 2.90, SSIM of 0.75 &#xb1; 0.05, and FID of 54.16 &#xb1; 2.12. In the heat map-based classification stage, DentalDiff+ achieved an average accuracy of 0.93 &#xb1; 0.01, specificity of 0.95 &#xb1; 0.01, sensitivity of 0.82 &#xb1; 0.03, and multi-class AUC of 0.94 &#xb1; 0.01. **CONCLUSIONS:** DentalDiff+ combines normal-only diffusion-based anomaly localization with heat map-guided multi-class classification for jaw cysts and tumours on panoramic radiographs. By incorporating anatomy-conditioned denoising through ACN, the proposed method improved reconstruction fidelity and generated clinically meaningful anomaly cues while supporting lesion subtype classification. These findings suggest the potential of anatomy-conditioned diffusion for decision-support workflows, although larger multi-institutional and prospective validation is required before clinical deployment.
+
+## Información del artículo
+
+- **Revista:** International dental journal
+- **Fecha de publicación:** 2026-09-10
+- **Autores:** Sujeong Kim, Taehyung Kim, Dahee Kim, Ji Yong Han, Heejin Yun
+- **DOI:** [10.1016/j.identj.2026.111107](https://doi.org/10.1016/j.identj.2026.111107)
+- **PubMed ID:** [42721696](https://pubmed.ncbi.nlm.nih.gov/42721696/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42721696/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
