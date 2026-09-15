@@ -1,0 +1,25 @@
+---
+title: "POCUS-Net: Beamforming Inclusive Image Translation Approach for High-Quality Pediatric Bone Visualization in Point-of-Care Ultrasound."
+description: "Point-of-care ultrasound (POCUS) devices are increasingly used in pediatric emergency departments (EDs) for musculoskeletal (MSK) imaging, as they are highly portable and cost-effective. Most POCUS systems use delay-and-sum beamforming (DASB) due to ..."
+date: "2026-05-01"
+category: "ia-radiologia"
+pubmedId: "42735183"
+author: "Midhila Madhusoodanan, Mahesh Raveendranatha Panicker, Abhilash Rakkunedeth Hareendranathan"
+tags: []
+---
+
+## Resumen
+
+Point-of-care ultrasound (POCUS) devices are increasingly used in pediatric emergency departments (EDs) for musculoskeletal (MSK) imaging, as they are highly portable and cost-effective. Most POCUS systems use delay-and-sum beamforming (DASB) due to its low computational complexity. The image quality produced by DASB is not optimized for MSK use cases, resulting in images that are often inadequate for reporting purposes. More advanced adaptive beamforming algorithms, such as minimum variance distortionless response beamforming (MVDRB), leverage spatial data correlation to improve resolution and contrast. However, MVDRB is computationally intensive and requires access to raw radio frequency (RF) data, which is typically not available in commercial POCUS devices. We propose POCUS-Net, a computationally efficient deep learning (DL)-based enhancement framework that transforms DASB images to MVDRB-like image quality without requiring raw RF data. The model was built on a PatchGAN-based architecture and incorporates an integrated backscatter (IBS) derived intensity map as a conditioning input, functioning as an attention mechanism to focus on clinically relevant structures. POCUS-Net was trained on in vivo MSK datasets with input as single-plane-wave (SPW) DASB data and output as multiple-plane-wave (MPW) MVDRB data. The model was tested on pediatric clinical datasets acquired from three different POCUS devices: Clarius, Philips Lumify, and Telemed. The performance of POCUS-Net was evaluated using contrast ratio (CR), signal-to-noise ratio (SNR), contrast-to-noise ratio (CNR), and edge preservation index (EPI), a region-based metric specifically developed to assess structural fidelity in MSK bone-enhanced ultrasound (US) images. Compared to baseline DASB images, the POCUS-Net improved CR by up to 40%, SNR by over 200%, and CNR by nearly 130% across the different probes. POCUS-Net images showed substantial improvements in image contrast and bone boundary clarity. The model outperformed common DL models, including CNN- and GAN-based models, achieving +8.5% in CR, +47.8% in SNR, +6.1% in CNR, and +0.03% in EPI, surpassing the second-best model. We also performed second-order texture analysis using the gray-level run length matrix (GLRLM) to quantify bone structural patterns in both normal and fractured cases, and the gray-level co-occurrence matrix (GLCM) features to assess texture similarity. The inference time of the POCUS-Net was 4.0 ms/image, compared to 148 s for conventional MVDRB. The model is fast and requires 219 GFLOPs for inference, which is suitable for POCUS.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on ultrasonics
+- **Fecha de publicación:** 2026-05-01
+- **Autores:** Midhila Madhusoodanan, Mahesh Raveendranatha Panicker, Abhilash Rakkunedeth Hareendranathan
+- **DOI:** [10.1109/TUSON.2026.3681226](https://doi.org/10.1109/TUSON.2026.3681226)
+- **PubMed ID:** [42735183](https://pubmed.ncbi.nlm.nih.gov/42735183/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42735183/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

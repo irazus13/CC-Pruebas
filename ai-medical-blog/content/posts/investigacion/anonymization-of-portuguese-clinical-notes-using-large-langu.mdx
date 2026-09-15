@@ -1,0 +1,25 @@
+---
+title: "Anonymization of Portuguese Clinical Notes Using Large Language Models and Quantum-Enhanced Hybrid Architectures: Comparative Evaluation Study."
+description: "The widespread adoption of electronic health records (EHRs) has generated large-scale repositories of highly sensitive clinical information, emphasizing the need for robust anonymization strategies to enable secondary use for research..."
+date: "2026-09-14"
+category: "investigacion"
+pubmedId: "42735382"
+author: "Samer Rahmeh, Felipe Meneguitti Dias, Ramon Alfredo Moreno et al."
+tags: ["GDPR compliance", "HIPAA compliance", "LGPD compliance", "LLMs", "NLP"]
+---
+
+## Resumen
+
+**BACKGROUND:** The widespread adoption of electronic health records (EHRs) has generated large-scale repositories of highly sensitive clinical information, emphasizing the need for robust anonymization strategies to enable secondary use for research while safeguarding patient privacy. Conventional rule-based and machine learning approaches for deidentifying medical text face limitations with the linguistic complexity, variability, and context dependence inherent to clinical documentation. Recent advances in large language models (LLMs), combined with emerging quantum computing paradigms, present novel opportunities to enhance the accuracy, scalability, and resilience of health care data anonymization. **OBJECTIVE:** This study aims to evaluate the efficacy of LLM-based and quantum-enhanced hybrid architectures for medical text anonymization, assessing the effectiveness and computational efficiency across multiple entity types in Portuguese clinical notes. **METHODS:** We constructed a gold-standard corpus of 1000 Portuguese outpatient clinical notes, manually annotated by 5 trained researchers for 5 protected-entity categories: patient names, dates, identifiers, organizations, and geographic locations. Four anonymization strategies were evaluated: 2 stand-alone LLMs (Llama-3.1-8B-instruct and Llama-3.3-70B-instruct) and 2 quantum-enhanced hybrid models (Dynex-QML with 8B and 70B base models) incorporating quantum optimization via Quadratic Unconstrained Binary Optimization (QUBO) formulations. The quantum-enhanced approach transforms the final attention layer of the LLM into a global constraint satisfaction problem solved via neuromorphic quantum annealing. Model performance was measured on a held-out test set of 500 notes using precision, recall, and F1-score metrics. Computational efficiency was quantified through end-to-end processing time. **RESULTS:** The quantum-enhanced Dynex-QML-70B model achieved the highest overall performance with a macro-F1-score of 0.855 (95% CI 0.823-0.880), outperforming the stand-alone Llama-3.3-70B (0.726, 95% CI 0.704-0.747), Dynex-QML-8B (0.733, 95% CI 0.709-0.756), and Llama-3.1-8B (0.602, 95% CI 0.588-0.615). Compared with Llama 3.3 70B, Dynex-QML (Llama 70B) improved macro-F1-score by 0.128 (95% CI 0.091-0.163; empirical 2-sided bootstrap P&lt;.001). Most entity-level within-size comparisons favored the Dynex-QML models and were statistically significant, although the ORGANIZATION comparison between Dynex-QML (Llama 8B) and Llama 3.1 8B was not significant. For total elapsed time, Dynex-QML (Llama 70B) was faster than stand-alone Llama 3.3 70B (7.97, 95% CI 7.72-8.21 seconds per note vs 8.52, 95% CI 8.23-8.81 seconds per note). In a paired note-level bootstrap comparison, this corresponded to a mean reduction of 0.55 (SD 2.36; 95% CI -0.75 to -0.34 seconds per note; P&lt;.001). **CONCLUSIONS:** Quantum-enhanced hybrid architectures provide substantial improvements in medical text anonymization accuracy compared to stand-alone LLMs, particularly reductions in false-positive rates while preserving high sensitivity. The Dynex-QML-70B model achieved the best balance between performance and efficiency, suggesting that quantum-enhanced optimization offers a strategy for high-fidelity, scalable, and regulation-compliant deidentification of clinical text. These findings highlight the potential of emerging quantum-AI paradigms to advance the secondary secure use of health care data.
+
+## Información del artículo
+
+- **Revista:** Journal of medical Internet research
+- **Fecha de publicación:** 2026-09-14
+- **Autores:** Samer Rahmeh, Felipe Meneguitti Dias, Ramon Alfredo Moreno, Marina De Fatima De Sa Rebelo, Daniela Herrmann
+- **DOI:** [10.2196/91513](https://doi.org/10.2196/91513)
+- **PubMed ID:** [42735382](https://pubmed.ncbi.nlm.nih.gov/42735382/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42735382/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
