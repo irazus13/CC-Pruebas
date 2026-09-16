@@ -1,0 +1,25 @@
+---
+title: "Automated Renal Tumor Segmentation in Computed Tomography Images Using a Global Attention-Based DeepLabV3+ Model: Algorithm Development and Validation."
+description: "The rising global incidence of renal tumors necessitates precise diagnostic interventions. Accurate segmentation of computed tomography (CT) scans is essential for nephron-sparing surgery and radiotherapy. However, conventional manual..."
+date: "2026-09-15"
+category: "ia-radiologia"
+pubmedId: "42743559"
+author: "Yueyan Zhao, Jianqiang Liu, Lingyu Shao et al."
+tags: ["CT images", "DeepLabV3+", "KiTS19", "deep learning", "global attention mechanism"]
+---
+
+## Resumen
+
+**BACKGROUND:** The rising global incidence of renal tumors necessitates precise diagnostic interventions. Accurate segmentation of computed tomography (CT) scans is essential for nephron-sparing surgery and radiotherapy. However, conventional manual delineation is labor-intensive and prone to significant interobserver variability due to tumor morphological heterogeneity. There is an urgent clinical demand for robust, automated segmentation solutions. **OBJECTIVE:** This study aims to develop and validate GAM-DeepLabV3+, an automated framework designed to address boundary ambiguity and high false-positive rates in complex renal imaging scenarios. **METHODS:** We propose an optimized encoder-decoder architecture specifically tailored for renal mass detection. The framework incorporates three key innovations: (1) a lightweight MobileNetV2 backbone to minimize computational overhead for clinical deployment; (2) an Atrous Spatial Pyramid Pooling (ASPP) module to capture multiscale contextual information; and (3) a Global Attention Mechanism (GAM) in the decoder to enhance channel-spatial interactions, thereby refining boundary delineation by suppressing background noise. The model was rigorously evaluated on a private clinical dataset (n=218) and the KiTS19 benchmark (n=210). **RESULTS:** GAM-DeepLabV3+ consistently outperformed state-of-the-art baselines. On the private dataset, the model achieved a mean Dice similarity coefficient (DSC) of 0.939 (SD 0.008), significantly surpassing feature pyramid network (FPN; mean 0.893, SD 0.008; P&lt;.001) and no-new-Net (nnU-Net; 2D, custom; mean 0.908, SD 0.013; P&lt;.001). It also achieved a mean 95% Hausdorff distance (HD95) of 1.485 (SD 0.522) pixels. On the KiTS19 dataset, it maintained a mean robust DSC of 0.928 (SD 0.006). To facilitate clinical translation, a demonstration-only online platform was developed. **CONCLUSIONS:** The GAM-DeepLabV3+ framework provides an accurate, efficient, and fully automated solution for renal tumor segmentation. By overcoming boundary ambiguity and optimizing feature fusion, this approach shows potential as a decision-support aid, pending future validation with 3D reconstruction.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-09-15
+- **Autores:** Yueyan Zhao, Jianqiang Liu, Lingyu Shao, Lin Li, Zhaoqing Liu
+- **DOI:** [10.2196/78523](https://doi.org/10.2196/78523)
+- **PubMed ID:** [42743559](https://pubmed.ncbi.nlm.nih.gov/42743559/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42743559/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
