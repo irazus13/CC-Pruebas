@@ -1,0 +1,25 @@
+---
+title: "CaliDent-Net: domain-constrained self-supervised pre-training with parallel attention and prototype calibration for dental radiograph analysis."
+description: "Automated interpretation of dental radiographs is limited by the shortage of expert-annotated training images and by standard softmax classifiers that often assign confidence values that do not reflect empirical accuracy. We introduce CaliDent-Net, a..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42746241"
+author: "Yanyu Miao, Xiaoqin Zhang, Fei Leng et al."
+tags: ["artificial intelligence in dentistry", "deep learning", "dental radiograph analysis", "diagnostic decision support", "explainable AI"]
+---
+
+## Resumen
+
+Automated interpretation of dental radiographs is limited by the shortage of expert-annotated training images and by standard softmax classifiers that often assign confidence values that do not reflect empirical accuracy. We introduce CaliDent-Net, a unified framework that integrates and domain-adapts three established techniques contrastive self-supervision, dual attention, and prototype-based classification to obtain four clinically relevant properties in a single pipeline: data efficiency, probabilistic calibration, case-based interpretability, and CPU-level inference. CaliDent-Net consists of a Radiograph-Aware Contrastive Encoder (RACE), which performs pre-training with augmentations that respect tooth and bone anatomy; a Parallel Recalibration Attention Block (PRAB), which computes spatial saliency and channel importance through two forward-independent pathways before learned fusion; and a Similarity-Scored Prototype Classifier (SSPC), which replaces the unconstrained linear head with bounded cosine-prototype scoring. SSPC mitigates logit inflation, supports nearest-prototype retrieval as a case-based explanation mechanism, and improves calibration at the architectural level rather than relying only on post-hoc correction. We evaluate CaliDent-Net on the public Dental Radiography benchmark (1,272 images, four pathological classes) against eight deep learning baselines under matched protocols. The proposed model achieves 96.4% accuracy and a macro-averaged AUC of 0.984, representing an improvement of 2.3 to 9.5 percentage points over the baselines. Its Brier score (0.021) and expected calibration error (0.013) are 45% and 71% lower than the ResNet-50 reference (0.038 and 0.046), with only a minor portion of the calibration gain attributable to temperature scaling. With 40% of the labels (about 356 images), CaliDent-Net exceeds the full-data ResNet-50 baseline, and its CPU inference time is 214 ms per image at 2.8 GFLOPs. The findings support an integrative recipe rather than a new learning primitive, but they do not establish clinical translation; multi-site prospective validation, blinded multi-rater interpretability evaluation, and domain-shift robustness assessment remain necessary.
+
+## Información del artículo
+
+- **Revista:** Frontiers in medicine
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yanyu Miao, Xiaoqin Zhang, Fei Leng, Yanling Zhu
+- **DOI:** [10.3389/fmed.2026.1881041](https://doi.org/10.3389/fmed.2026.1881041)
+- **PubMed ID:** [42746241](https://pubmed.ncbi.nlm.nih.gov/42746241/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42746241/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
