@@ -1,0 +1,25 @@
+---
+title: "Rapid patient-specific neural networks for X-ray to volume registration."
+description: "Advanced navigation techniques in image-guided interventions and surgical robotics require the rapid and precise alignment of three-dimensional (3D) preoperative volumes (such as computed tomography and magnetic resonance imaging) to two-dimensional ..."
+date: "2026-09-16"
+category: "ia-radiologia"
+pubmedId: "42749809"
+author: "Vivek Gopalakrishnan, David-Dimitris Chlorogiannis, Andrew Abumoussa et al."
+tags: []
+---
+
+## Resumen
+
+Advanced navigation techniques in image-guided interventions and surgical robotics require the rapid and precise alignment of three-dimensional (3D) preoperative volumes (such as computed tomography and magnetic resonance imaging) to two-dimensional (2D) intraoperative images (such as X-ray fluoroscopy)1,2. However, existing 2D/3D registration methods fail to generalize across the broad spectrum of fluoroscopy-guided procedures: intensity-based optimizers require per-individual hyperparameter tuning3,4, while deep-learning approaches demand extensive manually labelled datasets and remain constrained to the specific anatomy on which they were trained5,6. Here, to address these limitations, we present xvr-a self-supervised framework that combines patient-specific neural networks with gradient-based optimization for automatic 2D/3D registration. xvr uses physics-based simulation to generate training data from a patient's own preoperative scan, eliminating the need for manual annotation. We present a foundation model pretrained on thousands of whole-body scans, achieving patient-specific adaptation to any anatomical region with only 5&#x2009;min of fine-tuning. In to our knowledge the largest evaluation of 2D/3D registration on real fluoroscopy to date, xvr achieves high accuracy in seconds across diverse anatomical structures, volumetric imaging modalities and hospitals, improving on the accuracy of existing methods by an order of magnitude. xvr makes pan-anatomical 2D/3D rigid registration accessible to broad clinical and research communities through open-source software available online.
+
+## Información del artículo
+
+- **Revista:** Nature
+- **Fecha de publicación:** 2026-09-16
+- **Autores:** Vivek Gopalakrishnan, David-Dimitris Chlorogiannis, Andrew Abumoussa, Anna M Larson, Nazim Haouchine
+- **DOI:** [10.1038/s41586-026-11045-x](https://doi.org/10.1038/s41586-026-11045-x)
+- **PubMed ID:** [42749809](https://pubmed.ncbi.nlm.nih.gov/42749809/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42749809/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

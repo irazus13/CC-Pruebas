@@ -1,0 +1,25 @@
+---
+title: "Privacy-aware adversarial defense with explainable AI for adversarial robustness in AI model."
+description: "AI models in critical sectors such as healthcare and finance must provide both data privacy and adversarial robustness. Differential Privacy (DP) protects training data by injecting noise, but this noise smooths decision boundaries and leaves models ..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "42750760"
+author: "Bilal Sardar, Shareeful Islam, Stefano Silvestri et al."
+tags: ["Adversarial robustness", "Differential privacy", "Explainable AI", "Fairness", "Latent space monitoring"]
+---
+
+## Resumen
+
+AI models in critical sectors such as healthcare and finance must provide both data privacy and adversarial robustness. Differential Privacy (DP) protects training data by injecting noise, but this noise smooths decision boundaries and leaves models open to adversarial evasion, a tension known as the Privacy-Robustness Trade-off. Although this trade-off is well documented, its internal mechanism remains underexplored: prior work does not reveal how the noise reshapes a model's reasoning or which features become vulnerable. To close this gap, we propose a Privacy-Aware Adversarial Defense grounded in Explainable AI. Specifically, we introduce the Attention Concentration Score (ACS), which measures how DP training shifts Transformer attention away from task-critical features toward non-functional ones. This attention drift correlates with adversarial vulnerability, providing a mechanistic explanation of the trade-off. Building on this insight, we develop a Manifold-Aligned Semantic Attack that targets the most drifted features, and a TrustScore defense that fuses embedding-level anomaly detection with attention-level consistency checks. We validate across two datasets (Adult Census, MIMIC-IV), two architectures (DeBERTa-V3-Large, LLaMA-3.1-8B), and seven experiments benchmarking five attacks against six defenses. Within the recommended range ( &#x3f5; &#x2208; [ 5 , 10 ] ), models retain 84.2% accuracy (96.2% of baseline), while TrustScore reaches an Area Under the ROC Curve (AUC) of 0.87--0.94, outperforming Isolation Forest (0.65) and supervised detection (0.58). Moreover, these conclusions hold under feature-categorization variants (attribution- and PCA-based); privacy noise disproportionately destabilizes the minority class; the consistency signal adds sub-millisecond overhead; and a surrogate-attention variant preserves detection under black-box deployment, establishing the approach's dependability for reliable intelligent environments.
+
+## Información del artículo
+
+- **Revista:** Journal of reliable intelligent environments
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Bilal Sardar, Shareeful Islam, Stefano Silvestri, Spyridon Papastergiou
+- **DOI:** [10.1007/s40860-026-00273-7](https://doi.org/10.1007/s40860-026-00273-7)
+- **PubMed ID:** [42750760](https://pubmed.ncbi.nlm.nih.gov/42750760/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42750760/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
