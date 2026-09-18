@@ -1,0 +1,25 @@
+---
+title: "A smarter lung ultrasonography solution for lung consolidation classification in dairy calves using a deep learning approach."
+description: "Lung ultrasonography (LUS) is a valuable tool for diagnosing pneumonia in calves, allowing early detection and prompt treatment. However, despite its value, the technique is not yet fully established as a routine herd health monitoring practice on fa..."
+date: "2026-09-17"
+category: "investigacion"
+pubmedId: "42754021"
+author: "Marina Madureira Ferreira, Keshawa M Dadallage, Tyler Ward et al."
+tags: ["bovine respiratory disease", "computer vision", "lung ultrasonography", "machine learning"]
+---
+
+## Resumen
+
+Lung ultrasonography (LUS) is a valuable tool for diagnosing pneumonia in calves, allowing early detection and prompt treatment. However, despite its value, the technique is not yet fully established as a routine herd health monitoring practice on farms. A key limitation is the presence of inter-rater differences when classifying lung consolidation based on LUS, particularly considering small thresholds of consolidation. The objective of this study was to develop a deep learning (DL) classification model for LUS image analysis in dairy calves. A secondary objective was to compare the performance of the different DL models. The LUS videos from 126 preweaning Holstein calves in a commercial dairy farm in NY State were recorded and used for frame extraction. Frames were annotated according to lung consolidation extension as normal, lobular, and lobar by trained personnel, and a panel diagnosis was compiled as the reference standard for evaluating the model's performance. The data set was divided into training (68%), internal validation (12%), and an independent testing set (20%). Augmentation was applied only to the training set to mitigate overfitting and improve model robustness. The final sets comprised 57,704 training frames and 2,545 internal validation frames from 96 calves, and 4,196 testing frames from 30 calves. Two DL classification models were evaluated: You Only Look Once (YOLO) and Vision Transformer (ViT). Both models achieved overall high accuracy of 0.98 (95% CI: 0.98-0.99) and 0.97 (0.96-0.98), respectively. The performance metrics for the YOLO model were precision 0.94 (95% CI: 0.92-0.95), recall 0.95 (0.93-0.96), and F1-score 0.94 (0.93-0.96). The ViT model precision was 0.88 (0.86-0.90), recall 0.93 (0.92-0.95), and F1-score 0.90 (0.88-0.92). The YOLO model consistently outperformed ViT across all evaluated metrics. At the class level, lobular consolidation yielded the lowest precision for both models, 0.84 (0.80-0.88) for YOLO and 0.69 (0.64-0.74) for ViT, compared with above 0.90 for both the normal and lobar classes. Because the original data set was inherently imbalanced across classes, reflecting the disease distribution on the farm, both models were retrained on a class-balanced subset. Precision, recall, and F1-score exceeded 0.90 for the normal and lobar classes, in both YOLO and ViT, consistent with the original imbalanced data set. However, performance for the lobular class declined on balanced training, with precision dropping from 0.84 (0.80-0.88) to 0.74 (0.69-0.79) for YOLO, and from 0.69 (0.64-0.74) to 0.57 (0.52-0.62) for ViT. Similarly, the F1-score dropped from 0.88 (0.85-0.91) to 0.81 (0.77-0.85) for YOLO, and from 0.78 (0.74-0.82) to 0.70 (0.66-0.74) for ViT. In conclusion, both YOLO and ViT models demonstrated high accuracy in correctly classifying normal lungs and lobar consolidation in preweaning calves, but were less reliable at detecting lobular consolidation. The results demonstrate the potential of DL models to automate lung consolidation classification in calves and enhance the use of LUS on farms. Hence, it may improve early disease diagnosis, interventions, and calf welfare, while minimizing economic losses associated with the disease.
+
+## Información del artículo
+
+- **Revista:** Journal of dairy science
+- **Fecha de publicación:** 2026-09-17
+- **Autores:** Marina Madureira Ferreira, Keshawa M Dadallage, Tyler Ward, Hannah McCray, Ryan M Ye
+- **DOI:** [10.3168/jds.2026-28434](https://doi.org/10.3168/jds.2026-28434)
+- **PubMed ID:** [42754021](https://pubmed.ncbi.nlm.nih.gov/42754021/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42754021/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

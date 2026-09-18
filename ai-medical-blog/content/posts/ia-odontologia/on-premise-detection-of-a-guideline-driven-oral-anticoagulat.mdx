@@ -1,0 +1,25 @@
+---
+title: "On-Premise Detection of a Guideline-Driven Oral Anticoagulation Shift in German Doctors' Letters Using Local Large Language Models."
+description: "A vast amount of German clinical routine data are still stored in unstructured doctors' letters. To make these data available for clinical research, medical information must be extracted from these letters entirely inside the hospit..."
+date: "2026-09-17"
+category: "ia-odontologia"
+pubmedId: "42752478"
+author: "Phillip Richter-Pechanski, Christoph Dieterich"
+tags: ["Anticoagulants", "Atrial Fibrillation", "Information Extraction", "Large Language Models", "Natural Language Processing"]
+---
+
+## Resumen
+
+**INTRODUCTION:** A vast amount of German clinical routine data are still stored in unstructured doctors' letters. To make these data available for clinical research, medical information must be extracted from these letters entirely inside the hospital infrastructure, under strict data-protection and transparency constraints. We present an early clinical application of local large language models (LLMs) for medication information extraction (MIE) to detect a guideline-driven shift in oral anticoagulation treatment from vitamin K antagonists (VKAs) to direct oral anticoagulants (DOACs) in German cardiology doctors' letters. **METHODS:** We analyzed two corpora from different time periods: 500 letters from CARDIO:DE (2020/21) and 538 routine letters from an internal 2012 corpus without gold-standard annotation. For 2012, medication information was extracted automatically with an on-premise fine-tuned Llama-3.1-70b MIE pipeline; for CARDIO:DE, gold-standard annotations were used. Medication related to anticoagulants were identified via extracted medication mentions and medication-reason relations, and classified into VKA, DOAC, and OTHER classes using guideline-based lexicons. Furthermore, we analyzed the active-ingredient composition within the DOACs and performed a manual review of automatically annotated 2012 letters. We investigated whether a MIE pipeline trained on CARDIO:DE annotations can generalize to unseen older clinical letters and recover the expected treatment shift without additional manual annotations. **RESULTS:** DOAC proportion increased from 16.9% in 2012 to 59.9% in 2020/21, while VKA proportion decreased from 37.7% to 9.9%. Within the DOAC class, the dominant active ingredient shifted from rivaroxaban in 2012 to apixaban in 2020/21. Manual review showed that remaining errors were mainly linked to generic medication mentions and missing medication-reason relations rather than incorrect MIE. **CONCLUSION:** We show that under strict clinical constraints, local LLM-based MIE models trained on CARDIO:DE can support medication trend analysis in unseen older German doctors' letters and provide an on-premise method for downstream clinical text analysis.
+
+## Información del artículo
+
+- **Revista:** Studies in health technology and informatics
+- **Fecha de publicación:** 2026-09-17
+- **Autores:** Phillip Richter-Pechanski, Christoph Dieterich
+- **DOI:** [10.3233/SHTI260996](https://doi.org/10.3233/SHTI260996)
+- **PubMed ID:** [42752478](https://pubmed.ncbi.nlm.nih.gov/42752478/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42752478/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
