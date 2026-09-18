@@ -1,0 +1,25 @@
+---
+title: "Convex approaches to isolate the shared and distinct genetic components of complex traits."
+description: "Groups of complex diseases, such as coronary heart disease, neuropsychiatric disorders, and cancers, often display overlapping clinical symptoms and pharmacological responses. Genetic variants with shared associations across diseases ..."
+date: "2026-09-17"
+category: "ia-medicina"
+pubmedId: "42755281"
+author: "Saikat Banerjee, Shane O'Connell, Sarah M C Colbert et al."
+tags: ["convex optimization", "factor analysis", "low-rank matrix approximation", "matrix factorization", "pleiotropy"]
+---
+
+## Resumen
+
+**MOTIVATION:** Groups of complex diseases, such as coronary heart disease, neuropsychiatric disorders, and cancers, often display overlapping clinical symptoms and pharmacological responses. Genetic variants with shared associations across diseases have the potential to help explain their underlying biological processes, but this sharing remains poorly understood. **RESULTS:** We model the matrix of summary statistics of trait-associated genetic variants as the sum of a low-rank component-representing shared biological processes-and a sparse component representing disease-unique processes and arbitrarily corrupted or contaminated components. We introduce Clorinn, an open-source Python library that uses convex optimization algorithms to recover these components by minimizing a weighted combination of nuclear norm and L1 terms. Clorinn provides two significant benefits: (a) convex optimization guarantees reproducibility of the components, and (b) the low-rank "uncorrupted" matrix allows robust singular value decomposition (SVD) and principal component analysis (PCA), which are otherwise highly sensitive to outliers and noise in the input matrix. In extensive simulations, we observe that Clorinn is uniquely able to recover the disease-group structure while remaining competitive on factor-level reconstruction error. We apply Clorinn to estimate 200 latent factors from GWAS summary statistics for 2,110 phenotypes from the Pan-UK Biobank (N&#x2009;=&#x2009;420,531 European-ancestry individuals) and 10 latent factors from 14 psychiatric disorders. **AVAILABILITY:** Clorinn is available at https://github.com/daklab/clorinn. **SUPPLEMENTARY INFORMATION:** Supplementary data are available at Bioinformatics online.
+
+## Información del artículo
+
+- **Revista:** Bioinformatics (Oxford, England)
+- **Fecha de publicación:** 2026-09-17
+- **Autores:** Saikat Banerjee, Shane O'Connell, Sarah M C Colbert, Niamh Mullins, David A Knowles
+- **DOI:** [10.1093/bioinformatics/btag670](https://doi.org/10.1093/bioinformatics/btag670)
+- **PubMed ID:** [42755281](https://pubmed.ncbi.nlm.nih.gov/42755281/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42755281/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
