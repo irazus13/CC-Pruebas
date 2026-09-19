@@ -1,0 +1,25 @@
+---
+title: "Microaneurysm segmentation in early diabetic retinopathy: a localized patch-based U-Net approach to overcome microscopic lesion oversight."
+description: "Diabetic Retinopathy (DR) is a leading cause of vision impairment and a major long-term microvascular complication of diabetes. Early detection and prevention of diabetes-related complications through advanced imaging and software-ass..."
+date: "2026-08-14"
+category: "ia-radiologia"
+pubmedId: "42760570"
+author: "Likhitha D Atada, Madhura Prakash Manjunath, Deepthi K Prasad et al."
+tags: ["Diabetic retinopathy", "Early DR", "Fundus imaging", "Medical image analysis", "Microaneurysm segmentation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Diabetic Retinopathy (DR) is a leading cause of vision impairment and a major long-term microvascular complication of diabetes. Early detection and prevention of diabetes-related complications through advanced imaging and software-assisted patient management remain important clinical priorities. Microaneurysms (MAs) are the earliest and most subtle indicators of DR, but their small size and low contrast often lead to missed detection during manual fundus examination, delaying intervention. Automated MA segmentation is therefore essential for large-scale DR screening. **METHODS:** We conducted a controlled empirical evaluation of localized patch-based training for microaneurysm (MA) segmentation, benchmarking a compact, imbalance-aware U-Net model including learnable transposed-convolution up-sampling against a full-image U-Net trained on identical data. Fundus images and corresponding MA masks were divided into non-overlapping 256&#x2009;&#xd7;&#x2009;256 patches, increasing MA pixel density per training sample by approximately 60-fold relative to full-image input thereby directly targeting the extreme class imbalance that causes full-image models to collapse to all-background predictions. The model was trained and evaluated on the publicly available IDRiD [Indian Diabetic Retinopathy Image Dataset] and DDR [Dataset for Diabetic Retinopathy] datasets. Performance was assessed using Intersection over Union (IoU), Dice coefficient, accuracy, recall, and precision. **RESULTS:** Performance was evaluated on a representative held-out subset of 100 images selected from an independent pool of 514 MA-annotated test images spanning the IDRiD and DDR datasets. The patch-based model achieved an overall pixel-level accuracy of 99.89%, a Dice coefficient of 76.9%, IoU of 63.2%, recall (sensitivity) of 69.1% and precision of 88.7%, while the full-image U-Net trained on the same data failed to recover any MA pixels (IoU&#x2009;=&#x2009;0, Dice&#x2009;=&#x2009;0) despite comparable pixel accuracy thereby demonstrating that overlap-based metrics, not accuracy, are the decisive criterion for this task. Per-image lesion-coverage analysis showed a mean match rate of approximately 60% of annotated MA contours, providing a clinically interpretable read-out beyond pixel overlap. **CONCLUSION:** This controlled empirical evaluation demonstrates that localized patch-based training is an effective and computationally efficient strategy for overcoming the extreme class imbalance that causes conventional full-image U-Nets to systematically miss microaneurysms. The proposed patch-based U-Net showed promising microaneurysm segmentation performance on a held-out subset of IDRiD and DDR images; further evaluation on the additional datasets and independent external cohorts can aid in the clinical screening utility.
+
+## Información del artículo
+
+- **Revista:** International journal of retina and vitreous
+- **Fecha de publicación:** 2026-08-14
+- **Autores:** Likhitha D Atada, Madhura Prakash Manjunath, Deepthi K Prasad, Venkatakrishnan Srinivasan
+- **DOI:** [10.1186/s40942-026-00919-x](https://doi.org/10.1186/s40942-026-00919-x)
+- **PubMed ID:** [42760570](https://pubmed.ncbi.nlm.nih.gov/42760570/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42760570/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
