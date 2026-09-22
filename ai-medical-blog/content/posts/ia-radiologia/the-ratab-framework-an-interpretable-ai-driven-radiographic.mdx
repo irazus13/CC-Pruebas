@@ -1,0 +1,25 @@
+---
+title: "The RATAB Framework: An Interpretable AI-Driven Radiographic Risk Stratification Model for Suspected Lung Lesions."
+description: "The objective of this study is to develop and evaluate the RATAB (Radiological Assessment To Avoid Biopsy) framework as an interpretable, methodology-focused proof-of-concept for malignancy risk ranking on pre-procedural chest radiographs (CXR) using..."
+date: "2026-09-21"
+category: "ia-radiologia"
+pubmedId: "42768277"
+author: "Emir G&#xf6;khan Kahraman, Joseph Paul Cohen, &#xd6;zlem &#xd6;zdemir et al."
+tags: ["Artificial intelligence", "Calibration", "Chest radiography", "Diagnostic accuracy", "Lung cancer"]
+---
+
+## Resumen
+
+The objective of this study is to develop and evaluate the RATAB (Radiological Assessment To Avoid Biopsy) framework as an interpretable, methodology-focused proof-of-concept for malignancy risk ranking on pre-procedural chest radiographs (CXR) using pre-trained TorchXRayVision (TxRV) features, with rigorous leakage-free validation. This retrospective single-center diagnostic accuracy study included patients who underwent transthoracic needle biopsy (TTNB) after a suspicious posteroanterior CXR and had definitive histopathology. The index radiograph was the pre-procedural PA film obtained within 7&#xa0;days before biopsy. Feature representations extracted from pre-trained TorchXRayVision (TxRV) models were processed using soft-binarization with parameters fixed a priori and evaluated through a strictly leakage-free nested fivefold cross-validation protocol. Model stability was confirmed via a 10&#x2009;&#xd7;&#x2009;fivefold repeated cross-validation (50 folds). The primary model (MAIN_B1) was a balanced L2-regularized logistic regression on soft-binarized six-feature inputs with quadratic terms. Uncertainty was quantified by patient-level stratified bootstrap (B&#x2009;=&#x2009;2000). Reporting followed TRIPOD and CLAIM recommendations. Overall, 285 patients (mean age, 57.8&#x2009;&#xb1;&#x2009;13.2&#xa0;years; 160 men) were evaluated, including 206 malignant and 79 benign cases. The primary model achieved a locked 10&#x2009;&#xd7;&#x2009;fivefold repeated CV AUC of 0.6883&#x2009;&#xb1;&#x2009;0.0155 (single fivefold CV AUC&#x2009;=&#x2009;0.6980&#x2009;&#xb1;&#x2009;0.0450). Pooled out-of-fold (OOF) AUC was 0.6998 (95% CI 0.6324-0.7659). At the mean training-fold Youden threshold (0.492), OOF sensitivity was 0.670 (95% CI 0.607-0.738), specificity 0.658 (95% CI 0.544-0.759), and cohort PPV 0.836 (95% CI 0.792-0.882); fold-averaged operating metrics were sensitivity 64.6%, specificity 67.1%, and PPV 83.8%. In a theoretical Bayes recalculation at 25% prevalence, PPV was 0.395 (0.328-0.488) and NPV 0.850 (0.824-0.887). Brier score was 0.2210 (95% CI 0.2042-0.2379), with calibration intercept 0.925 (0.848-1.017) and slope 0.980 (0.605-1.457). The RATAB framework delineates the realistic performance boundaries of pre-trained AI representations on CXR. While providing interpretable risk ranking, its prevalence-dependent theoretical predictive values underscore that CXR-based AI cannot substitute for cross-sectional CT evaluation.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-09-21
+- **Autores:** Emir G&#xf6;khan Kahraman, Joseph Paul Cohen, &#xd6;zlem &#xd6;zdemir, Yelda Varol, Yeliz Erol
+- **DOI:** [10.1007/s10278-026-02303-5](https://doi.org/10.1007/s10278-026-02303-5)
+- **PubMed ID:** [42768277](https://pubmed.ncbi.nlm.nih.gov/42768277/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42768277/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
