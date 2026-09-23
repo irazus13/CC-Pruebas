@@ -1,0 +1,25 @@
+---
+title: "How Robust Are Radiology Teaching-Case Benchmarks for Multimodal Large Language Models? An Audit of Exposure Opportunity, Inference Configuration, and Text-Only Solvability Across Eighteen Models."
+description: "Multimodal large language models (MLLMs) are benchmarked on radiology multiple-choice questions. We audited how training-data exposure opportunity, image resolution, inference configuration, and text-only solvability affected interpretation of a teac..."
+date: "2026-09-22"
+category: "ia-radiologia"
+pubmedId: "42773339"
+author: "Wenlong Fan, Xiaoliang Chen, Yue Lin et al."
+tags: ["Benchmark robustness", "Multimodal large language models", "Multiple-choice question answering", "Radiology", "Training-data exposure"]
+---
+
+## Resumen
+
+Multimodal large language models (MLLMs) are benchmarked on radiology multiple-choice questions. We audited how training-data exposure opportunity, image resolution, inference configuration, and text-only solvability affected interpretation of a teaching-case benchmark. Eighteen MLLMs and 2 original reference readers answered 260 questions from 51 AuntMinnie cases; 5 additional readers completed them under a unified interface. Analyses included Holm-adjusted McNemar tests, case-cluster bootstrapping, model-cutoff matching, a case-random-intercept logistic model, cross-cohort configuration re-runs, and text-only ablation. Model accuracy ranged from 61.5% to 80.8%, and the 7 readers ranged from 66.5% to 84.2%. No model exceeded all readers; 17 fell within the reader range and 1 below. Eight models were significantly less accurate than Reader 1 after reader-specific Holm adjustment (6 when all 36 comparisons were adjusted together); none differed significantly from Reader 2. A cohort/publication-period association remained after item adjustment (odds ratio, 4.67; 95% Laplace interval, 1.82-11.98), but 3 within-cohort cutoff comparisons showed no exposure-consistent advantage. Resolution changes were within 3 percentage points in both cohorts, and the configuration-by-version interaction was not significant. Among 5 post hoc selected models, mean image contribution was 6.2 percentage points in the original cohort and 4.0 in the supplementary cohort. The benchmark did not support a single human-model ranking, a training-exposure explanation for the cohort difference, or a configuration-dependent GPT version effect. Public teaching-case benchmarks should report provenance, individual-reader calibration, multiplicity control, inference settings, and image-free performance and should not be interpreted as evidence of clinical diagnostic readiness.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-09-22
+- **Autores:** Wenlong Fan, Xiaoliang Chen, Yue Lin, Xintong Song, Yang Xu
+- **DOI:** [10.1007/s10278-026-02304-4](https://doi.org/10.1007/s10278-026-02304-4)
+- **PubMed ID:** [42773339](https://pubmed.ncbi.nlm.nih.gov/42773339/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42773339/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

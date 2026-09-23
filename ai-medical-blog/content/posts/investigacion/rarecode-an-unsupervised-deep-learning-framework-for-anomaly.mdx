@@ -1,0 +1,25 @@
+---
+title: "RareCode: An Unsupervised Deep Learning Framework for Anomaly Detection in Colorectal Cancer Histopathological Images."
+description: "Unsupervised anomaly detection in histopathological images has been widely explored using reconstruction-based approaches that measure reconstruction errors, yet these methods often fail to capture subtle, semantic-level pathological variations due t..."
+date: "2026-09-22"
+category: "investigacion"
+pubmedId: "42775786"
+author: "Liu Xiang, Huashun Li, Xuejia Zheng et al."
+tags: []
+---
+
+## Resumen
+
+Unsupervised anomaly detection in histopathological images has been widely explored using reconstruction-based approaches that measure reconstruction errors, yet these methods often fail to capture subtle, semantic-level pathological variations due to the inherent heterogeneity of tissue textures. To address this limitation, this study presents RareCode, a vector quantization-based framework that extends the detection paradigm beyond pixel-level reconstruction to incorporate semantic-level codebook activation analysis. The core innovation is Codebook Activation Rarity (CAR) scoring, which profiles the activation frequency of each codebook entry during training on exclusively normal samples and flags infrequent activations as anomaly indicators at inference time, thereby complementing reconstruction errors with semantic-level discrimination. Building upon this single-scale CAR mechanism, a Multi-scale Hierarchical Codebook (MHC) module is further introduced, employing codebooks of varying sizes with learnable fusion weights to capture pathological patterns spanning from coarse tissue-level structures to fine cellular-level details. Leveraging the multi-scale design, hierarchical anomaly heatmaps are generated at each codebook granularity, providing pathologists with interpretable, multi-dimensional visual localization cues indicating both where and at what structural level anomalies occur. Five-fold cross-validation on a clinically annotated colorectal cancer histopathological image dataset obtained from Shenzhen People's Hospital demonstrates that RareCode achieves an area under the curve (AUC) of 96.82%, outperforming baseline methods. Per-class analysis showed stronger performance for cancer detection (AUC = 99.44%, specificity = 94.21%) than for inflammation detection (AUC = 94.30%, specificity = 60.44%). These findings suggest that CAR analysis may offer a promising unsupervised approach for histopathological anomaly detection, potentially aiding clinical pre-screening in colorectal cancer diagnosis.
+
+## Información del artículo
+
+- **Revista:** Journal of visualized experiments : JoVE
+- **Fecha de publicación:** 2026-09-22
+- **Autores:** Liu Xiang, Huashun Li, Xuejia Zheng, Feng Zhu, Tianyuan Li
+- **DOI:** [10.3791/72303](https://doi.org/10.3791/72303)
+- **PubMed ID:** [42775786](https://pubmed.ncbi.nlm.nih.gov/42775786/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42775786/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
