@@ -1,0 +1,25 @@
+---
+title: "Weakly Supervised MRI-Based Classification of Alzheimer's Disease Using Clinical Pseudo-Labels."
+description: "Alzheimer's disease (AD) classification from structural magnetic resonance imaging (MRI) may benefit from weak supervision that uses clinically meaningful but imperfect supervisory signals. We evaluated a weakly supervised framework in which a multil..."
+date: "2026-08-24"
+category: "ia-radiologia"
+pubmedId: "42776666"
+author: "Rong Xiao, Tingwei Quan, Xinglong Wu et al."
+tags: ["Alzheimer&#x2019;s disease", "deep learning", "external validation", "pseudo-labeling", "structural MRI"]
+---
+
+## Resumen
+
+Alzheimer's disease (AD) classification from structural magnetic resonance imaging (MRI) may benefit from weak supervision that uses clinically meaningful but imperfect supervisory signals. We evaluated a weakly supervised framework in which a multilayer perceptron (MLP) trained on age, sex, and Mini-Mental State Examination (MMSE) scores generated clinical pseudo-labels to initialize a patch-based fully convolutional network (FCN). For 260 Alzheimer's Disease Neuroimaging Initiative (ADNI) training participants, subsequent refinement combined 80% of the preceding MRI-model probability with 20% of the participant's ground-truth diagnostic label. This design preserves a dominant pseudo-label/self-training component while using partial diagnostic guidance to stabilize refinement. The FCN generated whole-brain probability maps, and selected voxel probabilities were classified by a second MLP. The framework was developed using ADNI (n = 417). Using ADNI validation data only, iteration 3 and a classification threshold of 0.5 were selected and then applied unchanged to the held-out ADNI test set and the external AIBL (n = 182), FHS (n = 102), and NACC (n = 265) cohorts. The selected model achieved F1 scores of 0.853 in ADNI, 0.707 in AIBL, 0.765 in FHS, and 0.807 in NACC. These results support the feasibility and cross-cohort transferability of clinical pseudo-label-based weak supervision for MRI classification. The framework is not intended to be label-free; rather, it provides a transparent strategy for integrating imperfect clinical pseudo-labels with partially weighted diagnostic guidance during training.
+
+## Información del artículo
+
+- **Revista:** NeuroSci
+- **Fecha de publicación:** 2026-08-24
+- **Autores:** Rong Xiao, Tingwei Quan, Xinglong Wu, Guoping Xu, Shangbin Chen
+- **DOI:** [10.3390/neurosci7050094](https://doi.org/10.3390/neurosci7050094)
+- **PubMed ID:** [42776666](https://pubmed.ncbi.nlm.nih.gov/42776666/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42776666/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
