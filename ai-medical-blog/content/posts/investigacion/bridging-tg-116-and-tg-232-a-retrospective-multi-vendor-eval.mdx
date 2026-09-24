@@ -1,0 +1,25 @@
+---
+title: "Bridging TG-116 and TG-232: A retrospective multi-vendor evaluation of deviation index re-centering and process control in digital radiography."
+description: "The deviation index (DI) is a vendor-neutral indicator of detector exposure relative to the configured target exposure index (TEI). Because TEI is a protocol value rather than a calibrated physical quantity, poorly aligned TEI setting..."
+date: "2026-10-01"
+category: "investigacion"
+pubmedId: "42779102"
+author: "Ezzat AbuAzzah, Faisal Alrehily, Moawia Gameraddin et al."
+tags: ["QA triage", "TG&#x2010;116", "TG&#x2010;232", "deviation index", "digital radiography"]
+---
+
+## Resumen
+
+**BACKGROUND:** The deviation index (DI) is a vendor-neutral indicator of detector exposure relative to the configured target exposure index (TEI). Because TEI is a protocol value rather than a calibrated physical quantity, poorly aligned TEI settings can create systematic DI offsets, obscure protocol problems, and prevent meaningful statistical process control. **OBJECTIVE:** This retrospective multi-vendor study evaluated whether routine DICOM metadata can identify biased DI distributions, separate fixed TEI-setting offsets from protocol-adherence variation, estimate candidate TEI updates, and support TG-232-aligned standard deviation-based monitoring after DI re-centering. **METHODS:** We retrospectively analyzed 38&#xa0;916 digital radiography examinations performed from January 1, 2024 through August 27, 2024 using three vendor platforms at a tertiary hospital. DICOM metadata were benchmarked against published technical standards using a composite adherence index (CAI) for SID, kVp, mAs, grid use, and AEC use. A secondary gradient-boosting/SHAP analysis was retained as a non-causal variance discovery to rank the metadata patterns used to predict DI. Candidate TEI updates were estimated within the vendor-region-projection groups by algebraically re-centering the observed mean DI ( D I &#xaf; ) to 0.0. Robustness was assessed using sensitivity analyses restricted by automatic exposure control, beam energy, and patient habitus proxy measures. **RESULTS:** The baseline D I &#xaf; &#xa0;=&#xa0;-3.1 (SD 3.7), and only 11.3% of examinations were within |DI| &#x2264; 1. Forty of 45 vendor-region-projection groups (88.9%) had an absolute group D I &#xaf; greater than 1.0. Separately, the mean CAI was 0.176. The secondary SHAP analysis ranked the configured TEI, manufacturer, SID, exposure, and kVp as high-contribution predictors of DI; these findings were interpreted as predictive attribution, not causal evidence. DI re-centering reduced the overall variance by 42.9% (13.5 to 7.7), increased the proportion of examinations within |DI| &#x2264; 1 to 34.3%, and reduced severe deviations (|DI|&#xa0;&gt;&#xa0;3) from 60.3% to 23.1%. **CONCLUSION:** In this retrospective, multi-vendor study, the TEI setting review was operationalized as a structured, data-driven responsibility of a clinical site. By verifying protocol adherence, equipment performance, image quality, and dose indicators before centering the D I &#xaf; , departments can support the conversion of the DI from a biased compliance signal into a practical process-control metric for exposure governance.
+
+## Información del artículo
+
+- **Revista:** Journal of applied clinical medical physics
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Ezzat AbuAzzah, Faisal Alrehily, Moawia Gameraddin, Sultan Alshoabi, Walaa Alsharif
+- **DOI:** [10.1002/acm2.70820](https://doi.org/10.1002/acm2.70820)
+- **PubMed ID:** [42779102](https://pubmed.ncbi.nlm.nih.gov/42779102/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42779102/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

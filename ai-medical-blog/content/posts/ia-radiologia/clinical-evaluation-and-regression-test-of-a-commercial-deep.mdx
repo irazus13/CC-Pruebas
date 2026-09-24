@@ -1,0 +1,25 @@
+---
+title: "Clinical evaluation and regression test of a commercial deep-learning auto-segmentation model."
+description: "Commercial deep-learning segmentation (DLS) tools are increasingly used in clinical practice. Software updates may alter segmentation performance, highlighting the need for systematic clinical evaluation before implementation. **PURPO..."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "42779095"
+author: "Roya Barati, Jingwei Duan, Song Gao et al."
+tags: ["auto&#x2010;segmentation", "commercial software", "deep learning", "quality assurance"]
+---
+
+## Resumen
+
+**BACKGROUND:** Commercial deep-learning segmentation (DLS) tools are increasingly used in clinical practice. Software updates may alter segmentation performance, highlighting the need for systematic clinical evaluation before implementation. **PURPOSE:** This study presents our experience in clinically evaluating and regression-testing a RayStation DLS model with the aim of guiding commissioning and routine quality assurance of commercial DLS tools in clinical environments. **METHODS:** U-Net DLS model for normal-tissue structures, originally commissioned in RayStation version 11B, was regression-tested after upgrading to 2024A. Previously commissioned CT datasets for head and neck (n&#xa0;=&#xa0;18), thorax (n&#xa0;=&#xa0;18), male pelvis (n&#xa0;=&#xa0;18), and breast (n&#xa0;=&#xa0;21) were re-evaluated in RayStation 2024A for regression testing following the software upgrade, while 20 new abdominal cases were included for initial commissioning. Clinical segmentations served as the reference standard. Geometric performance was evaluated using Dice Similarity Coefficient (DSC), 95% Hausdorff Distance (HD95), and Mean Surface Distance (MSD). Dosimetric evaluation used the original clinical treatment plans to compare Dmean and Dmax between DLS and clinical contours, normalized to prescription dose; breast was excluded from dosimetric analysis because its DLS model was not commissioned for clinical use. **RESULTS:** Regression testing showed that, in comparison with the previously commissioned data, mean&#xa0;[&#xb1;&#xa0;standard deviation (SD)] DSC values were 0.81&#xa0;&#xb1;&#xa0;0.09 for the head and neck, 0.84&#xa0;&#xb1;&#xa0;0.13 for the thorax, and 0.89&#xa0;&#xb1;&#xa0;0.06 for male pelvis. Corresponding MSD values were 0.83&#xa0;&#xb1;&#xa0;0.34&#xa0;mm, 2.47&#xa0;&#xb1;&#xa0;1.81&#xa0;mm, and 1.76&#xa0;&#xb1;&#xa0;0.68&#xa0;mm; and HD95 values were 4.75&#xa0;&#xb1;&#xa0;2.38&#xa0;mm, 8.45&#xa0;&#xb1;&#xa0;3.38&#xa0;mm, and 13.21&#xa0;&#xb1;&#xa0;7.05&#xa0;mm. Significant paired differences between versions were limited to selected structures, including the mandible, cochlea, and eye in head and neck; lungs and esophagus in thorax; and prostate in the male pelvis (p&#xa0;&lt;&#xa0;0.05). Breast segmentation results showed low performance (DSC 0.66&#xa0;&#xb1;&#xa0;0.15, MSD 4.8&#xa0;&#xb1;&#xa0;1.93&#xa0;mm, and HD95 22.2&#xa0;&#xb1;&#xa0;9.6&#xa0;mm) compared to clinical reference, so the breast structure models are not recommended for clinical use. Abdominal structures (RayStation 2024A vs clinical) had DSC 0.95&#xa0;&#xb1;&#xa0;0.014; MSD 0.82&#xa0;&#xb1;&#xa0;0.32&#xa0;mm; and HD95 5.4&#xa0;&#xb1;&#xa0;2.9&#xa0;mm. The mean dose differences between DLS and clinical segmentations were 0.03&#xa0;Gy for the head and neck, -0.92&#xa0;Gy for the thorax, 0.27&#xa0;Gy for the male pelvis, and 0.02&#xa0;Gy for the abdominal sites, and the corresponding maximum dose differences were 10.96&#xa0;Gy, 13.23&#xa0;Gy, 3.39&#xa0;Gy, and 6.31&#xa0;Gy. **CONCLUSIONS:** We described a procedure for practical quality assurance of auto-segmentation tools for clinical use after periodic software upgrades. Regression testing of head and neck, thorax, and male pelvis sites showed consistent performance after the software upgrade and the DLS models for abdominal site were commissioned in this study for clinical use; while the DLS models for breast site were not recommended.
+
+## Información del artículo
+
+- **Revista:** Journal of applied clinical medical physics
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Roya Barati, Jingwei Duan, Song Gao, Yao Zhao, Xinru Chen
+- **DOI:** [10.1002/acm2.70824](https://doi.org/10.1002/acm2.70824)
+- **PubMed ID:** [42779095](https://pubmed.ncbi.nlm.nih.gov/42779095/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42779095/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
