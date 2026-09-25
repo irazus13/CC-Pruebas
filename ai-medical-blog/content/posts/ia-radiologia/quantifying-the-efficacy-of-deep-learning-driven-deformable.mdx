@@ -1,0 +1,25 @@
+---
+title: "Quantifying the Efficacy of Deep Learning-Driven Deformable Registration in Multiplexed-Immunofluorescence Imaging for Nucleus Subtype Classification."
+description: "Accurate identification and classification of nucleus subtypes is crucial for cell tracking and uncovering patterns across cell types, such as local cell neighborhoods. Multiplexed immunofluorescence (MxIF) imaging is a process that involves staining..."
+date: "2026-04-01"
+category: "ia-radiologia"
+pubmedId: "42781412"
+author: "Gaurav Rudravaram, Shunxing Bao, Lucas W Remedios et al."
+tags: ["Cell Type Classification", "Image Registration", "Machine Learning"]
+---
+
+## Resumen
+
+Accurate identification and classification of nucleus subtypes is crucial for cell tracking and uncovering patterns across cell types, such as local cell neighborhoods. Multiplexed immunofluorescence (MxIF) imaging is a process that involves staining, imaging, and then bleaching the same tissue multiple times. Repeating MxIF staining with different marker combinations enables subclassification of cells. However, repeated cycles of staining and bleaching can cause deformation, movement, and tissue loss, resulting in misalignment of markers at the nucleus level. This misalignment can lead to the exclusion of a significant number of cells during downstream analysis. We propose that applying a post hoc deep learning-based deformable registration technique (VoxelMorph) on the respective 4',6-diamidino-2-phenylindole (DAPI) image for each round of staining can reduce the number of nuclei that are excluded due to spatial misalignment across successive staining rounds. By applying the registration transformations from different DAPI rounds to their corresponding stains, we achieve stain registration at pixel-level. To tackle the challenge of large image sizes, we propose a patch-based training and inference strategy. By analyzing residual displacement from bidirectional registrations, we are able to mask out areas in the tissue with high residual displacement to indicate image regions that should not be included for downstream analyses. For validation, we used a deterministic decision tree, based on biological domain knowledge, to classify MxIF nuclei into either one of 13 different classes or an undefined class. Our proposed registration approach effectively reduced the number of undefined nuclei, and we observed a 17.6% increase in the number of successfully classified nuclei compared to a baseline rigid registration. Our code is available at https://github.com/MASILab/MxIF_Registration.
+
+## Información del artículo
+
+- **Revista:** The journal of machine learning for biomedical imaging
+- **Fecha de publicación:** 2026-04-01
+- **Autores:** Gaurav Rudravaram, Shunxing Bao, Lucas W Remedios, Aravind R Krishnan, Michael E Kim
+- **DOI:** [10.59275/j.melba.2026-912a](https://doi.org/10.59275/j.melba.2026-912a)
+- **PubMed ID:** [42781412](https://pubmed.ncbi.nlm.nih.gov/42781412/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42781412/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

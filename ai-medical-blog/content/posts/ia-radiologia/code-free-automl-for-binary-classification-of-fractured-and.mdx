@@ -1,0 +1,25 @@
+---
+title: "Code-Free AutoML for Binary Classification of Fractured and Non-fractured Bone Radiographs From a Heterogeneous Public Dataset Using Google Cloud Vertex AI: A Proof-of-Concept Study."
+description: "Fracture detection on radiographs can be challenging, particularly for subtle or nondisplaced injuries, while development of artificial intelligence (AI) models often requires programming expertise and specialized computational resources. This proof-..."
+date: "2026-08-01"
+category: "ia-radiologia"
+pubmedId: "42781037"
+author: "Mark A Bachir, Neel Nawathey, Alexander Bachir et al."
+tags: ["artificial intelligence", "automl", "bone fracture", "computer vision", "deep learning"]
+---
+
+## Resumen
+
+Fracture detection on radiographs can be challenging, particularly for subtle or nondisplaced injuries, while development of artificial intelligence (AI) models often requires programming expertise and specialized computational resources. This proof-of-concept study evaluated whether a commercially available code-free automated machine-learning platform could distinguish fractured from non-fractured bone radiographs. A publicly available heterogeneous dataset containing 420 radiographic images, including 130 labeled as fractured and 290 labeled as non-fractured, was imported into Google Cloud Vertex AI AutoML Image Classification (Google, Inc., Mountain View, CA, USA) and divided into 336 training, 42 validation, and 42 test images. The dataset included radiographs from multiple anatomical regions; however, the publicly available metadata did not provide a sufficiently detailed anatomical distribution to reliably quantify upper-extremity, lower-extremity, spinal, or other fracture categories. Importantly, these counts represent radiographic images rather than confirmed independent patients, and patient-level distribution and independence across the training, validation, and test subsets could not be verified. No additional preprocessing, augmentation, or relabeling was performed by the investigators. Model performance was assessed using average precision, platform-reported aggregate precision and recall, confidence-threshold analysis, and a row-normalized confusion matrix. The trained classifier achieved a micro-averaged area under the precision-recall curve (AuPRC), reported by Vertex AI as average precision, of 0.987. At a confidence threshold of 0.50, model-level precision and recall were each 90.5%. Because these values summarize performance across both classes, they should not be interpreted as fracture-specific sensitivity. Class-specific average precision was 0.994 for non-fractured images and 0.972 for fractured images, while fracture-class recall was 77%. The row-normalized confusion matrix demonstrated correct classification of 77% of fractured radiographs and 97% of non-fractured radiographs. However, the retained Vertex AI output provided normalized percentages rather than raw class counts; therefore, the absolute numbers of correctly and incorrectly classified fractured and non-fractured images could not be verified. Given the small 42-image test set, the absence of raw counts limits the precision, interpretability, and reproducibility of these class-specific performance estimates and should be considered an important methodological limitation. The model was also successfully deployed to an online prediction endpoint and generated high-confidence classifications for representative images. These findings demonstrate that code-free AutoML can support rapid development and deployment of a functional, internally evaluated fracture-classification model without custom programming. However, the 77% fracture-class recall and small 42-image test set indicate that the model's performance should be interpreted cautiously and not as evidence of clinical diagnostic effectiveness. The small test set, class imbalance, limited clinical metadata, uncertain patient-level independence, and absence of external validation limit generalizability. Code-free AutoML may therefore be useful for proof-of-concept medical imaging research and education, but external validation is required before clinical implementation.
+
+## Información del artículo
+
+- **Revista:** Cureus
+- **Fecha de publicación:** 2026-08-01
+- **Autores:** Mark A Bachir, Neel Nawathey, Alexander Bachir, Akshay J Reddy, Jasmeen K Cheema
+- **DOI:** [10.7759/cureus.115047](https://doi.org/10.7759/cureus.115047)
+- **PubMed ID:** [42781037](https://pubmed.ncbi.nlm.nih.gov/42781037/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42781037/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
