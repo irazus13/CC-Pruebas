@@ -1,0 +1,25 @@
+---
+title: "PerioTwin-DeltaCRED: a validation-aware physiological digital twin for longitudinal periodontal treatment response prediction."
+description: "Predicting individual periodontal treatment response remains clinically unresolved. Existing machine-learning models are predominantly cross-sectional, lack a longitudinal response-vector design, and are rarely evaluated within valida..."
+date: "2026-01-01"
+category: "ia-odontologia"
+pubmedId: "42798377"
+author: "Pradeep Kumar Yadalam"
+tags: ["data re-uploading", "machine learning", "model calibration", "periodontal digital twin", "quantum machine learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Predicting individual periodontal treatment response remains clinically unresolved. Existing machine-learning models are predominantly cross-sectional, lack a longitudinal response-vector design, and are rarely evaluated within validation-aware digital-twin frameworks that capture multidimensional credibility rather than single-endpoint discrimination alone. This study aimed to develop and evaluate PerioTwin-DeltaCRED, a validation-aware periodontal digital twin that models treatment response as a longitudinal PPD and CAL response vector, and to benchmark classical and quantum machine-learning engines against that framework. **METHODS:** Five hundred patients with Stage II-IV periodontitis were retrospectively assembled from the Saveetha DIAS system; treatment was observational, involving either scaling and root planing alone or with low-level laser therapy. A stratified 60:20:20 split (training n=300, validation n=100, test n=100) was used for all models, using only baseline predictors-follow-up measurements and outcome variables were excluded to prevent leakage. Classical learners (logistic regression, random forest, gradient boosting) were benchmarked for poor-response classification, PPD reduction, CAL gain, and residual deep-pocket risk. Three quantum architectures-VQC-Pauli, Data Re-Uploading VQC (DRU-VQC), and QSVC-along with a hybrid quantum-classical stack, were evaluated as exploratory engines; six principal components (83.6% of variance) were angle-encoded into six-qubit circuits. Hyperparameters were optimized by Optuna on the validation set, with the test set withheld until final assessment. Uncertainty was estimated by bootstrap resampling, and the Delta-PTFI summarized credibility. **RESULTS:** Classical logistic regression was the strongest poor-response model (test AUROC 0.69, 95% CI 0.59-0.80; sensitivity 0.54, specificity 0.75), with random forest comparable (AUROC 0.68) and providing the best residual deep-pocket discrimination (AUROC 0.76). Continuous responses were predicted with modest error (PPD-reduction mean absolute error 0.37&#xa0;mm; CAL-gain 0.31&#xa0;mm); against observed changes of 1.20 &#xb1; 0.46&#xa0;mm and 0.78 &#xb1; 0.36&#xa0;mm, these errors were equivalent to an intercept-only baseline. Baseline CAL and periodontal stage were the dominant and most stable predictors (mean top-5 stability 0.75), and a two-variable model using stage and baseline CAL alone matched the full model (AUROC 0.71 versus 0.69). An exploratory composite credibility index (Delta-PTFI) was 0.62, falling to 0.25 when its continuous-outcome components were anchored to an intercept-only reference. No quantum architecture surpassed classical learning: the data re-uploading classifier (DRU-VQC) was the best quantum model (test AUROC 0.63), followed by the hybrid stack (0.60), VQC-Pauli (0.46), and QSVC (0.40). Classical learners restricted to the same six principal components reached AUROC 0.58-0.66, and the best of them (random forest, 0.66) still exceeded every quantum model. **CONCLUSION:** PerioTwin-DeltaCRED provides a validation-aware digital twin for periodontal treatment response, assessing calibration, fidelity, response stability, and credibility index instead of just discrimination. Classical models outperformed, and quantum architectures like DRU-VQC showed no advantage in noiseless six-qubit tests. This is among the first studies embedding and benchmarking quantum machine learning in a periodontal digital twin; more validation and noise testing is needed before clinical use.
+
+## Información del artículo
+
+- **Revista:** Frontiers in physiology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Pradeep Kumar Yadalam
+- **DOI:** [10.3389/fphys.2026.1958029](https://doi.org/10.3389/fphys.2026.1958029)
+- **PubMed ID:** [42798377](https://pubmed.ncbi.nlm.nih.gov/42798377/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42798377/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
