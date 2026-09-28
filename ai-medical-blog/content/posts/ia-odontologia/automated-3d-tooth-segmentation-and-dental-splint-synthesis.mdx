@@ -1,0 +1,25 @@
+---
+title: "Automated 3D Tooth Segmentation and Dental Splint Synthesis from Intraoral Scans: A Deep Learning Pipeline for Computer-Aided Digital Dentistry."
+description: "Background/Objectives: Temporomandibular disorders (TMDs) and sleep-related bruxism affect up to 40% and 31% of adults, respectively, and their management relies on accurate diagnostic assessment of the dental arch-including tooth identification, arc..."
+date: "2026-09-19"
+category: "ia-odontologia"
+pubmedId: "42793824"
+author: "Berrin &#xc7;elik, Mehmet &#xd6;zkaya, Mahmut Emin &#xc7;elik"
+tags: ["3D dental segmentation", "computer-aided diagnosis", "deep learning", "dental splint design", "intraoral scans"]
+---
+
+## Resumen
+
+Background/Objectives: Temporomandibular disorders (TMDs) and sleep-related bruxism affect up to 40% and 31% of adults, respectively, and their management relies on accurate diagnostic assessment of the dental arch-including tooth identification, arch-form analysis, and occlusal-plane evaluation-followed by the fabrication of full-coverage hard occlusal stabilization splints. Current digital workflows still depend on manual CAD delineation for both diagnostic segmentation and splint design, introducing inter-operator variability. This study presents a computational framework that automates the diagnostic segmentation of 3D intraoral scans and the subsequent generation of patient-specific stabilization splints. Methods: Using the Teeth3DS+ dataset, 3D meshes are rendered into 32 views via a Fibonacci Hemisphere camera-placement strategy, and seven deep learning architectures are trained for pixel-level diagnostic classification of 34 dental structures. Predictions are back-projected onto the mesh through probability-aggregation voting and iterative graph diffusion; the occlusal plane is estimated by singular value decomposition of tooth centroids; and a volumetric dual-shell splint is synthesized by topological dilation and normal-based displacement. Results: UNet++ achieves the strongest performance (MPA 98.75%, mIoU 71.76%, Dice 75.20%), with its superiority over every competing architecture confirmed by both paired t-test and Wilcoxon signed-rank tests at the image and scan levels (all p &lt; 0.001). On 60 held-out scans, back-projection and graph diffusion raise segmentation quality from a per-view mIoU of 62.0% to a mesh-level mIoU of 87.4% (Dice from 65.2% to 91.3%), with every held-out scan improving. Per-class analysis reveals near-ceiling accuracy on well-represented teeth; performance on the rarest and most posterior teeth (third molars) was markedly lower in preliminary experiments but improved substantially once the learning rate was selected via a validation-based sweep-a finding with direct implications for the diagnostic reliability of AI-assisted dental arch assessment and for the sensitivity of rare-class segmentation to training hyperparameters. Conclusions: The pipeline converts a raw intraoral scan into a diagnostically segmented model and a 3D-printable Michigan-type splint geometry without manual intervention, providing a foundation for accelerating the diagnostic-to-treatment cycle in TMD and bruxism management.
+
+## Información del artículo
+
+- **Revista:** Diagnostics (Basel, Switzerland)
+- **Fecha de publicación:** 2026-09-19
+- **Autores:** Berrin &#xc7;elik, Mehmet &#xd6;zkaya, Mahmut Emin &#xc7;elik
+- **DOI:** [10.3390/diagnostics16183039](https://doi.org/10.3390/diagnostics16183039)
+- **PubMed ID:** [42793824](https://pubmed.ncbi.nlm.nih.gov/42793824/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42793824/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
