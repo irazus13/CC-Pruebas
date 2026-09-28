@@ -1,0 +1,25 @@
+---
+title: "Automated Root Canal Curvature Assessment From Periapical Radiographs Using Geometric and Deep Learning Features."
+description: "To develop and validate a machine learning-based automated computational framework using periapical radiographs for the detection, segmentation and classification of root canal curvature in mandibular premolars with single canals, and to eva..."
+date: "2026-09-28"
+category: "ia-odontologia"
+pubmedId: "42803142"
+author: "Balaganesh Pachaiappan, Saravanan Poorni, Srividhya Srinivasan et al."
+tags: ["canal curvature", "deep learning", "endodontics", "periapical radiography", "root canal"]
+---
+
+## Resumen
+
+**AIM:** To develop and validate a machine learning-based automated computational framework using periapical radiographs for the detection, segmentation and classification of root canal curvature in mandibular premolars with single canals, and to evaluate the contribution of geometric and deep learning features towards diagnostic performance. **METHODOLOGY:** A retrospective cross-sectional study was performed using 1644 periapical images of mandibular premolars. A four-stage multi-model framework was proposed using a single fixed 10-fold cross-validation partition applied consistently across all four stages to prevent data leakage between training and evaluation. The object detection models were YOLOv8, YOLOv11 and RF-DETR. For segmentation of the root canal, YOLOv8-seg, YOLOv11-seg and Attention U-Net were used. The multiparametric feature extraction included five geometric morphometric features automatically derived from a binary mask and 2048 deep convolutional neural network features from ResNet-50. Classification of curvature was defined using an eXtreme Gradient Boosting (XGBoost) classifier with stratified 10-fold cross-validation, with Synthetic Minority Over-sampling Technique (SMOTE) and algorithmic class weighting applied within the training folds of each cross-validation iteration. **RESULTS:** The dataset included 633 straight, 885 moderately curved and 126 severely curved canals. RF-DETR achieved a recall of 97.5%, precision of 93.3% and F1-score of 95.4% for premolar detection. The YOLOv11-seg model was successful in segmenting the root canal with a Dice score of 85.8% and an IoU of 77.5%. All five geometric parameters were statistically significant for different severity groups (p-value &lt;&#x2009;0.001). For the end-to-end curvature classification, the hybrid feature fusion model produced the highest overall metrics, achieving an accuracy of 89.60%, a recall of 83.80% and an F1-score of 86.77%, compared to the models using either geometric features (88.38% accuracy) or deep learning features alone (82.42% accuracy). **CONCLUSIONS:** The hybrid feature-fusion model reached the highest overall classification accuracy at 89.60%. Although the geometric-only model had higher sensitivity for severe curvature with 80.6% compared to 69.1%, L&#xfc;iten's angle was the most prominent predictor of curvature severity. Due to the limitations of two-dimensional radiographs in displaying buccolingual curvatures, this framework works best as a screening aid as it helps identify canals that need adjunctive three-dimensional evaluation.
+
+## Información del artículo
+
+- **Revista:** International endodontic journal
+- **Fecha de publicación:** 2026-09-28
+- **Autores:** Balaganesh Pachaiappan, Saravanan Poorni, Srividhya Srinivasan, Cruz Nishanthine, Manali Ramakrishnan Srinivasan
+- **DOI:** [10.1111/iej.70281](https://doi.org/10.1111/iej.70281)
+- **PubMed ID:** [42803142](https://pubmed.ncbi.nlm.nih.gov/42803142/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42803142/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
