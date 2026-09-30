@@ -1,0 +1,25 @@
+---
+title: "A Multi-Model, Pixel-Native Framework for Automated Computed Tomography Series Labeling and Characterization: Proof-of-Concept Study."
+description: "Although Digital Imaging and Communications in Medicine (DICOM) metadata are widely used to manage medical imaging data and support clinical workflows, their suitability as a sole basis for automatic computed tomography (CT) series la..."
+date: "2026-09-29"
+category: "ia-radiologia"
+pubmedId: "42809841"
+author: "Yutong Wen, Anton Sheahan Quinsten, Cynthia Sabrina Schmidt et al."
+tags: ["AI", "AI orchestration", "DICOM-free classification", "Digital Imaging and Communications in Medicine&#x2013;free classification", "anatomical region detection"]
+---
+
+## Resumen
+
+**BACKGROUND:** Although Digital Imaging and Communications in Medicine (DICOM) metadata are widely used to manage medical imaging data and support clinical workflows, their suitability as a sole basis for automatic computed tomography (CT) series labeling and characterization is limited. DICOM metadata are frequently inconsistently populated, institution specific, use unregulated private tags, and have variable reliability even within standardized fields. Consequently, automated series selection for downstream AI applications often remains unreliable, necessitating manual curation within clinical workflows. **OBJECTIVE:** This study presents Orchestrate, a modular AI framework for automated orchestration of CT imaging data. By integrating a hierarchy of deep learning models, Orchestrate enables pixel-level classification and routing of CT series and accurate metadata-independent identification of anatomical regions, contrast-enhanced series, and reconstruction kernels, supporting seamless downstream AI integration without manual curation. **METHODS:** Orchestrate combined 3 pretrained models for anatomical regions, landmarks, and body part classification and 4 newly developed You Only Look Once (YOLO) v8-based models to classify contrast enhancement, recognize reconstruction kernels, and infer laterality. Three datasets were used: an internal development dataset comprising 27,418 CT studies for individual model development, an internal framework evaluation dataset comprising 200 CT studies to assess the complete framework under a simulated real-world scenario, and an external dataset from The Cancer Imaging Archive comprising 100 CT studies. For the internal development data, reference standards were derived from complete and unambiguous DICOM metadata following institutional definitions. For the 2 evaluation datasets, 3 radiographers independently established reference standards as DICOM metadata were not assumed to be complete or consistent. Clinical utility was assessed through cohort selection tasks involving 3 predefined target cases, with 3 radiologists reviewing selection accuracy. The interrater agreement was assessed using the Fleiss &#x3ba;. The model performance was evaluated using F1-scores. **RESULTS:** DICOM metadata were incomplete in the internal framework evaluation dataset and external dataset, with missing rates of 42.9% (413/963) and 92.9% (105/113) for contrast enhancement, respectively, and a missing reconstruction kernel information rate of 0.4% (4/963) in the internal framework evaluation dataset. During model development, individual models achieved macro-F1-scores ranging from 0.982 to 0.989. At the framework level, Orchestrate achieved high classification performance across internal (weighted F1-score ranged from 0.920 to 1.000; macro-F1-score ranged from 0.879 to 1.000) and external (weighted F1-score ranged from 0.946 to 1.000; macro-F1-score ranged from 0.777 to 0.929) cohorts. For clinical use cases, the overall selection accuracy was 97.7% (217/222). **CONCLUSIONS:** Orchestrate enables automated pixel-based classification, detection, and semantic description of CT series, reducing reliance on manual selection and the risk of inconsistent metadata. By generating standardized semantic content, the framework provides a proof of concept for improving interoperability with clinical systems and supports the reliable, reproducible integration of AI-driven imaging pipelines into clinical workflows.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-09-29
+- **Autores:** Yutong Wen, Anton Sheahan Quinsten, Cynthia Sabrina Schmidt, Christian Bojahr, Judith Kohnke
+- **DOI:** [10.2196/93018](https://doi.org/10.2196/93018)
+- **PubMed ID:** [42809841](https://pubmed.ncbi.nlm.nih.gov/42809841/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42809841/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
