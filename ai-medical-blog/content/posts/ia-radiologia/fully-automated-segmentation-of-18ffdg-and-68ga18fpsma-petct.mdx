@@ -1,0 +1,25 @@
+---
+title: "Fully Automated Segmentation of [18F]FDG and [68Ga]/[18F]PSMA PET/CT Images via Data-Centric Deep Learning."
+description: "The purpose of this study was to develop and validate lesion identification in oncologic nuclear imaging (LION), an open-source PET-only tumor segmentation pipeline for [18F]FDG and prostate-specific membrane antigen (PSMA)-targeted PET/CT, and to in..."
+date: "2026-09-30"
+category: "ia-radiologia"
+pubmedId: "42816125"
+author: "Manuel Pires, Sebastian Gutschmayer, Enrica Bergalla et al."
+tags: ["PET/CT", "deep learning", "tumor segmentation"]
+---
+
+## Resumen
+
+The purpose of this study was to develop and validate lesion identification in oncologic nuclear imaging (LION), an open-source PET-only tumor segmentation pipeline for [18F]FDG and prostate-specific membrane antigen (PSMA)-targeted PET/CT, and to investigate how training data characteristics influence segmentation performance. Methods: In this retrospective multicenter study, 5209 [18F]FDG PET/CT scans spanning 19 disease types and 2046 PSMA-targeted PET/CT scans were used to train PET-only segmentation models. Tumor segmentation incorporated organs with physiologic uptake as auxiliary classes to enable PET-only inference. Tumor occurrence maps (TOMs) quantified tumor spatial diversity across the training data. For [18F]FDG, disease-specific and mixed-disease models trained on progressively larger subsets were compared to test whether increasing spatial diversity improves generalization. Scanner-related domain shift was analyzed using DINOv2 embeddings. Models were evaluated on multicenter holdout cohorts (616 [18F]FDG scans across 4 diseases; 443 PSMA-targeted prostate cancer scans) and compared with 3 open-source tools. Results: Organ context improved median Dice from 0.62 to 0.71 for [18F]FDG and from 0.75 to 0.83 for PSMA, on the complete holdout cohorts. Spatial diversity measured by TOMs was strongly associated with Dice (Spearman &#x3c1; = 0.80, P = 0.003). A mixed-disease model trained on 500 patients matched the performance of a lymphoma specialist model trained on 3031 cases. DINOv2 embeddings revealed scanner-induced domain shift between same-disease cohorts. LION achieved median Dice scores of 0.71 for [18F]FDG and 0.85 for PSMA and outperformed other open-source approaches on the model-comparison test set, which excluded the AutoPET test cases. Conclusion: LION enables PET-only automated segmentation for [18F]FDG and PSMA-targeted PET. Training data composition, particularly spatial diversity quantified by TOMs, was strongly associated with segmentation performance.
+
+## Información del artículo
+
+- **Revista:** Journal of nuclear medicine : official publication, Society of Nuclear Medicine
+- **Fecha de publicación:** 2026-09-30
+- **Autores:** Manuel Pires, Sebastian Gutschmayer, Enrica Bergalla, Stephane Chauvie, Dominik Amereller
+- **DOI:** [10.2967/jnumed.126.272852](https://doi.org/10.2967/jnumed.126.272852)
+- **PubMed ID:** [42816125](https://pubmed.ncbi.nlm.nih.gov/42816125/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42816125/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

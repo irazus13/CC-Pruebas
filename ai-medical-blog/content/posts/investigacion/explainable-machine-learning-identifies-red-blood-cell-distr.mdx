@@ -1,0 +1,25 @@
+---
+title: "Explainable Machine Learning Identifies Red Blood Cell Distribution Width as a Key Prognostic Biomarker in Cardiogenic Shock."
+description: "Cardiogenic shock (CS) is a life-threatening syndrome characterized by severe pump failure and systemic hypoperfusion, with persistently high mortality. Red blood cell distribution width (RDW) has been associated with adverse outcomes in several card..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42816377"
+author: "Xueqian Shen, Haosheng Wu, Feng Gai et al."
+tags: ["Decision curve analysis", "Mortality", "Risk stratification", "SHapley Additive exPlanations", "Tabular Prior-data Fitted Network"]
+---
+
+## Resumen
+
+Cardiogenic shock (CS) is a life-threatening syndrome characterized by severe pump failure and systemic hypoperfusion, with persistently high mortality. Red blood cell distribution width (RDW) has been associated with adverse outcomes in several cardiovascular conditions, but its prognostic role in CS, particularly for long-term mortality and machine learning-based risk stratification, remains incompletely defined. We aimed to investigate the association between RDW and mortality in patients with CS and to evaluate its value in interpretable machine learning models for 1-year mortality prediction.We identified 2,014 patients with CS from the MIMIC-IV database (2008-2019). Associations between RDW and in-hospital mortality were assessed using logistic regression, and associations with 1-year mortality were evaluated using Cox regression. RDW was analyzed both as a continuous variable and by tertiles (T1 &#x2264; 14.40%, T2 14.40-16.27%, T3 &gt; 16.27%). Kaplan-Meier curves and restricted cubic splines (RCS) were used to examine survival patterns and dose-response relationships. Patients were randomly divided into training and test cohorts (8:2). Feature selection was performed using Boruta and random forest-derived importance metrics. Six machine learning models (LR, DT, RF, SVM, XGBoost, and TabPFN) were developed for 1-year mortality prediction and evaluated by area under the receiver operating characteristic curve (AUC), sensitivity, specificity, accuracy, F1 score, and decision curve analysis (DCA). Model interpretability was assessed using SHapley Additive exPlanations (SHAP).Among 2,014 patients with CS, 1-year mortality was 53.2%. Higher RDW was independently associated with increased 1-year mortality after multivariable adjustment (HR = 1.043, 95% CI: 1.015-1.071). For in-hospital mortality, the association remained significant in fully adjusted analysis but was attenuated (OR = 1.055, 95% CI: 1.001-1.112). Compared with T1, patients in T3 had a significantly higher risk of 1-year mortality (HR = 1.626, 95% CI: 1.376-1.921; P for trend = 0.004). RCS analysis showed a significant overall association between RDW and 1-year mortality, with risk increasing above approximately 14.4%, although the test for nonlinearity was not statistically significant. Among the evaluated models, TabPFN achieved the highest observed AUC for 1-year mortality prediction (AUC = 0.861), with sensitivity of 0.80 and specificity of 0.72, and showed the most favorable net benefit on DCA. SHAP analysis indicated that model predictions were driven by multiple clinically meaningful domains, including treatment-related variables, shock severity, metabolic disturbance, cardiovascular substrate, and RDW.Elevated RDW is an independent predictor of 1-year mortality in patients with CS. An RDW level above approximately 14.4% may serve as a practical marker of increased risk. Integrating RDW into interpretable machine learning-based risk assessment, particularly with TabPFN, may improve early prognostic stratification in CS. Prospective external validation is warranted.
+
+## Información del artículo
+
+- **Revista:** International heart journal
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Xueqian Shen, Haosheng Wu, Feng Gai, Xue Jiang, Caixia Guo
+- **DOI:** [10.1536/ihj.25-604](https://doi.org/10.1536/ihj.25-604)
+- **PubMed ID:** [42816377](https://pubmed.ncbi.nlm.nih.gov/42816377/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42816377/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
