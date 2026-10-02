@@ -1,0 +1,25 @@
+---
+title: "Dynamic prediction of the development of extrahepatic organ failures in ICU patients with decompensated cirrhosis."
+description: "Extrahepatic organ failure (EOF) is a critical determinant of short-term mortality in patients with decompensated cirrhosis within the intensive care unit (ICU). However, traditional prognostic tools are largely static and fail to cap..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42825283"
+author: "Yee Hui Yeo, Linjie Que, Mengyi Zhang et al."
+tags: ["Intensive Care Units", "Liver Cirrhosis", "Machine Learning", "Multiple Organ Failure", "Risk Assessment"]
+---
+
+## Resumen
+
+**BACKGROUND:** Extrahepatic organ failure (EOF) is a critical determinant of short-term mortality in patients with decompensated cirrhosis within the intensive care unit (ICU). However, traditional prognostic tools are largely static and fail to capture the rapidly fluctuating physiological characteristic of critical illness. This study aimed to develop and validate a dynamic artificial intelligence (AI) framework to provide real-time predictions of the presence of &#x2265;2 EOF 12 hours later. **METHODS:** We analysed adult patients with decompensated cirrhosis from the Medical Information Mart for Intensive Care IV (MIMIC-IV; derivation) and eICU Collaborative Research Database (eICU-CRD; external validation). Using a late-fusion architecture, we combined risk estimates from a machine-learning model and a deep-learning model. Both models incorporated longitudinal vital signs and non-time-series clinical variables, using summary features and sequential vital signs, respectively. The model processed 45 variables subsequently refined to 14 key predictors. The sliding-window framework combined hourly vital signs (6-hour dynamic window), recent laboratory parameters (24-hour window) and current organ failure status. The model continuously incorporated newly available data to predict the presence of &#x2265;2 EOF 12 hours later. Performance was evaluated via area under the receiver operating characteristic curve (AUROC), calibration and decision curve analysis (DCA). **RESULTS:** The derivation cohort included 1486 patients, with 1666 patients in the external validation cohort. The optimal late-fusion configuration paired a CatBoost model trained after synthetic minority over-sampling technique (SMOTE) resampling with a deep-learning model combining fully convolutional networks and gated recurrent units (FCN-GRU). The combined model achieved an AUROC of 0.830 (95% CI 0.783 to 0.876) at the 12-hour prediction horizon. The model demonstrated strong calibration (intercept -0.027) and consistent net clinical benefit across relevant probability thresholds in DCA. Sensitivity analyses showed stable performance across 6-hour (AUROC 0.821) and 24-hour (AUROC 0.834) prediction horizons as well as within the sepsis subgroup (AUROC 0.820). Robust discriminative capability was maintained in external validation (AUROC 0.774, 95% CI 0.743 to 0.805). **CONCLUSION:** By tracking continuously evolving physiological trajectories, this AI-driven approach accurately predicts EOF in patients with decompensated cirrhosis. It provides reliable risk estimates 12 hours ahead, serving as a dynamic alternative to conventional static risk scores.
+
+## Información del artículo
+
+- **Revista:** eGastroenterology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yee Hui Yeo, Linjie Que, Mengyi Zhang, Jian Zu, Yuankai Wu
+- **DOI:** [10.1136/egastro-2026-100463](https://doi.org/10.1136/egastro-2026-100463)
+- **PubMed ID:** [42825283](https://pubmed.ncbi.nlm.nih.gov/42825283/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42825283/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
