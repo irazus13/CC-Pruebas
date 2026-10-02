@@ -1,0 +1,25 @@
+---
+title: "Reducing Clinician Annotation Fatigue in Open-Set Federated Learning: A Client-Adaptive Vision-Language Gatekeeper."
+description: "Federated learning enables breast-imaging sites to jointly train mammography artificial intelligence (AI) without sharing images, but radiologists at each site must still annotate selected images during active-learning rounds. We develop..."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "42822685"
+author: "Adea Nesturi, David Due&#xf1;as Gaviria, Jiajun Zeng et al."
+tags: ["Mammography", "annotation burden", "federated learning", "radiologist workflow", "vision-language models"]
+---
+
+## Resumen
+
+**PURPOSE:** Federated learning enables breast-imaging sites to jointly train mammography artificial intelligence (AI) without sharing images, but radiologists at each site must still annotate selected images during active-learning rounds. We developed and evaluated a client-adaptive vision-language gatekeeper that withholds radiopaque artifact-containing images considered unsuitable for a breast-density annotation objective and quantified its effect on annotation time, queue quality, and label reliability. **METHODS:** In this retrospective, scanner-partitioned study, we used FedEMBED, derived from the public Emory Breast Imaging Dataset (222,700 training and 65,891 test images; four scanners; artifact prevalence 4.8%-13.1% per scanner). PromptGate adapted a biomedical vision-language model with site-specific learnable prompts and classified each image as relevant in-distribution (ID) or irrelevant out-of-distribution (OOD) using the class with the highest softmax probability. A single radiologist who is a member of the study team and has 2 years of breast imaging experience independently read a patient-separated, artifact-enriched cohort of 500 single mammographic views (ID, n=346; OOD, n=154). Cases were randomized, ID and OOD images were intermixed, and the reader was blinded to reference labels, PromptGate decisions, enrichment status, and scanner metadata. **RESULTS:** PromptGate withheld 101 of 154 artifact-containing images and 54 of 346 ID images, corresponding to 65.6% artifact sensitivity, 84.4% ID retention, and a 15.6% false-removal rate among ID images. Gross annotation time decreased by &#x223c;30% (3.82 to 2.68 hours; 1.14 hours) in the enriched cohort; an analysis crediting only correctly removed artifacts yielded an estimated 20.0% reduction. A simple prevalence-based extrapolation suggests an approximate 20- to 65-min saving per 500 images at the observed scanner-specific prevalence, although the absolute benefit is expected to be smaller than in the enriched cohort. Artifact discrimination reached an area under the receiver operating characteristic curve of 0.85. Reader agreement with the manual artifact reference was 93.6% (&#x3ba;=0.85), whereas agreement with the clinical-record density label was 60.9% exact (&#x3ba;=0.48). Queue purity reached 92.5%, compared with 88.5% without filtering and 87.0% with a static vision-language model filter, while downstream density accuracy remained similar to the unfiltered condition. **CONCLUSION:** In this retrospective proof-of-concept study, a privacy-oriented, scanner-adaptive vision-language gate improved the concentration of task-relevant images in federated breast-density annotation queues and reduced gross reading time. Because some ID images were incorrectly withheld and the reader study used an artifact-enriched cohort, a prospective multireader and multi-institutional evaluation is needed before operational deployment.
+
+## Información del artículo
+
+- **Revista:** Journal of the American College of Radiology : JACR
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Adea Nesturi, David Due&#xf1;as Gaviria, Jiajun Zeng, Mohammed Bahaaeldin, Julian A Luetkens
+- **DOI:** [10.1016/j.jacr.2026.09.023](https://doi.org/10.1016/j.jacr.2026.09.023)
+- **PubMed ID:** [42822685](https://pubmed.ncbi.nlm.nih.gov/42822685/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42822685/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
