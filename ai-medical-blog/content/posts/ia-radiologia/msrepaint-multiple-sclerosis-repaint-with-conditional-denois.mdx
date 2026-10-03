@@ -1,0 +1,25 @@
+---
+title: "MSRepaint: Multiple Sclerosis Repaint with conditional denoising diffusion implicit model for bidirectional lesion filling and synthesis."
+description: "In multiple sclerosis (MS), lesions interfere with automated magnetic resonance imaging (MRI) analyses such as brain parcellation and deformable registration, while lesion segmentation models are hindered by the limited availability of annotated trai..."
+date: "2026-09-30"
+category: "ia-radiologia"
+pubmedId: "42826585"
+author: "Jinwei Zhang, Lianrui Zuo, Yihao Liu et al."
+tags: ["Diffusion models", "Image inpainting", "Lesion filling", "Lesion synthesis", "Multiple sclerosis"]
+---
+
+## Resumen
+
+In multiple sclerosis (MS), lesions interfere with automated magnetic resonance imaging (MRI) analyses such as brain parcellation and deformable registration, while lesion segmentation models are hindered by the limited availability of annotated training data. To address both issues, we propose MSRepaint, a unified diffusion-based generative model for bidirectional lesion filling and synthesis that restores anatomical continuity for downstream analyses and augments segmentation through realistic data generation. MSRepaint conditions on spatial lesion masks for voxel-level control, incorporates contrast dropout to handle missing inputs, integrates a repainting mechanism to preserve surrounding anatomy during lesion filling and synthesis, and employs a multi-view DDIM inversion and fusion pipeline for 3D consistency with fast inference. Extensive evaluations demonstrate the effectiveness of MSRepaint across multiple tasks. For lesion filling, we evaluate both the accuracy within the filled regions and the impact on downstream tasks including brain parcellation and deformable registration. MSRepaint outperforms the FSL and NiftySeg lesion filling methods, and achieves accuracy on par with FastSurfer-LIT, a recent diffusion model-based lesion filling method, while offering over 20&#xd7;faster inference. For lesion synthesis, state-of-the-art MS lesion segmentation models trained on MSRepaint-synthesized data outperform those trained on CarveMix-synthesized data or real ISBI challenge training data across multiple benchmarks, including the MICCAI 2016 and UMCL datasets. Additionally, we demonstrate that MSRepaint's unified bidirectional filling and synthesis capability, with full spatial control over lesion appearance, enables high-fidelity mask-conditioned voxel-wise control of lesion appearance within a unified framework. Our code is available at https://github.com/Jinwei1209/msrepaint.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-09-30
+- **Autores:** Jinwei Zhang, Lianrui Zuo, Yihao Liu, Hang Zhang, Samuel W Remedios
+- **DOI:** [10.1016/j.media.2026.104338](https://doi.org/10.1016/j.media.2026.104338)
+- **PubMed ID:** [42826585](https://pubmed.ncbi.nlm.nih.gov/42826585/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42826585/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

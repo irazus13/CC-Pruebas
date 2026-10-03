@@ -1,0 +1,25 @@
+---
+title: "External evaluation of a deep learning-based algorithm for automated lung tumor and esophagus segmentation on CBCT."
+description: "Online adaptive radiotherapy (ART) requires fast and accurate delineation of targets and organs at risk on cone-beam computed tomography (CBCT). Although deep learning (DL)-based CBCT auto-segmentation methods have been proposed, their clinical gener..."
+date: "2026-10-02"
+category: "ia-radiologia"
+pubmedId: "42826729"
+author: "Zhehao Zhang, Dean Hobbis, Jue Jiang et al."
+tags: ["Adaptive radiotherapy", "Auto-segmentation", "CBCT", "Deep learning", "Lung cancer"]
+---
+
+## Resumen
+
+Online adaptive radiotherapy (ART) requires fast and accurate delineation of targets and organs at risk on cone-beam computed tomography (CBCT). Although deep learning (DL)-based CBCT auto-segmentation methods have been proposed, their clinical generalizability remains insufficiently validated. This study aimed to externally evaluate a pretrained DL model for lung tumor and esophagus segmentation on CBCT. Originally trained using C-arm linac CBCT images, the model was directly applied to an independent cohort of 12 lung cancer patients, each with 5 CBCT images acquired at a separate institution on an O-ring linac. Rigid propagation of planning CT contours served as a minimal baseline to determine whether the model matched or outperformed conventional rigid registration for gross tumor volume (GTV) and esophagus segmentation using geometric and dosimetric measures. Compared with rigid contour propagation, the model significantly improved GTV segmentation accuracy, with mean Dice similarity coefficient (DSC) increasing from 0.66 to 0.76. Significant differences in GTV D98% were observed between the model-generated contours and the reference contours (50.69 vs. 53.58 Gy). The model showed a statistically non-significant decrease in performance compared with previously reported results on its original testing dataset (mean DSC = 0.84), which shared the same distribution as the training dataset. For esophagus segmentation, evaluation of 26 scans from 6 patients showed that the model achieved geometric accuracy within peri-target contour rings comparable to rigid propagation, with mean DSC of 0.72 and 0.70, respectively. Similar esophagus V32Gy values were observed between the model-generated and reference contours (0.06 vs. 0.06 cc). Significantly reduced accuracy was observed compared with previously reported results, with mean DSC decreasing from 0.79 to 0.72. These findings highlight that DL-based CBCT auto-segmentation may suffer performance degradation under domain shifts across patient populations, clinical workflows, and imaging systems, emphasizing the necessity of external evaluation beyond the original development environment.
+
+## Información del artículo
+
+- **Revista:** Biomedical physics &amp; engineering express
+- **Fecha de publicación:** 2026-10-02
+- **Autores:** Zhehao Zhang, Dean Hobbis, Jue Jiang, Aneesh Rangnekar, Chloe Min Seo Choi
+- **DOI:** [10.1088/2057-1976/aeaf5c](https://doi.org/10.1088/2057-1976/aeaf5c)
+- **PubMed ID:** [42826729](https://pubmed.ncbi.nlm.nih.gov/42826729/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42826729/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
