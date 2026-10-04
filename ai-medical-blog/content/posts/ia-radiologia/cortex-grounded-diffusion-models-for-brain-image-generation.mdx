@@ -1,0 +1,25 @@
+---
+title: "Cortex-grounded diffusion models for brain image generation."
+description: "Synthetic neuroimaging data can mitigate critical limitations of real-world datasets, including the scarcity of rare phenotypes, domain shifts across scanners, and insufficient longitudinal coverage. However, existing generative models largely rely o..."
+date: "2026-09-29"
+category: "ia-radiologia"
+pubmedId: "42828866"
+author: "Fabian Bongratz, Yitong Li, Sama Elbaroudy et al."
+tags: ["Brain", "Cortical surfaces", "Generation", "MRI"]
+---
+
+## Resumen
+
+Synthetic neuroimaging data can mitigate critical limitations of real-world datasets, including the scarcity of rare phenotypes, domain shifts across scanners, and insufficient longitudinal coverage. However, existing generative models largely rely on weak conditioning signals, such as labels or text, which lack anatomical grounding and often produce biologically implausible outputs. To this end, we introduce Cor2Vox, a cortex-grounded generative framework for brain magnetic resonance image (MRI) synthesis that ties image generation to continuous structural priors of the cerebral cortex. It leverages high-resolution cortical surfaces to guide a 3D shape-to-image Brownian bridge diffusion process, enabling topologically faithful synthesis and precise control over underlying anatomies. To support the generation of new, realistic brain shapes, we developed a large-scale statistical shape model of cortical morphology derived from over 33,000 UK Biobank scans. We validated the fidelity of Cor2Vox based on traditional image quality metrics, advanced cortical surface reconstruction, and whole-brain segmentation quality, outperforming many baseline methods. Across three applications, namely (i) anatomy-guided synthesis, (ii) simulation of progressive gray matter atrophy, and (iii) harmonization of in-house frontotemporal dementia scans with public datasets, Cor2Vox preserved fine-grained cortical morphology at the sub-voxel level. Notably, the proposed model exhibits inherent robustness to variations in cortical geometry and unseen dementia phenotypes without retraining, paving the way for disease progression modeling and robust data augmentation in rare neurodegenerative disorders.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-09-29
+- **Autores:** Fabian Bongratz, Yitong Li, Sama Elbaroudy, Timo Grimmer, Igor Yakushev
+- **DOI:** [10.1016/j.media.2026.104339](https://doi.org/10.1016/j.media.2026.104339)
+- **PubMed ID:** [42828866](https://pubmed.ncbi.nlm.nih.gov/42828866/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42828866/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
