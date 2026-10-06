@@ -1,0 +1,25 @@
+---
+title: "MediNet: Simplifying Federated and Privacy-Preserving AI Deployment in Healthcare."
+description: "The application of Artificial Intelligence and Deep Learning (DL) in healthcare is increasingly feasible in principle, yet remains inaccessible in practice for most clinical institutions. Beyond the well-known challenge of data privac..."
+date: "2026-10-06"
+category: "ia-medicina"
+pubmedId: "42836690"
+author: "Ramon Mateo-Navarro, David Sarrat-Gonz&#xe1;lez, Dolors Pelegr&#xed;-Sis&#xf3; et al."
+tags: []
+---
+
+## Resumen
+
+**MOTIVATION:** The application of Artificial Intelligence and Deep Learning (DL) in healthcare is increasingly feasible in principle, yet remains inaccessible in practice for most clinical institutions. Beyond the well-known challenge of data privacy regulations that prevent centralization of patient records, two further barriers limit adoption. First, deploying a federated learning infrastructure requires substantial technical expertise: configuring distributed training environments, implementing privacy-preserving mechanisms such as Differential Privacy (DP), and managing secure inter-institutional communication demands specialized knowledge that most healthcare organizations do not possess. Second, designing and configuring DL models (selecting architectures, tuning hyperparameters, interpreting results) currently requires machine learning expertise that clinical professionals, including researchers and physicians, typically lack. Existing federated learning frameworks address the infrastructure problem but impose a steep learning curve that effectively excludes non-specialized users. A solution that abstracts this complexity, enabling clinicians and biomedical researchers to design, launch, and monitor federated training processes without programming or machine learning expertise, remains absent from the field. **RESULTS:** To address existing limitations, we introduce MediNet, a comprehensive server-client Federated learning (FL) platform that allows hospitals and research centers to train Machine Learning (ML) and DL models without moving or exposing sensitive data. It offers an intuitive web-based environment that simplifies FL, enabling users to easily select the model and define training criteria while administrators manage permissions and datasets, ensuring granular and autonomous data control. The system automatically constructs and generates the underlying technical configuration (e.g., Python/FL scripts) according to the parameters specified in the GUI. It then orchestrates the secure federated rounds and provides real-time monitoring, fully encapsulating the complexity of deployment and security. MediNet is built upon PyTorch as its primary framework, chosen for its robustness in DL model development along with its Differential Privacy (DP) libraries. Flower (Beutel et al., 2020) is used as the federated orchestration system. These underlying technologies are internal pillars of MediNet, essential for ensuring robustness, functionality, and strict adherence to privacy principles. **AVAILABILITY AND IMPLEMENTATIONS:** The general information page for the MediNet software is available at https://isglobal-brge.github.io/MediNet. The MediNet software and its complementary tools are fully available under the MIT license on GitHub. The MediNetHub and MediNetNode code can be found on https://github.com/isglobal-brge/MediNetHub and https://github.com/isglobal-brge/MediNetNode.
+
+## Información del artículo
+
+- **Revista:** Bioinformatics (Oxford, England)
+- **Fecha de publicación:** 2026-10-06
+- **Autores:** Ramon Mateo-Navarro, David Sarrat-Gonz&#xe1;lez, Dolors Pelegr&#xed;-Sis&#xf3;, Xavier Escrib&#xe0;-Montagut, Fernando S&#xe1;nchez-Lasheras
+- **DOI:** [10.1093/bioinformatics/btag742](https://doi.org/10.1093/bioinformatics/btag742)
+- **PubMed ID:** [42836690](https://pubmed.ncbi.nlm.nih.gov/42836690/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42836690/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
