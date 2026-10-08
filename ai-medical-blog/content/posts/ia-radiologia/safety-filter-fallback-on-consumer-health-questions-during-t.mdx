@@ -1,0 +1,25 @@
+---
+title: "Safety-Filter Fallback on Consumer Health Questions During the Initial Claude Fable 5 Deployment: Observational Study."
+description: "Independent audits of medical large language models have concentrated on models that answer unsafely rather than those that decline safe questions. In June 2026, Anthropic released Claude Fable 5 with a safeguard that detects requests..."
+date: "2026-10-07"
+category: "ia-radiologia"
+pubmedId: "42842307"
+author: "Yosef Adiniaev, Mahmud Omar, Yiftach Barash et al."
+tags: ["AI", "artificial intelligence", "consumer health", "health information&#x2013;seeking behavior", "large language models"]
+---
+
+## Resumen
+
+**BACKGROUND:** Independent audits of medical large language models have concentrated on models that answer unsafely rather than those that decline safe questions. In June 2026, Anthropic released Claude Fable 5 with a safeguard that detects requests related to cybersecurity, biology, or chemistry and reroutes them to a fallback model, Claude Opus 4.8. The developer states that this safeguard is deliberately conservative and affects fewer than 5% of sessions. Whether that figure holds for consumer health questions, many containing dense biomedical vocabulary, was unknown. **OBJECTIVE:** This study measured how often Claude Fable 5 routed consumer health questions to its fallback model and whether routing varied by clinical domain and framing. **METHODS:** In this observational, point-in-time audit, the first 500 unique prompts in alphabetical order from the HealthSearchQA benchmark (3173 prompts) were each entered once into Claude Fable 5 through the web interface, in a new session with no system prompt and default settings, from June 9 to 12, 2026. Two reviewers independently coded each response as routed to fallback upfront or not routed upfront, with a third adjudicating disagreements. Midgeneration truncation due to a safety interruption was recorded separately. Prompts were labeled by clinical domain, question type, and sensitivity. Rates were reported with Wilson 95% CIs and compared using chi-square tests. Gemini 2.5 Flash served as an independent comparator. **RESULTS:** Reviewers agreed on 474 of 500 responses (94.8%; Cohen &#x3ba;=0.90; 95% CI 0.86-0.94). Fable 5 routed 243 (48.6%; 95% CI 44.2%-53.0%) prompts to the fallback. Of the 257 not routed upfront, 236 (91.8%; 95% CI 87.8%-94.6%) were fully answered and 21 (8.2%; 95% CI 5.4%-12.2%) were truncated midgeneration. Fallback routing varied by clinical domain (&#x3c7;210=59.5; P&lt;.001), from 88.9% (32/36; 95% CI 74.7%-95.6%) for oncology and 79.3% (23/29; 95% CI 61.6%-90.2%) for reproductive and obstetric prompts to 26.3% (5/19; 95% CI 11.8%-48.8%) for mental and behavioral health. It also varied by question type (&#x3c7;23=61.9; P&lt;.001): 63.1% (101/160; 95% CI 55.4%-70.2%) for prognosis or severity, 49.6% (137/276; 95% CI 43.8%-55.5%) for definition, and 1.8% (1/55; 95% CI 0.3%-9.6%) for diagnosis or treatment. Gemini answered 89.7% (218/243; 95% CI 85.3%-92.9%) of routed prompts and declined 19% (95/500; 95% CI 15.8%-22.7%) overall. Standardization to the full 3173-prompt question-type and domain compositions yielded fallback rates of 48.8% and 47.5%, respectively. **CONCLUSIONS:** Claude Fable 5 routed nearly half of these benchmark consumer health prompts away from the primary model, and routing was associated with clinical domain, question category, and disease vocabulary. Because benignness was not independently adjudicated, wording covaried with clinical content, and the fallback model's subsequent answer was not recorded, these findings describe routing and truncation rather than user-facing refusal or a causal classifier feature. Fallback routing is a measurable safety property that audits should report alongside answer quality.
+
+## Información del artículo
+
+- **Revista:** JMIR AI
+- **Fecha de publicación:** 2026-10-07
+- **Autores:** Yosef Adiniaev, Mahmud Omar, Yiftach Barash, Olga R Brook, Alon Gorenshtein
+- **DOI:** [10.2196/104856](https://doi.org/10.2196/104856)
+- **PubMed ID:** [42842307](https://pubmed.ncbi.nlm.nih.gov/42842307/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42842307/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
