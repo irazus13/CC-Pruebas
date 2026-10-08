@@ -1,0 +1,25 @@
+---
+title: "Regularization via gradient attribution for multiple sclerosis lesion segmentation."
+description: "Accurate segmentation of Multiple Sclerosis (MS) lesions from Magnetic Resonance Imaging (MRI) is fundamental for robust disease monitoring and for the evaluation of therapeutic efficacy. Within Internet of Medical Things (IoMT)-bas..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42846083"
+author: "Salvatore Giugliano, Giovanna Sannino"
+tags: ["deep learning", "explainable artificial intelligence", "internet of medical things", "loss function", "multiple sclerosis"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Accurate segmentation of Multiple Sclerosis (MS) lesions from Magnetic Resonance Imaging (MRI) is fundamental for robust disease monitoring and for the evaluation of therapeutic efficacy. Within Internet of Medical Things (IoMT)-based diagnostic infrastructures, where deep learning models serve as autonomous computational nodes embedded in interconnected clinical workflows, ensuring reliable lesion detection without continuous human supervision is a critical operational and clinical requirement. A persistent methodological challenge is the pronounced class imbalance characteristic of MS neuroimaging datasets. This imbalance causes conventional loss functions to systematically miss small lesions, thereby directly compromising the utility of automated image analysis as an instrument for precision medicine. **METHODS:** This work proposes the Regularization via Gradient Attribution (RGA) framework, a module that leverages gradient-based eXplainable Artificial Intelligence (XAI) attribution maps as active supervisory signals during training. Instead of constraining the learning process exclusively at the prediction-output level, RGA imposes additional penalties on the network when false-negative lesion regions have low internal attribution and when false-positive healthy-tissue regions exhibit elevated attribution. The framework is architecturally agnostic, compatible with both convolutional and transformer-based backbone networks, and accommodating arbitrary spatial attribution techniques. RGA was evaluated on two public MS lesion segmentation datasets, MSLesSeg and 3D-MR-MS, using three backbones (nnU-Net, UNETR, TransBTS) and two XAI methods (LayerCAM, Integrated Gradients) in 5-fold cross-validation. **RESULTS:** On both datasets, RGA consistently improved DSC, TPR, and LTPR over the baselines. The best configuration, nnU-Net + RGA achieved a DSC of 0.7056 on MSLesSeg and 0.7466 on 3D-MR-MS, with RGA yielding the highest DSC for all backbones. Qualitative analyses further substantiate these findings by demonstrating a marked reduction in missed-lesion regions across all model architectures, without a corresponding substantial increase in false-positive predictions. **DISCUSSION:** By jointly providing high lesion-level detection completeness, model interpretability, and zero additional inference-time computational cost, RGA represents a methodologically grounded approach compatible with IoMT-oriented precision-medicine pipelines, while requiring dedicated deployment validation before clinical or edge-device implementation.
+
+## Información del artículo
+
+- **Revista:** Frontiers in medicine
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Salvatore Giugliano, Giovanna Sannino
+- **DOI:** [10.3389/fmed.2026.1907567](https://doi.org/10.3389/fmed.2026.1907567)
+- **PubMed ID:** [42846083](https://pubmed.ncbi.nlm.nih.gov/42846083/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42846083/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

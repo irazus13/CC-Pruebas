@@ -1,0 +1,25 @@
+---
+title: "Structurally restricted message-passing within shallow architectures for explainable network-level brain decoding on small cohorts."
+description: "Applying artificial intelligence to functional magnetic resonance imaging (fMRI) has advanced the modelling of neural activity, but deep architectures such as graph neural networks (GNNs) require large samples, limiting their use in..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "42846063"
+author: "Jos&#xe9; Diogo Marques Dos Santos, Maria Beatriz Ramos, Lu&#xed;s Paulo Reis et al."
+tags: ["diffusion tensor imaging", "explainable artificial intelligence", "fMRI", "graph neural networks", "message-passing"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Applying artificial intelligence to functional magnetic resonance imaging (fMRI) has advanced the modelling of neural activity, but deep architectures such as graph neural networks (GNNs) require large samples, limiting their use in the small cohorts typical of task-based fMRI. Shallow neural networks (SNNs) are robust with few samples but treat brain regions independently, overlooking the brain's network organization. We propose a structurally constrained message-passing framework that integrates diffusion-based structural connectivity, from a previously published group connectome, with region-level fMRI signals in a shallow architecture. **METHODS:** The task is a binary classification of individual video trials as mentalizing or random, decoded from the fMRI response, in a Theory of Mind paradigm from the Human Connectome Project Young Adult dataset (30 subjects) under subject-wise 3-fold cross-validation. Two shallow classifiers are compared on the same data: the baseline classifies each trial from the regional fMRI signals as independent inputs, whereas the proposed model first applies one message-passing step, replacing each region's signal with a structurally connected combination of its neighbors' signals, so that classification operates at the level of anatomically defined networks. Interpretability is assessed using SHAP (SHapley Additive exPlanations). **RESULTS:** Across folds, the proposed model matches the baseline (mean retrained accuracy 85.1%; 84.7% on the shared partition), the accuracy lost to pruning being recovered by retraining in every fold. The magnitude of the inputs' contributions is reproducible across folds, whereas their direction is not. Only about a quarter of the consistently retained inputs also preserve their sign, so a cross-fold sign-consistency criterion is applied to retain reliable explanations. This identifies seven networks contributing robustly to the mentalizing class, located in the temporo-parietal junction, inferior parietal, and medial temporal cortices and overlapping a literature-based mentalizing map (overlap coefficient 0.383). Within these networks, Cohen's D ranks the relative signal magnitude of the constituent regions. **DISCUSSION:** Overall, structural constraints improve biological interpretability without compromising classification performance, while cross-validation establishes which explanations are stable, offering a compact and interpretable approach to network-level brain decoding in small cohorts and a basis that may be applied to connectivity disorders.
+
+## Información del artículo
+
+- **Revista:** Frontiers in behavioral neuroscience
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Jos&#xe9; Diogo Marques Dos Santos, Maria Beatriz Ramos, Lu&#xed;s Paulo Reis, Jos&#xe9; Paulo Marques Dos Santos, Bruno Direito
+- **DOI:** [10.3389/fnbeh.2026.1833995](https://doi.org/10.3389/fnbeh.2026.1833995)
+- **PubMed ID:** [42846063](https://pubmed.ncbi.nlm.nih.gov/42846063/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42846063/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
