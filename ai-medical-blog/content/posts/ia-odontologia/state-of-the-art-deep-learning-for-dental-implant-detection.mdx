@@ -1,0 +1,25 @@
+---
+title: "State-of-the-art deep learning for dental implant detection: a standardized benchmark for clinical practice."
+description: "Although deep-learning approaches show promise for detecting dental implants, the absence of standardized benchmarks has hindered evidence-based model selection. This study systematically compared five contemporary architectures on the s..."
+date: "2026-08-11"
+category: "ia-odontologia"
+pubmedId: "42849967"
+author: "Jun-Seok Kang, Yeon-Tae Kim, Akhilanand Chaurasia et al."
+tags: ["Artificial intelligence", "Deep learning", "Dental implant", "Diagnostic imaging", "Panoramic radiography"]
+---
+
+## Resumen
+
+**PURPOSE:** Although deep-learning approaches show promise for detecting dental implants, the absence of standardized benchmarks has hindered evidence-based model selection. This study systematically compared five contemporary architectures on the same dataset under controlled conditions. A three-seed training-stability analysis was also performed to characterize between-run variability. **METHODS:** YOLOv8-Large, YOLOv11-Large, real-time detection transformer (RT-DETR)-Large, lightweight detection transformer (LW-DETR)-Large, and Faster R-CNN ResNet50-FPN were evaluated using 3,996 annotated panoramic radiographs divided into training, validation, and test sets at an 80:10:10 ratio. Each model was trained using three random seeds to assess training stability. Detection accuracy, measured using the F1 score and mean average precision (mAP), end-to-end pipeline speed, measured using frames per second and latency, and graphics processing unit memory use were evaluated. Pairwise statistical comparisons were performed using the independent-samples t-test with Bonferroni correction. To ensure strict comparability among architectures, all mAP values were calculated using a single unified evaluator, pycocotools COCOeval, applied identically to every model. **RESULTS:** YOLOv11-Large achieved the highest mAP@0.5 (0.9873&#xb1;0.0004) and the fastest end-to-end processing speed (87.2 frames per second), with an F1 score of 0.9853&#xb1;0.0010. YOLOv8-Large performed similarly, with an mAP@0.5 of 0.9859&#xb1;0.0005 and an F1 score of 0.9868&#xb1;0.0002; the 95% confidence intervals for mAP@0.5 overlapped between the two models. RT-DETR-Large had the third-highest accuracy (mAP@0.5 = 0.9806&#xb1;0.0055). LW-DETR-Large achieved an mAP@0.5 of 0.9699&#xb1;0.0025 but had substantially slower inference (7.1 frames per second), attributable to quadratic attention scaling at a resolution of 1,536&#xd7;1,536 pixels. Faster R-CNN ResNet50-FPN had lower accuracy (mAP@0.5 = 0.9214&#xb1;0.0051) and processing speed (14.2 frames per second). All four contemporary detectors significantly outperformed Faster R-CNN ResNet50-FPN (Bonferroni-corrected P&lt;0.005). **CONCLUSIONS:** Within this single-center benchmark based on panoramic radiographs, YOLOv11-Large provided the best balance between processing speed and mAP on workstation-class hardware. LW-DETR-Large achieved competitive accuracy but was constrained by Vision Transformer attention scaling at the clinical image resolution used in this study. These findings may inform model selection for dental implant detection on panoramic radiographs. External multicenter and cross-modality validation is required before broader claims regarding clinical deployment can be made.
+
+## Información del artículo
+
+- **Revista:** Journal of periodontal &amp; implant science
+- **Fecha de publicación:** 2026-08-11
+- **Autores:** Jun-Seok Kang, Yeon-Tae Kim, Akhilanand Chaurasia, Jae-Hong Lee
+- **DOI:** [10.5051/jpis.2601900095](https://doi.org/10.5051/jpis.2601900095)
+- **PubMed ID:** [42849967](https://pubmed.ncbi.nlm.nih.gov/42849967/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42849967/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

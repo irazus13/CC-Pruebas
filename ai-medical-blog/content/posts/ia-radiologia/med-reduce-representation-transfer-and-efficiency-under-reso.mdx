@@ -1,0 +1,25 @@
+---
+title: "Med-REDUCE: Representation transfer and efficiency under resolution constraints."
+description: "Vision foundation models achieve strong transfer performance but are typically evaluated at fixed spatial resolutions, leaving unclear how their representations degrade when input resolution is reduced, a common constraint in mobile clinical applicat..."
+date: "2026-09-23"
+category: "ia-radiologia"
+pubmedId: "42849298"
+author: "Vasiliki Bikia, Sonnet Xu, Aikaterini Skrika et al."
+tags: ["Efficient transfer learning", "Medical imaging", "Representation distillation", "Resolution robustness", "Vision foundation models"]
+---
+
+## Resumen
+
+Vision foundation models achieve strong transfer performance but are typically evaluated at fixed spatial resolutions, leaving unclear how their representations degrade when input resolution is reduced, a common constraint in mobile clinical applications, telemedicine, and point-of-care devices. We present Med-REDUCE, a controlled framework that disentangles two axes of medical representation learning across dermatology, histopathology, and radiology: the resolution robustness of frozen foundation-model features and the parameter efficiency gained by distilling large teachers into compact students. Using linear probing across resolution ladders from 512 to 64 pixels (an 8&#xd7; reduction in spatial scale), we evaluate three frozen teachers: a self-supervised DINOv3 (ViT-S/16, 21M parameters), a supervised ViT-B/16 (86M), and the medical vision-language encoder BiomedCLIP (86M), together with two distilled students (ResNet-50 and TinyViT-21M). All three teachers degrade gracefully, losing at most 0.043 domain-level AUROC from 512 to 64 pixels (0.007-0.043 across teachers and domains), although which domain degrades most steeply depends on the teacher. The smallest teacher, DINOv3, consistently achieves the strongest performance across the evaluated domains, showing that greater parameter count alone does not predict stronger frozen transfer. Under embedding distillation, the compact students match or exceed their teacher at full resolution in 39 of the 42 teacher-task-student combinations, including the multi-label radiology setting, with every shortfall at most 0.004 AUROC and within seed variability; the largest gains come from distilling each domain's weakest teacher, with BiomedCLIP students improving on the BiomedCLIP baseline by up to 0.062 AUROC. Because the 21-25M students match or beat the 86M ViT-B and BiomedCLIP teachers, distillation yields up to a &#x223c;4&#xd7; parameter reduction at no cost in accuracy, and the accuracy-parameter Pareto frontier is occupied entirely by encoders at &#x2264;25M parameters. We release training code and evaluation pipelines to support reproducible research on efficient medical representation learning under resolution constraints.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-09-23
+- **Autores:** Vasiliki Bikia, Sonnet Xu, Aikaterini Skrika, Ryan Park, Aaron Fanous
+- **DOI:** [10.1016/j.media.2026.104305](https://doi.org/10.1016/j.media.2026.104305)
+- **PubMed ID:** [42849298](https://pubmed.ncbi.nlm.nih.gov/42849298/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42849298/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
