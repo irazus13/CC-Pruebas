@@ -1,0 +1,25 @@
+---
+title: "A two-stage framework for fast proton spot map generation in pencil beam scanning prostate SBRT planning."
+description: "In pencil beam scanning (PBS) proton therapy, treatment plans are encoded as proton spot maps (PSMs). Although deep-learning methods can rapidly predict three-dimensional (3D) dose distributions from patient anatomy and planning inten..."
+date: "2026-10-01"
+category: "investigacion"
+pubmedId: "42852689"
+author: "Xueyan Tang, Hok Wan Chan Tseung, Mark Pepin et al."
+tags: ["automated treatment planning", "physics&#x2010;informed deep learning", "proton spot map reconstruction"]
+---
+
+## Resumen
+
+**BACKGROUND:** In pencil beam scanning (PBS) proton therapy, treatment plans are encoded as proton spot maps (PSMs). Although deep-learning methods can rapidly predict three-dimensional (3D) dose distributions from patient anatomy and planning intent, there is still no widely adopted direct, non-iterative approach to convert doses into physically deliverable spot patterns. This limits end-to-end automation in treatment planning and adaptive replanning for PBS. **PURPOSE:** We developed and retrospectively evaluated GenSpot, a two-stage framework that reconstructs a PBS PSM from CT and dose. This study focused on the dose-to-spots reconstruction step under controlled, achievable-dose conditions, using clinical Monte Carlo (MC) dose distributions as input in a single-institution prostate stereotactic body radiation therapy (SBRT) cohort. **METHODS:** GenSpot uses a physics-informed projected proton spot map (PrPSM) representation that projects individual proton spots through the CT using water-equivalent thickness and percentage depth dose (PDD) information, aligning the spots with the CT and dose voxel grid while preserving a linear relationship with spot weights. Our dataset comprised 1036 fields from 259 prostate SBRT plans, split into training, validation, and test sets in an 80%/10%/10% ratio. A 3D SwinUNETR model was trained to predict PrPSMs from CT and dose inputs. Field-specific PSMs were then reconstructed from the predicted PrPSMs using column-wise nonnegative Lasso regression with precomputed PDD curves. MC dose distributions from GenSpot and clinical PSMs were compared using voxel-wise mean absolute error (MAE), 3D gamma analysis (3%/3&#xa0;mm, 10% low-dose threshold), and dose-volume histogram (DVH) metrics at the composite-plan level. **RESULTS:** Within the held-out test dataset, the selected SwinUNETR model achieved a mean PrPSM MAE of 0.06&#xa0;&#xb1;&#xa0;0.02 (normalized units) with high structural similarity to projected clinical PrPSMs. At the dose level, MC doses from GenSpot PSMs showed low MAE (0.07&#xa0;&#xb1;&#xa0;0.03&#xa0;Gy in the nonzero-dose region) and high mean gamma passing rates (0.92&#xa0;&#xb1;&#xa0;0.05 at the field level and 0.99&#xa0;&#xb1;&#xa0;0.02 at the plan level). Composite-plan DVH metrics differences were generally within 1&#xa0;Gy for targets and organs at risk, although the high-dose tail of the clinical target volume showed a modest systematic increase. Spot map complexity, measured by the number of energy layers and spot counts, was similar to that of clinical plans, with 20% more spots for GenSpot PSMs. For a four-field case, GenSpot PSM generation required approximately 2.9&#xa0;&#xb1;&#xa0;0.2&#xa0;min excluding final MC recalculation. **CONCLUSIONS:** GenSpot reconstructed machine-compatible PSMs from CT and clinical MC dose with close composite-plan dose agreement in a single-institution prostate SBRT cohort. These results support GenSpot as a rapid, physics-informed dose-to-spots reconstruction component under achievable-dose conditions. The present study does not establish performance for arbitrary predicted or adapted dose inputs, and final MC recalculation and standard QA remain required before clinical use. Further validation with non-idealized dose inputs, multi-institution data, higher-resolution dose representations, and dedicated optimization-based baselines is needed before broader clinical implementation.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Xueyan Tang, Hok Wan Chan Tseung, Mark Pepin, Jiasen Ma, David M Routman
+- **DOI:** [10.1002/mp.70693](https://doi.org/10.1002/mp.70693)
+- **PubMed ID:** [42852689](https://pubmed.ncbi.nlm.nih.gov/42852689/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42852689/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
