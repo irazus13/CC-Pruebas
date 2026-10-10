@@ -1,0 +1,25 @@
+---
+title: "CXR-CoRe: Two-Stage View- and Section-Aware Study-Level Chest X-ray Report Retrieval."
+description: "Reliable linkage of chest X-ray examinations to corresponding reports is fundamental to large radiology archives. Yet heterogeneous view composition and similar image-report content across examinations, particularly longitudinal records, make exact c..."
+date: "2026-10-09"
+category: "ia-radiologia"
+pubmedId: "42855632"
+author: "Yan Tian, Jianbing Ma"
+tags: ["Chest X-ray", "Image&#x2013;report retrieval", "Imaging informatics", "Multi-view learning", "Reranking"]
+---
+
+## Resumen
+
+Reliable linkage of chest X-ray examinations to corresponding reports is fundamental to large radiology archives. Yet heterogeneous view composition and similar image-report content across examinations, particularly longitudinal records, make exact content-based linkage difficult. Global vision-language representations support archive-wide search but can obscure view-specific and section-level correspondences, whereas exhaustive fine-grained interaction is computationally costly. We propose CXR-CoRe, a two-stage view- and section-aware framework. Stage 1 combines learned view embeddings with residual gated multi-view fusion, achieving 89.3% exact-pair coverage in its top-50 candidate set. Stage 2 reranks these candidates using patch-to-section correspondence and predicted clinical-label consistency, with same-subject inter-study negatives providing examination-specific supervision. On the full MIMIC-CXR test set of 3269 studies from 293 subjects, CXR-CoRe exceeded a controlled CXR-CLIP retraining by 3.8 and 5.0 percentage points in Recall@1 and Recall@5, respectively, and achieved higher Recall@10, mAP@5, and nDCG@5; the controlled baseline attained a lower MeanRank. Stage 2 improved all six metrics across three evaluation settings, with paired-bootstrap support at deeper cutoffs and in ranking quality. In GPU-resident online matching after shared feature extraction, candidate-limited matching was 16.3 times faster and used 93.6 times fewer estimated operations than full-archive one-layer cross-attention. These results establish coarse-to-fine retrieval as an effective strategy for exact study-level image-report linkage in large radiology archives.
+
+## Información del artículo
+
+- **Revista:** Journal of imaging informatics in medicine
+- **Fecha de publicación:** 2026-10-09
+- **Autores:** Yan Tian, Jianbing Ma
+- **DOI:** [10.1007/s10278-026-02377-1](https://doi.org/10.1007/s10278-026-02377-1)
+- **PubMed ID:** [42855632](https://pubmed.ncbi.nlm.nih.gov/42855632/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42855632/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
