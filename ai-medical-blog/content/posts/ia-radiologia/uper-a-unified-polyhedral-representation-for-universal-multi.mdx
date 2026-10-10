@@ -1,0 +1,25 @@
+---
+title: "UPER: A Unified Polyhedral Representation for universal multi-dimensional diffusion MRI image modeling."
+description: "Medical computer vision presents unique challenges compared to natural images, largely due to the high dimensionality of the data (e.g., 3D and 4D imaging) and limited training samples. Certain medical imaging modalities, such as Diffusion-weighted M..."
+date: "2026-10-06"
+category: "ia-radiologia"
+pubmedId: "42854624"
+author: "Tianyuan Yao, Zhiyuan Li, Michael E Kim et al."
+tags: ["Diffusion MRI", "Modeling", "Transformer"]
+---
+
+## Resumen
+
+Medical computer vision presents unique challenges compared to natural images, largely due to the high dimensionality of the data (e.g., 3D and 4D imaging) and limited training samples. Certain medical imaging modalities, such as Diffusion-weighted Magnetic Resonance Imaging (dMRI) - a critical tool for examining brain microstructure and neural connectivity - poses even greater complexity with its data dimensionality, encompassing three spatial dimensions and at least three degrees of freedom for the diffusion weighting. Therefore, current deep learning methods for dMRI are often limited by a "case-by-case" design. In this work, we introduce a Unified Polyhedral Representation (UPER) to model multi-dimensional dMRI data across over 10 unique shells, sourced from 2800 scans across 17 datasets. The key innovation involves revisiting the dMRI data representation by transforming traditional model-based or signal-based methods into a polyhedral representation. We utilized a masked auto encoder with both self-supervised and supervised learning within a single unified, end-to-end deep learning framework. This approach effectively encodes complex spatial, radial, and angular information within a simple polyhedron. Furthermore, the transformer-based UPER framework models heterogeneous shell configurations through a unified model. To our knowledge, UPER is the first deep learning model capable of (1) modeling varying radial and angular spaces, and (2) accommodating diverse shell configurations. Note that signal-processing approaches such as SHORE and SHARD can also handle multi-shell configurations through analytical formulations; UPER's novelty lies in its unified, end-to-end deep learning framework. Extensive experiments demonstrate that our pretrained unified model achieves superior performance in various downstream tasks as compared with traditional deep learning framework, offering a holistic model for analyzing diverse dMRI datasets. The code for this paper is publicly available at https://github.com/hrlblab/UPER.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-10-06
+- **Autores:** Tianyuan Yao, Zhiyuan Li, Michael E Kim, Chenyu Gao, Marilyn Lionts
+- **DOI:** [10.1016/j.media.2026.104336](https://doi.org/10.1016/j.media.2026.104336)
+- **PubMed ID:** [42854624](https://pubmed.ncbi.nlm.nih.gov/42854624/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42854624/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

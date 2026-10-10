@@ -1,0 +1,25 @@
+---
+title: "Machine-learning-assisted retrieval of four temperatures from CO2 nonequilibrium transmittance spectra."
+description: "Accurate retrieval of rotational and vibrational temperatures from non-equilibrium CO2 spectra is essential for diagnosing discharge plasmas, monitoring combustion flows, and modeling Mars entry aerothermodynamics. However, retrieving multiple temper..."
+date: "2026-10-03"
+category: "investigacion"
+pubmedId: "42854522"
+author: "Hao Ma, Lu Bai, Jinlu Li"
+tags: ["CO(2) nonequilibrium spectra", "Four-temperature retrieval", "Multilayer perceptron", "RADIS", "Treanor distribution"]
+---
+
+## Resumen
+
+Accurate retrieval of rotational and vibrational temperatures from non-equilibrium CO2 spectra is essential for diagnosing discharge plasmas, monitoring combustion flows, and modeling Mars entry aerothermodynamics. However, retrieving multiple temperature parameters from CO2 transmittance spectra constitutes a strongly nonlinear and ill-posed inverse problem. Conventional iterative spectral fitting methods are computationally expensive, sensitive to initial guesses, and prone to local-minimum trapping, making stable four-temperature retrieval challenging. To address these limitations, a non-iterative surrogate inverse framework based on a multilayer perceptron (MLP) is proposed for direct mapping from CO2 transmittance spectra to four-temperature states. A large-scale database containing 810,000 spectrum-temperature pairs was constructed using a line-by-line forward model based on RADIS and the Treanor non-equilibrium distribution. The input consists of 401-dimensional transmittance spectra in the 2284.2-2284.6&#xa0;cm-1 range, while the outputs are the rotational temperature Trot and three vibrational temperatures Tv1, Tv2, and Tv3. Under noise-free conditions, the proposed model achieved mean absolute errors of 4.1&#xa0;K, 7.5&#xa0;K, 5.1&#xa0;K, and 13.6&#xa0;K, respectively, with all R2 values exceeding 0.998. Even under 3% Gaussian noise, the R2 values remained above 0.996. As a proof-of-concept demonstration, experimental validation on a CO2 discharge spectrum shows that the MLP retrievals agree with RADIS literature values (RMSE&#xa0;=&#xa0;0.0387). Notably, the MLP method reduces the average retrieval time from 68&#xa0;s to 0.012&#xa0;s per spectrum, achieving a speedup of approximately 5700 times. This work is presented as an application study that addresses a specific diagnostic bottleneck - real-time four-temperature retrieval.
+
+## Información del artículo
+
+- **Revista:** Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy
+- **Fecha de publicación:** 2026-10-03
+- **Autores:** Hao Ma, Lu Bai, Jinlu Li
+- **DOI:** [10.1016/j.saa.2026.128913](https://doi.org/10.1016/j.saa.2026.128913)
+- **PubMed ID:** [42854522](https://pubmed.ncbi.nlm.nih.gov/42854522/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42854522/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
