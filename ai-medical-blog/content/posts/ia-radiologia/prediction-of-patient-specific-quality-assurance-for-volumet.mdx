@@ -1,0 +1,25 @@
+---
+title: "Prediction of patient-specific quality assurance for volumetric modulated arc therapy using machine log files."
+description: "Deep learning (DL) models have been used for predicting gamma passing rates (GPRs) of patient specific quality assurance (PSQA) in volumetric modulated arc therapy (VMAT). As the model input mostly from planning parameters and dose di..."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "42861268"
+author: "Yuhan Fan, Jiawen Shang, Peng Huang et al."
+tags: ["Deep learning (DL)", "gamma passing rate (GPR)", "multi-leaf collimator (MLC)", "patient-specific quality assurance", "volumetric modulated arc therapy (VMAT)"]
+---
+
+## Resumen
+
+**BACKGROUND:** Deep learning (DL) models have been used for predicting gamma passing rates (GPRs) of patient specific quality assurance (PSQA) in volumetric modulated arc therapy (VMAT). As the model input mostly from planning parameters and dose distribution, the effect of motion precision of the treatment machine has frequently been ignored. In this study,the most recent motion precision of multi-leaf collimator (MLC) leaves was estimated by their records in machine log file and used jointly with the beam intensity map to predict GPRs of VMAT PSQA. **METHODS:** The input of the DL model consists of two parts: the MLC positional error map which was estimated from machine log file and the beam intensity map which was obtained from the treatment plan. A UNet++ model was trained to predict the GPR of VMAT PSQA. The effect of feature maps and time intervals in estimating MLC leaf positional error maps on the prediction accuracy was evaluated. In addition, the proposed model was compared with two competing DL models (ResNet and SE-Net) and a classic regression model. The prediction error was quantified by mean absolute errors (MAEs) under two clinical accepted criteria (3%-3 mm and 3%-2 mm). Pearson's correlation coefficient (r) between measured and predicted GPR was also assessed. **RESULTS:** The model with the inputs of beam intensity and MLC leaf positional error maps achieved the best performance among all combinations with various input feature maps. The MAEs predicted by the proposed model with MLC leaf positional error map obtained from 5 days' records were 0.90 for 3%-3 mm criterion and 1.74 for 3%-2 mm criterion, whereas those predicted by the proposed model with MLC leaf positional error map obtained from 1 day's record were 1.01 for 3%-3 mm criterion and 1.85 for 3%-2 mm criterion. The proposed model achieved the smaller MAEs (1.01 for 3%-3 mm criterion and 1.85 for 3%-2 mm criterion) than the other two competing models: ResNet (2.85 for 3%-3 mm criterion and 2.83 for 3%-2 mm criterion) and SE-Net (3.53 for 3%-3 mm criterion and 4.55 for 3%-2 mm criterion). **CONCLUSIONS:** The proposed model that combines beam intensity map and MLC leaf positional error map exhibited a better prediction performance for GPRs of VMAT PSQA. It would be advantageous to include more motion precision information of treatment machine into DL models for high-performance prediction of VMAT PSQA.
+
+## Información del artículo
+
+- **Revista:** Quantitative imaging in medicine and surgery
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Yuhan Fan, Jiawen Shang, Peng Huang, Zhihui Hu, Ke Zhang
+- **DOI:** [10.21037/qims-2026-0916](https://doi.org/10.21037/qims-2026-0916)
+- **PubMed ID:** [42861268](https://pubmed.ncbi.nlm.nih.gov/42861268/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42861268/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
