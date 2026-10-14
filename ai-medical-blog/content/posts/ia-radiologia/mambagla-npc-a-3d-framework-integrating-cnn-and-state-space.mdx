@@ -1,0 +1,25 @@
+---
+title: "MambaGLA-NPC: a 3D framework integrating CNN and state space models for robust multi-center nasopharyngeal carcinoma segmentation."
+description: "Accurate 3D segmentation of nasopharyngeal carcinoma (NPC) from MRI is critical for radiotherapy planning but remains challenging due to poor multi-center generalization, lack of spatial continuity, and high computationa..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42871411"
+author: "Wei Jin, Xiaobo Chen, Weifeng Jin et al."
+tags: ["3D segmentation", "mamba", "multi-center study", "nasopharyngeal carcinoma", "state space model"]
+---
+
+## Resumen
+
+**BACKGROUND AND OBJECTIVE:** Accurate 3D segmentation of nasopharyngeal carcinoma (NPC) from MRI is critical for radiotherapy planning but remains challenging due to poor multi-center generalization, lack of spatial continuity, and high computational costs of global modeling. We aim to address these limitations by proposing a novel 3D framework. **METHODS:** We propose MambaGLA-NPC, a 3D deep learning framework integrating State Space Models (SSMs) and Convolutional Neural Networks (CNNs) in a U-shaped encoder-decoder architecture. A Conv-GLSSM module jointly extracts static local features via convolutions and global context via SSMs with a 3D local scanning strategy. A gated channel-spatial attention (GCS Att) module suppresses irrelevant noise in skip connections, and an NPC-specific adapter enables parameter-efficient fine-tuning across multi-center datasets. **RESULTS:** On a multi-center dataset of 1,098 NPC patients from three hospitals, our model achieves state-of-the-art performance on the internal test set (Dice: 80.47%, IoU: 67.83%, HD95: 4.09&#xa0;mm). Under cross-center evaluation, it significantly outperforms prior methods (e.g., Dice of 87.13% and 76.70% on two external centers). The NPC-Adapter boosts cross-center Dice by up to 8.84% compared to no adaptation. Ablation studies confirm the contribution of each module, and the Conv-GLSSM reduces computational cost versus Transformers (21.66 GFLOPs vs. OOM for self-attention at 128 3 resolution). **CONCLUSION:** MambaGLA-NPC is the first Mamba-based 3D NPC segmentation framework that effectively balances local-global feature integration with linear complexity, achieving superior accuracy and generalization across multi-center MRI data while maintaining high efficiency.
+
+## Información del artículo
+
+- **Revista:** Frontiers in genome editing
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Wei Jin, Xiaobo Chen, Weifeng Jin, Hai Liao, Li Yu
+- **DOI:** [10.3389/fgeed.2026.1954329](https://doi.org/10.3389/fgeed.2026.1954329)
+- **PubMed ID:** [42871411](https://pubmed.ncbi.nlm.nih.gov/42871411/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42871411/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
