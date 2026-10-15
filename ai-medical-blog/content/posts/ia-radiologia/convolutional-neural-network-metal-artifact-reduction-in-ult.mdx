@@ -1,0 +1,25 @@
+---
+title: "Convolutional neural network metal artifact reduction in ultra-high resolution photon counting detector CT of middle- and inner-ear implants."
+description: "Metallic inner- and middle-ear implants with submillimeter structures requiring ultra-high resolution (UHR) imaging invariably result in metal artifacts at CT, which can obscure adjacent microstructures and subtle pathologic findings...."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "42875916"
+author: "Kevin J Treb, Maryam Sadeghian, Wenchao Cao et al."
+tags: ["convolutional neural networks", "deep learning", "metal artifact reduction", "photon counting detector CT", "ultra&#x2010;high resolution CT"]
+---
+
+## Resumen
+
+**BACKGROUND:** Metallic inner- and middle-ear implants with submillimeter structures requiring ultra-high resolution (UHR) imaging invariably result in metal artifacts at CT, which can obscure adjacent microstructures and subtle pathologic findings. Current metal artifact reduction techniques can be less effective for small metal objects or metal in heterogeneous background anatomy, and can sometimes introduce new artifacts or noise. **PURPOSE:** To develop and evaluate an image-domain convolutional neural network to reduce metal artifacts near inner- and middle-ear implants in UHR photon-counting-detector (PCD)-CT. **METHODS:** For network training, three stapes prosthesis models containing titanium and platinum were randomly oriented within a head-sized phantom and imaged on a PCD-CT with a UHR protocol. Metal and metal+artifact images were isolated by subtraction of the phantom background followed by CT number thresholding. Isolated artifact signal was enhanced via multiplication with a randomized factor ranging from one to a pre-determined artifact amplification scalar hyperparameter. Paired training inputs (with artifacts) and labels (without artifacts) were created by adding metal-free patient temporal bone images with metal+artifact and metal images, respectively. Combinations of 9 patient CT volumes and 24 metal CT volumes were used to create 216 CT volumes for training and validation with an 80%/20% training/validation split. The network was retrained with different amplification scalars (5, 10, 20, 30, 40) and with either mean-squared-error or mean-absolute-error loss functions to determine the optimal combination of these hyperparameters. The network was tested on 7 CT volumes from patients with three different implant types: stapes prostheses, cochlear implants, and a transverse sinus stent. Network performance was quantified through the artifact index, noise magnitude, CT number preservation of metal and bone, and dimensions of metal measured as the full-width at half-maximum of CT number line profiles. **RESULTS:** Networks trained with mean-squared-error demonstrated a trade-off between metal artifact reduction and preservation of bone CT number as the artifact amplification scalar changed. The trade-off was not observed when mean-absolute error was used. Using the network with hyperparameters that best preserved bone and reduced artifacts simultaneously (mean-absolute-error, amplification scalar 20), the artifact index was improved by 83.2% (p&#xa0;&lt;&#xa0;0.001) across all implant types, and image noise was reduced by 46.8% (p&#xa0;&lt;&#xa0;0.001). Artifact reduction was significantly better for cases with stapes prostheses than the other implant types (p&#xa0;&lt;&#xa0;0.004), although artifact index was still greatly improved for all implant types (91.1% for the stapes prostheses, 81.3% for the CI, and 72.9% for the transverse sinus stent). Metal implant dimensions were not significantly different between the network input and output images (p&#xa0;=&#xa0;0.67). **CONCLUSION:** An image-domain convolutional neural network with task-specific hyperparameters reduced artifact severity and image noise in UHR PCD-CT of different inner- and middle-ear implants without loss of fine image detail.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Kevin J Treb, Maryam Sadeghian, Wenchao Cao, Paul J Farnsworth, John I Lane
+- **DOI:** [10.1002/mp.70711](https://doi.org/10.1002/mp.70711)
+- **PubMed ID:** [42875916](https://pubmed.ncbi.nlm.nih.gov/42875916/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42875916/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
