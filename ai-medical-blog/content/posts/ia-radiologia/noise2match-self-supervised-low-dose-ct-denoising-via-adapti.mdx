@@ -1,0 +1,25 @@
+---
+title: "Noise2Match: Self-Supervised Low-Dose CT Denoising via Adaptive Inter-Slice Matching."
+description: "With the rapid development of deep learning, supervised convolutional neural network methods have greatly improved the performance of low-dose computed tomography (CT) denoising. However, they require paired noisy-clean training data, which is diffic..."
+date: "2026-10-16"
+category: "ia-radiologia"
+pubmedId: "42886596"
+author: "Langrui Zhou, Guang Li, Xinyu Huang et al."
+tags: []
+---
+
+## Resumen
+
+With the rapid development of deep learning, supervised convolutional neural network methods have greatly improved the performance of low-dose computed tomography (CT) denoising. However, they require paired noisy-clean training data, which is difficult to obtain in practice. Some classic self-supervised denoising methods rely on the assumption of pixel-wise independent noise, making them ineffective for correlated noise in low-dose CT (LDCT) images. Considering the high similarity and weaker noise correlation between adjacent CT slices, several recently proposed self-supervised methods use adjacent LDCT slices for training. Nevertheless, these approaches fail to effectively account for the non-rigid mis-alignment between slices caused by anatomical variation, hindering them from satisfying the equal-mean condition required by the classic Noise2Noise framework. In this paper, we propose Noise2Match, a self-supervised LDCT denoising method based on adaptive inter-slice matching. Noise2Match introduces an inter-slice matching network to model the label transition process between adjacent slices, and then applies correction to the denoiser's outputs to better satisfy the equal-mean condition. We theoretically prove that, under idealized conditions, training Noise2Match using adjacent LDCT slices is equivalent to supervised training with paired noisy-clean images. We further find that Noise2Match can also effectively perform low-dose cone-beam CT (CBCT) denoising, which could be attributed to its correction operation that reduces inter-slice noise correlation. To the best of our knowledge, Noise2Match is the first effective image-domain self-supervised method for low-dose CBCT. Extensive experiments demonstrate that Noise2Match outperforms existing image-domain self-supervised methods, offering broader applicability and higher practical value.
+
+## Información del artículo
+
+- **Revista:** IEEE transactions on medical imaging
+- **Fecha de publicación:** 2026-10-16
+- **Autores:** Langrui Zhou, Guang Li, Xinyu Huang, Ziteng Zhou, Zuyang Huang
+- **DOI:** [10.1109/TMI.2026.3744092](https://doi.org/10.1109/TMI.2026.3744092)
+- **PubMed ID:** [42886596](https://pubmed.ncbi.nlm.nih.gov/42886596/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42886596/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

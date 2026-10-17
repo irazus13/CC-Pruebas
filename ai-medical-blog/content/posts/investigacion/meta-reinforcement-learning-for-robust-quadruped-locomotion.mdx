@@ -1,0 +1,25 @@
+---
+title: "Meta reinforcement learning for robust quadruped locomotion under joint failures."
+description: "Joint failures can disrupt gait coordination, velocity tracking, and body stability in quadruped robots by reducing the available control authority. This study investigates faults in which joints remain locked at fixed angles and presents Adjudicate ..."
+date: "2026-01-01"
+category: "investigacion"
+pubmedId: "42886745"
+author: "Likai Wu, Chee-Onn Chow, Wei Ru Wong et al."
+tags: []
+---
+
+## Resumen
+
+Joint failures can disrupt gait coordination, velocity tracking, and body stability in quadruped robots by reducing the available control authority. This study investigates faults in which joints remain locked at fixed angles and presents Adjudicate Reconfiguration and Evolving Regularization Meta Reinforcement Learning (ARER-MetaRL). The framework combines task inference from context, modular routing tailored to each task through an Adjudicate Reconfiguration (AR) network, and Evolving Gradient Regularization (ER) to support rapid adaptation. Tasks differ in the identities and locking angles of the faulty joints, the number of simultaneous faults, the commanded motion direction, and the terrain. Experiments in NVIDIA Isaac Sim cover all 12 actuated joints, with 0-3 stuck joints during meta-training and severity tests involving up to 6 simultaneously stuck joints. ARER-MetaRL achieves higher Mean Episode Linear Velocity Tracking Reward (MELV) and Mean Episode Roll-Pitch Tracking Reward (MERP) than single-task reinforcement learning, ablated variants, and the evaluated learning and adaptation baselines. Cumulative rewards further demonstrate the benefit of combining the proposed components. In the study of fault severity, ARER-MetaRL achieves MELV/MERP values of 0.86/0.84 with one stuck joint and 0.55/0.54 with six stuck joints, compared with 0.21/0.18 and 0.05/0.03, respectively, for the single-task baseline. These results show improved adaptation across different configurations of locked joints and terrain conditions.
+
+## Información del artículo
+
+- **Revista:** PloS one
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Likai Wu, Chee-Onn Chow, Wei Ru Wong, Joon Huang Chuah, Jeevan Kanesan
+- **DOI:** [10.1371/journal.pone.0361099](https://doi.org/10.1371/journal.pone.0361099)
+- **PubMed ID:** [42886745](https://pubmed.ncbi.nlm.nih.gov/42886745/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42886745/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
