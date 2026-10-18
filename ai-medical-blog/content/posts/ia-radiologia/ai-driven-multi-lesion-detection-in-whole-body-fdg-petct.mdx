@@ -1,0 +1,25 @@
+---
+title: "AI-Driven Multi-Lesion Detection in Whole-body FDG PET/CT."
+description: "An automated multi-lesion detection tool for whole-body FDG PET/CT can reduce radiologist workload and improve diagnostic accuracy by consistently identifying subtle or numerous lesions, enabling faster workflows and better treatment planning for pat..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42890430"
+author: "Xiaofeng Liu, Menghua Xia, Yanis Chemli et al."
+tags: ["AutoPET", "FROC", "PET/CT", "RetinaNet", "average precision"]
+---
+
+## Resumen
+
+An automated multi-lesion detection tool for whole-body FDG PET/CT can reduce radiologist workload and improve diagnostic accuracy by consistently identifying subtle or numerous lesions, enabling faster workflows and better treatment planning for patients with widespread disease. In this work, we investigate lesion detectability and localizability with a deep learning model, comparing the performance using PET and CT alone versus combined PET+CT data. We leverage a large public dataset of 1,014 FDG-PET/CT studies with lesion annotations, converted to 3D bounding boxes for detection training. A 3D object detector (RetinaNet) using the MONAI framework was learned on 700 training studies and 114 validation studies, optimizing a custom anchor configuration derived from clustering of lesion sizes. The detector was evaluated on 200 independent test studies for lesion detection and localization performance. In addition to conventional average precision (AP) at various intersection-over-union (IoU) thresholds, free-response ROC (FROC) analysis was also used to quantify lesion detectability and localizability. The proposed method achieved robust lesion detection and localization, with the PET+CT model outperforming PET-only across all IoU thresholds and better FROC. The results indicate that the incorporation of CT anatomical information significantly improves the detectability of lesions. This study highlights a detection paradigm for whole-body PET/CT lesion analysis, showing improved performance with multimodal PET+CT input. The findings suggest that 3D detection models can effectively identify and localize lesions and benefit from CT information, supporting their potential use in computer-aided detection for oncologic PET/CT. These results demonstrate that AI-based lesion detection networks are approaching the level of performance that may support future clinical deployment, with the potential to greatly enhance the efficiency of radiologists or even fully automate certain detection tasks.
+
+## Información del artículo
+
+- **Revista:** Proceedings of SPIE--the International Society for Optical Engineering
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Xiaofeng Liu, Menghua Xia, Yanis Chemli, Georges El Fakhri, Chi Liu
+- **DOI:** [10.1117/12.3087729](https://doi.org/10.1117/12.3087729)
+- **PubMed ID:** [42890430](https://pubmed.ncbi.nlm.nih.gov/42890430/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42890430/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
