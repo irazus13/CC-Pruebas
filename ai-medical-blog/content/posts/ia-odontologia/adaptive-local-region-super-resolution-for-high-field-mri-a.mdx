@@ -1,0 +1,25 @@
+---
+title: "Adaptive local region super-resolution for high-field MRI: A diffusion-based approach with structural and frequency-domain constraints."
+description: "High-field MRI offers superior SNR but is constrained by the trade-off between spatial resolution and acquisition time. Existing global deep learning super-resolution (SR) methods often incur computational overhead by ignoring regional image content...."
+date: "2026-10-18"
+category: "ia-odontologia"
+pubmedId: "42893731"
+author: "Jianwei Zuo, Huifang Yang, Yumeng Tang et al."
+tags: ["Deep learning", "Dental MRI", "Diffusion models", "High-field MRI", "Super-resolution"]
+---
+
+## Resumen
+
+High-field MRI offers superior SNR but is constrained by the trade-off between spatial resolution and acquisition time. Existing global deep learning super-resolution (SR) methods often incur computational overhead by ignoring regional image content. This motivates an adaptive local SR strategy to optimize efficiency and detail preservation. To address this, we developed a local SR method that adaptively allocates computational resources to information-rich regions. The proposed framework regularized an entropy-based local region processing strategy with a diffusion model fortified by frequency-domain and structural constraints. We retrospectively evaluated our method on two diverse datasets: a proprietary 7.0&#x202f;T dental MRI dataset (25&#x202f;T2-weighted DESS sequences from 10 beagle dogs) and a public 5.0&#x202f;T brain MRI dataset (Diff5T, 50 diffusion-weighted sequences). Image quality was quantified using PSNR, SSIM, LPIPS, and FID. On the 7.0&#x202f;T dental test dataset (2 subjects), our method achieved a PSNR of 27.31 [26.83, 27.79] dB and the lowest LPIPS of 0.19 [0.18, 0.20]. On the 5.0&#x202f;T brain test dataset (10 subjects), the method achieved a PSNR of 27.15&#x202f;&#xb1;&#x202f;0.10&#x202f;dB, an LPIPS of 0.14&#x202f;&#xb1;&#x202f;0.00 and an FID of 54.01, with lower perceptual metrics than the evaluated baselines. Ablation studies indicated that the proposed frequency-domain and structural constraints reduced LPIPS and FID, with trade-offs in PSNR and SSIM. In conclusion, the evaluated framework showed improvements in perceptual metrics by integrating targeted local processing with frequency-domain and structural regularization, accompanied by a trade-off in pixel-wise fidelity metrics, supporting the technical feasibility of addressing the resolution-time trade-off in high-field MRI. Future work will focus on expanding the dataset and evaluating the framework in human dental cohorts to address anatomical differences between the current canine model and human dental anatomy.
+
+## Información del artículo
+
+- **Revista:** Magnetic resonance imaging
+- **Fecha de publicación:** 2026-10-18
+- **Autores:** Jianwei Zuo, Huifang Yang, Yumeng Tang, Xiaoyan Wang, Kai Zhong
+- **DOI:** [10.1016/j.mri.2026.110815](https://doi.org/10.1016/j.mri.2026.110815)
+- **PubMed ID:** [42893731](https://pubmed.ncbi.nlm.nih.gov/42893731/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42893731/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
