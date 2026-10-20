@@ -1,0 +1,25 @@
+---
+title: "3-D ordinal regression CNN for opportunistic breast density grading on chest CT."
+description: "Breast cancer has the highest incidence and second-highest mortality burden of all cancers in women. Breast density, the extent of fibroglandular tissue within the breast, is strongly associated with breast cancer risk, and is visuall..."
+date: "2026-07-23"
+category: "ia-radiologia"
+pubmedId: "42897649"
+author: "Artur Wysoczanski, Elsa D Angelini, Sachin R Jambawalikar et al."
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND:** Breast cancer has the highest incidence and second-highest mortality burden of all cancers in women. Breast density, the extent of fibroglandular tissue within the breast, is strongly associated with breast cancer risk, and is visually graded on a four-level ordinal scale on imaging studies including chest CT. However, current automated methods for CT breast density assessment are limited, relying on semi-automated breast segmentation followed by intensity thresholding, and excluding higher-order image features. In this work, we train and evaluate a 3-D convolutional neural net (3D-CNN) to predict breast density grade on CT. **METHODS:** IRB-approved chart review identified female patients from 2010 to 19 with both mammography and chest CT acquired within 1&#xa0;year. CT breast density was visually assessed following the BI-RADS density criteria by a subspecialist faculty radiologist. CT scans were downsampled to isotropic 2.5&#xa0;mm resolution, and volumes of interest (VOIs) of size 80&#x2009;&#xd7;&#x2009;80&#x2009;&#xd7;&#x2009;80 voxels were extracted for each imaged breast. Our 3D-CNN model consists of consecutive 3-D convolutional layers with ReLU activation, convolutional block attention modules (CBAM), and batch normalization and pooling operations. Rank-consistent ordinal regression was applied to the final layer to predict the density grade of each VOI, with models optimized to minimize ordinal cross-entropy. Patient-level predictions were generated on test cases by averaging over the right- and left-breast VOIs. **RESULTS:** 503 scans matched our inclusion criteria; 86 (17.1%) were assigned breast density grade 1 (i.e. mostly fatty), 244 (48.5%) were grade 2 (scattered dense), 131 (26.0%) were grade 3 (heterogeneously dense), and 42 (8.3%) were grade 4 (extremely dense). Our optimized 3D-CNN model achieved ROC AUC of 0.935, and Cohen kappa of 0.787, for classification of high (grades 3-4) versus low breast density, comparable to literature-reported inter-radiologist agreement. Both ordinal regression and attention mechanisms improved model performance over standard architectures. In test cases where both breasts were within the CT image, ROC AUC and Cohen kappa improved to 0.955 and 0.873, respectively. **CONCLUSIONS:** We have developed a 3-D CNN model for prediction of breast density grade on chest CT which achieves test-set performance comparable to prior literature reports of inter-radiologist agreement on CT breast density.
+
+## Información del artículo
+
+- **Revista:** Journal of translational medicine
+- **Fecha de publicación:** 2026-07-23
+- **Autores:** Artur Wysoczanski, Elsa D Angelini, Sachin R Jambawalikar, Mary M Salvatore, Andrew F Laine
+- **DOI:** [10.1186/s12967-025-06844-1](https://doi.org/10.1186/s12967-025-06844-1)
+- **PubMed ID:** [42897649](https://pubmed.ncbi.nlm.nih.gov/42897649/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42897649/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
