@@ -1,0 +1,25 @@
+---
+title: "Agentic artificial intelligence for code status extraction from clinical notes: a cross-model comparison of single agent, reflective agent, and multiagent extractor-reviewer system."
+description: "To evaluate whether increasing agentic architectural complexity via self-reflection or multiagent design improves clinical code status extraction (Do Not Resuscitate [DNR], Do Not Intubate [DNI], Comfort Measures Only [CMO]) across op..."
+date: "2026-10-20"
+category: "ia-medicina"
+pubmedId: "42901486"
+author: "Yan Sun, Gary Ang, Chun Wei Yap et al."
+tags: ["agentic artificial intelligence", "clinical decision support systems", "electronic health records", "large language models", "natural language processing"]
+---
+
+## Resumen
+
+**OBJECTIVES:** To evaluate whether increasing agentic architectural complexity via self-reflection or multiagent design improves clinical code status extraction (Do Not Resuscitate [DNR], Do Not Intubate [DNI], Comfort Measures Only [CMO]) across open-source large language models (LLMs) of varying capabilities. **MATERIALS AND METHODS:** We conducted a controlled cross-model comparison evaluating 3 architectures: (1) single extractor agent, (2) single agent with self-reflection, and (3) sequential multiagent extractor-reviewer system. Four open-source LLMs (DeepSeek-R1-Distill-LLaMA-8B, GPT-OSS-20B, MedGemma-27B-IT, Qwen3.5-27B) were evaluated on 1000 Medical Information Mart for Intensive Care IV-Note discharge summaries. Ground truth labels were established through a physician-AI dual review with adjudication (Cohen's &#x3ba;&#x2009;=&#x2009;0.98-0.99). Models were evaluated on accuracy, precision, recall, F1-score, Cohen's &#x3ba;, token consumption, and processing latency. McNemar's test was used for paired comparisons. **RESULTS:** For capable larger models (GPT-OSS-20B, MedGemma-27B-IT, Qwen3.5-27B), single-agent architectures achieved comparable or superior performance for explicit code status (DNR, DNI) relative to complex systems, whereas multiagent review doubled token consumption and latency without accuracy gains. Reflective self-review significantly impaired MedGemma-27B-IT on DNI extraction (P&#x2009;=&#x2009;.047). For the smaller DeepSeek-R1-Distill-LLaMA-8B, multiagent review provided statistically significant corrective benefits for DNR (P&#x2009;=&#x2009;.017) and CMO (P&#x2009;&lt;&#x2009;.001), demonstrating a capability-threshold effect, though performance remained below clinically acceptable levels. **DISCUSSION:** Architectural complexity does not enhance extraction performance for capable LLMs, and reflective self-review may cause conservative overcorrection. Multiagent verification value is inversely related to model capability. **CONCLUSION:** Single-agent LLMs provide optimal accuracy and efficiency for explicit clinical extraction in capable models. Agentic complexity must be matched to both task characteristics and model capability rather than adopted by default.
+
+## Información del artículo
+
+- **Revista:** Journal of the American Medical Informatics Association : JAMIA
+- **Fecha de publicación:** 2026-10-20
+- **Autores:** Yan Sun, Gary Ang, Chun Wei Yap, Palvannan Kannapiran, John Abisheganaden
+- **DOI:** [10.1093/jamia/ocag179](https://doi.org/10.1093/jamia/ocag179)
+- **PubMed ID:** [42901486](https://pubmed.ncbi.nlm.nih.gov/42901486/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42901486/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

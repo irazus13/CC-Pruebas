@@ -1,0 +1,25 @@
+---
+title: "Synthetic MRI from radiotherapy planning CT images for Head-and-Neck Cancer."
+description: "Computed Tomography (CT) provides geometric accuracy and electron density information essential for radiotherapy planning; however, it offers limited soft-tissue contrast. Magnetic Resonance Imaging (MRI) improves tumor visualization ..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "42900554"
+author: "Prabhakar Ramachandran, Akshay C Dhargave, Catherine Jones et al."
+tags: ["Head&#x2010;and&#x2010;Neck Cancer", "Pix2PixGAN", "Synthetic MRI", "deep&#x2010;learning", "image translation"]
+---
+
+## Resumen
+
+**BACKGROUND:** Computed Tomography (CT) provides geometric accuracy and electron density information essential for radiotherapy planning; however, it offers limited soft-tissue contrast. Magnetic Resonance Imaging (MRI) improves tumor visualization but introduces registration uncertainties when acquired separately from the radiotherapy planning CT (pCT). Cross-modality image synthesis enables the generation of synthetic MRI (sMRI) directly from pCT and may combine the strengths of both modalities, reducing reliance on MRI access. **PURPOSE:** We propose a two-stage deep-learning framework for generating sMRI from pCT image-sets specifically in head-and-neck (H&amp;N) cancers, providing soft-tissue contrast comparable to ground-truth MR images (gtMRI). **METHODS:** This study included 60 patient cases with H&amp;N cancer treated with radical radiotherapy between March 2022 and April 2024 for model development (50 for training, 10 for validation), plus 10 additional cases, independent of the development cohort for testing. All patients underwent a standard, non-contrast pCT scan followed by an MRI acquired on a 3T Siemens MR simulator. Images were deformably-registered, yielding 10,000 matched CT-MRI slice-pairs for model training. The proposed model utilizes a two-stage architecture, a Pix2Pix conditional generative adversarial network (GAN) for coarse sMRI synthesis, followed by a conditional diffusion model for refinement. To test the model's robustness, 10 patient cases with both pCT and contrast-enhanced CT (ceCT) were used to generate sMRI. Model performance was assessed using structural similarity index (SSIM), multi-scale structural similarity index (MS-SSIM), mean absolute error (MAE), and peak signal-to-noise ratio (PSNR). In addition, the geometric agreement of the primary (GTVp_70) and nodal (GTVn_70) gross tumor volumes delineated on sMRI vs. gtMRI was independently assessed by two radiation oncologists (ROs) using the Dice similarity coefficient (DSC), 95th-percentile Hausdorff distance (HD95), and average symmetric surface distance (ASSD). **RESULTS:** The average MS-SSIM, SSIM, MAE and PSNR for pCT-derived sMRI were 0.82&#xa0;&#xb1;&#xa0;0.02, 0.70&#xa0;&#xb1;&#xa0;0.03, 0.05&#xa0;&#xb1;&#xa0;0.01, and 20.42&#xa0;&#xb1;&#xa0;0.66&#xa0;dB, respectively. The mean MS-SSIM and SSIM values for ceCT-derived sMRI were 0.02 lower than those for the corresponding pCT-to-sMRI metrics. For the contour-based evaluation, sMRI-derived GTV contours achieved a mean DSC of 0.56 and 0.60 for GTVp_70, and 0.72 and 0.74 for GTVn_70 across the two ROs, relative to gtMRI contours. **CONCLUSION:** Our proof-of-concept study demonstrates the feasibility of pCT-derived sMRI for H&amp;N cancers using a deep-learning framework. The model produces grayscale patterns and soft-tissue contrast that closely resemble the gtMRI.
+
+## Información del artículo
+
+- **Revista:** Journal of applied clinical medical physics
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Prabhakar Ramachandran, Akshay C Dhargave, Catherine Jones, Dionee Liefman, Lachlan McDowell
+- **DOI:** [10.1002/acm2.70849](https://doi.org/10.1002/acm2.70849)
+- **PubMed ID:** [42900554](https://pubmed.ncbi.nlm.nih.gov/42900554/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42900554/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
