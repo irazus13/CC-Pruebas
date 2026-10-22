@@ -1,0 +1,25 @@
+---
+title: "Uncertainty-suppressed long-tailed learning with lightweight feature adaptation for multi-label chest X-ray classification."
+description: "Report-mined chest radiograph datasets commonly contain both long-tailed label distributions and uncertain annotations. Conventional frequency-based re-weighting can strengthen rare-label learning, but it may also amplify unreliable s..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "42900549"
+author: "Lu Li"
+tags: ["chest radiograph classification", "feature adaptation", "long&#x2010;tailed learning", "medical image analysis", "multi&#x2010;label classification"]
+---
+
+## Resumen
+
+**BACKGROUND:** Report-mined chest radiograph datasets commonly contain both long-tailed label distributions and uncertain annotations. Conventional frequency-based re-weighting can strengthen rare-label learning, but it may also amplify unreliable supervision when uncertain labels occur in minority classes. **PURPOSE:** To develop and evaluate an uncertainty-suppressed long-tailed learning method with lightweight feature adaptation for multi-label chest X-ray (CXR) classification under imbalanced and uncertain report-derived supervision. **METHODS:** The proposed uncertainty-suppressed long-tailed feature adaptation (USLFA) method combines a lightweight label-adaptive feature head with an uncertainty-suppressed long-tailed loss. The primary analysis used a patient-level 70%/10%/20% split of CheXpert for 14 observation labels. Robustness was further examined across two additional patient-level partitions, on the recommended MIMIC-CXR-JPG test split without retraining, and on the official radiologist-annotated CheXpert test set. Performance was assessed using macro-AUROC, macro-AUPRC, macro F1, frequency-group analysis, ablation studies, and uncertainty-handling comparisons. Ninety-five percent confidence intervals (CIs) were estimated by patient-level bootstrap resampling, and formal pairwise tests in the primary CheXpert analysis used paired permutation testing with Holm correction. **RESULTS:** On the primary CheXpert split, USLFA achieved a macro-AUROC of 0.864 (95% CI, 0.856-0.871), macro-AUPRC of 0.547 (95% CI, 0.532-0.560), and macro F1 of 0.501 (95% CI, 0.487-0.514). Compared with ConvNeXt-Tiny using binary cross-entropy (BCE), the gains in macro-AUPRC and macro F1 were both 0.051 and remained significant after Holm correction (both p&#xa0;&lt;&#xa0;0.001). Compared with label-distribution-aware margin (LDAM), USLFA improved macro-AUPRC by 0.018 (Holm-adjusted p&#xa0;=&#xa0;0.024) and macro F1 by 0.017 (Holm-adjusted p&#xa0;=&#xa0;0.041). The ordering was preserved across three patient-level partitions, with USLFA macro-AUPRC ranging from 0.540 to 0.555. On MIMIC-CXR-JPG, USLFA achieved a macro-AUPRC of 0.485 (95% CI, 0.467-0.502), and on the official CheXpert test set it achieved a mean AUROC of 0.920 (95% CI, 0.908-0.931) across the five competition observations. **CONCLUSIONS:** USLFA improved macro-AUPRC and rare-label recognition without introducing an additional inference-time branch. Macro F1 was significantly higher than the principal BCE and LDAM baselines in the main comparison, whereas the additional macro F1 gain attributable to uncertainty suppression over U Soft was not significant after Holm correction. The repeated-split, external-dataset, and official-test analyses provide complementary evidence that the observed advantage is not confined to a single custom partition.
+
+## Información del artículo
+
+- **Revista:** Journal of applied clinical medical physics
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Lu Li
+- **DOI:** [10.1002/acm2.70873](https://doi.org/10.1002/acm2.70873)
+- **PubMed ID:** [42900549](https://pubmed.ncbi.nlm.nih.gov/42900549/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42900549/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
