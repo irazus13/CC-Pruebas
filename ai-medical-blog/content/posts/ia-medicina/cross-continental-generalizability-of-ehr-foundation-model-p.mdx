@@ -1,0 +1,25 @@
+---
+title: "Cross-continental generalizability of EHR foundation model: predicting length of stay in an Italian hospital using US-trained embeddings."
+description: "Clinical Foundations Models (FMs) hold the potential to exhibit generalist medical AI capabilities, and the ability to reduce the need for explicit feature engineering. However, their evaluation often relies on locally-limited dataset..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "42920713"
+author: "Giovanna Nicora, Francesca Negri, Valentina Tibollo et al."
+tags: ["distribution shift", "external validation", "generalist medical AI", "length of stay prediction", "transfer learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Clinical Foundations Models (FMs) hold the potential to exhibit generalist medical AI capabilities, and the ability to reduce the need for explicit feature engineering. However, their evaluation often relies on locally-limited datasets, raising questions regarding their generalizability across diverse global healthcare systems, populations, and clinical practices. This study assesses the cross-continental transferability of a US-trained FM, CLMBR-T-base, applied to a large, distinct, Italian hospital cohort to predict Length of Stay (LoS). **METHODS:** We utilized a retrospective EHR dataset from IRCCS Maugeri, Pavia, Italy, comprising 99,884 admissions for 63,030 unique patients (2012-2025). To ensure interoperability, raw data were harmonized using the OMOP Common Data Model and converted to the Medical Event Data Standard (MEDS). Patient embeddings were generated zero-shot using the pretrained CLMBR-T-Base model. We benchmarked supervised regression models (Gradient Boosting, Multilayer Perceptron) trained on these embeddings against traditional count-based baselines to predict log-transformed LoS. We built different models trained on the complete hospital admissions set and stratified across four clinical macro-categories (Surgical, Rehabilitation, Oncology, Generic). Embedding cohesion was validated using latent space analysis (HDBSCAN clustering). **RESULTS:** The best overall model utilizing FM embeddings achieved an R2 of 0.705. Performance varied by department type, proving lower in Rehabilitation (R2&#x2009;=&#x2009;0.36 for the best count-based model and R2&#x2009;=&#x2009;0.33 for the best embedding-based model) and Oncology (R2&#x2009;=&#x2009;0.17 for the best count-based model and R2&#x2009;=&#x2009;0.16 for the best embedding-based model). Latent space analysis confirmed that the FM embeddings preserved high semantic transferability, autonomously organizing Italian patients into clinically coherent groups. **CONCLUSION:** Clinical FMs trained on US data exhibit generalizability, effectively capturing clinical semantics across distinct international healthcare architectures when mediated by rigorous data standardization pipelines (OMOP/MEDS).
+
+## Información del artículo
+
+- **Revista:** Frontiers in digital health
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Giovanna Nicora, Francesca Negri, Valentina Tibollo, Alberto Malovini, Arianna Dagliati
+- **DOI:** [10.3389/fdgth.2026.1956993](https://doi.org/10.3389/fdgth.2026.1956993)
+- **PubMed ID:** [42920713](https://pubmed.ncbi.nlm.nih.gov/42920713/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42920713/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
