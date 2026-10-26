@@ -1,0 +1,25 @@
+---
+title: "CardioCLIP: sequential multimodal prediction of echocardiographic abnormalities and natriuretic peptide elevation from electrocardiogram and chest radiographs."
+description: "Diagnostic reasoning in clinical practice is inherently sequential and multimodal, with physicians integrating heterogeneous examinations under constraints such as missing data and variable test order. However, most multimodal machine learn..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "42927257"
+author: "Satoki Shibata, Makoto Nishimori, Yu Nishihara et al."
+tags: ["Chest X-ray", "Deep learning", "Echocardiographic abnormalities", "Electrocardiography", "Natriuretic peptides"]
+---
+
+## Resumen
+
+**AIMS:** Diagnostic reasoning in clinical practice is inherently sequential and multimodal, with physicians integrating heterogeneous examinations under constraints such as missing data and variable test order. However, most multimodal machine learning models assume simultaneous availability of all modalities and fail to reflect this workflow. **METHODS AND RESULTS:** We propose CardioCLIP, a sequential multimodal framework that embeds electrocardiograms (ECGs) and chest X-rays (CXRs) into a shared pathological representation space. The model consists of (i) a self-supervised embedding stage aligning ECG-CXR pairs from the same patient and day, and (2) a gated recurrent unit-based prediction stage that estimates clinical indicators as data are sequentially observed. The model was trained on 9458 patients from a single tertiary centre and evaluated for B-type natriuretic peptide (BNP), left ventricular ejection fraction (LVEF), and E/e'. External validation was conducted using MIMIC-IV.CardioCLIP achieved strong cross-modal alignment and improved discrimination for selected echocardiographic abnormalities and natriuretic peptide elevation (AUC: 0.90 for BNP &gt; 100&#x2005;pg/mL, 0.87 for LVEF &lt; 50%, and 0.80 for E/e' &gt; 15). It also showed discrimination for subsequent severe BNP elevation (BNP &gt; 400&#x2005;pg/mL within 3 years) with an AUC of 0.79. External validation in MIMIC-IV showed an AUC of 0.89 for N-terminal pro-BNP elevation, supporting potential transportability for this endpoint. **CONCLUSION:** CardioCLIP demonstrated the feasibility of order-flexible sequential multimodal prediction. By leveraging routinely acquired ECG and CXR data, it may provide a non-invasive adjunct for identifying echocardiographic abnormalities and natriuretic peptide elevation in cardiovascular care, subject to prospective clinical validation.
+
+## Información del artículo
+
+- **Revista:** European heart journal. Digital health
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Satoki Shibata, Makoto Nishimori, Yu Nishihara, Eiichi Maeda, Masaaki Iiyama
+- **DOI:** [10.1093/ehjdh/ztag158](https://doi.org/10.1093/ehjdh/ztag158)
+- **PubMed ID:** [42927257](https://pubmed.ncbi.nlm.nih.gov/42927257/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42927257/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
