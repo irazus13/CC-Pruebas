@@ -1,0 +1,25 @@
+---
+title: "Accurate classification of intracranial hemorrhage using transfer learning and combined spatial and channel attention modules."
+description: "PurposeIntracranial hemorrhage (ICH), as a severe brain injury, requires immediate treatment and is usually being diagnosed from Computed Tomography (CT) scans in clinical settings. This task is considered a challenging procedure due to interpretatio..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "42929378"
+author: "Parnian Rahimi, Marjan Naderan, Amir Jamshidnezhad et al."
+tags: ["Channel attention", "Intracranial hemorrhage (ICH)", "RSNA dataset", "Spatial attention", "resnet"]
+---
+
+## Resumen
+
+PurposeIntracranial hemorrhage (ICH), as a severe brain injury, requires immediate treatment and is usually being diagnosed from Computed Tomography (CT) scans in clinical settings. This task is considered a challenging procedure due to interpretation variability between experts, imaging modality limitations, time sensitivity, and heterogeneous presentations. Recent studies have utilized deep neural networks to overcome limitations such as overfitting and poor generalization across scanners, for ICH diagnosis which requires heavy processing (in terms of Graphical Processing Units (GPUs)) and accurate detection in a time-sensitive period.ApproachThis paper presents deep learning models with attention mechanisms for the purpose of detecting and classifying acute ICH in CT scans. Some pre-processing is needed before inserting the images into the models, which include data splitting, normalization, resizing and augmentation. The proposed approaches combine Channel and Spatial Attention methods with two Convolutional Neural Network (CNN) architectures to extract features and make initial predictions. Furthermore, PCA is used followed by a Bi-LSTM network to reduce the number of features for faster classification and finally, it is concatenated with the initial prediction to produce the final accurate result. This integration particularly benefits ICH classification since Bi-LSTM better understands temporal relations between CT neighboring slices, attention modules focus on hemorrhagic regions, and the PCA method reduces the feature space for less computation.ResultsResult of experiments show that the proposed methods outperform baselines on the RSNA dataset for six classes in most evaluation metrics, including an average accuracy and an average F1 score of 97.8% and 73.3%, respectively. The Grad-CAM technique is also applied to visualize the important parts of images in the detection process of the model.ConclusionsAccording to the results, using attention modules together with pre-trained models can improve the accuracy of detection and classification for ICH. In addition, Grad-CAM results were approved by the medical team as a supporting analysis, especially in critical situations where the hemorrhaged region could not be identified by physicians which shows interpretation models can help the physicians for more reliability in the detection process.
+
+## Información del artículo
+
+- **Revista:** Health informatics journal
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Parnian Rahimi, Marjan Naderan, Amir Jamshidnezhad, Shahram Rafie
+- **DOI:** [10.1177/14604582261479098](https://doi.org/10.1177/14604582261479098)
+- **PubMed ID:** [42929378](https://pubmed.ncbi.nlm.nih.gov/42929378/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42929378/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
