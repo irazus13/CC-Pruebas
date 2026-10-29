@@ -1,0 +1,25 @@
+---
+title: "Multi-Backbone U-Net segmentation and interpretable hybrid deep learning classification for lung cancer detection in chest CT images."
+description: "Lung cancer remains the leading cause of cancer-related mortality worldwide, and its early and accurate diagnosis from chest CT imaging is complicated by overlapping radiological features between benign and malignant lesions, as well ..."
+date: "2026-08-01"
+category: "ia-radiologia"
+pubmedId: "42947064"
+author: "Alireza Golkarieh, Kiana Kiashemshaki, Sajjad Rezvani Boroujeni et al."
+tags: ["External validation", "Grad-CAM interpretability", "Hybrid classifiers", "Lung cancer detection", "Pretrained CNN backbones"]
+---
+
+## Resumen
+
+**BACKGROUND:** Lung cancer remains the leading cause of cancer-related mortality worldwide, and its early and accurate diagnosis from chest CT imaging is complicated by overlapping radiological features between benign and malignant lesions, as well as by the limited cross-institution validation and interpretability reported in much of the existing computer-aided diagnosis literature. This study evaluates the effectiveness of U-Net architectures integrated with different pre-trained convolutional neural network (CNN) backbones for automated lung segmentation and lung cancer classification in chest CT images, with an emphasis on rigorous, leakage-free validation and cross-institution generalizability relevant to clinical practice. **METHODS:** A balanced internal dataset of 832 chest CT images (416 cancerous and 416 non-cancerous cases, NIDCH, Bangladesh) was preprocessed using Contrast Limited Adaptive Histogram Equalization (CLAHE) and resized to 224&#x2009;&#xd7;&#x2009;224 pixels. U-Net models with three CNN backbones (VGG16, ResNet50, and Xception) were implemented for lung segmentation, with pseudo-labels verified against expert-annotated masks. A standalone CNN and three hybrid classifiers combining CNN feature extraction with machine learning algorithms (Support Vector Machine, Random Forest, and Gradient Boosting) were then evaluated, alongside a Vision Transformer baseline. All models were assessed using subject-level fivefold cross-validation, followed by fully independent external testing on a second, structurally distinct dataset (IQ-OTH/NCCD; 110 subjects) without retraining. Performance was measured using Dice coefficient, IoU, accuracy, precision, recall, F1-score, and AUC, with 95% confidence intervals and statistical significance testing. **RESULTS:** For segmentation, U-Net with the Xception backbone achieved the best overall performance (Dice: 0.9581&#x2009;&#xb1;&#x2009;0.0104; IoU: 0.9163&#x2009;&#xb1;&#x2009;0.0167). For classification, the CNN&#x2009;+&#x2009;SVM hybrid model achieved the highest internal cross-validation accuracy (98.21%&#x2009;&#xb1;&#x2009;0.68%) and AUC (0.9881&#x2009;&#xb1;&#x2009;0.0041), significantly outperforming the standalone CNN (p&#x2009;=&#x2009;0.041), and retained the strongest performance under external validation (92.73% accuracy), with the smallest accuracy drop among all evaluated models. Ablation analyses confirmed substantial contributions from CLAHE preprocessing and U-Net segmentation, and Grad-CAM analysis showed that segmentation constrains classifier attention to anatomically plausible lung regions. **CONCLUSION:** Integrating U-Net segmentation with hybrid CNN-based classification provides an accurate and reasonably generalizable framework for lung cancer detection, offering a methodological foundation for future clinically oriented computer-aided diagnosis research, pending prospective, multi-institution validation.
+
+## Información del artículo
+
+- **Revista:** BMC pulmonary medicine
+- **Fecha de publicación:** 2026-08-01
+- **Autores:** Alireza Golkarieh, Kiana Kiashemshaki, Sajjad Rezvani Boroujeni, Sanam Ansari, Nasibeh Asadi Isakan
+- **DOI:** [10.1186/s12890-026-04526-2](https://doi.org/10.1186/s12890-026-04526-2)
+- **PubMed ID:** [42947064](https://pubmed.ncbi.nlm.nih.gov/42947064/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42947064/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
