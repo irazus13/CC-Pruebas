@@ -1,0 +1,25 @@
+---
+title: "Longitudinal CT imaging to predict radiotherapy treatment outcome in head and neck cancer: a deep learning approach."
+description: "CT images acquired at multiple time points before and during radiotherapy treatment could capture tumor temporal changes, offering valuable insights into tumor response. By modeling temporal changes in CT scans with deep learning techniq..."
+date: "2026-10-20"
+category: "ia-radiologia"
+pubmedId: "42966293"
+author: "Alessia De Biase, Wei Tang, Johannes A Langendijk et al."
+tags: ["Deep learning", "Longitudinal imaging", "Oropharyngeal cancer", "Outcome prediction", "Temporal convolutional networks"]
+---
+
+## Resumen
+
+**PURPOSE:** CT images acquired at multiple time points before and during radiotherapy treatment could capture tumor temporal changes, offering valuable insights into tumor response. By modeling temporal changes in CT scans with deep learning techniques, we compared the predictive performance of multi-time point models versus single time point models, assessing the impact of incorporating temporal features to predict two-year disease-free survival in oropharyngeal squamous cell carcinoma (OPSCC) patients. **MATERIALS AND METHODS:** A total of 202 OPSCC patients treated with (chemo)radiotherapy at the University Medical Center Groningen were included. A planning CT scan was available per patient, along with repeat CT scans (rCTs) acquired at different time points during treatment. Three training/ validation sets were created based on the data availability per patient: first two, three, or four consecutive rCTs. An independent testing set of 53 patients having all four consecutive rCTs was used to compare the performance of models trained using different inputs. Deep learning models were built using single or multiple time points as input. To model longitudinal features, self-attention mechanisms and temporal convolutional networks (TCNs) were applied to deep features extracted from the CT scans at different time points. Models were trained with 3-fold cross-validation and three feature extraction architectures. Predicted probabilities were ensembled by averaging. Finally, performance was assessed by accuracy, F1 macro, AUC score, and calibration plots. **RESULTS:** Self-attention demonstrated superior ability over TCNs in capturing temporal changes in multi-time points models. The top-performing model achieved 0.75 accuracy, 0.66 F1 score, 0.61 AUC, and the best overall calibration using planning CT and the first two rCTs with self-attention. Models trained on single time point CTs up to the 10th fraction generally showed slightly lower accuracy (&#x2264;0.72), similar F1 score (around 0.66), but higher AUC (&#x2265;0.70). Despite the similar discrimination performance, TCNs demonstrated poor calibration (slope values &#x2265;1.74). **CONCLUSION:** Multi-time point CT images acquired before and early in treatment showed potential in predicting disease-free survival in OPSCC. Deep learning models based on self-attention, specifically those using planning CT and the first two consecutive rCT scans, demonstrated promising clinical utility.
+
+## Información del artículo
+
+- **Revista:** Computer methods and programs in biomedicine
+- **Fecha de publicación:** 2026-10-20
+- **Autores:** Alessia De Biase, Wei Tang, Johannes A Langendijk, Peter M A van Ooijen, Nanna Maria Sijtsema
+- **DOI:** [10.1016/j.cmpb.2026.109697](https://doi.org/10.1016/j.cmpb.2026.109697)
+- **PubMed ID:** [42966293](https://pubmed.ncbi.nlm.nih.gov/42966293/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42966293/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
