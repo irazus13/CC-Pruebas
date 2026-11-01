@@ -1,0 +1,25 @@
+---
+title: "Code-Free Automated Machine-Learning (AutoML) Classification of Curated MRI Images Labeled for Rare Neurological Diseases: An Image-Level Proof-of-Concept Study."
+description: "Rare neurological disorders present substantial diagnostic and research challenges because their low prevalence limits clinical exposure and the availability of large, well-characterized imaging datasets. Magnetic resonance imaging (MRI) plays an imp..."
+date: "2026-10-01"
+category: "ia-medicina"
+pubmedId: "42967096"
+author: "Mark A Bachir, Neel Nawathey, Alexander Bachir et al."
+tags: ["artificial intelligence", "automated machine learning", "brain mri", "deep learning", "image classification"]
+---
+
+## Resumen
+
+Rare neurological disorders present substantial diagnostic and research challenges because their low prevalence limits clinical exposure and the availability of large, well-characterized imaging datasets. Magnetic resonance imaging (MRI) plays an important role in many of these disorders because developmental, vascular, and neurodegenerative abnormalities may produce recognizable imaging phenotypes. Although deep-learning methods have demonstrated substantial potential for medical image analysis, conventional model development commonly requires programming expertise, computational infrastructure, and specialized knowledge of neural-network design. This image-level proof-of-concept study evaluated whether a commercially available code-free automated machine-learning (AutoML) platform could classify curated Joint Photographic Experts Group (JPEG) brain MRI images according to five inherited rare neurological disease labels. The individual image, rather than the patient or MRI examination, was the unit of analysis, and the supplied labels were not independently clinically adjudicated. A publicly available Kaggle dataset initially contained 2,000 images distributed equally among Walker-Warburg syndrome (WWS), pachygyria with cerebellar hypoplasia, Moyamoya disease, pantothenate kinase-associated neurodegeneration (PKAN; labeled as Hallervorden-Spatz disease in the source dataset), and Fukuyama congenital muscular dystrophy (FCMD). Exact-file hash analysis identified 12 duplicate image contents, leaving 1,988 unique files. This procedure removed exact binary duplicates but could not identify adjacent slices, transformed or near-duplicate images, or multiple images from the same patient or examination. Google Cloud Vertex AI (Google LLC, Mountain View, CA, USA) AutoML randomly assigned 1,588 images (79.9%) to training, 200 (10.1%) to validation, and 200 (10.1%) to testing. A single-label multiclass classifier was trained using a maximum budget of eight node-hours. The model achieved an overall micro-averaged area under the precision-recall curve (AuPRC) (average precision) of 1.000, with overall precision and recall of 100% at a confidence threshold of 0.50. Each label contributed 40 test images, and all 40 in each class were correctly classified, corresponding to a class-specific correct-classification proportion of 100% (exact 95% CI, 91.2%-100.0%). Across the complete test set, 200/200 images were correctly classified, corresponding to an observed image-level accuracy of 100% (exact 95% CI, 98.2%-100.0%). These findings demonstrate workflow feasibility and separability of the supplied image labels within this curated benchmark. However, patient- and examination-level independence could not be established; the effective independent sample size may be smaller than the nominal image count, and dataset-specific technical characteristics or shortcut learning may have contributed to the observed performance. These results should not be interpreted as evidence of patient-level diagnostic accuracy, clinical robustness, or generalizability. Independent patient-level and multicenter validation using clinically representative MRI examinations is required before diagnostic relevance can be established.
+
+## Información del artículo
+
+- **Revista:** Cureus
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Mark A Bachir, Neel Nawathey, Alexander Bachir, Akshay J Reddy, Jasmeen K Cheema
+- **DOI:** [10.7759/cureus.117321](https://doi.org/10.7759/cureus.117321)
+- **PubMed ID:** [42967096](https://pubmed.ncbi.nlm.nih.gov/42967096/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42967096/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
