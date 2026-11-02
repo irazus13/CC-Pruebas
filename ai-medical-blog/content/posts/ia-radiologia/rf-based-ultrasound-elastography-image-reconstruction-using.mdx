@@ -1,0 +1,25 @@
+---
+title: "RF-based ultrasound elastography image reconstruction using biomechanically informed deep learning."
+description: "Breast cancer remains one of the most prevalent and lethal malignancies among women worldwide, with current diagnosis methods relying on preliminary imaging, followed by a breast biopsy if deemed necessary. Among imaging techniques developed to reduc..."
+date: "2026-10-29"
+category: "ia-radiologia"
+pubmedId: "42967470"
+author: "Jonah Boutin, Zhenbang Wang, Abbas Samani"
+tags: ["Breast biomechanics", "Breast imaging", "Deep learning", "Finite element modeling", "Inverse elasticity reconstruction"]
+---
+
+## Resumen
+
+Breast cancer remains one of the most prevalent and lethal malignancies among women worldwide, with current diagnosis methods relying on preliminary imaging, followed by a breast biopsy if deemed necessary. Among imaging techniques developed to reduce imaging false positives, ultrasound elastography (USE) was developed to enable physicians to characterize tissue stiffness alteration which is known to be a signature of pathology. This is done through analysis of tissue deformation under mechanical loading to reconstruct tissue stiffness images using mathematical data inversion frameworks. However, conventional USE image reconstruction pipelines require sequential displacement estimation, strain map computation, and a computationally involved data inversion process, limiting its practicality for real-time use in clinical workflows. The proposed work addresses this limitation by presenting a deep learning framework capable of elastography image reconstruction from pre- and post-compression radiofrequency (RF) frames. Using a convolutional neural network (CNN) which includes a custom temporal encoder and a U-Net decoder architecture, the network is able to bypass the traditional demanding computational pipeline of USE. To train the proposed model, a biomechanically informed RF dataset was generated using anatomically accurate finite element modeling (FEM) of breast tissue deformation, including realistic ligament structures such as the Cooper's ligaments along with clinically derived boundary conditions. The proposed framework demonstrated strong agreement with a maximum error of 2% between reconstructed and ground-truth USE images, while accurately preserving relative inclusion-to-background stiffness contrast. This contrast, rather than absolute stiffness, constitutes the decision variable used in clinical lesion characterization. Additionally, a matched biomechanical comparison performed with and without ligament inclusion further demonstrated measurable changes between displacement, strain, and elastography fields, demonstrating the importance of the inclusion of the Cooper's ligaments. These results demonstrate the potential of this work as a biomechanically informed deep learning approach for a previously computationally expensive inverse elastography reconstruction, whilst maintaining clinically relevant stiffness contrast necessary for meaningful lesion characterization.
+
+## Información del artículo
+
+- **Revista:** Journal of the mechanical behavior of biomedical materials
+- **Fecha de publicación:** 2026-10-29
+- **Autores:** Jonah Boutin, Zhenbang Wang, Abbas Samani
+- **DOI:** [10.1016/j.jmbbm.2026.107697](https://doi.org/10.1016/j.jmbbm.2026.107697)
+- **PubMed ID:** [42967470](https://pubmed.ncbi.nlm.nih.gov/42967470/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42967470/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
