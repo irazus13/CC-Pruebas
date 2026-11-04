@@ -1,0 +1,25 @@
+---
+title: "KAMP-Net: Knowledge-aligned Multi-modal Prompt-tuning Network for Prostate Cancer Diagnosis from bpMRI."
+description: "Bi-parametric magnetic resonance imaging (bpMRI) is widely used for non-invasive diagnosis of clinically significant prostate cancer (csPCa). Although the Prostate Imaging Reporting and Data System (PI-RADS) standardizes interpretation through struct..."
+date: "2026-10-30"
+category: "ia-radiologia"
+pubmedId: "42976526"
+author: "Yuchen Yuan, Jie Bao, Xiuqi Ge et al."
+tags: ["Bi-parametric MRI", "Multi-modal prompt-tuning", "Prostate cancer", "Vision&#x2013;language models", "knowledge-driven diagnosis"]
+---
+
+## Resumen
+
+Bi-parametric magnetic resonance imaging (bpMRI) is widely used for non-invasive diagnosis of clinically significant prostate cancer (csPCa). Although the Prostate Imaging Reporting and Data System (PI-RADS) standardizes interpretation through structured diagnostic criteria, clinical assessment remains highly operator-dependent. Vision-language models (VLMs), such as CLIP, offer a promising automated solution by leveraging the imaging-language coupling inherent in PI-RADS. However, existing VLM adaptation methods generally treat medical diagnosis as a generic image-to-label matching task. This conventional "label-driven" paradigm relies on superficial semantic correlations, fundamentally failing to capture the structured reasoning, anatomical context, and sequence prioritization defined by clinical guidelines like PI-RADS. To address this fundamental limitation, we propose KAMP-Net, a multi-modal prompt-tuning network that shifts the paradigm toward "knowledge-driven" learning. Our core algorithmic novelty lies in mathematically translating structured PI-RADS criteria directly into the network's computational graph. Specifically, rather than employing generic feature fusion and global alignment, KAMP-Net utilizes zone-aware modality routing to dynamically gate heterogeneous bpMRI sequences, and enforces a hierarchical vision-language alignment that structurally mirrors a radiologist's bottom-up diagnostic workflow. Experiments on a multi-center cohort comprising two public and one private datasets, plus an external private dataset, show that KAMP-Net delivers competitive performance in both patient-level diagnosis and lesion-level localization. Beyond standalone performance, we evaluated its clinical utility in an AI-assisted workflow. Notably, for challenging equivocal cases (PI-RADS = 3), this human-in-the-loop strategy successfully reduces false positives without risking missed diagnoses, demonstrating its strong potential as a reliable decision-support tool. Code is available at: https://github.com/IsYuchenYuan/KAMP-Net.
+
+## Información del artículo
+
+- **Revista:** Medical image analysis
+- **Fecha de publicación:** 2026-10-30
+- **Autores:** Yuchen Yuan, Jie Bao, Xiuqi Ge, Libiao Ji, Cheng Chen
+- **DOI:** [10.1016/j.media.2026.104363](https://doi.org/10.1016/j.media.2026.104363)
+- **PubMed ID:** [42976526](https://pubmed.ncbi.nlm.nih.gov/42976526/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/42976526/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
