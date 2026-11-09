@@ -1,0 +1,25 @@
+---
+title: "Uncertainty-Guided Steering Vector Test-Time Adaptation for the Classification of Breast Ultrasound Images."
+description: "Deep learning models for breast ultrasound classification frequently suffer from performance degradation due to domain shifts caused by differences in imaging equipment, acquisition protocols, and preprocessing across institutions. Although test-time..."
+date: "2026-11-08"
+category: "ia-radiologia"
+pubmedId: "43000991"
+author: "Woo Sik Cho, Jun Hyeong Park, Seonhwa Kim et al."
+tags: ["breast ultrasound", "computer-aided diagnosis", "domain shift", "medical image classification", "steering vectors"]
+---
+
+## Resumen
+
+Deep learning models for breast ultrasound classification frequently suffer from performance degradation due to domain shifts caused by differences in imaging equipment, acquisition protocols, and preprocessing across institutions. Although test-time adaptation (TTA) has been proposed to mitigate this problem, conventional gradient-based methods may be unstable in medical imaging settings and can even degrade performance under severe target-domain shifts. We propose Uncertainty-guided Steering Vector Test-Time Adaptation (USV-TTA), a gradient-optimization-free TTA method that performs feature correction at test time without updating model parameters. USV-TTA uses frozen source batch-normalization statistics to estimate target-sample uncertainty and derive steering vectors that represent the direction of domain shift, then corrects high-uncertainty samples by suppressing projections along this direction. USV-TTA was evaluated on 4 external breast ultrasound datasets comprising 6267 images included in the binary benign/malignant evaluation. On the class-imbalanced GDPH dataset, USV-TTA achieved the highest AUROC of 0.813, outperforming the source model and preventing the degradation observed with TENT (0.711). On the heterogeneous AJMC dataset, which included images acquired from 11 ultrasound systems, USV-TTA also achieved the highest AUROC of 0.773. On BrEaST and BUS-BRA, USV-TTA maintained competitive discrimination performance, although DLTTA achieved the highest AUROC on BrEaST and SAR achieved the highest AUROC on BUS-BRA. Across target datasets, USV-TTA reduced expected calibration error in the most challenging domains without incurring the instability observed in several gradient-based TTA methods. These findings suggest that effective and stable test-time adaptation for breast ultrasound classification can be achieved without gradient-based optimization, supporting safer deployment under domain shift.
+
+## Información del artículo
+
+- **Revista:** Ultrasonic imaging
+- **Fecha de publicación:** 2026-11-08
+- **Autores:** Woo Sik Cho, Jun Hyeong Park, Seonhwa Kim, Jaesung Heo
+- **DOI:** [10.1177/01617346261495108](https://doi.org/10.1177/01617346261495108)
+- **PubMed ID:** [43000991](https://pubmed.ncbi.nlm.nih.gov/43000991/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43000991/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
