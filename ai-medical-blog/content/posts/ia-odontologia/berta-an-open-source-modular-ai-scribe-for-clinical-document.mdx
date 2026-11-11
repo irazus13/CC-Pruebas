@@ -1,0 +1,25 @@
+---
+title: "Berta, an Open-Source, Modular AI Scribe for Clinical Documentation: Implementation Report."
+description: "Clinical documentation is a major contributor to physician workload and burnout, particularly in high-acuity settings such as emergency departments. Ambient AI scribes have emerged as a response, but commercial products cost US $99 to..."
+date: "2026-11-10"
+category: "ia-odontologia"
+pubmedId: "43008220"
+author: "Samridhi Vaid, Mike Weldon, Jesse Dunn et al."
+tags: ["AI", "ambient AI scribe", "artificial intelligence", "clinical documentation", "electronic health records"]
+---
+
+## Resumen
+
+**BACKGROUND:** Clinical documentation is a major contributor to physician workload and burnout, particularly in high-acuity settings such as emergency departments. Ambient AI scribes have emerged as a response, but commercial products cost US $99 to more than US $600 per physician per month, operate as opaque systems, and often process data on vendor-controlled infrastructure. These characteristics limit organizational control over data sovereignty, quality improvement, and clinical workflows and create barriers to adoption in resource-constrained settings. **OBJECTIVE:** We aimed to develop an open-source, modular AI scribe platform that could be deployed entirely within institutional infrastructure, and to evaluate its real-world use across a provincial health system. **METHODS:** We developed Berta, an open-source, modular platform that pairs a Next.js front end and a FastAPI back end with configurable automatic speech recognition and large language model components. A closed-source implementation developed in parallel with Berta was deployed at Alberta Health Services (AHS), Canada's largest provincially integrated health system at the time of implementation, and operated within AHS's existing Snowflake AI Data Cloud infrastructure. All clinical audio and text remained within the secure AHS environment. Use and session metadata were automatically recorded during routine clinical use by emergency physicians across AHS between November 2024 and July 2025, and physicians were emailed an optional survey. Operating costs were estimated from Snowflake service consumption over the same period. **UNLABELLED:** During the 9-month study period, 197 emergency physicians registered at 105 urban and rural facilities used the system, generating 21,548 clinical sessions and more than 2700 hours of audio. Monthly session volume grew from 675 sessions in November 2024 to 5463 in July 2025. Mean recorded session length was 7.6 minutes, and 42% (82/197) of users customized at least 1 documentation template. Operating costs averaged less than US $30 per physician per month, representing a 70% to 95% reduction in cost compared with commercial subscription prices; this comparison excludes personnel costs for development and maintenance. Survey respondents (69-73 per item) rated user-friendliness as good (median 5, IQR 4-6), reported a median time saving of 16 to 30 (IQR 0-15 to 46-60) minutes per shift, and rated documentation quality the lowest. After the pilot, access was opened to other departments, and by September 30, 2026, approximately 2000 users had registered. **CONCLUSIONS:** An in-house AI scribe can be deployed at provincial scale within existing health system infrastructure at a fraction of the operating cost of commercial alternatives while preserving data sovereignty and institutional control. The full cost of ownership and documentation quality require further evaluation. By releasing Berta publicly, we provide a reproducible foundation that health systems can adapt to evaluate and deploy AI documentation technology within their own secure environments.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-11-10
+- **Autores:** Samridhi Vaid, Mike Weldon, Jesse Dunn, Sacha Davis, Kevin Lonergan
+- **DOI:** [10.2196/105385](https://doi.org/10.2196/105385)
+- **PubMed ID:** [43008220](https://pubmed.ncbi.nlm.nih.gov/43008220/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43008220/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
