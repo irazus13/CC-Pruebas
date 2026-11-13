@@ -1,0 +1,25 @@
+---
+title: "Progressive multi-scale learning for lightweight YOLO-based multi-disease detection in chest X-ray."
+description: "Chest X-ray (CXR) is a primary imaging modality for thoracic disease screening, but manual interpretation of multi-disease cases can be limited by radiologist workload and variability in diagnostic experience, increasing the risk of m..."
+date: "2026-01-01"
+category: "ia-radiologia"
+pubmedId: "43023174"
+author: "Shanweichen Chen, Quanhong Wang, Lihong Zhu et al."
+tags: ["chest X-ray", "computer-aided diagnosis", "explainable AI", "multi-disease detection", "progressive multi-scale learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Chest X-ray (CXR) is a primary imaging modality for thoracic disease screening, but manual interpretation of multi-disease cases can be limited by radiologist workload and variability in diagnostic experience, increasing the risk of missed abnormalities, particularly for small lesions. Although deep learning-based detectors have achieved promising performance, many high-accuracy models remain computationally intensive, limiting their deployment in resource-constrained clinical environments. Furthermore, lightweight detectors may face challenges in learning multi-scale lesion representations under fixed-resolution training paradigms. **METHODS:** We proposed PMSL-YOLO, a lightweight YOLOv8n-based multi-disease detection framework based on Progressive Multi-Scale Learning (PMSL). Different from conventional fixed-resolution training strategies, PMSL introduces a structured progressive learning paradigm that gradually guides the detector from global anatomical representation learning to fine-grained lesion localization through multi-resolution adaptation. The framework incorporates progressive resolution transitions and staged optimization strategies to improve feature representation capability. In addition, CXR-specific augmentation strategies, including optimized Mosaic, MixUp, HSV brightness adjustment, and moderate geometric transformations, were employed to enhance detection of subtle and small lesions. **RESULTS:** PMSL-YOLO with the progressive 512&#x2192;512&#x2192;640&#x2192;1024 configuration achieved a Precision of 94.1%, Recall of 92.4%, mAP@0.5 of 93.3%, and mAP@0.5:0.95 of 70.1% on the independent test set, compared with 89.6%, 80.9%, 86.7%, and 68.4% for the 1024&#x2009;&#xd7;&#x2009;1024 baseline YOLOv8n. **CONCLUSION:** PMSL-YOLO provides a lightweight progressive training strategy for multi-disease CXR detection, achieving improved detection performance while preserving the computational characteristics of YOLOv8n. The independent test results provide evidence of the observed performance gains on data not used during model development within the present VinBigData dataset and experimental protocol. However, generalization across institutions, imaging devices, patient populations, and acquisition protocols remains to be established through external validation.
+
+## Información del artículo
+
+- **Revista:** Frontiers in medicine
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Shanweichen Chen, Quanhong Wang, Lihong Zhu, Fengmei Su
+- **DOI:** [10.3389/fmed.2026.1901057](https://doi.org/10.3389/fmed.2026.1901057)
+- **PubMed ID:** [43023174](https://pubmed.ncbi.nlm.nih.gov/43023174/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43023174/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
