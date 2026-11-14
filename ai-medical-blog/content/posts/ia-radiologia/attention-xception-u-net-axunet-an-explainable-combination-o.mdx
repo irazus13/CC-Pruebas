@@ -1,0 +1,25 @@
+---
+title: "Attention Xception U-Net (AXUNet): An explainable combination of CNN and self-attention for reliable glioma segmentation in MRI."
+description: "Gliomas are the most common primary malignant brain tumors and exhibit highly heterogeneous morphology and infiltrative growth patterns. Accurate delineation of tumor subregions in magnetic resonance imaging (MRI) is therefore critica..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "43031240"
+author: "Farzan Moodi, Fereshteh Khodadadi Shoushtari, Gelareh Valizadeh et al."
+tags: ["BraTS", "UNet", "brain MRI", "deep learning", "explainable AI"]
+---
+
+## Resumen
+
+**BACKGROUND:** Gliomas are the most common primary malignant brain tumors and exhibit highly heterogeneous morphology and infiltrative growth patterns. Accurate delineation of tumor subregions in magnetic resonance imaging (MRI) is therefore critical for diagnosis, treatment planning, and longitudinal monitoring, yet manual segmentation remains time-consuming and subject to inter-observer variability. **PURPOSE:** Accurate glioma segmentation in magnetic resonance imaging (MRI) is essential for diagnosis, treatment planning, and reproducible tumor delineation. However, for clinical adoption, automated segmentation systems must provide not only high accuracy but also robustness and interpretability. This study aimed to develop an explainable and reliable deep learning framework for glioma segmentation and to evaluate its performance on both internal and external datasets. **METHOD:** We used the BraTS 2021 training dataset, which contains 1251 multi-institutional pre-operative glioma MRI cases. After comparing multiple sequence combinations, T1ce, T2, and Fluid Attenuated Inversion Recovery (FLAIR) were selected as the final three-channel input. Preprocessing included tumor-oriented slice selection, cropping, Min-Max normalization, and augmentation. We developed AXUNet, a UNet-based architecture that integrates memory-efficient Xception blocks with a self-attention module combining kernel-based pixel attention and dot-product channel attention. Internal ablation analysis and Gradient-weighted Class Activation Mapping (Grad-CAM)-based visualization were also performed. **RESULTS:** On the BraTS 2021 test partition, AXUNet achieved the highest mean Dice score (93.73), outperforming UNet (93.26), Inception-UNet (90.88), Attention Gate UNet (AG-UNet) (90.38), Attention ResUNet (AResUNet) (92.80), and Xception-UNet (93.24). Region-wise Dice scores were 92.59 for Whole Tumor (WT), 86.81 for Tumor Core (TC), and 84.89 for Enhancing tumor (ET). Although AResUNet achieved a slightly higher ET score (84.92), AXUNet demonstrated the strongest performance in mean Dice, WT, and TC. To further assess generalizability, AXUNet was independently evaluated on 219 previously unseen BraTS 2023 cases through the Synapse platform, achieving Dice scores of 86.29% for WT, 78.53% for TC, and 69.00% for ET. **CONCLUSION:** AXUNet demonstrates that combining Xception-based encoding with self-attention can improve glioma segmentation while also supporting explainability and external robustness, positioning it as a promising framework for MRI-based glioma segmentation. Its clinical relevance, and the practical value of its interpretability outputs, remain to be established through further, dedicated validation beyond Dice-based benchmarking.
+
+## Información del artículo
+
+- **Revista:** Journal of applied clinical medical physics
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Farzan Moodi, Fereshteh Khodadadi Shoushtari, Gelareh Valizadeh, Dornaz Mazinani, Hanieh Mobarak Salari
+- **DOI:** [10.1002/acm2.70902](https://doi.org/10.1002/acm2.70902)
+- **PubMed ID:** [43031240](https://pubmed.ncbi.nlm.nih.gov/43031240/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43031240/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
