@@ -1,0 +1,25 @@
+---
+title: "Interpretable Recalibration of a Sequential Organ Failure Assessment-Derived Score Using Machine Learning-Guided Optimization: Multicenter Cohort Study."
+description: "The Sequential Organ Failure Assessment (SOFA) score is central to risk stratification in intensive care units (ICUs), but its thresholds and 0- to 4-point increments were set by expert consensus in 1996 and never reestimated from out..."
+date: "2026-11-13"
+category: "ia-medicina"
+pubmedId: "43024933"
+author: "Juan Due&#xf1;as-Ruiz, Yanelis Manzano Nieves, Anny Mar&#xed;a Hern&#xe1;ndez Cuello et al."
+tags: ["critical care", "hospital mortality", "intensive care units", "interpretability", "machine learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** The Sequential Organ Failure Assessment (SOFA) score is central to risk stratification in intensive care units (ICUs), but its thresholds and 0- to 4-point increments were set by expert consensus in 1996 and never reestimated from outcome data. Machine learning models discriminate better while discarding the additive, point-based structure that makes SOFA auditable at the bedside, and methods for updating a legacy score rather than replacing it remain scarce. **OBJECTIVE:** This study aimed to develop and internally validate a data-driven recalibration of a SOFA-derived score that learns thresholds and integer weights from outcome data while preserving an additive, interpretable point-based structure and to test whether it improves discrimination for ICU mortality over a prespecified SOFA-derived reference score. **METHODS:** We conducted a retrospective multicenter cohort study using the eICU Collaborative Research Database (208 US hospitals, 2014-2015). We analyzed 14,848 adult first ICU admissions with complete day 1 SOFA-related measurements; 133,684 (90%) of 148,532 encounters with outcome data were excluded because of at least 1 missing determination. As vasoactive dose units could not be harmonized and urine output was largely unavailable, a prespecified SOFA-derived reference score served as the comparator. The framework couples supervised discretization (univariate decision trees and interval number chosen by a penalized validation criterion) with constrained integer-weight optimization under monotonicity, integrality, and scale-anchoring constraints, plus logistic calibration. Performance was estimated from pooled out-of-fold predictions of 10-fold nested cross-validation grouped by hospital, with bootstrap CIs; final thresholds and weights were refit on the full cohort and contributed no performance estimate. **RESULTS:** ICU mortality was 17.03% (2529/14,848). The recalibrated score achieved an area under the receiver operating characteristic curve (AUROC) of 0.811 (95% CI 0.800-0.819) versus 0.751 (95% CI 0.740-0.761) for the reference score (paired difference 0.059, 95% CI 0.053-0.067), and an area under the precision-recall curve of 0.495 (95% CI 0.477-0.515) versus 0.393 (95% CI 0.377-0.411; paired difference 0.102, 95% CI 0.087-0.116). Improvement was consistent across all 10 hospital-grouped folds and length-of-stay strata. After unweighted logistic recalibration, global calibration was adequate; the Brier score was lower (0.112 vs 0.123), whereas other calibration-error measures were higher. Discrimination approached unconstrained XGBoost (Extreme Gradient Boosting; AUROC 0.818) and exceeded penalized logistic regression (AUROC 0.775) fitted on the same folds. The advantage persisted in all 1000 resampling replications and in a prespecified sensitivity analysis expanding the cohort to 61,469 encounters (median paired AUROC difference 0.037). **CONCLUSIONS:** Data-driven recalibration under explicit structural constraints can update the cutpoints and integer weights of an established clinical score without abandoning its additive, bedside-computable form and should transfer to other legacy instruments. The recalibrated score is a mortality risk model on its own 0-71 scale; an open-source calculator is provided, and external and prospective validation is required before clinical use.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-11-13
+- **Autores:** Juan Due&#xf1;as-Ruiz, Yanelis Manzano Nieves, Anny Mar&#xed;a Hern&#xe1;ndez Cuello, Jaime Azpiazu Saiz, Ancor Sanz-Garc&#xed;a
+- **DOI:** [10.2196/99361](https://doi.org/10.2196/99361)
+- **PubMed ID:** [43024933](https://pubmed.ncbi.nlm.nih.gov/43024933/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43024933/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
