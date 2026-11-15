@@ -1,0 +1,25 @@
+---
+title: "Information rather than architecture: cross-learner attribution and clinician-model complementarity in CIN2+ risk prediction for women referred for colposcopy."
+description: "Deep tabular models, including self-supervised and pretrained foundation models, are increasingly proposed for clinical risk prediction, but their value over conventional learners is rarely tested against matched controls, and their r..."
+date: "2026-01-01"
+category: "ia-medicina"
+pubmedId: "43031724"
+author: "Yuzhang Wu, Aihong Wang"
+tags: ["Shapley value", "cervical intraepithelial neoplasia", "clinical prediction model", "clinician&#x2013;model complementarity", "colposcopy"]
+---
+
+## Resumen
+
+**BACKGROUND:** Deep tabular models, including self-supervised and pretrained foundation models, are increasingly proposed for clinical risk prediction, but their value over conventional learners is rarely tested against matched controls, and their role relative to clinician judgement is seldom examined. **METHODS:** In a retrospective single-centre cohort of 879 women referred for colposcopy (242 CIN2+, 27.5%), 15 routinely recorded variables, including a clinician image-based assessment documented before histopathology, were modelled with ten model families under one fixed protocol (single fold assignment and seed, no tuning). Discrimination was compared by paired DeLong tests and bootstrap. Two analyses were pre-specified: exact Shapley attribution of discrimination to five clinical groups of variables in every model family, and a complementarity analysis asking whether routine data identify CIN2+ among women judged negative by the clinician. Frozen models were evaluated in a 103-case two-centre external cohort. **RESULTS:** Out-of-fold AUROC ranged from 0.726 to 0.761. No model outperformed logistic regression (AUROC 0.757; CatBoost -0.002, p = 0.860; TabPFN +0.004, p = 0.554), and three matched ablations of a self-supervised tabular Transformer were null (all p &#x2265; 0.096). Removing the clinician assessment lowered AUROC in all ten families (by 0.041 to 0.072; all p &#x2264; 0.008). Shapley attribution ranked five variable groups identically in every family (Kendall's W&#xa0;=&#xa0;1.00; permutation p &lt; 0.001): the clinician assessment (39% to 50% of discrimination above chance), then cytology, HPV testing, colposcopic findings and demographic history. The clinician assessment alone had sensitivity 0.504 and specificity 0.882; 49.6% of CIN2+ occurred in clinician-negative women. Re-reviewing the 20% of clinician-negative women with the highest model risk identified 34.2% (95% CI 25.7-42.7%) of the missed CIN2+, against 20% expected at random, raising pathway sensitivity to 0.674 at specificity 0.733. External AUROC of logistic regression was 0.710. **CONCLUSIONS:** On routine structured data from a colposcopy-referral population, and under a common protocol, model architecture did not determine performance; predictor information did. Retrospectively, routine data complemented the clinician modestly in clinician-negative women, rather than replacing clinical judgement. Claims that complex architectures improve clinical tabular prediction should be tested against logistic regression with paired uncertainty across repeated data splits.
+
+## Información del artículo
+
+- **Revista:** Frontiers in oncology
+- **Fecha de publicación:** 2026-01-01
+- **Autores:** Yuzhang Wu, Aihong Wang
+- **DOI:** [10.3389/fonc.2026.1814215](https://doi.org/10.3389/fonc.2026.1814215)
+- **PubMed ID:** [43031724](https://pubmed.ncbi.nlm.nih.gov/43031724/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43031724/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
