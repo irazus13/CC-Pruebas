@@ -1,0 +1,25 @@
+---
+title: "Adaptive deep learning model with anatomical priors for 3D segmentation of fine hepatic vasculature on CT."
+description: "Accurate segmentation of fine hepatic vessels on CT remains challenging because peripheral branches are small and low contrast. To develop and test PriM Fusion Net, a deep learning model that adaptively integrates an opti..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "43034797"
+author: "Zixuan Zhao, Kalyani Vyapari, Kyunghyun Sung et al."
+tags: ["CT", "artificial intelligence", "deep learning", "hepatic vessel segmentation", "multimodal fusion"]
+---
+
+## Resumen
+
+**BACKGROUND:** Accurate segmentation of fine hepatic vessels on CT remains challenging because peripheral branches are small and low contrast. **PURPOSE:** To develop and test PriM Fusion Net, a deep learning model that adaptively integrates an optimized anatomical prior to improve 3D CT segmentation of portal and hepatic veins, emphasizing fine peripheral branches for preoperative 3D modeling. **MATERIALS AND METHODS:** This retrospective study used the public Medical Segmentation Decathlon (MSD) Task08-HepaticVessel dataset of 303 abdominal CT volumes. PriM Fusion Net uses a dual-encoder architecture: a Swin Transformer processes CT images and a parallel convolutional pathway processes a dataset-optimized Frangi vesselness prior. Gated multimodal units act as spatially varying voxel-wise gates that fuse the 2 feature streams at multiple scales. A rule-based SimpleMind post-processing module refined anatomical plausibility. Performance was evaluated with 5-fold cross-validation and zero-shot external inference on 3DIRCADb (3D Image Reconstruction for Comparison of Algorithm Database). **RESULTS:** PriM Fusion Net achieved a mean Dice similarity coefficient (DSC) of 77.68% (95% confidence interval [CI]: 77.11, 78.25) and 95th percentile Hausdorff distance (HD95) of 11.55&#x2009;mm (95% CI, 9.94, 13.16), outperforming all baselines (all adjusted P &lt; .02). For vessels with radius &#x2264; 1.5&#x2009;mm, DSC improved by 13.5% versus SwinUNETR (59.2% [95% CI, 54.48, 63.92] vs 45.7% [95% CI, 40.49, 50.91]). In ablation, replacing rigid concatenation with gated fusion improved DSC from 75.86% (95% CI, 75.31, 76.41) to 77.65% (95% CI, 76.92, 78.38), and SimpleMind post-processing reduced HD95 from 14.98&#x2009;mm (95% CI, 10.91, 19.05) to 11.55&#x2009;mm (95% CI, 9.94, 13.16). On 3DIRCADb, zero-shot inference yielded DSC of 68.42% (95% CI, 65.82, 71.02) and HD95 of 11.78&#x2009;mm (95% CI, 8.50, 15.06). **CONCLUSION:** Adaptive deep fusion of an optimized anatomical prior improved CT segmentation of portal and hepatic veins, especially fine peripheral branches, supporting further evaluation in 3D vascular modeling workflows for liver surgery and intervention.
+
+## Información del artículo
+
+- **Revista:** Radiology advances
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Zixuan Zhao, Kalyani Vyapari, Kyunghyun Sung, David S Lu, Grace H Kim
+- **DOI:** [10.1093/radadv/umag038](https://doi.org/10.1093/radadv/umag038)
+- **PubMed ID:** [43034797](https://pubmed.ncbi.nlm.nih.gov/43034797/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43034797/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
