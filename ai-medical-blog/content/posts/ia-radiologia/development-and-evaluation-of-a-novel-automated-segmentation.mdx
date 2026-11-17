@@ -1,0 +1,25 @@
+---
+title: "Development and evaluation of a novel automated segmentation approach for mandibular cortical bone and teeth in cone-beam computed tomography using nnU-net."
+description: "Characterizing mandibular cortical bone and adjacent tooth roots is essential for safe temporary anchorage device (TAD) placement. Manual cone-beam computed tomography (CBCT) segmentation is time-consuming, and existing automated pi..."
+date: "2026-10-06"
+category: "ia-radiologia"
+pubmedId: "43042751"
+author: "Warat Hatsadaloi, Takeshi Ogasawara, Masayoshi Uezono et al."
+tags: ["cone-beam computed tomography", "cortical bone segmentation", "deep learning", "jawbone segmentation", "teeth segmentation"]
+---
+
+## Resumen
+
+**INTRODUCTION:** Characterizing mandibular cortical bone and adjacent tooth roots is essential for safe temporary anchorage device (TAD) placement. Manual cone-beam computed tomography (CBCT) segmentation is time-consuming, and existing automated pipelines output a single mandible label without separating cortical from cancellous bone. This study developed and evaluated an nnU-Net tool that segments mandibular cortical bone and individual lower teeth from CBCT. **METHODS:** A total of 113 CBCT scans were split into 90 training and 23 evaluation cases. Manual segmentations of cortical bone and 16 lower teeth were produced by a single annotator after structured calibration with a senior rater on a 23-case subset, and served as a single-observer reference standard. A Residual-Encoder nnU-Net was trained with 5-fold cross-validation and ensemble at inference. Performance was evaluated by precision, recall, Dice similarity coefficient (DSC), 95th-percentile Hausdorff distance (HD95) and Normalized Surface Dice (NSD), and compared with human inter-rater agreement. **RESULTS:** Calibration achieved a post-washout Dice score of 95.53%. Against the reference standard, the model achieved 98.1% DSC for cortical bone and 95.9% for lower teeth, with HD95 of 0.25&#x2005;mm and 0.74&#x2005;mm respectively. Cortical bone NSD was 99.5% at 0.5&#x2005;mm and 92.9% at 0.3&#x2005;mm tolerance. Agreement between the model and an independent rater did not differ significantly from that between two calibrated raters. Inference took &#x223c;13&#x2005;s per scan, or 70&#x2005;s with the five-model ensemble. Failures concentrated in severe metal artifact and thin cortical bone. **CONCLUSIONS:** The proposed nnU-Net tool produced segmentations of mandibular cortical bone and lower teeth from CBCT in close agreement with a single-observer reference standard. By segmenting cortical bone as an explicit class, it enables visualization of relative cortical thickness at candidate TAD sites; the anatomical accuracy of thickness measurements derived from it has not yet been validated, and because CBCT grayscale is not standardized, such values are relative rather than absolute. These proof-of-concept results require multicenter, multivendor validation and improvements for thin cortex and metal-artifact regions before clinical adoption.
+
+## Información del artículo
+
+- **Revista:** European journal of orthodontics
+- **Fecha de publicación:** 2026-10-06
+- **Autores:** Warat Hatsadaloi, Takeshi Ogasawara, Masayoshi Uezono, Takaaki Sugino, Nicha Ungvijanpunya
+- **DOI:** [10.1093/ejo/cjag074](https://doi.org/10.1093/ejo/cjag074)
+- **PubMed ID:** [43042751](https://pubmed.ncbi.nlm.nih.gov/43042751/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43042751/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
