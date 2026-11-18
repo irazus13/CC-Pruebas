@@ -1,0 +1,25 @@
+---
+title: "Dual-phase deep learning recommendation system for radiographic crown lengthening assessment and post selection for the restoration of endodontically treated teeth."
+description: "Restoring endodontically treated teeth requires careful evaluation of the supracrestal tissue attachment, ferrule integrity, and post-space dimensions to ensure long-term success. Manual radiographic analysis for crown lengt..."
+date: "2026-11-17"
+category: "ia-odontologia"
+pubmedId: "43045595"
+author: "Mohamed Mostafa Rezk, Lamiaa Said ElFadaly, Zeinab Abd Elhalim Taha"
+tags: []
+---
+
+## Resumen
+
+**STATEMENT OF PROBLEM:** Restoring endodontically treated teeth requires careful evaluation of the supracrestal tissue attachment, ferrule integrity, and post-space dimensions to ensure long-term success. Manual radiographic analysis for crown lengthening indication and post selection is often time-consuming, subjective, and inconsistent, particularly in resource-limited settings where specialist access may be constrained. **PURPOSE:** The purpose of this study was to design and validate an artificial intelligence (AI)-driven system that automated 2 essential restorative planning tasks, evaluating the clinical need for crown lengthening and recommending appropriate post dimensions in endodontically treated teeth, using dental radiographs as the input. **MATERIAL AND METHODS:** Two deep learning pipelines were developed and trained on annotated panoramic and periapical datasets with annotations created under the supervision of dentistry professionals. The crown measurement pipeline employed a U-shaped network (U-Net) model for initial tooth segmentation (assigning unique instance masks to each tooth), then cropping individual teeth and feeding them into a Mask Region-based Convolutional Neural Network (Mask R-CNN) for precise detection and crown length calculation, facilitating the assessment of parameters such as supracrestal tissue attachment and ferrule height, for identification of potential violations or restoration limitations. The post measurement pipeline utilized Mask R-CNN directly on the original images to detect endodontic posts and measure their length and width, enabling comparison against established prosthodontic criteria. Both models were trained in a graphics processing unit (GPU)-enabled environment (Kaggle; Google LLC) and evaluated using standard metrics including Intersection over Union (IoU), Dice coefficient, and measurement accuracy, with validation involving visual overlays and quantitative comparisons to expert annotations. **RESULTS:** The segmentation model achieved a mean IoU of 0.52 and a Dice coefficient of 0.66, with diagnostic accuracy exceeding 99% in identifying post locations and assessing ferrule presence. The system accurately detected supracrestal tissue attachment violations and provided clinically relevant post dimension recommendations, closely aligning with expert-guided decisions. GPU acceleration reduced model training time by over 70% compared to local central processing unit (CPU)-only workflows. **CONCLUSIONS:** The AI-powered system demonstrated promising performance in automating radiographic evaluations critical to restoring endodontically treated teeth. By identifying crown lengthening requirements and suggesting post dimensions, the integrated pipelines supported objective and reproducible treatment planning. This approach may enhance prosthodontic workflows, especially in settings with limited specialist availability, and holds potential for integration into commercial dental imaging platforms.
+
+## Información del artículo
+
+- **Revista:** The Journal of prosthetic dentistry
+- **Fecha de publicación:** 2026-11-17
+- **Autores:** Mohamed Mostafa Rezk, Lamiaa Said ElFadaly, Zeinab Abd Elhalim Taha
+- **DOI:** [10.1016/j.prosdent.2026.10.009](https://doi.org/10.1016/j.prosdent.2026.10.009)
+- **PubMed ID:** [43045595](https://pubmed.ncbi.nlm.nih.gov/43045595/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43045595/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
