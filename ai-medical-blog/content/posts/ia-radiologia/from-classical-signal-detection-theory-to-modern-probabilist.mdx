@@ -1,0 +1,25 @@
+---
+title: "From classical signal detection theory to modern probabilistic classifiers: a review and unifying perspective for imaging science."
+description: "Signal detection theory (SDT) has long provided the foundation for task-based image quality assessment and observer modeling in medical image science. Modern learning systems, by contrast, are typically framed as probabilistic classifier..."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "43054762"
+author: "Mark A Anastasio"
+tags: ["Bayesian decision theory", "calibration", "likelihood ratio", "model observers", "probabilistic classifiers"]
+---
+
+## Resumen
+
+**PURPOSE:** Signal detection theory (SDT) has long provided the foundation for task-based image quality assessment and observer modeling in medical image science. Modern learning systems, by contrast, are typically framed as probabilistic classifiers trained via empirical risk minimization. This review clarifies that these perspectives can be understood within a common Bayesian decision-theoretic framework. **APPROACH:** We present classical hypothesis testing and Bayesian risk minimization alongside modern probabilistic learning, demonstrating that optimal detection reduces to estimating decision-relevant conditional quantities-including likelihood ratios, posterior probabilities, or predictive response distributions-and applying an action rule determined by priors and losses. We connect strictly proper scoring rules (e.g., cross-entropy) to posterior estimation, clarify the distinction between discrimination [receiver operating characteristic (ROC)/area under the ROC curve] and calibration (probability accuracy), interpret ROC geometry via Bayes risk, and relate classical model observers to logistic regression and deep networks. Extensions to multiclass detection and observer-constrained information measures are discussed. **RESULTS:** In the binary setting, for fixed priors, the likelihood ratio and posterior probability encode the same ordering information, related by Bayes' rule. Strictly proper scoring rules provide a mechanism by which empirical risk minimization targets posterior probabilities at the population-risk optimum, thereby approximating the ideal observer statistic under suitable assumptions on the data-generating distribution, model class, optimization, and labels. Discrimination and calibration emerge as complementary but distinct properties: ROC analysis assesses ranking, whereas calibrated probabilities are required for principled threshold selection, prevalence adaptation, and clinical risk communication. Predictive V -information is highlighted as an observer-dependent image quality metric enabled by access to predictive distributions. **CONCLUSIONS:** Classical SDT and modern probabilistic classification are complementary implementations of a shared decision-theoretic structure centered on decision-relevant conditional quantities. Recognizing the separation between inference and decision, the distinction between discrimination and calibration, and the role of observer constraints when estimating task-specific information provides conceptual clarity and practical guidance for evaluating and deploying learning-enabled imaging pipelines.
+
+## Información del artículo
+
+- **Revista:** Journal of medical imaging (Bellingham, Wash.)
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Mark A Anastasio
+- **DOI:** [10.1117/1.JMI.13.S2.S22407](https://doi.org/10.1117/1.JMI.13.S2.S22407)
+- **PubMed ID:** [43054762](https://pubmed.ncbi.nlm.nih.gov/43054762/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43054762/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
