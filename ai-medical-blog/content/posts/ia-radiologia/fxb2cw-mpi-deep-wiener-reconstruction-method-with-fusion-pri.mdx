@@ -1,0 +1,25 @@
+---
+title: "F&#xb2;CW-MPI: deep Wiener reconstruction method with fusion prior of system matrix-signal feature correlation in magnetic particle imaging."
+description: "Magnetic particle imaging (MPI) provides high sensitivity and spatial resolution for visualizing magnetic nanoparticles, but its system matrix (SM)-based reconstruction remains an ill-posed inverse problem that is highly sensitive to noise interferen..."
+date: "2026-11-19"
+category: "ia-radiologia"
+pubmedId: "43056860"
+author: "Zhen Dong, Yu An, Jie He et al."
+tags: ["deep learning", "image reconstruction", "magnetic particle imaging", "noise suppression"]
+---
+
+## Resumen
+
+Magnetic particle imaging (MPI) provides high sensitivity and spatial resolution for visualizing magnetic nanoparticles, but its system matrix (SM)-based reconstruction remains an ill-posed inverse problem that is highly sensitive to noise interference. Existing iterative and learning-based approaches typically embed denoising priors at the image-domain level within the reconstruction process, which limits robustness to noise variation, relies on manually tuned parameters, and underuses the physical information embedded in the SM.&amp;#xD;Approach. In this study, we propose F2CW-MPI, a non-iterative deep Wiener reconstruction framework. Unlike existing methods that embed denoising priors at the image-domain level, F2CW-MPI moves noise suppression earlier into the signal domain. An adaptive feature-refined Wiener denoiser estimates noise characteristics from latent signal features and dynamically adjusts denoising parameters accordingly, enabling signal-dependent noise suppression. Building on this design, a cross-attention-based fusion module then models the correlation between the denoised signal features and the SM within the same feature space, embedding the SM's physical prior into reconstruction. To reinforce this feature-level consistency, a joint loss function aligns the denoised signal features with ground truth features, together with image fidelity and concentration-distribution consistency terms. We evaluate F2CW-MPI on synthetic digital (training set: 6000 images; validation set: 2000 images; test set: 2000 images; with no overlap between sets) and vessel phantoms (training set: 80 subjects split into 28894 images; validation set: 10 subjects split into 2782 images; test set: 10 subjects split into 3078 images; with no overlap between sets), as well as real-world phantom data and in vivo data acquired on our homemade MPI scanner.&amp;#xD;Main results. Experiments show that F2CW-MPI outperforms iterative and existing learning-based methods in reconstruction accuracy and noise robustness, while preserving structural fidelity on real-world phantom and in vivo data.&amp;#xD;Significance. F2CW-MPI provides a robust and high-fidelity reconstruction strategy for MPI, showing potential for preclinical applications.&amp;#xD.
+
+## Información del artículo
+
+- **Revista:** Physics in medicine and biology
+- **Fecha de publicación:** 2026-11-19
+- **Autores:** Zhen Dong, Yu An, Jie He, Lishuang Guo, Siao Lei
+- **DOI:** [10.1088/1361-6560/aec495](https://doi.org/10.1088/1361-6560/aec495)
+- **PubMed ID:** [43056860](https://pubmed.ncbi.nlm.nih.gov/43056860/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43056860/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
