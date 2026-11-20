@@ -1,0 +1,25 @@
+---
+title: "Comparison of Rule-Based Natural Language Processing and Diagnosis Code Approaches to Detecting Bleeding in the Electronic Health Record: Algorithm Validation Within a Retrospective Cohort Study."
+description: "Anticoagulant use is prevalent and increasing. High-quality anticoagulation management balances individual thrombotic and bleeding risks to optimize care. An automated algorithm to accurately extract major bleeding events from the ele..."
+date: "2026-11-20"
+category: "investigacion"
+pubmedId: "43062208"
+author: "Evan W Draper, Jan A Anderson, Surbhi Shah et al."
+tags: ["anticoagulants", "hemorrhage", "machine learning algorithms", "natural language processing", "population surveillance"]
+---
+
+## Resumen
+
+**BACKGROUND:** Anticoagulant use is prevalent and increasing. High-quality anticoagulation management balances individual thrombotic and bleeding risks to optimize care. An automated algorithm to accurately extract major bleeding events from the electronic health record (EHR) of a large health care system would be extremely useful for tracking outcomes of anticoagulated patients. **OBJECTIVE:** The study aims to assess the accuracy of a natural language processing (NLP) approach, compared with and in conjunction with a diagnosis code (Dx Code)-based strategy, for detecting major bleeding from the EHR. **METHODS:** Patients with at least 1 prescription for apixaban, dabigatran, edoxaban, rivaroxaban, or warfarin between January 1, 2019, and December 31, 2023, were analyzed for major bleeding events. Major bleeding was defined similarly to the International Society on Thrombosis and Haemostasis definition. For the NLP algorithm, clinical notes and radiology reports were screened for mentions of bleeding. MedTagger, an open-source, rule-based NLP tool, was then used on the notes. The NLP results were transformed into a feature set, which was used to create a support vector machine model. Three NLP models were created for central nervous system bleeding, critical site bleeding, and bleeding with a hemoglobin drop or transfusions (other major bleeding). Training and test datasets were created using an active learning approach. The model was trained using 80% of the dataset, while the remaining 20% was used for testing. After model finalization, an independent random sample was used to validate the model. Dx Codes were also used to detect major bleeding, similar to previously published approaches. Five unique algorithms were compared: (1) NLP, (2) Dx Code in the primary position, (3) Dx Code in any position, (4) NLP&#x2229;Dx Code in any position, and (5) NLP&#x222a;Dx Code in any position. All 5 algorithms were compared with manual chart review. **RESULTS:** The final analysis identified 111,338 patients prescribed outpatient anticoagulation during the study. Manual adjudication was performed for 1189 of the 111,338 (1%) patients. Most of the 5 approaches performed well on the test data, with F1-scores ranging from 0.545 to 0.959, except for Dx Code-Primary, with an F1-score of 0.353 for critical site bleeding. The F1-scores for the validation data ranged from 0.509 to 0.679. The NLP&#x2229;Dx Code in any position approach yielded excellent precision of 0.864 (95% CI 0.667-0.953) but only 0.559 (95% CI 0.395-0.711) sensitivity. The NLP&#x222a;Dx Code in any position approach yielded good sensitivity of 0.824 (95% CI 0.665-0.917) but only 0.368 (95% CI 0.269-0.481) precision. **CONCLUSIONS:** Electronic tools can screen the EHRs to identify major bleeding outcomes in large patient cohorts within a multisite health care network with high precision but only moderate sensitivity. Additional work is needed to enhance sensitivity while maintaining high precision.
+
+## Información del artículo
+
+- **Revista:** JMIR cardio
+- **Fecha de publicación:** 2026-11-20
+- **Autores:** Evan W Draper, Jan A Anderson, Surbhi Shah, Leilia Brown, Margaret R Hanson
+- **DOI:** [10.2196/87424](https://doi.org/10.2196/87424)
+- **PubMed ID:** [43062208](https://pubmed.ncbi.nlm.nih.gov/43062208/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43062208/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
