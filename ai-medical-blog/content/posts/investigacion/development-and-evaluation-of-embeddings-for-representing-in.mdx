@@ -1,0 +1,25 @@
+---
+title: "Development and Evaluation of Embeddings for Representing Injuries in Patients With Traumatic Injuries: Retrospective Cohort Study."
+description: "Patients with traumatic injuries present with heterogeneous injury patterns that are difficult to represent in statistical models. Common approaches either retain individual injury codes in high-dimensional sparse representations, suc..."
+date: "2026-11-23"
+category: "investigacion"
+pubmedId: "43071957"
+author: "Kelvin Szolnoky, Jonatan Attergrim, Awais Ashfaq et al."
+tags: ["ICD-10", "clinical informatics", "machine learning", "multiple trauma", "representation learning"]
+---
+
+## Resumen
+
+**BACKGROUND:** Patients with traumatic injuries present with heterogeneous injury patterns that are difficult to represent in statistical models. Common approaches either retain individual injury codes in high-dimensional sparse representations, such as one-hot encoding, or aggregate injuries into summary scores, reducing dimensionality at the cost of patient-specific detail. **OBJECTIVE:** This study aimed to develop low-dimensional data-driven ICD-10 embeddings for traumatic injuries and compare their downstream discriminatory performance with one-hot encoding of the same injury codes. **METHODS:** We conducted a retrospective study using National Trauma Data Bank (NTDB) records from 2018 and 2019. International Classification of Diseases, Tenth Revision, Clinical Modification diagnoses were mapped to World Health Organization ICD-10 codes, retaining traumatic-injury codes S00-S99 and T15-T34. A denoising autoencoder was developed on 2018 data and temporally evaluated on 2019 data. Representations with 2, 4, 8, 16, 32, and 64 dimensions were compared with one-hot encoding across 16 downstream tasks using logistic regression and LightGBM. Performance was measured by the area under the receiver operating characteristic curve (AUC) for binary tasks and macro one-vs-rest AUC for multiclass tasks. Models were trained and evaluated within individual hospitals and separately on the full NTDB. Hospitals were stratified into volume categories, from small (&#x2264;500) to major (2500 patients/year). CIs were obtained from 1000 nonparametric bootstrap samples. **RESULTS:** The development cohort included 1,041,021 eligible patients from 2018, and the temporal evaluation cohort included 1,094,933 patients from 2019. At the hospital level, embeddings outperformed one-hot encoding. With LightGBM at 16 dimensions, the mean paired AUC difference across tasks was 0.054 (95% CI 0.048-0.060) in small hospitals (n=120) vs 0.023 (95% CI 0.020-0.025) in major hospitals (n=99). With logistic regression, differences were 0.056 (95% CI 0.050-0.063) and 0.041 (95% CI 0.039-0.043), respectively. In the full NTDB, 803-indicator one-hot encoding outperformed embeddings. Mean differences were -0.004 (95% CI -0.004 to -0.003) with LightGBM and -0.030 (95% CI -0.030 to -0.029) with logistic regression. At 64 dimensions, these differences narrowed to -0.001 and -0.016, respectively. **CONCLUSIONS:** Embeddings with as few as 8 dimensions achieved predictive performance comparable to or better than one-hot encoding, with up to a 100-fold reduction in dimensionality. Compared to one-hot encoding, embeddings improved performance in models trained at individual hospitals, particularly lower-volume hospitals. These gains may reflect reduced dimensionality, parameter sharing across codes, and representation of codes absent from hospital-specific training data, enabled by embeddings learned from the larger development cohort. In models trained on the full registry, one-hot encoding achieved higher mean AUC with both estimators, although the differences were minor (&lt;0.005 AUC difference) for LightGBM with 16- to 64-dimensional embeddings. The embeddings and software are openly available.
+
+## Información del artículo
+
+- **Revista:** JMIR medical informatics
+- **Fecha de publicación:** 2026-11-23
+- **Autores:** Kelvin Szolnoky, Jonatan Attergrim, Awais Ashfaq, Henrik Linusson, Martin Gerdin W&#xe4;rnberg
+- **DOI:** [10.2196/91298](https://doi.org/10.2196/91298)
+- **PubMed ID:** [43071957](https://pubmed.ncbi.nlm.nih.gov/43071957/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43071957/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
