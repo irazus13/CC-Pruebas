@@ -1,0 +1,25 @@
+---
+title: "Physics-Informed Neural Networks for Stenotic Pressure-Drop Estimation From 4D Flow MRI: Validation Against In Vitro Measurements."
+description: "Estimating pressure drops non-invasively from 4D Flow MRI velocity data remains challenging: analytical and direct inverse estimators are efficient but sensitive to resolution and noise, whereas Computational Fluid Dynamics (CFD) requires uncertain b..."
+date: "2026-11-01"
+category: "ia-radiologia"
+pubmedId: "43068859"
+author: "Alexis Caltran, Thomas Puiseux, Barbara Garmy-Susini et al."
+tags: ["4D flow MRI", "Physics&#x2010;Informed Neural Networks (PINNs)", "data assimilation", "experimental validation", "hemodynamics"]
+---
+
+## Resumen
+
+Estimating pressure drops non-invasively from 4D Flow MRI velocity data remains challenging: analytical and direct inverse estimators are efficient but sensitive to resolution and noise, whereas Computational Fluid Dynamics (CFD) requires uncertain boundary conditions and substantial preprocessing. Physics-Informed Neural Networks (PINNs) offer a complementary framework by enforcing the Navier-Stokes equations on measured velocity fields, but their robustness under MRI-like data degradation requires validation. We performed an experimental stenosis benchmark to validate a PINN framework for pressure estimation from internal velocity measurements, without prescribed inlet or outlet boundary conditions. Using a 3D-printed stenotic phantom under steady and pulsatile flow conditions, the approach was evaluated against: (1) high-fidelity CFD, (2) synthetic 4D Flow MRI at 1- to 3-mm resolution, and (3) pressure transducer measurements. Against noise-free CFD, the PINN achieved high fidelity (pressure Normalized Root Mean Square Error (NRMSE) &lt; 3 % ). Synthetic MRI tests showed that accuracy was strongly governed by spatial resolution. At 1&#x2009;mm, pressure-drop errors remained &lt; 5 % for moderate flows but reached &#x2248; 30 % in high-velocity cases. At 3&#x2009;mm, degraded flow features led to &#x2248; 50 % underestimation in steady cases and reduced flow-rate consistency in pulsatile conditions. At adequate resolution, PINN-derived pressure drops agreed with transducer measurements. This study provides a controlled benchmark of PINN-based pressure reconstruction from 4D Flow MRI-like data, not a direct clinical validation. PINNs can recover pressure fields without prescribed boundary conditions, but exhibit resolution-related limitations similar to lightweight pressure estimators such as PPE, STE, and vWERP. Thus, they should be viewed as complementary tools rather than replacements for established estimators. Clinical translation will require resolved imaging and dedicated developments, such as MRI-aware losses or sub-voxel modeling, to mitigate data degradation.
+
+## Información del artículo
+
+- **Revista:** International journal for numerical methods in biomedical engineering
+- **Fecha de publicación:** 2026-11-01
+- **Autores:** Alexis Caltran, Thomas Puiseux, Barbara Garmy-Susini, Fatima Zohra Mokrane, Ramiro Moreno
+- **DOI:** [10.1002/cnm.70236](https://doi.org/10.1002/cnm.70236)
+- **PubMed ID:** [43068859](https://pubmed.ncbi.nlm.nih.gov/43068859/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43068859/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
