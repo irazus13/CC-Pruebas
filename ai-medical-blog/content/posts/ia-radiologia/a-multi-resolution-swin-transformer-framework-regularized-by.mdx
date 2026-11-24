@@ -1,0 +1,25 @@
+---
+title: "A multi-resolution SWIN transformer framework regularized by white matter time-intensity curve for brain dynamic contrast-enhanced MR image registration."
+description: "Deep learning-based registration methods are often computationally intensive and struggle with dynamic contrast-enhanced (DCE) images, as they cannot effectively distinguish motion artifacts from contrast-induced intensity variations,..."
+date: "2026-12-01"
+category: "ia-radiologia"
+pubmedId: "43075731"
+author: "Lei Lei, Jinhong Tao, Feng Xi et al."
+tags: ["DCE images", "Registration", "SWIN", "Vision Transformer"]
+---
+
+## Resumen
+
+**BACKGROUND:** Deep learning-based registration methods are often computationally intensive and struggle with dynamic contrast-enhanced (DCE) images, as they cannot effectively distinguish motion artifacts from contrast-induced intensity variations, leading to unreliable physiological parameter estimation. **PURPOSE:** To develop a novel registration framework (TIC-SViT) based on a multi-resolution SWIN transformer architecture that exploits the inherent smoothness of tissue time-intensity curves (TICs). **METHODS:** A retrospective study was conducted on DCE-MRI brain data from 59 subjects, acquired using a 3.0 T scanner with a T1-weighted spoiled gradient echo sequence. The dataset was randomly split into training (n = 4956), validation (n = 1180), and testing (n = 59) pairs. Model performance was assessed in terms of computational efficiency, registration accuracy, and clinical relevance. Comparative experiments were conducted against four representative registration approaches: the traditional optimization-based method ANTs, a CNN-based deep learning model, the groupwise multi-resolution framework (GWMS), and the transformer-based C2FViT framework. Computational efficiency was assessed by comparing parameter count, training time, and testing time per DCE-MRI case. Registration accuracy was quantified using Dice coefficient (DC) and the 95th percentile Hausdorff distance (HD95) across white matter, gray matter, and cerebrospinal fluid. In addition, the temporal smoothness of TICs in arterial, venous, and white matter regions was evaluated using root mean squared error (RMSE). Clinical relevance was examined by comparing the quality of DCE-derived parameter maps generated from different registration methods. **RESULTS:** The proposed TIC-SViT model achieved a comparable parameter count (12.2 M, compared with 11.7, 9.5, and 12.4 M for CNN, GWMS, and C2FViT, respectively), the shortest training time and competitive testing speed (775 s and 11.7 s per case, compared with 1142 and 52.6 s for CNN, 1440 and 8.9 s for GWMS, 857 and 39.4 s for C2FViT, and 159.3 s for ANTs, which does not require training). It also produced the lowest RMSE values for TICs in artery (0.12), venous (0.14), and white matter (0.15) regions among all compared methods. In terms of global registration accuracy, C2FViT achieved the best performance, with DC values of 0.98, 0.97, and 0.82 for white matter, gray matter and cerebrospinal fluid, respectively, and the lowest HD95 value (9.5). The proposed TIC-SViT achieved the second best performance, with DC values of 0.97, 0.96, and 0.81, and HD95 of 10.2. **CONCLUSIONS:** The proposed method demonstrated registration accuracy comparable to that of state-of-the-art methods, but with significant improvement in computational&#xa0;efficiency.
+
+## Información del artículo
+
+- **Revista:** Medical physics
+- **Fecha de publicación:** 2026-12-01
+- **Autores:** Lei Lei, Jinhong Tao, Feng Xi, Zhengyang Zhu, Yinglong He
+- **DOI:** [10.1002/mp.70771](https://doi.org/10.1002/mp.70771)
+- **PubMed ID:** [43075731](https://pubmed.ncbi.nlm.nih.gov/43075731/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43075731/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).

@@ -1,0 +1,25 @@
+---
+title: "Life of a shortcut: how shortcuts can hide in embeddings during the training and testing of AI."
+description: "AI can poorly generalize due to the model relying on \"shortcuts\" rather than on actual clinical task characteristics. Shortcuts are often overlooked during initial development of the AI model and result in test sets with the same biases ..."
+date: "2026-10-01"
+category: "ia-radiologia"
+pubmedId: "43075560"
+author: "Fahd T Hatoum, Hui Li, Heather M Whitney et al."
+tags: ["AI", "bias", "machine learning", "shortcuts"]
+---
+
+## Resumen
+
+**PURPOSE:** AI can poorly generalize due to the model relying on "shortcuts" rather than on actual clinical task characteristics. Shortcuts are often overlooked during initial development of the AI model and result in test sets with the same biases and shortcuts that are present in the training set, leading to misleading performance levels of the AI models. Here, we present a two-stage "matching" method to detect potential shortcuts. **METHODS:** We trained a DenseNet121 model on the binary task of distinguishing between social vulnerability index (SVI) groups from patient chest X-rays. We evaluated it on an initial internal test set, and then on an external set from other institutions using the area under the receiver operating characteristic curve (AUC) as the figure of merit. We used (i) a transfer learning approach to assess whether shortcut features were included and (ii) our matching method to evaluate the impact of these shortcuts on the model. **RESULTS:** The SVI AI model achieved AUC (95% confidence interval) of 0.89 [0.85, 0.93] and 0.83 [0.77, 0.89] on an internal test dataset and an external test set, respectively. We identified features related to eight potential shortcuts related to acquisition protocols and physical artifacts. After our matching method, we obtained AUC of 0.73 [0.67, 0.79] for the model when tested on the matched set and an AUC of 0.92 [0.89, 0.95] when tested on an unmatched set. **CONCLUSION:** These findings demonstrate the benefit of uncovering shortcuts within AI models that could have otherwise been erroneously hidden.
+
+## Información del artículo
+
+- **Revista:** Journal of medical imaging (Bellingham, Wash.)
+- **Fecha de publicación:** 2026-10-01
+- **Autores:** Fahd T Hatoum, Hui Li, Heather M Whitney, Maryellen L Giger
+- **DOI:** [10.1117/1.JMI.13.S2.S22408](https://doi.org/10.1117/1.JMI.13.S2.S22408)
+- **PubMed ID:** [43075560](https://pubmed.ncbi.nlm.nih.gov/43075560/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43075560/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
