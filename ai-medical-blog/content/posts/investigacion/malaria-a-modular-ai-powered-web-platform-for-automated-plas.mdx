@@ -1,0 +1,25 @@
+---
+title: "MalarIA: A Modular AI-Powered Web Platform for Automated Plasmodium Species Classification from Blood Smear Microscopy."
+description: "Background: Malaria continues to pose a significant global public health challenge, as reflected in the estimated 282 million cases and 610,000 associated deaths recorded worldwide in 2024. Elimination efforts are threatened by antimalarial drug resi..."
+date: "2026-10-26"
+category: "investigacion"
+pubmedId: "43083674"
+author: "Francesco Branda, Lilia Andriani, Riccardo Lucis et al."
+tags: ["Plasmodium species classification", "Vision Transformers", "blood smear microscopy", "clinical decision support", "convolutional neural networks"]
+---
+
+## Resumen
+
+Background: Malaria continues to pose a significant global public health challenge, as reflected in the estimated 282 million cases and 610,000 associated deaths recorded worldwide in 2024. Elimination efforts are threatened by antimalarial drug resistance, relapsing Plasmodium vivax infections, and emerging zoonotic Plasmodium knowlesi. Accurate species-level identification is critical for appropriate treatment and surveillance, yet conventional microscopy is labor-intensive and operator-dependent, while rapid diagnostic tests lack sensitivity and species-discrimination capacity. This diagnostic gap underscores the need for automated, trustworthy AI-based tools. Methods: We present MalarIA, a modular, extensible AI-based web platform designed to translate deep learning research into deployable malaria diagnostics. The platform integrates three architectures, ResNet50, Vision Transformer (ViT), and a hybrid ResNetViT, that our group previously trained from scratch on 1038 real-world blood smear images spanning four Plasmodium species (P. falciparum, P. vivax, P. malariae, and P. ovale). MalarIA features a model registry for seamless integration of novel architectures, five Class Activation Mapping (CAM) variants for explainability, Expected Calibration Error (ECE) for confidence reporting, and a validation module (MalarIA Validator) supporting human-in-the-loop active learning and multicenter external validation. Results: The contribution of this article is the design and implementation of the platform itself; the predictive performance results summarized here are reused from our previous cross-validation study and no new model training is claimed in the present work. In that earlier evaluation, ResNet50 achieved the highest accuracy (96.9%, F1 96.3%, ROC-AUC 0.997, macro-averaged AUC-PR 0.990, Cohen's kappa 0.939). The hybrid ResNetViT demonstrated superior calibration (ECE 0.0175 vs. 0.0263 for ResNet50 and 0.0778 for ViT, recomputed from the archived out-of-fold predictions) and enhanced sensitivity for minority species (P. malariae recall 0.970; P. vivax 0.978). The platform is demonstrated end-to-end through its web interface, from image upload to explainable species-level results. Conclusions: MalarIA demonstrates that translational AI, grounded in extensibility, explainability, rigorous calibration, and practical deployment, can effectively bridge the gap between research and clinical impact in malaria diagnostics. The platform is currently a research-grade prototype: the interface, model registry, explainability and calibration modules are implemented and demonstrated, while full backend model serving, multicenter validation, and regulatory assessment remain planned future developments.
+
+## Información del artículo
+
+- **Revista:** Tropical medicine and infectious disease
+- **Fecha de publicación:** 2026-10-26
+- **Autores:** Francesco Branda, Lilia Andriani, Riccardo Lucis, Riccardo Prete, Annamaria Defilippo
+- **DOI:** [10.3390/tropicalmed11110307](https://doi.org/10.3390/tropicalmed11110307)
+- **PubMed ID:** [43083674](https://pubmed.ncbi.nlm.nih.gov/43083674/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43083674/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
