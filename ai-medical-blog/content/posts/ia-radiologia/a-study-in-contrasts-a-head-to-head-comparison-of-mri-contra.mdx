@@ -1,0 +1,25 @@
+---
+title: "A Study in Contrasts: A Head-to-Head Comparison of MRI Contrast Phases for Deep Learning Liver Segmentation."
+description: "This study aimed to systematically evaluate the optimal MRI contrast phase(s) for automated liver segmentation using single-phase and multiphase deep convolutional neural networks (DCNNs) employing both early- and late-f..."
+date: "2026-11-25"
+category: "ia-radiologia"
+pubmedId: "43086163"
+author: "Moritz Gross, Stefan P Haider, Sandeep Arora et al."
+tags: ["Computer-assisted image analyses", "Deep learning", "Liver", "Liver segmentation", "Magnetic resonance imaging"]
+---
+
+## Resumen
+
+**RATIONALE AND OBJECTIVES:** This study aimed to systematically evaluate the optimal MRI contrast phase(s) for automated liver segmentation using single-phase and multiphase deep convolutional neural networks (DCNNs) employing both early- and late-fusion techniques. **MATERIALS AND METHODS:** This retrospective study included 586 hepatocellular carcinoma patients with multi-phasic contrast-enhanced MRI from an institutional database. DCNNs were trained using identical 3D U-Net-derived architectures on single phases and all possible multi-phasic combinations, with early- and late-fusion techniques, resulting in a total of 26 models. The dataset was randomly split into 70/15/15% for training/validation/testing, and performance was quantified by the Dice Similarity Coefficient (DSC). From a collaborating site, 16 scans were used for external testing. The public LiverHccSeg dataset (n = 17) was used for additional testing. Furthermore, co-registered multiphasic examinations from the public Duke Liver Dataset (DLDS) were used as a third external test set (n = 68). Friedman's test with Dunn-Bonferroni post-hoc tests were used to compare performance across models. The top-performing model of each fusion strategy was defined by the highest Friedman mean rank. **RESULTS:** The late-fusion DCNN combining arterial, portal-venous, and delayed-phase MRI achieved superior performance across all models in the internal test set (mean DSC: 0.971 &#xb1; 0.021, P &lt;.001 for all pairwise comparisons). The best single-phase DCNN used portal-venous phase (mean DSC: 0.970 &#xb1; 0.017) and significantly outperformed the best early-fusion DCNN based on a combination of portal-venous-, and delayed phase (mean DSC: 0.966 &#xb1; 0.036) (P &lt; .001). The developed DCNNs demonstrated generalizable performance to external data (late-fusion: 0.961 &#xb1; 0.014, early-fusion: 0.964 &#xb1; 0.009, single-phase: 0.956 &#xb1; 0.035), the public LiverHccSeg (late-fusion: 0.911 &#xb1; 0.070, early-fusion: 0.898 &#xb1; 0.112, single-phase: 0.889 &#xb1; 0.109), and DLDS data (late-fusion: 0.907 &#xb1; 0.120, early-fusion: 0.873 &#xb1; 0.200, single-phase: 0.898 &#xb1; 0.134). **CONCLUSION:** Optimal deep learning liver segmentation performance was achieved through late-fusion of arterial, portal-venous, and delayed-phase MRI and demonstrated generalizable performance to external data. Single-phase segmentation on portal-venous phase remained a computationally efficient alternative with satisfactory performance. The numerical gain from multiphase late fusion was small in terms of mean DSC and was most apparent as reduced variability and improved worst-case performance on external data.
+
+## Información del artículo
+
+- **Revista:** Academic radiology
+- **Fecha de publicación:** 2026-11-25
+- **Autores:** Moritz Gross, Stefan P Haider, Sandeep Arora, Steffen Huber, Tal Ze'evi
+- **DOI:** [10.1016/j.acra.2026.10.041](https://doi.org/10.1016/j.acra.2026.10.041)
+- **PubMed ID:** [43086163](https://pubmed.ncbi.nlm.nih.gov/43086163/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43086163/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
