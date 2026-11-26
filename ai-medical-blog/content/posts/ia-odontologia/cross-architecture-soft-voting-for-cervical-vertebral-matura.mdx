@@ -1,0 +1,25 @@
+---
+title: "Cross-Architecture Soft Voting for Cervical Vertebral Maturation Assessment from Lateral Cephalometric Radiographs."
+description: "Cervical vertebral maturation (CVM) assessment is clinically important for evaluating skeletal maturity in orthodontic treatment planning; however, manual staging is subjective and affected by inter-observer variability. This study presents a deep le..."
+date: "2026-11-05"
+category: "ia-odontologia"
+pubmedId: "43090695"
+author: "Banu Akku&#x15f; Ayd&#x131;n, Yasin Ya&#x15f;a, Furkan &#xd6;zbey et al."
+tags: ["cervical vertebral maturation", "cross-architecture soft voting", "deep learning", "lateral cephalometric radiographs", "multi-task learning"]
+---
+
+## Resumen
+
+Cervical vertebral maturation (CVM) assessment is clinically important for evaluating skeletal maturity in orthodontic treatment planning; however, manual staging is subjective and affected by inter-observer variability. This study presents a deep learning framework for six-class CVM classification from lateral cephalometric radiographs using architecture comparison, distribution-aware multi-task learning, prototype learning, and cross-architecture soft voting. The dataset consisted of 1749 radiographs from 1749 patients with CVM stage labels assigned by consensus of two oral and maxillofacial radiologists. MaxViT-Small, Swin-Base, ConvNeXt-Base, and EfficientNetV2-L were first evaluated using five-fold cross-validation under a CVM-only hard-label cross-entropy setting, and EfficientNetV2-L was used as the anchor backbone for a full factorial ablation of three components: Gaussian soft-label learning with Kullback-Leibler divergence, auxiliary sex prediction, and prototype learning. The components did not act independently: Gaussian soft labels improved class-balanced performance only when combined with the auxiliary sex task, and the complete formulation reached 77.82% accuracy, 60.89% Macro-F1, and 59.03% balanced accuracy, whereas the separate contribution of prototype learning could not be resolved at this sample size. The same final formulation was subsequently applied to four distinct backbones and combined using equal-weight cross-architecture soft voting. The ensemble achieved 79.82% accuracy (95% confidence interval 77.93-81.65%), 62.49% Macro-F1, 59.22% balanced accuracy, and a quadratic weighted kappa of 0.908, with 97.77% of predictions within one stage of the reference. Relative to the best single model, the gains in accuracy and ordinal agreement were statistically supported, whereas those in Macro-F1 and balanced accuracy were not. An ensemble of independently trained models of a single backbone did not reproduce the accuracy gain, which is consistent with a benefit from architectural diversity; the necessity of all four members was not established. The gap of approximately 20 percentage points between overall and balanced accuracy reflects the predominance of CS6 (61.41%) and the low recall of the least represented early stages. All values are internal cross-validation estimates, and external validation is required before the framework can be considered for clinical use.
+
+## Información del artículo
+
+- **Revista:** Life (Basel, Switzerland)
+- **Fecha de publicación:** 2026-11-05
+- **Autores:** Banu Akku&#x15f; Ayd&#x131;n, Yasin Ya&#x15f;a, Furkan &#xd6;zbey, Hamza Osman Ilhan
+- **DOI:** [10.3390/life16111874](https://doi.org/10.3390/life16111874)
+- **PubMed ID:** [43090695](https://pubmed.ncbi.nlm.nih.gov/43090695/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43090695/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
