@@ -1,0 +1,25 @@
+---
+title: "Conformal Uncertainty for Preoperative MRI Radiomic Glioma Subtyping: Showing When the Model Cannot Separate Subtypes."
+description: "MRI radiomic models predict WHO 2021 glioma subtypes with high AUCs, but reporting only the most probable subtype (argmax) can miss the less common oligodendroglioma. We evaluated whether class-conditional conformal predic..."
+date: "2026-11-26"
+category: "ia-radiologia"
+pubmedId: "43098737"
+author: "Ramkumar Rajabathar Babu Jai Shanker, Jonathan Neilio, Daniel T Ginat"
+tags: []
+---
+
+## Resumen
+
+**BACKGROUND AND PURPOSE:** MRI radiomic models predict WHO 2021 glioma subtypes with high AUCs, but reporting only the most probable subtype (argmax) can miss the less common oligodendroglioma. We evaluated whether class-conditional conformal prediction, which sets a separate probability cutoff for each subtype, lets a radiomic model return a set of plausible subtypes for each patient before tissue diagnosis, hypothesizing that it would cover all three subtypes at the target rate at the cost of larger sets. **MATERIALS AND METHODS:** We retrospectively analyzed 1544 patients with preoperative T1, T2, contrast-enhanced T1, and FLAIR MRI from four public datasets. A random forest trained on TCGA and UCSF-PDGM (n=611) was applied unchanged to the Erasmus Glioma Database (EGD, n=404) and UTSW-Glioma (n=529), each split 200 times into a calibration half, used to fit every rule, and a test half. Class-conditional conformal prediction was compared with single-subtype rules, probability sets, abstention, and standard conformal prediction (one shared cutoff). Rules were compared on per-subtype coverage (the share of patients whose set contained the true subtype), mean set size, and the share of patients given a single subtype and its accuracy. **RESULTS:** Per-subtype AUCs were 0.87-0.96 (EGD) and 0.82-0.91 (UTSW-Glioma), yet argmax identified 7 of 73 and 4 of 63 oligodendrogliomas. At the 90% target, only class-conditional conformal prediction reached it for all three subtypes in both cohorts (mean coverage 0.90-0.93, mean set size 1.39 and 1.70). Standard conformal prediction covered 0.51 and 0.37 of oligodendrogliomas, probability sets fell below the target for two subtypes in UTSW-Glioma, and abstention matched on single-subtype calls needed larger sets (1.79 and 2.17). Single-subtype sets, given to 61.8% and 41.7% of patients, were correct in 98.5% and 97.4% when they named glioblastoma but about half the time otherwise. Development-cohort cutoffs fell below the target for glioblastoma (0.84 and 0.79). **CONCLUSIONS:** Class-conditional conformal prediction allowed the model to suggest multiple glioma subtypes when uncertain, reducing the risk of excluding the correct diagnosis, particularly oligodendroglioma. With calibration using comparable patient populations, the correct subtype was included at the intended rate. Single-subtype predictions were most reliable for glioblastoma.
+
+## Información del artículo
+
+- **Revista:** AJNR. American journal of neuroradiology
+- **Fecha de publicación:** 2026-11-26
+- **Autores:** Ramkumar Rajabathar Babu Jai Shanker, Jonathan Neilio, Daniel T Ginat
+- **DOI:** [10.3174/ajnr.A9732](https://doi.org/10.3174/ajnr.A9732)
+- **PubMed ID:** [43098737](https://pubmed.ncbi.nlm.nih.gov/43098737/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43098737/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
