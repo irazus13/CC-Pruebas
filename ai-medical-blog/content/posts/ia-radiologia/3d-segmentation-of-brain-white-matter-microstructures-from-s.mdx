@@ -1,0 +1,25 @@
+---
+title: "3D segmentation of brain white matter microstructures from sparsely annotated X-ray Nano-Holotomography data."
+description: "We present a multi-class 3D segmentation framework for white matter (WM) microstructures in large field-of-view (FOV) volumes up to (~&#x2009;202 &#xd7; 202 &#xd7; 780&#xa0;&#xb5;m3) acquired using synchrotron X-ray Nano-Holotomography (XNH) imaging...."
+date: "2026-11-27"
+category: "ia-radiologia"
+pubmedId: "43102649"
+author: "Mahsa Amirrashedi, Hans Martin Kjer, Miren Lur Barquin Torre et al."
+tags: ["3D segmentation", "Deep learning", "Microstructures", "Sparse annotations", "Synchrotron X-ray"]
+---
+
+## Resumen
+
+We present a multi-class 3D segmentation framework for white matter (WM) microstructures in large field-of-view (FOV) volumes up to (~&#x2009;202 &#xd7; 202 &#xd7; 780&#xa0;&#xb5;m3) acquired using synchrotron X-ray Nano-Holotomography (XNH) imaging. XNH offers wide FOV, nanoscale resolution, and fast volumetric acquisition. However, manual segmentation of tiny and densely packed WM microstructures it resolves is infeasible at this scale. We implemented an expert-in-the-loop deep learning approach for segmenting long-range axons, blood vessels, cells, and vacuoles from large XNH volumes of monkey brain WM. Our initial model, a 3D U-Net, was trained on sparsely annotated corpus callosum (CC) data, a region with relatively homogeneous axonal structure. High-confidence predictions (p &#x2265; 0.7) from CC and more anatomically complex fiber-crossing regions were refined by an expert and incorporated into an iterative training process, expanding the segmented dataset sixfold within four iterations. Using the expanded dataset, we investigated multiple well-established 3D convolutional and transformer-based architectures with multiple loss functions in this segmentation context. We evaluated model performance at two complementary scales: voxel-wise across entire XNH volumes and object-wise on 3D segmented objects. All trained models performed strongly across every class at both scales, with average voxel-wise Dice &gt; 0.8. This work presents an enabling segmentation framework for XNH-based neuroanatomy, demonstrating feasibility at large FOVs approaching a single MRI voxel. We show that integrating deep learning with iterative expert refinement substantially reduces manual annotation burden, providing a scalable framework for microstructural mapping in XNH data and a basis for informing biophysical models used to interpret MRI.
+
+## Información del artículo
+
+- **Revista:** Brain structure &amp; function
+- **Fecha de publicación:** 2026-11-27
+- **Autores:** Mahsa Amirrashedi, Hans Martin Kjer, Miren Lur Barquin Torre, Tim B Dyrby
+- **DOI:** [10.1007/s00429-026-03210-9](https://doi.org/10.1007/s00429-026-03210-9)
+- **PubMed ID:** [43102649](https://pubmed.ncbi.nlm.nih.gov/43102649/)
+
+## Referencias
+
+Este artículo fue obtenido automáticamente desde [PubMed](https://pubmed.ncbi.nlm.nih.gov/43102649/), la base de datos de literatura biomédica del National Center for Biotechnology Information (NCBI).
